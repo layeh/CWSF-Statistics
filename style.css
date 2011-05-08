@@ -1,0 +1,188 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+a
+{
+	outline: none;
+	color: #000000;
+	background: #FFFFFF;
+}
+.bold
+{
+	font-weight: bold;
+}
+.break
+{
+	width: 100%;
+	height: 10px;
+	background: #686868;
+}
+.clear
+{
+	clear: both;
+}
+body
+{
+	background: #f2f2f2
+}
+#wrapper
+{
+	width: 900px;
+	margin: 0 auto 10px auto;
+}
+#container
+{
+	padding: 10px;
+	background: #FFFFFF;
+	z-index: 100;
+}
+h1
+{
+	font-size: 150%;
+}
+h1 span
+{
+	vertical-align: top;
+	font-size: 50%;
+	font-weight: 100;
+}
+table.full
+{
+	width: 100%;
+}
+td
+{
+	text-align: right;
+}
+td.left
+{
+	text-align: left;
+}
+p, li, td
+{
+	font-size: 80%;
+}
+li
+{
+	padding: 2px 0;
+}
+ul, ol
+{
+	padding: 0 0 0 30px;
+	margin: 5px 0;
+}
+ul
+{
+	list-style: square;
+}
+ol
+{
+	list-style: upper-roman;
+}
+#content .row
+{
+	margin: 10px 0;
+}
+.line
+{
+	background: #B5B5B5;
+	height: 1px;
+}
+#content .column50
+{
+	float: left;
+	width: 50%;
+}
+#content .column33
+{
+	float: left;
+	width: 33%;
+}
+#content .column25
+{
+	float: left;
+	width: 25%;
+}
+#footer
+{
+	margin: 8px auto 0 auto;
+	text-align: center;
+}
+#footer p
+{
+	font-size: 70%;
+	margin: 8px 0;
+}
+#footer p span
+{
+	padding: 2px 4px;
+	background: #FFFFFF;
+}
+.bar_graph
+{
+	padding: 5px 0;
+	font-size: 70%;
+}
+.bar_graph .bar, .bar_graph span.label
+{
+	margin: 2px 0;
+	padding: 1px;
+	float: left;
+}
+.bar_graph .bar
+{
+	color: #FFFFFF;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.bar_graph span.label
+{
+	margin-left: 2px;
+}
+.tick_bar
+{
+	width: 100%;
+	font-size: 75%;
+	font-weight: bold;
+}
+.tick_bar a
+{
+	display: block;
+	float: left;
+	width: 16.6%;
+	text-align: center;
+	padding: 2px 0;
+}
+.tick_bar a.active
+{
+	background: #e5e5e5;
+	text-decoration: none;
+}
+.medal_platinum
+{
+	background: #B5CBD1;
+}
+.medal_gold
+{
+	background: #FCCA35;
+}
+.medal_silver
+{
+	background: #D3D3D1;
+}
+.medal_bronze
+{
+	background: #BA9E4A;
+}
+.column_padding
+{
+	padding: 0 5px;
+}
+.column_padding2
+{
+	padding: 0 15px;
+}
