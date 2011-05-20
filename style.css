@@ -20,6 +20,7 @@ a
 	width: 100%;
 	height: 10px;
 	background: #686868;
+	clear: both;
 }
 .clear
 {
@@ -43,6 +44,7 @@ body
 h1
 {
 	font-size: 150%;
+	float: left;
 }
 h1 span
 {
@@ -50,13 +52,26 @@ h1 span
 	font-size: 50%;
 	font-weight: 100;
 }
+h2
+{
+	float: right;
+}
 table.full
 {
 	width: 100%;
 }
+table.petit
+{
+	width: auto;
+}
+table.petit td
+{
+	padding: 0 8px;
+}
 td
 {
 	text-align: right;
+	padding: 1px 0;
 }
 td.left
 {
@@ -107,6 +122,16 @@ ol
 	float: left;
 	width: 25%;
 }
+#content .column30
+{
+	float: left;
+	width: 30%;
+}
+#content .column36
+{
+	float: left;
+	width: 36%;
+}
 #footer
 {
 	margin: 8px auto 0 auto;
@@ -126,6 +151,10 @@ ol
 {
 	padding: 5px 0;
 	font-size: 70%;
+}
+.bar_graph#categories > div
+{
+	display: none;
 }
 .bar_graph .bar, .bar_graph span.label
 {
@@ -153,7 +182,7 @@ ol
 {
 	display: block;
 	float: left;
-	width: 16.6%;
+	width: 14.2%;
 	text-align: center;
 	padding: 2px 0;
 }
@@ -185,4 +214,8 @@ ol
 .column_padding2
 {
 	padding: 0 15px;
+}
+.light
+{
+	color: #c1c1c1;
 }

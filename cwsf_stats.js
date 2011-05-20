@@ -1,8 +1,15 @@
+/*
+Warning: approaching old code
+*/
 $(function()
 {
 	var tick_bar_click = false;
 	
 	var project_categories = [
+		[ //2011 (total: 425)
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 51, 75, 120, 21, 75, 14], //number
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 36, 58, 90 , 18, 58, 11] //percent width
+		],
 		[ //2010 (total: 407)
 			[7, 33, 13, 68, 54, 30, 93, 47, 60], //number
 			[6, 28, 11, 58, 46, 25, 80, 40, 51] //percent width
@@ -29,7 +36,7 @@ $(function()
 		],
 
 	];
-	$(".tick_bar a").click(function(e)
+	$(".tick_bar#project_categories a").click(function(e)
 	{
 		if(tick_bar_click)
 		{
@@ -44,16 +51,17 @@ $(function()
 				var index;
 				switch($(this).html())
 				{
-					case "2010": index = 0; break;
-					case "2009": index = 1; break;
-					case "2008": index = 2; break;
-					case "2007": index = 3; break;
-					case "2006": index = 4; break;
-					case "2005": index = 5; break;
+					case "2011": index = 0; break;
+					case "2010": index = 1; break;
+					case "2009": index = 2; break;
+					case "2008": index = 3; break;
+					case "2007": index = 4; break;
+					case "2006": index = 5; break;
+					case "2005": index = 6; break;
 				}
-				for(var i = 0; i < 9; i++)
+				for(var i = 0; i < 16; i++)
 				{
-					if(project_categories[index][0][i] > 0)
+					if(project_categories[index][0][i] != undefined && project_categories[index][0][i] > 0)
 					{
 						$("#project_categories_" + (i + 1)).slideDown(250);
 						$("#project_categories_" + (i + 1)).children("span.label").children("span").html("(" + project_categories[index][0][i] + ")");
