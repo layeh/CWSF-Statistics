@@ -219,3 +219,31 @@ ol
 {
 	color: #c1c1c1;
 }
+
+#winnings_category
+{
+	height: 250px;
+}
+
+.vertical_bar_graph .bar_item
+{
+	float: left;
+	height: 100%;
+	text-align: center;
+	font-size: 75%;
+}
+.vertical_bar_graph .bar_item .bar
+{
+	margin: 0 2px;
+}
+.vertical_bar_graph .bar_item .bar span
+{
+	background: #FFF;
+	display: block;
+}
+
+.vertical_bar_graph#winnings_category .bar_item
+{
+	width: 14.2%;
+}
+

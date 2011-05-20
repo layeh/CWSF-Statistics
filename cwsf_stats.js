@@ -63,12 +63,13 @@ $(function()
 				{
 					if(project_categories[index][0][i] != undefined && project_categories[index][0][i] > 0)
 					{
-						$("#project_categories_" + (i + 1)).slideDown(250);
+						$("#project_categories_" + (i + 1)).show();
 						$("#project_categories_" + (i + 1)).children("span.label").children("span").html("(" + project_categories[index][0][i] + ")");
 					}
 					else
 					{
-						$("#project_categories_" + (i + 1)).slideUp(250);
+						$("#project_categories_" + (i + 1)).children(".bar").css({width: "0px"});
+						$("#project_categories_" + (i + 1)).hide();
 					}
 					$("#project_categories_" + (i + 1)).children(".bar").animate({width: (project_categories[index][1][i] + "%")}, 1000, null, function()
 					{
