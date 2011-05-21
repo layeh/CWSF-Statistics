@@ -81,6 +81,14 @@ p, li, td
 {
 	font-size: 80%;
 }
+p.center
+{
+	text-align: center;
+}
+p.strong
+{
+	font-weight: bold;
+}
 li
 {
 	padding: 2px 0;
@@ -159,7 +167,7 @@ ol
 .bar_graph .bar, .bar_graph span.label
 {
 	margin: 2px 0;
-	padding: 1px;
+	padding: 1px 0;
 	float: left;
 }
 .bar_graph .bar
@@ -219,12 +227,22 @@ ol
 {
 	color: #c1c1c1;
 }
-
 #winnings_category
 {
 	height: 250px;
 }
-
+#gender
+{
+	height: 200px;
+}
+.vertical_bar_graph#gender .bar_item
+{
+	width: 16.6%;
+}
+.vertical_bar_graph#winnings_category .bar_item
+{
+	width: 14.2%;
+}
 .vertical_bar_graph .bar_item
 {
 	float: left;
@@ -241,9 +259,3 @@ ol
 	background: #FFF;
 	display: block;
 }
-
-.vertical_bar_graph#winnings_category .bar_item
-{
-	width: 14.2%;
-}
-
