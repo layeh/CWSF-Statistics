@@ -77,6 +77,11 @@ td.left
 {
 	text-align: left;
 }
+h3 select
+{
+	font-weight: bold;
+	border: 0;
+}
 p, li, td
 {
 	font-size: 80%;
@@ -181,28 +186,14 @@ ol
 	overflow: hidden;
 	white-space: nowrap;
 }
+.bar_graph .bar span
+{
+	padding: 0 4px;
+	font-size: 110%;
+}
 .bar_graph span.label
 {
 	margin-left: 2px;
-}
-.tick_bar
-{
-	width: 100%;
-	font-size: 75%;
-	font-weight: bold;
-}
-.tick_bar a
-{
-	display: block;
-	float: left;
-	width: 14.2%;
-	text-align: center;
-	padding: 2px 0;
-}
-.tick_bar a.active
-{
-	background: #e5e5e5;
-	text-decoration: none;
 }
 .medal_platinum
 {
@@ -228,7 +219,7 @@ ol
 {
 	padding: 0 15px;
 }
-.light
+.rank
 {
 	color: #c1c1c1;
 }
@@ -276,6 +267,18 @@ ol
 	position: relative;
 	top: -14px;
 	display: block;
+}
+.inline
+{
+	display: inline;
+}
+#provincal_medals tr td div span
+{
+	display: none;
+}
+#provincal_medals tr td div span:first-child
+{
+	display: inline;
 }
 
 /* Project Category Colours */

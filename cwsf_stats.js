@@ -1,85 +1,51 @@
-/*
-Warning: approaching old code
-*/
 $(function()
 {
-	var tick_bar_click = false;
-	
-	var project_categories = [
-		[ //2011 (total: 425)
-			[0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 51, 75, 120, 21, 75, 14], //number
-			[0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 36, 58, 90 , 18, 58, 11] //percent width
-		],
-		[ //2010 (total: 407)
-			[7, 33, 13, 68, 54, 30, 93, 47, 60], //number
-			[6, 28, 11, 58, 46, 25, 80, 40, 51] //percent width
-		],
-		[ //2009 (total: 387)
-			[30, 36, 16, 76, 76, 133, 95, 42, 45], //number
-			[18, 22, 10, 46, 46, 75, 57, 25, 27] //percent width
-		],
-		[ //2008 (total: 386)
-			[27, 29, 16, 85, 84, 107, 74, 46, 49], //number
-			[20, 22, 12, 64, 62, 75, 55, 34, 37] //percent width
-		],
-		[ //2007 (total: 369)
-			[42, 33, 13, 64, 63, 0, 82, 43, 67], //number
-			[41, 32, 13, 62, 60, 1, 80, 42, 65] //percent width
-		],
-		[ //2006 (total: 369)
-			[0, 40, 9, 53, 79, 0, 98, 32, 57], //number
-			[1, 33, 7, 43, 64, 1, 80, 26, 47] //percent width
-		],
-		[ //2005 (total: 384)
-			[0, 38, 82, 62, 82, 0, 95, 42, 63], //number
-			[1, 32, 69, 52, 69, 1, 80, 35, 53] //percent width
-		],
-
-	];
-	$(".tick_bar#project_categories a").click(function(e)
+	$("#project_categories").change(function(e)
 	{
-		if(tick_bar_click)
+		var new_year = $(this).val();
+		$("#categories div span.label span").css({"display": "none"});
+		var new_value_selector = "#categories div span.label span.year_" + new_year;
+		var max_value = 0;
+		
+		var new_values = $(new_value_selector);
+		// Find max. value
+		for(var i = 0; i < new_values.length; i++)
 		{
-			return false;
+			var current_value = parseInt($(new_values).eq(i).html());
+			if(current_value > max_value)
+			{
+				max_value = current_value;
+			}
 		}
-		tick_bar_click = true;
-		$(this).parent().children("a").removeClass("active");
-		$(this).addClass("active");
-		switch($(this).parent().attr("id"))
+		// Set bar lengths
+		for(var i = 0; i < new_values.length; i++)
 		{
-			case "project_categories":
-				var index;
-				switch($(this).html())
-				{
-					case "2011": index = 0; break;
-					case "2010": index = 1; break;
-					case "2009": index = 2; break;
-					case "2008": index = 3; break;
-					case "2007": index = 4; break;
-					case "2006": index = 5; break;
-					case "2005": index = 6; break;
-				}
-				for(var i = 0; i < 16; i++)
-				{
-					if(project_categories[index][0][i] != undefined && project_categories[index][0][i] > 0)
-					{
-						$("#project_categories_" + (i + 1)).show();
-						$("#project_categories_" + (i + 1)).children("span.label").children("span").html("(" + project_categories[index][0][i] + ")");
-					}
-					else
-					{
-						$("#project_categories_" + (i + 1)).children(".bar").css({width: "0px"});
-						$("#project_categories_" + (i + 1)).hide();
-					}
-					$("#project_categories_" + (i + 1)).children(".bar").animate({width: (project_categories[index][1][i] + "%")}, 1000, null, function()
-					{
-						tick_bar_click = false;
-					});
-				}
-			break;
+			var current_element = $(new_values).eq(i);
+			var current_value = parseInt(current_element.html());
+			var parent_bar = current_element.parent().parent();
+			if(current_value == 0)
+			{
+				parent_bar.css({"display": "none"});
+				parent_bar.children(".bar").css({"width": "0%"});
+				continue;
+			}
+			current_element.css({"display": "inline"});
+			parent_bar.css({"display": "block"});
+			parent_bar.children(".bar").animate({"width": (current_value / max_value * 96) + "%"}, 1000);
 		}
-		return false;
 	});
+	$("#project_categories").change();
 	
-	$(".initial_click").click();
+	/*
+	$("#medals_select").change(function(e)
+	{
+		var new_year = $(this).val();
+		$("#provincal_medals tr td:eq(2) div span").css({"display": "none"});
+		var selector = "#provincal_medals tr td:eq(2) div span.year_" + new_year;
+		$(selector).parent().parent().css({"visibility": ($(selector).html() == "0" ? "hidden" : "visible")});
+		$(selector).css({"display": "inline"});
+		
+		// DO SORTING
+	});
+	*/
 });
