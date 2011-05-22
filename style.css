@@ -244,6 +244,10 @@ ol
 {
 	padding: 3px 0 0 0;
 }
+.vertical_bar_graph
+{
+	margin: 5px 0 0 0;
+}
 .vertical_bar_graph#gender_project .bar_item
 {
 	width: 7.14%;
@@ -269,13 +273,30 @@ ol
 }
 .vertical_bar_graph .bar_item .bar span
 {
-	background: #FFF;
+	position: relative;
+	top: -14px;
 	display: block;
 }
 
 /* Project Category Colours */
 
-.c_discovery, .c_o_automotive
+.c_health, .c_o_health
+{
+	background: #C24785;
+}
+.c_information, .c_o_computing
+{
+	background: #336699;
+}
+.c_innovation, .c_o_einnovation
+{
+	background: #993366;
+}
+.c_environment, .c_o_earth
+{
+	background: #669933;
+}
+.c_discovery, .c_o_life
 {
 	background: #993333;
 }
@@ -283,33 +304,17 @@ ol
 {
 	background: #996633;
 }
-.c_environment, .c_o_computing
-{
-	background: #999933;
-}
-.c_health, .c_o_earth
-{
-	background: #C24785;
-}
-.c_information, .c_o_engineering
-{
-	background: #669933;
-}
-.c_innovation, .c_o_health
-{
-	background: #993366;
-}
 .c_resources, .c_o_physical
 {
 	background: #333399;
 }
-.c_o_einnovation
+.c_o_engineering
 {
 	background: #663399;
 }
-.c_o_life
+.c_o_automotive
 {
-	background: #336699;
+	background: #999933;
 }
 
 /* Age Category Colours */
