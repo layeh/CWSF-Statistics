@@ -140,6 +140,11 @@ ol
 	float: left;
 	width: 36%;
 }
+#content .column14
+{
+	float: left;
+	width: 14.28%;
+}
 #footer
 {
 	margin: 8px auto 0 auto;
@@ -231,11 +236,19 @@ ol
 {
 	height: 250px;
 }
-#gender
+#gender_project, #gender_division
 {
 	height: 200px;
 }
-.vertical_bar_graph#gender .bar_item
+.bar_secondary_label p
+{
+	padding: 3px 0 0 0;
+}
+.vertical_bar_graph#gender_project .bar_item
+{
+	width: 7.14%;
+}
+.vertical_bar_graph#gender_division .bar_item
 {
 	width: 16.6%;
 }
@@ -259,3 +272,59 @@ ol
 	background: #FFF;
 	display: block;
 }
+
+/* Project Category Colours */
+
+.c_discovery, .c_o_automotive
+{
+	background: #993333;
+}
+.c_energy, .c_o_biotechnology
+{
+	background: #996633;
+}
+.c_environment, .c_o_computing
+{
+	background: #999933;
+}
+.c_health, .c_o_earth
+{
+	background: #C24785;
+}
+.c_information, .c_o_engineering
+{
+	background: #669933;
+}
+.c_innovation, .c_o_health
+{
+	background: #993366;
+}
+.c_resources, .c_o_physical
+{
+	background: #333399;
+}
+.c_o_einnovation
+{
+	background: #663399;
+}
+.c_o_life
+{
+	background: #336699;
+}
+
+/* Age Category Colours */
+
+.d_junior
+{
+	background: #993333;
+}
+.d_intermediate
+{
+	background:	#336699;
+}
+.d_senior
+{
+	background: #669933;
+}
+
+
