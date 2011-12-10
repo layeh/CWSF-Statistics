@@ -5,6 +5,11 @@
 	font-size: 100%;
 	font-family: sans-serif;
 }
+::selection
+{
+    background: #FCF655;
+    color: #000;
+}
 a
 {
 	outline: none;
