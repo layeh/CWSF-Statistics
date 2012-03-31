@@ -1,343 +1,357 @@
 *
 {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: sans-serif;
 }
 ::selection
 {
     background: #FCF655;
     color: #000;
 }
+::-moz-selection
+{
+    background: #FCF655;
+    color: #000;
+}
 a
 {
-	outline: none;
-	color: #000000;
-	background: #FFFFFF;
+    outline: none;
+    color: #000000;
 }
 .bold
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 .break
 {
-	width: 100%;
-	height: 10px;
-	background: #686868;
-	clear: both;
+    width: 100%;
+    height: 10px;
+    background: #686868;
+    clear: both;
 }
 .clear
 {
-	clear: both;
+    clear: both;
 }
 body
 {
-	background: #f2f2f2
+    background: #f2f2f2
 }
 #wrapper
 {
-	width: 900px;
-	margin: 0 auto 10px auto;
+    width: 900px;
+    margin: 0 auto 10px auto;
 }
 #container
 {
-	padding: 10px;
-	background: #FFFFFF;
-	z-index: 100;
+    padding: 0 10px 10px 10px;
+    background: #FFFFFF;
+    z-index: 100;
 }
 h1
 {
-	font-size: 150%;
-	float: left;
+    font-size: 150%;
+    float: left;
+    padding: 10px 0 5px 0;
 }
 h1 span
 {
-	vertical-align: top;
-	font-size: 50%;
-	font-weight: 100;
+    vertical-align: top;
+    font-size: 50%;
+    font-weight: 100;
 }
 h2
 {
-	float: right;
+    float: right;
 }
+
 table.full
 {
-	width: 100%;
+    width: 100%;
 }
 table.petit
 {
-	width: auto;
+    width: auto;
 }
 table.petit td
 {
-	padding: 0 8px;
+    padding: 0 8px;
+}
+table.spaced td
+{
+    padding: 2px 6px;
+}
+th
+{
+    text-align: left;
 }
 td
 {
-	text-align: right;
-	padding: 1px 0;
+    padding: 1px 0;
 }
-td.left
+td.right
 {
-	text-align: left;
+    text-align: right;
 }
+
 h3 select
 {
-	font-weight: bold;
-	border: 0;
+    font-weight: bold;
+    border: 0;
 }
 p, li, td
 {
-	font-size: 80%;
+    font-size: 80%;
 }
 p.center
 {
-	text-align: center;
+    text-align: center;
 }
 p.strong
 {
-	font-weight: bold;
+    font-weight: bold;
 }
 li
 {
-	padding: 2px 0;
+    padding: 2px 0;
 }
 ul, ol
 {
-	padding: 0 0 0 30px;
-	margin: 5px 0;
+    padding: 0 0 0 30px;
+    margin: 5px 0;
 }
 ul
 {
-	list-style: square;
+    list-style: square;
 }
 ol
 {
-	list-style: upper-roman;
+    list-style: upper-roman;
 }
 #content .row
 {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 .line
 {
-	background: #B5B5B5;
-	height: 1px;
+    background: #B5B5B5;
+    height: 1px;
 }
 #content .column50
 {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 #content .column33
 {
-	float: left;
-	width: 33%;
+    float: left;
+    width: 33%;
 }
 #content .column25
 {
-	float: left;
-	width: 25%;
+    float: left;
+    width: 25%;
 }
 #content .column30
 {
-	float: left;
-	width: 30%;
+    float: left;
+    width: 30%;
 }
 #content .column36
 {
-	float: left;
-	width: 36%;
+    float: left;
+    width: 36%;
 }
 #content .column14
 {
-	float: left;
-	width: 14.28%;
+    float: left;
+    width: 14.28%;
 }
 #footer
 {
-	margin: 8px auto 0 auto;
-	text-align: center;
+    margin: 8px auto 0 auto;
+    text-align: center;
 }
 #footer p
 {
-	font-size: 70%;
-	margin: 8px 0;
+    font-size: 70%;
+    margin: 8px 0;
 }
 #footer p span
 {
-	padding: 2px 4px;
-	background: #FFFFFF;
+    padding: 2px 4px;
+    background: #FFFFFF;
 }
 .bar_graph
 {
-	padding: 5px 0;
-	font-size: 70%;
+    padding: 5px 0;
+    font-size: 70%;
 }
 .bar_graph#categories > div
 {
-	display: none;
+    display: none;
 }
 .bar_graph .bar, .bar_graph span.label
 {
-	margin: 2px 0;
-	padding: 1px 0;
-	float: left;
+    margin: 2px 0;
+    padding: 1px 0;
+    float: left;
 }
 .bar_graph .bar
 {
-	color: #FFFFFF;
-	overflow: hidden;
-	white-space: nowrap;
+    color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .bar_graph .bar span
 {
-	padding: 0 4px;
-	font-size: 110%;
+    padding: 0 4px;
+    font-size: 110%;
 }
 .bar_graph span.label
 {
-	margin-left: 2px;
+    margin-left: 2px;
 }
 .medal_platinum
 {
-	background: #B5CBD1;
+    background: #B5CBD1;
 }
 .medal_gold
 {
-	background: #FCCA35;
+    background: #FCCA35;
 }
 .medal_silver
 {
-	background: #D3D3D1;
+    background: #D3D3D1;
 }
 .medal_bronze
 {
-	background: #BA9E4A;
+    background: #BA9E4A;
 }
 .column_padding
 {
-	padding: 0 5px;
+    padding: 0 5px;
 }
 .column_padding2
 {
-	padding: 0 15px;
+    padding: 0 15px;
 }
 .rank
 {
-	color: #c1c1c1;
+    color: #c1c1c1;
 }
 #winnings_category
 {
-	height: 250px;
+    height: 250px;
 }
 #gender_project, #gender_division
 {
-	height: 200px;
+    height: 200px;
 }
 .bar_secondary_label p
 {
-	padding: 3px 0 0 0;
+    padding: 3px 0 0 0;
 }
 .vertical_bar_graph
 {
-	margin: 5px 0 0 0;
+    margin: 5px 0 0 0;
 }
 .vertical_bar_graph#gender_project .bar_item
 {
-	width: 7.14%;
+    width: 7.14%;
 }
 .vertical_bar_graph#gender_division .bar_item
 {
-	width: 16.6%;
+    width: 16.6%;
 }
 .vertical_bar_graph#winnings_category .bar_item
 {
-	width: 14.2%;
+    width: 14.2%;
 }
 .vertical_bar_graph .bar_item
 {
-	float: left;
-	height: 100%;
-	text-align: center;
-	font-size: 75%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 75%;
 }
 .vertical_bar_graph .bar_item .bar
 {
-	margin: 0 2px;
+    margin: 0 2px;
 }
 .vertical_bar_graph .bar_item .bar span
 {
-	position: relative;
-	top: -14px;
-	display: block;
+    position: relative;
+    top: -14px;
+    display: block;
 }
 .inline
 {
-	display: inline;
+    display: inline;
 }
 #provincal_medals tr td div span
 {
-	display: none;
+    display: none;
 }
 #provincal_medals tr td div span:first-child
 {
-	display: inline;
+    display: inline;
 }
 
 /* Project Category Colours */
 
 .c_health, .c_o_health
 {
-	background: #C24785;
+    background: #C24785;
 }
 .c_information, .c_o_computing
 {
-	background: #336699;
+    background: #336699;
 }
 .c_innovation, .c_o_einnovation
 {
-	background: #993366;
+    background: #993366;
 }
 .c_environment, .c_o_earth
 {
-	background: #669933;
+    background: #669933;
 }
 .c_discovery, .c_o_life
 {
-	background: #993333;
+    background: #993333;
 }
 .c_energy, .c_o_biotechnology
 {
-	background: #996633;
+    background: #996633;
 }
 .c_resources, .c_o_physical
 {
-	background: #333399;
+    background: #333399;
 }
 .c_o_engineering
 {
-	background: #663399;
+    background: #663399;
 }
 .c_o_automotive
 {
-	background: #999933;
+    background: #999933;
 }
 
 /* Age Category Colours */
 
 .d_junior
 {
-	background: #993333;
+    background: #993333;
 }
 .d_intermediate
 {
-	background:	#336699;
+    background:    #336699;
 }
 .d_senior
 {
-	background: #669933;
+    background: #669933;
 }
 
 
