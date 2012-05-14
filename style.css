@@ -15,6 +15,15 @@
     background: #FCF655;
     color: #000;
 }
+noscript p
+{
+    text-align: center;
+    padding: 3px 0;
+    margin: 5px 0;
+    color: #841111;
+    font-weight: bold;
+    background: #FCFFC1
+}
 a
 {
     outline: none;
