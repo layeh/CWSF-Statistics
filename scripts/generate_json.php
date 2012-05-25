@@ -5,20 +5,25 @@ Generates a JSON file from a directory of profiles downloaded from Virtual CWSF.
 
 */
 
+$files = $argv[1];
+if($year == null)
+{
+    fprintf(STDERR, "usage: %s <files>\n", $argv[0]);
+    die;
+}
 
 
 libxml_use_internal_errors(true);
 
 $json = array();
 
-$files = glob('profiles/*.html');
+$files = glob($files);
 
 $dom = new DOMDocument();
 
 foreach($files as $file)
 {
     $project = new stdClass();
-    $json[] = $project;
     
     $dom->loadHTMLFile($file);
     
@@ -26,6 +31,13 @@ foreach($files as $file)
     
     // Project ID
     $project->id = (int) basename($file, '.html');
+    
+    // Year
+    $query = $xpath->evaluate('//h1');
+    if(sscanf($query->item(1)->textContent, "CWSF %d", $project->year) != 1)
+    {
+        continue;
+    }
     
     // Finalist name(s)
     $query = $xpath->evaluate('//h3');
@@ -44,10 +56,6 @@ foreach($files as $file)
     // Title
     $query = $xpath->evaluate('//b');
     $project->title = $query->item(0)->textContent;
-    
-    // Year
-    $query = $xpath->evaluate('//h1');
-    sscanf($query->item(1)->textContent, "CWSF %d", $project->year);
     
     // Detailed information
     {
@@ -85,6 +93,8 @@ foreach($files as $file)
                 $cities[] = $matches[3];
             }
             $cities = array_map('trim', $cities);
+            $cities = array_map('strtolower', $cities);
+            $cities = array_map('ucwords', $cities);
             
             $project->city = count($cities) == 1 && !is_array($project->finalist) ? $cities[0] : $cities;
             $project->province = $matches[2];
@@ -102,10 +112,6 @@ foreach($files as $file)
         $abstract = $query->item(0)->textContent;
         $abstract = trim($abstract);
         
-        // weird quote fix.
-        // won't be needed once the new files are saved with the proper encoding
-        $abstract = str_replace(array('l?', 'L?'), array('l\'', 'L\''), $abstract);
-        
         $project->abstract = $abstract;
     }
     
@@ -118,7 +124,7 @@ foreach($files as $file)
     {
         $table = $query->item(0);
         
-        $descriptions = $xpath->evaluate('./tr/td[1]/b', $table);
+        $descriptions = $xpath->evaluate('./tr/td[1]', $table);
         $values = $xpath->evaluate('./tr/td[2]/nobr', $table);
         
         $length = min($descriptions->length, $values->length);
@@ -128,13 +134,27 @@ foreach($files as $file)
             $award = new stdClass();
             $awards[] = $award;
             
-            $award->description = $descriptions->item($i)->textContent;
+            $description = array();
+            $children = $descriptions->item($i)->childNodes;
+            for($j = 0; $j < $children->length; $j++)
+            {
+                $child = $children->item($j)->textContent;
+                if(!empty($child))
+                {
+                    $description[] = $child;
+                }
+                
+            }
+            $award->description = $description;
+            
             $award->value = floatval(str_replace(array('$', ' '), '', $values->item($i)->textContent));
         }
     }
     
     $project->awards = $awards;
+    
+    $json[] = $project;
 }
 
-file_put_contents('projects.json', json_encode($json, JSON_PRETTY_PRINT));
+echo json_encode($json, JSON_PRETTY_PRINT);
 

@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: sans-serif;
+    line-height: 120%;
+    font-family: "Arial", sans-serif;
 }
 ::selection
 {
@@ -71,11 +72,44 @@ h1 span
     font-size: 50%;
     font-weight: 100;
 }
-h2
+
+ul#menu
 {
     float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 11px 0 0 0;
 }
-
+ul#menu li
+{
+    display: inline-block;
+    font-size: 90%;
+}
+ul#menu li a
+{
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #EEE;
+    border: solid 1px #A8A8A8;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+ul#menu li a:hover, ul#menu li.active a
+{
+    background: #848484;
+    border-color: #555;
+    color: #FFF;
+}
+ul#menu li a span
+{
+    background: #A51212;
+    color: #FFF;
+    padding: 0 3px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
 table.full
 {
     width: 100%;
@@ -104,7 +138,10 @@ td.right
 {
     text-align: right;
 }
-
+td.top
+{
+    vertical-align: top;
+}
 h3 select
 {
     font-weight: bold;
@@ -148,32 +185,32 @@ ol
     background: #B5B5B5;
     height: 1px;
 }
-#content .column50
+.column50
 {
     float: left;
     width: 50%;
 }
-#content .column33
+.column33
 {
     float: left;
     width: 33%;
 }
-#content .column25
+.column25
 {
     float: left;
     width: 25%;
 }
-#content .column30
+.column30
 {
     float: left;
     width: 30%;
 }
-#content .column36
+.column36
 {
     float: left;
     width: 36%;
 }
-#content .column14
+.column14
 {
     float: left;
     width: 14.28%;
@@ -196,7 +233,7 @@ ol
 .bar_graph
 {
     padding: 5px 0;
-    font-size: 70%;
+    font-size: 75%;
 }
 .bar_graph#categories > div
 {
@@ -205,7 +242,7 @@ ol
 .bar_graph .bar, .bar_graph span.label
 {
     margin: 2px 0;
-    padding: 1px 0;
+    padding: 3px 0;
     float: left;
 }
 .bar_graph .bar
@@ -221,7 +258,7 @@ ol
 }
 .bar_graph span.label
 {
-    margin-left: 2px;
+    margin-left: 6px;
 }
 .medal_platinum
 {
@@ -255,7 +292,7 @@ ol
 {
     height: 250px;
 }
-#gender_project, #gender_division
+#gender_category, #winnings_gender_category, #award_percentage
 {
     height: 200px;
 }
@@ -265,15 +302,14 @@ ol
 }
 .vertical_bar_graph
 {
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
 }
-.vertical_bar_graph#gender_project .bar_item
+
+.vertical_bar_graph#gender_category .bar_item,
+.vertical_bar_graph#winnings_gender_category .bar_item,
+.vertical_bar_graph#award_percentage .bar_item
 {
     width: 7.14%;
-}
-.vertical_bar_graph#gender_division .bar_item
-{
-    width: 16.6%;
 }
 .vertical_bar_graph#winnings_category .bar_item
 {
@@ -286,15 +322,21 @@ ol
     text-align: center;
     font-size: 75%;
 }
+.vertical_bar_graph .bar_item .null
+{
+    background: #FFF;
+    height: 100%;
+}
 .vertical_bar_graph .bar_item .bar
 {
     margin: 0 2px;
+    height: 95%;
 }
 .vertical_bar_graph .bar_item .bar span
 {
     position: relative;
     top: -14px;
-    display: block;
+    display: none;
 }
 .inline
 {
@@ -307,6 +349,32 @@ ol
 #provincal_medals tr td div span:first-child
 {
     display: inline;
+}
+
+.bar_graph_swatch
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-align: bottom;
+}
+
+/* Year Colors */
+.y_1
+{
+    background: #993333;
+}
+.y_2
+{
+    background: #996633;
+}
+.y_3
+{
+    background: #669933;
+}
+.y_4
+{
+    background: #C24785;
 }
 
 /* Project Category Colours */
@@ -363,4 +431,84 @@ ol
     background: #669933;
 }
 
+/* Achievements */
 
+#details
+{
+    margin: 10px 0 0 0;
+    float: left;
+    width: 500px;
+}
+#details h2
+{
+    font-size: 120%;
+}
+
+#details #list
+{
+    margin: 4px 0;
+    height: 430px;
+    overflow: auto;
+}
+
+
+#details #list a
+{
+    float: left;
+    margin: 2px 5px;
+    text-decoration: none;
+}
+#details #controls span
+{
+    float: left;
+    text-align: center;
+}
+#details #controls .button
+{
+    width: 10%;
+    cursor: pointer;
+    background: #F2F2F2;
+}
+#details #controls .button:hover
+{
+    background: #D3D3D3
+}
+#details #controls .label
+{
+    width: 80%;
+}
+
+
+#achievements
+{
+    margin: 10px 0 0 0;
+    height: 500px;
+    width: 350px;
+    overflow: auto;
+    float: right;
+}
+.achievement
+{
+    background: #EEE;
+    padding: 5px 10px;
+    margin: 3px 0;
+}
+#achievements .achievement
+{
+    border-left: solid 6px #FFF;
+    cursor: pointer;
+}
+#achievements .active
+{
+    border-left-color: #B2B2B2;
+}
+.achievement .title
+{
+    font-weight: bold;
+    display: block;
+    padding: 0 0 2px 0;
+}
+.achievement p
+{
+    
+}
