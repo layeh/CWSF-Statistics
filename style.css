@@ -351,14 +351,6 @@ ol
     display: inline;
 }
 
-.bar_graph_swatch
-{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    text-align: bottom;
-}
-
 /* Year Colors */
 .y_1
 {
