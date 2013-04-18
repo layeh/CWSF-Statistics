@@ -1,23 +1,15 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    line-height: 120%;
-    font-family: "Arial", sans-serif;
+body, select, option {
+    font-family: 'Source Sans Pro', sans-serif;
 }
-::selection
-{
+::selection {
     background: #FCF655;
     color: #000;
 }
-::-moz-selection
-{
+::-moz-selection {
     background: #FCF655;
     color: #000;
 }
-noscript p
-{
+noscript p {
     text-align: center;
     padding: 3px 0;
     margin: 5px 0;
@@ -25,403 +17,258 @@ noscript p
     font-weight: bold;
     background: #FCFFC1
 }
-a
-{
+a {
     outline: none;
     color: #000000;
 }
-.bold
-{
+.bold {
     font-weight: bold;
 }
-.break
-{
+.break {
     width: 100%;
     height: 10px;
     background: #686868;
     clear: both;
 }
-.clear
-{
+.clear {
     clear: both;
 }
-body
-{
+body {
     background: #f2f2f2
 }
-#wrapper
-{
+#wrapper {
     width: 900px;
     margin: 0 auto 10px auto;
 }
-#container
-{
+#container {
     padding: 0 10px 10px 10px;
     background: #FFFFFF;
     z-index: 100;
+    -moz-box-shadow: 0 0 20px #848484;
+    box-shadow: 0 0 20px #848484;
 }
-h1
-{
+h1 {
     font-size: 150%;
     float: left;
     padding: 10px 0 5px 0;
+    font-weight: bold;
 }
-h1 span
-{
+h1 span {
     vertical-align: top;
-    font-size: 50%;
+    font-size: 60%;
     font-weight: 100;
 }
-
-ul#menu
-{
-    float: right;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding: 11px 0 0 0;
-}
-ul#menu li
-{
-    display: inline-block;
-    font-size: 90%;
-}
-ul#menu li a
-{
-    text-decoration: none;
-    padding: 2px 5px;
-    background: #EEE;
-    border: solid 1px #A8A8A8;
-    border-radius: 8px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-ul#menu li a:hover, ul#menu li.active a
-{
-    background: #848484;
-    border-color: #555;
-    color: #FFF;
-}
-ul#menu li a span
-{
-    background: #A51212;
-    color: #FFF;
-    padding: 0 3px;
-    text-transform: uppercase;
-    border-radius: 4px;
-}
-table.full
-{
+table.full {
     width: 100%;
 }
-table.petit
-{
-    width: auto;
+table.spaced td {
+    padding: 3px 6px;
 }
-table.petit td
-{
-    padding: 0 8px;
-}
-table.spaced td
-{
-    padding: 2px 6px;
-}
-th
-{
+th {
     text-align: left;
 }
-td
-{
-    padding: 1px 0;
+td {
+    padding: 3px 0;
+    font-size: 90%;
 }
-td.right
-{
+td.right {
     text-align: right;
 }
-td.top
-{
+td.top {
     vertical-align: top;
 }
 #all-fairs tbody tr td:first-child::before {
     content: '\2022\20'; /* &bull;&nbsp; */
 }
-h3 select
-{
+h3, #all-fairs thead tr th {
+    font-size: 120%;
+}
+h3 select {
     font-weight: bold;
     border: 0;
 }
-p, li, td
-{
-    font-size: 80%;
-}
-p.center
-{
+p.center {
     text-align: center;
 }
-p.strong
-{
-    font-weight: bold;
-}
-li
-{
-    padding: 2px 0;
-}
-ul, ol
-{
-    padding: 0 0 0 30px;
-    margin: 5px 0;
-}
-ul
-{
-    list-style: square;
-}
-ol
-{
-    list-style: upper-roman;
-}
-#content .row
-{
+#content .row {
     margin: 10px 0;
 }
-.line
-{
+.line {
     background: #B5B5B5;
     height: 1px;
 }
-.column50
-{
+.column50 {
     float: left;
     width: 50%;
 }
-.column33
-{
+.column33 {
     float: left;
     width: 33%;
 }
-.column25
-{
+.column25 {
     float: left;
     width: 25%;
 }
-.column30
-{
+.column30 {
     float: left;
     width: 30%;
 }
-.column36
-{
+.column36 {
     float: left;
     width: 36%;
 }
-.column14
-{
+.column14 {
     float: left;
     width: 14.28%;
 }
-#footer
-{
-    margin: 8px auto 0 auto;
+#footer {
+    margin: 20px auto 0 auto;
     text-align: center;
 }
-#footer p
-{
-    font-size: 70%;
+#footer p {
+    font-size: 80%;
     margin: 8px 0;
 }
-#footer p span
-{
+#footer p::before {
+    content: '\B7\20'; /* &middot;&nbsp; */
+}
+#footer p::after {
+    content: '\20\B7'; /* &nbsp;&middot; */
+}
+#footer p span {
     padding: 2px 4px;
     background: #FFFFFF;
 }
-.bar_graph
-{
+.bar_graph {
     padding: 5px 0;
-    font-size: 75%;
+    font-size: 80%;
 }
-.bar_graph#categories > div
-{
+.bar_graph#categories > div {
     display: none;
 }
-.bar_graph .bar, .bar_graph span.label
-{
+.bar_graph .bar, .bar_graph span.label {
     margin: 2px 0;
     padding: 3px 0;
     float: left;
 }
-.bar_graph .bar
-{
+.bar_graph .bar {
     color: #FFFFFF;
     overflow: hidden;
     white-space: nowrap;
 }
-.bar_graph .bar span
-{
+.bar_graph .bar span {
     padding: 0 4px;
     font-size: 110%;
 }
-.bar_graph span.label
-{
+.bar_graph span.label {
     margin-left: 6px;
 }
-.medal_platinum
-{
+#provincal_medals .medal {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+}
+#provincal_medals .platinum {
     background: #B5CBD1;
 }
-.medal_gold
-{
+#provincal_medals .gold {
     background: #FCCA35;
 }
-.medal_silver
-{
+#provincal_medals .silver {
     background: #D3D3D1;
 }
-.medal_bronze
-{
+#provincal_medals .bronze {
     background: #BA9E4A;
 }
-.column_padding
-{
+.column_padding {
     padding: 0 5px;
 }
-.column_padding2
-{
+.column_padding2 {
     padding: 0 15px;
 }
-.rank
-{
+.rank {
     color: #c1c1c1;
 }
-#winnings_category
-{
+#winnings_category {
     height: 250px;
 }
-#gender_category, #winnings_gender_category, #award_percentage
-{
+#gender_category, #winnings_gender_category, #award_percentage {
     height: 200px;
 }
-.bar_secondary_label p
-{
+.bar_secondary_label p {
     padding: 3px 0 0 0;
 }
-.vertical_bar_graph
-{
+.vertical_bar_graph {
     margin: 15px 0 0 0;
 }
 
 .vertical_bar_graph#gender_category .bar_item,
 .vertical_bar_graph#winnings_gender_category .bar_item,
-.vertical_bar_graph#award_percentage .bar_item
-{
+.vertical_bar_graph#award_percentage .bar_item {
     width: 7.14%;
 }
-.vertical_bar_graph#winnings_category .bar_item
-{
+.vertical_bar_graph#winnings_category .bar_item {
     width: 14.2%;
 }
-.vertical_bar_graph .bar_item
-{
+.vertical_bar_graph .bar_item {
     float: left;
     height: 100%;
     text-align: center;
-    font-size: 75%;
+    font-size: 80%;
 }
-.vertical_bar_graph .bar_item .null
-{
+.vertical_bar_graph .bar_item .null {
     background: #FFF;
     height: 100%;
 }
-.vertical_bar_graph .bar_item .bar
-{
+.vertical_bar_graph .bar_item .bar {
     margin: 0 2px;
     height: 95%;
 }
-.vertical_bar_graph .bar_item .bar span
-{
+.vertical_bar_graph .bar_item .bar span {
     position: relative;
     top: -14px;
     display: none;
 }
-.inline
-{
-    display: inline;
-}
-#provincal_medals tr td div span
-{
-    display: none;
-}
-#provincal_medals tr td div span:first-child
-{
-    display: inline;
-}
-
-/* Year Colors */
-.y_1
-{
-    background: #993333;
-}
-.y_2
-{
-    background: #996633;
-}
-.y_3
-{
-    background: #669933;
-}
-.y_4
-{
-    background: #C24785;
-}
 
 /* Project Category Colours */
 
-.c_health, .c_o_health
-{
+.c_health, .c_o_health {
     background: #C24785;
 }
-.c_information, .c_o_computing
-{
+.c_information, .c_o_computing {
     background: #336699;
 }
-.c_innovation, .c_o_einnovation
-{
+.c_innovation, .c_o_einnovation {
     background: #993366;
 }
-.c_environment, .c_o_earth
-{
+.c_environment, .c_o_earth {
     background: #669933;
 }
-.c_discovery, .c_o_life
-{
+.c_discovery, .c_o_life {
     background: #993333;
 }
-.c_energy, .c_o_biotechnology
-{
+.c_energy, .c_o_biotechnology {
     background: #996633;
 }
-.c_resources, .c_o_physical
-{
+.c_resources, .c_o_physical {
     background: #333399;
 }
-.c_o_engineering
-{
+.c_o_engineering {
     background: #663399;
 }
-.c_o_automotive
-{
+.c_o_automotive {
     background: #999933;
 }
 
 /* Age Category Colours */
 
-.d_junior
-{
+.d_junior {
     background: #993333;
 }
-.d_intermediate
-{
+.d_intermediate {
     background:    #336699;
 }
-.d_senior
-{
+.d_senior {
     background: #669933;
 }
