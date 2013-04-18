@@ -142,6 +142,9 @@ td.top
 {
     vertical-align: top;
 }
+#all-fairs tbody tr td:first-child::before {
+    content: '\2022\20'; /* &bull;&nbsp; */
+}
 h3 select
 {
     font-weight: bold;
@@ -421,86 +424,4 @@ ol
 .d_senior
 {
     background: #669933;
-}
-
-/* Achievements */
-
-#details
-{
-    margin: 10px 0 0 0;
-    float: left;
-    width: 500px;
-}
-#details h2
-{
-    font-size: 120%;
-}
-
-#details #list
-{
-    margin: 4px 0;
-    height: 430px;
-    overflow: auto;
-}
-
-
-#details #list a
-{
-    float: left;
-    margin: 2px 5px;
-    text-decoration: none;
-}
-#details #controls span
-{
-    float: left;
-    text-align: center;
-}
-#details #controls .button
-{
-    width: 10%;
-    cursor: pointer;
-    background: #F2F2F2;
-}
-#details #controls .button:hover
-{
-    background: #D3D3D3
-}
-#details #controls .label
-{
-    width: 80%;
-}
-
-
-#achievements
-{
-    margin: 10px 0 0 0;
-    height: 500px;
-    width: 350px;
-    overflow: auto;
-    float: right;
-}
-.achievement
-{
-    background: #EEE;
-    padding: 5px 10px;
-    margin: 3px 0;
-}
-#achievements .achievement
-{
-    border-left: solid 6px #FFF;
-    cursor: pointer;
-}
-#achievements .active
-{
-    border-left-color: #B2B2B2;
-}
-.achievement .title
-{
-    font-weight: bold;
-    display: block;
-    padding: 0 0 2px 0;
-}
-.achievement p
-{
-    
 }
