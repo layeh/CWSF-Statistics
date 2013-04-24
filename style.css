@@ -168,6 +168,7 @@ p.center {
     width: 10px;
     height: 10px;
     line-height: 10px;
+    border-radius: 5px;
 }
 #provincal_medals .platinum {
     background: #B5CBD1;
