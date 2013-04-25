@@ -1,5 +1,5 @@
 body, select, option {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'Tahoma', 'Arial', sans-serif;
 }
 ::selection {
     background: #FCF655;
