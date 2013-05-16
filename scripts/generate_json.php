@@ -5,9 +5,8 @@ Generates a JSON file from a directory of profiles downloaded from Virtual CWSF.
 
 */
 
-$files = $argv[1];
-if($year == null)
-{
+$files = isset($argv[1]) ? $argv[1] : null;
+if($files == null) {
     fprintf(STDERR, "usage: %s <files>\n", $argv[0]);
     die;
 }
@@ -21,11 +20,11 @@ $files = glob($files);
 
 $dom = new DOMDocument();
 
-foreach($files as $file)
-{
+foreach($files as $file) {
     $project = new stdClass();
-    
-    $dom->loadHTMLFile($file);
+
+    $file_data = utf8_encode(file_get_contents($file));
+    $dom->loadHTML($file_data);
     
     $xpath = new DOMXPath($dom);
     
