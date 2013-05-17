@@ -5,7 +5,7 @@ TODO:  calculate # of years they've attended
 
 */
 
-$projects = json_decode(file_get_contents('projects.json'));
+$projects = json_decode(file_get_contents($argv[1]));
 
 $students = array();
 

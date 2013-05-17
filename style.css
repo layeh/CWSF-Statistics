@@ -21,6 +21,12 @@ a {
     outline: none;
     color: #000000;
 }
+
+abbr {
+    cursor: help;
+    border-bottom: dotted 1px #000;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -37,7 +43,7 @@ body {
     background: #f2f2f2
 }
 #wrapper {
-    width: 900px;
+    width: 920px;
     margin: 0 auto 10px auto;
 }
 #container {
@@ -91,11 +97,11 @@ p.center {
     text-align: center;
 }
 #content .row {
-    margin: 10px 0;
+    padding: 10px 0;
+    border-top: solid 1px #B5B5B5;
 }
-.line {
-    background: #B5B5B5;
-    height: 1px;
+#content .row:first-of-type {
+    border-top: 5px;
 }
 .column50 {
     float: left;
@@ -163,23 +169,23 @@ p.center {
 .bar_graph span.label {
     margin-left: 6px;
 }
-#provincal_medals .medal {
+#provincial_medals .medal {
     display: inline-block;
     width: 10px;
     height: 10px;
     line-height: 10px;
     border-radius: 5px;
 }
-#provincal_medals .platinum {
+#provincial_medals .platinum {
     background: #B5CBD1;
 }
-#provincal_medals .gold {
+#provincial_medals .gold {
     background: #FCCA35;
 }
-#provincal_medals .silver {
+#provincial_medals .silver {
     background: #D3D3D1;
 }
-#provincal_medals .bronze {
+#provincial_medals .bronze {
     background: #BA9E4A;
 }
 .column_padding {
