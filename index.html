@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -587,89 +587,124 @@
                         <div class="clear"></div>
                     </div>
                     <div class="row">
-                        <h3>Average Winnings per Category
+                        <h3><abbr title="Excludes entrance scholarships awards and non-placing finalists">Winnings</abbr> Distribution by Category
                             (<select id="average_winnings_select">
                                 <option value="2013" selected>2013</option>
                                 <option value="2012">2012</option>
                                 <option value="2011">2011</option>
                             </select>)
                         </h3>
-                        <div class="vertical_bar_graph" id="winnings_category">
-                            <div class="bar_item">
-                                <div class="bar c_discovery">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$1 578.12</span>
-                                    <span class="year_2012">$2 189.73</span>
-                                    <span class="year_2011">$1 807.58</span>
+                        <div class="box_plot" id="winnings_category">
+                            <div class="axis">
+                                <span class="label">&nbsp;</span>
+                                <div class="view">
+                                    <div data-all="100">&nbsp;</div>
+                                    <div data-all="900" class="active">$100</div>
+                                    <div data-all="1500" class="active">$1 000</div>
+                                    <div data-all="2500" class="active">$2 500</div>
+                                    <div data-all="2500" class="active">$5 000</div>
+                                    <div data-all="2500" class="active">$7 500</div>
                                 </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Discovery</span>
-                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="bar_item">
-                                <div class="bar c_energy">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$1 844.68</span>
-                                    <span class="year_2012">$2 052.70</span>
-                                    <span class="year_2011">$955.88</span>
+                            <div class="mover">
+                                <div class="entry">
+                                    <span class="label"><span>Discovery</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_discovery" data-2013="0" data-2012="0" data-2011="0"></div>
+                                        <div class="third c_discovery" data-2013="850" data-2012="1200" data-2011="2800" data-2011="4200"></div>
+                                        <div class="fourth" data-2013="1275" data-2012="1800" data-2011="4200">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Energy</span>
+                                <div class="entry">
+                                    <span class="label"><span>Energy</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_energy" data-2013="0" data-2012="0" data-2011="500"></div>
+                                        <div class="third c_energy" data-2013="500" data-2012="625" data-2011="900"></div>
+                                        <div class="fourth" data-2013="750" data-2012="937" data-2011="2100">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                            </div>
-                            <div class="bar_item">
-                                <div class="bar c_environment">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$1 607.26</span>
-                                    <span class="year_2012">$1 785.62</span>
-                                    <span class="year_2011">$2 102.00</span>
+                                <div class="entry">
+                                    <span class="label"><span>Environment</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_environment" data-2013="100" data-2012="400" data-2011="0"></div>
+                                        <div class="third c_environment" data-2013="920" data-2012="1425" data-2011="1900"></div>
+                                        <div class="fourth" data-2013="1537" data-2012="2737" data-2011="2850">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Environment</span>
+                                <div class="entry">
+                                    <span class="label"><span>Health</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_health" data-2013="200" data-2012="400" data-2011="950"></div>
+                                        <div class="third c_health" data-2013="2000" data-2012="750" data-2011="2450"></div>
+                                        <div class="fourth" data-2013="3300" data-2012="1725" data-2011="5100">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                            </div>
-                            <div class="bar_item">
-                                <div class="bar c_health">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$2 945.88</span>
-                                    <span class="year_2012">$2 213.21</span>
-                                    <span class="year_2011">$2 392.08</span>
+                                <div class="entry">
+                                    <span class="label"><span>Information</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_information" data-2013="200" data-2012="0" data-2011="950"></div>
+                                        <div class="third c_information" data-2013="3150" data-2012="500" data-2011="1200"></div>
+                                        <div class="fourth" data-2013="5025" data-2012="750" data-2011="3225">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Health</span>
+                                <div class="entry">
+                                    <span class="label"><span>Innovation</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="300" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_innovation" data-2013="0" data-2012="400" data-2011="1200"></div>
+                                        <div class="third c_innovation" data-2013="600" data-2012="800" data-2011="2200"></div>
+                                        <div class="fourth" data-2013="900" data-2012="1800" data-2011="5100">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                            </div>
-                            <div class="bar_item">
-                                <div class="bar c_information">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$6 757.14</span>
-                                    <span class="year_2012">$1 186.67</span>
-                                    <span class="year_2011">$1 716.67</span>
-                                </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Information</span>
-                                </div>
-                            </div>
-                            <div class="bar_item">
-                                <div class="bar c_innovation">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$1 742.11</span>
-                                    <span class="year_2012">$3 057.47</span>
-                                    <span class="year_2011">$3 560.00</span>
-                                </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Innovation</span>
-                                </div>
-                            </div>
-                            <div class="bar_item">
-                                <div class="bar c_resources">
-                                    <div class="null"></div>
-                                    <span class="year_2013">$1 906.52</span>
-                                    <span class="year_2012">$5 195.83</span>
-                                    <span class="year_2011">$3 696.43</span>
-                                </div>
-                                <div class="label" style="height: 5%;">
-                                    <span>Resources</span>
+                                <div class="entry">
+                                    <span class="label"><span>Resources</span></span>
+                                    <div class="view">
+                                        <div class="first" data-2013="100" data-2012="1450" data-2011="1300">
+                                            <div class="inner"></div>
+                                        </div>
+                                        <div class="second c_resources" data-2013="0" data-2012="1250" data-2011="0"></div>
+                                        <div class="third c_resources" data-2013="575" data-2012="0" data-2011="3400"></div>
+                                        <div class="fourth" data-2013="862" data-2012="1875" data-2011="5100">
+                                            <div class="inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
                             </div>
                         </div>
@@ -1215,7 +1250,7 @@
                 </div>
             </div>
             <div id="footer">
-                <p><span>Last updated: May 17, 2013</span></p>
+                <p><span>Last updated: May 18, 2013</span></p>
                 <p><span>Data obtained from <a href="http://apps.ysf-fsj.ca/virtualcwsf/" target="_blank">Virtual CWSF</a> and <a href="http://ysf.ca/" target="_blank">YSF.ca</a></span></p>
                 <p><span>The data represented above may not be fully accurate and should only be used as an overview</span></p>
                 <p><span><a href="mailto:tim.cooper@layeh.com">Comments or Feedback</a> &times; <a href="http://github.com/layeh/cwsf-statistics">github</a></span></p>
@@ -1223,5 +1258,5 @@
         </div>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="cwsf_stats.js"></script>
-    </body> 
-</html> 
+    </body>
+</html>

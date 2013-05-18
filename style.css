@@ -197,9 +197,6 @@ p.center {
 .rank {
     color: #c1c1c1;
 }
-#winnings_category {
-    height: 250px;
-}
 #gender_category, #winnings_gender_category, #award_percentage {
     height: 200px;
 }
@@ -266,6 +263,89 @@ p.center {
 }
 .c_o_automotive {
     background: #999933;
+}
+
+/* Box plot */
+
+.box_plot .mover {
+    position: relative;
+    margin-top: -300px;
+    margin-bottom: 25px;
+}
+.box_plot .entry, .box_plot .axis {
+    clear: both;
+}
+.box_plot .entry {
+    margin: 7px 0 0 0;
+}
+.box_plot .axis {
+    font-size: 90%;
+    padding-bottom: 300px;
+}
+.box_plot .axis .view {
+    position: relative;
+}
+.box_plot .axis .view .active {
+    position: absolute;
+    height: 100%;
+    border-left: solid 1px #989898;
+    padding-top: 320px;
+}
+.box_plot .label {
+    float: left;
+    width: 100px;
+}
+.box_plot .entry .label {
+    height: 35px;
+}
+.box_plot .entry .view, .box_plot .axis .view {
+    width: 800px;
+    float: left;
+}
+.box_plot .entry .view {
+    height: 35px;
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+}
+.box_plot .entry .view > div, .box_plot .axis .view > div {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box_plot .entry .view > div {
+    height: 35px;
+}
+.box_plot .entry .first, .box_plot .entry .second, .box_plot .entry .third,
+.box_plot .entry .fourth, .box_plot .entry .view .inner {
+    border: solid 1px #424242;
+    cursor: help;
+}
+.box_plot .entry .first:hover, .box_plot .entry .first:hover div, .box_plot .entry .second:hover,
+.box_plot .entry .third:hover, .box_plot .entry .fourth:hover, .box_plot .entry .fourth:hover div {
+    border-color: #FF0000;
+    border-style: dotted;
+    outline: solid 2px #FF0000;
+    opacity: 0.8;
+}
+
+.box_plot .entry .first, .box_plot .entry .fourth {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.box_plot .entry .first {
+    border-right: 0;
+}
+
+.box_plot .entry .fourth {
+    border-left: 0;
+}
+.box_plot .entry .view .inner {
+    margin-top: 17px;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 /* Age Category Colours */

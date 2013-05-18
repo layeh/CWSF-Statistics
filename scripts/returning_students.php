@@ -4,15 +4,17 @@
 Calculates what year the student is in.
 
 */
-$year = $argv[1];
-if($year == null)
-{
-    fprintf(STDERR, "usage: %s <year>\n", $argv[0]);
+$year = isset($argv[1]) ? $argv[1] : null;
+$json_file = isset($argv[2]) ? $argv[2] : null;
+
+if($year == null || $json_file == null) {
+    fprintf(STDERR, "usage: %s <year> <json>\n", $argv[0]);
     die;
 }
+
 $year = (int) $year;
 
-$projects = json_decode(file_get_contents('projects.json'));
+$projects = json_decode(file_get_contents($argv[2]));
 
 $students = array();
 

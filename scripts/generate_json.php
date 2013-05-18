@@ -69,6 +69,9 @@ foreach($files as $file) {
             $division = substr($division, 0, $pos);
             $division = trim($division);
         }
+        if ($division == 'International') {
+            continue;
+        }
         $project->division = $division;
         
         // Category
