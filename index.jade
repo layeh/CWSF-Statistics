@@ -59,7 +59,7 @@ html
                   .enter()
                   .append('tr')
                   .each(function(d) {
-                    if (!(d.winner.name instanceof Array)) {
+                    if (d.winner && !(d.winner.name instanceof Array)) {
                       d.winner.name = [d.winner.name];
                     }
                   });
@@ -81,6 +81,10 @@ html
                   });
                 row.append('td').each(function(d) {
                   var node = d3.select(this);
+                  if (!d.winner) {
+                    node.append('span').text('TBA');
+                    return;
+                  }
                   d.winner.name.forEach(function(name, i) {
                     if (i > 0) {
                       node.append('br');
@@ -96,6 +100,9 @@ html
                   });
                 });
                 row.append('td').text(function(d) {
+                  if (typeof(d.total_prizes) === 'undefined') {
+                    return 'TBA';
+                  }
                   return '$' + intformat(d.total_prizes);
                 });
               });

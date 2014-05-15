@@ -1,5 +1,13 @@
 [
   {
+    "year": 2014,
+    "host": {
+      "name": "University of Windsor",
+      "url": "http://www.uwindsor.ca/",
+      "location": "Windsor, ON"
+    }
+  },
+  {
     "year": 2013,
     "host": {
       "name": "University of Lethbridge",
