@@ -5,7 +5,6 @@ This project provides a graphically represented statistics about the Canada Wide
 ## Building
 
 1. Ensure the following programs are installed (both can be installed via [npm](https://www.npmjs.org/))
-
     - [Bower](http://bower.io/)
     - [Jade](https://github.com/visionmedia/jade)
 
