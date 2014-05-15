@@ -73,7 +73,7 @@ html
                     var base_url = 'http://apps.ysf-fsj.ca/virtualcwsf/projectdetails.php?id=';
                     node.append('a')
                       .text(name)
-                      .attr('title', d.winner.project.title)
+                      .attr('title', d.winner.project.name)
                       .attr('href', base_url + d.winner.project.id)
                       .attr('target', '_blank');
                     node.append('span')
