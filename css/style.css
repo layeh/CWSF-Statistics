@@ -1,0 +1,345 @@
+body, select, option, td, th, h2, h3, .font-override, svg {
+  font-family: 'Source Sans Pro', 'Tahoma', 'Arial', sans-serif;
+}
+
+body {
+  background: #F2F2F2;
+}
+
+a {
+  color: #001E9C;
+}
+
+a:visited {
+  color: #6A126A;
+}
+
+abbr {
+  cursor: help;
+}
+
+/*
+ * Top bar
+ */
+#bar-top h1 {
+  padding: 0;
+  font-size: 110%;
+  margin: 0 auto;
+  max-width: 1024px;
+  display: block;
+}
+
+#bar-top h1 a {
+  color: #616161;
+}
+
+#bar-top h1 a:hover {
+  color: #25506B;
+}
+
+#bar-top h1 a span {
+  vertical-align: super;
+  font-size: 75%;
+  font-weight: normal;
+}
+
+#bar-top h1 a:hover span {
+  color: #616161;
+}
+
+/*
+ * Sections
+ */
+section, footer {
+  margin: 10px auto;
+  padding: 0 10px;
+  max-width: 1024px;
+}
+
+h2 {
+  margin: .2em 0;
+}
+
+h3 {
+  margin: .2em 0 .1em 0;
+  min-height: 1.5em;
+}
+
+h3 select {
+  cursor: pointer;
+}
+
+/*
+ * Fair history
+ */
+#fair-history table {
+  width: 100%;
+  background: #FFF;
+}
+
+#fair-history table tr td, #fair-history table tr th {
+  padding: .3em;
+}
+
+#fair-history table tbody tr td:nth-child(1)::before {
+  content: '•';
+  padding: 0 4px 0 0;
+  opacity: 0.5;
+}
+
+#fair-history table tbody tr td:nth-child(2) {
+  text-align: right;
+}
+
+/*
+ * Ranks
+ */
+#ranks table {
+  width: 100%;
+  background: #FFF;
+  font-size: 90%;
+}
+
+#ranks table tr td {
+  padding: .3em;
+}
+
+#ranks table tr td:nth-child(1) {
+  opacity: 0.6;
+}
+
+#largest-personal-winnings table tr td:nth-child(3) {
+  text-align: right;
+}
+
+#provincial-averages table tr td:nth-child(3) {
+  text-align: right;
+}
+
+#provincial-medals table tr td:nth-child(3),
+#provincial-medals table tr td:nth-child(4),
+#provincial-medals table tr td:nth-child(5),
+#provincial-medals table tr td:nth-child(6)  {
+  white-space: nowrap;
+  text-align: right;
+}
+
+#provincial-medals span.medal {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 5px;
+}
+
+#provincial-medals .platinum {
+    background: #B5CBD1;
+}
+
+#provincial-medals .gold {
+    background: #FCCA35;
+}
+
+#provincial-medals .silver {
+    background: #D3D3D1;
+}
+
+#provincial-medals .bronze {
+    background: #BA9E4A;
+}
+
+/*
+ * Age Distribution by Year
+ */
+#age-distribution-by-year .view > div {
+  display: table-row;
+}
+
+#age-distribution-by-year .view > div {
+  display: table-row;
+}
+
+#age-distribution-by-year .view > div > div {
+  display: table-cell;
+  padding: 2px 0;
+}
+
+#age-distribution-by-year .view > div > div:first-child {
+  width: 100%;
+}
+
+#age-distribution-by-year .view > div > div:last-child {
+  white-space: nowrap;
+}
+
+#age-distribution-by-year .view > div > div:first-child > div {
+  display: inline-block;
+}
+
+#age-distribution-by-year .view > div > div:first-child > div > span {
+  color: #FFF;
+  padding: 3px;
+  display: inline-block;
+}
+
+#age-distribution-by-year .view > div > div:first-child > div:nth-child(1) {
+  background: #993333;
+}
+
+#age-distribution-by-year .view > div > div:first-child > div:nth-child(2) {
+  background: #336699;
+}
+
+#age-distribution-by-year .view > div > div:first-child > div:nth-child(3) {
+  background: #669933;
+}
+
+#age-distribution-by-year .view > div > div:last-child > span {
+  font-weight: bold;
+  padding: 3px;
+}
+
+#age-distribution-by-year .view > div > div:last-child > span > span {
+  font-weight: normal;
+}
+
+/*
+ * Project categories
+ */
+#project-categories-by-year .view table {
+  background: #FFF;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#project-categories-by-year .view table tr:first-child th,
+#project-categories-by-year .view table td {
+  text-align: right;
+}
+
+#project-categories-by-year .view table th:first-child {
+  text-align: left;
+}
+
+#project-categories-by-year .view table td span {
+  padding: 0 0 0 5px;
+}
+
+#project-categories-by-year .view table td span.oi {
+  font-size: 75%;
+}
+
+#project-categories-by-year .view table td span.oi[data-glyph='arrow-thick-bottom'] {
+  color: #E6000F;
+}
+
+#project-categories-by-year .view table td span.oi[data-glyph='arrow-thick-top'] {
+  color: #33C212;
+}
+
+#project-categories-by-year .view table td span.oi[data-glyph='minus'] {
+  color: #C27012;
+}
+
+/*
+ * Graph views
+ */
+#gender-by-project-category .view,
+#winnings-by-project-category-gender .view,
+#award-percentage-by-project-category-gender .view {
+  height: 275px;
+}
+
+/*
+ * SVG styles
+ */
+svg {
+  background: #FFF;
+}
+
+svg .axis path {
+  stroke-linecap: butt;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  fill: none;
+  stroke: #313131;
+}
+
+svg text.group {
+  fill: #FFF;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.view .discovery,
+.view.categories svg .layer:nth-child(1) {
+  fill: #993333;
+}
+
+.view .energy,
+.view.categories svg .layer:nth-child(2) {
+  fill: #996633;
+}
+
+.view .environment,
+.view.categories svg .layer:nth-child(3) {
+  fill: #669933;
+}
+
+.view .health,
+.view.categories svg .layer:nth-child(4) {
+  fill: #C24785;
+}
+
+.view .information,
+.view.categories svg .layer:nth-child(5) {
+  fill: #336699;
+}
+
+.view .innovation,
+.view.categories svg .layer:nth-child(6) {
+  fill: #7E166A;
+}
+
+.view .resources,
+.view.categories svg .layer:nth-child(7) {
+  fill: #333399;
+}
+
+/*
+ * Footer
+ */
+footer {
+  opacity: 0.5;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 90%;
+}
+
+footer p::before {
+  content: '· ';
+}
+
+footer p::after {
+  content: ' ·';
+}
+
+footer p span {
+  background: #FFF;
+  padding: 0 3px;
+}
+
+footer a.icon {
+  color: #000;
+}
+
+footer a.icon:hover {
+  color: #393939;
+}

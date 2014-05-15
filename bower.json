@@ -1,0 +1,11 @@
+{
+  "name": "CWSF-Statistics",
+  "version": "0.0.1",
+  "dependencies": {
+    "pure": "0.4.2",
+    "d3": "3.4.6",
+    "open-iconic": "1.1.0",
+    "jquery": "2.1.1",
+    "epoch": "git://github.com/bontibon/epoch.git#0b0c08d0ca65d72b1bf2b0907df671598fad8d82"
+  }
+}

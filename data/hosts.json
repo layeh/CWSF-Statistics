@@ -1,0 +1,155 @@
+[
+  {
+    "year": 2013,
+    "host": {
+      "name": "University of Lethbridge",
+      "url": "http://www.uleth.ca/",
+      "location": "Lethbridge, AB"
+    },
+    "winner": {
+      "name": "Adam Noble",
+      "province": "ON",
+      "project": {
+        "id": 3683,
+        "name": "Silver Nano-Particle Therapy: A New Cure For Cancer"
+      }
+    },
+    "total_prizes": 869200
+  },
+  {
+    "year": 2012,
+    "host": {
+      "name": "University of Prince Edward Island",
+      "url": "http://www.upei.ca/",
+      "location": "Charlottetown, PE"
+    },
+    "winner": {
+      "name": "Laurent Joli-Coeur",
+      "province": "QC",
+      "project": {
+        "id": 3351,
+        "name": "La quête de l'ombre jovienne"
+      }
+    },
+    "total_prizes": 946900
+  },
+  {
+    "year": 2011,
+    "host": {
+      "name": "Seneca College",
+      "url": "http://www.senecac.on.ca/",
+      "location": "Toronto, ON"
+    },
+    "winner": {
+      "name": ["Danny Huang", "Jaclynn Wong"],
+      "province": "AB",
+      "project": {
+        "id": 2706,
+        "name": "O-GlcNAcylation: Suppressing Cancer Progression"
+      }
+    },
+    "total_prizes": 967550
+  },
+  {
+    "year": 2010,
+    "host": {
+      "name": "Trent University",
+      "url": "http://www.trentu.ca/",
+      "location": "Peterborough, ON"
+    },
+    "winner": {
+      "name": "Justin Whitaker",
+      "province": "ON",
+      "project": {
+        "id": 2119,
+        "name": "Bio-Binding: A Microbial Precipit-Action"
+      }
+    },
+    "total_prizes": 849250
+  },
+  {
+    "year": 2009,
+    "host": {
+      "name": "University of Manitoba",
+      "url": "http://umanitoba.ca/",
+      "location": "Winnipeg, MB"
+    },
+    "winner": {
+      "name": "Gary Kurek",
+      "province": "AB",
+      "project": {
+        "id": 1986,
+        "name": "Multi-Functional Mobility Aids: Improving Mobility, Autonomy and Efficiency"
+      }
+    },
+    "total_prizes": 792300
+  },
+  {
+    "year": 2008,
+    "host": {
+      "name": "University of Ottawa",
+      "url": "http://www.uottawa.ca/",
+      "location": "Ottawa, ON"
+    },
+    "winner": {
+      "name": "Daniel Burd",
+      "province": "ON",
+      "project": {
+        "id": 1390,
+        "name": "Plastic Not Fantastic"
+      }
+    },
+    "total_prizes": 871725
+  },
+  {
+    "year": 2007,
+    "host": {
+      "name": "Nova Scotia Agricultural College",
+      "url": "http://nsac.ca/",
+      "location": "Truro, NS"
+    },
+    "winner": {
+      "name": "Emily Cooley",
+      "province": "AB",
+      "project": {
+        "id": 1095,
+        "name": "Embryonic Stem Cells and Viral Internalization"
+      }
+    },
+    "total_prizes": 509700
+  },
+  {
+    "year": 2006,
+    "host": {
+      "name": "Université du Québec à Chicoutimi",
+      "url": "http://uqac.ca/",
+      "location": "Saguenay, QC"
+    },
+    "winner": {
+      "name": "Kayla Cornale",
+      "province": "ON",
+      "project": {
+        "id": 742,
+        "name": "Sounds into Syllables II-Windows to the World of Childhood Autism"
+      }
+    },
+    "total_prizes": 457900
+  },
+  {
+    "year": 2005,
+    "host": {
+      "name": "University of British Columbia",
+      "url": "http://ubc.ca/",
+      "location": "Vancouver, BC"
+    },
+    "winner": {
+      "name": "Natalie Raso",
+      "province": "ON",
+      "project": {
+        "id": 81,
+        "name": "Using Viruses to Kill Cancer"
+      }
+    },
+    "total_prizes": 441400
+  }
+]

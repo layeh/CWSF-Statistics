@@ -1,0 +1,54 @@
+{
+  "2013": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 1773},
+        {"x": "Energy", "y": 575},
+        {"x": "Environment", "y": 2452},
+        {"x": "Health", "y": 4372},
+        {"x": "Information", "y": 8642},
+        {"x": "Innovation", "y": 1785},
+        {"x": "Resources", "y": 2469}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 1447},
+        {"x": "Energy", "y": 3169},
+        {"x": "Environment", "y": 1108},
+        {"x": "Health", "y": 2104},
+        {"x": "Information", "y": 4871},
+        {"x": "Innovation", "y": 1672},
+        {"x": "Resources", "y": 1175}
+      ]
+    }
+  ],
+  "2012": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 2518},
+        {"x": "Energy", "y": 2776},
+        {"x": "Environment", "y": 1536},
+        {"x": "Health", "y": 1737},
+        {"x": "Information", "y": 1366},
+        {"x": "Innovation", "y": 3075},
+        {"x": "Resources", "y": 3162}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 1922},
+        {"x": "Energy", "y": 1437},
+        {"x": "Environment", "y": 1893},
+        {"x": "Health", "y": 2540},
+        {"x": "Information", "y": 916},
+        {"x": "Innovation", "y": 3023},
+        {"x": "Resources", "y": 6212}
+      ]
+    }
+  ]
+}

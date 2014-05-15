@@ -1,0 +1,470 @@
+mixin stylesheet(href)
+  link(type='text/css', rel='stylesheet', href=href)
+
+mixin javascript(src)
+  script(type='text/javascript', src=src)
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Canada-Wide Science Fair Results &amp; Statistics (2005 - 2013)
+    +stylesheet('bower_components/pure/pure-min.css')
+    +stylesheet('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700')
+    +stylesheet('css/style.css')
+    +stylesheet('bower_components/open-iconic/font/css/open-iconic.css')
+    +javascript('bower_components/d3/d3.min.js')
+    +javascript('bower_components/jquery/dist/jquery.min.js')
+    +javascript('bower_components/epoch/epoch.0.4.3.min.js')
+  body
+    //- Top bar
+    #bar-top.pure-menu.pure-menu-open.pure-menu-horizontal
+      h1.pure-menu-heading
+        a(href='./') Canada Wide Science Fair Results & Statistics
+          = ' '
+          span (2005-2013)
+    //- Fair history
+    section#fair-history
+      .pure-g-r
+        .pure-u-1
+          table.pure-table.pure-table-horizontal
+            thead
+              tr
+                th(colspan=2) Science Fair Hosts
+                th Best in Fair Winners
+                th Total Prizes Awarded
+              tbody
+          script(type='text/javascript').
+            d3.json('data/hosts.json',
+              function(err, rows) {
+                if (!!err) return;
+                var row = d3.select('#fair-history table tbody')
+                  .selectAll('tr')
+                  .data(rows)
+                  .enter()
+                  .append('tr')
+                  .each(function(d) {
+                    if (!(d.winner.name instanceof Array)) {
+                      d.winner.name = [d.winner.name];
+                    }
+                  });
+                row.append('td').text(function(d) {
+                  return d.year;
+                });
+                var host = row.append('td');
+                host.append('a')
+                  .text(function(d) {
+                    return d.host.name;
+                  })
+                  .attr('href', function(d) {
+                    return d.host.url;
+                  })
+                  .attr('target', '_blank');
+                host.append('span')
+                  .text(function(d) {
+                    return ' (' + d.host.location + ')';
+                  });
+                row.append('td').each(function(d) {
+                  var node = d3.select(this);
+                  d.winner.name.forEach(function(name, i) {
+                    if (i > 0) {
+                      node.append('br');
+                    }
+                    var base_url = 'http://apps.ysf-fsj.ca/virtualcwsf/projectdetails.php?id=';
+                    node.append('a')
+                      .text(name)
+                      .attr('title', d.winner.project.title)
+                      .attr('href', base_url + d.winner.project.id)
+                      .attr('target', '_blank');
+                    node.append('span')
+                      .text(' (' + d.winner.province + ')');
+                  });
+                });
+                row.append('td').text(function(d) {
+                  return '$' + d.total_prizes;
+                });
+              });
+    //- Ranks
+    section#ranks
+      .pure-g-r
+        #largest-personal-winnings.pure-u-1-3
+          h3 Largest Personal Winnings
+          table.pure-table.pure-table-horizontal
+            tbody
+          script(type='text/javascript').
+            d3.json('data/personal-winnings.json',
+              function(err, rows) {
+                if (!!err) return;
+                var row = d3.select('#largest-personal-winnings table tbody')
+                  .selectAll('tr')
+                  .data(rows)
+                  .enter()
+                  .append('tr')
+                  .each(function(d, i) {
+                    var previous = d3.select(this.previousSibling);
+                    var rank;
+                    if (previous.empty()) {
+                      rank = 1;
+                    } else {
+                      var p = previous.data()[0];
+                      rank = (p.amount == d.amount) ? p.rank : p.rank + 1;
+                    }
+                    d.rank = rank;
+                  });
+                row.append('td').text(function(d) {
+                  return d.rank + '. ';
+                });
+                row.append('td').append('a')
+                  .attr('href', function(d) {
+                    return 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?name='
+                        + d.name;
+                  })
+                  .attr('target', '_blank')
+                  .text(function(d) {
+                    return d.name;
+                  });
+                row.append('td').text(function(d) {
+                  return '$' + d.amount;
+                });
+                row.append('td').text(function(d) {
+                  var text = '(' + d.years + ' year';
+                  if (d.years != 1) {
+                    text += 's';
+                  }
+                  return text + ')';
+                });
+              });
+        #provincial-averages.pure-u-1-3
+          h3 Provincial Averages
+            select
+              option(value=2013, selected) 2013
+          table.pure-table.pure-table-horizontal
+            tbody
+          script(type='text/javascript').
+            d3.json('data/provincial-averages.json',
+              function(err, rows) {
+                if (!!err) return;
+                var select = $('#provincial-averages select');
+                var year = select.val();
+                var data = rows[year];
+                var row = d3.select('#provincial-averages table tbody')
+                  .selectAll('tr')
+                  .data(data)
+                  .enter()
+                  .append('tr')
+                  .sort(function(a, b) {
+                    if (a.average == b.average) {
+                      return a.province.name > b.province.name;
+                    }
+                    return b.average - a.average;
+                  })
+                  .each(function(d, i) {
+                    var previous = d3.select(this.previousSibling);
+                    var rank;
+                    if (previous.empty()) {
+                      rank = 1;
+                    } else {
+                      var p = previous.data()[0];
+                      rank = (p.average == d.average) ? p.rank : p.rank + 1;
+                    }
+                    d.rank = rank;
+                  });
+                row.append('td').text(function(d) {
+                  return d.rank + '. ';
+                });
+                row.append('td').append('a')
+                  .text(function(d) {
+                    return d.province.name;
+                  })
+                  .attr('href', function(d) {
+                    var base = 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?year=';
+                    return base + year + '&province=' + d.province.id;
+                  })
+                  .attr('target', '_blank');
+                row.append('td').text(function(d) {
+                  return '$' + d.average;
+                });
+              }
+            );
+        #provincial-medals.pure-u-1-3
+          h3 Provincial Medals
+            select
+              option(value=2013, selected) 2013
+          table.pure-table.pure-table-horizontal
+            tbody
+          script(type='text/javascript').
+            d3.json('data/provincial-medals.json',
+              function(err, rows) {
+                if (!!err) return;
+                var select = $('#provincial-medals select');
+                var year = select.val();
+                var data = rows[year];
+                var row = d3.select('#provincial-medals table tbody')
+                  .selectAll('tr')
+                  .data(data)
+                  .enter()
+                  .append('tr')
+                  .each(function(d, i, j) {
+                    var previous = d3.select(this.previousSibling);
+                    var rank;
+                    if (previous.empty()) {
+                      rank = 1;
+                    } else {
+                      var p = previous.data()[0];
+                      var same = true;
+                      for (var i = 0; i < p.medals.length; i++) {
+                        if (p.medals[i].count != d.medals[i].count) {
+                          same = false;
+                          break;
+                        }
+                      }
+                      rank = same ? p.rank : p.rank + 1;
+                    }
+                    d.rank = rank;
+                  });
+                row.append('td').text(function(d) {
+                  return d.rank + '. ';
+                });
+                row.append('td').append('a')
+                  .text(function(d) {
+                    return d.province.name;
+                  })
+                  .attr('href', function(d) {
+                    var base = 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?year=';
+                    return base + year + '&province=' + d.province.id;
+                  })
+                  .attr('target', '_blank');
+
+                row.selectAll('td.medal')
+                  .data(function(d) {
+                    return d.medals;
+                  })
+                  .enter()
+                  .append('td')
+                  .attr('class', 'medal')
+                  .each(function(d) {
+                    if (d.count > 0) {
+                      var node = d3.select(this);
+                      node.attr('title', function() {
+                        return d.type.substring(0, 1).toLocaleUpperCase()
+                            + d.type.substring(1);
+                      });
+                      node.text(d.count + ' ');
+                      node.append('span').attr('class', 'medal ' + d.type);
+                    }
+                  });
+              }
+            );
+    //- Age Distribution by Year
+    section#age-distribution-by-year
+      .pure-g-r
+        .pure-u-1
+          h3 Age Distribution by Year
+          .view.font-override
+          script(type='text/javascript').
+            d3.json('data/age-distribution-by-year.json',
+              function(err, rows) {
+                if (!!err) return;
+                var row = d3.select('#age-distribution-by-year .view').selectAll('div')
+                  .data(rows)
+                  .enter()
+                  .append('div')
+                  .each(function(d) {
+                    d.total = d.junior + d.intermediate + d.senior;
+                  });
+                var cell = row.append('div');
+                cell.append('div').style('width', function(d) {
+                  return (d.junior / d.total * 100) + '%';
+                }).append('span').text(function(d) {
+                  return 'Junior (' + d.junior + ')';
+                });
+                cell.append('div').style('width', function(d) {
+                  return (d.intermediate / d.total * 100) + '%';
+                }).append('span').text(function(d) {
+                  return 'Intermediate (' + d.intermediate + ')';
+                });
+                cell.append('div').style('width', function(d) {
+                  return (d.senior / d.total * 100) + '%';
+                }).append('span').text(function(d) {
+                  return 'Senior (' + d.senior + ')';
+                });
+                row.append('div').append('span').text(function(d) {
+                  return d.year + ' ';
+                }).append('span').text(function(d) {
+                  return  '(' + d.total + ')';
+                });
+              });
+    //- Project Categories
+    section#project-categories-by-year
+      .pure-g-r
+        .pure-u-1
+          h3 Project Categories by Year
+          .view
+            table.pure-table.pure-table-horizontal
+          script(type='text/javascript').
+            d3.json('data/project-categories.json', function(err, data) {
+              if (!!err) return;
+              var table = d3.select('#project-categories-by-year .view table')
+              var yearRange = d3.extent(data[0].values, function(d) {
+                return d.x;
+              });
+
+              var headingRow = table.append('tr');
+              headingRow.append('th');
+              d3.range(yearRange[0], yearRange[1] + 1).forEach(function(year) {
+                headingRow.append('th').text(year);
+              });
+
+              var row = table.selectAll('tr.item')
+                .data(data)
+                .enter()
+                .append('tr')
+                .attr('class', 'item');
+              row.append('th').text(function(d) {
+                return d.label;
+              });
+
+              var item = row.selectAll('td.item').data(function(d) {
+                return d.values;
+              }).enter().append('td').attr('class', 'item');
+
+              item.each(function(d, i, j) {
+                var e = d3.select(this);
+                var val = d.y;
+                e.append('span').text(val);
+                if (i > 0) {
+                  var previous = row.data()[j].values[i - 1].y;
+                  e.append('span')
+                    .attr('class', 'oi')
+                    .attr('data-glyph', function() {
+                      if (previous == val) {
+                        return 'minus';
+                      }
+                      return previous > val ? 'arrow-thick-bottom'
+                        : 'arrow-thick-top';
+                    });
+                }
+              });
+            });
+    //- Gender by Project Category
+    section#gender-by-project-category
+      .pure-g-r
+        .pure-u-1
+          h3 Gender by Project Category
+            = ' '
+            select
+              option(value=2013, selected) 2013
+              option(value=2012) 2012
+              option(value=2011) 2011
+          .view.categories
+          script(type='text/javascript').
+            d3.json('data/gender-by-project-category.json', function(err, data) {
+              if (!!err) return;
+              var select = $('#gender-by-project-category select');
+              var chart = $('#gender-by-project-category .view').epoch({
+                type: 'bar-labeled',
+                axes: ['bottom'],
+                margins: {top: 25, right: 5, left: 5},
+                data: data[select.val()]
+              });
+              select.change(function() {
+                var year = $(this).val()
+                chart.update(data[year]);
+              });
+              $(window).resize(function() {
+                var view = $('#gender-by-project-category .view');
+                var svg = view.children('svg');
+                chart.width = view.width();
+                svg.width(view.width());
+                chart.draw();
+              });
+            });
+
+    //- Average Winnings by Project Category and Gender
+    section#winnings-by-project-category-gender
+      .pure-g-r
+        .pure-u-1
+          h3 Average Winnings by Project Category and Gender
+            = ' '
+            select
+              option(value=2013, selected) 2013
+              option(value=2012) 2012
+          .view.categories
+          script(type='text/javascript').
+            d3.json('data/winnings-by-project-category-gender.json', function(err, data) {
+              if (!!err) return;
+              var select = $('#winnings-by-project-category-gender select');
+              var chart = $('#winnings-by-project-category-gender .view').epoch({
+                type: 'bar-labeled',
+                axes: ['bottom'],
+                margins: {top: 25, right: 5, left: 5},
+                data: data[select.val()],
+                label: function(d) {
+                  return '$' + d.y;
+                }
+              });
+              select.change(function() {
+                var year = $(this).val()
+                chart.update(data[year]);
+              });
+              $(window).resize(function() {
+                var view = $('#winnings-by-project-category-gender .view');
+                var svg = view.children('svg');
+                chart.width = view.width();
+                svg.width(view.width());
+                chart.draw();
+              });
+            });
+    //- Award Percentage by Project Category and Gender
+    section#award-percentage-by-project-category-gender
+      .pure-g-r
+        .pure-u-1
+          h3
+            abbr(title='Percentage of students who won at least one award') Award Percentage
+            = ' by Project Category and Gender '
+            select
+              option(value=2013, selected) 2013
+              option(value=2012) 2012
+          .view.categories
+          script(type='text/javascript').
+            d3.json('data/award-percentage-by-project-category-gender.json', function(err, data) {
+              if (!!err) return;
+              var select = $('#award-percentage-by-project-category-gender select');
+              var chart = $('#award-percentage-by-project-category-gender .view').epoch({
+                type: 'bar-labeled',
+                axes: ['bottom'],
+                margins: {top: 25, right: 5, left: 5},
+                data: data[select.val()],
+                label: function(d) {
+                  return d.y + '%';
+                }
+              });
+              select.change(function() {
+                var year = $(this).val()
+                chart.update(data[year]);
+              });
+              $(window).resize(function() {
+                var view = $('#award-percentage-by-project-category-gender .view');
+                var svg = view.children('svg');
+                chart.width = view.width();
+                svg.width(view.width());
+                chart.draw();
+              });
+            });
+    //- Footer
+    footer
+      p
+        span Last updated: May 15, 2014
+      p
+        span
+          != 'Data obtained from '
+          a(href='http://apps.ysf-fsj.ca/virtualcwsf/', target='_blank') Virtual CWSF
+          != ' and '
+          a(href='https://www.youthscience.ca/', target='_blank') YSF.ca
+      p
+        span The above data is not guaranteed to be without error and should be used only as an approximation of the actual results
+      p
+        a.icon(href='mailto:tim.cooper@layeh.com' title='Questions or comments')
+          span.oi(data-glyph='envelope-closed')
+        a.icon(href='https://github.com/layeh/cwsf-statistics', title='Project repository')
+          span.oi(data-glyph='fork')

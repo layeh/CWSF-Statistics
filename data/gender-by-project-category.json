@@ -1,0 +1,80 @@
+{
+  "2013": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 32},
+        {"x": "Energy", "y": 24},
+        {"x": "Environment", "y": 23},
+        {"x": "Health", "y": 36},
+        {"x": "Information", "y": 7},
+        {"x": "Innovation", "y": 47},
+        {"x": "Resources", "y": 13}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 48},
+        {"x": "Energy", "y": 23},
+        {"x": "Environment", "y": 39},
+        {"x": "Health", "y": 61},
+        {"x": "Information", "y": 7},
+        {"x": "Innovation", "y": 29},
+        {"x": "Resources", "y": 10}
+      ]
+    }
+  ],
+  "2012": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 36},
+        {"x": "Energy", "y": 17},
+        {"x": "Environment", "y": 22},
+        {"x": "Health", "y": 40},
+        {"x": "Information", "y": 9},
+        {"x": "Innovation", "y": 57},
+        {"x": "Resources", "y": 4}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 36},
+        {"x": "Energy", "y": 20},
+        {"x": "Environment", "y": 51},
+        {"x": "Health", "y": 65},
+        {"x": "Information", "y": 6},
+        {"x": "Innovation", "y": 60},
+        {"x": "Resources", "y": 8}
+      ]
+    }
+  ],
+  "2011": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 30},
+        {"x": "Energy", "y": 31},
+        {"x": "Environment", "y": 34},
+        {"x": "Health", "y": 40},
+        {"x": "Information", "y": 15},
+        {"x": "Innovation", "y": 41},
+        {"x": "Resources", "y": 5}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 36},
+        {"x": "Energy", "y": 20},
+        {"x": "Environment", "y": 41},
+        {"x": "Health", "y": 80},
+        {"x": "Information", "y": 6},
+        {"x": "Innovation", "y": 34},
+        {"x": "Resources", "y": 9}
+      ]
+    }
+  ]
+}

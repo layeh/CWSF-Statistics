@@ -1,0 +1,56 @@
+[
+  {
+    "year": 2013,
+    "junior": 160,
+    "intermediate": 131,
+    "senior": 109
+  },
+  {
+    "year": 2012,
+    "junior": 151,
+    "intermediate": 134,
+    "senior": 120
+  },
+  {
+    "year": 2011,
+    "junior": 172,
+    "intermediate": 132,
+    "senior": 121
+  },
+  {
+    "year": 2010,
+    "junior": 195,
+    "intermediate": 117,
+    "senior": 95
+  },
+  {
+    "year": 2009,
+    "junior": 156,
+    "intermediate": 131,
+    "senior": 100
+  },
+  {
+    "year": 2008,
+    "junior": 161,
+    "intermediate": 109,
+    "senior": 116
+  },
+  {
+    "year": 2007,
+    "junior": 163,
+    "intermediate": 97,
+    "senior": 109
+  },
+  {
+    "year": 2006,
+    "junior": 157,
+    "intermediate": 111,
+    "senior": 101
+  },
+  {
+    "year": 2005,
+    "junior": 193,
+    "intermediate": 95,
+    "senior": 96
+  }
+]
