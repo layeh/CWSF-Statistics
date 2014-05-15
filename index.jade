@@ -17,6 +17,21 @@ html
     +javascript('bower_components/jquery/dist/jquery.min.js')
     +javascript('bower_components/epoch/epoch.0.4.3.min.js')
   body
+    script(type='text/javascript').
+      function intformat(value) {
+        var str = '';
+        var val = value.toString();
+        var len = val.length;
+        for (var i = 0; i < len; i++) {
+          var j = len - i - 1;
+          var r = j % 3;
+          if (i > 0 && r == 2) {
+            str += ' ';
+          }
+          str += val[i];
+        }
+        return str;
+      }
     //- Top bar
     #bar-top.pure-menu.pure-menu-open.pure-menu-horizontal
       h1.pure-menu-heading
@@ -81,7 +96,7 @@ html
                   });
                 });
                 row.append('td').text(function(d) {
-                  return '$' + d.total_prizes;
+                  return '$' + intformat(d.total_prizes);
                 });
               });
     //- Ranks
@@ -124,7 +139,7 @@ html
                     return d.name;
                   });
                 row.append('td').text(function(d) {
-                  return '$' + d.amount;
+                  return '$' + intformat(d.amount);
                 });
                 row.append('td').text(function(d) {
                   var text = '(' + d.years + ' year';
@@ -182,7 +197,7 @@ html
                   })
                   .attr('target', '_blank');
                 row.append('td').text(function(d) {
-                  return '$' + d.average;
+                  return '$' + intformat(d.average);
                 });
               }
             );
@@ -400,7 +415,7 @@ html
                 margins: {top: 25, right: 5, left: 5},
                 data: data[select.val()],
                 label: function(d) {
-                  return '$' + d.y;
+                  return '$' + intformat(d.y);
                 }
               });
               select.change(function() {
