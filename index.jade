@@ -176,9 +176,9 @@ html
                   .append('tr')
                   .sort(function(a, b) {
                     if (a.average == b.average) {
-                      return a.province.name > b.province.name;
+                      return d3.descending(a.province.name, b.province.name);
                     }
-                    return b.average - a.average;
+                    return d3.descending(a.average, b.average);
                   })
                   .each(function(d, i) {
                     var previous = d3.select(this.previousSibling);
