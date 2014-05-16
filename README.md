@@ -9,11 +9,11 @@ This project provides a graphically represented statistics about the Canada Wide
     - [Jade](https://github.com/visionmedia/jade)
 
 2. Clone this repository to your computer (or download and extract the zip)
-3. Run the following commands in the project directory:
+3. Run the following command in the project directory:
 
         $ make output
 
-4. An folder called `output/` will be created, which contains only files necessary for distribution
+4. An folder called `output/` will be created, which contains only the files necessary for distribution
 
 ----
 
