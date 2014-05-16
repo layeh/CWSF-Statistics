@@ -11,10 +11,9 @@ This project provides a graphically represented statistics about the Canada Wide
 2. Clone this repository to your computer (or download and extract the zip)
 3. Run the following commands in the project directory:
 
-        $ make init
-        $ make index.html
+        $ make output
 
-4. Open the generated `index.html`
+4. An folder called `output/` will be created, which contains only files necessary for distribution
 
 ----
 
