@@ -34,15 +34,6 @@ foreach($projects as $project) {
             }
             $provinces[$project->province][$matches[1]]++;
         }
-        if(preg_match("/^Best Project Award$/", $award->description[0], $matches)) {
-            if (!array_key_exists($project->province, $provinces)) {
-                $provinces[$project->province] = array();
-            }
-            if (!array_key_exists('Platinum', $provinces[$project->province])) {
-                $provinces[$project->province]['Platinum'] = 0;
-            }
-            $provinces[$project->province]['Platinum']++;
-        }
     }
 }
 
