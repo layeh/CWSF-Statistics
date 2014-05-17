@@ -42,7 +42,9 @@ foreach($files as $file) {
     $query = $xpath->evaluate('//h3');
     $names = $query->item(0)->textContent;
     
-    preg_match('/([^,]+)(?:, ([^,]+))?/u', $names, $matches);
+    if(preg_match('/([^,]+)(?:, ([^,]+))?/u', $names, $matches) < 1) {
+        continue;
+    }
     
     $finalist = array($matches[1]);
     if(isset($matches[2]))
@@ -99,6 +101,9 @@ foreach($files as $file) {
             $cities = array_map('ucwords', $cities);
             
             $project->city = count($cities) == 1 && !is_array($project->finalist) ? $cities[0] : $cities;
+            if (is_array($project->city) && count($project->city) == 1) {
+                $project->city = array($project->city[0], $project->city[0]);
+            }
             $project->province = $matches[2];
         }
         

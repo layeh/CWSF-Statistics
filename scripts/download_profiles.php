@@ -7,11 +7,11 @@ Downloads profiles for a given year from Virtual CWSF
 
 libxml_use_internal_errors(true);
 
-$year = isset($argv[1]) ? $argv[1] : null;
-$folder = isset($argv[2]) ? $argv[2] : null;
+$folder = isset($argv[1]) ? $argv[1] : null;
+$year = isset($argv[2]) ? $argv[2] : null;
 if($year == null || $folder == null)
 {
-    fprintf(STDERR, "usage: %s <year> <folder>\n", $argv[0]);
+    fprintf(STDERR, "usage: %s <folder> <year>\n", $argv[0]);
     die;
 }
 if(!is_dir($folder) && !is_writable($folder))

@@ -5,6 +5,11 @@ TODO:  calculate # of years they've attended
 
 */
 
+if ($argc < 2) {
+    fprintf(STDERR, "usage: %s <json>\n", $argv[0]);
+    die(1);
+}
+
 $projects = json_decode(file_get_contents($argv[1]));
 
 $students = array();
