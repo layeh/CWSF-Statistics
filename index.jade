@@ -315,20 +315,24 @@ html
                   };
                   var funcMedals = function(s) {
                     s.each(function(d) {
+                      var node = d3.select(this);
                       if (d.count > 0) {
-                        var node = d3.select(this);
                         node.attr('title', function() {
                           return d.type.substring(0, 1).toLocaleUpperCase()
                               + d.type.substring(1);
                         });
                         node.text(d.count + ' ');
                         node.append('span').attr('class', 'medal ' + d.type);
+                      } else {
+                        node.text('');
+                        node.select('*').remove();
                       }
                     });
                   };
 
                   selection.select('td:nth-child(1)').call(funcRank);
                   selection.select('td:nth-child(2)').call(funcProvince);
+
                   selection.selectAll('td.medal').data(function(d) {
                     return d.medals;
                   }).call(funcMedals);
