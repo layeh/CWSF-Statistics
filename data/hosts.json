@@ -5,7 +5,16 @@
       "name": "University of Windsor",
       "url": "http://www.uwindsor.ca/",
       "location": "Windsor, ON"
-    }
+    },
+    "winner": {
+      "name": "Daniel McInnis",
+      "province": "ON",
+      "project": {
+        "id": 3846,
+        "name": "Picture This!: A Novel Approach to Limb Donor Identification & Prosthetic Design"
+      }
+    },
+    "total_prizes": 904200
   },
   {
     "year": 2013,

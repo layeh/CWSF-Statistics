@@ -1,4 +1,97 @@
 {
+  "2014": [
+    {
+      "province": {
+        "name": "Ontario",
+        "id": 9
+      },
+      "average": 3120
+    },
+    {
+      "province": {
+        "name": "Nova Scotia",
+        "id": 1
+      },
+      "average": 1602
+    },
+    {
+      "province": {
+        "name": "British Columbia",
+        "id": 12
+      },
+      "average": 2159
+    },
+    {
+      "province": {
+        "name": "Québec",
+        "id": 10
+      },
+      "average": 3114
+    },
+    {
+      "province": {
+        "name": "Manitoba",
+        "id": 8
+      },
+      "average": 1331
+    },
+    {
+      "province": {
+        "name": "Alberta",
+        "id": 11
+      },
+      "average": 3303
+    },
+    {
+      "province": {
+        "name": "Yukon",
+        "id": 13
+      },
+      "average": 0
+    },
+    {
+      "province": {
+        "name": "Prince Edward Island",
+        "id": 4
+      },
+      "average": 1480
+    },
+    {
+      "province": {
+        "name": "Northwest Territories",
+        "id": 5
+      },
+      "average": 0
+    },
+    {
+      "province": {
+        "name": "Saskatchewan",
+        "id": 6
+      },
+      "average": 477
+    },
+    {
+      "province": {
+        "name": "New Brunswick",
+        "id": 3
+      },
+      "average": 138
+    },
+    {
+      "province": {
+        "name": "Newfoundland",
+        "id": 2
+      },
+      "average": 2971
+    },
+    {
+      "province": {
+        "name": "Nunavut",
+        "id": 7
+      },
+      "average": 460
+    }
+  ],
   "2013": [
     {
       "province": {

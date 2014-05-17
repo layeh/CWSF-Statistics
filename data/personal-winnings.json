@@ -15,6 +15,11 @@
     "years": 2
   },
   {
+    "name": "Daniel McInnis",
+    "amount": 61200,
+    "years": 2
+  },
+  {
     "name": "Yassine Bouanane",
     "amount": 54700,
     "years": 2
@@ -31,13 +36,18 @@
   },
   {
     "name": "Justin Whitaker",
-    "amount": 48475,
+    "amount": 48500,
     "years": 1
   },
   {
     "name": "Aaron Hakim",
     "amount": 48475,
     "years": 3
+  },
+  {
+    "name": "Mikaela Preston",
+    "amount": 45450,
+    "years": 4
   },
   {
     "name": "Elise Tessier",
@@ -48,5 +58,10 @@
     "name": "Roopa Suppiah",
     "amount": 43150,
     "years": 4
+  },
+  {
+    "name": ["Tony Xiao", "Evan Woo"],
+    "amount": 43025,
+    "years": 1
   }
 ]
