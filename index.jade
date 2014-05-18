@@ -89,7 +89,7 @@ html
                     if (i > 0) {
                       node.append('br');
                     }
-                    var base_url = 'http://apps.ysf-fsj.ca/virtualcwsf/projectdetails.php?id=';
+                    var base_url = 'https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=';
                     node.append('a')
                       .text(name)
                       .attr('title', d.winner.project.name)
@@ -148,7 +148,7 @@ html
                   }
                   node.append('a')
                     .attr('href', function(d) {
-                      return 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?name='
+                      return 'https://secure.youthscience.ca/virtualcwsf/browse.php?name='
                           + d;
                     })
                     .attr('target', '_blank')
@@ -219,7 +219,7 @@ html
                       return d.province.name;
                     })
                     .attr('href', function(d) {
-                      var base = 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?year=';
+                      var base = 'https://secure.youthscience.ca/virtualcwsf/browse.php?year=';
                       return base + year + '&province=' + d.province.id;
                     })
                   };
@@ -308,7 +308,7 @@ html
                         return d.province.name;
                       })
                       .attr('href', function(d) {
-                        var base = 'http://apps.ysf-fsj.ca/virtualcwsf/browse.php?year=';
+                        var base = 'https://secure.youthscience.ca/virtualcwsf/browse.php?year=';
                         return base + year + '&province=' + d.province.id;
                       })
                       .attr('target', '_blank');
