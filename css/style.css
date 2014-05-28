@@ -2,6 +2,12 @@ body, select, option, td, th, h2, h3, .font-override, svg {
   font-family: 'SourceSansProRegular', 'Tahoma', 'Arial', sans-serif;
 }
 
+h1,
+h3,
+th {
+  font-family: 'SourceSansProBold', 'Tahoma', 'Arial', sans-serif;
+}
+
 body {
   background: #F2F2F2;
 }
