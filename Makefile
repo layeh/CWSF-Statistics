@@ -12,7 +12,8 @@ index.html: index.jade
 watch: index.jade
 	jade $(JADEFLAGS) --watch $<
 
-output: output-base output-d3 output-epoch output-jquery output-open-iconic output-pure
+output: output-base output-d3 output-epoch output-jquery output-SourceSansPro \
+        output-open-iconic output-pure
 
 output-base: index.html
 	mkdir -p output/
@@ -31,6 +32,11 @@ output-jquery: init
 	cp -R bower_components/jquery/MIT-LICENSE.txt output/bower_components/jquery/
 	cp bower_components/jquery/dist/jquery.min.js output/bower_components/jquery/dist/
 
+output-SourceSansPro: init
+	mkdir -p output/bower_components/SourceSansPro/
+	cp -R bower_components/SourceSansPro/{SourceSansPro.css,LICENSE.txt,fonts/} \
+	    output/bower_components/SourceSansPro
+
 output-open-iconic: init
 	mkdir -p output/bower_components/open-iconic/font/css/
 	cp bower_components/open-iconic/FONT-LICENSE output/bower_components/open-iconic/
@@ -45,4 +51,4 @@ clean:
 	rm -Rf bower_components/ output/ index.html
 
 .PHONY: default init watch clean output output-base output-d3 output-epoch output-jquery \
-        output-open-iconic output-pure
+        output-SourceSansPro output-open-iconic output-pure
