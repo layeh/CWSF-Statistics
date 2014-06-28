@@ -1,6 +1,7 @@
 {
   "name": "CWSF-Statistics",
   "version": "0.0.1",
+  "private": true,
   "dependencies": {
     "pure": "0.4.2",
     "d3": "3.4.6",
