@@ -1,5 +1,13 @@
 [
   {
+    "year": 2015,
+    "host": {
+      "name": "University of New Brunswick",
+      "url": "http://www.unb.ca/",
+      "location": "Fredericton, NB"
+    }
+  },
+  {
     "year": 2014,
     "host": {
       "name": "University of Windsor",
