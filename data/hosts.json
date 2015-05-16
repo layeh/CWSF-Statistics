@@ -5,7 +5,16 @@
       "name": "University of New Brunswick",
       "url": "http://www.unb.ca/",
       "location": "Fredericton, NB"
-    }
+    },
+    "winner": {
+      "name": "Austin Wang",
+      "province": "BC",
+      "project": {
+        "id": 4403,
+        "name": "A Novel Method to Identify Genes in Electron Transfer of Exoelectrogens"
+      }
+    },
+    "total_prizes": 884700
   },
   {
     "year": 2014,
