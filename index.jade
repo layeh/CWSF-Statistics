@@ -87,7 +87,7 @@ html
                   }
                   d.winner.name.forEach(function(name, i) {
                     if (i > 0) {
-                      node.append('br');
+                      node.append('span').text(', ');
                     }
                     var base_url = 'https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=';
                     node.append('a')
@@ -95,9 +95,9 @@ html
                       .attr('title', d.winner.project.name)
                       .attr('href', base_url + d.winner.project.id)
                       .attr('target', '_blank');
-                    node.append('span')
-                      .text(' (' + d.winner.province + ')');
                   });
+                  node.append('span')
+                    .text(' (' + d.winner.province + ')');
                 });
                 row.append('td').text(function(d) {
                   if (typeof(d.total_prizes) === 'undefined') {
