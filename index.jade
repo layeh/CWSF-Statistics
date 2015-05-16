@@ -82,7 +82,7 @@ html
                 row.append('td').each(function(d) {
                   var node = d3.select(this);
                   if (!d.winner) {
-                    node.append('span').text('TBA');
+                    node.append('span').text('TBD');
                     return;
                   }
                   d.winner.name.forEach(function(name, i) {
@@ -101,7 +101,7 @@ html
                 });
                 row.append('td').text(function(d) {
                   if (typeof(d.total_prizes) === 'undefined') {
-                    return 'TBA';
+                    return 'TBD';
                   }
                   return '$' + intformat(d.total_prizes);
                 });
