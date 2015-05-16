@@ -109,64 +109,70 @@ html
     //- Ranks
     section#ranks
       .pure-g-r
-        #largest-personal-winnings.pure-u-1-3
-          h3 Largest Personal Winnings
+        #largest-medal-counts.pure-u-1-3
+          h3
+            abbr(title='Fibonacci weighted (Platinum: 5, Gold: 3, Silver: 2, Bronze: 1)') Largest Medal Counts
           table.pure-table.pure-table-horizontal
             tbody
           script(type='text/javascript').
-            d3.json('data/personal-winnings.json',
+            d3.json('data/personal-medals.json',
               function(err, rows) {
                 if (!!err) return;
-                var row = d3.select('#largest-personal-winnings table tbody')
-                  .selectAll('tr')
-                  .data(rows)
-                  .enter()
-                  .append('tr')
-                  .each(function(d, i) {
-                    if (!(d.name instanceof Array)) {
-                      d.name = [d.name];
-                    }
-                    var previous = d3.select(this.previousSibling);
-                    var rank;
-                    if (previous.empty()) {
-                      rank = 1;
-                    } else {
-                      var p = previous.data()[0];
-                      rank = (p.amount == d.amount) ? p.rank : p.rank + 1;
-                    }
-                    d.rank = rank;
+                var selection = d3.select('#largest-medal-counts table tbody')
+                  .selectAll('tr').data(rows);
+                var rank = 0;
+                var funcRank = function(s) {
+                  s.text(function(d) {
+                    rank++;
+                    return rank + '. ';
                   });
-                row.append('td').text(function(d) {
-                  return d.rank + '. ';
-                });
-                row.append('td').selectAll('a').data(function(d) {
-                  return d.name;
-                }).enter().append('span').each(function(d, i) {
-                  var node = d3.select(this);
-                  if (i > 0) {
-                    node.append('br');
-                  }
-                  node.append('a')
-                    .attr('href', function(d) {
-                      return 'https://secure.youthscience.ca/virtualcwsf/browse.php?name='
-                          + d;
-                    })
-                    .attr('target', '_blank')
+                };
+                var funcName = function(s) {
+                  s.select('a')
                     .text(function(d) {
-                      return d;
-                    });
-                });
-                row.append('td').text(function(d) {
-                  return '$' + intformat(d.amount);
-                });
-                row.append('td').text(function(d) {
-                  var text = '(' + d.years + ' year';
-                  if (d.years != 1) {
-                    text += 's';
-                  }
-                  return text + ')';
-                });
-              });
+                      return d.name;
+                    })
+                    .attr('href', function(d) {
+                      var base = 'https://secure.youthscience.ca/virtualcwsf/browse.php?';
+                      return base + 'name=' + d.name;
+                    })
+                    .attr('target', '_blank');
+                };
+                var funcMedals = function(s) {
+                  s.each(function(d) {
+                    var node = d3.select(this);
+                    if (d.count > 0) {
+                      node.attr('title', function() {
+                        return d.type.substring(0, 1).toLocaleUpperCase()
+                            + d.type.substring(1);
+                      });
+                      node.text(d.count + ' ');
+                      node.append('span').attr('class', 'medal ' + d.type);
+                    } else {
+                      node.text('');
+                      node.select('*').remove();
+                    }
+                  });
+                };
+                var row = selection.enter()
+                  .append('tr');
+
+                row.append('td').call(funcRank);
+
+                var name = row.append('td');
+                name.append('a');
+                name.call(funcName);
+
+                var medals = row.selectAll('td.medal')
+                  .data(function(d) {
+                    return d.medals;
+                  });
+                medals.enter()
+                  .append('td')
+                  .attr('class', 'medal');
+                medals.call(funcMedals);
+              }
+            );
         #provincial-averages.pure-u-1-3
           h3 Provincial Averages
             select
@@ -249,7 +255,8 @@ html
               }
             );
         #provincial-medals.pure-u-1-3
-          h3 Provincial Medals
+          h3
+            abbr(title='Platinum-first weighted (Platinum > Gold > Silver > Bronze)') Provincial Medals
             select
               option(value=2015, selected) 2015
               option(value=2014) 2014
@@ -565,7 +572,7 @@ html
     //- Footer
     footer
       p
-        span Last updated: May 15, 2015
+        span Last updated: May 16, 2015
       p
         span
           != 'Data obtained from '

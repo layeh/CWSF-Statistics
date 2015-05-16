@@ -115,14 +115,14 @@ h3 select {
   opacity: 0.6;
 }
 
-#largest-personal-winnings table tr td:nth-child(3) {
-  text-align: right;
-}
-
 #provincial-averages table tr td:nth-child(3) {
   text-align: right;
 }
 
+#largest-medal-counts table tr td:nth-child(3),
+#largest-medal-counts table tr td:nth-child(4),
+#largest-medal-counts table tr td:nth-child(5),
+#largest-medal-counts table tr td:nth-child(6),
 #provincial-medals table tr td:nth-child(3),
 #provincial-medals table tr td:nth-child(4),
 #provincial-medals table tr td:nth-child(5),
@@ -131,7 +131,7 @@ h3 select {
   text-align: right;
 }
 
-#provincial-medals span.medal {
+span.medal {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -139,19 +139,19 @@ h3 select {
     border-radius: 5px;
 }
 
-#provincial-medals .platinum {
+.medal.platinum {
     background: #B5CBD1;
 }
 
-#provincial-medals .gold {
+.medal.gold {
     background: #FCCA35;
 }
 
-#provincial-medals .silver {
+.medal.silver {
     background: #D3D3D1;
 }
 
-#provincial-medals .bronze {
+.medal.bronze {
     background: #BA9E4A;
 }
 
