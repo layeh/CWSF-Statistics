@@ -1,5 +1,13 @@
 [
   {
+    "year": 2016,
+    "host": {
+      "name": "McGill University",
+      "url": "https://www.mcgill.ca/",
+      "location": "Montreal, QC"
+    }
+  },
+  {
     "year": 2015,
     "host": {
       "name": "University of New Brunswick",
