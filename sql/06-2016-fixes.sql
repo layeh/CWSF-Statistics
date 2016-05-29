@@ -13,8 +13,8 @@ UPDATE finalists SET city = "Inuvik", province = "NT" WHERE project = 4674;
 UPDATE finalists SET city = "Collingwood", province = "ON" WHERE project = 4686;
 
 -- 4834
-UPDATE finalists SET city = "Pelican Key" WHERE project = 4834 AND member = 1;
-UPDATE finalists SET city = "Belair" WHERE project = 4834 AND member = 2;
+UPDATE finalists SET city = "Pelican Key" WHERE project = 4834 AND member = 1; -- Guess
+UPDATE finalists SET city = "Belair" WHERE project = 4834 AND member = 2; -- Guess
 
 -- 4911
 UPDATE finalists SET city = "Izmir" WHERE project = 4911;
