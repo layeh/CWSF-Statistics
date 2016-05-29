@@ -1,11 +1,11 @@
 package main
 
 import (
-	"flag"
 	"database/sql"
-	"os"
+	"flag"
 	"fmt"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 
 	_ "github.com/mattn/go-sqlite3"
