@@ -285,6 +285,9 @@ func (p *Project) InvalidFields() []string {
 	if p.Category == 0 {
 		fields = append(fields, "Category")
 	}
+	if p.Region == "" {
+		fields = append(fields, "Region")
+	}
 	if p.Year >= 2011 && p.Challenge == 0 {
 		fields = append(fields, "Challenge")
 	}
