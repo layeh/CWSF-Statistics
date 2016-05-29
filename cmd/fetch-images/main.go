@@ -17,6 +17,10 @@ import (
 
 const base = "https://secure.youthscience.ca/virtualcwsf/"
 
+var rewrites = map[string]string{
+	"3488": "3556",
+}
+
 func main() {
 	directory := flag.String("directory", "images", "Directory to write image files")
 	year := flag.Int("year", 2000, "Year of pictures to download")
@@ -68,11 +72,9 @@ func main() {
 				ch <- true
 			}()
 
-			imageFile := filepath.Join(*directory, id+".jpg")
-			file, err := os.Create(imageFile)
-			if err != nil {
-				fmt.Fprint(os.Stderr, err)
-				return
+			correctID := id
+			if val, ok := rewrites[id]; ok {
+				correctID = val
 			}
 
 			imageURL := base + "viewphoto.php?width=2000&id=" + id
@@ -81,11 +83,25 @@ func main() {
 				fmt.Fprint(os.Stderr, err)
 				return
 			}
-			defer resp.Body.Close()
+			// missing images return a "Content-Length" header value
+			if resp.Header.Get("Content-Length") != "" {
+				fmt.Fprintf(os.Stderr, "Missing picture for %s\n", id)
+				resp.Body.Close()
+				return
+			}
+
+			imageFile := filepath.Join(*directory, correctID+".jpg")
+			file, err := os.Create(imageFile)
+			if err != nil {
+				fmt.Fprint(os.Stderr, err)
+				return
+			}
 
 			if _, err := io.Copy(file, resp.Body); err != nil {
 				fmt.Fprint(os.Stderr, err)
 			}
+
+			resp.Body.Close()
 
 			fmt.Printf("Wrote %s\n", imageFile)
 		}()
