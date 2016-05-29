@@ -28,6 +28,30 @@ VALUES (
   NULL,
   NULL
 );
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1253,
+  2,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
+
+-- 1261
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1261,
+  2,
+  "Rachel Brown",
+  "Medicine Hat",
+  "AB",
+  NULL,
+  NULL
+);
 
 -- 1267
 UPDATE projects SET region = "Fransaskoise" WHERE id = 1267;
@@ -167,6 +191,19 @@ DELETE FROM finalists WHERE project = 1458;
 DELETE FROM awards WHERE project = 1458;
 DELETE FROM project_divisions WHERE project = 1458;
 DELETE FROM projects WHERE id = 1458;
+
+-- 1484
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1484,
+  2,
+  NULL, -- TODO
+  "Toronto",
+  "ON",
+  NULL,
+  NULL
+);
 
 -- 1533
 UPDATE projects SET region = "Northwestern Ontario" WHERE id = 1533;
