@@ -53,6 +53,32 @@ VALUES (
   NULL
 );
 
+-- 2556
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2556,
+  2,
+  "Alex Bercik",
+  "Ancaster",
+  "ON",
+  NULL,
+  NULL
+);
+
+-- 2559
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2559,
+  2,
+  "Rachel Brown",
+  "Medicine Hat",
+  "AB",
+  NULL,
+  NULL
+);
+
 -- 2565
 UPDATE projects SET region = "Ottawa" WHERE id = 2565;
 INSERT INTO finalists
@@ -129,11 +155,22 @@ INSERT INTO finalists
 VALUES (
   2772,
   1,
-  NULL, -- TODO
-  NULL, -- TODO
-  NULL, -- TODO
+  "Emily Olivia Rae Nodwell",
+  "Wilkie",
+  "SK",
   NULL,
-  NULL
+  "Hi, my name is Emily Nodwell. I am a Grade 9 student at McLurg High School in Wilkie, Saskatchewan. I have an older brother in grade 11 and a younger sister in grade 7. I was born in Wainwright, Alberta on September 20th, 1996. We lived in Vermilion, AB until i was four years old and than moved to Wilkie, Saskatchewan where we still live today. Besides my family and friends my greatest interest/love is dance! I have completed Intermediate Foundation Ballet Exam(Royal Academy of Dance) as well as Gr. 4 in Canadian Dance Teachers Association (CDTA) in Tap. I was very priviledged to be asked to attend the School of Alberta Ballet Professional Division but decided to not attend this year but to look for opportunities closer to home. In November 2010, I had the opportunity of a lifetime and danced in Swan Lake with the Moscow Ballet in two performances in Saskatoon! I look forward to meeting new people, having new experiences and creating great new memories!"
+);
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2772,
+  2,
+  "Jessica Adeline Karstens",
+  "Wilkie",
+  "SK",
+  NULL,
+  "Hello, my name is Jessica Adeline Karstens. I was born on October 8th, 1996 in North Battleford, Saskatchewan where we lived until I was 4 months old. In 1997 we moved to a farm near Wilkie, Saskatchewan where we live at the present time. Norman Carter Elementary School is where my schooling began, and I am currently enrolled at McLurg High School in the town of Wilkie. I am 14 years old and in grade 9. My family consists of a younger brother and older sister. I play most sports including volleyball (which is my favourite), basketball, badminton, cross country running, track & field, and swimming. I play piano (even though I honestly don’t like it) and am currently working towards my Grade 2 Advanced Rudiments in theory and my Grade 8 piano that I will write in June of 2012. Basketball season ended with our team winning districts, I then won bronze in badminton playing mixed doubles with my cousin. In the future my career plan is pursuing something in the medical field."
 );
 
 -- 2843
@@ -169,9 +206,9 @@ INSERT INTO finalists
 VALUES (
   2927,
   1,
-  "MB",
-  NULL, -- TODO
   "Abhishek Chakraborty",
+  NULL, -- TODO
+  "MB",
   NULL,
   NULL
 );
