@@ -2,6 +2,20 @@
 
 BEGIN TRANSACTION;
 
+-- 2940
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2940,
+  2,
+  "Aimee Alspaugh",
+  "Prince George",
+  "BC",
+  NULL,
+  NULL
+);
+
+
 -- 2942
 UPDATE projects SET region = "Saskatoon" WHERE id = 2942;
 INSERT INTO finalists
@@ -112,6 +126,19 @@ VALUES (
   NULL
 );
 
+-- 3099
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3099,
+  2,
+  "Andrew Ilyas",
+  "Waterloo",
+  "ON",
+  NULL,
+  NULL
+);
+
 -- 3103
 UPDATE projects SET region = "Waterloo-Wellington" WHERE id = 3103;
 INSERT INTO finalists
@@ -121,6 +148,19 @@ VALUES (
   1,
   "Avinash Pandey",
   NULL, -- TODO
+  "ON",
+  NULL,
+  NULL
+);
+
+-- 3113
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3113,
+  2,
+  "Jack Lott",
+  "Kingston",
   "ON",
   NULL,
   NULL
@@ -140,6 +180,19 @@ VALUES (
   NULL
 );
 
+-- 3139
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3139,
+  2,
+  "Rachel Brown",
+  "Medicine Hat",
+  "AB",
+  NULL,
+  NULL
+);
+
 -- 3140
 UPDATE projects SET region = "Quinte" WHERE id = 3140;
 INSERT INTO finalists
@@ -149,6 +202,19 @@ VALUES (
   1,
   "Theresa DeCola",
   NULL, -- TODO
+  "ON",
+  NULL,
+  NULL
+);
+
+-- 3204
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3204,
+  2,
+  "Karishini Ramamoorth",
+  "Mississauga",
   "ON",
   NULL,
   NULL
