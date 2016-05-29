@@ -17,7 +17,17 @@ VALUES (
 );
 
 -- 2965
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2965,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2995
 UPDATE projects SET region = "London District" WHERE id = 2995;
@@ -62,7 +72,17 @@ VALUES (
 );
 
 -- 3058
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3058,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3073
 UPDATE projects SET region = "Lethbridge" WHERE id = 3073;
@@ -149,7 +169,17 @@ VALUES (
 );
 
 -- 3279
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3279,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3289
 UPDATE projects SET region = "Cariboo Mainline" WHERE id = 3289;

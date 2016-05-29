@@ -13,7 +13,17 @@ UPDATE finalists SET city = "Mexquitic de Carmona" WHERE project = 2494 AND memb
 UPDATE finalists SET city = "San Luis Potosi" WHERE project = 2494 AND member = 2;
 
 -- 2498
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2498,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2502
 UPDATE projects SET region = "Halifax" WHERE id = 2502;
@@ -114,13 +124,43 @@ VALUES (
 );
 
 -- 2772
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2772,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2843
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2843,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2860
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2860,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2927
 UPDATE projects SET region = "Manitoba Schools Science Symposium" WHERE id = 2927;

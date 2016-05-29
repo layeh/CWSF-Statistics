@@ -20,16 +20,56 @@ VALUES (
 UPDATE finalists SET city = "Taipei" WHERE project = 1651;
 
 -- 1653
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1653,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1655
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1655,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1713
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1713,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1724
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1724,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1750
 UPDATE projects SET region = "Renfrew County" WHERE id = 1750;
@@ -46,7 +86,17 @@ VALUES (
 );
 
 -- 1769
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1769,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1806
 UPDATE projects SET region = "Eastern Newfoundland" WHERE id = 1806;
@@ -161,7 +211,17 @@ VALUES (
 );
 
 -- 1907
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1907,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1908
 UPDATE projects SET region = "Calgary Youth" WHERE id = 1908;
@@ -178,10 +238,30 @@ VALUES (
 );
 
 -- 1927
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1927,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1932
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1932,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1940
 UPDATE projects SET region = "Peterborough" WHERE id = 1940;
@@ -226,7 +306,17 @@ VALUES (
 );
 
 -- 1994
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1994,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2013
 UPDATE projects SET region = "Québec et Chaudière-Appalaches" WHERE id = 2013;
@@ -282,10 +372,30 @@ VALUES (
 );
 
 -- 2022
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2022,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2027
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2027,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2033
 UPDATE projects SET region = "Montérégie" WHERE id = 2033;
@@ -313,7 +423,17 @@ VALUES (
 );
 
 -- 2034
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2034,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2037
 UPDATE projects SET region = "Québec et Chaudière-Appalaches" WHERE id = 2037;

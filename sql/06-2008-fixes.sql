@@ -17,7 +17,17 @@ VALUES (
 );
 
 -- 1253
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1253,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1267
 UPDATE projects SET region = "Fransaskoise" WHERE id = 1267;
@@ -34,7 +44,17 @@ VALUES (
 );
 
 -- 1271
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1271,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1272
 UPDATE finalists SET city = "Taipei" WHERE project = 1272;
@@ -114,10 +134,30 @@ VALUES (
 );
 
 -- 1426
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1426,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1445
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1445,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 1457 & 1458
 DELETE FROM finalists WHERE project = 1458;

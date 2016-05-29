@@ -17,7 +17,17 @@ VALUES (
 );
 
 -- 2065
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2065,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2070
 UPDATE finalists SET city = "Kaohsiung" WHERE project = 2070;
@@ -65,7 +75,17 @@ VALUES (
 );
 
 -- 2125
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2125,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2126
 UPDATE projects SET region = "Parkland" WHERE id = 2126;
@@ -124,13 +144,43 @@ VALUES (
 );
 
 -- 2160
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2160,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2165
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2165,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2183
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2183,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2185
 UPDATE projects SET region = "Conseil scolaire acadien provincial (CSAP)" WHERE id = 2185;
@@ -161,10 +211,30 @@ VALUES (
 );
 
 -- 2217
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2217,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2218
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2218,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2219
 UPDATE projects SET region = "Chignecto East" WHERE id = 2219;
@@ -226,7 +296,17 @@ VALUES (
 );
 
 -- 2293
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2293,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2314
 UPDATE projects SET region = "Lambton County" WHERE id = 2314;
@@ -257,7 +337,17 @@ VALUES (
 );
 
 -- 2407
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2407,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2411: [Finalists]
 UPDATE projects SET region = "Strait" WHERE id = 2411;

@@ -17,7 +17,17 @@ VALUES (
 );
 
 -- 3442
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3442,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3449
 UPDATE projects SET region = "Chignecto West" WHERE id = 3449;
@@ -48,7 +58,17 @@ VALUES (
 );
 
 -- 3462
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3462,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3472
 UPDATE projects SET region = "Bluewater" WHERE id = 3472;
@@ -135,7 +155,17 @@ VALUES (
 );
 
 -- 3553
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3553,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3576
 UPDATE projects SET region = "Halifax" WHERE id = 3576;
@@ -180,7 +210,17 @@ VALUES (
 );
 
 -- 3594
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3594,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3617
 UPDATE projects SET region = "Lethbridge" WHERE id = 3617;
@@ -197,10 +237,30 @@ VALUES (
 );
 
 -- 3666
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3666,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3672
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3672,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 3695
 UPDATE projects SET region = "Lethbridge" WHERE id = 3695;
@@ -231,6 +291,16 @@ VALUES (
 );
 
 -- 3769
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3769,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 COMMIT;

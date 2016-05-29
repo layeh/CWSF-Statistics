@@ -3,7 +3,17 @@
 BEGIN TRANSACTION;
 
 -- 852
--- TODO
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  852,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 856
 UPDATE finalists SET city = "Taipei" WHERE project = 856;
