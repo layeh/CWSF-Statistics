@@ -45,6 +45,19 @@ VALUES (
   NULL
 );
 
+-- 1698
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1698,
+  2,
+  NULL, -- TODO
+  "Fernie",
+  "BC",
+  NULL,
+  NULL
+);
+
 -- 1713
 INSERT INTO finalists
 (project, member, name, city, province, gender, biography)
@@ -54,6 +67,19 @@ VALUES (
   NULL, -- TODO
   NULL, -- TODO
   NULL, -- TODO
+  NULL,
+  NULL
+);
+
+-- 1718
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1718,
+  2,
+  "Rachel Brown",
+  "Medicine Hat",
+  "AB",
   NULL,
   NULL
 );
@@ -383,6 +409,17 @@ VALUES (
   NULL,
   NULL
 );
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2022,
+  2,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 2027
 INSERT INTO finalists
@@ -390,6 +427,17 @@ INSERT INTO finalists
 VALUES (
   2027,
   1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2027,
+  2,
   NULL, -- TODO
   NULL, -- TODO
   NULL, -- TODO
