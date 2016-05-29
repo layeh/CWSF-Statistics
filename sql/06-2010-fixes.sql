@@ -2,6 +2,19 @@
 
 BEGIN TRANSACTION;
 
+-- 2061
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2061,
+  2,
+  "Danica Avery",
+  "Whitehorse",
+  "YT",
+  NULL,
+  NULL
+);
+
 -- 2064
 UPDATE projects SET region = "East Kootenay" WHERE id = 2064;
 INSERT INTO finalists
@@ -31,6 +44,19 @@ VALUES (
 
 -- 2070
 UPDATE finalists SET city = "Kaohsiung" WHERE project = 2070;
+
+-- 2072
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2072,
+  2,
+  NULL, -- TODO
+  "Regina",
+  "SK",
+  NULL,
+  NULL
+);
 
 -- 2107
 UPDATE projects SET region = "Calgary Youth" WHERE id = 2107;
@@ -264,6 +290,19 @@ VALUES (
   NULL
 );
 
+-- 2228
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2228,
+  2,
+  "Rachel Brown",
+  "Medicine Hat",
+  "AB",
+  NULL,
+  NULL
+);
+
 -- 2236
 UPDATE finalists SET city = "Cosoleacaque" WHERE project = 2236;
 
@@ -281,6 +320,19 @@ VALUES (
   NULL
 );
 
+-- 2284
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2284,
+  2,
+  "Amit Persad",
+  "Edmonton",
+  "AB",
+  NULL,
+  NULL
+);
+
 -- 2288
 UPDATE projects SET region = "Edmonton" WHERE id = 2288;
 INSERT INTO finalists
@@ -291,6 +343,19 @@ VALUES (
   "Madison Ricard",
   NULL, -- TODO
   "AB",
+  NULL,
+  NULL
+);
+
+-- 2291
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2291,
+  2,
+  NULL, -- TODO
+  "Gypsumville",
+  "MB",
   NULL,
   NULL
 );
@@ -336,6 +401,19 @@ VALUES (
   NULL
 );
 
+-- 2379
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2379,
+  2,
+  NULL, -- TODO
+  "La Ronge",
+  "SK",
+  NULL,
+  NULL
+);
+
 -- 2407
 INSERT INTO finalists
 (project, member, name, city, province, gender, biography)
@@ -349,7 +427,7 @@ VALUES (
   NULL
 );
 
--- 2411: [Finalists]
+-- 2411
 UPDATE projects SET region = "Strait" WHERE id = 2411;
 INSERT INTO finalists
 (project, member, name, city, province, gender, biography)
@@ -362,5 +440,19 @@ VALUES (
   NULL,
   NULL
 );
+
+-- 2422
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  2422,
+  2,
+  NULL, -- TODO
+  "Fort McMurray",
+  "AB",
+  NULL,
+  NULL
+);
+
 
 COMMIT;
