@@ -14,12 +14,49 @@ VALUES (
   NULL,
   NULL
 );
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  852,
+  2,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
 
 -- 856
 UPDATE finalists SET city = "Taipei" WHERE project = 856;
 
 -- 860
 UPDATE finalists SET city = "Kaohsiung" WHERE project = 860;
+
+-- 1068
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1068,
+  2,
+  NULL, -- TODO
+  "Toronto",
+  "ON",
+  NULL,
+  NULL
+);
+
+-- 1077
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1077,
+  2,
+  NULL, -- TODO
+  "Peterborough",
+  "ON",
+  NULL,
+  NULL
+);
 
 -- 1096
 UPDATE projects SET region = "Lambton County" WHERE id = 1096;
@@ -31,6 +68,19 @@ VALUES (
   "Christopher Chopcian",
   NULL, -- TODO
   "ON",
+  NULL,
+  NULL
+);
+
+-- 1172
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1172,
+  2,
+  NULL, -- TODO
+  "Winnipeg",
+  "MB",
   NULL,
   NULL
 );
@@ -75,6 +125,19 @@ VALUES (
   2,
   "Melissa Cammuso",
   NULL, -- TODO
+  "QC",
+  NULL,
+  NULL
+);
+
+-- 1223
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  1223,
+  2,
+  NULL, -- TODO
+  "St-Ours",
   "QC",
   NULL,
   NULL
