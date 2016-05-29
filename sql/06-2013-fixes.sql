@@ -29,6 +29,19 @@ VALUES (
   NULL
 );
 
+-- 3444
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3444,
+  2,
+  "Brendan Samek",
+  "Peace River",
+  "AB",
+  NULL,
+  NULL
+);
+
 -- 3449
 UPDATE projects SET region = "Chignecto West" WHERE id = 3449;
 INSERT INTO finalists
@@ -167,6 +180,19 @@ VALUES (
   NULL
 );
 
+-- 3563
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3563,
+  2,
+  "Shruthi Bandi",
+  "Charlottetown",
+  "PE",
+  NULL,
+  NULL
+);
+
 -- 3576
 UPDATE projects SET region = "Halifax" WHERE id = 3576;
 INSERT INTO finalists
@@ -232,6 +258,19 @@ VALUES (
   "Chloe Devoy",
   NULL, -- TODO
   "AB",
+  NULL,
+  NULL
+);
+
+-- 3624
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3624,
+  2,
+  "Kelvin Zhang",
+  "Vancouver",
+  "BC",
   NULL,
   NULL
 );
