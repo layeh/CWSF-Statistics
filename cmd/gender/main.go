@@ -37,7 +37,7 @@ func main() {
 	fmt.Fprintf(f, "BEGIN TRANSACTION;\n\n")
 
 	rows, err := db.Query(`
-		SELECT name, member, project
+		SELECT name, member, projects.id AS project
 		FROM finalists
 		LEFT JOIN projects
 		ON finalists.project = projects.id
@@ -50,17 +50,20 @@ func main() {
 
 rows:
 	for rows.Next() {
-		var name string
-		var member int
+		var name sql.NullString
+		var member sql.NullInt64
 		var project int
-		rows.Scan(&name, &member, &project)
+		if err := rows.Scan(&name, &member, &project); err != nil {
+			fmt.Fprintln(os.Stdout, err)
+			continue
+		}
 
 		cmd := exec.Command("feh", filepath.Join(*images, strconv.Itoa(project)+".jpg"))
 		if err := cmd.Start(); err != nil {
 			fmt.Fprintln(os.Stdout, err)
 			os.Exit(1)
 		}
-		fmt.Printf("(%d) %s > ", project, name)
+		fmt.Printf("(%d) %s > ", project, name.String)
 
 		var gender string
 		if n, _ := fmt.Scanln(&gender); n != 1 {
@@ -70,7 +73,7 @@ rows:
 		gender = strings.ToUpper(strings.TrimSpace(gender))
 		switch gender {
 		case "M", "F":
-			fmt.Fprintf(f, "UPDATE finalists SET gender = %q WHERE project = %d AND member = %d;\n", gender, project, member)
+			fmt.Fprintf(f, "UPDATE finalists SET gender = %q WHERE project = %d AND member = %d;\n", gender, project, member.Int64)
 		case "Q":
 			break rows
 		default:
