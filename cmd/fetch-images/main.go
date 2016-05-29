@@ -18,6 +18,7 @@ import (
 const base = "https://secure.youthscience.ca/virtualcwsf/"
 
 var rewrites = map[string]string{
+	"1458": "1457",
 	"3488": "3556",
 }
 

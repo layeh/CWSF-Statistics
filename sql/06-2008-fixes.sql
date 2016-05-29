@@ -159,11 +159,14 @@ VALUES (
   NULL
 );
 
--- 1457 & 1458
+-- 1457
+UPDATE finalists SET city = "Jocotepec" WHERE project = 1457;
+
+-- 1458
 DELETE FROM finalists WHERE project = 1458;
 DELETE FROM awards WHERE project = 1458;
-UPDATE finalists SET project = 1458, city = "Jocotepec" WHERE project = 1457;
-UPDATE awards SET project = 1458 WHERE project = 1457;
+DELETE FROM project_divisions WHERE project = 1458;
+DELETE FROM projects WHERE id = 1458;
 
 -- 1533
 UPDATE projects SET region = "Northwestern Ontario" WHERE id = 1533;
