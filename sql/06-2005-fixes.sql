@@ -13,6 +13,19 @@ VALUES (
   NULL
 );
 
+-- 107
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  107,
+  2,
+  NULL, -- TODO
+  "LaSalle",
+  "ON",
+  NULL,
+  NULL
+);
+
 -- 201
 UPDATE finalists SET city = "Taipei" WHERE project = 201;
 
@@ -42,8 +55,47 @@ VALUES (
   NULL
 );
 
+-- 301
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  301,
+  2,
+  NULL, -- TODO
+  "Toronto",
+  "ON",
+  NULL,
+  NULL
+);
+
+-- 303
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  303,
+  2,
+  NULL, -- TODO
+  "Maple",
+  "ON",
+  NULL,
+  NULL
+);
+
 -- 327
 UPDATE finalists SET city = "Vellinge" WHERE project = 327 AND member = 1;
 UPDATE finalists SET city = "Höllviken" WHERE project = 327 AND member = 2;
+
+-- 387
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  387,
+  2,
+  NULL, -- TODO
+  "St-Laurent",
+  "QC",
+  NULL,
+  NULL
+);
 
 COMMIT;
