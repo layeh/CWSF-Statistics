@@ -7,7 +7,7 @@ UPDATE projects SET province = 6 WHERE id = 500;
 UPDATE finalists SET city = "Leader" WHERE project = 500;
 
 -- 511
-UPDATE projects SET region = "Chignecto East", province = 1 WHERE id = 511;
+UPDATE projects SET region = 5, province = 1 WHERE id = 511;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -20,7 +20,7 @@ VALUES (
 );
 
 -- 557
-UPDATE projects SET region = "London District", province = 9 WHERE id = 557;
+UPDATE projects SET region = 59, province = 9 WHERE id = 557;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -33,7 +33,7 @@ VALUES (
 );
 
 -- 596
-UPDATE projects SET region = "Edmonton", province = 11 WHERE id = 596;
+UPDATE projects SET region = 88, province = 11 WHERE id = 596;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

@@ -26,7 +26,7 @@ VALUES (
 );
 
 -- 2502
-UPDATE projects SET region = "Halifax", province = 1 WHERE id = 2502;
+UPDATE projects SET region = 114, province = 1 WHERE id = 2502;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -39,7 +39,7 @@ VALUES (
 );
 
 -- 2525
-UPDATE projects SET region = "Conseil scolaire acadien provincial (CSAP)", province = 1 WHERE id = 2525;
+UPDATE projects SET region = 117, province = 1 WHERE id = 2525;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -76,7 +76,7 @@ VALUES (
 );
 
 -- 2565
-UPDATE projects SET region = "Ottawa", province = 9 WHERE id = 2565;
+UPDATE projects SET region = 44, province = 9 WHERE id = 2565;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -89,7 +89,7 @@ VALUES (
 );
 
 -- 2588
-UPDATE projects SET region = "Quinte", province = 9 WHERE id = 2588;
+UPDATE projects SET region = 46, province = 9 WHERE id = 2588;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -102,7 +102,7 @@ VALUES (
 );
 
 -- 2607
-UPDATE projects SET region = "London District", province = 9 WHERE id = 2607;
+UPDATE projects SET region = 59, province = 9 WHERE id = 2607;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -115,7 +115,7 @@ VALUES (
 );
 
 -- 2649
-UPDATE projects SET region = "Windsor", province = 9 WHERE id = 2649;
+UPDATE projects SET region = 66, province = 9 WHERE id = 2649;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -128,7 +128,7 @@ VALUES (
 );
 
 -- 2756
-UPDATE projects SET region = "Vancouver Island", province = 12 WHERE id = 2756;
+UPDATE projects SET region = 98, province = 12 WHERE id = 2756;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -190,7 +190,7 @@ VALUES (
 );
 
 -- 2927
-UPDATE projects SET region = "Manitoba Schools Science Symposium", province = 8 WHERE id = 2927;
+UPDATE projects SET region = 21, province = 8 WHERE id = 2927;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

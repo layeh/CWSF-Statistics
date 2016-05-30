@@ -6,7 +6,7 @@ BEGIN TRANSACTION;
 UPDATE finalists SET city = "Mexico City" WHERE project = 4194;
 
 -- 4201
-UPDATE projects SET region = "Central Alberta", school = "River Valley School", province = 11 WHERE id = 4201;
+UPDATE projects SET region = 83, school = "River Valley School", province = 11 WHERE id = 4201;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -19,7 +19,7 @@ VALUES (
 );
 
 -- 4496
-UPDATE projects SET region = "Peel", province = 9 WHERE id = 4496;
+UPDATE projects SET region = 61, province = 9 WHERE id = 4496;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

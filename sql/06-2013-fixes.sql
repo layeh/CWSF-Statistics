@@ -3,7 +3,7 @@
 BEGIN TRANSACTION;
 
 -- 3391
-UPDATE projects SET region = "Central Alberta", province = 11 WHERE id = 3391;
+UPDATE projects SET region = 83, province = 11 WHERE id = 3391;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -54,7 +54,7 @@ VALUES (
 );
 
 -- 3449
-UPDATE projects SET region = "Chignecto West", province = 1 WHERE id = 3449;
+UPDATE projects SET region = 130, province = 1 WHERE id = 3449;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -67,7 +67,7 @@ VALUES (
 );
 
 -- 3452
-UPDATE projects SET region = "Frontenac, Lennox & Addington", province = 9 WHERE id = 3452;
+UPDATE projects SET region = 40, province = 9 WHERE id = 3452;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -93,7 +93,7 @@ VALUES (
 );
 
 -- 3472
-UPDATE projects SET region = "Bluewater", province = 9 WHERE id = 3472;
+UPDATE projects SET region = 55, province = 9 WHERE id = 3472;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -106,7 +106,7 @@ VALUES (
 );
 
 -- 3477
-UPDATE projects SET region = "Quinte", province = 9 WHERE id = 3477;
+UPDATE projects SET region = 46, province = 9 WHERE id = 3477;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -119,7 +119,7 @@ VALUES (
 );
 
 -- 3508
-UPDATE projects SET region = "Ottawa", province = 9 WHERE id = 3508;
+UPDATE projects SET region = 44, province = 9 WHERE id = 3508;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -132,7 +132,7 @@ VALUES (
 );
 
 -- 3521
-UPDATE projects SET region = "Saskatchewan Chinook", province = 6 WHERE id = 3521;
+UPDATE projects SET region = 34, province = 6 WHERE id = 3521;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -145,7 +145,7 @@ VALUES (
 );
 
 -- 3545
-UPDATE projects SET region = "York", province = 9 WHERE id = 3545;
+UPDATE projects SET region = 67, province = 9 WHERE id = 3545;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -158,7 +158,7 @@ VALUES (
 );
 
 -- 3550
-UPDATE projects SET region = "Windsor", province = 9 WHERE id = 3550;
+UPDATE projects SET region = 66, province = 9 WHERE id = 3550;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -196,7 +196,7 @@ VALUES (
 );
 
 -- 3576
-UPDATE projects SET region = "Halifax", province = 1 WHERE id = 3576;
+UPDATE projects SET region = 114, province = 1 WHERE id = 3576;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -209,7 +209,7 @@ VALUES (
 );
 
 -- 3579
-UPDATE projects SET region = "Niagara", province = 9 WHERE id = 3579;
+UPDATE projects SET region = 60, province = 9 WHERE id = 3579;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -222,7 +222,7 @@ VALUES (
 );
 
 -- 3583
-UPDATE projects SET region = "Northern British Columbia", province = 12 WHERE id = 3583;
+UPDATE projects SET region = 94, province = 12 WHERE id = 3583;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -248,7 +248,7 @@ VALUES (
 );
 
 -- 3617
-UPDATE projects SET region = "Lethbridge", province = 11 WHERE id = 3617;
+UPDATE projects SET region = 115, province = 11 WHERE id = 3617;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -299,7 +299,7 @@ VALUES (
 );
 
 -- 3695
-UPDATE projects SET region = "Lethbridge", province = 11 WHERE id = 3695;
+UPDATE projects SET region = 115, province = 11 WHERE id = 3695;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -312,7 +312,7 @@ VALUES (
 );
 
 -- 3710
-UPDATE projects SET region = "Strait", province = 1 WHERE id = 3710;
+UPDATE projects SET region = 11, province = 1 WHERE id = 3710;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

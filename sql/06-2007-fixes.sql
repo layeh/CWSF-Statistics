@@ -56,7 +56,7 @@ VALUES (
 );
 
 -- 1096
-UPDATE projects SET region = "Lambton County", province = 9 WHERE id = 1096;
+UPDATE projects SET region = 58, province = 9 WHERE id = 1096;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -87,7 +87,7 @@ UPDATE finalists SET city = "Ronneby" WHERE project = 1185;
 UPDATE finalists SET city = "Mölndal", biography = NULL WHERE project = 1186;
 
 -- 1212
-UPDATE projects SET region = "CDLS - Province du Québec", province = 10 WHERE id = 1212;
+UPDATE projects SET region = 106, province = 10 WHERE id = 1212;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -100,7 +100,7 @@ VALUES (
 );
 
 -- 1213
-UPDATE projects SET region = "CDLS - Province du Québec", province = 10 WHERE id = 1213;
+UPDATE projects SET region = 106, province = 10 WHERE id = 1213;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

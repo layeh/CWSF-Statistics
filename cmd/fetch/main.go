@@ -39,6 +39,139 @@ var provinceMap = map[string]int{
 	"YT": 13,
 }
 
+var regionMap = map[string]int{
+	"Other": 1,
+	"Annapolis Valley": 2,
+	"Central Newfoundland": 3,
+	"Chignecto Central West": 4,
+	"Chignecto East": 5,
+	"Eastern Newfoundland": 6,
+	"New Brunswick": 8,
+	"Prince Edward Island": 9,
+	"South Shore": 10,
+	"Strait": 11,
+	"Tri-County": 12,
+	"Western Newfoundland": 13,
+	"Beaufort-Delta": 15,
+	"Carlton Trail": 16,
+	"Fransaskoise": 17,
+	"Kivalliq": 19,
+	"Leader": 20,
+	"Manitoba Schools Science Symposium": 21,
+	"Northern Manitoba": 22,
+	"Northern Saskatchewan": 23,
+	"Northwest Saskatchewan": 24,
+	"Parkland": 25,
+	"Prince Albert & Northeast Saskatchewan": 26,
+	"Qu'Appelle Valley": 27,
+	"Regina": 28,
+	"River East Transcona": 29,
+	"Sahtu": 30,
+	"Saskatoon": 31,
+	"Southeast Saskatchewan": 32,
+	"St. James-Assiniboia": 33,
+	"Saskatchewan Chinook": 34,
+	"Western Manitoba": 35,
+	"Winnipeg Schools": 36,
+	"Algoma Rotary": 38,
+	"East Parry Sound": 39,
+	"Frontenac, Lennox & Addington": 40,
+	"North Bay": 41,
+	"North Channel": 42,
+	"Northwestern Ontario": 43,
+	"Ottawa": 44,
+	"Peterborough": 45,
+	"Quinte": 46,
+	"Renfrew County": 47,
+	"Rideau-St. Lawrence": 48,
+	"Sudbury": 49,
+	"Sunset Country": 50,
+	"Timmins": 51,
+	"United Counties": 52,
+	"Avon Maitland-Huron Perth": 53,
+	"Bay Area": 54,
+	"Bluewater": 55,
+	"Chatham-Kent": 56,
+	"Lambton County": 58,
+	"London District": 59,
+	"Niagara": 60,
+	"Peel": 61,
+	"Simcoe County": 62,
+	"Toronto": 63,
+	"Victoria County": 64,
+	"Waterloo-Wellington": 65,
+	"Windsor": 66,
+	"York": 67,
+	"Abitibi-Témiscamingue": 68,
+	"Côte-Nord": 69,
+	"Est du Québec": 70,
+	"Estrie": 71,
+	"Mauricie, Centre-du-Québec": 72,
+	"Montérégie": 73,
+	"Montreal": 74,
+	"Montréal CLS": 75,
+	"Outaouais": 76,
+	"Québec et Chaudière-Appalaches": 77,
+	"Rive-Nord": 78,
+	"Saguenay-Lac Saint-Jean": 79,
+	"Alberta Central East": 80,
+	"Calgary Youth": 81,
+	"Cariboo Mainline": 82,
+	"Central Alberta": 83,
+	"Central Interior British Columbia": 84,
+	"Central Okanagan": 85,
+	"Chinook Country": 86,
+	"East Kootenay": 87,
+	"Edmonton": 88,
+	"Fraser Valley": 89,
+	"Greater Vancouver": 90,
+	"Kiwanis Southeast Alberta": 91,
+	"North Okanagan/Shuswap": 93,
+	"Northern British Columbia": 94,
+	"Northern Vancouver Island": 95,
+	"Pacific Northwest": 96,
+	"Peace Country": 97,
+	"Vancouver Island": 98,
+	"West Kootenay & Boundary": 99,
+	"Yukon/Stikine": 100,
+	"Australia": 101,
+	"Sweden": 104,
+	"Taiwan, R.O.C.": 105,
+	"CDLS - Province du Québec": 106,
+	"Cape Breton": 107,
+	"Kitikmeot": 110,
+	"Manitoba First Nations": 111,
+	"Qikiqtani": 112,
+	"Durham": 113,
+	"Halifax": 114,
+	"Lethbridge": 115,
+	"Yellowknife": 116,
+	"Conseil scolaire acadien provincial (CSAP)": 117,
+	"Mi'kma'q First Nation": 118,
+	"Aboriginal Québec Autochtone": 119,
+	"Labrador": 120,
+	"South Fraser": 121,
+	"Wood Buffalo": 122,
+	"Canadian Rockies": 123,
+	"Fundy": 124,
+	"River Valley": 125,
+	"Chaleur": 126,
+	"Mexico": 127,
+	"Prairie Valley": 128,
+	"Districts francophones du Nouveau-Brunswick (DFNB)": 129,
+	"Chignecto West": 130,
+	"Saskatchewan First Nations": 131,
+	"Kawartha": 132,
+	"Southeast Alberta": 133,
+	"Thames Valley": 134,
+	"Frontier Schools": 136,
+	"4H Canada": 137,
+	"South Slave": 138,
+	"India": 139,
+	"Turkey": 140,
+	"St. Maarten": 141,
+}
+
 var categories = map[string]int{
 	"Junior":       1,
 	"Intermediate": 2,
@@ -83,7 +216,7 @@ type Project struct {
 	Divisions []int // < 2011
 	Category  int
 	Province  int
-	Region    string
+	Region    int
 	School    string
 	Abstract  string
 
@@ -122,7 +255,7 @@ func ParseProject(doc *goquery.Document) (*Project, error) {
 	}
 
 	project.Category = categories[doc.Find(`td:contains("Category:")`).Next().Text()]
-	project.Region = doc.Find(`td:contains("Region:")`).Next().Text()
+	project.Region = regionMap[doc.Find(`td:contains("Region:")`).Next().Text()]
 
 	var cities []string
 	var provinces []int
@@ -254,7 +387,7 @@ VALUES (
 	{{ if ne .Title "" }}{{ escape .Title }}{{ else }}NULL{{ end }},
 	{{ if ne .Category 0 }}{{ .Category }}{{ else }}NULL{{ end }},
 	{{ if ne .Province 0 }}{{ .Province }}{{ else }}NULL{{ end }},
-	{{ if ne .Region "" }}{{ escape .Region }}{{ else }}NULL{{ end }},
+	{{ if ne .Region 0 }}{{ .Region }}{{ else }}NULL{{ end }},
 	{{ if ne .School "" }}{{ escape .School }}{{ else }}NULL{{ end }},
 	{{ if ne .Abstract "" }}{{ escape .Abstract }}{{ else }}NULL{{ end }}
 );
@@ -303,7 +436,7 @@ func (p *Project) InvalidFields() []string {
 	if p.Province == 0 {
 		fields = append(fields, "Province")
 	}
-	if p.Region == "" {
+	if p.Region == 0 {
 		fields = append(fields, "Region")
 	}
 	if p.Year >= 2011 && p.Challenge == 0 {

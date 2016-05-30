@@ -3,12 +3,465 @@ BEGIN TRANSACTION;
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1628,
+	2008,
+	"AI game engine design",
+	3,
+	NULL,
+	NULL,
+	NULL,
+	"This project combines two or more models of artificial intelligence into a novel 3D game engine. The benefits are speed efficiency, case of modification, and game inpredictability. A showcase of the game engine's capabilities was written in the form of a first-person shooter game called ""Tense""."
+);
+INSERT INTO project_divisions(project, division) VALUES(1628, 4);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1628,
+	1,
+	"University of Ottawa Entrance Scholarship",
+	"Senior Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Ottawa",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1628,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1628,
+	3,
+	"Bronze Medal - Computing & Information Technology",
+	"Senior",
+	"Intel of Canada, Ltd.",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1290,
+	2008,
+	"A Device for Testing the Flexibility of Lower Limb Orthoses",
+	1,
+	9,
+	66,
+	"Sandwich West P.S.",
+	"My device is designed to test the flexibility of a lower limb orthosis. Correct flexibility is important since it affects gait. The device is intended to replace subjective ‘touch and feel’ techniques with a more objective measurement of flexibility. The device was designed to be simple to use - requiring a minimum of training and time. It is light weight, strong and inexpensive to manufacture."
+);
+INSERT INTO project_divisions(project, division) VALUES(1290, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1290,
+	1,
+	"Joey Charette",
+	"Windsor",
+	NULL,
+	"My name is Joey Charette. I am a Grade 8 student at Sandwich West Public School in LaSalle, Ontario. My interests include playing sports, traveling with my family and spending time with my friends. I have a passion for working with metal and enjoy designing and building in my workshop. Some of the things that I am proud of include winning a local CBC story writing contest and competing in the regional science fair for the past two years. My favorite sports are baseball and football. My baseball team has done very well, twice competing for the Little League Provincial Championship. My football team was undefeated this year. Although our family travels have taken us many great places, my favorite vacation is spending time with my family at the cottage. I am looking forward to being at the national science fair this year. I was excited to have been able to present my project at the Grand Rounds at Sunny Brook Health Sciences - George Brown College Prosthetics and Orthotics Program. My goal is to go to university and become a professional engineer, while playing as much football as possible along the way."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1290,
+	1,
+	"Honourable Mention - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1637,
+	2008,
+	"À cheval vers la guérison!",
+	2,
+	10,
+	73,
+	"École secondaire Fernand-Lefebvre",
+	"Mon projet vise à instruire le grand public sur une facette méconnue des chevaux: l'hippothérapie. Il 'agit de l'utilisation du mouvement équin pour provoquer des réactions posturales et musculaires chez le cavalier. J'arbore aussi les résultats de la première recherche d'hippothérapie sur des sujets trisomiques."
+);
+INSERT INTO project_divisions(project, division) VALUES(1637, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1637,
+	1,
+	"Marie-Ève Arpin",
+	"St-Ours",
+	NULL,
+	"Je me nomme Marie-Ève Arpin, je suis actuellement en deuxième secondaire à l’école Fernand-Lefebvre de Sorel-Tracy dans le programme de concentration sciences. Comme activités parascolaires, je fais partie de l’équipe de volleyball AA de mon école. Chaque année je participe à l’Expo-sciences, car je trouve cela stimulant et amusant. Ce n’est pas une tâche pour moi, mais bien un divertissement, un enrichissement. En 2006, j’ai participé à la finale régionale d’Expo-sciences où j’ai remporté le prix de l’ordre des ornithologues. Je suis heureuse de réaliser cette année, le rêve de tous exposants des Expo-sciences soit participer à la finale pancanadienne! Mes principales passions concernent les animaux, l’environnement et les sciences de la nature. J’aime vivre des expériences sur le terrain, être active. Par mon projet de cette année, j’ai exploré le volet de la sensibilisation auprès des jeunes de niveau primaire. Partager, informer les gens de mon milieu sont des éléments qui m’apportent beaucoup de joie. Les enfants croient sincèrement qu’ils sont les bâtisseurs de demain pour un monde plus sain. Finalement, j’envisage de travailler comme technicienne en santé animale dans un zoo. Je suis comblée de rencontrer maintenant des gens comme moi, passionnée!"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1637,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1637,
+	2,
+	"Bronze Medal - Health Sciences",
+	"Intermediate",
+	"Canadian Institutes of Health Research",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1300,
+	2008,
+	"(W)hole Geometry",
+	1,
+	11,
+	81,
+	"St. Jean Brebeuf School",
+	"The central problem of my project is the following:Given a convex hole C (in the plane) and N planks of equal width, find the best position of the N planks such that they together cover the largest possible area of C. I solve this problem for all N when C is a regular triangle and for N=1 when C can be some other shape."
+);
+INSERT INTO project_divisions(project, division) VALUES(1300, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1300,
+	1,
+	"Mark Bezdek",
+	"Calgary",
+	NULL,
+	"Born in Budapest, Hungary, Mark Bezdek came to Canada in 2003, at the age of 9. This is currently his second year attending the CWSF. Mark has a wide interest of Mathematics and Science, Mark is also interested in hockey, soccer, and basketball. When he grows up he would like to be a computer technician. Mark plans to finish his undergraduate years at the University of Calgary. Mark lives by the quote ""The best way to live your life is to be an optimist."" Mark loves to be outside and play sports with his brothers and friends and also loves to visit other countries. Mark speaks three languages."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1300,
+	1,
+	"Dr. Michael Smith Innovation Award",
+	"Junior",
+	"Canada Foundation for Innovation",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1300,
+	2,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Junior",
+	"Encana Corporation",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1313,
+	2008,
+	"A Fatal Fad",
+	3,
+	6,
+	23,
+	"Churchill Composite H.S.",
+	"This experiment tested the effects of energy drinks on daphnia to be compared to the health effects the drinks impose on humans. Five energy drinks were tested along with a sport drink, caffeine, ethyl alcohol, and water. The heart rates of the daphnia were taken after the exposure to the substances to determine their effect on the heart."
+);
+INSERT INTO project_divisions(project, division) VALUES(1313, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1313,
+	1,
+	"Janelle Watt",
+	"La Ronge",
+	NULL,
+	"I am 18 years old and have lived in La Ronge, Saskatchewan all my life. I enjoy figure skating, softball, snowboarding, kayaking and cheerleading. This season I was captain of the cheer team. I am also on the student representative council and in the yearbook club. I volunteer two to three hours a week in a kindergarten class where I teach and play with the children. Last fall I toured Saskatchewan with the Lieutenant Governor’s Leadership Forum and I met the great leaders of my province. Last spring I won the Citizen of the Year Award for my involvement in school activities. After high school I plan to attend the University of Saskatchewan to earn a bachelors of Science degree and pursue my dream to attend the University of Waterloo to become an optometrist."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1613,
+	2008,
+	"...And Then There Were None: A Tale of a Land Mine Sweeper",
+	3,
+	8,
+	21,
+	"Fort Richmond Collegiate",
+	"The project revolves around the construction of a six wheeled robot with an instrumented arm that can detect, track, and map simulation land mines. The goal of the project s to provide an environmentally and economically sustainable robotic solution to the growing global problem of land mine removal in war affected nations."
+);
+INSERT INTO project_divisions(project, division) VALUES(1613, 7);
+INSERT INTO project_divisions(project, division) VALUES(1613, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1613,
+	1,
+	"Nishant Balakrishnan",
+	"Winnipeg",
+	NULL,
+	"My name is Nishant Balakrishnan, and I am 18 years old. I have lived in Winnipeg, Manitoba for all my life. I enjoy playing musical instruments, of which I play: Guitar, Drums, Piano, Tabla, and Trombone. I run a company, part-time, called Phoenix Amplification that designs and manufactures custom musical instruments and audio equipment. I have been competing in science fairs for over 8 years, and have been a Delegate to the Canada Wide Science Fair 3 times. I have a strong interest in physical sciences, and wish to pursue a double degree of Chemistry and Mechanical Engineering at the University of Manitoba or the University Of British Columbia. I plan to complete a PhD in Mechanical Engineering and go on to teach as a professor. My other passions include: the fine arts, history (of western civilization), and theology. In my spare time I enjoy: composing music, woodworking and metalwork, sketching, and reading."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1613,
+	1,
+	"University of Ottawa Entrance Scholarship",
+	"Senior Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Ottawa",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1613,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1613,
+	3,
+	"Bronze Medal - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1490,
+	2008,
+	"""Air"" It Don't ""Wipe"" It",
+	2,
+	9,
+	63,
+	"Marc Garneau Collegiate",
+	"The objective of this project was to propose a type of windshield-cleaning system that would remove flaws such as streaking, noise, distraction, the constant need to be replaced and so forth. The goal was accomplished by inventing a system consisting of an air compressor that creates high-speed air and blows it onto the windshield and therefore removes all blockages."
+);
+INSERT INTO project_divisions(project, division) VALUES(1490, 7);
+INSERT INTO project_divisions(project, division) VALUES(1490, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1490,
+	1,
+	"Jenny Yao",
+	"Toronto",
+	NULL,
+	"I am currently fifteen years old and I’m in my first year of high school. My interest in sciences has led me to studying in Talented Offerings for Programs in the Sciences (TOPS) at Marc Garneau Collegiate Institute. In school, I participated in the chess club, junior quiz league, anime club, steel band, eco-team, ping-pong club, concert band and more. I have many interests outside of school as well; playing basketball, roller-skating, playing badminton, skating, singing, sketching, and making friends. Being influent in both English and Chinese has helped me much in making friends. I enjoyed co-teaching hip-hop, playing clarinet and zither, and hanging out with my friends. Receiving high marks and recognitions in school are not my only achievements, I’ve also won second place in a provincial writing contest, third place in an track and field event, and second place in a speech contest on how to struggle through hard times and how to adapt to new environments. Having many interests makes it difficult for me to choose a careers path. However, I will be sure to enjoy what I do and I will always love science."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1490,
+	2,
+	"Romina  Abachi",
+	"Toronto",
+	NULL,
+	"My name is Romina Abachi and I am a grade 9 student. I was born in Tehran, Iran and moved to Canada in 2005. It was not easy for me to adapt to the change; however, as time went by, I realized that just as the sky is blue no matter which country you are in, so is science the same. Making sure I always remembered that, I set out to defy all obstacles and let nothing, absolutely nothing, come in my path to enlightenment. In my spare time, I like to play tennis, badminton, or just go to the movies with my friends. I also tutor my peers in school subjects such as math, science, and French. In the future, I hope to get into a forensics job; specifically, invloving work with nuclear substances."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1269,
+	2008,
+	"1950 Dooms Day Asteroid",
+	2,
+	5,
+	15,
+	"Samuel Hearne Secondary School",
+	"This project set out to determine whether or not it would be possible to deflect an asteroid. The distances the test asteroid moved when the explosives were set off proved that it would be possible. The force of the explosives pushed the test asteroid distances of around 2.5 cm."
+);
+INSERT INTO project_divisions(project, division) VALUES(1269, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1269,
+	1,
+	"Baruch Watters",
+	"Inuvik",
+	NULL,
+	"My name is Baruch Watters. I love sports; my favorite sports are hockey and soccer. I participate in many school activities, such as indoor lunch time floor hockey, lunch time basketball, and soccer. I love to go outside and play road hockey with my friends, I play at least once a week. When I finish university I hope to become a chef or carpenter. I have come in first, second, and third place for science fair, one of the three with me not even being there. This is my second time going to the national science fair and I am very excited."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1283,
+	2008,
+	"A Greener Road",
+	2,
+	9,
+	62,
+	"Pretty River Academy",
+	"This project studied the absorption of radiant energy on different colored surfaces placed over an asphalt surface. The findings were extrapolated to illustrate the potential impact on climate change achieved by changing the color of road surfaces. The lighter colored surfaces were found to lower the energy absorption rate and resulted in a reduced rise in temperature."
+);
+INSERT INTO project_divisions(project, division) VALUES(1283, 99);
+INSERT INTO project_divisions(project, division) VALUES(1283, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1283,
+	1,
+	"Jennifer Standen",
+	"Wasaga Beach",
+	NULL,
+	"Jennifer Standen is a grade 10 student at Pretty River Academy in Collingwood, Ontario. She has been a Pretty River Academy student since grade 7. Her life in the United States and the United Arab Emirates prior to this has been instrumental in the development of her global outlook on the world. Jennifer has always had a keen interest in science, ecology and the environment. Her career goals reflect these passions as she plans to become a primatologist. Jennifer is an accomplished equestrian and is also very interested in the dramatic arts. Jennifer has competed successfully at the Simcoe Regional Science Fair twice previously and is proud to represent her school and county this year at the Canada Wide Science Fair."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1283,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1283,
+	2,
+	"Bronze Medal - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1467,
+	2008,
+	"A Breath of Fresh Air",
+	1,
+	12,
+	121,
+	"Seaquam Secondary",
+	"Our experiment is determining where in the neighbourhood has the most and least Class 5 air pollutants. After determining 12 areas in the neighbourhood for testing, we put particulate collectors in their selected areas for 10 hours, and then examined them under a magnifying glass. Our results showed that the location with the most particulates was McDonald’s drive-through, and the least was the backyard."
+);
+INSERT INTO project_divisions(project, division) VALUES(1467, 4);
+INSERT INTO project_divisions(project, division) VALUES(1467, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1467,
+	1,
+	"Holly Alana Hadley",
+	"Delta",
+	NULL,
+	"My name is Holly Hadley and I am a grade 8 student at Seaquam Secondary. My favourite subjects include science, math, and art. Art has been a passion of mine for as long as I can remember, but I also have a particular interest in science, especially when it comes to the environment. I am always wanting to learn more about pollution, and how I can help make a difference. Last year, my partner and I wrote a book for the scholastic contest which was about pollution and how it is affecting animals and their habitats. We came in the top eight books that were entered. My hobbies include ballet, jazz, and modern. I have done many competitions in dance, and have been dancing since I was only three. My other hobby is music, which includes the piano, clarinet, and saxiphone. Also, our family used to live in Africa, which is where I was born, so I have personally seen the troubles there. Because of this, my family and I sponcered a child in Africa. In the near future, I would like to take part in helping the situations in Darfur, making people aware of what is going on there."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1467,
+	2,
+	"Nancy Li",
+	"Delta",
+	NULL,
+	"My name is Nancy Li and I am in the eighth grade at Seaquam Secondary. I currently know three languages, but I really wish to learn all five languages of the United Nations. I spend a lot of time studying music, both theory and practical. My favourite instrument is the piano and I am currently studying Grade 10, but I also play flute, violin and French horn. Other than music, I love visual arts, dance and creative writing. Last year, I wrote and illustrated a picture book about global warming for a national Scholastic contest with a partner. I have also won a speech contest for poetry recitation. My two favourite areas of science are definitely environmental science and also biology. A goal of mine is to promote environmental awareness and conservation to people all over the world, because I feel like nowadays people are taking advantage of our natural resources. In the future I hope to work with the United Nations to help stop famine and war, while stressing the importance of women's rights and education in places that are not yet as developed."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1306,
+	2008,
+	"Aerodynamics of Swept Wings",
+	2,
+	11,
+	81,
+	"Tom Baines Junior High School",
+	"Commercial and military aircrafts use swept wings to generate lift force during flights. The effect of length and angle of wings on the lift generated was studied. The lift force was determined by measuring the weight difference experienced by the wings at a particular wind velocity. Among the wings studied, 45 cm long wings swept back 35 degrees generated the maximum lift."
+);
+INSERT INTO project_divisions(project, division) VALUES(1306, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1306,
+	1,
+	"Varun Sriram",
+	"Calgary",
+	NULL,
+	"My name is Varun Sriram. I am a grade nine student from Tom Baines Junior High in Calgary Alberta. My favourite subjects in school are Science and Social Studies. Things I like to do outside of school are playing the drums, play video games, and ride my bike. I have been participating in the Calgary Youth Science Fair for five years and this is my first time in the CWSF. This year I have won the APEGGA Secondary Engineering Award and the Devon Top Intermediate Award for my project. One day I hope to be a mechanical engineer."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1306,
+	1,
+	"Honourable Mention - Engineering",
+	"Intermediate",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1501,
+	2008,
+	"Alerte aux amas",
+	1,
+	9,
+	42,
+	"École secondaire Villa Française des Jeunes",
+	"Ce projet compare deux types de clôtures dans l'habileté de diminuer les amas de sable. Une simulation de tempête de vent a été fabriquée en utilisant un séchoir à cheveux, un bac et du sable fin.Les deux modèles ont donné des résultats semblables mais la méthode sera utilisée dans des expériences futures."
+);
+INSERT INTO project_divisions(project, division) VALUES(1501, 99);
+INSERT INTO project_divisions(project, division) VALUES(1501, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1501,
+	1,
+	"Chloe Abela",
+	"Elliot Lake",
+	NULL,
+	"My name is Chloe Abela I'm 14 years old and my birthday is in January. I live in Elliot Lake Ontario. A few things I enjoy doing are hanging out with my friends ,going for walks and taking pictures of the enviroment. I have two older sisters and a younger step brother. I also have a few house pets. I attend Villa Francaise des Jeunes and I am in the 8th grade. After high school I have hopes of continueing my education and eventually becoming a teacher."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1501,
+	2,
+	"Amélie Cyr",
+	"Elliot Lake",
+	NULL,
+	"Mon nom est Amélie Cyr. Je vais avoir mes 14 ans pendant la semaine de la FSJ le 17 mai! Je suis une jeune sportive qui aime le ballon-volant, le ballon-panier, le baseball, la course ""cross country"" et la natation.` L'été dernier, je me suis mérité le prix du joeur le plus amélioré sur mon équipe de baseball mixte. Mes matières préférées sont les sciences, les mathématiques et l'éducation physique. J'ai un emploi. Je distribue le journal local. Cet été, je vais aussi travailler au cinéma. Je suis fière de participer à cette Expo Sciences car je vais me faire beaucoup de nouveaux amis."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1466,
 	2008,
 	"""Sour Soil"": the resiliency of nitrogen fixation capabilities of Rhizobia in a",
 	3,
 	12,
-	"South Fraser",
+	121,
 	"Johnston Heights Secondary",
 	"Nitrogen (N2) deficiencies in plants reduce crop yields. The Haber-Bosch process converts N2 to plant-utilizable compounds, but burns fossil fuels. Rhizobia can convert N2 for legumes while raising soil N2 levels. Comparing two species of rhizobia, the experiment concludes Rhizobium leguminosarum performs greater nitrogen fixation within acidic/alkaline soil conditions in symbiosis with Phaseolus vulgaris, and has the potential to become a replacement for nitrogen fertilizers."
 );
@@ -67,169 +520,26 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1613,
+	1275,
 	2008,
-	"...And Then There Were None: A Tale of a Land Mine Sweeper",
-	3,
+	"Acid vs Lime",
+	1,
 	8,
-	"Manitoba Schools Science Symposium",
-	"Fort Richmond Collegiate",
-	"The project revolves around the construction of a six wheeled robot with an instrumented arm that can detect, track, and map simulation land mines. The goal of the project s to provide an environmentally and economically sustainable robotic solution to the growing global problem of land mine removal in war affected nations."
+	22,
+	"Ruth Betts School",
+	"The objects of my study/experiment are limestone and mine-developed acid. The project studies interaction between “acid” and “lime”. The results showed that there is a high level of acidity in the mining area, and that limestone is a natural and organic method to reduce acid. The project advocates for people’s purposeful involvement and activities involving spreading limestone that should reproduce vegetation in the mining communities."
 );
-INSERT INTO project_divisions(project, division) VALUES(1613, 7);
-INSERT INTO project_divisions(project, division) VALUES(1613, 6);
+INSERT INTO project_divisions(project, division) VALUES(1275, 4);
+INSERT INTO project_divisions(project, division) VALUES(1275, 6);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1613,
+	1275,
 	1,
-	"Nishant Balakrishnan",
-	"Winnipeg",
+	"Katrina Vikse",
+	"Flin Flon",
 	NULL,
-	"My name is Nishant Balakrishnan, and I am 18 years old. I have lived in Winnipeg, Manitoba for all my life. I enjoy playing musical instruments, of which I play: Guitar, Drums, Piano, Tabla, and Trombone. I run a company, part-time, called Phoenix Amplification that designs and manufactures custom musical instruments and audio equipment. I have been competing in science fairs for over 8 years, and have been a Delegate to the Canada Wide Science Fair 3 times. I have a strong interest in physical sciences, and wish to pursue a double degree of Chemistry and Mechanical Engineering at the University of Manitoba or the University Of British Columbia. I plan to complete a PhD in Mechanical Engineering and go on to teach as a professor. My other passions include: the fine arts, history (of western civilization), and theology. In my spare time I enjoy: composing music, woodworking and metalwork, sketching, and reading."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1613,
-	1,
-	"University of Ottawa Entrance Scholarship",
-	"Senior Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Ottawa",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1613,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1613,
-	3,
-	"Bronze Medal - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1490,
-	2008,
-	"""Air"" It Don't ""Wipe"" It",
-	2,
-	9,
-	"Toronto",
-	"Marc Garneau Collegiate",
-	"The objective of this project was to propose a type of windshield-cleaning system that would remove flaws such as streaking, noise, distraction, the constant need to be replaced and so forth. The goal was accomplished by inventing a system consisting of an air compressor that creates high-speed air and blows it onto the windshield and therefore removes all blockages."
-);
-INSERT INTO project_divisions(project, division) VALUES(1490, 7);
-INSERT INTO project_divisions(project, division) VALUES(1490, 1);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1490,
-	1,
-	"Jenny Yao",
-	"Toronto",
-	NULL,
-	"I am currently fifteen years old and I’m in my first year of high school. My interest in sciences has led me to studying in Talented Offerings for Programs in the Sciences (TOPS) at Marc Garneau Collegiate Institute. In school, I participated in the chess club, junior quiz league, anime club, steel band, eco-team, ping-pong club, concert band and more. I have many interests outside of school as well; playing basketball, roller-skating, playing badminton, skating, singing, sketching, and making friends. Being influent in both English and Chinese has helped me much in making friends. I enjoyed co-teaching hip-hop, playing clarinet and zither, and hanging out with my friends. Receiving high marks and recognitions in school are not my only achievements, I’ve also won second place in a provincial writing contest, third place in an track and field event, and second place in a speech contest on how to struggle through hard times and how to adapt to new environments. Having many interests makes it difficult for me to choose a careers path. However, I will be sure to enjoy what I do and I will always love science."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1490,
-	2,
-	"Romina  Abachi",
-	"Toronto",
-	NULL,
-	"My name is Romina Abachi and I am a grade 9 student. I was born in Tehran, Iran and moved to Canada in 2005. It was not easy for me to adapt to the change; however, as time went by, I realized that just as the sky is blue no matter which country you are in, so is science the same. Making sure I always remembered that, I set out to defy all obstacles and let nothing, absolutely nothing, come in my path to enlightenment. In my spare time, I like to play tennis, badminton, or just go to the movies with my friends. I also tutor my peers in school subjects such as math, science, and French. In the future, I hope to get into a forensics job; specifically, invloving work with nuclear substances."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1628,
-	2008,
-	"AI game engine design",
-	3,
-	NULL,
-	NULL,
-	NULL,
-	"This project combines two or more models of artificial intelligence into a novel 3D game engine. The benefits are speed efficiency, case of modification, and game inpredictability. A showcase of the game engine's capabilities was written in the form of a first-person shooter game called ""Tense""."
-);
-INSERT INTO project_divisions(project, division) VALUES(1628, 4);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1628,
-	1,
-	"University of Ottawa Entrance Scholarship",
-	"Senior Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Ottawa",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1628,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1628,
-	3,
-	"Bronze Medal - Computing & Information Technology",
-	"Senior",
-	"Intel of Canada, Ltd.",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1306,
-	2008,
-	"Aerodynamics of Swept Wings",
-	2,
-	11,
-	"Calgary Youth",
-	"Tom Baines Junior High School",
-	"Commercial and military aircrafts use swept wings to generate lift force during flights. The effect of length and angle of wings on the lift generated was studied. The lift force was determined by measuring the weight difference experienced by the wings at a particular wind velocity. Among the wings studied, 45 cm long wings swept back 35 degrees generated the maximum lift."
-);
-INSERT INTO project_divisions(project, division) VALUES(1306, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1306,
-	1,
-	"Varun Sriram",
-	"Calgary",
-	NULL,
-	"My name is Varun Sriram. I am a grade nine student from Tom Baines Junior High in Calgary Alberta. My favourite subjects in school are Science and Social Studies. Things I like to do outside of school are playing the drums, play video games, and ride my bike. I have been participating in the Calgary Youth Science Fair for five years and this is my first time in the CWSF. This year I have won the APEGGA Secondary Engineering Award and the Devon Top Intermediate Award for my project. One day I hope to be a mechanical engineer."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1306,
-	1,
-	"Honourable Mention - Engineering",
-	"Intermediate",
-	"Youth Science Foundation Canada",
-	100.00
+	"In 1993, I was born in Latvia, the small Northern-Europian country on the Baltic Sea shore. I lived in a small family with my mother and brother. In 1997, I started Kindergarten, in the capital city of Latvia, Riga. In December of 1999, I came to Canada for the first time. I was 6 years old and I didn't speak English. In 2000, I started Grade 1 in Brandon, Manitoba, Canada. In 2002, My family moved to live in the partly isolated northern community, Flin Flon, Manitoba. I am actively involed in sports, music, and outdoor activities. I love animals, nature, and science. The year 2003 was the first year I participated in the local science fair. In 2007, I was fortunate enough to have had an opportunity to participate in the Canada-Wide Science Fair, held in Nova Scotia. In 2008, I am honoured to go to Ottawa for this CWSF. I am considering becoming a veterinarian or chemist."
 );
 
 INSERT INTO projects
@@ -240,7 +550,7 @@ VALUES (
 	"Affected or Not Affected - That is the Question",
 	1,
 	9,
-	"Frontenac, Lennox & Addington",
+	40,
 	"Module Vanier Elementary School",
 	"This project studied how certain contaminants affected earthworms over a period of 10 days. This was measured by testing the earthworm's health, how much they had eaten throughout the experiment, and how many had died, among other things. The earthworms who were most affected were those who had eaten the least and whose contaminants had the lowest pH (were the most acidic)."
 );
@@ -279,265 +589,26 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1290,
+	1438,
 	2008,
-	"A Device for Testing the Flexibility of Lower Limb Orthoses",
+	"Alysha Light 24",
 	1,
-	9,
+	1,
+	2,
+	"Hantsport School",
+	"The Alysha Light 24 is a solar heater powered by the sun. It is made of recycled materials except for the photo voltaic solar panel and the digital temperature gauge. The purpose of this project is to create heat using only renewable energy."
+);
+INSERT INTO project_divisions(project, division) VALUES(1438, 7);
+INSERT INTO project_divisions(project, division) VALUES(1438, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1438,
+	1,
+	"Alysha Legge-Wood",
 	"Windsor",
-	"Sandwich West P.S.",
-	"My device is designed to test the flexibility of a lower limb orthosis. Correct flexibility is important since it affects gait. The device is intended to replace subjective ‘touch and feel’ techniques with a more objective measurement of flexibility. The device was designed to be simple to use - requiring a minimum of training and time. It is light weight, strong and inexpensive to manufacture."
-);
-INSERT INTO project_divisions(project, division) VALUES(1290, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1290,
-	1,
-	"Joey Charette",
-	"Windsor",
 	NULL,
-	"My name is Joey Charette. I am a Grade 8 student at Sandwich West Public School in LaSalle, Ontario. My interests include playing sports, traveling with my family and spending time with my friends. I have a passion for working with metal and enjoy designing and building in my workshop. Some of the things that I am proud of include winning a local CBC story writing contest and competing in the regional science fair for the past two years. My favorite sports are baseball and football. My baseball team has done very well, twice competing for the Little League Provincial Championship. My football team was undefeated this year. Although our family travels have taken us many great places, my favorite vacation is spending time with my family at the cottage. I am looking forward to being at the national science fair this year. I was excited to have been able to present my project at the Grand Rounds at Sunny Brook Health Sciences - George Brown College Prosthetics and Orthotics Program. My goal is to go to university and become a professional engineer, while playing as much football as possible along the way."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1290,
-	1,
-	"Honourable Mention - Engineering",
-	"Junior",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1269,
-	2008,
-	"1950 Dooms Day Asteroid",
-	2,
-	5,
-	"Beaufort-Delta",
-	"Samuel Hearne Secondary School",
-	"This project set out to determine whether or not it would be possible to deflect an asteroid. The distances the test asteroid moved when the explosives were set off proved that it would be possible. The force of the explosives pushed the test asteroid distances of around 2.5 cm."
-);
-INSERT INTO project_divisions(project, division) VALUES(1269, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1269,
-	1,
-	"Baruch Watters",
-	"Inuvik",
-	NULL,
-	"My name is Baruch Watters. I love sports; my favorite sports are hockey and soccer. I participate in many school activities, such as indoor lunch time floor hockey, lunch time basketball, and soccer. I love to go outside and play road hockey with my friends, I play at least once a week. When I finish university I hope to become a chef or carpenter. I have come in first, second, and third place for science fair, one of the three with me not even being there. This is my second time going to the national science fair and I am very excited."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1283,
-	2008,
-	"A Greener Road",
-	2,
-	9,
-	"Simcoe County",
-	"Pretty River Academy",
-	"This project studied the absorption of radiant energy on different colored surfaces placed over an asphalt surface. The findings were extrapolated to illustrate the potential impact on climate change achieved by changing the color of road surfaces. The lighter colored surfaces were found to lower the energy absorption rate and resulted in a reduced rise in temperature."
-);
-INSERT INTO project_divisions(project, division) VALUES(1283, 99);
-INSERT INTO project_divisions(project, division) VALUES(1283, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1283,
-	1,
-	"Jennifer Standen",
-	"Wasaga Beach",
-	NULL,
-	"Jennifer Standen is a grade 10 student at Pretty River Academy in Collingwood, Ontario. She has been a Pretty River Academy student since grade 7. Her life in the United States and the United Arab Emirates prior to this has been instrumental in the development of her global outlook on the world. Jennifer has always had a keen interest in science, ecology and the environment. Her career goals reflect these passions as she plans to become a primatologist. Jennifer is an accomplished equestrian and is also very interested in the dramatic arts. Jennifer has competed successfully at the Simcoe Regional Science Fair twice previously and is proud to represent her school and county this year at the Canada Wide Science Fair."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1283,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1283,
-	2,
-	"Bronze Medal - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1403,
-	2008,
-	"A Force: Drag On A Rocket",
-	1,
-	9,
-	"Renfrew County",
-	"St. Mary's E.S.",
-	"An experiment to discover what angle of nose cone, on a model rocket, would produce the least amount of drag. The forces on a rocket; thrust, weight and the aerodynamic forces of lift and drag; are presented and discussed in detail. While conducting the experiment, Newton's 3 Laws of Motion were researched and applied to model rockets."
-);
-INSERT INTO project_divisions(project, division) VALUES(1403, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1403,
-	1,
-	"Conor McKenna",
-	"Deep River",
-	NULL,
-	"Conor James McKenna was born in February 1995 in Winnipeg, MB. Since then, he has lived in 4 different time zones including Nottingham, England. He is the eldest of three boys. He has traveled on three different continents including a safari in South Africa. He currently resides in Deep River, ON and attends St. Mary's School as a Grade 7 student. He was home schooled for the first 5 years of his education. He has successfully completed the Davis Dyslexia programme. For the last two years Conor has won his school's grade level Science fair awards and last year he won the grade 6 regional engineering gold medal. He is an avid sailor, who hopes to attain White Sail 3 this year and an archer. He has been a member of the Scouting movement for the last 6 years and currently holds the position as Patrol Second in the 1st Deep River Scout Troop. He enjoys audio books, fishing, camping, mountain biking, WWII model airplanes and model rockets. His ultimate goal is to study physics and hopes to participate in future space missions to Mars."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1313,
-	2008,
-	"A Fatal Fad",
-	3,
-	6,
-	"Northern Saskatchewan",
-	"Churchill Composite H.S.",
-	"This experiment tested the effects of energy drinks on daphnia to be compared to the health effects the drinks impose on humans. Five energy drinks were tested along with a sport drink, caffeine, ethyl alcohol, and water. The heart rates of the daphnia were taken after the exposure to the substances to determine their effect on the heart."
-);
-INSERT INTO project_divisions(project, division) VALUES(1313, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1313,
-	1,
-	"Janelle Watt",
-	"La Ronge",
-	NULL,
-	"I am 18 years old and have lived in La Ronge, Saskatchewan all my life. I enjoy figure skating, softball, snowboarding, kayaking and cheerleading. This season I was captain of the cheer team. I am also on the student representative council and in the yearbook club. I volunteer two to three hours a week in a kindergarten class where I teach and play with the children. Last fall I toured Saskatchewan with the Lieutenant Governor’s Leadership Forum and I met the great leaders of my province. Last spring I won the Citizen of the Year Award for my involvement in school activities. After high school I plan to attend the University of Saskatchewan to earn a bachelors of Science degree and pursue my dream to attend the University of Waterloo to become an optometrist."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1451,
-	2008,
-	"Altering the Gene Expression of Streptococcus Pyogenes Using a Natural Product",
-	2,
-	9,
-	"London District",
-	"A.B. Lucas S.S.",
-	"The purpose of this experiment is determine if a natural product, garlic, can alter the gene expression of Streptococcus pyogenes. I hypothesized that garlic extracts will cause changes in its gene expression. To determine the following hypothesis, I had 8 falcon tubes that had various amounts of garlic, and ran a protein gel apparatus. My hypothesis was correct. Garlic could be a new antimicrobial."
-);
-INSERT INTO project_divisions(project, division) VALUES(1451, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1451,
-	1,
-	"Tony Kwon",
-	"London",
-	NULL,
-	"I am a grade 10 student in London, Ontario, Canada who attends A.B. Lucas Secondary School. I am currently involved in both intermediate and senior band in Lucas. Also, I am in the school badminton team as a ""men-singles"" player. My badminton season just finished and I ended up as 4th place in London. Concerning community activities, I play a monthly concert to a group of people as a violinist. My hobbies and interests include scientific experiments, music, and sports. I do considerably well in the school, and I hope to become a microbiologist when I grow up. I am very thankful for the opportunity to be in the CWSF 2008."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1451,
-	1,
-	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
-	"Intermediate",
-	"Rx&D Health Research Foundation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1501,
-	2008,
-	"Alerte aux amas",
-	1,
-	9,
-	"North Channel",
-	"École secondaire Villa Française des Jeunes",
-	"Ce projet compare deux types de clôtures dans l'habileté de diminuer les amas de sable. Une simulation de tempête de vent a été fabriquée en utilisant un séchoir à cheveux, un bac et du sable fin.Les deux modèles ont donné des résultats semblables mais la méthode sera utilisée dans des expériences futures."
-);
-INSERT INTO project_divisions(project, division) VALUES(1501, 99);
-INSERT INTO project_divisions(project, division) VALUES(1501, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1501,
-	1,
-	"Chloe Abela",
-	"Elliot Lake",
-	NULL,
-	"My name is Chloe Abela I'm 14 years old and my birthday is in January. I live in Elliot Lake Ontario. A few things I enjoy doing are hanging out with my friends ,going for walks and taking pictures of the enviroment. I have two older sisters and a younger step brother. I also have a few house pets. I attend Villa Francaise des Jeunes and I am in the 8th grade. After high school I have hopes of continueing my education and eventually becoming a teacher."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1501,
-	2,
-	"Amélie Cyr",
-	"Elliot Lake",
-	NULL,
-	"Mon nom est Amélie Cyr. Je vais avoir mes 14 ans pendant la semaine de la FSJ le 17 mai! Je suis une jeune sportive qui aime le ballon-volant, le ballon-panier, le baseball, la course ""cross country"" et la natation.` L'été dernier, je me suis mérité le prix du joeur le plus amélioré sur mon équipe de baseball mixte. Mes matières préférées sont les sciences, les mathématiques et l'éducation physique. J'ai un emploi. Je distribue le journal local. Cet été, je vais aussi travailler au cinéma. Je suis fière de participer à cette Expo Sciences car je vais me faire beaucoup de nouveaux amis."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1300,
-	2008,
-	"(W)hole Geometry",
-	1,
-	11,
-	"Calgary Youth",
-	"St. Jean Brebeuf School",
-	"The central problem of my project is the following:Given a convex hole C (in the plane) and N planks of equal width, find the best position of the N planks such that they together cover the largest possible area of C. I solve this problem for all N when C is a regular triangle and for N=1 when C can be some other shape."
-);
-INSERT INTO project_divisions(project, division) VALUES(1300, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1300,
-	1,
-	"Mark Bezdek",
-	"Calgary",
-	NULL,
-	"Born in Budapest, Hungary, Mark Bezdek came to Canada in 2003, at the age of 9. This is currently his second year attending the CWSF. Mark has a wide interest of Mathematics and Science, Mark is also interested in hockey, soccer, and basketball. When he grows up he would like to be a computer technician. Mark plans to finish his undergraduate years at the University of Calgary. Mark lives by the quote ""The best way to live your life is to be an optimist."" Mark loves to be outside and play sports with his brothers and friends and also loves to visit other countries. Mark speaks three languages."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1300,
-	1,
-	"Dr. Michael Smith Innovation Award",
-	"Junior",
-	"Canada Foundation for Innovation",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1300,
-	2,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Junior",
-	"Encana Corporation",
-	100.00
+	"My name is Alysha Legge-Wood and I am 13 years old. I am interested in horses and helping the environment. I live in Windsor, N.S. and am in grade 7 at Hantsport School and I enjoy it! I ride horses at Encore farms in Kentville, N.S. and I have been riding there for many years now. My favorite horse there is named Dee Dee, a dark bay mare that is 22 years old. I became interested in the environmentally friendly energy because my dad works in the field, and has preached it every day for many years now. I participate in 4-H, in the light horse project, photography and woodworking. My favorite project is light horse because you get to work with your horse and it is a very good experience for everyone. I have one pet and that is my cat, Buddy. He is the most lovable thing I have ever seen and I love him to pieces."
 );
 
 INSERT INTO projects
@@ -548,7 +619,7 @@ VALUES (
 	"All Packed Up: A Study in Random Close Packing",
 	2,
 	1,
-	"Strait",
+	11,
 	"Dr. John Hugh Gillis Regional School",
 	"This project is a series of experiments to model the random close-packing (RCP) of atoms in solids in both two and three dimensions. These experiments were designed to measure two specific properties of randomly close-packed structures: the packing efficiency, defined as the amount of space actually filled by the atoms, and the average coordination number."
 );
@@ -587,154 +658,59 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1467,
+	1403,
 	2008,
-	"A Breath of Fresh Air",
+	"A Force: Drag On A Rocket",
 	1,
-	12,
-	"South Fraser",
-	"Seaquam Secondary",
-	"Our experiment is determining where in the neighbourhood has the most and least Class 5 air pollutants. After determining 12 areas in the neighbourhood for testing, we put particulate collectors in their selected areas for 10 hours, and then examined them under a magnifying glass. Our results showed that the location with the most particulates was McDonald’s drive-through, and the least was the backyard."
+	9,
+	47,
+	"St. Mary's E.S.",
+	"An experiment to discover what angle of nose cone, on a model rocket, would produce the least amount of drag. The forces on a rocket; thrust, weight and the aerodynamic forces of lift and drag; are presented and discussed in detail. While conducting the experiment, Newton's 3 Laws of Motion were researched and applied to model rockets."
 );
-INSERT INTO project_divisions(project, division) VALUES(1467, 4);
-INSERT INTO project_divisions(project, division) VALUES(1467, 6);
+INSERT INTO project_divisions(project, division) VALUES(1403, 7);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1467,
+	1403,
 	1,
-	"Holly Alana Hadley",
-	"Delta",
+	"Conor McKenna",
+	"Deep River",
 	NULL,
-	"My name is Holly Hadley and I am a grade 8 student at Seaquam Secondary. My favourite subjects include science, math, and art. Art has been a passion of mine for as long as I can remember, but I also have a particular interest in science, especially when it comes to the environment. I am always wanting to learn more about pollution, and how I can help make a difference. Last year, my partner and I wrote a book for the scholastic contest which was about pollution and how it is affecting animals and their habitats. We came in the top eight books that were entered. My hobbies include ballet, jazz, and modern. I have done many competitions in dance, and have been dancing since I was only three. My other hobby is music, which includes the piano, clarinet, and saxiphone. Also, our family used to live in Africa, which is where I was born, so I have personally seen the troubles there. Because of this, my family and I sponcered a child in Africa. In the near future, I would like to take part in helping the situations in Darfur, making people aware of what is going on there."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1467,
-	2,
-	"Nancy Li",
-	"Delta",
-	NULL,
-	"My name is Nancy Li and I am in the eighth grade at Seaquam Secondary. I currently know three languages, but I really wish to learn all five languages of the United Nations. I spend a lot of time studying music, both theory and practical. My favourite instrument is the piano and I am currently studying Grade 10, but I also play flute, violin and French horn. Other than music, I love visual arts, dance and creative writing. Last year, I wrote and illustrated a picture book about global warming for a national Scholastic contest with a partner. I have also won a speech contest for poetry recitation. My two favourite areas of science are definitely environmental science and also biology. A goal of mine is to promote environmental awareness and conservation to people all over the world, because I feel like nowadays people are taking advantage of our natural resources. In the future I hope to work with the United Nations to help stop famine and war, while stressing the importance of women's rights and education in places that are not yet as developed."
+	"Conor James McKenna was born in February 1995 in Winnipeg, MB. Since then, he has lived in 4 different time zones including Nottingham, England. He is the eldest of three boys. He has traveled on three different continents including a safari in South Africa. He currently resides in Deep River, ON and attends St. Mary's School as a Grade 7 student. He was home schooled for the first 5 years of his education. He has successfully completed the Davis Dyslexia programme. For the last two years Conor has won his school's grade level Science fair awards and last year he won the grade 6 regional engineering gold medal. He is an avid sailor, who hopes to attain White Sail 3 this year and an archer. He has been a member of the Scouting movement for the last 6 years and currently holds the position as Patrol Second in the 1st Deep River Scout Troop. He enjoys audio books, fishing, camping, mountain biking, WWII model airplanes and model rockets. His ultimate goal is to study physics and hopes to participate in future space missions to Mars."
 );
 
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1275,
+	1451,
 	2008,
-	"Acid vs Lime",
-	1,
-	8,
-	"Northern Manitoba",
-	"Ruth Betts School",
-	"The objects of my study/experiment are limestone and mine-developed acid. The project studies interaction between “acid” and “lime”. The results showed that there is a high level of acidity in the mining area, and that limestone is a natural and organic method to reduce acid. The project advocates for people’s purposeful involvement and activities involving spreading limestone that should reproduce vegetation in the mining communities."
-);
-INSERT INTO project_divisions(project, division) VALUES(1275, 4);
-INSERT INTO project_divisions(project, division) VALUES(1275, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1275,
-	1,
-	"Katrina Vikse",
-	"Flin Flon",
-	NULL,
-	"In 1993, I was born in Latvia, the small Northern-Europian country on the Baltic Sea shore. I lived in a small family with my mother and brother. In 1997, I started Kindergarten, in the capital city of Latvia, Riga. In December of 1999, I came to Canada for the first time. I was 6 years old and I didn't speak English. In 2000, I started Grade 1 in Brandon, Manitoba, Canada. In 2002, My family moved to live in the partly isolated northern community, Flin Flon, Manitoba. I am actively involed in sports, music, and outdoor activities. I love animals, nature, and science. The year 2003 was the first year I participated in the local science fair. In 2007, I was fortunate enough to have had an opportunity to participate in the Canada-Wide Science Fair, held in Nova Scotia. In 2008, I am honoured to go to Ottawa for this CWSF. I am considering becoming a veterinarian or chemist."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1637,
-	2008,
-	"À cheval vers la guérison!",
+	"Altering the Gene Expression of Streptococcus Pyogenes Using a Natural Product",
 	2,
-	10,
-	"Montérégie",
-	"École secondaire Fernand-Lefebvre",
-	"Mon projet vise à instruire le grand public sur une facette méconnue des chevaux: l'hippothérapie. Il 'agit de l'utilisation du mouvement équin pour provoquer des réactions posturales et musculaires chez le cavalier. J'arbore aussi les résultats de la première recherche d'hippothérapie sur des sujets trisomiques."
+	9,
+	59,
+	"A.B. Lucas S.S.",
+	"The purpose of this experiment is determine if a natural product, garlic, can alter the gene expression of Streptococcus pyogenes. I hypothesized that garlic extracts will cause changes in its gene expression. To determine the following hypothesis, I had 8 falcon tubes that had various amounts of garlic, and ran a protein gel apparatus. My hypothesis was correct. Garlic could be a new antimicrobial."
 );
-INSERT INTO project_divisions(project, division) VALUES(1637, 8);
+INSERT INTO project_divisions(project, division) VALUES(1451, 500);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1637,
+	1451,
 	1,
-	"Marie-Ève Arpin",
-	"St-Ours",
+	"Tony Kwon",
+	"London",
 	NULL,
-	"Je me nomme Marie-Ève Arpin, je suis actuellement en deuxième secondaire à l’école Fernand-Lefebvre de Sorel-Tracy dans le programme de concentration sciences. Comme activités parascolaires, je fais partie de l’équipe de volleyball AA de mon école. Chaque année je participe à l’Expo-sciences, car je trouve cela stimulant et amusant. Ce n’est pas une tâche pour moi, mais bien un divertissement, un enrichissement. En 2006, j’ai participé à la finale régionale d’Expo-sciences où j’ai remporté le prix de l’ordre des ornithologues. Je suis heureuse de réaliser cette année, le rêve de tous exposants des Expo-sciences soit participer à la finale pancanadienne! Mes principales passions concernent les animaux, l’environnement et les sciences de la nature. J’aime vivre des expériences sur le terrain, être active. Par mon projet de cette année, j’ai exploré le volet de la sensibilisation auprès des jeunes de niveau primaire. Partager, informer les gens de mon milieu sont des éléments qui m’apportent beaucoup de joie. Les enfants croient sincèrement qu’ils sont les bâtisseurs de demain pour un monde plus sain. Finalement, j’envisage de travailler comme technicienne en santé animale dans un zoo. Je suis comblée de rencontrer maintenant des gens comme moi, passionnée!"
+	"I am a grade 10 student in London, Ontario, Canada who attends A.B. Lucas Secondary School. I am currently involved in both intermediate and senior band in Lucas. Also, I am in the school badminton team as a ""men-singles"" player. My badminton season just finished and I ended up as 4th place in London. Concerning community activities, I play a monthly concert to a group of people as a violinist. My hobbies and interests include scientific experiments, music, and sports. I do considerably well in the school, and I hope to become a microbiologist when I grow up. I am very thankful for the opportunity to be in the CWSF 2008."
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1637,
+	1451,
 	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1637,
-	2,
-	"Bronze Medal - Health Sciences",
+	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
 	"Intermediate",
-	"Canadian Institutes of Health Research",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1438,
-	2008,
-	"Alysha Light 24",
-	1,
-	1,
-	"Annapolis Valley",
-	"Hantsport School",
-	"The Alysha Light 24 is a solar heater powered by the sun. It is made of recycled materials except for the photo voltaic solar panel and the digital temperature gauge. The purpose of this project is to create heat using only renewable energy."
-);
-INSERT INTO project_divisions(project, division) VALUES(1438, 7);
-INSERT INTO project_divisions(project, division) VALUES(1438, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1438,
-	1,
-	"Alysha Legge-Wood",
-	"Windsor",
-	NULL,
-	"My name is Alysha Legge-Wood and I am 13 years old. I am interested in horses and helping the environment. I live in Windsor, N.S. and am in grade 7 at Hantsport School and I enjoy it! I ride horses at Encore farms in Kentville, N.S. and I have been riding there for many years now. My favorite horse there is named Dee Dee, a dark bay mare that is 22 years old. I became interested in the environmentally friendly energy because my dad works in the field, and has preached it every day for many years now. I participate in 4-H, in the light horse project, photography and woodworking. My favorite project is light horse because you get to work with your horse and it is a very good experience for everyone. I have one pet and that is my cat, Buddy. He is the most lovable thing I have ever seen and I love him to pieces."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1308,
-	2008,
-	"Amazing Algae",
-	1,
-	12,
-	"Central Interior British Columbia",
-	"Nechako Electronic Busing",
-	"My experiment was designed to discover the optimal growing environment for algae. I designed the experiment to test many different variables. These variables included direct sunlight, indirect sunlight, lidded jars, non-lidded jars, and different room temperatures. I discovered that the best environment for algae to grow was a cooler one; about 15-20 degrees Celsius with indirect light."
-);
-INSERT INTO project_divisions(project, division) VALUES(1308, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1308,
-	1,
-	"Oliver  Lindstrom",
-	"Fraser Lake",
-	NULL,
-	"My name is Oliver Lindstrom. I am 12 years old and in grade 8. I am home schooled through Nechako Ebus Academy in Vanderhoof, but live in Fraser Lake, British Columbia. This is my first year going to the CWSF and I am very excited about going. My favorite sports are golfing and cross-country skiing. My favorite subjects are Science and English. I plan to attend university to study either Chiropractic or Genetic Engineering."
+	"Rx&D Health Research Foundation",
+	100.00
 );
 
 INSERT INTO projects
@@ -745,7 +721,7 @@ VALUES (
 	"Alzheimer's Disease: PARs to the Rescue",
 	3,
 	11,
-	"Calgary Youth",
+	81,
 	"Sir Winston Churchill High School",
 	"The project explores the mechanisms of neurodegeneration in Alzheimer’s disease (AD) by determining the effect of AD-related β-amyloid protein (Aβ) on proteinase-activated receptors (PARs) expression and function in astrocytes. The results further current understanding of the involvement of cell surface receptors in AD and implicate PARs as potential therapeutic target for AD treatment."
 );
@@ -834,12 +810,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1308,
+	2008,
+	"Amazing Algae",
+	1,
+	12,
+	84,
+	"Nechako Electronic Busing",
+	"My experiment was designed to discover the optimal growing environment for algae. I designed the experiment to test many different variables. These variables included direct sunlight, indirect sunlight, lidded jars, non-lidded jars, and different room temperatures. I discovered that the best environment for algae to grow was a cooler one; about 15-20 degrees Celsius with indirect light."
+);
+INSERT INTO project_divisions(project, division) VALUES(1308, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1308,
+	1,
+	"Oliver  Lindstrom",
+	"Fraser Lake",
+	NULL,
+	"My name is Oliver Lindstrom. I am 12 years old and in grade 8. I am home schooled through Nechako Ebus Academy in Vanderhoof, but live in Fraser Lake, British Columbia. This is my first year going to the CWSF and I am very excited about going. My favorite sports are golfing and cross-country skiing. My favorite subjects are Science and English. I plan to attend university to study either Chiropractic or Genetic Engineering."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1327,
 	2008,
 	"Amplification of hTERT cDNA For Transient Transfection with Mammalian Cells",
 	2,
 	12,
-	"Northern British Columbia",
+	94,
 	"North Peace Secondary",
 	"Telomerase (hTERT) has been studied in correlation to cancer, and is primarily known to help maintain telomere lengths in some cancer types, allowing continuous cell division without senescence. My project studied whether hTERT had a role in benign cancer cell division rates, and studied whether benign mammalian cancer cells could be prompted into a malignant state, by transient transfection of hTERT."
 );
@@ -878,12 +878,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1440,
+	2008,
+	"An Investigation into Chaos Theory",
+	2,
+	1,
+	2,
+	"King's-Edgehill School",
+	"Chaos Theory – a sensitive dependence on initial conditions. Chaos Theory suggests the inability to accurately predict future outcomes when the state of present conditions cannot be precisely and accurately determined. This report includes both physical and mathematical experiments which resulted in non predictable outcomes, including ones in which the initial conditions were constant!"
+);
+INSERT INTO project_divisions(project, division) VALUES(1440, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1440,
+	1,
+	"Christopher Harlow",
+	"Bridgewater",
+	NULL,
+	"I am 15 years old and come from Bridgewater, Nova Scotia. I am currently in Grade 9 at Kings Edgehill School in Windsor, Nova Scotia, which is Canada’s oldest independent school. I am very athletic and played on the Senior High hockey team in Bridgewater last year while only in Grade 8. This year I focused on skiing, soccer and badminton, and enjoy playing recreational rugby. I have been on The Headmasters Honour Roll all year and really enjoy all of my courses, but most particularly Science, Mathematics, Geography and French. I intend to pursue the IB Diploma program through high school with the intent of going to University to obtain Doctorate in Neuroscience. At my Regional Science Fair I received the Gold Medallion in Physical Science, The NS Institute of Science Award, the Service Master Best Physical Science Project trophy and plaque and a opportunity to attend the Canada Wide Science Fair."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1350,
 	2008,
 	"An Unsolved Mystery: The Origin of Life",
 	3,
 	9,
-	"Bay Area",
+	54,
 	"North Park Collegiate & Vocational",
 	"Life on Earth likely involved amino acids clustering together forming cell-like structures (microspheres). We investigated whether certain types of amino acids were more likely to form microspheres than others. We heated the three groups of amino acids, separately, with lava rocks and saline solution. Nonpolar amino acids formed into microspheres. Polar and electrically charged amino acids did not come together into any cell-like shape."
 );
@@ -912,36 +936,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1440,
-	2008,
-	"An Investigation into Chaos Theory",
-	2,
-	1,
-	"Annapolis Valley",
-	"King's-Edgehill School",
-	"Chaos Theory – a sensitive dependence on initial conditions. Chaos Theory suggests the inability to accurately predict future outcomes when the state of present conditions cannot be precisely and accurately determined. This report includes both physical and mathematical experiments which resulted in non predictable outcomes, including ones in which the initial conditions were constant!"
-);
-INSERT INTO project_divisions(project, division) VALUES(1440, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1440,
-	1,
-	"Christopher Harlow",
-	"Bridgewater",
-	NULL,
-	"I am 15 years old and come from Bridgewater, Nova Scotia. I am currently in Grade 9 at Kings Edgehill School in Windsor, Nova Scotia, which is Canada’s oldest independent school. I am very athletic and played on the Senior High hockey team in Bridgewater last year while only in Grade 8. This year I focused on skiing, soccer and badminton, and enjoy playing recreational rugby. I have been on The Headmasters Honour Roll all year and really enjoy all of my courses, but most particularly Science, Mathematics, Geography and French. I intend to pursue the IB Diploma program through high school with the intent of going to University to obtain Doctorate in Neuroscience. At my Regional Science Fair I received the Gold Medallion in Physical Science, The NS Institute of Science Award, the Service Master Best Physical Science Project trophy and plaque and a opportunity to attend the Canada Wide Science Fair."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1342,
 	2008,
 	"Analyzing Yeast Metabolism Under Aerobic & Anaerobic conditions",
 	2,
 	1,
-	"Chignecto East",
+	5,
 	"Northumberland Regional High School",
 	"Yeast metabolism under aerobic and anaerobic conditions produces different amounts of carbon dioxide. The amount of carbon dioxide produced was measured under both of these conditions using bread yeast. It was also measured after doubling the sugar and increasing the temperature. Each experiment was conducted three times for twenty minutes each. Aerobic metabolism was always faster and produced more carbon dioxide than anaerobically."
 );
@@ -960,36 +960,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1627,
-	2008,
-	"Antibiotic resistance",
-	3,
-	10,
-	"Montreal",
-	"École secondaire régionale Centennial",
-	"In this three-part project, the development, capacity, and prevention of antibiotic resistance was analyzed using Escherichia Coli and Ampicillin, the bacteria were exposed to the antiobiotic for 4 weeks. The resistance levels of the bacteria was recorded every week in order to demonstrate the process of antibiotic resistance."
-);
-INSERT INTO project_divisions(project, division) VALUES(1627, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1627,
-	1,
-	"Omar Choudhury",
-	"Brossard",
-	NULL,
-	"My name is Omar Choudhury, I’m seventeen years old, and currently attending Centennial Regional High School in secondary five. I’m from Brossard, Québec, and am an avid supporter of the Montréal Canadiens hockey team! This is the first time I will be showcasing a project at the national level for the science fair, and it is definitely a great honour to be a part of the CWSF. I am interested primarily in the fields of physics, and applied sciences; however, I am also interested in other fields such as health and computer science. In the future, I would like to shape my career towards a domain which involves those scientific aspects to it. I regularly volunteer in and out of school, serving as a helper at the Montréal General Hospital throughout the summer. I enjoy playing hockey and tennis, in addition to swimming and making movies as leisure activities. This year my project is about Antibiotic Resistance and the major problem that the world faces when trying to treat bacterial infections and cure people of their illnesses. I saw it as a dilemma that needed to be addressed immediately and hence researched and experimented methods of preventing antibiotic resistance."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1259,
 	2008,
 	"Ant Acids",
 	2,
 	11,
-	"Kiwanis Southeast Alberta",
+	91,
 	"Crescent Heights High School",
 	"A look into the wonderful world of ants. Carpenter and Western Harvester ants battle to see which is more resistant to muriatic acid. Using three different concentrations on naturally deceased ants, I can determine which species of ant has a thicker and more durable exoskeleton."
 );
@@ -1013,7 +989,7 @@ VALUES (
 	"Ant Colony Optimization",
 	2,
 	9,
-	"Rideau-St. Lawrence",
+	48,
 	"Smiths Falls District Collegiate Institute",
 	"Ant Colony Optimization (ACO) is a computer algorithm which uses some of the same methods used by real ants when searching for food, to find an inexact but efficient (short) path between two locations. This project provides an overview of ACO, and describes the development and evaluation of software that was developed to study ACO."
 );
@@ -1062,110 +1038,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1609,
-	2008,
-	"Antibacterial Activity of Canadian Honeys: Isolation of Active Constituents Usin",
-	3,
-	9,
-	"Niagara",
-	"A.N. Myer S.S.",
-	"The project was to elucidate the relationship between honey antibacterial activity, its chemical composition and polyphenolic content. Honey composition is important factor for maintenance of antibacterial activity. The activity-guided fractionations allowed isolating active fractions of high molecular weight containing specific double peaks at A240 to 250nm region. For the first time, a compound absorbing at 248nm in the most active honeys has been partially identified."
-);
-INSERT INTO project_divisions(project, division) VALUES(1609, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1609,
-	1,
-	"Linda Kim",
-	"Niagara Falls",
-	NULL,
-	"I was born and raised in Seoul, South Korea until I immigrated to Canada approximately eight years ago. As for my personal accomplishments, I received Excellence in Education Award from the Niagara District School board upon elementary graduation. Since grade 9, I have been a dedicated member of school Tour Band, Flute Ensemble, Cheerleading, Casino Niagara Marathon, and Key Club. Furthermore, I have been a committed member of Student Council since grade 10. While being a Secretary of Arts Council for 2005-06, I was also the Music Representative on Student Council. I was then appointed as Minister of Finance for 2006-07 and was voted on as Deputy Prime Minister for 2007-08. Outside the school, I am the Lieutenant Governor of Division 3S for 2007-08 in Eastern Canada District of Key Club International. As an avid music lover, I have studied piano and violin since I was five years old and I have been a first violinist at Niagara Youth Orchestra since grade 9; in the upcoming summer, our orchestra will perform in Europe. I would like to become an ophthalmologist or a neurosurgeon."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1609,
-	1,
-	"Dalhousie University Faculty of Science Entrance Scholarship",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"Dalhousie University, Faculty of Science",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1609,
-	2,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1609,
-	3,
-	"University of Ottawa Entrance Scholarship",
-	"Senior Silver Medallist - $3000 Entrance Scholarship",
-	"University of Ottawa",
-	3000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1609,
-	4,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1609,
-	5,
-	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
-	"Senior",
-	"Rx&D Health Research Foundation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1563,
-	2008,
-	"Arrow Flight and Speed",
-	2,
-	6,
-	"Prince Albert & Northeast Saskatchewan",
-	"Carlton Comprehensive High School",
-	"The project was an investigation into the effect of tip weight and fletching type on speed and flight of arrows. The procedure involved shooting a combination of 32 arrows through a chronometer to measure speed. The determining factor in examining flight characteristics was how the arrow landed on the target face. The results confirmed that lighter arrows traveled faster, and larger fletching slowed arrow speed."
-);
-INSERT INTO project_divisions(project, division) VALUES(1563, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1563,
-	1,
-	"Ian Pannell",
-	"Prince Albert",
-	NULL,
-	"My name is Ian Pannell. I'm 14 years old and in grade 9 at Carlton Comprehensive High School in Prince Albert Saskatchewan. My interests include camping, fishing, hunting, biking, computers, football and archery. I'm very pleased to have made it to the Canada Wide Science Fair. The reason I chose this project was because, my family are all members of our city's archery club, the Timberland Bowbenders. My uncle got me started on archery when I was six years old. I look forward to meeting other people and seeing other projects, while I'm in Ottawa."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1618,
 	2008,
 	"Appuyez sur le champignon!",
 	3,
 	10,
-	"Saguenay-Lac Saint-Jean",
+	79,
 	"École secondaire Kénogami",
 	"Actuellement, les huiles usées sont brûlées augmentant ainsi la contamination atmosphérique par le rejet de CO2. Notre projet consiste en l'utilisation de micro-organismes présents dans la nature pour dégrader ces hydrocarbures lourds, n'ayant aucune application concrète dans la société et produire une structure moléculaire à plus faible unité de carbone."
 );
@@ -1255,12 +1133,168 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1609,
+	2008,
+	"Antibacterial Activity of Canadian Honeys: Isolation of Active Constituents Usin",
+	3,
+	9,
+	60,
+	"A.N. Myer S.S.",
+	"The project was to elucidate the relationship between honey antibacterial activity, its chemical composition and polyphenolic content. Honey composition is important factor for maintenance of antibacterial activity. The activity-guided fractionations allowed isolating active fractions of high molecular weight containing specific double peaks at A240 to 250nm region. For the first time, a compound absorbing at 248nm in the most active honeys has been partially identified."
+);
+INSERT INTO project_divisions(project, division) VALUES(1609, 500);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1609,
+	1,
+	"Linda Kim",
+	"Niagara Falls",
+	NULL,
+	"I was born and raised in Seoul, South Korea until I immigrated to Canada approximately eight years ago. As for my personal accomplishments, I received Excellence in Education Award from the Niagara District School board upon elementary graduation. Since grade 9, I have been a dedicated member of school Tour Band, Flute Ensemble, Cheerleading, Casino Niagara Marathon, and Key Club. Furthermore, I have been a committed member of Student Council since grade 10. While being a Secretary of Arts Council for 2005-06, I was also the Music Representative on Student Council. I was then appointed as Minister of Finance for 2006-07 and was voted on as Deputy Prime Minister for 2007-08. Outside the school, I am the Lieutenant Governor of Division 3S for 2007-08 in Eastern Canada District of Key Club International. As an avid music lover, I have studied piano and violin since I was five years old and I have been a first violinist at Niagara Youth Orchestra since grade 9; in the upcoming summer, our orchestra will perform in Europe. I would like to become an ophthalmologist or a neurosurgeon."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1609,
+	1,
+	"Dalhousie University Faculty of Science Entrance Scholarship",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"Dalhousie University, Faculty of Science",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1609,
+	2,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1609,
+	3,
+	"University of Ottawa Entrance Scholarship",
+	"Senior Silver Medallist - $3000 Entrance Scholarship",
+	"University of Ottawa",
+	3000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1609,
+	4,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1609,
+	5,
+	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
+	"Senior",
+	"Rx&D Health Research Foundation",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1627,
+	2008,
+	"Antibiotic resistance",
+	3,
+	10,
+	74,
+	"École secondaire régionale Centennial",
+	"In this three-part project, the development, capacity, and prevention of antibiotic resistance was analyzed using Escherichia Coli and Ampicillin, the bacteria were exposed to the antiobiotic for 4 weeks. The resistance levels of the bacteria was recorded every week in order to demonstrate the process of antibiotic resistance."
+);
+INSERT INTO project_divisions(project, division) VALUES(1627, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1627,
+	1,
+	"Omar Choudhury",
+	"Brossard",
+	NULL,
+	"My name is Omar Choudhury, I’m seventeen years old, and currently attending Centennial Regional High School in secondary five. I’m from Brossard, Québec, and am an avid supporter of the Montréal Canadiens hockey team! This is the first time I will be showcasing a project at the national level for the science fair, and it is definitely a great honour to be a part of the CWSF. I am interested primarily in the fields of physics, and applied sciences; however, I am also interested in other fields such as health and computer science. In the future, I would like to shape my career towards a domain which involves those scientific aspects to it. I regularly volunteer in and out of school, serving as a helper at the Montréal General Hospital throughout the summer. I enjoy playing hockey and tennis, in addition to swimming and making movies as leisure activities. This year my project is about Antibiotic Resistance and the major problem that the world faces when trying to treat bacterial infections and cure people of their illnesses. I saw it as a dilemma that needed to be addressed immediately and hence researched and experimented methods of preventing antibiotic resistance."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1563,
+	2008,
+	"Arrow Flight and Speed",
+	2,
+	6,
+	26,
+	"Carlton Comprehensive High School",
+	"The project was an investigation into the effect of tip weight and fletching type on speed and flight of arrows. The procedure involved shooting a combination of 32 arrows through a chronometer to measure speed. The determining factor in examining flight characteristics was how the arrow landed on the target face. The results confirmed that lighter arrows traveled faster, and larger fletching slowed arrow speed."
+);
+INSERT INTO project_divisions(project, division) VALUES(1563, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1563,
+	1,
+	"Ian Pannell",
+	"Prince Albert",
+	NULL,
+	"My name is Ian Pannell. I'm 14 years old and in grade 9 at Carlton Comprehensive High School in Prince Albert Saskatchewan. My interests include camping, fishing, hunting, biking, computers, football and archery. I'm very pleased to have made it to the Canada Wide Science Fair. The reason I chose this project was because, my family are all members of our city's archery club, the Timberland Bowbenders. My uncle got me started on archery when I was six years old. I look forward to meeting other people and seeing other projects, while I'm in Ottawa."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1626,
+	2008,
+	"Attacking cancer: the spicy way",
+	3,
+	10,
+	74,
+	"Académie Royal West",
+	"Have you ever wondered whether the spices and food we eat help in killing cancer cells? My project demonstrates that compounds found in spices do actually kill two types of breast cancer cell lines and also activate pro-apoptotic proteins in liver and breast cancer celle lines."
+);
+INSERT INTO project_divisions(project, division) VALUES(1626, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1626,
+	1,
+	"Radhika Chandra",
+	"Pointe-Claire",
+	NULL,
+	"Radhika Chandra is a grade eleven student attending Royal West Academy in Montreal, Québec. She is the President of her school’s Student Life Association (student council), and is also a School Prefect supervising and helping in school activities during and after school. For the last four years, she has participated in her school’s annual Dance Show which raises funds for the “Dans la Rue” organization. This year she has been chosen to be one of the executives of this production. She has also taken the responsibility to organize a drive for the Foster Child Program at her school. Radhika has volunteered at the Lakeshore General Hospital in Hemo-dialysis and at the YMCA Day Camp with physically and intellectually handicapped children. This well-rounded student has not only achieved in sciences, but has represented her high school at the “RISE” competition held by Concordia’s John Molson School of Business, where her group came first place. She is an avid dancer mastering classical Indian dance since the age of five. She has been a member of her school’s soccer, basketball and football teams, and of Pointe Claire Inter-City Soccer Team. Radhika plans to pursue her career in the field of science and medicine"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1626,
+	1,
+	"Honourable Mention - Health Sciences",
+	"Senior",
+	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1511,
 	2008,
 	"Are Plastic Water Bottles Endangering The Human Race?",
 	1,
 	9,
-	"York",
+	67,
 	"Richmond Hill Montessori and Elementary Private School",
 	"Bisphenol-A (BPA) has now been well documented to be leaching from plastic water bottles especially when these bottles are subjected to heat such as in the summer. Experiments (n=5) were conducted to test the heat transfer to the water comparing commercial plastic water bottles to Tetra Pak containers. As part of the EnviroExpo project, a new water bottle using Tetra-Pak material has been designed."
 );
@@ -1290,12 +1324,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1277,
+	2008,
+	"Baa Baa Burrr ""Hypothermic Lambs""",
+	1,
+	8,
+	35,
+	"Kirkcaldy Heights",
+	"How do lambs that suffered from hypothermia, grow and develop when different variables are used to sustain their lives? Using the different variables we believed that the ewe fed lamb that was also bottle fed will excel in growth. In a four week period we weighed and measured the lambs every second day. We concluded that our results matched our hypothesis finishing our experiment."
+);
+INSERT INTO project_divisions(project, division) VALUES(1277, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1277,
+	1,
+	"Paige Friesen",
+	"Brandon",
+	NULL,
+	"My name is Paige Friesen. I attend Kirkcaldy Heights School and am 14 years old. I have four horses, which I barrel race with. Last year, I was third in the Manitoba Barrel Racing association with my horse Rich. I have thirteen cats. I have three house cats, three indoor/outdoor cats and the rest are barn cats. I also have three dogs; one rotwieller, one bull mastiff and one yorkshire terrier. Volleyball is my favourite sport, and play twice a week on the club team. I play the clarinet and the piano. I just started playing clarinet this year in band and have been playing piano since I was in grade three. I am now in grade five piano. I love animals and love to get involved in fundraising for the Brandon Humane Society. I like to hold at least one fundraiser per year. I am on the student council, a canteen worker and am on the yearbook commity. I have been on the honour roll since grade five. I plan to attend Neelin High School and take part in the IB program. When I graduate, I am going to go onto receive a Degree in Cosmitic and Surgical Dermatology."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1277,
+	2,
+	"Charlee McLaughlin-Ventnor",
+	"Brandon",
+	NULL,
+	"I'm a 13 year old girl in grade 8 at Kirkcaldy Heights School in Brandon Manitoba. I'm an honour roll student and my favorite subjects are math & science. I play 1st clarinet in our band program and play the electric guitar in our jazz band. My musical interests also include taking private lessons in electric & acoustic guitar and drums. I'm very active and enjoy paticipating in the school sports teams of volleyball & badminton. I'm very artistic and love drawing, arts & crafts, sewing, and woodworking. I'm very fortunate to have a home in the city and in the country. I love nature and all aspects of being outdoors. I enjoy camping, fishing, hiking, boating, dirtbiking, skidooing, horseback riding, and going for long nature walks. With having a farm, I have and love many animals including horses, llamas, sheep, pot-bellied pigs, dogs, cats, and rabbits. I also like the creepy crawlies and you will often find me snake-hunting. I have a salamander, turtles, and hermit crabs. I take riding lessons and am very dedicated to participating in shows and events with my horses. I plan on obtaining a post-secondary education in the field of veterinary/equine/animal sciences."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1522,
 	2008,
 	"Are You Well Heeled?",
 	1,
 	12,
-	"Greater Vancouver",
+	90,
 	"Collingwood School",
 	"My experiment tested the effect that the heel-height of a shoe has on the proportional amount of weight borne by the front and the back of the foot. I concluded that a shoe's heel-height (particularly shoes with heels taller than 7.5 cm) can have a significant effect on the pressure on the front of the foot which can result in severe health consequences."
 );
@@ -1335,46 +1403,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1626,
-	2008,
-	"Attacking cancer: the spicy way",
-	3,
-	10,
-	"Montreal",
-	"Académie Royal West",
-	"Have you ever wondered whether the spices and food we eat help in killing cancer cells? My project demonstrates that compounds found in spices do actually kill two types of breast cancer cell lines and also activate pro-apoptotic proteins in liver and breast cancer celle lines."
-);
-INSERT INTO project_divisions(project, division) VALUES(1626, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1626,
-	1,
-	"Radhika Chandra",
-	"Pointe-Claire",
-	NULL,
-	"Radhika Chandra is a grade eleven student attending Royal West Academy in Montreal, Québec. She is the President of her school’s Student Life Association (student council), and is also a School Prefect supervising and helping in school activities during and after school. For the last four years, she has participated in her school’s annual Dance Show which raises funds for the “Dans la Rue” organization. This year she has been chosen to be one of the executives of this production. She has also taken the responsibility to organize a drive for the Foster Child Program at her school. Radhika has volunteered at the Lakeshore General Hospital in Hemo-dialysis and at the YMCA Day Camp with physically and intellectually handicapped children. This well-rounded student has not only achieved in sciences, but has represented her high school at the “RISE” competition held by Concordia’s John Molson School of Business, where her group came first place. She is an avid dancer mastering classical Indian dance since the age of five. She has been a member of her school’s soccer, basketball and football teams, and of Pointe Claire Inter-City Soccer Team. Radhika plans to pursue her career in the field of science and medicine"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1626,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Senior",
-	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1468,
 	2008,
 	"Barometer ""The Weather Expert""",
 	1,
 	12,
-	"South Fraser",
+	121,
 	"T E Scott Elementary",
 	"Barometer ""The Weather Expert"" is an experiment. To find which barometer was more efficient we compared an aneroid barometer and a mercury barometer for twelve days. The barometers were homemade and worked well. The conclusion was the mercury barometer was more efficient. A lot of information and facts were used along with data."
 );
@@ -1403,46 +1437,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1277,
-	2008,
-	"Baa Baa Burrr ""Hypothermic Lambs""",
-	1,
-	8,
-	"Western Manitoba",
-	"Kirkcaldy Heights",
-	"How do lambs that suffered from hypothermia, grow and develop when different variables are used to sustain their lives? Using the different variables we believed that the ewe fed lamb that was also bottle fed will excel in growth. In a four week period we weighed and measured the lambs every second day. We concluded that our results matched our hypothesis finishing our experiment."
-);
-INSERT INTO project_divisions(project, division) VALUES(1277, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1277,
-	1,
-	"Paige Friesen",
-	"Brandon",
-	NULL,
-	"My name is Paige Friesen. I attend Kirkcaldy Heights School and am 14 years old. I have four horses, which I barrel race with. Last year, I was third in the Manitoba Barrel Racing association with my horse Rich. I have thirteen cats. I have three house cats, three indoor/outdoor cats and the rest are barn cats. I also have three dogs; one rotwieller, one bull mastiff and one yorkshire terrier. Volleyball is my favourite sport, and play twice a week on the club team. I play the clarinet and the piano. I just started playing clarinet this year in band and have been playing piano since I was in grade three. I am now in grade five piano. I love animals and love to get involved in fundraising for the Brandon Humane Society. I like to hold at least one fundraiser per year. I am on the student council, a canteen worker and am on the yearbook commity. I have been on the honour roll since grade five. I plan to attend Neelin High School and take part in the IB program. When I graduate, I am going to go onto receive a Degree in Cosmitic and Surgical Dermatology."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1277,
-	2,
-	"Charlee McLaughlin-Ventnor",
-	"Brandon",
-	NULL,
-	"I'm a 13 year old girl in grade 8 at Kirkcaldy Heights School in Brandon Manitoba. I'm an honour roll student and my favorite subjects are math & science. I play 1st clarinet in our band program and play the electric guitar in our jazz band. My musical interests also include taking private lessons in electric & acoustic guitar and drums. I'm very active and enjoy paticipating in the school sports teams of volleyball & badminton. I'm very artistic and love drawing, arts & crafts, sewing, and woodworking. I'm very fortunate to have a home in the city and in the country. I love nature and all aspects of being outdoors. I enjoy camping, fishing, hiking, boating, dirtbiking, skidooing, horseback riding, and going for long nature walks. With having a farm, I have and love many animals including horses, llamas, sheep, pot-bellied pigs, dogs, cats, and rabbits. I also like the creepy crawlies and you will often find me snake-hunting. I have a salamander, turtles, and hermit crabs. I take riding lessons and am very dedicated to participating in shows and events with my horses. I plan on obtaining a post-secondary education in the field of veterinary/equine/animal sciences."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1372,
 	2008,
 	"Bend it Like Pig",
 	2,
 	9,
-	"Ottawa",
+	44,
 	"Nepean H.S.",
 	"Finding a suitable Anterior Cruciate Ligament (ACL) would benefit over 75 000 Canadians who undergo ACL replacement every year.Pig ligaments transplantations does not have these disadvantages. At the Orthopaedic Biomedical Laboratory at CHEO I tested the harvested pig ligaments at various conditions. I compared the performances of the pig ligaments with synthetic materials. I found pig ligaments are better than synthetic ligaments in performances."
 );
@@ -1476,7 +1476,7 @@ VALUES (
 	"Bio-Mass Heating; Hot Topic or Not?",
 	1,
 	9,
-	"Avon Maitland-Huron Perth",
+	53,
 	"Brussels P.S.",
 	"In my project I explored which bio-mass pellet was most efficient and environmentally friendly. I conducted an experiment to discover which type of bio-mass pellet (corn, oats, switchgrass and wood) generated the most heat and burned most consistently. I factored in the price and CO2 emissions into my conclusions. I discovered that overall, corn and oats are the most efficient and environmentally friendly."
 );
@@ -1500,7 +1500,7 @@ VALUES (
 	"Biocatalysts",
 	3,
 	9,
-	"Lambton County",
+	58,
 	"Northern C.I. & V.S.",
 	"The purpose of this project was to observe how different temperatures, pH, and different concentrations of a substrate and enzyme affect enzymatic activity of biocatalysts. For the first part potatoes were used as a source of the enzyme and H202 was the substrate. For the second part amylase was used as a source of the enzyme and starch solutions were used as the substrate."
 );
@@ -1524,7 +1524,7 @@ VALUES (
 	"Biodiesel's New Dry-Clean",
 	2,
 	6,
-	"Saskatchewan Chinook",
+	34,
 	"Swift Current Comprehensive High School",
 	"This project developed a new process for purifying biodiesel wherein diatomaceous earth was used as an adsorbant to remove contaminants. Current methods of biodiesel purification involve using large amounts of water, and high energy output resulting in a waste of valuable resources. The new dry-washing process was found to achieve high quality fuel, with the only waste product a small amount of nutrient-rich agricultural fertilizer."
 );
@@ -1593,7 +1593,7 @@ VALUES (
 	"Biofixation of C02 Using Coccolithophorid Algae",
 	2,
 	9,
-	"Lambton County",
+	58,
 	"Northern C.I. & V.S.",
 	"In this experiment the algae were put under different concentrations of Iron (III) Nitrate. The best iron concentration will be determined by testing the amount of CO2 left inside the bottles after 6 days. The gas will be tested with a CO2 gas censor. Doing this will arrive at the best concentration of iron (III) Nitrate levels for the algae."
 );
@@ -1638,7 +1638,7 @@ VALUES (
 	"Biomining",
 	2,
 	1,
-	"Halifax",
+	114,
 	"Dartmouth High School",
 	"The fungus Pycnoporus cinnabarinus, lichens Cladonia rangiferina and Usnea fillipendula, and the seasonings garlic, turmeric and jalapeño pepper were tested for antimicrobial properties against Escherichia coli DH5α, a Level 1 human pathogen. Antibiotics streptomycin and ampicillin were used as positive controls. Negative controls were also run. Of the test species only garlic was found to demonstrate antimicrobial properties. The characteristics of garlic were further investigated."
 );
@@ -1667,12 +1667,139 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1400,
+	2008,
+	"Blowing In The Wind",
+	1,
+	12,
+	96,
+	"St Joseph's",
+	"This project analyzed the effectiveness of different shapes of windmill blades set at varying angles to the wind. The amounts of volts generated were measured using a homemade windmill propelled by an electric fan. Windmill Blades with rounded edges worked better than other blades. Decreasing the angle of the blade into the wind improved the productivity."
+);
+INSERT INTO project_divisions(project, division) VALUES(1400, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1400,
+	1,
+	"Meghan McLellan",
+	"Smithers",
+	NULL,
+	"If you don’t know me…now you will. I am Meghan McLellan and I am 12 years old. I go to St. Josephs School in Smithers B.C. I’m in grade 7 so next year I’ll be in the high school! At school my biggest activity is work. Some of my other school activities include: volleyball, basketball, indoor soccer and youth group. What are my community activities? At the end of May I'll be shaving my head to raise money for Relay for Life. I hope that they will use my hair to make a wig for a child with cancer. My other activities are: swimming, soccer, badminton, archery and band (clarinet). Do you know what I want to be when I grow up? I’ll tell you. I want to be a dentist. Why? I want to live in a mansion. I haven’t won very many awards but these are some that I can think of: The John Lancaster award (along with all the other girls in my school), the Dick St. Louis youth achievement award for archery, 1st in girls' badminton singles, and 1st place in the 2007 soccer regionals."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1474,
+	2008,
+	"Boning UP with Alfalfa!!",
+	3,
+	9,
+	45,
+	"Adam Scott C.V.I.",
+	"This experiment under took the isolation and identification of endogenous cytokinins from alfalfa and a bean plant through liquid chromatography-mass spectrometer. Specific beneficial primary metabolites of alfalfa were identified and compared with a bean plant. The active and the beneficial forms of cytokinins for mammalian bone development were highly concentrated in the alfalfa leaves as compared to the leaves of the bean plant."
+);
+INSERT INTO project_divisions(project, division) VALUES(1474, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1474,
+	1,
+	"Sabheen Khan",
+	"Peterborough",
+	NULL,
+	"My name is Sabheen Khan and I am currently in grade 12 at Adam Scott C.V.I. in Peterborough, Ontario. I moved to Canada approximately six years ago from Pakistan. My interest in global warming and pollution has helped me take a step forward in the larger community and join the ""First Step Green Up"" committee, which is a youth-driven group who shares similar ideas in preventing an increase in the global warming in the future. Also, I enjoy playing basketball and love playing badminton. In my spare time, I like to break-dance and I love running long distances. I am interested in Biological Sciences. My last wish : I would love to travel around the world before I die."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1614,
+	2008,
+	"Branchées sur l'effet de serre",
+	3,
+	10,
+	70,
+	"Polyvalente Armand-Saint-Onge",
+	"En vue de mieux comprendre le rôle des arbres dans la lutte aux changements climatiques, nous nous sommes demandés s'ils absorbaient plus de CO2 lors de leur croissance ou à leur maturité. Nous avons donc testé ce phénomène à plus petite échelle sur des plans de haricots, ce qui nous a permis d'obtenir des résultats fort intéressants."
+);
+INSERT INTO project_divisions(project, division) VALUES(1614, 4);
+INSERT INTO project_divisions(project, division) VALUES(1614, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1614,
+	1,
+	"Catherine Couture",
+	"Val-Brillant",
+	NULL,
+	"Bonjour! Je m’appelle Catherine Couture et je viens de Val-Brillant, un petit village du Bas-St-Laurent. Je suis une fille très motivée qui se lance à fond dans ce qu’elle entreprend. En plus d’être passionnée par les sciences, j’adore jouer de la musique, en particulier du violon. J’étudie d’ailleurs dans ce domaine au Conservatoire de musique de Rimouski et je fais partie d’un orchestre de jeunes, l’OJQM. De plus, j’ai un grand intérêt pour la pédagogie et je combine ces intérêts en donnant des cours de violons à 4 petits élèves. Je m’implique dans plusieurs projets. Des exemples : je suis dans plusieurs comités à l’école ( Conseil de la Paix, comité de décoration), je participe à Secondaire en spectacle et à plusieurs concerts au profit d’organismes à but non lucratif, etc. Dans l’avenir, j’aimerais être soit orthophoniste, soit professeure de sciences ou de musique. À l’Expo-sciences provinciale, j’ai remporté la bourse d’études de 1000$ Irma-Levasseur de la Ministre de la Famille, des Ainés et de la Condition féminine et une bourse de 500$ de la Fédération du personnel professionnel des universités et de la recherche, en plus de me classer pour les finales Pancanadienne et internationale."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1614,
+	2,
+	"Cynthia Lamarre",
+	"Val Brillant",
+	NULL,
+	"Mon nom est Cynthia Lamarre et je suis native de Val-Brillant, un petit village de l'Est-du-Québec. Je termine présentement mon secondaire 5 à la polyvalente Armand St-Onge d'Amqui. L'année dernière j'ai participé à l'expo-sciences, mais notre projet ne c'est pas rendu au niveau provincial. Je suis très fière que notre projet de cette année Branchées sur l'effet de serre passe au niveau pancanadien et même international. Au provincial, moi et ma coéquipière Catherine nous avons remporté une bourse de 1000$ et un prix de 500$ en plus de cette chance de se rendre à Ottawa puis en Tunisie. La science n'est pas ma seule passion, j'aime aussi faire de l'animation pour les spectacles à mon école. Lors de la finale locale de secondaire en spectacle, nous avons gagné une place pour la régionale. Je suis aussi une fille sportive et très sociable qui adore connaître de nouvelles personnes.D'ici quelques anées je compte bien poursuivre des études de droit pour pratiquer le métier d'avocate."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1614,
+	1,
+	"Honourable Mention - Earth & Environmental Science",
+	"Senior",
+	"Petro-Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1543,
+	2008,
+	"Breaking the Carbon Bond",
+	2,
+	12,
+	98,
+	"Frances Kelsey Secondary",
+	"This experiment was designed to investigate the carbon bond in two different molecules: sucrose, (sugar), and ascorbic acid, (Vitamin C). The experiment determined how the different bonds in sugar and vitamin C broke down, by collecting and analyzing the resulting products of a chemical reaction caused by exposure to heat of a Bunsen burner."
+);
+INSERT INTO project_divisions(project, division) VALUES(1543, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1543,
+	1,
+	"Oliver Jourmel",
+	"Duncan",
+	NULL,
+	"Oliver Jourmel is a grade 9 student at Frances Kelsey Secondary School on Vancouver Island, BC. He plays violin and piano, and sings in a choir, and enjoys soccer, quarterstaffing, fencing, and riding his bike. He is interested in politics, drama, debating and enjoys his self-paced school. He hopes to study law, science and music at university, to pursue a career in teaching and politics. He has done lots of Science Fair projects over the years, winning his division several times and is very happy to be on the BC team at the Canada-Wide Fair for the first time!"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1543,
+	1,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1387,
 	2008,
 	"Bright Future of Energy: Dye-Sensitized Solar Cells",
 	3,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"Centennial Collegiate & Vocational Institute",
 	"The efficiencies of various pigments and electrolytes were analyzed in dye-sensitized solar cells. The optimal pigment was found to be anthocyanin extract from red cabbage, and the most effective electrolyte was found to be a saturated solution of guanidine thiocyanate in water-free ethylene glycol. Investigations on possible effects of GFP as an antioxidant and accessory pigment and of DNA to facilitate electron transfer are continuing."
 );
@@ -1742,139 +1869,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1474,
-	2008,
-	"Boning UP with Alfalfa!!",
-	3,
-	9,
-	"Peterborough",
-	"Adam Scott C.V.I.",
-	"This experiment under took the isolation and identification of endogenous cytokinins from alfalfa and a bean plant through liquid chromatography-mass spectrometer. Specific beneficial primary metabolites of alfalfa were identified and compared with a bean plant. The active and the beneficial forms of cytokinins for mammalian bone development were highly concentrated in the alfalfa leaves as compared to the leaves of the bean plant."
-);
-INSERT INTO project_divisions(project, division) VALUES(1474, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1474,
-	1,
-	"Sabheen Khan",
-	"Peterborough",
-	NULL,
-	"My name is Sabheen Khan and I am currently in grade 12 at Adam Scott C.V.I. in Peterborough, Ontario. I moved to Canada approximately six years ago from Pakistan. My interest in global warming and pollution has helped me take a step forward in the larger community and join the ""First Step Green Up"" committee, which is a youth-driven group who shares similar ideas in preventing an increase in the global warming in the future. Also, I enjoy playing basketball and love playing badminton. In my spare time, I like to break-dance and I love running long distances. I am interested in Biological Sciences. My last wish : I would love to travel around the world before I die."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1400,
-	2008,
-	"Blowing In The Wind",
-	1,
-	12,
-	"Pacific Northwest",
-	"St Joseph's",
-	"This project analyzed the effectiveness of different shapes of windmill blades set at varying angles to the wind. The amounts of volts generated were measured using a homemade windmill propelled by an electric fan. Windmill Blades with rounded edges worked better than other blades. Decreasing the angle of the blade into the wind improved the productivity."
-);
-INSERT INTO project_divisions(project, division) VALUES(1400, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1400,
-	1,
-	"Meghan McLellan",
-	"Smithers",
-	NULL,
-	"If you don’t know me…now you will. I am Meghan McLellan and I am 12 years old. I go to St. Josephs School in Smithers B.C. I’m in grade 7 so next year I’ll be in the high school! At school my biggest activity is work. Some of my other school activities include: volleyball, basketball, indoor soccer and youth group. What are my community activities? At the end of May I'll be shaving my head to raise money for Relay for Life. I hope that they will use my hair to make a wig for a child with cancer. My other activities are: swimming, soccer, badminton, archery and band (clarinet). Do you know what I want to be when I grow up? I’ll tell you. I want to be a dentist. Why? I want to live in a mansion. I haven’t won very many awards but these are some that I can think of: The John Lancaster award (along with all the other girls in my school), the Dick St. Louis youth achievement award for archery, 1st in girls' badminton singles, and 1st place in the 2007 soccer regionals."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1543,
-	2008,
-	"Breaking the Carbon Bond",
-	2,
-	12,
-	"Vancouver Island",
-	"Frances Kelsey Secondary",
-	"This experiment was designed to investigate the carbon bond in two different molecules: sucrose, (sugar), and ascorbic acid, (Vitamin C). The experiment determined how the different bonds in sugar and vitamin C broke down, by collecting and analyzing the resulting products of a chemical reaction caused by exposure to heat of a Bunsen burner."
-);
-INSERT INTO project_divisions(project, division) VALUES(1543, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1543,
-	1,
-	"Oliver Jourmel",
-	"Duncan",
-	NULL,
-	"Oliver Jourmel is a grade 9 student at Frances Kelsey Secondary School on Vancouver Island, BC. He plays violin and piano, and sings in a choir, and enjoys soccer, quarterstaffing, fencing, and riding his bike. He is interested in politics, drama, debating and enjoys his self-paced school. He hopes to study law, science and music at university, to pursue a career in teaching and politics. He has done lots of Science Fair projects over the years, winning his division several times and is very happy to be on the BC team at the Canada-Wide Fair for the first time!"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1543,
-	1,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1614,
-	2008,
-	"Branchées sur l'effet de serre",
-	3,
-	10,
-	"Est du Québec",
-	"Polyvalente Armand-Saint-Onge",
-	"En vue de mieux comprendre le rôle des arbres dans la lutte aux changements climatiques, nous nous sommes demandés s'ils absorbaient plus de CO2 lors de leur croissance ou à leur maturité. Nous avons donc testé ce phénomène à plus petite échelle sur des plans de haricots, ce qui nous a permis d'obtenir des résultats fort intéressants."
-);
-INSERT INTO project_divisions(project, division) VALUES(1614, 4);
-INSERT INTO project_divisions(project, division) VALUES(1614, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1614,
-	1,
-	"Catherine Couture",
-	"Val-Brillant",
-	NULL,
-	"Bonjour! Je m’appelle Catherine Couture et je viens de Val-Brillant, un petit village du Bas-St-Laurent. Je suis une fille très motivée qui se lance à fond dans ce qu’elle entreprend. En plus d’être passionnée par les sciences, j’adore jouer de la musique, en particulier du violon. J’étudie d’ailleurs dans ce domaine au Conservatoire de musique de Rimouski et je fais partie d’un orchestre de jeunes, l’OJQM. De plus, j’ai un grand intérêt pour la pédagogie et je combine ces intérêts en donnant des cours de violons à 4 petits élèves. Je m’implique dans plusieurs projets. Des exemples : je suis dans plusieurs comités à l’école ( Conseil de la Paix, comité de décoration), je participe à Secondaire en spectacle et à plusieurs concerts au profit d’organismes à but non lucratif, etc. Dans l’avenir, j’aimerais être soit orthophoniste, soit professeure de sciences ou de musique. À l’Expo-sciences provinciale, j’ai remporté la bourse d’études de 1000$ Irma-Levasseur de la Ministre de la Famille, des Ainés et de la Condition féminine et une bourse de 500$ de la Fédération du personnel professionnel des universités et de la recherche, en plus de me classer pour les finales Pancanadienne et internationale."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1614,
-	2,
-	"Cynthia Lamarre",
-	"Val Brillant",
-	NULL,
-	"Mon nom est Cynthia Lamarre et je suis native de Val-Brillant, un petit village de l'Est-du-Québec. Je termine présentement mon secondaire 5 à la polyvalente Armand St-Onge d'Amqui. L'année dernière j'ai participé à l'expo-sciences, mais notre projet ne c'est pas rendu au niveau provincial. Je suis très fière que notre projet de cette année Branchées sur l'effet de serre passe au niveau pancanadien et même international. Au provincial, moi et ma coéquipière Catherine nous avons remporté une bourse de 1000$ et un prix de 500$ en plus de cette chance de se rendre à Ottawa puis en Tunisie. La science n'est pas ma seule passion, j'aime aussi faire de l'animation pour les spectacles à mon école. Lors de la finale locale de secondaire en spectacle, nous avons gagné une place pour la régionale. Je suis aussi une fille sportive et très sociable qui adore connaître de nouvelles personnes.D'ici quelques anées je compte bien poursuivre des études de droit pour pratiquer le métier d'avocate."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1614,
-	1,
-	"Honourable Mention - Earth & Environmental Science",
-	"Senior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1580,
 	2008,
 	"Bringing the Greenhouse Effect Down to Earth",
 	1,
 	9,
-	"Bluewater",
+	55,
 	"Hanover Heights Community School",
 	"This experiment examined the amount of carbon emitted into the atmosphere from human respiration, the gas released from a mixture of vinegar and baking soda, and automobile exhaust from three different types of fuel mixtures. These amounts of carbon were then compared to the amount of carbon in the ambient air using a balloon pump. The background of this project was on Global Warming!"
 );
@@ -1894,57 +1894,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1405,
-	2008,
-	"Bugs on Drugs",
-	1,
-	NULL,
-	NULL,
-	NULL,
-	"This experiment investigates the effects of pharmaceuticals on life in water systems. The heart rate of Daphnia Magna was measured to indicate the effects of exposure to four pharmaceuticals found present in some water systems and drinking water. These pharmaceuticals were administered in different concentrations."
-);
-INSERT INTO project_divisions(project, division) VALUES(1405, 9);
-INSERT INTO project_divisions(project, division) VALUES(1405, 6);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1405,
-	1,
-	"Petro-Canada Peer Innovation Award - Junior",
-	"Ontario North & East",
-	"Petro-Canada",
-	200.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1405,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1405,
-	3,
-	"Silver Medal - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1254,
 	2008,
 	"Bye-Bye Birdies",
 	1,
 	12,
-	"Fraser Valley",
+	89,
 	"Barrowtown Elementary",
 	"Bird control is an important part of blueberry farming but there are many concerns with the audible bird deterrents like propane cannons. I have designed a visual bird deterrent that is a self reeling kite. It simulates a bird of prey and because it can reel it self in and out, it can be use in variable winds and does not cause noise pollution."
 );
@@ -1999,7 +1954,7 @@ VALUES (
 	"Busting a Bridge: Only the Strongest Will Survive",
 	2,
 	12,
-	"Cariboo Mainline",
+	82,
 	"Sa-hali Secondary",
 	"My project analyzes the forces, strengths, and weaknesses of a bridge built from 100 popsicle sticks and white glue, when it is loaded on the apex. I found that the strongest bridge spans above its deck, and the ends of a bridge are the most likely to break, because of the immense amounts of shear. My record holding weight is 1,620 lbs."
 );
@@ -2028,12 +1983,81 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1456,
+	2008,
+	"Can You See The Light",
+	1,
+	11,
+	80,
+	"J.C. Charyk Hanna School",
+	"My project is a headlight wiper. It runs off the cars battery so it is very efficient. There is a button in the car and for every one time you press it the headlight swipes one time. It would be a very unique invention to have on your car. It is affordable and adaptable to the everyday vehicle consumer."
+);
+INSERT INTO project_divisions(project, division) VALUES(1456, 7);
+INSERT INTO project_divisions(project, division) VALUES(1456, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1456,
+	1,
+	"Shane  Stevenson",
+	"Hanna",
+	NULL,
+	"Hi, My name is Shane Stevenson. I am fourteen years old and my favorite thing to do is play hockey. I play Bantam Hockey and the team I support is the Calgary Flames. I also like to play video games, read books, and hang out with my friends. My favorite books are the Harry Potter series by J.K. Rowling. When I graduate I hope to get into the University of Calgary and study to become a Chiropractor. After that I hope to attend the Chiropractic College in Vancouver. To do this I will need good marks and be an honour student I am a very competative person and will always take the most extreme choice, unless it is completely and utterly dangerous. My favorite subjects in school are Social, Science, and Computers. If I cannot be a chiropractor I hope to become a High School and/or Junior High Teacher or a Video Game Developer. In school I play Badminton and Volleyball. I have many hockey and honour role awards and I collect hockey pucks (especially Calgary Flames ones)."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1456,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1456,
+	2,
+	"Bronze Medal - Automotive",
+	"Junior",
+	"AUTO21",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1469,
+	2008,
+	"Candy Anyone? An Experiment for the Rate of Growth of Sugar Crystals at Differen",
+	1,
+	12,
+	121,
+	"Pacific Academy",
+	"My project studies the effect of the rate of cooling of a supersaturated solution of sugar and water to form rock candy. A slow controlled steady rate of cooling the solution from 230°F to room temperature over a 24-hour period produces the highest quantity and quality (large, clear prism formations) crystals comparable to those produced commercially."
+);
+INSERT INTO project_divisions(project, division) VALUES(1469, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1469,
+	1,
+	"Alayna Witzel",
+	"Langley",
+	NULL,
+	"Alayna Witzel, age 12, is a grade 7 Dean’s List student at Pacific Academy School in Surrey, British Columbia and is fascinated with Science. She won the Gold Medal and the Advanced Systems Integrators Scholarship at the Surrey Regional Science Fair. She has completed her Royal Conservative Grade Eight Practical Piano Exam with First Class Honors with Distinction. Alayna plays percussion in the Pacific Academy Grade 7 band and is a pianist in the Grade 7 Jazz band. Alayna was the youngest student accepted into the UBC Summer Vocal Program and has attended for three years consecutively. Alayna has won many voice scholarships and medals, most recently winning 6 Gold Medals and a Scholarship at the International Kiwanis Music Festival. Alayna is on the basketball and track team at Pacific Academy. In 2006, she placed 2nd at the District finals in baseball, in 2005, at the age of 10 she won the Langley Triathlon, and in 2003 at the age of eight she won a Silver Medal at Provincials for Diving. Alayna is a hard worker, is dedicated, loyal, and has a heart for God and others. She loves horseback riding, time with her friends and doing her best."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1582,
 	2008,
 	"Camellia Sinensis as an Aid in Regenerative Nerve Therapy",
 	3,
 	1,
-	"Strait",
+	11,
 	"Richmond Academy",
 	"The objectives of this project are to observe the effects of chemicals found in the Camellia sinensis (tea) plant on cells that represent the mammalian central nervous system (CNS). If the chemicals are shown to increase the rate of growth and overall health of the cells, there may be significant applications in pre-natal CNS development and in the treatment of some neurodegenerative disorders."
 );
@@ -2102,70 +2126,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1456,
+	1405,
 	2008,
-	"Can You See The Light",
+	"Bugs on Drugs",
 	1,
-	11,
-	"Alberta Central East",
-	"J.C. Charyk Hanna School",
-	"My project is a headlight wiper. It runs off the cars battery so it is very efficient. There is a button in the car and for every one time you press it the headlight swipes one time. It would be a very unique invention to have on your car. It is affordable and adaptable to the everyday vehicle consumer."
-);
-INSERT INTO project_divisions(project, division) VALUES(1456, 7);
-INSERT INTO project_divisions(project, division) VALUES(1456, 1);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1456,
-	1,
-	"Shane  Stevenson",
-	"Hanna",
 	NULL,
-	"Hi, My name is Shane Stevenson. I am fourteen years old and my favorite thing to do is play hockey. I play Bantam Hockey and the team I support is the Calgary Flames. I also like to play video games, read books, and hang out with my friends. My favorite books are the Harry Potter series by J.K. Rowling. When I graduate I hope to get into the University of Calgary and study to become a Chiropractor. After that I hope to attend the Chiropractic College in Vancouver. To do this I will need good marks and be an honour student I am a very competative person and will always take the most extreme choice, unless it is completely and utterly dangerous. My favorite subjects in school are Social, Science, and Computers. If I cannot be a chiropractor I hope to become a High School and/or Junior High Teacher or a Video Game Developer. In school I play Badminton and Volleyball. I have many hockey and honour role awards and I collect hockey pucks (especially Calgary Flames ones)."
+	NULL,
+	NULL,
+	"This experiment investigates the effects of pharmaceuticals on life in water systems. The heart rate of Daphnia Magna was measured to indicate the effects of exposure to four pharmaceuticals found present in some water systems and drinking water. These pharmaceuticals were administered in different concentrations."
 );
+INSERT INTO project_divisions(project, division) VALUES(1405, 9);
+INSERT INTO project_divisions(project, division) VALUES(1405, 6);
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1456,
+	1405,
 	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
+	"Petro-Canada Peer Innovation Award - Junior",
+	"Ontario North & East",
+	"Petro-Canada",
+	200.00
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1456,
+	1405,
 	2,
-	"Bronze Medal - Automotive",
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1405,
+	3,
+	"Silver Medal - Life Sciences",
 	"Junior",
-	"AUTO21",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1469,
-	2008,
-	"Candy Anyone? An Experiment for the Rate of Growth of Sugar Crystals at Differen",
-	1,
-	12,
-	"South Fraser",
-	"Pacific Academy",
-	"My project studies the effect of the rate of cooling of a supersaturated solution of sugar and water to form rock candy. A slow controlled steady rate of cooling the solution from 230°F to room temperature over a 24-hour period produces the highest quantity and quality (large, clear prism formations) crystals comparable to those produced commercially."
-);
-INSERT INTO project_divisions(project, division) VALUES(1469, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1469,
-	1,
-	"Alayna Witzel",
-	"Langley",
-	NULL,
-	"Alayna Witzel, age 12, is a grade 7 Dean’s List student at Pacific Academy School in Surrey, British Columbia and is fascinated with Science. She won the Gold Medal and the Advanced Systems Integrators Scholarship at the Surrey Regional Science Fair. She has completed her Royal Conservative Grade Eight Practical Piano Exam with First Class Honors with Distinction. Alayna plays percussion in the Pacific Academy Grade 7 band and is a pianist in the Grade 7 Jazz band. Alayna was the youngest student accepted into the UBC Summer Vocal Program and has attended for three years consecutively. Alayna has won many voice scholarships and medals, most recently winning 6 Gold Medals and a Scholarship at the International Kiwanis Music Festival. Alayna is on the basketball and track team at Pacific Academy. In 2006, she placed 2nd at the District finals in baseball, in 2005, at the age of 10 she won the Langley Triathlon, and in 2003 at the age of eight she won a Silver Medal at Provincials for Diving. Alayna is a hard worker, is dedicated, loyal, and has a heart for God and others. She loves horseback riding, time with her friends and doing her best."
+	"Pfizer Canada",
+	700.00
 );
 
 INSERT INTO projects
@@ -2176,7 +2176,7 @@ VALUES (
 	"Carbon Dioxide-The Death of Plants?",
 	1,
 	9,
-	"London District",
+	59,
 	"Algonquin P.S.",
 	"My project studied the effects of increased CO2 levels on the growth of plants. By disolving Alka-Selter tablets in water the CO2 levels for the study group were increased, while plants in the control group were exposed to regular levels of CO2."
 );
@@ -2201,7 +2201,7 @@ VALUES (
 	"Cast Innovation: Reducing the Risk",
 	1,
 	11,
-	"Calgary Youth",
+	81,
 	"Calgary Jewish Academy",
 	"A risk exists in wearing a cast while playing sports: you could break your arm at the edge of the cast if you fall. I designed and tested two cast innovations to see if I could increase the force necessary to break a “bone simulant” (wood dowel) casted within. One of these, the elastic-edge cast, was successful and could reduce the risk for cast-wearers."
 );
@@ -2255,7 +2255,7 @@ VALUES (
 	"Catch The Heat",
 	1,
 	12,
-	"Fraser Valley",
+	89,
 	"Clayburn Middle School",
 	"ABSTRACT: My purpose is to improve a project that I made last year. It is a lightweight, portable back warmer, made of reflective material to use the heat from a campfire to keep your back warm. It is easy to assemble and can be used and enjoyed almost anywhere."
 );
@@ -2290,7 +2290,7 @@ VALUES (
 	"Catch Your Breath!",
 	1,
 	11,
-	"Canadian Rockies",
+	123,
 	"Lawrence Grassi Middle School",
 	"In our project we measured the pH levels in the human body's breath before and after exercise. The participants did two different types of exercise, anaerobic and aerobic. We measured their pH levels using a respirometer. We conclude that the more people participate in physical activity on a regular basis , the less Carbon Dioxide the exhale therefore the lower the pH."
 );
@@ -2314,7 +2314,7 @@ VALUES (
 	"Ceasing Seizures",
 	2,
 	12,
-	"Greater Vancouver",
+	90,
 	"Kitsilano Secondary",
 	"The purpose was to determine the effects of valprotate, an antiepeleptic drug, on neuronal growth in vivo in the brains of tadpoles. Consistent with prior in vitro valproate studies, a trend was shown that valproate increases neuronal growth. Furthermore, it was noted that there appears to be two sub-groups - defined by the competitive nature of the cells - that respond differently to valproate treatment."
 );
@@ -2358,7 +2358,7 @@ VALUES (
 	"Cell Cycle Control of Transformation in Saccharomyces Cerevisiae",
 	2,
 	8,
-	"Winnipeg Schools",
+	36,
 	"Sisler High  School",
 	"Genes are highly regulated throughout the cell cycle; consequently this may influence levels of transformation. MKPo bar1 ∆ was transformed with the LiAc/PEG/ssDNA method, in conjugation with the cell cycle. Sample T=75, transformed at the highest rate, proven by microscopy to be Mitosis. Theories for this level variation, is that during Mitosis, the nuclear membrane breaks down, and, nuclear division occurs— allowing for transformation efficiency."
 );
@@ -2402,7 +2402,7 @@ VALUES (
 	"Change is a Must(ard)!",
 	2,
 	6,
-	"Parkland",
+	25,
 	"Foam Lake Composite High School",
 	"For my science fair project I am going to find out if reconstituted dry mustard can kill bacteria in contaminated water and the bacteria on contaminated spinach. I chose this project because I have read articles about recalls of contaminated spinach and I wondered if the disinfectant properties of mustard could be used in the ready-to-eat produce industry."
 );
@@ -2462,30 +2462,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1616,
-	2008,
-	"Choco-logie",
-	3,
-	10,
-	"Est du Québec",
-	"Polyvalente Armand-Saint-Onge",
-	"Une expérience personnelle m'a amené à me poser des questions sur les propriétés du chocolat. Cette recherche est devenue une quête d'informations sur les vertus du chocolat. Sur les plans physique et psychologique de l'être humain ainsi que l'implication du chocolat quand on parle d'allergie."
-);
-INSERT INTO project_divisions(project, division) VALUES(1616, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1616,
-	1,
-	"Vicky Thériault",
-	"Sainte-Irène",
-	NULL,
-	"Bonjour, je m’appelle Vicky Thériault et dans mon école, je pratique un sport, le badminton, je participe aussi aux activités culturelles telles que secondaire en spectacle. Dans mes temps libres, j’aime faire du vélo et jouer de la guitare. Mes centres d’intérêts sont la nature, les sciences, les sports, les arts, la musique, le cinéma. Mes projets futurs sont : poursuivre mes études en biologie et également voyager. Lors de la provincial, j’ai terminé au 2e rang en plus de gagner une bourse universitaire venant de ESSO."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1423,
 	2008,
 	"Chloro-filter",
@@ -2511,12 +2487,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1616,
+	2008,
+	"Choco-logie",
+	3,
+	10,
+	70,
+	"Polyvalente Armand-Saint-Onge",
+	"Une expérience personnelle m'a amené à me poser des questions sur les propriétés du chocolat. Cette recherche est devenue une quête d'informations sur les vertus du chocolat. Sur les plans physique et psychologique de l'être humain ainsi que l'implication du chocolat quand on parle d'allergie."
+);
+INSERT INTO project_divisions(project, division) VALUES(1616, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1616,
+	1,
+	"Vicky Thériault",
+	"Sainte-Irène",
+	NULL,
+	"Bonjour, je m’appelle Vicky Thériault et dans mon école, je pratique un sport, le badminton, je participe aussi aux activités culturelles telles que secondaire en spectacle. Dans mes temps libres, j’aime faire du vélo et jouer de la guitare. Mes centres d’intérêts sont la nature, les sciences, les sports, les arts, la musique, le cinéma. Mes projets futurs sont : poursuivre mes études en biologie et également voyager. Lors de la provincial, j’ai terminé au 2e rang en plus de gagner une bourse universitaire venant de ESSO."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1288,
 	2008,
 	"Clay Advanced System For Cooling",
 	1,
 	9,
-	"Windsor",
+	66,
 	"Academie Ste. Cecile International",
 	"My project ""Clay Advanced System For Cooling"" is an environmentally-friendly, and energy efficient cooling system. In my project I use evaporative cooling. Air flows into the chamber through one tube. Once inside the air particles use their energy to evaporate the water absorbed by the outer shell causing the particles to cool efficiently.It can be used as a cost-efficent cooling system for small spaces."
 );
@@ -2556,95 +2556,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1417,
-	2008,
-	"Climate Change--Nunavut's Impact 2",
-	3,
-	7,
-	"Kivalliq",
-	"Victor Sammurtok",
-	"Nunavut has undergone a series of dramatic changes in our weather, we are experiencing thinner sea-ice, more frequent blizzards, new species of birds and bugs, and skinnier Polar Bears. My project attempts to find the per capita GHG production from Nunavut Power plants. Nunavut is leading Canada in GHG per capita production, not a statistic we should be proud of."
-);
-INSERT INTO project_divisions(project, division) VALUES(1417, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1417,
-	1,
-	"Douglas Aggark",
-	"Chesterfield Inlet",
-	NULL,
-	"Hello, my name is Douglas Ross Aggark (my Inuktitut name is Alikamiq) and I am 15 years old. I have lived in Chesterfield Inlet, Nunavut all my life. I am a beneficiary of the Nunavut Land Claims Agreement, and I am Inuit. Before earning this amazing opportunity to go to the Canada Wide Science Fair, I had never been further south than Churchill, Manitoba. I am seeing a lot of new things for the first time; paved roads, trees, malls, grass, everything in the south, and lots of people. My community has 350 people, most of whom I am related too. I really enjoy coaching hockey and badminton, as well as playing them. I also really enjoy hunting Caribou and Beluga whales, which I catch to help feed my family. I like watching Polar Bears (sometimes on the porch of my house), and protecting people in town from them. My family also has a dog team with 13 dogs, we are training them to learn how to hunt. I am the Vice-President of our Students’ Council, and I really enjoy helping out with activities at our school. I extremely excited to meet new people and make new friends."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1295,
-	2008,
-	"Cloning Violets",
-	3,
-	11,
-	"Central Alberta",
-	"Spruce View School",
-	"This project compares the effectiveness of propagating African Violets by tissue culture verses rooting leaf cuttings. Leaves were propagation or used whole for leaf cuttings. Tissue culture averaged 216 plantlets per leaf where as the rooted cuttings averaged 1.7 plantlets per leaf. Tissue culture propagation was found to be the superior method."
-);
-INSERT INTO project_divisions(project, division) VALUES(1295, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1295,
-	1,
-	"Jennifer Smith",
-	"Innisfail",
-	NULL,
-	"My name is Jennifer Dawn Smith I am sixteen and the president of the Grade 11 class at Spruce View School. I enjoy working with people and have attended the Co-operative Leadership Camp and Senior High Student Union Leadership courses. My projects have been selected to compete at the Central Alberta Regional Science Fair three times with this being my first trip to Nationals. At the Regional level I have won the “Ellis Bird Farm Award”, the senior “Genome Award” two years in a row, a senior Silver Award, a senior Gold Award and the “S.T.A.R. Award” for administering first aid to an injured person at the 2007 Regional Science Fair as I am trained in First Aid/CPR and WHIMIS. Through my involvement with the Loyal Order of Moose Kids Talk Program I have been given the honour of representing Canada twice at the International Moose Lodge Youth Congress, in 2007 at Gettysburg Pennsylvania and in 2008 at Tampa Florida. I serve our country as a Private in the Canadian Forces Reserves with the 749 Communications Squadron as a Supply Technician. It is my hope to attend University in Business and Logistics with a minor in Military History."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1295,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Senior",
-	"Pfizer Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1566,
-	2008,
-	"Climate Change: Symptoms and Solutions",
-	2,
-	8,
-	"Manitoba First Nations",
-	"Chief Sam Cook Mahmuwee Education Centre",
-	"My project is based on the study on the effects of climate change in the world and my community, the solutions to climate change, and my invention on renewable energy idea."
-);
-INSERT INTO project_divisions(project, division) VALUES(1566, 4);
-INSERT INTO project_divisions(project, division) VALUES(1566, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1566,
-	1,
-	"Taylor Flett",
-	"Split Lake",
-	NULL,
-	"I live in a small reserve called Tatasweyak known as Split Lake. I’m 15 years old I go to Chief Sam cook Mahmuwee education school in grade 9. i take part in a badminton club, school trips, and helping out for various people who needs my help. I am sometimes an outdoor and indoor person when it comes to the season. I like to read books, draw, write stories, playing games, and watching movies. My goals are to go to another school to get into Dalhousie University to become an environment and marine or criminal justice lawyer. So far I have achieved in going to high school without any failed grades or being upgraded. My aunts, uncles and my mom have finished high school and that is what motivates me in continuing or furthering my education."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1574,
 	2008,
 	"Clean Energy from Scrap Tire Combustion",
 	3,
 	1,
-	"South Shore",
+	10,
 	"Park View Education Centre",
 	"Infrared spectrometry analysis was conducted to identify the combustion products of vulcanized rubber. A carbon dioxide filter was then constructed and incorporated into an incinerator system that burns scrap tires to produce thermal energy. The main byproducts of this system are calcium carbonate, water vapor, and tire ash. This system allows scrap tires to be used as a source of clean energy."
 );
@@ -2734,12 +2651,95 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1417,
+	2008,
+	"Climate Change--Nunavut's Impact 2",
+	3,
+	7,
+	19,
+	"Victor Sammurtok",
+	"Nunavut has undergone a series of dramatic changes in our weather, we are experiencing thinner sea-ice, more frequent blizzards, new species of birds and bugs, and skinnier Polar Bears. My project attempts to find the per capita GHG production from Nunavut Power plants. Nunavut is leading Canada in GHG per capita production, not a statistic we should be proud of."
+);
+INSERT INTO project_divisions(project, division) VALUES(1417, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1417,
+	1,
+	"Douglas Aggark",
+	"Chesterfield Inlet",
+	NULL,
+	"Hello, my name is Douglas Ross Aggark (my Inuktitut name is Alikamiq) and I am 15 years old. I have lived in Chesterfield Inlet, Nunavut all my life. I am a beneficiary of the Nunavut Land Claims Agreement, and I am Inuit. Before earning this amazing opportunity to go to the Canada Wide Science Fair, I had never been further south than Churchill, Manitoba. I am seeing a lot of new things for the first time; paved roads, trees, malls, grass, everything in the south, and lots of people. My community has 350 people, most of whom I am related too. I really enjoy coaching hockey and badminton, as well as playing them. I also really enjoy hunting Caribou and Beluga whales, which I catch to help feed my family. I like watching Polar Bears (sometimes on the porch of my house), and protecting people in town from them. My family also has a dog team with 13 dogs, we are training them to learn how to hunt. I am the Vice-President of our Students’ Council, and I really enjoy helping out with activities at our school. I extremely excited to meet new people and make new friends."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1566,
+	2008,
+	"Climate Change: Symptoms and Solutions",
+	2,
+	8,
+	111,
+	"Chief Sam Cook Mahmuwee Education Centre",
+	"My project is based on the study on the effects of climate change in the world and my community, the solutions to climate change, and my invention on renewable energy idea."
+);
+INSERT INTO project_divisions(project, division) VALUES(1566, 4);
+INSERT INTO project_divisions(project, division) VALUES(1566, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1566,
+	1,
+	"Taylor Flett",
+	"Split Lake",
+	NULL,
+	"I live in a small reserve called Tatasweyak known as Split Lake. I’m 15 years old I go to Chief Sam cook Mahmuwee education school in grade 9. i take part in a badminton club, school trips, and helping out for various people who needs my help. I am sometimes an outdoor and indoor person when it comes to the season. I like to read books, draw, write stories, playing games, and watching movies. My goals are to go to another school to get into Dalhousie University to become an environment and marine or criminal justice lawyer. So far I have achieved in going to high school without any failed grades or being upgraded. My aunts, uncles and my mom have finished high school and that is what motivates me in continuing or furthering my education."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1295,
+	2008,
+	"Cloning Violets",
+	3,
+	11,
+	83,
+	"Spruce View School",
+	"This project compares the effectiveness of propagating African Violets by tissue culture verses rooting leaf cuttings. Leaves were propagation or used whole for leaf cuttings. Tissue culture averaged 216 plantlets per leaf where as the rooted cuttings averaged 1.7 plantlets per leaf. Tissue culture propagation was found to be the superior method."
+);
+INSERT INTO project_divisions(project, division) VALUES(1295, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1295,
+	1,
+	"Jennifer Smith",
+	"Innisfail",
+	NULL,
+	"My name is Jennifer Dawn Smith I am sixteen and the president of the Grade 11 class at Spruce View School. I enjoy working with people and have attended the Co-operative Leadership Camp and Senior High Student Union Leadership courses. My projects have been selected to compete at the Central Alberta Regional Science Fair three times with this being my first trip to Nationals. At the Regional level I have won the “Ellis Bird Farm Award”, the senior “Genome Award” two years in a row, a senior Silver Award, a senior Gold Award and the “S.T.A.R. Award” for administering first aid to an injured person at the 2007 Regional Science Fair as I am trained in First Aid/CPR and WHIMIS. Through my involvement with the Loyal Order of Moose Kids Talk Program I have been given the honour of representing Canada twice at the International Moose Lodge Youth Congress, in 2007 at Gettysburg Pennsylvania and in 2008 at Tampa Florida. I serve our country as a Private in the Canadian Forces Reserves with the 749 Communications Squadron as a Supply Technician. It is my hope to attend University in Business and Logistics with a minor in Military History."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1295,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Senior",
+	"Pfizer Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1530,
 	2008,
 	"Come and Get Your Coffee While It's Hot!",
 	1,
 	12,
-	"Greater Vancouver",
+	90,
 	"St George's School",
 	"Ever wonder why you got that 'F' on your term project, or never got hired for that job? Don't blame your teacher or your boss. Chances are their coffee was colder than expected that morning. If you want that 'A' badly, or need that job, then give them a gift. Nothing fancy, just the most insulating coffee mug. But the question is “which is it?”"
 );
@@ -2799,36 +2799,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1435,
-	2008,
-	"Come On In, The Water's Fine?",
-	3,
-	9,
-	"United Counties",
-	"Cornwall Collegiate & Vocational",
-	"The Cornwall Canal is a historic waterway with a potential for recreational activities. Recreational water quality is determined by aesthetic and health-related parameters. Water samples were taken from six canal locations seasonally to evaluate bacteriological and nutrient trends. Field and laboratory analyses demonstrated that the water quality was generally good but that it was affected by temperature, stream velocity, and the proximity of contaminates."
-);
-INSERT INTO project_divisions(project, division) VALUES(1435, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1435,
-	1,
-	"Laura St. Marseille",
-	"Cornwall",
-	NULL,
-	"Laura St. Marseille is a sixteen-year-old grade eleven student at CCVS in Cornwall, Ontario. Her science project entitled “Come On In, The Water’s Fine?” provided her with an opportunity to combine one of her favourite activities, kayaking, with her keen interest of biology and chemistry. Naturally, she enjoys environmental research and endeavours. Some of her hobbies and interests include designing jewellery, cooking, and art. She also enjoys outdoor activities such as swimming and hiking. She is a voracious reader of history and fiction novels. In 2004, she re-enacted part of Canada’s heritage as a Time Traveller at Upper Canada Village and a Legislative Page at the Ontario Legislature. Laura won stage management awards at the Sears Drama Festival for her school’s production of ‘Waterworks’ at the local and regional levels. During the summer of 2007, she participated in a Rotary Short Term Exchange to the Bordeaux region of France. Laura is the Interact Club Secretary at her school and is a member of the Student Council, Envirothon Team, and Student Senate. She participated in and was a winner of the National Engineering Week Bridge Building Competition in 2007 and 2008."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1509,
 	2008,
 	"Come In Out Of The Cold",
 	1,
 	9,
-	"North Channel",
+	42,
 	"Thessalon P.S.",
 	"This project studied the effect of using a heat-absorbing floor in the construction of two shelters (standard materials and non-standard materials). Temperatures inside the shelters were measured throughout a dawn to dusk cycle. The heat-absorbing floor had the greatest affect on the non-standard material shelter."
 );
@@ -2847,12 +2823,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1435,
+	2008,
+	"Come On In, The Water's Fine?",
+	3,
+	9,
+	52,
+	"Cornwall Collegiate & Vocational",
+	"The Cornwall Canal is a historic waterway with a potential for recreational activities. Recreational water quality is determined by aesthetic and health-related parameters. Water samples were taken from six canal locations seasonally to evaluate bacteriological and nutrient trends. Field and laboratory analyses demonstrated that the water quality was generally good but that it was affected by temperature, stream velocity, and the proximity of contaminates."
+);
+INSERT INTO project_divisions(project, division) VALUES(1435, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1435,
+	1,
+	"Laura St. Marseille",
+	"Cornwall",
+	NULL,
+	"Laura St. Marseille is a sixteen-year-old grade eleven student at CCVS in Cornwall, Ontario. Her science project entitled “Come On In, The Water’s Fine?” provided her with an opportunity to combine one of her favourite activities, kayaking, with her keen interest of biology and chemistry. Naturally, she enjoys environmental research and endeavours. Some of her hobbies and interests include designing jewellery, cooking, and art. She also enjoys outdoor activities such as swimming and hiking. She is a voracious reader of history and fiction novels. In 2004, she re-enacted part of Canada’s heritage as a Time Traveller at Upper Canada Village and a Legislative Page at the Ontario Legislature. Laura won stage management awards at the Sears Drama Festival for her school’s production of ‘Waterworks’ at the local and regional levels. During the summer of 2007, she participated in a Rotary Short Term Exchange to the Bordeaux region of France. Laura is the Interact Club Secretary at her school and is a member of the Student Council, Envirothon Team, and Student Senate. She participated in and was a winner of the National Engineering Week Bridge Building Competition in 2007 and 2008."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1270,
 	2008,
 	"Comparing the Effects of Organic and Chemical Fertilizers on a Mesotrophic Lake.",
 	1,
 	12,
-	"East Kootenay",
+	87,
 	"Kootenay Christian Academy",
 	"Due to the increasing use of fertilizers in our environment, many lakes in Canada run the risk of becoming eutrophied. This experiment compares organic and chemical fertilizers on the phytoplankton growth in the water of Tie Lake, British Columbia."
 );
@@ -2876,7 +2876,7 @@ VALUES (
 	"Cones and Clones: Genetic Variation of White Spruce Seed and Clones",
 	3,
 	2,
-	"Central Newfoundland",
+	3,
 	"Exploits Valley High",
 	"Analysis of white spruce cone and seed traits from samples collected within Newfoundland’s seed orchard over a two year period revealed strong genetic variation between and within families and illustrated the importance of sampling biological systems over time. Understanding these differences will aid in selecting candidates for advanced breeding and insure research studies are designed correctly. Maternal control was apparent over all characteristics including fertilization."
 );
@@ -2940,12 +2940,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1540,
+	2008,
+	"Cottage or Castle-Which Was Warmer?An Evaluation of Mediaeval Building Materials",
+	3,
+	12,
+	98,
+	"Esquimalt Community School",
+	"My experiment measures the thermal insulative properties of mediaeval building materials such as stone, wattle and daub, and cob. By finding the insulative properties of these materials one could answer the question: Whose house was warmer, the prince in a castle of stone, or the peasant in a cob house? By studying these materials one could find how they could benefit us today."
+);
+INSERT INTO project_divisions(project, division) VALUES(1540, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1540,
+	1,
+	"Simon Bild-Enkin",
+	"Victoria",
+	NULL,
+	"Simon was born in Edinburgh, but has been living in Victoria, BC, most of his life. He is passionate about making music (sax, bass and guitar), and reading about history and science. He combines history and science in all his science fair projects. This is Simon’s fourth project at the Canada Wide Science Fair, and he hopes to add many pins to his collection. Simon has been growing a rat tail for ten years, and will not cut it off."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1293,
 	2008,
 	"Crown Gall Prevention",
 	3,
 	11,
-	"Central Alberta",
+	83,
 	"Olds Junior Senior High School",
 	"The objective of our experiment was to see whether or not the development of crown gall in beefsteak tomatos could be prevented using an extended treatment regime of beta carotene. Furthermore we determined the optimal dosage which would produce the greatest yield."
 );
@@ -2974,46 +2998,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1499,
-	2008,
-	"Daphnia On Drugs",
-	2,
-	9,
-	"Toronto",
-	"Linden School, The",
-	"I studied the effects of Red Bull on Daphnia (small water crustaceans) to determine if the drink's ingredients would increase the invertebrate’s heart rate and/or change behaviour. I chose Daphnia for my project because under certain test conditions they react similarly to humans, which I was interested in testing. My results showed that there were significant changes as a result of Red Bull Energy Drink."
-);
-INSERT INTO project_divisions(project, division) VALUES(1499, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1499,
-	1,
-	"Emma Lowsky",
-	"Toronto",
-	NULL,
-	"Emma Lowsky was born in Toronto, Ontario in 1993. She currently attends The Linden School in downtown Toronto. Emma is interested in pursuing a career in medicine specifically cardiac surgery. Her interests include music, yoga and hanging out with friends."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1499,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Intermediate",
-	"Pfizer Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1492,
 	2008,
 	"Daphnia Lub-Dubs",
 	3,
 	9,
-	"Toronto",
+	63,
 	"Agincourt C.I.",
 	"The experiment focused on the effect of three common pain/cold medications, on heart rate of Daphnis, a crustacean. Results revealed that Acetaminophen and Ibuprofen increased heart rates, while Benylin decreased the heart rates. As Daphnia share certain similarities in anatomy with humans, further studies can be conducted to test prolonged usage of medications."
 );
@@ -3042,12 +3032,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1499,
+	2008,
+	"Daphnia On Drugs",
+	2,
+	9,
+	63,
+	"Linden School, The",
+	"I studied the effects of Red Bull on Daphnia (small water crustaceans) to determine if the drink's ingredients would increase the invertebrate’s heart rate and/or change behaviour. I chose Daphnia for my project because under certain test conditions they react similarly to humans, which I was interested in testing. My results showed that there were significant changes as a result of Red Bull Energy Drink."
+);
+INSERT INTO project_divisions(project, division) VALUES(1499, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1499,
+	1,
+	"Emma Lowsky",
+	"Toronto",
+	NULL,
+	"Emma Lowsky was born in Toronto, Ontario in 1993. She currently attends The Linden School in downtown Toronto. Emma is interested in pursuing a career in medicine specifically cardiac surgery. Her interests include music, yoga and hanging out with friends."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1499,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Intermediate",
+	"Pfizer Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1617,
 	2008,
 	"Déchets électrisants!",
 	2,
 	10,
-	"Mauricie, Centre-du-Québec",
+	72,
 	"Collège Clarétain de Victoriaville",
 	"Le biogaz (gaz produit en milieu anaérobie par des déchets) est une excellente source d'électricité qui a fait ses preuves en 1998, lors de la crise du verglas. Nous voulions donc découvrir par nous-mêmes ce gaz en soumettant différentes substances sous différentes conditions et en analysant les gaz obtenus."
 );
@@ -3076,36 +3100,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1540,
-	2008,
-	"Cottage or Castle-Which Was Warmer?An Evaluation of Mediaeval Building Materials",
-	3,
-	12,
-	"Vancouver Island",
-	"Esquimalt Community School",
-	"My experiment measures the thermal insulative properties of mediaeval building materials such as stone, wattle and daub, and cob. By finding the insulative properties of these materials one could answer the question: Whose house was warmer, the prince in a castle of stone, or the peasant in a cob house? By studying these materials one could find how they could benefit us today."
-);
-INSERT INTO project_divisions(project, division) VALUES(1540, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1540,
-	1,
-	"Simon Bild-Enkin",
-	"Victoria",
-	NULL,
-	"Simon was born in Edinburgh, but has been living in Victoria, BC, most of his life. He is passionate about making music (sax, bass and guitar), and reading about history and science. He combines history and science in all his science fair projects. This is Simon’s fourth project at the Canada Wide Science Fair, and he hopes to add many pins to his collection. Simon has been growing a rat tail for ten years, and will not cut it off."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1433,
 	2008,
 	"Des clous pour déjeuner",
 	1,
 	9,
-	"United Counties",
+	52,
 	"École élémentaire Jean XXIII",
 	"Le fer est un élément nutritif essentiel au bon fonctionnement du corps. Notre alimentation n’est pas toujours équilibrée; alors plusieurs céréales sont enrichies de fer. Est-ce qu’on peut retirer le fer des céréales ? Quelles céréales contiennent le plus de fer ? Grâce à la propriété magnétique du fer, je crois que je pourrai extraire le fer des céréales."
 );
@@ -3124,12 +3124,60 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1428,
+	2008,
+	"Diet Dilemma with Irritable Bowel Syndrome",
+	1,
+	4,
+	9,
+	"East Wiltshire School",
+	"The aim of the project was to determine a suitable alternative to replace medication to alleviate symptoms of Irritable Bowel Syndrome, (or IBS). The question posed was “Which types of foods digest easier in the colon?”. My aim was to create a diet to help control IBS. The testing consisted of soaking selected foods in vinegar solutions, which acted as the gastric acids."
+);
+INSERT INTO project_divisions(project, division) VALUES(1428, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1428,
+	1,
+	"Emily Ross",
+	"Charlottetown",
+	NULL,
+	"My name is Emily Ross. I am 13 years of age and I attend East Wiltshire Intermediate School in PEI. I am in a grade 8 late immersion progam, and I have been since grade 7. I enjoy many sports and I am envolved in karate and field hockey. I participate in inturmurals and I play purcussion in the grade 8 school band. I enjoy listening to music and being active. I enjoy all water sports, and I love to knee board, boat and swim. I also enjoy the outdoors and I love to go camping and hiking in the summer. In the future I am aiming to be a gastrolgist and open my own clinic. I am interested in biology, health and math."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1534,
+	2008,
+	"Detection Inspection",
+	1,
+	9,
+	43,
+	"McCrosson-Tovell E.S.",
+	"This experiment involving smoke detectors determined the quickest reaction time, if cleaning affected the results, and if detectors without heat sensors would react to heat. I constructed two testing structures and in a strict testing procedure, I used incense, ""Smoke Test"", and a heat gun. I found out cleaning made little difference and two detectors reacted to heat. I decided Kidde Multi-sensor was best overall."
+);
+INSERT INTO project_divisions(project, division) VALUES(1534, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1534,
+	1,
+	"Courtney Hansen",
+	"Sleeman",
+	NULL,
+	"My name is Courtney Hansen and I live in Bergland, Ontario. I am 13 years old and in Grade 8 at McCrosson Tovell School. I have been in figure skating and dance for 9 years. I have also been a Junior Figure Skating Coach for 4 years. I play on soccer and baseball teams and go to badminton tournaments. I love to play other sports like basketball, volleyball, and hockey. Last year, I won the District and Regional Basketball Free Throw in my category. I am a straight-A student and my best subjects are Math, Science, and Phys. Ed. I have been successful in chess tournaments, winning medals and qualifying for Canada’s championships. I have had success in local and regional science fairs in the past 4 years. I have been a Pals/Props leader for 2 years – someone who organizes physical activities for young children. I am a former Conflict Manager – someone who helps solve student conflicts. I enjoy outdoor activities such as camping, snowmobiling, and wildlife photography. I also like to read, go shopping, and spend time with friends and family."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1370,
 	2008,
 	"Detecting Atherosclerosis - Cytokine Profiling of Peritoneal Macrophages Exposed",
 	3,
 	9,
-	"Ottawa",
+	44,
 	"Elmwood School",
 	"Atherosclerosis is the build-up of plaque on the artery walls. Atherosclerosis develops at a young age however; symptoms appear at a latter time. Objective: “To profile the cytokine expressions of Apolipoprotein E knock-out mice’s macrophages exposed to Porphyromonas gingivalis.” The study outlined that a definite relationship exists between periodontal disease and atherosclerosis. This is an indicator for early signs of atherosclerosis in patients."
 );
@@ -3188,36 +3236,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1534,
-	2008,
-	"Detection Inspection",
-	1,
-	9,
-	"Northwestern Ontario",
-	"McCrosson-Tovell E.S.",
-	"This experiment involving smoke detectors determined the quickest reaction time, if cleaning affected the results, and if detectors without heat sensors would react to heat. I constructed two testing structures and in a strict testing procedure, I used incense, ""Smoke Test"", and a heat gun. I found out cleaning made little difference and two detectors reacted to heat. I decided Kidde Multi-sensor was best overall."
-);
-INSERT INTO project_divisions(project, division) VALUES(1534, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1534,
-	1,
-	"Courtney Hansen",
-	"Sleeman",
-	NULL,
-	"My name is Courtney Hansen and I live in Bergland, Ontario. I am 13 years old and in Grade 8 at McCrosson Tovell School. I have been in figure skating and dance for 9 years. I have also been a Junior Figure Skating Coach for 4 years. I play on soccer and baseball teams and go to badminton tournaments. I love to play other sports like basketball, volleyball, and hockey. Last year, I won the District and Regional Basketball Free Throw in my category. I am a straight-A student and my best subjects are Math, Science, and Phys. Ed. I have been successful in chess tournaments, winning medals and qualifying for Canada’s championships. I have had success in local and regional science fairs in the past 4 years. I have been a Pals/Props leader for 2 years – someone who organizes physical activities for young children. I am a former Conflict Manager – someone who helps solve student conflicts. I enjoy outdoor activities such as camping, snowmobiling, and wildlife photography. I also like to read, go shopping, and spend time with friends and family."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1305,
 	2008,
 	"Developing FiftyTwo",
 	2,
 	11,
-	"Calgary Youth",
+	81,
 	NULL,
 	"The purpose of this project is to design and implement a set of card games called FiftyTwo for the One Laptop Per Child (OLPC) project's XO laptop. The reason for doing so is a lack of card games in the list of activities available for the XO."
 );
@@ -3256,49 +3280,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1428,
+	1256,
 	2008,
-	"Diet Dilemma with Irritable Bowel Syndrome",
+	"Do you know what you're drinking?",
 	1,
-	4,
-	"Prince Edward Island",
-	"East Wiltshire School",
-	"The aim of the project was to determine a suitable alternative to replace medication to alleviate symptoms of Irritable Bowel Syndrome, (or IBS). The question posed was “Which types of foods digest easier in the colon?”. My aim was to create a diet to help control IBS. The testing consisted of soaking selected foods in vinegar solutions, which acted as the gastric acids."
+	12,
+	89,
+	"Chief Dan George Middle",
+	"The purpose of my project was to find out, in general, which drinking water is the 'best'? I tested several different drinking waters, such as bottled and tap waters, for taste with 60 testers, young and old, and for pH, conductivity, E coli and total coliform. Clearbrook WaterWorks won 1st place, 69% avg. taste, fairly neutral pH levels, no E coli, coliform, and low conductivity."
 );
-INSERT INTO project_divisions(project, division) VALUES(1428, 8);
+INSERT INTO project_divisions(project, division) VALUES(1256, 4);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1428,
+	1256,
 	1,
-	"Emily Ross",
-	"Charlottetown",
+	"Jory Smallenberg",
+	"Abbotsford",
 	NULL,
-	"My name is Emily Ross. I am 13 years of age and I attend East Wiltshire Intermediate School in PEI. I am in a grade 8 late immersion progam, and I have been since grade 7. I enjoy many sports and I am envolved in karate and field hockey. I participate in inturmurals and I play purcussion in the grade 8 school band. I enjoy listening to music and being active. I enjoy all water sports, and I love to knee board, boat and swim. I also enjoy the outdoors and I love to go camping and hiking in the summer. In the future I am aiming to be a gastrolgist and open my own clinic. I am interested in biology, health and math."
+	"Hello! My name is Jory and I'm a grade seven student in the province of British Columbia. I play three instruments (piano, drums and flute) and am fluent in both french and english. My goal in life is to visit every continent, including Antartica, and even every country in the world, if possible! I like to live life for the moment and try to be the best possible person that I can be. I am very outgoing and am involved in public speaking, track and field, sports teams, band, volunteering, babysitting, hiphop, church activities, piano lessons, and, as you can see, science fairs!"
 );
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1484,
-	2008,
-	"Do Different Colours of Light Affect the Growth of Plants?",
+	1256,
 	1,
-	9,
-	"Toronto",
-	"St. Richard C.S.",
-	"Our project explored the effect of different colours of fluorescent light and natural light on plant growth. We planted bean seeds and exposed them to various colours of light continuously over a fourteen day period. We discovered that green fluorescent light and natural light resulted in the largest and healthiest looking plants."
-);
-INSERT INTO project_divisions(project, division) VALUES(1484, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1484,
-	1,
-	"Adam Darrah",
-	"Toronto",
-	NULL,
-	"My name is Adam Storm Darrah. I was born on August 10th 1995. I am 12 years old and attend St.Richard Catholic School. At school, I play all kinds of sports such as volleyball, soccer, basketball and foothockey. Outside of school, I play baseball for the West Hill Blue Hawks. I've gotten straight A's on my report card since grade 5 and love science. After university, I plan to go into politics or a career in sports. I'm a great athlete and love to go to Blue Jays games. In my spare time, I enjoy playing sports as well as video games and talking on msn with my friends. This is my first CWSF and I'm looking forward to it!"
+	"Honourable Mention - Earth & Environmental Science",
+	"Junior",
+	"Petro-Canada",
+	100.00
 );
 
 INSERT INTO projects
@@ -3309,7 +3319,7 @@ VALUES (
 	"Do Anti-Oxidants Boost a Plant's Dynamics",
 	2,
 	9,
-	"Niagara",
+	60,
 	"Sir Winston Churchill",
 	"Anti-oxidants, predominantly produced by plants, are known to boost human health. However, the role of anti-oxidants in plants itself is not well understood. To study the effect of anti-oxidants, plants were grown in vitro in medium enriched with anti-oxidants. Phenotypic and genetic analysis was conducted to study the effects. Results showed that anti-oxidants boost the plant growth, rooting, vigor and disease resistance at lower concentrations."
 );
@@ -3359,118 +3369,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1541,
-	2008,
-	"Do Environmental Stresses Affect the Strength of Glue Bonds?",
-	2,
-	12,
-	"Vancouver Island",
-	"Glenlyon Norfolk School",
-	"Using household materials this experiment investigated the impact of five environmental stressors on the bond strength of three types of glue. Results on 200 test models (25 groups of 8) showed that certain glue types perform better in wet conditions, while others perform better in high temperatures. Consequently individual glues can be pre-selected for a predictable engineering performance for use in different environmental conditions."
-);
-INSERT INTO project_divisions(project, division) VALUES(1541, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1541,
-	1,
-	"David Haynes",
-	"Victoria",
-	NULL,
-	"My name is David Haynes and I was born in Georgetown, Ontario on October 14 1993. I moved from Ontario in 2002 to British Columbia. I live with my two younger brothers and my parents on Prospect Lake, Victoria. I went to school at Royal Oak Middle School. I changed schools when I was in grade 7 to Glenlyon Norfolk School. Since I moved to Victoria I have participated in 4-H, mountain biking, sailing, tennis and fencing. I am also an avid reader, keen snow boarder and model builder."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1256,
-	2008,
-	"Do you know what you're drinking?",
-	1,
-	12,
-	"Fraser Valley",
-	"Chief Dan George Middle",
-	"The purpose of my project was to find out, in general, which drinking water is the 'best'? I tested several different drinking waters, such as bottled and tap waters, for taste with 60 testers, young and old, and for pH, conductivity, E coli and total coliform. Clearbrook WaterWorks won 1st place, 69% avg. taste, fairly neutral pH levels, no E coli, coliform, and low conductivity."
-);
-INSERT INTO project_divisions(project, division) VALUES(1256, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1256,
-	1,
-	"Jory Smallenberg",
-	"Abbotsford",
-	NULL,
-	"Hello! My name is Jory and I'm a grade seven student in the province of British Columbia. I play three instruments (piano, drums and flute) and am fluent in both french and english. My goal in life is to visit every continent, including Antartica, and even every country in the world, if possible! I like to live life for the moment and try to be the best possible person that I can be. I am very outgoing and am involved in public speaking, track and field, sports teams, band, volunteering, babysitting, hiphop, church activities, piano lessons, and, as you can see, science fairs!"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1256,
-	1,
-	"Honourable Mention - Earth & Environmental Science",
-	"Junior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1260,
-	2008,
-	"Do You See What Eye See?",
-	1,
-	11,
-	"Kiwanis Southeast Alberta",
-	"Centre for Academic and Personal Excellence",
-	"This project deals with our color perception and how it can be used to improve our everyday life. Subjects were tested with colored blotches of two basic abstract shapes to see if different images were perceived in the blotches when the colors were varied. To my surprise, a wide number of images were seen in the same shapes when only the color was changed."
-);
-INSERT INTO project_divisions(project, division) VALUES(1260, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1260,
-	1,
-	"Alyssa Hickey",
-	"Medicine Hat",
-	NULL,
-	"Science and medicine really interests me. I plan on becoming a cardiac surgeon when I'm finished my formal education. Besides coming from ""the Gas City"", I am a true ""Mad Hatter"" and I classify myself as an ""Ultimate Geek"" (although some of my classmates tend to change that title to ultimate NERD!). My favorite thing to do is hang out with my very ""geeky"" friends who tend to be a little weird at times. I'm currently writing a children's book which I plan to publish soon. For the past 8 years I have looked forward to science fair at our school and regionals and have dreamed about having a chance at nationals since grade one! Another of my most like hobbies is singing....just participated in a school talent show and had lots of fun. Last summer I attended the Alberta Youth Entrepreneur's Camp and our group received the award for hardest working team! I've received many awards for past science fairs and I'm especially proud of my ""Project Minerva"" award for ""Excellence in Female Science"" from this year's Regionals. Looking forward to meeting my fellow contestants in Ottawa. Best of luck to everyone."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1399,
-	2008,
-	"Do You See What I See",
-	2,
-	12,
-	"Pacific Northwest",
-	"Hazelton Secondary",
-	"I tested 640 people in 33 tests to see if subliminal messages affect the decisions we make. I showed a video of a person with a ""neutral"" expression. In one video I flashed the word ""happy"". In the second video the word ""sad"" was flashed, and in the third (control) video ""red"" was flashed. A significant number of people were affected by the subliminal message."
-);
-INSERT INTO project_divisions(project, division) VALUES(1399, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1399,
-	1,
-	"Alana Harrison",
-	"hazelton",
-	NULL,
-	"Alana Harrison is a Hazelton Secondary School student from the scenic Village of Hazelton in north-western British Columbia. To further explore her interest in photography and filmmaking, Alana has chosen to do a subliminal messaging science project - ""Do You See What I See?"", for which she achieved a gold medal at the regional fair, and also the SCWIST Award. Alana is a popular community volunteer at the local library, where she is the digital technology specialist and assists with both public programming and the pre-school story-time. Alana was president of her elementary school and is currently engrossed in leadership programs and activities at HSS. Alana played the lead in a school musical production of “Annie”, and continues to sing, act, choreograph, and dance in local theatre. She loves volleyball and snowboarding. A born entrepreneur, she started her first serious business “Alana’s Bandana’s” at the age of nine. Alana rarely misses The Simpsons, and other hobbies include reading, beading, and vegetarian cuisine. After high school Alana would like to travel to Ecuador to meet her foster child, then go on to University, with the long-term goal of a career in education."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1624,
 	2008,
 	"Docteur Bob l'Éponge",
 	2,
 	10,
-	"Estrie",
+	71,
 	"École Mitchell - Montcalm",
 	"La biodiversité des océans contribue à créer une source de molécules inédites pouvant posséder un potentiel thérapeutique intéressant. Antibiotiques, antiviraux, antimutagènes ou anti-tumoraux; ces molécules sont susceptibles de renforcer ou diversifier les médicaments actuels. Ce projet présente l'état actuel des recherches en pharmacologie marine et l'intérêt particulier des éponges."
 );
@@ -3519,36 +3423,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1560,
-	2008,
-	"Don't Be Cold This Winter",
-	3,
-	10,
-	"Aboriginal Québec Autochtone",
-	"Kitigan Zibi Kikinamadinan",
-	"To prove which insulation materials provide the greatest resistance to heat loss. A digital thermometer was installed in the middle of a cardboard box and then covered with different insulating materials. The covered box was placed inside a household freezer and readings were then taken to see how long it would take for the temperature to drop 1 degree Celsius."
-);
-INSERT INTO project_divisions(project, division) VALUES(1560, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1560,
-	1,
-	"Caitlin Tolley",
-	"Maniwaki",
-	NULL,
-	"Caitlin Tolley is a high school student from Kitigan Zibi Anishinabeg and is focused on a bright future. Caitlin has attended the Forum on Parliament Hill, Canada Wide Science Fair, and the Future World Leaders Youth Summit in Washington, D.C. Due to her academic achievements, Caitlin was awarded the Foundation for the Advancement of Aboriginal Youth bursary. Caitlin is active in sports and has been on the running team all through high school. She recently wrapped up her sixth year of playing hockey with the boys in the town of Maniwaki. Caitlin volunteers coaching a junior youth girl’s basketball team because she feels that it’s important to give back to the community. In 2006 Caitlin was chosen as one of 12 National Aboriginal Role Models by the National Aboriginal Health Organization. Her role was to influence behaviors and attitudes of Aboriginal youth towards healthy lifestyles and self esteem. Caitlin was honored to be selected as “Quebec and Labrador Youth of the Year” in 2006 at the Dialogue for Life suicide prevention conference. Last June Caitlin was crowned Miss Algonquin Nation and is proud to represent the Algonquin people everywhere she goes. Caitlin’s final philosophy is “Learn Today, Lead Tomorrow”."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1462,
 	2008,
 	"Does The Angle Of Your Ankle Affect The Propulsion of Your Flutter Kick?",
 	1,
 	1,
-	"Tri-County",
+	12,
 	"Maple Grove Education Centre",
 	"This project tested whether having greater ankle flexion in the flutter kick would increase your propulsion of your freestyle stroke. Swimmers performed ankle flexibility exercises and swam with homemade angled fins. Swimming with the angled fins proved that the greater your ankle flexion, the greater your propulsion."
 );
@@ -3587,26 +3467,97 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1381,
+	1260,
 	2008,
-	"Driving Tension and Hypertension",
+	"Do You See What Eye See?",
 	1,
-	8,
-	"Northern Manitoba",
-	"Burntwood School",
-	"The purpose of my experiment is to determine whether there is a correlation between commuting to work regularly in stressful, high density traffic and the blood pressure of middle aged people. The experiment was performed using a simulation situation and yielded the results that driving tension increases blood pressure, thereby diminishing a person's overall driving performance and increasing the risk for accidents."
+	11,
+	91,
+	"Centre for Academic and Personal Excellence",
+	"This project deals with our color perception and how it can be used to improve our everyday life. Subjects were tested with colored blotches of two basic abstract shapes to see if different images were perceived in the blotches when the colors were varied. To my surprise, a wide number of images were seen in the same shapes when only the color was changed."
 );
-INSERT INTO project_divisions(project, division) VALUES(1381, 9);
-INSERT INTO project_divisions(project, division) VALUES(1381, 1);
+INSERT INTO project_divisions(project, division) VALUES(1260, 9);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1381,
+	1260,
 	1,
-	"Anita Pandey",
-	"Thompson",
+	"Alyssa Hickey",
+	"Medicine Hat",
 	NULL,
-	"My name is Anita Pandey. I go to Burntwood school, grade seven, in Thompson Manitoba. My hobbies include singing, reading, and playing with friends and siblings. Over the years I have won awards concerning science fair, vocal and speech activities. My heritage is from India, but I was born in Winnipeg. I am generally a friendly and outgoing person and hope to have a career in medicine in the future."
+	"Science and medicine really interests me. I plan on becoming a cardiac surgeon when I'm finished my formal education. Besides coming from ""the Gas City"", I am a true ""Mad Hatter"" and I classify myself as an ""Ultimate Geek"" (although some of my classmates tend to change that title to ultimate NERD!). My favorite thing to do is hang out with my very ""geeky"" friends who tend to be a little weird at times. I'm currently writing a children's book which I plan to publish soon. For the past 8 years I have looked forward to science fair at our school and regionals and have dreamed about having a chance at nationals since grade one! Another of my most like hobbies is singing....just participated in a school talent show and had lots of fun. Last summer I attended the Alberta Youth Entrepreneur's Camp and our group received the award for hardest working team! I've received many awards for past science fairs and I'm especially proud of my ""Project Minerva"" award for ""Excellence in Female Science"" from this year's Regionals. Looking forward to meeting my fellow contestants in Ottawa. Best of luck to everyone."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1399,
+	2008,
+	"Do You See What I See",
+	2,
+	12,
+	96,
+	"Hazelton Secondary",
+	"I tested 640 people in 33 tests to see if subliminal messages affect the decisions we make. I showed a video of a person with a ""neutral"" expression. In one video I flashed the word ""happy"". In the second video the word ""sad"" was flashed, and in the third (control) video ""red"" was flashed. A significant number of people were affected by the subliminal message."
+);
+INSERT INTO project_divisions(project, division) VALUES(1399, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1399,
+	1,
+	"Alana Harrison",
+	"hazelton",
+	NULL,
+	"Alana Harrison is a Hazelton Secondary School student from the scenic Village of Hazelton in north-western British Columbia. To further explore her interest in photography and filmmaking, Alana has chosen to do a subliminal messaging science project - ""Do You See What I See?"", for which she achieved a gold medal at the regional fair, and also the SCWIST Award. Alana is a popular community volunteer at the local library, where she is the digital technology specialist and assists with both public programming and the pre-school story-time. Alana was president of her elementary school and is currently engrossed in leadership programs and activities at HSS. Alana played the lead in a school musical production of “Annie”, and continues to sing, act, choreograph, and dance in local theatre. She loves volleyball and snowboarding. A born entrepreneur, she started her first serious business “Alana’s Bandana’s” at the age of nine. Alana rarely misses The Simpsons, and other hobbies include reading, beading, and vegetarian cuisine. After high school Alana would like to travel to Ecuador to meet her foster child, then go on to University, with the long-term goal of a career in education."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1484,
+	2008,
+	"Do Different Colours of Light Affect the Growth of Plants?",
+	1,
+	9,
+	63,
+	"St. Richard C.S.",
+	"Our project explored the effect of different colours of fluorescent light and natural light on plant growth. We planted bean seeds and exposed them to various colours of light continuously over a fourteen day period. We discovered that green fluorescent light and natural light resulted in the largest and healthiest looking plants."
+);
+INSERT INTO project_divisions(project, division) VALUES(1484, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1484,
+	1,
+	"Adam Darrah",
+	"Toronto",
+	NULL,
+	"My name is Adam Storm Darrah. I was born on August 10th 1995. I am 12 years old and attend St.Richard Catholic School. At school, I play all kinds of sports such as volleyball, soccer, basketball and foothockey. Outside of school, I play baseball for the West Hill Blue Hawks. I've gotten straight A's on my report card since grade 5 and love science. After university, I plan to go into politics or a career in sports. I'm a great athlete and love to go to Blue Jays games. In my spare time, I enjoy playing sports as well as video games and talking on msn with my friends. This is my first CWSF and I'm looking forward to it!"
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1541,
+	2008,
+	"Do Environmental Stresses Affect the Strength of Glue Bonds?",
+	2,
+	12,
+	98,
+	"Glenlyon Norfolk School",
+	"Using household materials this experiment investigated the impact of five environmental stressors on the bond strength of three types of glue. Results on 200 test models (25 groups of 8) showed that certain glue types perform better in wet conditions, while others perform better in high temperatures. Consequently individual glues can be pre-selected for a predictable engineering performance for use in different environmental conditions."
+);
+INSERT INTO project_divisions(project, division) VALUES(1541, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1541,
+	1,
+	"David Haynes",
+	"Victoria",
+	NULL,
+	"My name is David Haynes and I was born in Georgetown, Ontario on October 14 1993. I moved from Ontario in 2002 to British Columbia. I live with my two younger brothers and my parents on Prospect Lake, Victoria. I went to school at Royal Oak Middle School. I changed schools when I was in grade 7 to Glenlyon Norfolk School. Since I moved to Victoria I have participated in 4-H, mountain biking, sailing, tennis and fencing. I am also an avid reader, keen snow boarder and model builder."
 );
 
 INSERT INTO projects
@@ -3617,7 +3568,7 @@ VALUES (
 	"Drag or Not to Drag: A New VAWT Design",
 	3,
 	9,
-	"Toronto",
+	63,
 	"Marc Garneau Collegiate",
 	"The objective of this project was to maximize the net drag force of a newly designed vertical axis wind turbine (collapsible curved panel) while testing properties of the blade: the number of blades, size, rotor diameter and shape. The home-designed collapsible curved panel blade proved to be the most effective."
 );
@@ -3687,12 +3638,61 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1560,
+	2008,
+	"Don't Be Cold This Winter",
+	3,
+	10,
+	119,
+	"Kitigan Zibi Kikinamadinan",
+	"To prove which insulation materials provide the greatest resistance to heat loss. A digital thermometer was installed in the middle of a cardboard box and then covered with different insulating materials. The covered box was placed inside a household freezer and readings were then taken to see how long it would take for the temperature to drop 1 degree Celsius."
+);
+INSERT INTO project_divisions(project, division) VALUES(1560, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1560,
+	1,
+	"Caitlin Tolley",
+	"Maniwaki",
+	NULL,
+	"Caitlin Tolley is a high school student from Kitigan Zibi Anishinabeg and is focused on a bright future. Caitlin has attended the Forum on Parliament Hill, Canada Wide Science Fair, and the Future World Leaders Youth Summit in Washington, D.C. Due to her academic achievements, Caitlin was awarded the Foundation for the Advancement of Aboriginal Youth bursary. Caitlin is active in sports and has been on the running team all through high school. She recently wrapped up her sixth year of playing hockey with the boys in the town of Maniwaki. Caitlin volunteers coaching a junior youth girl’s basketball team because she feels that it’s important to give back to the community. In 2006 Caitlin was chosen as one of 12 National Aboriginal Role Models by the National Aboriginal Health Organization. Her role was to influence behaviors and attitudes of Aboriginal youth towards healthy lifestyles and self esteem. Caitlin was honored to be selected as “Quebec and Labrador Youth of the Year” in 2006 at the Dialogue for Life suicide prevention conference. Last June Caitlin was crowned Miss Algonquin Nation and is proud to represent the Algonquin people everywhere she goes. Caitlin’s final philosophy is “Learn Today, Lead Tomorrow”."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1381,
+	2008,
+	"Driving Tension and Hypertension",
+	1,
+	8,
+	22,
+	"Burntwood School",
+	"The purpose of my experiment is to determine whether there is a correlation between commuting to work regularly in stressful, high density traffic and the blood pressure of middle aged people. The experiment was performed using a simulation situation and yielded the results that driving tension increases blood pressure, thereby diminishing a person's overall driving performance and increasing the risk for accidents."
+);
+INSERT INTO project_divisions(project, division) VALUES(1381, 9);
+INSERT INTO project_divisions(project, division) VALUES(1381, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1381,
+	1,
+	"Anita Pandey",
+	"Thompson",
+	NULL,
+	"My name is Anita Pandey. I go to Burntwood school, grade seven, in Thompson Manitoba. My hobbies include singing, reading, and playing with friends and siblings. Over the years I have won awards concerning science fair, vocal and speech activities. My heritage is from India, but I was born in Winnipeg. I am generally a friendly and outgoing person and hope to have a career in medicine in the future."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1579,
 	2008,
 	"Drop Dead Gorgeous",
 	1,
 	9,
-	"Bluewater",
+	55,
 	"St. Joseph's",
 	"This investigation examined hazardous heavy metal elements present in cosmetics. X-ray fluorescence and home testing kits were used to analyse a total of fifty-six lipstick samples. Results showed that barium was a very common element in lipstick. Antimony a banned substance was detected in some lipsticks. Levels of mercury exceeding restrictions were also detected. This demonstrates that lipstick use could be hazardous to human health."
 );
@@ -3737,7 +3737,7 @@ VALUES (
 	"Dying For A Sleep",
 	3,
 	9,
-	"Windsor",
+	66,
 	"Assumption College S.S.",
 	"An eye detection system established to detect the movement of the eyelids while driving when drowsiness occurs, then this system will alert the driver and prevent a serious injury or crash because research shows that slow blinking movement, closure of the eyes and head nodding are the first signs of sleepiness or fatigue."
 );
@@ -3817,12 +3817,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1291,
+	2008,
+	"DropBox",
+	1,
+	11,
+	83,
+	"Olds Junior Senior High School",
+	"This project follows the development cycle of a product that allows anyone from the most advanced to the most basic computer user to easily, reliably and quickly store and share files online, focusing on the usability of the product."
+);
+INSERT INTO project_divisions(project, division) VALUES(1291, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1291,
+	1,
+	"Collin Fair",
+	"Carstairs",
+	NULL,
+	"Hello, my name is Collin Fair. I consider myself to be very helpful, curious, and inventive. I am fluent in a wide variety of computer programming languages (eg PHP, VB 6, Actionscript), and I am enrolled in the French course at my school. I regularly integrate hardware (ie micro controllers) with software programs. I volunteer in many school activities, such as helping staff and students with their computer related problems, helping at fundraising events, and participating in my school's mentoring program. My interests are computer programming (as hinted above), tinkering with electronic devices, biking, and swimming. My favorite magazines are Make:, Popular Science, PC World, and Consumer Reports. I have an interest in renewable energy as a way to reduce global warming. I am planning to go into a post-secondary education program that deals with computing science, networking, and engineering, and am scheming to start my own computer-related business. My main achievements are science fair related, having been in science fair grades 1-7 along with going to the regional level for the past 3 years. I also am a participant in my school's honour and jazz band programs."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1291,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1291,
+	2,
+	"Silver Medal - Computing & Information Technology",
+	"Junior",
+	"Intel of Canada, Ltd.",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1542,
 	2008,
 	"Dynamic Testing of Strength and Vibration Properties of Hardwoods",
 	3,
 	12,
-	"Vancouver Island",
+	98,
 	"Frances Kelsey Secondary",
 	"This project examined the relationships within and between the strength and vibration properties of hardwoods by dynamically testing the modulus of elasticity, impact surface hardness, logarithmic decrement, and speed of sound in four hardwood species. New equipment was designed and constructed by the exhibitor to do the testing, and extensive use was made of mathematics and graphing to correlate and determine the various relationships."
 );
@@ -3916,7 +3960,7 @@ VALUES (
 	"Effect of Glucocorticoids on Nicotine Metabolism",
 	1,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"King George P.S.",
 	"A glucocorticoid hormone such as dexamethasone (a man made drug) and cortisol (a natural hormone) released during stress increases the activity of an enzyme found in mouse hepatocytes that metabolizes nicotine. Low nicotine levels in the blood increases the urge to smoke. These enzymes are CYP2A5 in mice and CYP2A6 in humans."
 );
@@ -3955,12 +3999,72 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1344,
+	2008,
+	"Electric Sewage",
+	1,
+	9,
+	54,
+	"Appleby College",
+	"This project determined whether waste water could be used to generate electricity using a small turbine generator, and to determine what diameter pipe would generate the most. A small computer fan was used as the generator. Three different diameter pipes were tested (32mm 50mm and 75mm). The 50mm pipe created the most electricity."
+);
+INSERT INTO project_divisions(project, division) VALUES(1344, 4);
+INSERT INTO project_divisions(project, division) VALUES(1344, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1344,
+	1,
+	"Simon Harris",
+	"Burlington",
+	NULL,
+	"My name is Simon Harris. I am 12 years old. I go to school at Appleby College and I am in grade 7. I live in Burlington, Ontario. I live with my older brother and sister and my mom and dad. I am the youngest child in the family. My favourite subjects in school are Art and Science. The sports that I like are Basketball and Skiing. Some of my hobbies include basketball and building various electronic things. I like doing things outdoors like camping, bike riding and swimming. My first science fair was BASEF 2008 and I won 4 special awards a silver merit award and the Canada Wide Science Fair Trip Award."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1237,
+	2008,
+	"Electricity From Snow",
+	1,
+	NULL,
+	NULL,
+	NULL,
+	"This project looks at whether it is possible to use snow and air at room temperature to make electricity using a Peltier module, which produces electricity when there is a temperature differential between its two sides. A home-designed thermoelectric generator was used to determine that snow at 0°C and air at 20°C does not create a big enough temperature differential to generate 1 volt."
+);
+INSERT INTO project_divisions(project, division) VALUES(1237, 7);
+INSERT INTO project_divisions(project, division) VALUES(1237, 6);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1237,
+	1,
+	"Renewable Energy Award",
+	"Junior",
+	"Ontario Power Generation",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1237,
+	2,
+	"Honourable Mention - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1525,
 	2008,
 	"Efficiency is the Key",
 	2,
 	12,
-	"Greater Vancouver",
+	90,
 	"Killarney Secondary",
 	"Our project is based on testing which projectile shape will be the most efficient in a coil gun. We built a coil gun and measured the energy in bullets fired from it. Using this data, we figured out what efficiency, in percent, we were getting and compared the efficiencies across different projectile shapes."
 );
@@ -4010,45 +4114,49 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1291,
+	1601,
 	2008,
-	"DropBox",
+	"Energy Drinks Versus Water",
 	1,
 	11,
-	"Central Alberta",
-	"Olds Junior Senior High School",
-	"This project follows the development cycle of a product that allows anyone from the most advanced to the most basic computer user to easily, reliably and quickly store and share files online, focusing on the usability of the product."
+	115,
+	"Gilbert Paterson Middle School",
+	"My project is basically about energy drinks. I have compared the contestants physical and mental performane with drinking these drinks and also with drinking water. You will see that even know these drinks claim to work so well they really don't work that much better than normal water."
 );
-INSERT INTO project_divisions(project, division) VALUES(1291, 4);
+INSERT INTO project_divisions(project, division) VALUES(1601, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1291,
+	1601,
 	1,
-	"Collin Fair",
-	"Carstairs",
+	"Kendall Clarke",
+	"Lethbridge",
 	NULL,
-	"Hello, my name is Collin Fair. I consider myself to be very helpful, curious, and inventive. I am fluent in a wide variety of computer programming languages (eg PHP, VB 6, Actionscript), and I am enrolled in the French course at my school. I regularly integrate hardware (ie micro controllers) with software programs. I volunteer in many school activities, such as helping staff and students with their computer related problems, helping at fundraising events, and participating in my school's mentoring program. My interests are computer programming (as hinted above), tinkering with electronic devices, biking, and swimming. My favorite magazines are Make:, Popular Science, PC World, and Consumer Reports. I have an interest in renewable energy as a way to reduce global warming. I am planning to go into a post-secondary education program that deals with computing science, networking, and engineering, and am scheming to start my own computer-related business. My main achievements are science fair related, having been in science fair grades 1-7 along with going to the regional level for the past 3 years. I also am a participant in my school's honour and jazz band programs."
+	"Hi, I am Kendall Clarke I am 13 years old and I am currently attending Gilbert Paterson Middle School in Lethbridge, Alberta. My hobbies are mostly badminton,tennis and soccer. I just resently won a badminton tournament here in Lethbridge. I love science and also competing in school science fairs! This is my first time actually going outside of Lethbridge for a science fairs. I also volunteer at my church youth club and we do various activities around Lethbridge."
 );
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1291,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1291,
+	1294,
+	2008,
+	"Energy Drinks",
 	2,
-	"Silver Medal - Computing & Information Technology",
-	"Junior",
-	"Intel of Canada, Ltd.",
-	700.00
+	11,
+	83,
+	"Innisfail Junior Senior High School",
+	"This project took place to find out if energy drinks produce the results claimed by manufacturers and if this is true, which drinks are most effective. Six people were tested (3 girls, 3 boys) and they each drank 8 different energy drinks. The control was water. 5 Hour Energy came in first. Water placed fifth. Recomened to just have water instead of energy drinks."
+);
+INSERT INTO project_divisions(project, division) VALUES(1294, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1294,
+	1,
+	"Danielle MacArthur",
+	"Innisfail",
+	NULL,
+	"My name is Danielle MacArthur. I grew up in Kerrobert, Saskatchewan and moved to Innisfail, Alberta when I was nine. I have two sisters and one brother, all of which are older than me. My mother is a Principle and my father s a farmer. I am invloved in all the school sports. I also play flute in concert band and alto saxophone in jazz band. I went to Nashville in April 2007 for band tour. I am in 4-H and this is my ninth year in it. I plan to go to university, but am unsure of what I am going to take and am still keeping my options open. I am an honor student and have recieved Top Math mark and Top Foods and Fabrics mark for the year of 2007."
 );
 
 INSERT INTO projects
@@ -4059,7 +4167,7 @@ VALUES (
 	"Efficient Eating",
 	1,
 	9,
-	"Toronto",
+	63,
 	"Dublin Heights E. & M.S.",
 	"Efficient Eating focuses on how a balanced diet is more nutritious than others. Three boys and three girls volunteers ate according to meal-plans we made and the other three girls and three boys ate the average Canadian diet (not enough vitamins, caloric foods…). After participating in several experiments, such as a race, the ''healthier'' volunteers achieved better results overall."
 );
@@ -4088,26 +4196,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1344,
+	1268,
 	2008,
-	"Electric Sewage",
-	1,
-	9,
-	"Bay Area",
-	"Appleby College",
-	"This project determined whether waste water could be used to generate electricity using a small turbine generator, and to determine what diameter pipe would generate the most. A small computer fan was used as the generator. Three different diameter pipes were tested (32mm 50mm and 75mm). The 50mm pipe created the most electricity."
+	"Energy Drinks- Do They Deliver what They Promise?",
+	2,
+	5,
+	15,
+	"Samuel Hearne Secondary School",
+	"Abstract - John Vlanich and Lucas Lemieux Project Title: Energy Drinks- Do They Deliver What They Promise? Our project was designed to test the effects of energy drinks on physical, mental and eye hand coordination. We felt tests conducted before and after drinking energy drinks would demonstrate that there is an effect. All tests conducted after drinking energy drinks showed improved results."
 );
-INSERT INTO project_divisions(project, division) VALUES(1344, 4);
-INSERT INTO project_divisions(project, division) VALUES(1344, 6);
+INSERT INTO project_divisions(project, division) VALUES(1268, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1344,
+	1268,
 	1,
-	"Simon Harris",
-	"Burlington",
+	"Lucas Lemieux",
+	"Inuvik",
 	NULL,
-	"My name is Simon Harris. I am 12 years old. I go to school at Appleby College and I am in grade 7. I live in Burlington, Ontario. I live with my older brother and sister and my mom and dad. I am the youngest child in the family. My favourite subjects in school are Art and Science. The sports that I like are Basketball and Skiing. Some of my hobbies include basketball and building various electronic things. I like doing things outdoors like camping, bike riding and swimming. My first science fair was BASEF 2008 and I won 4 special awards a silver merit award and the Canada Wide Science Fair Trip Award."
+	"My name is lucas lemieux. I like to play lots of different kinds of sports. I dont want to tell u cause it would take to long to say all of them cause im going to play road hockey soon. I am also a good friend of Baruch Watters. I do ok in school when i want to but my average is in about the 70%. Me and Baruch usually hang out or play road hockey with our other friends."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1268,
+	2,
+	"John Vlanich",
+	"Inuvik",
+	NULL,
+	"My name is John Vlanich and I am fourteen years old. I live in Inuvik, Northwest Territories. I was born in Calgary, Alberta and when I was seven I moved to Trail, British Columbia. While I was there I completed elementary school. I raced for the Red Mountain Racers and I really enjoy downhill skiing. I lik eto draw and play sports. I am on my school wrestling team and track and field teams. This year I won the silver medal for Territorials. I am currently in grade nine."
 );
 
 INSERT INTO projects
@@ -4118,7 +4235,7 @@ VALUES (
 	"Electrical to Kinetic Energy Conversion Efficiency",
 	3,
 	9,
-	"Algoma Rotary",
+	38,
 	"Korah Collegiate & Vocational School",
 	"this projects aims to determine what factors effect the efficiency of transferring stored electrical energy to kinetic energy in a moving projectile. I have tested different voltages, coil dimensions, capacitance values and other factors to see which have the greatest effect."
 );
@@ -4157,129 +4274,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1237,
-	2008,
-	"Electricity From Snow",
-	1,
-	NULL,
-	NULL,
-	NULL,
-	"This project looks at whether it is possible to use snow and air at room temperature to make electricity using a Peltier module, which produces electricity when there is a temperature differential between its two sides. A home-designed thermoelectric generator was used to determine that snow at 0°C and air at 20°C does not create a big enough temperature differential to generate 1 volt."
-);
-INSERT INTO project_divisions(project, division) VALUES(1237, 7);
-INSERT INTO project_divisions(project, division) VALUES(1237, 6);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1237,
-	1,
-	"Renewable Energy Award",
-	"Junior",
-	"Ontario Power Generation",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1237,
-	2,
-	"Honourable Mention - Engineering",
-	"Junior",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1294,
-	2008,
-	"Energy Drinks",
-	2,
-	11,
-	"Central Alberta",
-	"Innisfail Junior Senior High School",
-	"This project took place to find out if energy drinks produce the results claimed by manufacturers and if this is true, which drinks are most effective. Six people were tested (3 girls, 3 boys) and they each drank 8 different energy drinks. The control was water. 5 Hour Energy came in first. Water placed fifth. Recomened to just have water instead of energy drinks."
-);
-INSERT INTO project_divisions(project, division) VALUES(1294, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1294,
-	1,
-	"Danielle MacArthur",
-	"Innisfail",
-	NULL,
-	"My name is Danielle MacArthur. I grew up in Kerrobert, Saskatchewan and moved to Innisfail, Alberta when I was nine. I have two sisters and one brother, all of which are older than me. My mother is a Principle and my father s a farmer. I am invloved in all the school sports. I also play flute in concert band and alto saxophone in jazz band. I went to Nashville in April 2007 for band tour. I am in 4-H and this is my ninth year in it. I plan to go to university, but am unsure of what I am going to take and am still keeping my options open. I am an honor student and have recieved Top Math mark and Top Foods and Fabrics mark for the year of 2007."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1601,
-	2008,
-	"Energy Drinks Versus Water",
-	1,
-	11,
-	"Lethbridge",
-	"Gilbert Paterson Middle School",
-	"My project is basically about energy drinks. I have compared the contestants physical and mental performane with drinking these drinks and also with drinking water. You will see that even know these drinks claim to work so well they really don't work that much better than normal water."
-);
-INSERT INTO project_divisions(project, division) VALUES(1601, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1601,
-	1,
-	"Kendall Clarke",
-	"Lethbridge",
-	NULL,
-	"Hi, I am Kendall Clarke I am 13 years old and I am currently attending Gilbert Paterson Middle School in Lethbridge, Alberta. My hobbies are mostly badminton,tennis and soccer. I just resently won a badminton tournament here in Lethbridge. I love science and also competing in school science fairs! This is my first time actually going outside of Lethbridge for a science fairs. I also volunteer at my church youth club and we do various activities around Lethbridge."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1268,
-	2008,
-	"Energy Drinks- Do They Deliver what They Promise?",
-	2,
-	5,
-	"Beaufort-Delta",
-	"Samuel Hearne Secondary School",
-	"Abstract - John Vlanich and Lucas Lemieux Project Title: Energy Drinks- Do They Deliver What They Promise? Our project was designed to test the effects of energy drinks on physical, mental and eye hand coordination. We felt tests conducted before and after drinking energy drinks would demonstrate that there is an effect. All tests conducted after drinking energy drinks showed improved results."
-);
-INSERT INTO project_divisions(project, division) VALUES(1268, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1268,
-	1,
-	"Lucas Lemieux",
-	"Inuvik",
-	NULL,
-	"My name is lucas lemieux. I like to play lots of different kinds of sports. I dont want to tell u cause it would take to long to say all of them cause im going to play road hockey soon. I am also a good friend of Baruch Watters. I do ok in school when i want to but my average is in about the 70%. Me and Baruch usually hang out or play road hockey with our other friends."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1268,
-	2,
-	"John Vlanich",
-	"Inuvik",
-	NULL,
-	"My name is John Vlanich and I am fourteen years old. I live in Inuvik, Northwest Territories. I was born in Calgary, Alberta and when I was seven I moved to Trail, British Columbia. While I was there I completed elementary school. I raced for the Red Mountain Racers and I really enjoy downhill skiing. I lik eto draw and play sports. I am on my school wrestling team and track and field teams. This year I won the silver medal for Territorials. I am currently in grade nine."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1333,
 	2008,
 	"Engines That Power Themselves",
 	2,
 	6,
-	"Southeast Saskatchewan",
+	32,
 	"Midale Central School",
 	"This project attempted to prove the viability of a self-energizing DC electric motor. This motor was powered by a rechargeable battery, charged by a generator. The generator was driven by the electric motor. The motor's efficiency was found to be related to the battery's ability to accept a charge while sustaining a load, as well as the mechanical efficiency of the generator drive."
 );
@@ -4304,7 +4304,7 @@ VALUES (
 	"EnRayons la soif!",
 	3,
 	10,
-	"Montérégie",
+	73,
 	"École secondaire Fernand-Lefebvre",
 	"Notre conception vise à améliorer un système de désinfection solaire de l'eau préexistant (SODIS) en ajoutant au procédé une centrifugeuse manuelle, une boîte noire isolante et enfin, un système de lentilles redirigeant les rayons ultraviolets du soleil selon le principe de la réflexion totale interne dans une tube rempli d'eau."
 );
@@ -4358,7 +4358,7 @@ VALUES (
 	"Enviro Safe",
 	2,
 	11,
-	"Alberta Central East",
+	80,
 	"J.C. Charyk Hanna School",
 	"I asked my dad if there was a way to develope a system to try to warn the operator of a spill and catch any oil before it gets on the ground. We purchased a blue poly tub,borrowed a sensor and bought a tarp. I put these items together with the help of my dad and came up with the enviro safe."
 );
@@ -4383,7 +4383,7 @@ VALUES (
 	"Excel at Statistics",
 	3,
 	1,
-	"Chignecto East",
+	5,
 	"North Colchester High School",
 	"Over the past 2 years, a new method of statistical analysis was developed, which exploits modern computers and spreadsheet programs. This was tested on experimental data, and results compared to standard statistical analysis. It is not applicable where there is a small control group, but overall it is both powerful and versatile."
 );
@@ -4402,100 +4402,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1255,
-	2008,
-	"Equations of state of hexane at geophysical conditions of the upper mant",
-	3,
-	12,
-	"Fraser Valley",
-	"Mennonite Educational Institute",
-	"Equations of state of hexane was obtained using NPT molecular dynamics simulations for temperatures of 1000 - 2000 Kelvin and pressures of 1 - 6 GPa, corresponding to the geophysical conditions in the upper mantle of the Earth. Simulations were performed with GROMACS software (version 3.3) and OPLS (Optimized Potential for Liquid Simulation) parameters."
-);
-INSERT INTO project_divisions(project, division) VALUES(1255, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1255,
-	1,
-	"Jason Ho",
-	"Abbotsford",
-	NULL,
-	"I thrive on busyness. When I'm not hard at work at my studies, I'm either hanging out with my friends, listening to music or playing my tenor saxophone, enjoying a classic novel while lying in my hammock, or out dancing at the local swing clubs. I'm torn between my love of music performance (specifically jazz) and my love of science. With the end of secondary school arriving, and the beginning of post-secondary education, part of my dilemma is to what I desire to study. I plan to study at the local University in my community, the University of the Fraser Valley. Incorporating both my love of music and sciences during my post-secondary years will be a challenge I will take on gladly. Presently I'm involved in my school's choir, concert band, jazz band, marching band, and drumline. Our bands and choirs are to travel to New York to compete at the end of April. To unwind, I spend my time at the gym, or swing dancing, or sitting back and playing a jazz ballad on my saxophone."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1255,
-	2,
-	"Sarah Reimer",
-	"Abbotsford",
-	NULL,
-	"My name is Sarah Reimer, and I'm in grade 12. I enjoy long-distance running, and singing. I'm on my school's track and field and cross country teams. I will be going to university in the fall, and I'm planning to study sciences."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1255,
-	1,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Senior",
-	"Encana Corporation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1272,
-	2008,
-	"Feasibility Evalution on Various Organic Acids Applied in Fuel Cells",
-	3,
-	NULL,
-	"Taiwan, R.O.C.",
-	NULL,
-	"The principle objective of this study is aimed at using a three-electrode cell to examine the suitability of various organic acids towards producing clean energy via electrooxidation on a series of Pt-based catalysts, to replace methanol as a fuel. The results showed that a fuel cell using formic acid catalyzed with PtRuTi/C slurry would provide efficient operation."
-);
-INSERT INTO project_divisions(project, division) VALUES(1272, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1272,
-	1,
-	"Yu-Sheng Hsieh",
-	NULL,
-	NULL,
-	"I am Yu-Sheng Hsieh, coming from Taiwan. I have four members in my family. I am in the eleventh grades in Li-Shan Senior High School. My favorite subject is science, so I take the experiment in chemistry with my friend. We often encounter problems difficulty during the experiment, but we all do our best to solve it. Today, I am glad to take part in the Canada Wide Science Fair. I hope we can make new friends and get more information in Ottawa."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1272,
-	2,
-	"Kai-Chung Hsiao",
-	NULL,
-	NULL,
-	"Hello! I'm Kai-Chung Hsiao,a 17-year-old high school student. I study in Li-Shan Senior High School in Taipei Taiwan. My favorite subjects are chemistry and physics. I enjoy my science project a lot and have learned a lot from it. I'm very excited about taking part in the CWSF this year. I hope I can make some friends and learn new knowledge in Ottawa."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1272,
-	1,
-	"Gold Medal - International",
-	NULL,
-	"Youth Science Foundation Canada",
-	0.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1282,
 	2008,
 	"Eye Spy: Variables That Affect Peripheral Vision",
 	1,
 	9,
-	"Simcoe County",
+	62,
 	"Holly Meadows E.S.",
 	"This project explores the variables that affect how far you can see in your peripheral vision, and what you can see with the most accuracy. The variables that were tested were colour, light, detecting letters and numbers, testing in the daylight and nightlight and with sunglasses. The test results were correlated with the subject’s age and gender."
 );
@@ -4534,25 +4446,45 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1553,
+	1255,
 	2008,
-	"Fertilizer Contamination in the Hydrologic Cycle",
-	1,
-	8,
-	"Winnipeg Schools",
-	"River Heights School",
-	"This project studied the potential effects of fertilizer contamination in the natural hydrological cycle. Different types of fertilizers mixed in varying concentrations were tested to prove if this type of contamination is a significant concern. It was found that although it was not as great a concern as direct run off, it is another process that also contributes to environmental damage."
+	"Equations of state of hexane at geophysical conditions of the upper mant",
+	3,
+	12,
+	89,
+	"Mennonite Educational Institute",
+	"Equations of state of hexane was obtained using NPT molecular dynamics simulations for temperatures of 1000 - 2000 Kelvin and pressures of 1 - 6 GPa, corresponding to the geophysical conditions in the upper mantle of the Earth. Simulations were performed with GROMACS software (version 3.3) and OPLS (Optimized Potential for Liquid Simulation) parameters."
 );
-INSERT INTO project_divisions(project, division) VALUES(1553, 4);
+INSERT INTO project_divisions(project, division) VALUES(1255, 99);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1553,
+	1255,
 	1,
-	"Samuel Justin Nowicki",
-	"Winnipeg",
+	"Jason Ho",
+	"Abbotsford",
 	NULL,
-	"Samuel Nowicki is a Grade 8 student at École River Heights School in Winnipeg. He has been an active participant in Manitoba regional science fairs since 2004. He has an interest in marine biology and his projects often focus on environmental science and oceanography. This is his first Canada Wide Science Fair."
+	"I thrive on busyness. When I'm not hard at work at my studies, I'm either hanging out with my friends, listening to music or playing my tenor saxophone, enjoying a classic novel while lying in my hammock, or out dancing at the local swing clubs. I'm torn between my love of music performance (specifically jazz) and my love of science. With the end of secondary school arriving, and the beginning of post-secondary education, part of my dilemma is to what I desire to study. I plan to study at the local University in my community, the University of the Fraser Valley. Incorporating both my love of music and sciences during my post-secondary years will be a challenge I will take on gladly. Presently I'm involved in my school's choir, concert band, jazz band, marching band, and drumline. Our bands and choirs are to travel to New York to compete at the end of April. To unwind, I spend my time at the gym, or swing dancing, or sitting back and playing a jazz ballad on my saxophone."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1255,
+	2,
+	"Sarah Reimer",
+	"Abbotsford",
+	NULL,
+	"My name is Sarah Reimer, and I'm in grade 12. I enjoy long-distance running, and singing. I'm on my school's track and field and cross country teams. I will be going to university in the fall, and I'm planning to study sciences."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1255,
+	1,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Senior",
+	"Encana Corporation",
+	100.00
 );
 
 INSERT INTO projects
@@ -4563,7 +4495,7 @@ VALUES (
 	"Fabric Fever",
 	1,
 	8,
-	"Western Manitoba",
+	35,
 	"Christian Heritage School",
 	"This project compared different types of fabrics to see which allowed moisture to evaporate the quickest. My purpose was to see if specific sports garments really are better at allowing moisture to evaporate quicker than other types of common fabrics. I used a standard amount of water on each fabric and measured the weight loss over time for each material."
 );
@@ -4582,12 +4514,104 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1272,
+	2008,
+	"Feasibility Evalution on Various Organic Acids Applied in Fuel Cells",
+	3,
+	NULL,
+	105,
+	NULL,
+	"The principle objective of this study is aimed at using a three-electrode cell to examine the suitability of various organic acids towards producing clean energy via electrooxidation on a series of Pt-based catalysts, to replace methanol as a fuel. The results showed that a fuel cell using formic acid catalyzed with PtRuTi/C slurry would provide efficient operation."
+);
+INSERT INTO project_divisions(project, division) VALUES(1272, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1272,
+	1,
+	"Yu-Sheng Hsieh",
+	NULL,
+	NULL,
+	"I am Yu-Sheng Hsieh, coming from Taiwan. I have four members in my family. I am in the eleventh grades in Li-Shan Senior High School. My favorite subject is science, so I take the experiment in chemistry with my friend. We often encounter problems difficulty during the experiment, but we all do our best to solve it. Today, I am glad to take part in the Canada Wide Science Fair. I hope we can make new friends and get more information in Ottawa."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1272,
+	2,
+	"Kai-Chung Hsiao",
+	NULL,
+	NULL,
+	"Hello! I'm Kai-Chung Hsiao,a 17-year-old high school student. I study in Li-Shan Senior High School in Taipei Taiwan. My favorite subjects are chemistry and physics. I enjoy my science project a lot and have learned a lot from it. I'm very excited about taking part in the CWSF this year. I hope I can make some friends and learn new knowledge in Ottawa."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1272,
+	1,
+	"Gold Medal - International",
+	NULL,
+	"Youth Science Foundation Canada",
+	0.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1553,
+	2008,
+	"Fertilizer Contamination in the Hydrologic Cycle",
+	1,
+	8,
+	36,
+	"River Heights School",
+	"This project studied the potential effects of fertilizer contamination in the natural hydrological cycle. Different types of fertilizers mixed in varying concentrations were tested to prove if this type of contamination is a significant concern. It was found that although it was not as great a concern as direct run off, it is another process that also contributes to environmental damage."
+);
+INSERT INTO project_divisions(project, division) VALUES(1553, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1553,
+	1,
+	"Samuel Justin Nowicki",
+	"Winnipeg",
+	NULL,
+	"Samuel Nowicki is a Grade 8 student at École River Heights School in Winnipeg. He has been an active participant in Manitoba regional science fairs since 2004. He has an interest in marine biology and his projects often focus on environmental science and oceanography. This is his first Canada Wide Science Fair."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1247,
+	2008,
+	"Filter Failure",
+	2,
+	5,
+	30,
+	"Mackenzie Mountain School",
+	"This project studied the efficient removal of chlorine in an activated carbon filter and its failure point. The removal levels were measured by home-designed equipment. The studies soon revealed that at low concentrations of chlorine the carbon filter worked better that ones at higher concentrations. Also I found that the failure point of an activated carbon filter was 42mg/l."
+);
+INSERT INTO project_divisions(project, division) VALUES(1247, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1247,
+	1,
+	"Nigel Gregory",
+	"Norman Wells",
+	NULL,
+	"My name is Nigel Gregory and I am in grade eight attending Mackenzie Mountain School. I haved lived in Norman Wells now for almost two years now and gained alot respect from teachers here. I have a dog by the name of taz. also my parents are divorced and I live with my mother while my father lives in Newfoundland. My hobbies and interests include collecting fossils and vintage hockey cards, playing hockey with my friends, and reading. Over the years I have recieved many awards including top student of the year, second lanuage award, honours overall,and the math and science award. At the moment I don't have a career plan or post secondary education plan."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1378,
 	2008,
 	"Fibre on Fire: Fabrics & Fire Safety",
 	1,
 	9,
-	"Ottawa",
+	44,
 	"Fisher Park P.S./Summit A.S.",
 	"Fire safety of three fabric types -- wool, cotton, and acrylic -- was tested. Initial flammability, duration of flame, and effect on exposed skin were measured; to approximate human skin, skin-on raw chicken thighs were substituted. Wool, a protein-based fibre, charred but self-extinguished; cotton, a cellulose-based fibre, burned quickly, causing second-degree burns; and acrylic, a petrochemical product, burned quickly and melted into the skin."
 );
@@ -4616,36 +4640,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1247,
-	2008,
-	"Filter Failure",
-	2,
-	5,
-	"Sahtu",
-	"Mackenzie Mountain School",
-	"This project studied the efficient removal of chlorine in an activated carbon filter and its failure point. The removal levels were measured by home-designed equipment. The studies soon revealed that at low concentrations of chlorine the carbon filter worked better that ones at higher concentrations. Also I found that the failure point of an activated carbon filter was 42mg/l."
-);
-INSERT INTO project_divisions(project, division) VALUES(1247, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1247,
-	1,
-	"Nigel Gregory",
-	"Norman Wells",
-	NULL,
-	"My name is Nigel Gregory and I am in grade eight attending Mackenzie Mountain School. I haved lived in Norman Wells now for almost two years now and gained alot respect from teachers here. I have a dog by the name of taz. also my parents are divorced and I live with my mother while my father lives in Newfoundland. My hobbies and interests include collecting fossils and vintage hockey cards, playing hockey with my friends, and reading. Over the years I have recieved many awards including top student of the year, second lanuage award, honours overall,and the math and science award. At the moment I don't have a career plan or post secondary education plan."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1389,
 	2008,
 	"Fourier Analysis on Violin Tone",
 	3,
 	12,
-	"Central Okanagan",
+	85,
 	"Summerland Secondary",
 	"I did Fourier analysis on several different violins to see if the harmonic patterns betweens violins were unique to each one. None of the differences were statistically significant. However, using a weight and pulley system to almost entirely eliminate human error, I managed to reduce the standard deviation on one of the violins to a minimum."
 );
@@ -4694,57 +4694,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1394,
-	2008,
-	"Fuel Cell Bonanza",
-	1,
-	9,
-	"Quinte",
-	"Harry J. Clarke P.S.",
-	"Through experimentation, the effect of temperature on the rate of electrolysis and energy output, of a polymer exchange membrane fuel cell (PEMFC) was examined. As predicted, the results showed a definite correlation between the two factors. The fuel cell both had a greater electrolysis rate, and produced a higher voltage at a higher temperature."
-);
-INSERT INTO project_divisions(project, division) VALUES(1394, 7);
-INSERT INTO project_divisions(project, division) VALUES(1394, 1);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1394,
-	1,
-	"Rami Saab",
-	"Belleville",
-	NULL,
-	"I was born in Montreal, Quebec and now reside in Belleville, Ontario. I am currently enrolled in the eighth grade, at a Pre-IB programme at Harry J. Clarke Public School. I enjoy playing soccer and have played numerous years for my city’s rep team. Among other things I enjoy playing music, the guitar and alto saxophone, and am involved in the band at my school. I also have volunteered numerous times in my community for organizations such as amnesty international and at the local immigrant services center. Currently, I would hope to pursue a post-secondary education in environmental or sustainable engineering."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1394,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1394,
-	2,
-	"Bronze Medal - Automotive",
-	"Junior",
-	"AUTO21",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1396,
 	2008,
 	"Fungi MB",
 	2,
 	12,
-	"Central Okanagan",
+	85,
 	"Penticton Secondary",
 	"My experiment investigated the factors that inhibited Penicillium growth (on the medium formulated by Shimazu and Sato, 1996) but allowed growth of two entomopathogenic fungi. Fungal growth on media with different pH, copper and crystal violet concentrations was tested. The combined effect of these three factors was important in this selective medium. This selective medium was tested successfully with a mixed fungal inoculum."
 );
@@ -4788,7 +4743,7 @@ VALUES (
 	"Garlic Against Genotoxicity",
 	2,
 	12,
-	"Greater Vancouver",
+	90,
 	"Sir Winston Churchill Secondary",
 	"In my experiment, I investigated whether certain substances produced by germinated potatoes could cause mutations in the form of micronuclei in the root tip cells of the broad bean plant (Vicia faba). I also explored whether garlic can effectively inhibit the micronuclei occurrence induced by the germinated potatoes. I found out that germinated potatoes have mutagenic potential, and that garlic has antimutagenic potential."
 );
@@ -4838,12 +4793,107 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1264,
+	2008,
+	"Generating Electricity in Pipelines",
+	2,
+	11,
+	97,
+	"Montrose Junior High School",
+	"I chose to do my science fair on a significant issue that can effect society. Generating Electricity in Pipelines can be useful in that it creates another source of electricity that will be beneficial because the need for power is growing. From the flow of material flowing through pipelines you can turn the power that is already there into power we can use."
+);
+INSERT INTO project_divisions(project, division) VALUES(1264, 7);
+INSERT INTO project_divisions(project, division) VALUES(1264, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1264,
+	1,
+	"Ariana Joseph",
+	"Grande Prairie",
+	NULL,
+	"My name is Ariana and I am a grade 9 student at Montrose Junior High School, Grande Prairie. I received the top academic award and music award in grades 4 and 6 and attended the Striving for Excellence Awards dinner in grades 6 and 8. I received the top award in the Fibonacci math challenge in grade 5. In grade 5 and 6 I was part of the Heritage Fair and in grade 6 went on to Regionals. I have taken part in the Science Fair in grades 7,8,9, receiving a silver medal in grade 8 and gold in grade 9. I have been also recommended by my Science to teacher to the Seminar in Computer Science for young women in Ontario. Since the age of 5 I have been taking dance in ballet, pointe, tap, lyrical and modern disciplines. At the age of 7 I started piano and am currently in grade 8 piano. I have student taught dance in both ballet and tap. I have performed in numerous dance competitions, winning silver, gold and platinum medals and most promising dancer award in a ballet solo performance. My career plans are to attend University and study Dentistry."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1394,
+	2008,
+	"Fuel Cell Bonanza",
+	1,
+	9,
+	46,
+	"Harry J. Clarke P.S.",
+	"Through experimentation, the effect of temperature on the rate of electrolysis and energy output, of a polymer exchange membrane fuel cell (PEMFC) was examined. As predicted, the results showed a definite correlation between the two factors. The fuel cell both had a greater electrolysis rate, and produced a higher voltage at a higher temperature."
+);
+INSERT INTO project_divisions(project, division) VALUES(1394, 7);
+INSERT INTO project_divisions(project, division) VALUES(1394, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1394,
+	1,
+	"Rami Saab",
+	"Belleville",
+	NULL,
+	"I was born in Montreal, Quebec and now reside in Belleville, Ontario. I am currently enrolled in the eighth grade, at a Pre-IB programme at Harry J. Clarke Public School. I enjoy playing soccer and have played numerous years for my city’s rep team. Among other things I enjoy playing music, the guitar and alto saxophone, and am involved in the band at my school. I also have volunteered numerous times in my community for organizations such as amnesty international and at the local immigrant services center. Currently, I would hope to pursue a post-secondary education in environmental or sustainable engineering."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1394,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1394,
+	2,
+	"Bronze Medal - Automotive",
+	"Junior",
+	"AUTO21",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1341,
+	2008,
+	"Gear Up For the Environment",
+	2,
+	NULL,
+	NULL,
+	NULL,
+	"This experiment was to test a lubricant that will prolong the life of oil and motor and be environmentally friendly by reducing emissions, heat and electricity consumption while decreasing initial cost. To test this one gear box was used; the first 20 tests were done with oil only, the second set 90% oil and 10% lubricant. A 0.4% difference was discovered in power consumption."
+);
+INSERT INTO project_divisions(project, division) VALUES(1341, 4);
+INSERT INTO project_divisions(project, division) VALUES(1341, 6);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1341,
+	1,
+	"Petro-Canada Peer Innovation Award - Intermediate",
+	"Atlantic",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1612,
 	2008,
 	"Garlic's Potential as a Biological Seed Treatment",
 	1,
 	8,
-	"Manitoba Schools Science Symposium",
+	21,
 	"Arthur A. Leach School",
 	"Seed treatments are a form of 'insurance' for farmers that help protect the seed and developing seedlings from factors that could lower the yield potential. Field and laboratory experiments show garlic powder has potential as a biological seed treatment for wheat, peas, and soybeans. The laboratory experiments show the increase in yield seen in the field trial is likely because of improved plant vigour."
 );
@@ -4892,62 +4942,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1341,
-	2008,
-	"Gear Up For the Environment",
-	2,
-	NULL,
-	NULL,
-	NULL,
-	"This experiment was to test a lubricant that will prolong the life of oil and motor and be environmentally friendly by reducing emissions, heat and electricity consumption while decreasing initial cost. To test this one gear box was used; the first 20 tests were done with oil only, the second set 90% oil and 10% lubricant. A 0.4% difference was discovered in power consumption."
-);
-INSERT INTO project_divisions(project, division) VALUES(1341, 4);
-INSERT INTO project_divisions(project, division) VALUES(1341, 6);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1341,
-	1,
-	"Petro-Canada Peer Innovation Award - Intermediate",
-	"Atlantic",
-	"Petro-Canada",
-	200.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1264,
-	2008,
-	"Generating Electricity in Pipelines",
-	2,
-	11,
-	"Peace Country",
-	"Montrose Junior High School",
-	"I chose to do my science fair on a significant issue that can effect society. Generating Electricity in Pipelines can be useful in that it creates another source of electricity that will be beneficial because the need for power is growing. From the flow of material flowing through pipelines you can turn the power that is already there into power we can use."
-);
-INSERT INTO project_divisions(project, division) VALUES(1264, 7);
-INSERT INTO project_divisions(project, division) VALUES(1264, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1264,
-	1,
-	"Ariana Joseph",
-	"Grande Prairie",
-	NULL,
-	"My name is Ariana and I am a grade 9 student at Montrose Junior High School, Grande Prairie. I received the top academic award and music award in grades 4 and 6 and attended the Striving for Excellence Awards dinner in grades 6 and 8. I received the top award in the Fibonacci math challenge in grade 5. In grade 5 and 6 I was part of the Heritage Fair and in grade 6 went on to Regionals. I have taken part in the Science Fair in grades 7,8,9, receiving a silver medal in grade 8 and gold in grade 9. I have been also recommended by my Science to teacher to the Seminar in Computer Science for young women in Ontario. Since the age of 5 I have been taking dance in ballet, pointe, tap, lyrical and modern disciplines. At the age of 7 I started piano and am currently in grade 8 piano. I have student taught dance in both ballet and tap. I have performed in numerous dance competitions, winning silver, gold and platinum medals and most promising dancer award in a ballet solo performance. My career plans are to attend University and study Dentistry."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1304,
 	2008,
 	"Generating NURBS Surfaces through 3D Silhouette Scanning",
 	2,
 	11,
-	"Calgary Youth",
+	81,
 	NULL,
 	"In this project a system of 3D silhouette scanning is proposed and implemented that would allow for the automatic computational generation of 3D NURBS (Non-Uniform Rational B-Spline) surfaces representing real world objects for use in 3D computer graphics applications."
 );
@@ -5002,7 +5002,7 @@ VALUES (
 	"Generation XL",
 	2,
 	11,
-	"Edmonton",
+	88,
 	"Avonmore School",
 	"This study explored whether teenage girl’s perceptions about their health and body image were impacted by the current focus on obesity. Body mass index (BMI) scores and subjective ratings of health perceptions and behaviors on a self-administered survey were gathered from 49 subjects. Findings from chi square analyses indicate that perceptions of teenage girls, particularly those with a higher BMI, are negatively impacted."
 );
@@ -5041,46 +5041,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1517,
-	2008,
-	"Germy Hosts",
-	1,
-	9,
-	"Peel",
-	"William G. Davis Senior P.S.",
-	"The experiment, Germy Hosts, involved collecting and growing bacteria samples, using cotton swabs and agar plates, from washrooms in various public locations. Discovering shocking results like the presence of many pathogenic bacteria, such as E.coli, Salmonella and Streptococcus, and the conclusion that malls are safer than schools, this project also suggests proper washroom-cleaning habits and a cost estimate for replacing inefficient bathroom fixtures."
-);
-INSERT INTO project_divisions(project, division) VALUES(1517, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1517,
-	1,
-	"Saijal Suri",
-	"Brampton",
-	NULL,
-	"My name is Saijal Suri, I am 13 years of age and am currently in the International Baccalaureate Middle Years Program in Grade 8 at William G. Davis Snr. P.S. in the region of Peel. I was born on June 3rd, 1994 in India, however we soon after moved to Dubai, U.A.E., where we lived for 7 years, after which we moved to Canada. Along with having a strong academic background at school, I’m also involved in a variety of groups such as Extinguish, an anti-tobacco organization, Senior Band, as I play the flute, and the Athletic Council, among others. Also, my strong leadership and communication skills allow me to be involved in many activities around the community such as swimming, for which I have completed all swimmer levels, Bronze Medallion and Basic First Aid; Meanwhile, I continue to volunteer around the pool at my local YMCA, helping swimming instructors teach younger children and giving back to the YMCA community what it gave to me! Along with swimming, I enjoy dancing, biking, art and reading. I’ve always had an interest in science and am thrilled to have this opportunity to make a contribution to this celebration of science!"
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1517,
-	2,
-	"Hyui In Jun",
-	"Brampton",
-	NULL,
-	"My name is Hane Jun and I am 14 years old. I was brought into this world on March 30th, 1994 in Seoul, South Korea. My life, so far has been pretty hectic, because I've been named ""gifted"" ever since Grade 5, leading a challenging life from a very young age. Currently, I am in the International Baccalaureate Middle Years Program [IBMYP] and this has opened many new doors for me. At school, I like to be involved in many things, like band, for example. And even outside of school, I am very involved in the community, like Piano, babysitting and even tutoring some of my friends in Math. Some careers I would like to pursue later on in my lifetime would hopefully relate to the Arts or Math, since truthfully, I excel in both subjects. For e.g, I actually have gotten medals for Math competitions previously and had a chance to work at the Living Arts centre. Finally, some of my favourite hobbies are listening to music, playing with my friends and even turning up the music and dance."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1437,
 	2008,
 	"Germagnation?",
 	1,
 	6,
-	"Parkland",
+	25,
 	"Foam Lake Composite High School",
 	"Magnets can be a powerful influence on seed germination. Wheat seeds (monocot) germinated faster and had healthier sprout growth when they were grown over the north pole of a magnet. Canola seeds (dicot) germinated faster and had healthier sprout growth when they were grown over the south pole of a magnet."
 );
@@ -5110,26 +5076,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1591,
+	1517,
 	2008,
-	"Global Warming: Are Urban Trees the Answer?",
-	2,
-	3,
-	"Fundy",
-	"Sir James Dunn Academy",
-	"I conducted a site inventory of an urban forest to see whether the trees in towns and cities could significantly offset carbon emissions of the average American. The patch of trees I measured held 15 metric tons of carbon. The average American produces 5 metric tons of carbon per year. Thus, urban forests can only offset a small fraction of someebody's total carbon emissions."
+	"Germy Hosts",
+	1,
+	9,
+	61,
+	"William G. Davis Senior P.S.",
+	"The experiment, Germy Hosts, involved collecting and growing bacteria samples, using cotton swabs and agar plates, from washrooms in various public locations. Discovering shocking results like the presence of many pathogenic bacteria, such as E.coli, Salmonella and Streptococcus, and the conclusion that malls are safer than schools, this project also suggests proper washroom-cleaning habits and a cost estimate for replacing inefficient bathroom fixtures."
 );
-INSERT INTO project_divisions(project, division) VALUES(1591, 4);
-INSERT INTO project_divisions(project, division) VALUES(1591, 6);
+INSERT INTO project_divisions(project, division) VALUES(1517, 9);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1591,
+	1517,
 	1,
-	"Kim Whoriskey",
-	"St. Andrews",
+	"Saijal Suri",
+	"Brampton",
 	NULL,
-	"My name is Kim Whoriskey. I was born just outside of Montreal in a little town called Point Claire, Quebec. My family moved to Southwestern New Brunswick, to a little town called St. Andrews, when I was 2 years old, and I have lived here for the past 14 years. I am in grade 10 in a school called Sir James Dunn Academy, which has a student population of about 170. I really enjoy sports-soccer is my favorite, but I reallly like volleyball as well. Probably one of the most memorable experiences I have ever had is when my junior girls soccer team won our provincials (2006-2007)."
+	"My name is Saijal Suri, I am 13 years of age and am currently in the International Baccalaureate Middle Years Program in Grade 8 at William G. Davis Snr. P.S. in the region of Peel. I was born on June 3rd, 1994 in India, however we soon after moved to Dubai, U.A.E., where we lived for 7 years, after which we moved to Canada. Along with having a strong academic background at school, I’m also involved in a variety of groups such as Extinguish, an anti-tobacco organization, Senior Band, as I play the flute, and the Athletic Council, among others. Also, my strong leadership and communication skills allow me to be involved in many activities around the community such as swimming, for which I have completed all swimmer levels, Bronze Medallion and Basic First Aid; Meanwhile, I continue to volunteer around the pool at my local YMCA, helping swimming instructors teach younger children and giving back to the YMCA community what it gave to me! Along with swimming, I enjoy dancing, biking, art and reading. I’ve always had an interest in science and am thrilled to have this opportunity to make a contribution to this celebration of science!"
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1517,
+	2,
+	"Hyui In Jun",
+	"Brampton",
+	NULL,
+	"My name is Hane Jun and I am 14 years old. I was brought into this world on March 30th, 1994 in Seoul, South Korea. My life, so far has been pretty hectic, because I've been named ""gifted"" ever since Grade 5, leading a challenging life from a very young age. Currently, I am in the International Baccalaureate Middle Years Program [IBMYP] and this has opened many new doors for me. At school, I like to be involved in many things, like band, for example. And even outside of school, I am very involved in the community, like Piano, babysitting and even tutoring some of my friends in Math. Some careers I would like to pursue later on in my lifetime would hopefully relate to the Arts or Math, since truthfully, I excel in both subjects. For e.g, I actually have gotten medals for Math competitions previously and had a chance to work at the Living Arts centre. Finally, some of my favourite hobbies are listening to music, playing with my friends and even turning up the music and dance."
 );
 
 INSERT INTO projects
@@ -5140,7 +5115,7 @@ VALUES (
 	"Global Warming in Canada",
 	1,
 	9,
-	"Simcoe County",
+	62,
 	"St. Monica's E.S.",
 	"This project studies average annual temperatures, precipitation patterns and maximum wind gusts in Canada, to determine whether there is evidence of global warming. The project confirms that global warming is occurring and weather patterns are changing. The project also predicts future average annual temperatures based on research and data analysis. Finally, the project also shows that a children’s book can educate children about global warming."
 );
@@ -5160,12 +5135,37 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1591,
+	2008,
+	"Global Warming: Are Urban Trees the Answer?",
+	2,
+	3,
+	124,
+	"Sir James Dunn Academy",
+	"I conducted a site inventory of an urban forest to see whether the trees in towns and cities could significantly offset carbon emissions of the average American. The patch of trees I measured held 15 metric tons of carbon. The average American produces 5 metric tons of carbon per year. Thus, urban forests can only offset a small fraction of someebody's total carbon emissions."
+);
+INSERT INTO project_divisions(project, division) VALUES(1591, 4);
+INSERT INTO project_divisions(project, division) VALUES(1591, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1591,
+	1,
+	"Kim Whoriskey",
+	"St. Andrews",
+	NULL,
+	"My name is Kim Whoriskey. I was born just outside of Montreal in a little town called Point Claire, Quebec. My family moved to Southwestern New Brunswick, to a little town called St. Andrews, when I was 2 years old, and I have lived here for the past 14 years. I am in grade 10 in a school called Sir James Dunn Academy, which has a student population of about 170. I really enjoy sports-soccer is my favorite, but I reallly like volleyball as well. Probably one of the most memorable experiences I have ever had is when my junior girls soccer team won our provincials (2006-2007)."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1365,
 	2008,
 	"Global Warning: UVB Rays Friend or Foe?",
 	1,
 	11,
-	"Chinook Country",
+	86,
 	"Red Deer Lake School",
 	"This project set out to determine if the UVB rays reaching the earth’s surface as a result of global warming would have an effect on crop production. Oats and canola were grown in two separate trials one with decreased UV rays and one with increased UV rays. This project showed that increased UV radiation does have an impact on plant productivity by negatively impacting germination."
 );
@@ -5184,12 +5184,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1453,
+	2008,
+	"Golf Ball Drop",
+	2,
+	6,
+	24,
+	"St. George School",
+	"This project compared several golf balls of different brands to see which one had the highest bounce when dropped from a given height. A home-made apparatus was built to drop the golf balls. The experiment was videotaped. The golf balls with only two layers inside performed much better than the ones with three or more layers."
+);
+INSERT INTO project_divisions(project, division) VALUES(1453, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1453,
+	1,
+	"Robert Cey",
+	"Wilkie",
+	NULL,
+	"I attend a very small school (83 students from K-9) in Wilkie, Saskatchewan, which has a population of about 1200 people. I now live in town but spent most of my life on a family farm. I enjoy sports of all kinds including hockey, baseball, golf, basketball, curling, badminton and volleyball. I am the Student Representative Council co-president at my school, which includes duties such as planning extracurricular sports activities. Some day, I hope to become a teacher."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1330,
 	2008,
 	"Go With the Flow",
 	3,
 	9,
-	"North Bay",
+	41,
 	"West Ferris S.S.",
 	"We have created an alternative for needles and syringes. By pulsing electricity through skin the skin develops pores. The pores act as a pathway that allows a liquid to be forced through. The method is painless and significantly safer than needles because the pores that our machine makes close withing 10 minutes."
 );
@@ -5268,80 +5292,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1453,
-	2008,
-	"Golf Ball Drop",
-	2,
-	6,
-	"Northwest Saskatchewan",
-	"St. George School",
-	"This project compared several golf balls of different brands to see which one had the highest bounce when dropped from a given height. A home-made apparatus was built to drop the golf balls. The experiment was videotaped. The golf balls with only two layers inside performed much better than the ones with three or more layers."
-);
-INSERT INTO project_divisions(project, division) VALUES(1453, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1453,
-	1,
-	"Robert Cey",
-	"Wilkie",
-	NULL,
-	"I attend a very small school (83 students from K-9) in Wilkie, Saskatchewan, which has a population of about 1200 people. I now live in town but spent most of my life on a family farm. I enjoy sports of all kinds including hockey, baseball, golf, basketball, curling, badminton and volleyball. I am the Student Representative Council co-president at my school, which includes duties such as planning extracurricular sports activities. Some day, I hope to become a teacher."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1299,
-	2008,
-	"Gravity: Through the Looking Glass",
-	2,
-	11,
-	"Calgary Youth",
-	"Queen Elizabeth Junior Senior High School",
-	"Gravitational lensing was modeled using wine glass bases as optical lenses. Caustic image separations and lens residuals were measured as each lens passed by a source. Results compared to theoretical astronomical objects indicated that relying solely on caustic image separation to classify a given lens may result in errors in identification, as evidenced by the examination of lens residuals."
-);
-INSERT INTO project_divisions(project, division) VALUES(1299, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1299,
-	1,
-	"Kienan Marion",
-	"Calgary",
-	NULL,
-	"I am 16 years old and in grade 10 at Queen Elizabeth High School in Calgary, Alberta. At school I am involved in soccer and track, and I am also the goalkeeper for a club team outside of school. I also play trumpet in our school’s concert and jazz bands. I love progressive rock and classical music, and I am working towards my grade 9 piano exam in June. I have participated in science fairs since grade 6, and have attended two Canada Wide Science Fairs. For the past three years at the Calgary Youth Science Fair I have been presented with the Royal Astronomical Society of Canada Award, and at CWSF 2006 I was awarded a bronze medal and the Award for Excellence in Astronomy. I would like to take a combination of Physics, Music and English in university, specializing in astronomy and astrophysics, and continue playing soccer."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1299,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1299,
-	2,
-	"Silver Medal - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1340,
 	2008,
 	"Green Eggs and Beef",
 	1,
 	9,
-	"Avon Maitland-Huron Perth",
+	53,
 	"Turnberry P.S.",
 	"This project studied the production of methane in anaerobic digesters, in an attempt to create a ""green"" chicken barn. Different organic substances were used in combination to test the production of methane. A spreadsheet was used to determine if the project was financially viable. Alone, chicken manure wouldn't produce enough energy to operate the barn, but in combination with other organic substances, it was feasible."
 );
@@ -5391,12 +5347,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1299,
+	2008,
+	"Gravity: Through the Looking Glass",
+	2,
+	11,
+	81,
+	"Queen Elizabeth Junior Senior High School",
+	"Gravitational lensing was modeled using wine glass bases as optical lenses. Caustic image separations and lens residuals were measured as each lens passed by a source. Results compared to theoretical astronomical objects indicated that relying solely on caustic image separation to classify a given lens may result in errors in identification, as evidenced by the examination of lens residuals."
+);
+INSERT INTO project_divisions(project, division) VALUES(1299, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1299,
+	1,
+	"Kienan Marion",
+	"Calgary",
+	NULL,
+	"I am 16 years old and in grade 10 at Queen Elizabeth High School in Calgary, Alberta. At school I am involved in soccer and track, and I am also the goalkeeper for a club team outside of school. I also play trumpet in our school’s concert and jazz bands. I love progressive rock and classical music, and I am working towards my grade 9 piano exam in June. I have participated in science fairs since grade 6, and have attended two Canada Wide Science Fairs. For the past three years at the Calgary Youth Science Fair I have been presented with the Royal Astronomical Society of Canada Award, and at CWSF 2006 I was awarded a bronze medal and the Award for Excellence in Astronomy. I would like to take a combination of Physics, Music and English in university, specializing in astronomy and astrophysics, and continue playing soccer."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1299,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1299,
+	2,
+	"Silver Medal - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1518,
 	2008,
 	"Green Plastics: Saving Our Environment One Bag at a Time",
 	1,
 	9,
-	"Peel",
+	61,
 	"Tomken Road Senior P.S.",
 	"This project studied gelatin and agar additives to the biopolymer of starch in order to increase its tensile strength at a low cost. This mixture was looked at to be an alternative to the current health and envionmentally concerning chemical additive of bispenol-a."
 );
@@ -5441,7 +5441,7 @@ VALUES (
 	"H2O Friend or Foe?",
 	3,
 	6,
-	"Saskatchewan Chinook",
+	34,
 	"Swift Current Comprehensive High School",
 	"Heavy metals are necessary to keep healthy, but in large amounts can cause serious health problems. The same heavy metals that cause health problems are being consumed through something considered safe,water. For our experiments we surveyed 22 small towns in southwest Saskatchewan to determine the heavy metal content in water and determined how heavy metals affected the growth of a living organism."
 );
@@ -5476,7 +5476,7 @@ VALUES (
 	"Hamster Power",
 	1,
 	9,
-	"Simcoe County",
+	62,
 	"Prince of Wales P.S.",
 	"This project attempted to find an environmentally friendly energy source using the natural behaviour of hamsters. This was to reduce the amount of greenhouse gas emissions being produced. It was hypothesized that a hamster could produce enough energy to power your homes electrical needs or at least to charge an MP3 player."
 );
@@ -5505,36 +5505,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1418,
-	2008,
-	"Handwashing and Gloves: Making the Right Choice",
-	2,
-	12,
-	"Cariboo Mainline",
-	"St Ann's Academy",
-	"The improper use of gloves can expose a patient to a hospital infection. Therefore, the purpose of this project was to determine if there was a relationship between bacterial growth and the length of time that gloves are worn. Results indicate that bacterial growth does increase the longer that gloves are worn thereby revealing that gloves do not replace the need for proper handwashing."
-);
-INSERT INTO project_divisions(project, division) VALUES(1418, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1418,
-	1,
-	"Morgan Hoot",
-	"Kamloops",
-	NULL,
-	"My name is Morgan Hoot and I am a grade 8 student who attends a Catholic high school in Kamloops, British Columbia. This is my second year qualifying to attend the National Science Fair. I am interested in microbiology and would like to pursue this area as a career. I compete as a pre-novice figure skater and attend many seminars and competitions outside of Kamloops. I play the bass guitar, piano, and I am in three bands. I enjoy alpine skiing and started coaching in the Nancy Greene ski league this year. I have two sisters - one older and one younger. Our family has two dogs, 1 cat and a bearded dragon."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1434,
 	2008,
 	"Healing A Health Crisis",
 	3,
 	9,
-	"United Counties",
+	52,
 	"Cornwall Collegiate & Vocational",
 	"Antibiotic resistance is a rising epidemic which threatens to render many of our most prized allopathic drugs useless. Homeopathy targets the totality of symptoms and focuses on holistic healing and could be the cure for this detrimental issue. This experiment deals with allopathic and homeopathic substances and their effects on common bacteria. The results allow us to conclude that homeopathy is indeed more efficient."
 );
@@ -5558,7 +5534,7 @@ VALUES (
 	"Health Behaviour Among Adolescents in Hamilton, Ontario",
 	2,
 	9,
-	"Bay Area",
+	54,
 	"Westdale S.S.",
 	"This study examined health habits among male and female adolescents. A health survey was created and completed by 345 high school students in Hamilton, Ontario. The results showed a significant difference between males and females on several variables, including perception of eating habits, and exercise. Several variables showed significant correlations. Gender differences should be considered when trying to improve health among adolescents."
 );
@@ -5577,12 +5553,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1564,
+	2008,
+	"Hot Vs Cold",
+	1,
+	6,
+	26,
+	"East Central School",
+	"Does cold air create more lift on a paper airplane than hot air when velocity and angle of attack are constant? Our findings show cold air to have 25% to 80% more lift at two different angles of attack and constant velocity than hot air. Our experiment proves that cold air creates more lift than hot air on a paper airplane."
+);
+INSERT INTO project_divisions(project, division) VALUES(1564, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1564,
+	1,
+	"Theron Hlasny",
+	"Prince Albert",
+	NULL,
+	"My name is Theron Hlasny. I am 14 years old and in grade 8. I go to a small school that is located in northern rural Saskatchewan. I like hunting and have went to nationals in fencing. I also am in bowling and went to provincials. Overall, I like animals, sports and enjoy reading."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1564,
+	2,
+	"Raef Given",
+	"Prince Albert",
+	NULL,
+	"My name is Raef Given. I am 13 years old and in grade 8. I am in Air Cadets and am going to provincials for target shooting. I play hockey in the winter and dirt bike in the summer. I live on a farm so I operate machinery, riding lawn mowers, trucks and tractors. Thank god I'm a country boy."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1262,
 	2008,
 	"Homosexuality:  It's all in your head (Phase III)",
 	3,
 	11,
-	"Peace Country",
+	97,
 	"High Level Public School",
 	"This report will proceed to demonstrate, through a comprehensive examination of pertinent scientific research and consultation with leading professionals in the field, that a genetic and biological connection to homosexuality is not only plausible but highly probable."
 );
@@ -5616,7 +5626,7 @@ VALUES (
 	"Heat Up the Hydrocarbons",
 	2,
 	12,
-	"Northern British Columbia",
+	94,
 	"Dr Kearney Jr Secondary",
 	"This project investigated the process of bioremediation, and experimented with applications of heat to speed up the process. By heating the soil, the bioremediation process was sped up dramatically. Heating the environment around the soil proved to be the most efficient method of heat application. The use of geothermal energy for bioremediation was researched, and determined to be feasible in a reusable situation."
 );
@@ -5646,46 +5656,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1564,
-	2008,
-	"Hot Vs Cold",
-	1,
-	6,
-	"Prince Albert & Northeast Saskatchewan",
-	"East Central School",
-	"Does cold air create more lift on a paper airplane than hot air when velocity and angle of attack are constant? Our findings show cold air to have 25% to 80% more lift at two different angles of attack and constant velocity than hot air. Our experiment proves that cold air creates more lift than hot air on a paper airplane."
-);
-INSERT INTO project_divisions(project, division) VALUES(1564, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1564,
-	1,
-	"Theron Hlasny",
-	"Prince Albert",
-	NULL,
-	"My name is Theron Hlasny. I am 14 years old and in grade 8. I go to a small school that is located in northern rural Saskatchewan. I like hunting and have went to nationals in fencing. I also am in bowling and went to provincials. Overall, I like animals, sports and enjoy reading."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1564,
-	2,
-	"Raef Given",
-	"Prince Albert",
-	NULL,
-	"My name is Raef Given. I am 13 years old and in grade 8. I am in Air Cadets and am going to provincials for target shooting. I play hockey in the winter and dirt bike in the summer. I live on a farm so I operate machinery, riding lawn mowers, trucks and tractors. Thank god I'm a country boy."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1455,
 	2008,
 	"Hot Dog Cool Solution",
 	1,
 	11,
-	"Alberta Central East",
+	80,
 	"J.C. Charyk Hanna School",
 	"The purpose of this project was to develop a device, which would alert pet owners that the internal temperature of their vehicle had exceeded a level of danger to their pet when left unattended in a vehicle. The need for such a device was established through extensive communication with veterinarians, pet owners and enforcement officers. Experiments were conducted for the development of an alpha prototype."
 );
@@ -5715,12 +5691,60 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1418,
+	2008,
+	"Handwashing and Gloves: Making the Right Choice",
+	2,
+	12,
+	82,
+	"St Ann's Academy",
+	"The improper use of gloves can expose a patient to a hospital infection. Therefore, the purpose of this project was to determine if there was a relationship between bacterial growth and the length of time that gloves are worn. Results indicate that bacterial growth does increase the longer that gloves are worn thereby revealing that gloves do not replace the need for proper handwashing."
+);
+INSERT INTO project_divisions(project, division) VALUES(1418, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1418,
+	1,
+	"Morgan Hoot",
+	"Kamloops",
+	NULL,
+	"My name is Morgan Hoot and I am a grade 8 student who attends a Catholic high school in Kamloops, British Columbia. This is my second year qualifying to attend the National Science Fair. I am interested in microbiology and would like to pursue this area as a career. I compete as a pre-novice figure skater and attend many seminars and competitions outside of Kamloops. I play the bass guitar, piano, and I am in three bands. I enjoy alpine skiing and started coaching in the Nancy Greene ski league this year. I have two sisters - one older and one younger. Our family has two dogs, 1 cat and a bearded dragon."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1320,
+	2008,
+	"How Does the Throat Sing?",
+	3,
+	7,
+	110,
+	"Qiqirtaq Ilihakvik",
+	"The project studied how throat singing involves the use of the body to produce its unique sound. I learned both traditional Inuit knowledge and the biology in this study about throat singing. Elders and throat singers demonstrated with their bodies, and I learned how parts of the respiratory system interact to resonate sound."
+);
+INSERT INTO project_divisions(project, division) VALUES(1320, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1320,
+	1,
+	"Heather Arqviq",
+	"Gjoa Haven ",
+	NULL,
+	"Hello, my full name is Heather A'mie Arqviq. I am a grade 12 student at Qiqirtaq Ilihakvik. I play a lot of volleyball; I am in a volleyball team. So I do a lot of fundraising with community activities such as dances, and games. Snowmobiling, sports and hanging out with friends are my hobbies. I am interested in the FNTI aviation program in Mississauga for my post secondary plans. Winning regionals has been fun and I am looking forward to nationals."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1487,
 	2008,
 	"How Does Sleep Deprivation Affect the Human Brain and Body?",
 	1,
 	9,
-	"Toronto",
+	63,
 	"St. Antoine Daniel C.S.",
 	"The project that my partner and I decided to complete for our science fair project is How Does Sleep Deprivation Affect the Human Brain and Body? During the course of our project, we explored the many parts of the brain and how sleep deprivation affected each part. We also researched the many causes and effects of sleep deprivation in children and adults."
 );
@@ -5754,7 +5778,7 @@ VALUES (
 	"How Has English Vocabulary Changed Over Time?",
 	1,
 	1,
-	"Chignecto East",
+	5,
 	"West Pictou Consolidated School",
 	"This project analysed how the size of English vocabulary has changed over time by analysing a random sample of electronic books from Project Gutenberg using a home-made Python script. The unique and common word counts over time were then graphed by decade. Both the unique and common word counts show an increase over the time period studied."
 );
@@ -5793,36 +5817,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1320,
-	2008,
-	"How Does the Throat Sing?",
-	3,
-	7,
-	"Kitikmeot",
-	"Qiqirtaq Ilihakvik",
-	"The project studied how throat singing involves the use of the body to produce its unique sound. I learned both traditional Inuit knowledge and the biology in this study about throat singing. Elders and throat singers demonstrated with their bodies, and I learned how parts of the respiratory system interact to resonate sound."
-);
-INSERT INTO project_divisions(project, division) VALUES(1320, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1320,
-	1,
-	"Heather Arqviq",
-	"Gjoa Haven ",
-	NULL,
-	"Hello, my full name is Heather A'mie Arqviq. I am a grade 12 student at Qiqirtaq Ilihakvik. I play a lot of volleyball; I am in a volleyball team. So I do a lot of fundraising with community activities such as dances, and games. Snowmobiling, sports and hanging out with friends are my hobbies. I am interested in the FNTI aviation program in Mississauga for my post secondary plans. Winning regionals has been fun and I am looking forward to nationals."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1559,
 	2008,
 	"How Bright Is Your Light?",
 	1,
 	9,
-	"East Parry Sound",
+	39,
 	"South Shore Education Centre",
 	"My experiment compares incandescent to LED lights and finds out which is the most light and energy efficient. The experiment helps reduce greenhouse emissions and provides cost savings to the consumer. Also, the supplier doesn’t have to provide and produce as much energy."
 );
@@ -5847,7 +5847,7 @@ VALUES (
 	"How Much N2O is in Your H2O?",
 	1,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"Courtland Avenue Senior P.S.",
 	"This project examines nitrous oxide, nitrate and ammonium concentrations in municipal and private drinking water supplies. The highest concentrations of nitrous oxide, a potent greenhouse gas, were found in municipal groundwater supplies. The data suggests that the potential release of nitrous oxide, from certain municipal water supplies, could be equivalent to 50% of the flux from a nitrogen limited forest."
 );
@@ -5881,7 +5881,7 @@ VALUES (
 	"How Safe Are Our Children?",
 	1,
 	9,
-	"North Bay",
+	41,
 	"St. Hubert E.S.",
 	"Community Safety Zones and School Safety Zones are intended to improve the safety of children traveling to and from school and provide larger gaps in traffic for children to cross the street. The purpose of this study is to determine if Community Safety Zones and School Safety Zones signs have an affect on reducing the speed of drivers traveling in these zones."
 );
@@ -5906,7 +5906,7 @@ VALUES (
 	"How to Help Goalies Make More Saves",
 	1,
 	9,
-	"Quinte",
+	46,
 	"Albert College",
 	"Hockey goalies are always challenged on the ice trying to stop small pieces of frozen rubber coming at them at very high speeds. This project was designed to see if visual factors in the game could be changed to allow goalies an advantage. Specifically, I wanted to know if a change in the colour of the hockey puck would help goalies make more saves."
 );
@@ -5925,12 +5925,37 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1519,
+	2008,
+	"How to Make Vegetable Oil into Diesel",
+	2,
+	10,
+	119,
+	"Amo Ososwan School",
+	"My goal is to invent a new renewable resource and do further research to preserve our natural resources. Biodiesel can be used as a substitute for mainstream petroleum products within vehicles and home appliances. Comparing Biodiesel to petroleum fuels, Biodiesel is more economical to the consumer and less hazardous to the environment than current, costly petroleum products."
+);
+INSERT INTO project_divisions(project, division) VALUES(1519, 4);
+INSERT INTO project_divisions(project, division) VALUES(1519, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1519,
+	1,
+	"Trishia Hazlewood",
+	"Belleterre",
+	NULL,
+	"My name is Trishia Migwanas Hazlewood. I am sixteen years of age and will soon be seventeen on June 21st. I was born in Redditch, England, as my father is from the United Kingdom. My mom is North American Native which makes me have dual nationality. My mother and I are registered under the Long Point First Nation community, also known as Winneway, Québec. This is an Algonquin community located in Abitibi-Témiscaming region of Québec. My interests and hobbies include reading and writing, along with my traditional hobbies which include going to powwows across Ontario and Québec. I also make wire-wrapping jewelry. I am interested in learning a veriety of different subjects such as Science, History, English and Environmental issues. I am also interested in the arts (vocals for singing and presenting), the visual arts (photography), and theatre drama. My career plans are to become a director because I believe it would teach and entertain many people of how we can save the earth from global warming and other earth issues. My goal in life is to continue to expand on my studies on renewable resources."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1475,
 	2008,
 	"Human Decomposition",
 	3,
 	9,
-	"Peterborough",
+	45,
 	"Lakefield District Secondary & Intermediate",
 	"I explored the topic of human decomposition by studying rates of decomposition in fresh and salt water by using pig specimens which are very similar to humans. The salinity of the water had a large effect on this rate. Those in fresh water decomposed much faster than those in salt water. However, the stages of decomposition remained the same in both fresh and salt water."
 );
@@ -5989,26 +6014,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1519,
+	1258,
 	2008,
-	"How to Make Vegetable Oil into Diesel",
-	2,
-	10,
-	"Aboriginal Québec Autochtone",
-	"Amo Ososwan School",
-	"My goal is to invent a new renewable resource and do further research to preserve our natural resources. Biodiesel can be used as a substitute for mainstream petroleum products within vehicles and home appliances. Comparing Biodiesel to petroleum fuels, Biodiesel is more economical to the consumer and less hazardous to the environment than current, costly petroleum products."
+	"HydroGuard",
+	1,
+	12,
+	89,
+	"Clayburn Middle School",
+	"HydroGaurd is a portable hydration system made from a mouth guard that has a water tube moulded into it. When suction is applied water is drawn through this tube that is attached to a water bladder held in a pouch on your hockey shoulder pads. I've used the HydroGaurd and it works great, my coach and teammates all want to have one!"
 );
-INSERT INTO project_divisions(project, division) VALUES(1519, 4);
-INSERT INTO project_divisions(project, division) VALUES(1519, 6);
+INSERT INTO project_divisions(project, division) VALUES(1258, 7);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1519,
+	1258,
 	1,
-	"Trishia Hazlewood",
-	"Belleterre",
+	"Lance Jelinski",
+	"Abbotsford",
 	NULL,
-	"My name is Trishia Migwanas Hazlewood. I am sixteen years of age and will soon be seventeen on June 21st. I was born in Redditch, England, as my father is from the United Kingdom. My mom is North American Native which makes me have dual nationality. My mother and I are registered under the Long Point First Nation community, also known as Winneway, Québec. This is an Algonquin community located in Abitibi-Témiscaming region of Québec. My interests and hobbies include reading and writing, along with my traditional hobbies which include going to powwows across Ontario and Québec. I also make wire-wrapping jewelry. I am interested in learning a veriety of different subjects such as Science, History, English and Environmental issues. I am also interested in the arts (vocals for singing and presenting), the visual arts (photography), and theatre drama. My career plans are to become a director because I believe it would teach and entertain many people of how we can save the earth from global warming and other earth issues. My goal in life is to continue to expand on my studies on renewable resources."
+	"Lance is a grade 7 student at Clayburn Middle Secondary School in Abbotsford. Lance lives with his Mom, Dad, brother Joel and his dog Diesel. Lance loves to play sports like baseball, hockey, snowboarding and mountain biking. His favorite subjects in school are Technolody Education and PE. Lance has a bilateral hearing loss in both ears of 45-60% and wears hearing aids during school. Lance and his brother Joel have operated a small vending machine business for several years. Lance also enjoys refereeing hockey and umpirering baseball. Lance is excited about being filmed in April for the Think Big TV young inventors show in Toronto."
 );
 
 INSERT INTO projects
@@ -6019,7 +6043,7 @@ VALUES (
 	"Hydrogen Fuel Cell: Effect of Altitude on Energy Output",
 	2,
 	11,
-	"Chinook Country",
+	86,
 	"Red Deer Lake School",
 	"This project studied the effects of altitude on hydrogen fuel cell energy output. A Proton Exchange Membrane fuel cell was tested at different pressures to simulate altitude. The results showed that increasing atmospheric pressure resulted in increased energy output. Changing temperature did not have an effect on the fuel cell. This research demonstrates that a hydrogen fuel cell can operate almost anywhere in the world."
 );
@@ -6079,70 +6103,26 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1533,
+	1331,
 	2008,
-	"Hydrogen Storage Using Steel Wool",
-	2,
-	NULL,
-	NULL,
-	NULL,
-	"The hypothesis of this project is that the reversible reaction in which 2Fe + 3H20 is converted into Fe2O3 + 3H2 could be used to store hydrogen. Steam is passed over heated steel wool, releasing hydrogen (which powers a hydrogen fuel cell). The process is reversed by passing hydrogen, produced by solar-powered electrolysis of water, over heated iron oxide."
-);
-INSERT INTO project_divisions(project, division) VALUES(1533, 99);
-INSERT INTO project_divisions(project, division) VALUES(1533, 1);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1533,
+	"Ice Ace",
 	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
+	9,
+	41,
+	"M.T. Davidson P.S.",
+	"My invention is called the Ice Ace. It is a homemade Zamboni. It is made of PVC pipe in a “T” design that squirts out water onto a towel that drags along the ice to smooth out a backyard ice rink or pond. All you have to do is connect it to a garden hose or into the water backpack and you’re ready to go."
 );
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1533,
-	2,
-	"Honourable Mention - Automotive",
-	"Intermediate",
-	"AUTO21",
-	100.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1533,
-	3,
-	"Gold Medal - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	1500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1258,
-	2008,
-	"HydroGuard",
-	1,
-	12,
-	"Fraser Valley",
-	"Clayburn Middle School",
-	"HydroGaurd is a portable hydration system made from a mouth guard that has a water tube moulded into it. When suction is applied water is drawn through this tube that is attached to a water bladder held in a pouch on your hockey shoulder pads. I've used the HydroGaurd and it works great, my coach and teammates all want to have one!"
-);
-INSERT INTO project_divisions(project, division) VALUES(1258, 7);
+INSERT INTO project_divisions(project, division) VALUES(1331, 7);
+INSERT INTO project_divisions(project, division) VALUES(1331, 6);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1258,
+	1331,
 	1,
-	"Lance Jelinski",
-	"Abbotsford",
+	"Mike Gorda",
+	"Callander",
 	NULL,
-	"Lance is a grade 7 student at Clayburn Middle Secondary School in Abbotsford. Lance lives with his Mom, Dad, brother Joel and his dog Diesel. Lance loves to play sports like baseball, hockey, snowboarding and mountain biking. His favorite subjects in school are Technolody Education and PE. Lance has a bilateral hearing loss in both ears of 45-60% and wears hearing aids during school. Lance and his brother Joel have operated a small vending machine business for several years. Lance also enjoys refereeing hockey and umpirering baseball. Lance is excited about being filmed in April for the Think Big TV young inventors show in Toronto."
+	"My name is Mike. I was born in Edmonton, Alberta, on June 27, 1994. We moved to Windsor, Ontario when I was 2 1/2 years old, then moved to Oakville where we lived for 9 years. I am a 13 year old student in grade 8 at M.T. Davidson Public school in Callander, Ontario. I'm on the honour roll at school. My favourite subjects are math, science and gym (of course). I really like sports. I was captain of our school basketball, soccer, and volleyball teams. I play house league hockey in the winter, and golf and soccer during the summer. My family moved to North Bay last summer. I am looking forward to enjoying all the water sports involved with living on Lake Nipissing, such as fishing, water skiing and tubing, and boating. When I grow up, I would like to pursue a career in engineering, architecture, or professional golfer. I have applied to a science and technology wireless programme in high school. I am looking forward to my first year of high school, and to participating in this science fair."
 );
 
 INSERT INTO projects
@@ -6153,7 +6133,7 @@ VALUES (
 	"Hypericin Phototoxicity: A Novel Strategy for Cancer Treatment",
 	3,
 	8,
-	"Manitoba Schools Science Symposium",
+	21,
 	"St. John's Ravenscourt School",
 	"Hypericin, a natural photosensitizer, was examined as a potential neuroblastoma treatment. SH-SY5Y cell cultures were treated with different concentrations of hypericin and irradiated with light, and it was found that low concentrations of light-activated hypericin caused significant cell death. Furthermore, it was found that apoptosis induced in this way occurred through caspase-dependent and not through BNIP3 dependent pathways. These findings suggest possibilities for future applications."
 );
@@ -6227,7 +6207,7 @@ VALUES (
 	"Ice Cold",
 	3,
 	6,
-	"Saskatchewan Chinook",
+	34,
 	"Leader Composite School",
 	"Follow the pykrete model to determine if ice can be made stronger and lengthen its melting time as compared to regular ice. Then to apply the new pykrete to practical uses that would benefit the environment."
 );
@@ -6247,26 +6227,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1331,
+	1533,
 	2008,
-	"Ice Ace",
-	1,
-	9,
-	"North Bay",
-	"M.T. Davidson P.S.",
-	"My invention is called the Ice Ace. It is a homemade Zamboni. It is made of PVC pipe in a “T” design that squirts out water onto a towel that drags along the ice to smooth out a backyard ice rink or pond. All you have to do is connect it to a garden hose or into the water backpack and you’re ready to go."
-);
-INSERT INTO project_divisions(project, division) VALUES(1331, 7);
-INSERT INTO project_divisions(project, division) VALUES(1331, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1331,
-	1,
-	"Mike Gorda",
-	"Callander",
+	"Hydrogen Storage Using Steel Wool",
+	2,
 	NULL,
-	"My name is Mike. I was born in Edmonton, Alberta, on June 27, 1994. We moved to Windsor, Ontario when I was 2 1/2 years old, then moved to Oakville where we lived for 9 years. I am a 13 year old student in grade 8 at M.T. Davidson Public school in Callander, Ontario. I'm on the honour roll at school. My favourite subjects are math, science and gym (of course). I really like sports. I was captain of our school basketball, soccer, and volleyball teams. I play house league hockey in the winter, and golf and soccer during the summer. My family moved to North Bay last summer. I am looking forward to enjoying all the water sports involved with living on Lake Nipissing, such as fishing, water skiing and tubing, and boating. When I grow up, I would like to pursue a career in engineering, architecture, or professional golfer. I have applied to a science and technology wireless programme in high school. I am looking forward to my first year of high school, and to participating in this science fair."
+	NULL,
+	NULL,
+	"The hypothesis of this project is that the reversible reaction in which 2Fe + 3H20 is converted into Fe2O3 + 3H2 could be used to store hydrogen. Steam is passed over heated steel wool, releasing hydrogen (which powers a hydrogen fuel cell). The process is reversed by passing hydrogen, produced by solar-powered electrolysis of water, over heated iron oxide."
+);
+INSERT INTO project_divisions(project, division) VALUES(1533, 99);
+INSERT INTO project_divisions(project, division) VALUES(1533, 1);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1533,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1533,
+	2,
+	"Honourable Mention - Automotive",
+	"Intermediate",
+	"AUTO21",
+	100.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1533,
+	3,
+	"Gold Medal - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	1500.00
 );
 
 INSERT INTO projects
@@ -6277,7 +6277,7 @@ VALUES (
 	"Identifying Ciona intestinalis Via COX1 Primers",
 	3,
 	4,
-	"Prince Edward Island",
+	9,
 	"Three Oaks Senior High School",
 	"In recent years the invasive species the Vase Tunicate (Ciona intestinalis) has become a problem throughout waterways around Canada. Identifying this species in waterways is difficult with only two inefficient methods; using DNA Primers and Polymer Chain Reaction, is a possible, efficient and effective way to identify Ciona intestinalis in a water sample."
 );
@@ -6322,7 +6322,7 @@ VALUES (
 	"Impact of Microwaves on Plant Growth",
 	2,
 	7,
-	"Kivalliq",
+	19,
 	"Maani Ulujuk H.S.",
 	"The purpose of our project was to determine if microwaves affect the germination and growth of plants. Our controls were treated with boiled water while all other plants were treated with microwaved water. Results during this experiment showed no significant growth differences in plants treated with microwaved or boiled water. We have concluded that microwaved water does not significantly affect plant germination or growth."
 );
@@ -6362,60 +6362,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1450,
-	2008,
-	"Interaction of HIV-1 Transactivating Factor Tat and Mitochondria of Cos7 Cells",
-	2,
-	9,
-	"London District",
-	"A.B. Lucas S.S.",
-	"Research on the interaction of transactivating factor TAT and the mitochondria of Cos7 cells will add to the knowledge base that could lead to more effective treatments and/or a vaccination protocol for HIV-1 infection. Determining the level of interaction between TAT and mitochondria will help determine the role of the TAT protein which may be related to mitochondrial dysfunction in the host cell."
-);
-INSERT INTO project_divisions(project, division) VALUES(1450, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1450,
-	1,
-	"Tanisha Thammavongsa",
-	"Thorndale ",
-	NULL,
-	"Tanisha Thammavongsa is a 14 year old, grade ten student at A.B.Lucas Secondary School in London, Ontario. In addition to editing a board-wide art and literary magazine, Tanisha participates in many school clubs and activities including choir, band, drama, dance, charities, science fairs and math contests. Tanisha plays piano, flute, guitar and fiddle (plus teaching herself saxophone). Nearly fluent in French thanks to a grade nine immersion experience, she is also learning Spanish and Lao (a Thai dialect). Outside school, Tanisha studies dance at an advanced level, taking master classes with international choreographers. Next Christmas break, she will be studying dance in NYC on scholarship. Tanisha also acts for stage and screen including musical theatre. As an avid sports enthusiast, her active lifestyle includes running, soccer, riding, swimming and learning to ski, snowboard, surf and play tennis. Passionate about travel, her goal is to visit all seven continents before turning 21. She will spend July on Crete, earning her grade 12 English credit, learning to sail and wind surf, and participating in drama and music enrichment. Tanisha’s ambition is to earn a medical degree and work in the field of international development with organizations such as the WHO and MSF."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1415,
-	2008,
-	"Investigating Blood Sugar",
-	1,
-	5,
-	"Sahtu",
-	"Mackenzie Mountain School",
-	"In Investigating Blood Sugar I did a series of experiments in order to see if a person’s blood sugar level can change with out consuming food but instead laughing or having food being introduced to their sensing organs excluding tongue and ears."
-);
-INSERT INTO project_divisions(project, division) VALUES(1415, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1415,
-	1,
-	"Siobhan Quigg",
-	"Norman Wells",
-	NULL,
-	"I was borned and I have lived in Northwest Terrritories my entire life. Despite living in an isolated community I have traveled to many countries, including Ireland, my father's home land. I enjoy all types of art, and I am a grade 2 piano player. I have a beautiful collie, Jesse, and a younger sister, Meadhbh."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1642,
 	2008,
 	"Improving predictive text",
 	3,
 	10,
-	"Montreal",
+	74,
 	"Lower Canada College",
 	"Predictive text, a method for text imput, on cell phones suffers from two major problems; ambiguity in word choice, and lack, of a spell checker. This project aims to improve predictive texte by employing the Hidden Markov Model of language to add context-specific disambiguation and a rudimentary spell-checker."
 );
@@ -6484,12 +6436,95 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1248,
+	2008,
+	"Is Arctic Ice Losing Its Cool?",
+	2,
+	5,
+	30,
+	"Mackenzie Mountain School",
+	"This project tests the theory of Accelerated Ice Melting. Said theory states that the melting speed of ice will accelerate as the amount of melting increases, due to the water that is created absorbing more heat than the ice itself. I tested this theory using a heat-generating apparatus and ice samples from the Mackenzie River. My results showed a tendency to support the theory."
+);
+INSERT INTO project_divisions(project, division) VALUES(1248, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1248,
+	1,
+	"Joshua Balanuik",
+	"Norman Wells",
+	NULL,
+	"My name is Joshua Balanuik. I am a grade ten student at Mackenzie Mountain School in Norman Wells, Northwest Territories. My hobbies include playing video games, biking, and nearly anything involving computers and the internet. I plan to become a video game designer for Nintendo in the future. I also love listening to music and philosophizing."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1415,
+	2008,
+	"Investigating Blood Sugar",
+	1,
+	5,
+	30,
+	"Mackenzie Mountain School",
+	"In Investigating Blood Sugar I did a series of experiments in order to see if a person’s blood sugar level can change with out consuming food but instead laughing or having food being introduced to their sensing organs excluding tongue and ears."
+);
+INSERT INTO project_divisions(project, division) VALUES(1415, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1415,
+	1,
+	"Siobhan Quigg",
+	"Norman Wells",
+	NULL,
+	"I was borned and I have lived in Northwest Terrritories my entire life. Despite living in an isolated community I have traveled to many countries, including Ireland, my father's home land. I enjoy all types of art, and I am a grade 2 piano player. I have a beautiful collie, Jesse, and a younger sister, Meadhbh."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1532,
+	2008,
+	"Is PJ the Cure?",
+	1,
+	12,
+	90,
+	"York House School",
+	"An in vitro study of the anticancer activity of pomegranate juice (PJ) on both ovarian (CHO) and breast carcinoma (HTB-129) cells was conducted. Cell viability, proliferation and morphology were examined. Treatment of CHO cells with PJ resulted in a dose-dependent inhibition of cell growth by inducing apoptosis. However, the cytotoxicity of PJ to HTB-129 cells remains inconclusive and needs further research."
+);
+INSERT INTO project_divisions(project, division) VALUES(1532, 8);
+INSERT INTO project_divisions(project, division) VALUES(1532, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1532,
+	1,
+	"Ariana Saatchi",
+	"Vancouver",
+	NULL,
+	"My name is Ariana Saatchi. I am in grade eight and am currently attending York House School. My extra-curricular activities include ski racing, basketball, volleyball, and I play the clarinet in my school band. I also enjoy reading very much. I have 3 siblings and no pets. My favourite past times are free-skiing (not training) and hanging out with my friends."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1532,
+	1,
+	"Honourable Mention - Health Sciences",
+	"Junior",
+	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1480,
 	2008,
 	"InVision: An Intelligent System for Automated Image Analysis",
 	2,
 	2,
-	"Eastern Newfoundland",
+	6,
 	NULL,
 	"InVision is a Matlab program that solves different image analysis problems automatically. Applications include detection of red-eyes in digital images and determining whether a driver of an automobile is fatigued or if he/she is not paying attention to the road. Automated analysis of digital images is important for applications such as analysis of medical images, food product inspection and analysis of security videos."
 );
@@ -6549,60 +6584,49 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1248,
+	1450,
 	2008,
-	"Is Arctic Ice Losing Its Cool?",
+	"Interaction of HIV-1 Transactivating Factor Tat and Mitochondria of Cos7 Cells",
 	2,
-	5,
-	"Sahtu",
-	"Mackenzie Mountain School",
-	"This project tests the theory of Accelerated Ice Melting. Said theory states that the melting speed of ice will accelerate as the amount of melting increases, due to the water that is created absorbing more heat than the ice itself. I tested this theory using a heat-generating apparatus and ice samples from the Mackenzie River. My results showed a tendency to support the theory."
+	9,
+	59,
+	"A.B. Lucas S.S.",
+	"Research on the interaction of transactivating factor TAT and the mitochondria of Cos7 cells will add to the knowledge base that could lead to more effective treatments and/or a vaccination protocol for HIV-1 infection. Determining the level of interaction between TAT and mitochondria will help determine the role of the TAT protein which may be related to mitochondrial dysfunction in the host cell."
 );
-INSERT INTO project_divisions(project, division) VALUES(1248, 4);
+INSERT INTO project_divisions(project, division) VALUES(1450, 500);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1248,
+	1450,
 	1,
-	"Joshua Balanuik",
-	"Norman Wells",
+	"Tanisha Thammavongsa",
+	"Thorndale ",
 	NULL,
-	"My name is Joshua Balanuik. I am a grade ten student at Mackenzie Mountain School in Norman Wells, Northwest Territories. My hobbies include playing video games, biking, and nearly anything involving computers and the internet. I plan to become a video game designer for Nintendo in the future. I also love listening to music and philosophizing."
+	"Tanisha Thammavongsa is a 14 year old, grade ten student at A.B.Lucas Secondary School in London, Ontario. In addition to editing a board-wide art and literary magazine, Tanisha participates in many school clubs and activities including choir, band, drama, dance, charities, science fairs and math contests. Tanisha plays piano, flute, guitar and fiddle (plus teaching herself saxophone). Nearly fluent in French thanks to a grade nine immersion experience, she is also learning Spanish and Lao (a Thai dialect). Outside school, Tanisha studies dance at an advanced level, taking master classes with international choreographers. Next Christmas break, she will be studying dance in NYC on scholarship. Tanisha also acts for stage and screen including musical theatre. As an avid sports enthusiast, her active lifestyle includes running, soccer, riding, swimming and learning to ski, snowboard, surf and play tennis. Passionate about travel, her goal is to visit all seven continents before turning 21. She will spend July on Crete, earning her grade 12 English credit, learning to sail and wind surf, and participating in drama and music enrichment. Tanisha’s ambition is to earn a medical degree and work in the field of international development with organizations such as the WHO and MSF."
 );
 
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1532,
+	1472,
 	2008,
-	"Is PJ the Cure?",
-	1,
-	12,
-	"Greater Vancouver",
-	"York House School",
-	"An in vitro study of the anticancer activity of pomegranate juice (PJ) on both ovarian (CHO) and breast carcinoma (HTB-129) cells was conducted. Cell viability, proliferation and morphology were examined. Treatment of CHO cells with PJ resulted in a dose-dependent inhibition of cell growth by inducing apoptosis. However, the cytotoxicity of PJ to HTB-129 cells remains inconclusive and needs further research."
+	"Jitter Bugs",
+	2,
+	9,
+	45,
+	"Holy Cross S.S.",
+	"This study evaluated the effects of caffeine on crickets. Crickets were fed two concentrations of caffeine solution and then given a choice of water or caffeine solution. Mass, length and reactivity were also measured before and after exposure. Caffeine fed crickets preferred a caffeine solution over water. This experiment shows that crickets experience many similar changes in body function and behavior as humans do."
 );
-INSERT INTO project_divisions(project, division) VALUES(1532, 8);
-INSERT INTO project_divisions(project, division) VALUES(1532, 6);
+INSERT INTO project_divisions(project, division) VALUES(1472, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1532,
+	1472,
 	1,
-	"Ariana Saatchi",
-	"Vancouver",
+	"Emily Bryans",
+	"Havelock",
 	NULL,
-	"My name is Ariana Saatchi. I am in grade eight and am currently attending York House School. My extra-curricular activities include ski racing, basketball, volleyball, and I play the clarinet in my school band. I also enjoy reading very much. I have 3 siblings and no pets. My favourite past times are free-skiing (not training) and hanging out with my friends."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1532,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	100.00
+	"I was born in the bustling city of Oshawa, Ontario. My parents’ names are Don and Colleen and I have one older brother, Eric. At the age of 10, I moved from the big city to a small town near Norwood, Ontario. It was a big change but I really enjoy all of the fresh air and small-town-friendly people. I live on a farm with seven horses and thirty-some cows, and the herd is growing everyday! I am currently in grade nine at Holy Cross Secondary School and I hope to take this opportunity to pursue a science career in the future. My favorite things to do in my spare time include reading, going to movies with friends, playing recreational sports and practicing guitar."
 );
 
 INSERT INTO projects
@@ -6613,7 +6637,7 @@ VALUES (
 	"Jatropha Oil - Saving the Environment, One Drop at a Time",
 	1,
 	9,
-	"Peel",
+	61,
 	"William G. Davis Senior P.S.",
 	"Due to the environmental problems facing the planet, bio-fuels, such as ethanol have become increasingly popular. Jatropha Oil is a new bio-fuel, which is more environmentally safe than today’s conventional fuels. But apart from its many advantages, it has drawbacks. This project found ways to improve important properties of this fuel like the cloud point. With progress, Jatropha Oil could become next the environment-saving fuel!"
 );
@@ -6673,36 +6697,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1472,
-	2008,
-	"Jitter Bugs",
-	2,
-	9,
-	"Peterborough",
-	"Holy Cross S.S.",
-	"This study evaluated the effects of caffeine on crickets. Crickets were fed two concentrations of caffeine solution and then given a choice of water or caffeine solution. Mass, length and reactivity were also measured before and after exposure. Caffeine fed crickets preferred a caffeine solution over water. This experiment shows that crickets experience many similar changes in body function and behavior as humans do."
-);
-INSERT INTO project_divisions(project, division) VALUES(1472, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1472,
-	1,
-	"Emily Bryans",
-	"Havelock",
-	NULL,
-	"I was born in the bustling city of Oshawa, Ontario. My parents’ names are Don and Colleen and I have one older brother, Eric. At the age of 10, I moved from the big city to a small town near Norwood, Ontario. It was a big change but I really enjoy all of the fresh air and small-town-friendly people. I live on a farm with seven horses and thirty-some cows, and the herd is growing everyday! I am currently in grade nine at Holy Cross Secondary School and I hope to take this opportunity to pursue a science career in the future. My favorite things to do in my spare time include reading, going to movies with friends, playing recreational sports and practicing guitar."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1535,
 	2008,
 	"Kick the Carbon Crave: Convert CO2 to Fuels",
 	2,
 	9,
-	"Northwestern Ontario",
+	43,
 	"Hammarskjold High School",
 	"Carbon dioxide is converted to methane, methanol and ethanol under photocatalytic conditions in the presence of selected additives. Analysis of the products was done using gas chromatography and mass spectrometry. This technology would enable a carbon neutral economy and solve energy shortages by recycling the carbon dioxide generated from the burning of fuels."
 );
@@ -6767,7 +6767,7 @@ VALUES (
 	"L'énergie dans les vaques-La source renouvelable sans impact?",
 	1,
 	1,
-	"Conseil scolaire acadien provincial (CSAP)",
+	117,
 	"École Stella-Maris",
 	"Mon projet regarde au quatre sources majeur d’énergie renouvelable pour la Nouvelle Écosse et fait une comparaison de different appareils proposé pour exploiter ces sources. Les problèmes associés avec chaques et leurs impact sur nos communautés sont discuté et une appareil est proposé qui pourras peut-être minimiser les problèmes."
 );
@@ -6791,7 +6791,7 @@ VALUES (
 	"L'orage électrique au cerveau",
 	3,
 	10,
-	"Québec et Chaudière-Appalaches",
+	77,
 	"Collège Saint-Charles-Garnier",
 	"Notre projet introduit l'épilepsie et le fonctionnement des électro-encéphalogrammes. Puis, nous avons fait une sondage pour évaluer les connaissances des cégépiens sur l'épilepsie. Finalement, des combinaisons de deux médicaments anti-épileptiques ont été dosées dans le sang pour voir l'effet des deux médicaments ensemble. Bref, que des découvertes."
 );
@@ -6850,12 +6850,57 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1371,
+	2008,
+	"La Maison ""verte""",
+	3,
+	9,
+	44,
+	"College catholique Samuel-Genest",
+	"Notre projet consiste d’un prototype fonctionnel d’une maison «verte». Nous avons faient un prototype d’une maison qui sera auto-suffisante, donc, elle va consommer une petite quantité de ressource provenant de la ville. Il y aura un système de recyclage de l’eau de pluie, système de filtration et d'énergie (électricité), en plus de cela, nous allons profiter du soleil pour rechauffer l'eau de la maison."
+);
+INSERT INTO project_divisions(project, division) VALUES(1371, 7);
+INSERT INTO project_divisions(project, division) VALUES(1371, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1371,
+	1,
+	"Ramy Botorous",
+	"Ottawa",
+	NULL,
+	"My name is Ramy Botorous and I go to Collège catholique Samuel-Genest. I'm part of a program called ""concentration scientifique"" since I love science. Also, I’m on the school senior soccer team. As of community activities, during the summer, I’m a monitor for the kids at church and also, I play soccer within a club. My main objective in life is to become a dentist, even though I heard it takes many years of studying, I’m a perfectionist or I try to be, and why not put my work in people’s teeth. As of awards and achievements; the regional science fair is one of my greatest success, my partner (Joe Hanna) and I, won first place in the category science and environmental engineer and we both got invited to a conference held by Direct Energy in May."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1371,
+	2,
+	"Joe Hanna",
+	"Ottawa",
+	NULL,
+	"I am a young innovative student who likes hands on type of work. i usually get ideas in the middle of my work or after I've started to work on something. i really enjoy building or designing prototypes or actual working items and i enjoy using the computer to create some designs. i have lots of skills in computers from software to hardware, i can diagnose a personal computer and most of the time find the problem and fix it. Also, i have a huge knowledge in audio/visual setups and manipulation since i am a DJ myself and have made many successful parties, weddings, birthdays and even big shows including the control of over 10 microphones and 20 instruments. I do lots of community work and most of that is the volunteering at my church. I'm not quite sure what i will be doing in the future yet but i will most likely attend university in the engineering domain. I have won many awards over the years witch most concentrate on school achievements and science related projects such as the first place award for the ""environmental science and engineering"" at the regional science fair two years ago."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1371,
+	1,
+	"Honourable Mention - Environmental Innovation",
+	"Senior",
+	"EnviroExpo, Presented by VIA Rail Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1629,
 	2008,
 	"La chasse aux étoiles",
 	3,
 	10,
-	"Mauricie, Centre-du-Québec",
+	72,
 	"Cégep de Trois-Rivières",
 	"Saviez-vous que les astronomes doivent aller de plus en plus loin pour observer les étoiles? Admirez des photographies de la voûte céleste qui vous en dira long sur l'impact de la pollution lumineuse. Découvrez aussi les responsables de ce phénomène ainsi que les moyens mis en œuvre afin de l'enrayer."
 );
@@ -6904,57 +6949,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1371,
-	2008,
-	"La Maison ""verte""",
-	3,
-	9,
-	"Ottawa",
-	"College catholique Samuel-Genest",
-	"Notre projet consiste d’un prototype fonctionnel d’une maison «verte». Nous avons faient un prototype d’une maison qui sera auto-suffisante, donc, elle va consommer une petite quantité de ressource provenant de la ville. Il y aura un système de recyclage de l’eau de pluie, système de filtration et d'énergie (électricité), en plus de cela, nous allons profiter du soleil pour rechauffer l'eau de la maison."
-);
-INSERT INTO project_divisions(project, division) VALUES(1371, 7);
-INSERT INTO project_divisions(project, division) VALUES(1371, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1371,
-	1,
-	"Ramy Botorous",
-	"Ottawa",
-	NULL,
-	"My name is Ramy Botorous and I go to Collège catholique Samuel-Genest. I'm part of a program called ""concentration scientifique"" since I love science. Also, I’m on the school senior soccer team. As of community activities, during the summer, I’m a monitor for the kids at church and also, I play soccer within a club. My main objective in life is to become a dentist, even though I heard it takes many years of studying, I’m a perfectionist or I try to be, and why not put my work in people’s teeth. As of awards and achievements; the regional science fair is one of my greatest success, my partner (Joe Hanna) and I, won first place in the category science and environmental engineer and we both got invited to a conference held by Direct Energy in May."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1371,
-	2,
-	"Joe Hanna",
-	"Ottawa",
-	NULL,
-	"I am a young innovative student who likes hands on type of work. i usually get ideas in the middle of my work or after I've started to work on something. i really enjoy building or designing prototypes or actual working items and i enjoy using the computer to create some designs. i have lots of skills in computers from software to hardware, i can diagnose a personal computer and most of the time find the problem and fix it. Also, i have a huge knowledge in audio/visual setups and manipulation since i am a DJ myself and have made many successful parties, weddings, birthdays and even big shows including the control of over 10 microphones and 20 instruments. I do lots of community work and most of that is the volunteering at my church. I'm not quite sure what i will be doing in the future yet but i will most likely attend university in the engineering domain. I have won many awards over the years witch most concentrate on school achievements and science related projects such as the first place award for the ""environmental science and engineering"" at the regional science fair two years ago."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1371,
-	1,
-	"Honourable Mention - Environmental Innovation",
-	"Senior",
-	"EnviroExpo, Presented by VIA Rail Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1619,
 	2008,
 	"La protéomique: second souffle!",
 	3,
 	10,
-	"Saguenay-Lac Saint-Jean",
+	79,
 	"École secondaire Kénogami",
 	"L'expérimentation démontre les nombreux avantages de la protéomique dans le traitement de l'asthme, une affection pulmonaire chronique. Afin de différencier les protéines associées à cette maladie, l'équipe a analysé trois poumons de rat à des stades distincts de la maladie: un contrôlé, un sensibilisé et un hypersensibilisé."
 );
@@ -7013,36 +7013,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1621,
-	2008,
-	"La thérapie génique",
-	2,
-	10,
-	"Saguenay-Lac Saint-Jean",
-	"École secondaire de l'Odyssée",
-	"Pour mon projet, j'ai effectué une expérience avec l'aide de la Dre Valérie Legendre-Guillemin. Cette expérience consiste à créer une vecteur permettant de guérir l'épidermolyse bulleuse, une maladie de la peau. Dans mon exposé, je parle de la thérapie génique, des recteurs, de mon expérience et des essais cliniques."
-);
-INSERT INTO project_divisions(project, division) VALUES(1621, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1621,
-	1,
-	"Marc-Antoine Néron",
-	"Chicoutimi",
-	NULL,
-	"Je me nomme Marc-Antoine Néron. J’ai 16 ans et je demeure à Chicoutimi dans la belle région du Saguenay-Lac-St-Jean au Québec. J’étudie dans un programme pour élèves performants (Programme Excellence) à l’école l’Odyssée/Dominique-Racine. Cette année, notre classe organise un voyage à Mérida au Mexique afin de participer à un programme d’immersion en espagnol incluant des visites à caractère scientifique. Comme loisirs, je pratique le vélo de montagne, de route et j’aime aussi aller à la pêche. L’hiver, je fais de la raquette, du ski alpin et de la motoneige. Je m’intéresse à différents domaines comme l’informatique, les mathématiques et les sciences. Chaque année, je participe à plusieurs concours tels qu’Opti-math, AQJM, Cyberomnium, Expo-Sciences… Jusqu’à maintenant j’ai remporté 3 fois la 1re position au régional d’Opti-math. En 5e année, je suis arrivé 1er au concours AQJM, ce qui m’a permis de participer à la finale internationale qui avait lieu à Paris. En 6e année, j’ai remporté le 1er prix d’Expo-sciences régionale. En secondaire 1 et 2 j’ai gagné des prix en argent à la régionale. Cette année, j’ai remporté une bourse d’étude de 1000$ de l’Université Laval. Et finalement, pour mon plus grand bonheur, me voici à l’Expo-sciences pancanadienne."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1477,
 	2008,
 	"Larch Tea: An Antibacterial Solution?",
 	2,
 	2,
-	"Eastern Newfoundland",
+	6,
 	"St. Peter's Jr. H.S.",
 	"This experiment tested to see if tea made from the Eastern Larch, Larix laricina, could reduce bacterial growth in Escherichia coli and Rhodobacter capsulatus. Bacterial cultures were mixed with different concentrations of tea and serial dilutions were then used to prepare the bacterial plates. Overall results showed that the tea made from the Eastern Larch decreased growth in both types of bacteria."
 );
@@ -7086,7 +7062,7 @@ VALUES (
 	"La valorisation écologique des déchets ménagers en biogaz",
 	1,
 	9,
-	"Ottawa",
+	44,
 	"College catholique Samuel-Genest",
 	"Les déchets organiques encombrent les dépotoirs et leur décomposition contribue au réchauffement climatique en émettant méthane et CO2. La transformation des déchets organiques en biogaz représente une solution. J’ai testé différents mélanges de déchets organiques en conditions anaérobie et mesuré le volume de biogaz produit et identifié les variables qui optimisent la méthanisation. J’ai également fabriqué un digesteur domestique permettant de produire rapidement du biogaz."
 );
@@ -7136,25 +7112,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1266,
+	1621,
 	2008,
-	"Le béton idéal",
-	3,
-	6,
-	"Fransaskoise",
-	"École-canadienne-française",
-	"Mon projet consiste de la détermination du mélange (granulats, ciment et eau) qui donnera le béton idéal. De plus, je cherche à identifier le facteur du temps, la quantité d'eau ainsi que du ciment chez le béton. J'ai réussi à effectuer ces identifications à l'aide d'une presse hydraulique qui compresse mes échantillons de béton."
+	"La thérapie génique",
+	2,
+	10,
+	79,
+	"École secondaire de l'Odyssée",
+	"Pour mon projet, j'ai effectué une expérience avec l'aide de la Dre Valérie Legendre-Guillemin. Cette expérience consiste à créer une vecteur permettant de guérir l'épidermolyse bulleuse, une maladie de la peau. Dans mon exposé, je parle de la thérapie génique, des recteurs, de mon expérience et des essais cliniques."
 );
-INSERT INTO project_divisions(project, division) VALUES(1266, 7);
+INSERT INTO project_divisions(project, division) VALUES(1621, 500);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1266,
+	1621,
 	1,
-	"Etienne Fortier",
-	"Saskatoon",
+	"Marc-Antoine Néron",
+	"Chicoutimi",
 	NULL,
-	"je m'appelle Étienne Fortier, je suis un jeune Fransaskois de la Saskatchewan puis j'habite sur une ferme près de Saskatoon. Originaire de Zénon Park, un petit village francophone au Nord Est de la province d'une population d'environ 200 habitants, ma famille et moi sommes déménagé à Saskatoon en 2005. De plus, Je suis beaucoup impliqué dans mon école, ma communauté fransaskoise puis aussi dans les sports. J'aime bien être dehors dans la nature car j'ai vécu toute ma jeunesse sur une ferme d'apiculteur. Ceci m'a permis de développer un vrai sens d'appréciation pour l'agriculture et la vie dans les prairies. Cet automne, j'envisage étudier la génie civile au collège technique SIAST à Moose Jaw en Saskatchewan. J'ai toujours eu une passion pour la construction et cela est pourquoi j'envisage faire carrière dans ce domaine."
+	"Je me nomme Marc-Antoine Néron. J’ai 16 ans et je demeure à Chicoutimi dans la belle région du Saguenay-Lac-St-Jean au Québec. J’étudie dans un programme pour élèves performants (Programme Excellence) à l’école l’Odyssée/Dominique-Racine. Cette année, notre classe organise un voyage à Mérida au Mexique afin de participer à un programme d’immersion en espagnol incluant des visites à caractère scientifique. Comme loisirs, je pratique le vélo de montagne, de route et j’aime aussi aller à la pêche. L’hiver, je fais de la raquette, du ski alpin et de la motoneige. Je m’intéresse à différents domaines comme l’informatique, les mathématiques et les sciences. Chaque année, je participe à plusieurs concours tels qu’Opti-math, AQJM, Cyberomnium, Expo-Sciences… Jusqu’à maintenant j’ai remporté 3 fois la 1re position au régional d’Opti-math. En 5e année, je suis arrivé 1er au concours AQJM, ce qui m’a permis de participer à la finale internationale qui avait lieu à Paris. En 6e année, j’ai remporté le 1er prix d’Expo-sciences régionale. En secondaire 1 et 2 j’ai gagné des prix en argent à la régionale. Cette année, j’ai remporté une bourse d’étude de 1000$ de l’Université Laval. Et finalement, pour mon plus grand bonheur, me voici à l’Expo-sciences pancanadienne."
 );
 
 INSERT INTO projects
@@ -7165,7 +7141,7 @@ VALUES (
 	"Le plasma: bien plus qu'un état",
 	2,
 	10,
-	"Estrie",
+	71,
 	"Séminaire Salésien",
 	"Dans cet exposé, je vais lever le voile sur quelque chose qui en fait rêver plus d'un: le plasma. Je vais montrer comment on crée le quatrième état de la matière et expliquer comment on peut l'utiliser pour sauver l'environnement, détruire des maladies et bien plus…"
 );
@@ -7214,12 +7190,85 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1495,
+	2008,
+	"Lead in Lettuce",
+	1,
+	12,
+	121,
+	"Kwantlen Park Secondary",
+	"I tested lettuce samples for lead. I thought organic lettuce would have less lead than non-organic. I froze and crushed my lettuce samples, placed them in vials, added acid and spun them. I extracted the supernatant, used a reagent and tested the fluid spectrophotometrically. Lead was present in most samples at low levels, but the levels of organic and non-organic lettuce were practically the same."
+);
+INSERT INTO project_divisions(project, division) VALUES(1495, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1495,
+	1,
+	"David Shorey",
+	"Surrey",
+	NULL,
+	"David is an eighth grade student at Kwantlen Park Secondary in Surrey, B.C. He plays the clarinet in the school’s Concert Band, had a part in the school play and studies piano. He enjoys fencing foil competitively and placed 5th in the 2008 B.C. Youth Provincial Championships. His interests include video games, strategy games and reading. His career plans could involve video game programming, working in the Mars Rover program at NASA, or stand-up comedy."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1510,
+	2008,
+	"Left or Right: Side Dominance",
+	1,
+	9,
+	67,
+	"Richmond Hill Montessori and Elementary Private School",
+	"There are two purposes of this investigation. The first is to find out if one’s writing hand determines side preference in daily activities. The other purpose was to find out the population of different side-dominance (left or right). The outcome concluded that yes, one’s writing hand will affect side preference. Right-dominance prevails and that is consistent in different age groups."
+);
+INSERT INTO project_divisions(project, division) VALUES(1510, 8);
+INSERT INTO project_divisions(project, division) VALUES(1510, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1510,
+	1,
+	"Karina Mio",
+	"Richmond Hill",
+	NULL,
+	"I enjoy doing many logic puzzles and riddles and I can finish the Rubik's Cube. I am currently playing for two soccer rep teams: the Richmond Hill 1996 Girls Raiders and the York Region Soccer Team. I play soccer 5-6 days a week. My ambition would be to play on the Ontario provincial team. I also go to Spirit Of Math Schools once a week. I would like to go to Bayview Secondary School and attend the IB program for high school. I speak English and Cantonese fluently, but can still speak in French. I hope to be an accountant when I grow up, just like my mom."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1266,
+	2008,
+	"Le béton idéal",
+	3,
+	6,
+	17,
+	"École-canadienne-française",
+	"Mon projet consiste de la détermination du mélange (granulats, ciment et eau) qui donnera le béton idéal. De plus, je cherche à identifier le facteur du temps, la quantité d'eau ainsi que du ciment chez le béton. J'ai réussi à effectuer ces identifications à l'aide d'une presse hydraulique qui compresse mes échantillons de béton."
+);
+INSERT INTO project_divisions(project, division) VALUES(1266, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1266,
+	1,
+	"Etienne Fortier",
+	"Saskatoon",
+	NULL,
+	"je m'appelle Étienne Fortier, je suis un jeune Fransaskois de la Saskatchewan puis j'habite sur une ferme près de Saskatoon. Originaire de Zénon Park, un petit village francophone au Nord Est de la province d'une population d'environ 200 habitants, ma famille et moi sommes déménagé à Saskatoon en 2005. De plus, Je suis beaucoup impliqué dans mon école, ma communauté fransaskoise puis aussi dans les sports. J'aime bien être dehors dans la nature car j'ai vécu toute ma jeunesse sur une ferme d'apiculteur. Ceci m'a permis de développer un vrai sens d'appréciation pour l'agriculture et la vie dans les prairies. Cet automne, j'envisage étudier la génie civile au collège technique SIAST à Moose Jaw en Saskatchewan. J'ai toujours eu une passion pour la construction et cela est pourquoi j'envisage faire carrière dans ce domaine."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1561,
 	2008,
 	"Le compost améliore la santé des pommiers et réduit l'infestation des acarie",
 	2,
 	1,
-	"Conseil scolaire acadien provincial (CSAP)",
+	117,
 	"École Rose-des-Vents",
 	"Le but de mon projet était de déterminer si la chlorophylle des feuilles, la hauteur des pommiers ou la fécondité des acariens jaunes sur les pommiers sont affectées différemment par le N organique ou par le N synthétique."
 );
@@ -7279,36 +7328,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1495,
-	2008,
-	"Lead in Lettuce",
-	1,
-	12,
-	"South Fraser",
-	"Kwantlen Park Secondary",
-	"I tested lettuce samples for lead. I thought organic lettuce would have less lead than non-organic. I froze and crushed my lettuce samples, placed them in vials, added acid and spun them. I extracted the supernatant, used a reagent and tested the fluid spectrophotometrically. Lead was present in most samples at low levels, but the levels of organic and non-organic lettuce were practically the same."
-);
-INSERT INTO project_divisions(project, division) VALUES(1495, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1495,
-	1,
-	"David Shorey",
-	"Surrey",
-	NULL,
-	"David is an eighth grade student at Kwantlen Park Secondary in Surrey, B.C. He plays the clarinet in the school’s Concert Band, had a part in the school play and studies piano. He enjoys fencing foil competitively and placed 5th in the 2008 B.C. Youth Provincial Championships. His interests include video games, strategy games and reading. His career plans could involve video game programming, working in the Mars Rover program at NASA, or stand-up comedy."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1508,
 	2008,
 	"Learning Styles and Strengths of 7th Graders",
 	1,
 	9,
-	"York",
+	67,
 	"Silver Stream P.S.",
 	"Based on my original experiment, I determined the unique cognitive profiles and preferred learning styles of my classmates and myself. The results from the data analysis are significant. By knowing our learning strengths and styles, we can develop learning strategies to compensate for our weaknesses and capitalize on our strengths. By expanding on our current learning skills, we will better meet the challenges ahead."
 );
@@ -7347,37 +7372,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1510,
-	2008,
-	"Left or Right: Side Dominance",
-	1,
-	9,
-	"York",
-	"Richmond Hill Montessori and Elementary Private School",
-	"There are two purposes of this investigation. The first is to find out if one’s writing hand determines side preference in daily activities. The other purpose was to find out the population of different side-dominance (left or right). The outcome concluded that yes, one’s writing hand will affect side preference. Right-dominance prevails and that is consistent in different age groups."
-);
-INSERT INTO project_divisions(project, division) VALUES(1510, 8);
-INSERT INTO project_divisions(project, division) VALUES(1510, 1);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1510,
-	1,
-	"Karina Mio",
-	"Richmond Hill",
-	NULL,
-	"I enjoy doing many logic puzzles and riddles and I can finish the Rubik's Cube. I am currently playing for two soccer rep teams: the Richmond Hill 1996 Girls Raiders and the York Region Soccer Team. I play soccer 5-6 days a week. My ambition would be to play on the Ontario provincial team. I also go to Spirit Of Math Schools once a week. I would like to go to Bayview Secondary School and attend the IB program for high school. I speak English and Cantonese fluently, but can still speak in French. I hope to be an accountant when I grow up, just like my mom."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1361,
 	2008,
 	"Left or Right?",
 	1,
 	9,
-	"Avon Maitland-Huron Perth",
+	53,
 	"Colborne Central P.S.",
 	"The experimenter did her science fair project on handedness. Experts have stated that left-handed persons tend to be more creative than right-handed persons. The experimenter did a test to see if the statistics were correct. The experimenter tested ten left and right-handed students in her school by using the Rorschach Inkblot test, ""Creativity Questions"", and a survey. She also asked the subjects to draw themselves."
 );
@@ -7401,7 +7401,7 @@ VALUES (
 	"Lending a Hand: Bio Gloves",
 	1,
 	9,
-	"Avon Maitland-Huron Perth",
+	53,
 	"Colborne Central P.S.",
 	"Environmental problems are growing globally. This project aims to reduce the amount of petroleum products wasted by using non-biodegradable surgical gloves by creating a biodegradable one. Three different starches were tested in creating the plastic and potato starch was he most suitable. A glove was composed of this starch and the water strength of this plastic was also tested. Labeling of biodegradable-plastics is also important."
 );
@@ -7426,7 +7426,7 @@ VALUES (
 	"Left? or Right? - Lateral Dominance in Cats",
 	2,
 	9,
-	"Victoria County",
+	64,
 	"Lindsay Collegiate and Vocational Institute",
 	"Lateral dominance was tested in 100+ housecats. A statistically significant (95% level or higher) pattern of preference was found with female cats showing preference for the left side when compared to male cats. Paw preference was tested over two years (2007/2008) with male cats showing significant (95% level or higher) right paw preference and female cats showing significant left paw preference during problem solving."
 );
@@ -7470,7 +7470,7 @@ VALUES (
 	"Les commandes hydrauliques",
 	1,
 	10,
-	"Outaouais",
+	76,
 	"École Hormisdas-Gamelin",
 	"Nous avons conçu un système de commandes hydrauliques miniatures pouvant actionner un vérin de pelle hydraulique. Nous avons également conçu le vérin en question. Le vérin hydraulique est une seringue en plastique que nous avons modifié. Nous avons aussi conçu et fabriqué la pompe hydraulique à partir de seringues en plastique."
 );
@@ -7494,30 +7494,6 @@ VALUES (
 	"Gatineau",
 	NULL,
 	"Bonjour mon nom est Isabelle Fournier et j'ai 12 ans. Je fréquente l'école secondaire Hormisdas-Gamelin de Gatineau et je suis en secondaire 1. C'est ma deuxième année en tant que participante a l'Expo-science. L'an dernier nous avons remporté, ma copine Claudia Leclerc et moi le premier prix a la finale régionale. Le titre de notre projet 'La Pelle Hydraulique'. J'adore l'école. J'ai des tas d'amis avec lesquels je partage différentes expériences très enrichissantes. J'ai des cours de musique, d'arts plastiques, d'anglais et d'espagnol etc., bref, j'aime beaucoup apprendre. Je fais du karaté depuis 6 ans. J'en suis a la ceinture bleue. Je compte bien obtenir ma ceinture noire. Je devrai attendre d'avoir mes 16 ans. J'ai suivi un cours de gardiens/gardiennes avertis. Cet été j'offrirai mes services en tant que gardienne. Mes loisirs sont: le magasinage, la bicyclette, beaucoup de lecture et le karaté. Dans quelques années, j'aimerais étudier dans le domaine de la santé. La médecine m'intéresse et aussi la recherche en laboratoire. J'avoue que depuis que je participe a l'Expo-science le domaine de l'ingénierie m'intéresse. J'aimerais peut-être combiner les deux. Au plaisir de vous rencontrer au mois de mai. Isabelle...."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1556,
-	2008,
-	"Les courants océaniques",
-	2,
-	1,
-	"Conseil scolaire acadien provincial (CSAP)",
-	"École du Carrefour",
-	"Afin d'étudier les courants océaniques, j'ai preparé 240 bouteilles biodégradables, chacune avec un message. Ce message dirigerai le récupérant à un site-web où les données seront analysées afin de confirmer les trajets des courants océaniques. Selon mes points de lancement prédeterminés, la Garde côtière canadienne a accepté de lancer mes bouteilles de l'océan Atlantique jusqu'à la mer Arctique pendant leur excursion polaire 2007."
-);
-INSERT INTO project_divisions(project, division) VALUES(1556, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1556,
-	1,
-	"Bonita LeBlanc",
-	"Dartmouth",
-	NULL,
-	"Cette annee est la premiere annee que je participe a l'Expo Science Nationale. J'ai hate a voir la ville d'Ottawa et de rencontrer de nouveaux ami(e)s. J’habite à Dartmouth en Nouvelle-Écosse et je suis en 9ieme annee a l’école Carrefour. J'adore la natation, le ski nautique ,la ringuette, et de faire la planche a neige. A present, je suis en train de suivre un cours de WSI (Water Safety Instructor) pour etre capable d'enseigner au jeunes comment nager. Tous les samedis, vous pouvez me trouver sur la scene, car je suis membre d'un club d'art dramatique. J'adore la danse ""Ballroom"" et le ""Hip-Hop"". Je suis membre du comité environnemental ""univert"" de mon ecole. J’aimerais continuer ma recherche en océanographie et plus tard, devenir oceanographe."
 );
 
 INSERT INTO projects
@@ -7557,12 +7533,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1556,
+	2008,
+	"Les courants océaniques",
+	2,
+	1,
+	117,
+	"École du Carrefour",
+	"Afin d'étudier les courants océaniques, j'ai preparé 240 bouteilles biodégradables, chacune avec un message. Ce message dirigerai le récupérant à un site-web où les données seront analysées afin de confirmer les trajets des courants océaniques. Selon mes points de lancement prédeterminés, la Garde côtière canadienne a accepté de lancer mes bouteilles de l'océan Atlantique jusqu'à la mer Arctique pendant leur excursion polaire 2007."
+);
+INSERT INTO project_divisions(project, division) VALUES(1556, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1556,
+	1,
+	"Bonita LeBlanc",
+	"Dartmouth",
+	NULL,
+	"Cette annee est la premiere annee que je participe a l'Expo Science Nationale. J'ai hate a voir la ville d'Ottawa et de rencontrer de nouveaux ami(e)s. J’habite à Dartmouth en Nouvelle-Écosse et je suis en 9ieme annee a l’école Carrefour. J'adore la natation, le ski nautique ,la ringuette, et de faire la planche a neige. A present, je suis en train de suivre un cours de WSI (Water Safety Instructor) pour etre capable d'enseigner au jeunes comment nager. Tous les samedis, vous pouvez me trouver sur la scene, car je suis membre d'un club d'art dramatique. J'adore la danse ""Ballroom"" et le ""Hip-Hop"". Je suis membre du comité environnemental ""univert"" de mon ecole. J’aimerais continuer ma recherche en océanographie et plus tard, devenir oceanographe."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1356,
 	2008,
 	"Les graines de la Saskatchewan: un apport assuré en sélénium",
 	3,
 	6,
-	"Fransaskoise",
+	17,
 	"École-canadienne-française",
 	"L’utilisation de la spectrométrie d’absorption atomique et des rayons X de faible énergie (Synchrotron, Saskatoon), a permis de détecter la présence de sélénium et d’autres minéraux tels que l’azote, l’oxygène, le fer et le silicium, dans des graines de plantes cultivées en Saskatchewan."
 );
@@ -7611,12 +7611,37 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1502,
+	2008,
+	"Let the Wind Blow - But Make Your Turbine Efficient",
+	1,
+	9,
+	56,
+	"Chatham Christian E.S.",
+	"This project looked at the output voltage of two vertical axis wind turbines (two blades vs three blades). Four different wind speeds were simulated using a fan and a hairdryer and the output voltage for each wind turbine was measured. The three blade turbine produced more electricity in all cases because of the increased surface area of the wind turbine blades."
+);
+INSERT INTO project_divisions(project, division) VALUES(1502, 7);
+INSERT INTO project_divisions(project, division) VALUES(1502, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1502,
+	1,
+	"Alex Pardy",
+	"Dover Centre",
+	NULL,
+	"My name is Alex Pardy and I am a 12-year-old, grade seven student at Chatham Christian School in Chatham, Ontario. I live outside Chatham in the village of Dover Centre with my parents and two younger brothers and my little sister. This is my first year involved in science fairs. Music and sports are significant in my life, especially piano and hockey, both of which I have played since the age of five. Recently, I have started to learn the clarinet and would like to learn to play the guitar. My hobbies include reading, computer gaming and playing soccer, fastball and basketball. In the future, I would like to be either an engineer or doctor."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1576,
 	2008,
 	"Let the River Flow",
 	2,
 	9,
-	"Bluewater",
+	55,
 	"Sacred Heart H.S.",
 	"This project examined the water quality of the Saugeen, Pine and Penetangore River Watersheds. Thirty sites were tested for nitrates, E. coli and coliforms, fifty well water sites were tested for nitrates and one thousand participants completed a pharmaceutical survey. The results concluded that conservation and education should be enforced to improve the health of the watersheds and preserve our freshwater resources for future generations."
 );
@@ -7676,26 +7701,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1502,
+	1388,
 	2008,
-	"Let the Wind Blow - But Make Your Turbine Efficient",
+	"Likin' Lichen Protection",
 	1,
-	9,
-	"Chatham-Kent",
-	"Chatham Christian E.S.",
-	"This project looked at the output voltage of two vertical axis wind turbines (two blades vs three blades). Four different wind speeds were simulated using a fan and a hairdryer and the output voltage for each wind turbine was measured. The three blade turbine produced more electricity in all cases because of the increased surface area of the wind turbine blades."
+	12,
+	85,
+	"Dr. Knox Middle School",
+	"We extracted pigments out of 8 kinds of lichens and made them into dyes which we ran through a spectrophotometer to see how much U.V. light they absorbed. We did this to see if pigments from lichens absorb U.V. so that we could find out if they would be useful as natural sunscreens."
 );
-INSERT INTO project_divisions(project, division) VALUES(1502, 7);
-INSERT INTO project_divisions(project, division) VALUES(1502, 6);
+INSERT INTO project_divisions(project, division) VALUES(1388, 500);
+INSERT INTO project_divisions(project, division) VALUES(1388, 6);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1502,
+	1388,
 	1,
-	"Alex Pardy",
-	"Dover Centre",
+	"Emma Walker",
+	"Kelowna",
 	NULL,
-	"My name is Alex Pardy and I am a 12-year-old, grade seven student at Chatham Christian School in Chatham, Ontario. I live outside Chatham in the village of Dover Centre with my parents and two younger brothers and my little sister. This is my first year involved in science fairs. Music and sports are significant in my life, especially piano and hockey, both of which I have played since the age of five. Recently, I have started to learn the clarinet and would like to learn to play the guitar. My hobbies include reading, computer gaming and playing soccer, fastball and basketball. In the future, I would like to be either an engineer or doctor."
+	"I am 13 and in grade 8 at Dr. Knox School. My mom, dad and I lived in Switzerland for a year when I was two years old while my dad was on sabbatical. Some activities I enjoy are swimming, skiing, pond hockey, kayaking, hiking and soccer. I love drawing and reading novels such as the Harry Potter series and the Redwall series, as well as science fiction books such as, A Wrinkle in Time and On Thin Ice (which is about how Global Warming might affect the Arctic). At the moment, I play piano and soccer but in the past I have done choir, windsurfing, sailing, gymnastics, ballet, Irish dance, horseback riding, volleyball, pottery and field hockey. I have a pet border collie named Freckles (he is called Freckles because he has them on his nose). I used to have two rabbits named Rosedust and Thunder and many fish. My favorite subject is Science (obviously) although I also like Math and English. When I grow up I want to become a scientist and travel the world collecting research data like my father."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1388,
+	2,
+	"Madalyn  Light",
+	"Kelowna",
+	NULL,
+	"My name is Madalyn Lorraine Light. I was born in Al-Khobar Saudi Arabia. I live in Kelowna, British Columbia. When I was little I traveled to several places like Greece, London, Bahrain and France. I love doing crafts, swimming, hiking, sewing and drawing. Ice hockey is my favorite sport. My favorite animal is the elephant and I love the colour purple. My hobbies are collecting miscellaneous items like jewelry, pennies, stuffed animals and rocks. Another hobby is photography. I love talking pictures of random stuff and pictures of the outdoors. After I graduate I want to travel in Europe. When I grow up I want to be an elementary school teacher in the Okanagan Valley."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1388,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1388,
+	2,
+	"Bronze Medal - Biotechnology & Pharmaceutical Sciences",
+	"Junior",
+	"Rx&D Health Research Foundation",
+	300.00
 );
 
 INSERT INTO projects
@@ -7706,7 +7761,7 @@ VALUES (
 	"Let there be Light",
 	3,
 	11,
-	"Calgary Youth",
+	81,
 	"Sir Winston Churchill High School",
 	"This experiment was performed to discover if LEDs emitting a narrow spectrum of light could be used to grow plants as a substitute to traditional artificial lighting with similar results. Six different colours of LEDs were used to grow radish plants, along with a positive and a negative control. The resultant biomasses and heights for each approximate wavelength range of light were compared."
 );
@@ -7781,7 +7836,7 @@ VALUES (
 	"Life or Death! Will the snowmobile float?",
 	2,
 	NULL,
-	"Halifax",
+	114,
 	"Sackville Heights Junior High School",
 	"Our goal was to create a snowmobile with a self-inflating airbag attached underneath. It would run underneath the footboards and once the snowmobile is under at least 10 centimeters of water, it would inflate; causing the snowmobile to float. This invention can be used in deadly situations; when the ice they are driving on cracks for example."
 );
@@ -7810,56 +7865,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1388,
+	1311,
 	2008,
-	"Likin' Lichen Protection",
-	1,
+	"Lost inTranscription?The Effects of Mutations Through Eukaryotic Gene Expression",
+	2,
 	12,
-	"Central Okanagan",
-	"Dr. Knox Middle School",
-	"We extracted pigments out of 8 kinds of lichens and made them into dyes which we ran through a spectrophotometer to see how much U.V. light they absorbed. We did this to see if pigments from lichens absorb U.V. so that we could find out if they would be useful as natural sunscreens."
+	84,
+	"Westside Academy",
+	"This project has been done to study the effects of mutagens on eukaryotic cells through working with yeast cells. For the experiment a number of different possible mutagens were chosen to induce into a strain of yeast cells to determine the effect."
 );
-INSERT INTO project_divisions(project, division) VALUES(1388, 500);
-INSERT INTO project_divisions(project, division) VALUES(1388, 6);
+INSERT INTO project_divisions(project, division) VALUES(1311, 500);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1388,
+	1311,
 	1,
-	"Emma Walker",
-	"Kelowna",
+	"Hailey  Alexander",
+	"Prince George",
 	NULL,
-	"I am 13 and in grade 8 at Dr. Knox School. My mom, dad and I lived in Switzerland for a year when I was two years old while my dad was on sabbatical. Some activities I enjoy are swimming, skiing, pond hockey, kayaking, hiking and soccer. I love drawing and reading novels such as the Harry Potter series and the Redwall series, as well as science fiction books such as, A Wrinkle in Time and On Thin Ice (which is about how Global Warming might affect the Arctic). At the moment, I play piano and soccer but in the past I have done choir, windsurfing, sailing, gymnastics, ballet, Irish dance, horseback riding, volleyball, pottery and field hockey. I have a pet border collie named Freckles (he is called Freckles because he has them on his nose). I used to have two rabbits named Rosedust and Thunder and many fish. My favorite subject is Science (obviously) although I also like Math and English. When I grow up I want to become a scientist and travel the world collecting research data like my father."
+	"I have many hobbies including drawing, performing arts, and science. In 2007 I competed in the music festival in two categories: classical and musical theatre receiving honours in the classical category and was awarded to be an observer in BC Performing Arts 2007. This year I received two honour awards, one in musical theatre and in the classical category. I have accomplished different levels of voice lessons and I am presently in grade 6. Another hobby is acting. I participated in two musicals in the city which included acting, dancing and singing. I have participated in science fair for approximately 6 years. These two previous years we have received a total of 6 awards. One notable experience was our school drama group went to New York city to help with the homeless, worked in soup kitchens, handed out blankets and food. We also saw the Broadway play, The Phantom of the Opera. Another experience was our trip to Italy to see my father's half sister. That was an amazing experience they were meeting each other for the first time. The past 2 summers our school drama group has worked at a summer kids camp in Thunder Bay."
 );
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1388,
+	1311,
 	2,
-	"Madalyn  Light",
-	"Kelowna",
+	"Jenna Dimler",
+	"Prince George",
 	NULL,
-	"My name is Madalyn Lorraine Light. I was born in Al-Khobar Saudi Arabia. I live in Kelowna, British Columbia. When I was little I traveled to several places like Greece, London, Bahrain and France. I love doing crafts, swimming, hiking, sewing and drawing. Ice hockey is my favorite sport. My favorite animal is the elephant and I love the colour purple. My hobbies are collecting miscellaneous items like jewelry, pennies, stuffed animals and rocks. Another hobby is photography. I love talking pictures of random stuff and pictures of the outdoors. After I graduate I want to travel in Europe. When I grow up I want to be an elementary school teacher in the Okanagan Valley."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1388,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1388,
-	2,
-	"Bronze Medal - Biotechnology & Pharmaceutical Sciences",
-	"Junior",
-	"Rx&D Health Research Foundation",
-	300.00
+	"From playing piano to organizing items and information I have quite a variety of things that interest me. I like to draw, play piano, perform, organize, do science, read, etc. My favourite country is Germany but I would love to see ALL of Europe one day. I have participated in a variety of recitals, exams, and a few competitions for my piano. I've won three medals for music festival and have done two practical examinations. In regard to science, I have now been to the CISE science fair five times. Last year My partner Hailey and I won two awards for our science fair project and this year we won four major awards including the best in Health Sciences award. I am part of a drama team and have done a variety of kids camps as well as a trip to New York recently in March to help the homeless. I love working with people whether it's by helping them, encouraging them, or teaching them. My post secondary career plans are to be a Physical Therapist after my graduation. I am looking into studying at Queen's or McGill and possibly overseas."
 );
 
 INSERT INTO projects
@@ -7870,7 +7904,7 @@ VALUES (
 	"Lingering Herbicides",
 	2,
 	1,
-	"Chignecto Central West",
+	4,
 	"South Colchester Academy",
 	"We studied two methodologies to gain first hand knowledge on how herbicides can be detected in water and in soil. In addition, we carried out a case study to determine if Velpar could be detected in local runoff water from tile-drained blueberry fields. We tested for presence of the herbicide in water samples using Thin Layer Chromatography."
 );
@@ -7910,46 +7944,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1311,
-	2008,
-	"Lost inTranscription?The Effects of Mutations Through Eukaryotic Gene Expression",
-	2,
-	12,
-	"Central Interior British Columbia",
-	"Westside Academy",
-	"This project has been done to study the effects of mutagens on eukaryotic cells through working with yeast cells. For the experiment a number of different possible mutagens were chosen to induce into a strain of yeast cells to determine the effect."
-);
-INSERT INTO project_divisions(project, division) VALUES(1311, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1311,
-	1,
-	"Hailey  Alexander",
-	"Prince George",
-	NULL,
-	"I have many hobbies including drawing, performing arts, and science. In 2007 I competed in the music festival in two categories: classical and musical theatre receiving honours in the classical category and was awarded to be an observer in BC Performing Arts 2007. This year I received two honour awards, one in musical theatre and in the classical category. I have accomplished different levels of voice lessons and I am presently in grade 6. Another hobby is acting. I participated in two musicals in the city which included acting, dancing and singing. I have participated in science fair for approximately 6 years. These two previous years we have received a total of 6 awards. One notable experience was our school drama group went to New York city to help with the homeless, worked in soup kitchens, handed out blankets and food. We also saw the Broadway play, The Phantom of the Opera. Another experience was our trip to Italy to see my father's half sister. That was an amazing experience they were meeting each other for the first time. The past 2 summers our school drama group has worked at a summer kids camp in Thunder Bay."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1311,
-	2,
-	"Jenna Dimler",
-	"Prince George",
-	NULL,
-	"From playing piano to organizing items and information I have quite a variety of things that interest me. I like to draw, play piano, perform, organize, do science, read, etc. My favourite country is Germany but I would love to see ALL of Europe one day. I have participated in a variety of recitals, exams, and a few competitions for my piano. I've won three medals for music festival and have done two practical examinations. In regard to science, I have now been to the CISE science fair five times. Last year My partner Hailey and I won two awards for our science fair project and this year we won four major awards including the best in Health Sciences award. I am part of a drama team and have done a variety of kids camps as well as a trip to New York recently in March to help the homeless. I love working with people whether it's by helping them, encouraging them, or teaching them. My post secondary career plans are to be a Physical Therapist after my graduation. I am looking into studying at Queen's or McGill and possibly overseas."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1620,
 	2008,
 	"Magiques ou toxiques?",
 	1,
 	10,
-	"Saguenay-Lac Saint-Jean",
+	79,
 	"Séminaire de Chicoutimi, services éducatifs",
 	"Depuis quelques années, les boissons énergisantes ornent les tablettes des dépaneurs et charment des milliers d'adeptes. Elles permettent l'énergie instantannée et s'affichent naturelles. Par mon expérience et mes recherches, j'ai voulu confronter ces perceptions afin de vérifier si elles sont réellement magiques ou si elle peuvent êtres toxiques pour la santé."
 );
@@ -7983,7 +7983,7 @@ VALUES (
 	"Making Bricks from Mine Tailings",
 	2,
 	9,
-	"Timmins",
+	51,
 	"Kirkland Lake Collegiate & Vocational Institute",
 	"Mine tailings are a waste byproduct of the gold mining process used throughout the world. Millions of tons of tailings are stored in unsightly ponds (often native lakes and wetlands) forming environmental wastelands. By combining tailings verified to be chemically inert with portland cement in varying ratios, we produced a molded brick strong enough to serve as a commercial or decorative product."
 );
@@ -8033,46 +8033,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1607,
-	2008,
-	"Matter over Mind",
-	1,
-	9,
-	"Niagara",
-	"Colonel John Butler",
-	"This project studied the psychological theories of conformity. It was a blind experiment in which subjects were told that one of the four identical sugars they were tasting was sweeter and that the study was looking at age, gender and sense of taste. Only one subject was not swayed by pressure to state that they thought one of the sugars were sweeter than the rest."
-);
-INSERT INTO project_divisions(project, division) VALUES(1607, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1607,
-	1,
-	"Alex Hobbs",
-	"Niagara-on-the-Lake",
-	NULL,
-	"My name is Alex Hobbs. I was born June 4 , 1994 and I live in beautiful Niagara-on-the-Lake. I have participated in my regional science fair twice, where I won several awards for my 2006 project on electromagnetism, and I was thrilled this year when I won my division and was granted the chance of coming to Ottawa to compete. Not only do I love science, but I am also interested in sports. I play competitive soccer and hockey. I am on the school basketball team and have participated in three on three tournaments outside of school. I enjoy long distance running and have been a member of the track and cross country teams. I am currently school president. I have been on the debate team for three years, am the yearbook chair, chess team captain, I participate in my school’s eco school program and have participated in the part-time gifted program. Last summer, I volunteered for Red Roof Retreat, which is a respite center for mentally and physically challenged children. This was an amazing experience. I am extremely happy that I have been chosen to come to Ottawa, and am looking forward to a fun week of science."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1607,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1526,
 	2008,
 	"Mechanics of Bioplastics",
 	1,
 	12,
-	"Greater Vancouver",
+	90,
 	"Queen Mary Elementary",
 	"Firstly, I studied three commercial bioplastics: Capers, SPUD and Daniel le Chocolat Belge. I placed them in 12 different environments. The results were that Daniel le Chocolat Belge plastic decomposed the fastest and the north compost decomposed the bioplastics the fastest. Secondly, I made many homemade bioplastics and compared them to Daniel le Chocolate Belge plastic, and I learned that my bioplastics decompose faster."
 );
@@ -8112,34 +8078,34 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1263,
+	1607,
 	2008,
-	"Mobility for the Disabled",
+	"Matter over Mind",
 	1,
-	11,
-	"Peace Country",
-	"Prairie River Junior High School",
-	"The Aly-mobile bike was constructed to assist the mobility a disabled person. It is a three wheeled, low one handled design in order to facilitate its use by people with physical disabilities. I designed it like this to enable my cousin to have more independence to get around."
+	9,
+	60,
+	"Colonel John Butler",
+	"This project studied the psychological theories of conformity. It was a blind experiment in which subjects were told that one of the four identical sugars they were tasting was sweeter and that the study was looking at age, gender and sense of taste. Only one subject was not swayed by pressure to state that they thought one of the sugars were sweeter than the rest."
 );
-INSERT INTO project_divisions(project, division) VALUES(1263, 7);
+INSERT INTO project_divisions(project, division) VALUES(1607, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1263,
+	1607,
 	1,
-	"Kendall Carlson",
-	"High Prairie",
+	"Alex Hobbs",
+	"Niagara-on-the-Lake",
 	NULL,
-	"I am Kendall Carlson and am 13 years old. I live in the High Prairie,Alberta. I live on a farm and enjoy being outside with our pets and the cows. I am active in school sports such as volleyball, badminton, and track. I also go to our school art club once a week. I have been a honors student for the duration of my schooling. I became interested in trying to get to nationals last year. To achieve that goal I decided I needed to invent something. I chose to invent and make a bike for a disabled person. My motivation was my cousin, who has Cerebral Palsy."
+	"My name is Alex Hobbs. I was born June 4 , 1994 and I live in beautiful Niagara-on-the-Lake. I have participated in my regional science fair twice, where I won several awards for my 2006 project on electromagnetism, and I was thrilled this year when I won my division and was granted the chance of coming to Ottawa to compete. Not only do I love science, but I am also interested in sports. I play competitive soccer and hockey. I am on the school basketball team and have participated in three on three tournaments outside of school. I enjoy long distance running and have been a member of the track and cross country teams. I am currently school president. I have been on the debate team for three years, am the yearbook chair, chess team captain, I participate in my school’s eco school program and have participated in the part-time gifted program. Last summer, I volunteered for Red Roof Retreat, which is a respite center for mentally and physically challenged children. This was an amazing experience. I am extremely happy that I have been chosen to come to Ottawa, and am looking forward to a fun week of science."
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1263,
+	1607,
 	1,
-	"Honourable Mention - Engineering",
+	"Honourable Mention - Health Sciences",
 	"Junior",
-	"Youth Science Foundation Canada",
+	"Canadian Institutes of Health Research",
 	100.00
 );
 
@@ -8151,7 +8117,7 @@ VALUES (
 	"Microbes At War",
 	3,
 	9,
-	"Simcoe County",
+	62,
 	"Pretty River Academy",
 	"The purpose of this experiment was to determine the affects of four common antibiotics on Gram-negative and Gram-positive bacteria; and to study antibiotic resistance in bacteria which have been exposed to ultraviolet light. Bacterial vulnerability to antibiotics was measured in culture plates using susceptibility discs. It was concluded that the two classifications of bacteria reacted differently to the antibiotics tested due to dissimilar cellular structure."
 );
@@ -8190,56 +8156,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1570,
-	2008,
-	"More to Light than Meets the Eye Phase II",
-	2,
-	11,
-	"Edmonton",
-	"Richard F Staples Secondary School",
-	"In this experiment, set out to determine whether oscillating LED light holds any effect over the speed of bacterial growth. After isolating samples of streptococci, facilus, and fungus, I focused a variety of LEDs on them. After an incubation period of twenty-four hours, I am able to come to the conclusion that pulsing LED light dose not have any effect to these three non-photosynthesizing bacteria."
-);
-INSERT INTO project_divisions(project, division) VALUES(1570, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1570,
-	1,
-	"Kyle Schole",
-	"Pickardville",
-	NULL,
-	"Kyle Schole lives on a farm one hour northwest of Edmonton, Alberta. His family, who consist of his mother, father, and younger sister and brother, support him with his science work, but do occasionally tire of the messes he leaves in his wake. Some of his favorite pastimes include reading, playing his flute, playing on his flight simulator, and of course, working on his latest science fair project. He attends Grade nine in Westlock’s RF Staples Secondary School. When he graduates, Kyle hopes to enter the feild of microbiology. Also, he is very interested in attaining his piolets licence. This is Kyle’s seventh science fair project, and his second getting to the Canada Wide Fair. This year’s project is a continuation of his research with LEDs, and he has learned a lot about electricity when trying to wire the 555 IC's. Kyle has had a lot of fun with this project and feels that the experience will aid him later in life, whether he enters a profession in science or elsewear, he will always remember his experiences in school, 4-H, and the science fair!"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1570,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1570,
-	2,
-	"Bronze Medal - Life Sciences",
-	"Intermediate",
-	"Pfizer Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1352,
 	2008,
 	"Microarray Profiling of Gene Expression in the Normal Aging Brain of Drosophila",
 	3,
 	9,
-	"Bay Area",
+	54,
 	"Appleby College",
 	"A better understanding of the molecular effects of aging in the brain may help to reveal processes that lead to age-related brain dysfunction and neurodegenerative diseases. Two channel oligonucleotide cDNA microarrays were used to investigate genome-wide gene expression throughout aging in the Drosophila brain. Gene expression relating to synaptic transmission, energy metabolism, proton transport, and response to light were significantly dysregulated throughout aging."
 );
@@ -8328,12 +8250,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1263,
+	2008,
+	"Mobility for the Disabled",
+	1,
+	11,
+	97,
+	"Prairie River Junior High School",
+	"The Aly-mobile bike was constructed to assist the mobility a disabled person. It is a three wheeled, low one handled design in order to facilitate its use by people with physical disabilities. I designed it like this to enable my cousin to have more independence to get around."
+);
+INSERT INTO project_divisions(project, division) VALUES(1263, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1263,
+	1,
+	"Kendall Carlson",
+	"High Prairie",
+	NULL,
+	"I am Kendall Carlson and am 13 years old. I live in the High Prairie,Alberta. I live on a farm and enjoy being outside with our pets and the cows. I am active in school sports such as volleyball, badminton, and track. I also go to our school art club once a week. I have been a honors student for the duration of my schooling. I became interested in trying to get to nationals last year. To achieve that goal I decided I needed to invent something. I chose to invent and make a bike for a disabled person. My motivation was my cousin, who has Cerebral Palsy."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1263,
+	1,
+	"Honourable Mention - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1419,
 	2008,
 	"Mountain Pine Beetle: The Silent Fire",
 	2,
 	12,
-	"Cariboo Mainline",
+	82,
 	"Kamloops Secondary",
 	"This project studied and determined the effects of CO2 release from mature lodgepole pine after attack from mountain pine beetle and how it will contribute to climate change. Through data analysis and identification of significant variables, I was able to determine total CO2 release from cumulative hectares of attacked lodgepole pine. Results have given new and valuable insight on this topic."
 );
@@ -8368,7 +8324,7 @@ VALUES (
 	"Musical Diaphragms?",
 	1,
 	9,
-	"Ottawa",
+	44,
 	"Turnbull School",
 	"I tested to see whether playing different wind or brass instruments, age, gender or height affects the strength of peoples' respiratory muscles. Instrumentalists had stronger inspiratory and expiratory muscles then non-instrumentalists. Expiratory results improved with age. Males had higher results than females. Height did not affect results. People who played smaller instruments that played higher notes had better results. Musical experience did not affect results."
 );
@@ -8407,12 +8363,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1570,
+	2008,
+	"More to Light than Meets the Eye Phase II",
+	2,
+	11,
+	88,
+	"Richard F Staples Secondary School",
+	"In this experiment, set out to determine whether oscillating LED light holds any effect over the speed of bacterial growth. After isolating samples of streptococci, facilus, and fungus, I focused a variety of LEDs on them. After an incubation period of twenty-four hours, I am able to come to the conclusion that pulsing LED light dose not have any effect to these three non-photosynthesizing bacteria."
+);
+INSERT INTO project_divisions(project, division) VALUES(1570, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1570,
+	1,
+	"Kyle Schole",
+	"Pickardville",
+	NULL,
+	"Kyle Schole lives on a farm one hour northwest of Edmonton, Alberta. His family, who consist of his mother, father, and younger sister and brother, support him with his science work, but do occasionally tire of the messes he leaves in his wake. Some of his favorite pastimes include reading, playing his flute, playing on his flight simulator, and of course, working on his latest science fair project. He attends Grade nine in Westlock’s RF Staples Secondary School. When he graduates, Kyle hopes to enter the feild of microbiology. Also, he is very interested in attaining his piolets licence. This is Kyle’s seventh science fair project, and his second getting to the Canada Wide Fair. This year’s project is a continuation of his research with LEDs, and he has learned a lot about electricity when trying to wire the 555 IC's. Kyle has had a lot of fun with this project and feels that the experience will aid him later in life, whether he enters a profession in science or elsewear, he will always remember his experiences in school, 4-H, and the science fair!"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1570,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1570,
+	2,
+	"Bronze Medal - Life Sciences",
+	"Intermediate",
+	"Pfizer Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1398,
 	2008,
 	"Neural Networks: Image Recognition 2",
 	3,
 	12,
-	"Pacific Northwest",
+	96,
 	"Smithers Secondary",
 	"Previously, I designed a system and proof of concept program to implement image recognition in a computer system. This project's objective is to improve upon my design for an image recognition system that uses artificial neural networks, and to develop a proof of concept program utilizing it. Improvements would include increase in correct detection rate, faster program run time, and ease of use."
 );
@@ -8466,7 +8466,7 @@ VALUES (
 	"Northern Lights",
 	1,
 	1,
-	"Mi'kma'q First Nation",
+	118,
 	"We'koqma'q First Nation Secondary School",
 	"Our project is about the Northern Lights. It consists of information on things such as: what causes them, myths and legends, what the different colors and shapes represent, where you can see them, pictures, etc. We have also included experiments that demonstrate the magnetic field of the earth and the Northern Lights."
 );
@@ -8500,7 +8500,7 @@ VALUES (
 	"Nothing Is But What Is Not",
 	1,
 	12,
-	"Cariboo Mainline",
+	82,
 	"David Stoddart Secondary",
 	"This study traces Optical Illusions from the ancient Greeks to the present day, with the focus upon their use in advertising, with specific emphasis upon the use of optical illusions (most frequently figure/ground and camouflage) in subliminal advertising."
 );
@@ -8524,7 +8524,7 @@ VALUES (
 	"Now you see it now you don't!",
 	2,
 	3,
-	"Chaleur",
+	126,
 	"Bathurst High School",
 	"I chose to do my project on what are the effects of caffeine and hydrochloric acid on calcite (kidney stones) and dolomite (gallstones)? I predict that caffeine and acid will reduce the size of kidney stones and gallstones in some way, shape or form."
 );
@@ -8548,7 +8548,7 @@ VALUES (
 	"Nuclear Scintillation Spectroscopy and Cosmic Radiation",
 	3,
 	9,
-	"Simcoe County",
+	62,
 	"Bear Creek S.S.",
 	"The purpose of this experiment was to search for a correlation between cosmic radiation and atmospheric pressure. This experiment also investigated whether it was possible to detect gamma ray bursts here on earth. A sodium iodide detector was used to measure cosmic radiation. A correlation was found between pressure and cosmic rays. No correlation was found with gamma ray bursts."
 );
@@ -8572,7 +8572,7 @@ VALUES (
 	"Ocean Power",
 	1,
 	4,
-	"Prince Edward Island",
+	9,
 	"Stonepark Intermediate School",
 	"In this project I designed a seawater battery to test its feasibility as a long-term alternate power source. I built two small cells using aluminum and copper, a large cell with copper and magnesium. I tested the effects of the water's salinity, temperature,and electrolysis at the surface. I discovered that water temperature affects performance marginally more than the salinity and electrolysis has no effect"
 );
@@ -8617,7 +8617,7 @@ VALUES (
 	"Ocular pigmentation and longevity in Drosophila melanogaster.",
 	3,
 	9,
-	"Quinte",
+	46,
 	"Moira S.S.",
 	"It has been predicted that in 2008, 73,800 Canadians will die of some form of cancer. Eye colour in Drosophila melanogaster is attributed to two types of pigments, pteridines and ommochromes. Pteridines have been found to be effective as anticancer drugs. Are D. melanogaster with pteridines in their eyes more protected from UV radiation than those with only ommochromes in their eyes?"
 );
@@ -8686,80 +8686,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1339,
-	2008,
-	"Ocular Trauma",
-	2,
-	1,
-	"South Shore",
-	"New Germany Rural High School",
-	"Paintball and air soft guns are popular among teenagers, but adequate eye protection is not always worn. Using ballistics gelatin, I tested guns of different velocities to find out what damage could be caused to the eye. My testing showed that eye protection is vital to prevent serious and/or permanent ocular injuries and education is needed to change people's habits."
-);
-INSERT INTO project_divisions(project, division) VALUES(1339, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1339,
-	1,
-	"Adam Mertens",
-	"New Germany",
-	NULL,
-	"I am a grade nine student at New Germany Rural High School, a small community in Nova Scotia's Lunenburg County. From September to December 2007 I traveled around Ecuador by foot with my dad. For fun I enjoy biking, soccer, band, track and playing guitar. I spend a lot of time in my community canvassing for organizations including The Canadian Cancer Society and The Heart and Stroke Foundation of Canada, as well as volunteering at the annual Relay for Life. I have no solid career plans yet, but I am considering a career in medicine, possibly with a NGO like Doctors without Borders or the Red Cross."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1339,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1339,
-	2,
-	"Silver Medal - Health Sciences",
-	"Intermediate",
-	"Canadian Institutes of Health Research",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1431,
-	2008,
-	"Oleophilic Bacteria....Creating a Greener Tomorrow",
-	3,
-	2,
-	"Central Newfoundland",
-	"Holy Name of Mary Academy",
-	"The experiment demonstrates how using organisms called Oleophilic Bacteria can clean contaminated soil. Part one of the experiment showed bacteria growth in water that was visible to humans using a bioremediation kit. The second stage was with contaminated soil and using fertilizer and bacteria to clean the contaminate. The third stage was the results from Maxxam Lab to show pre and post results."
-);
-INSERT INTO project_divisions(project, division) VALUES(1431, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1431,
-	1,
-	"Shelby Cox",
-	"Lawn",
-	NULL,
-	"Hi, My name is Shelby Cox and I am a Level 2 student at Holy Name of Mary Academy in Lawn, Newfoundland & Labrador. I am involved in a number of different activities at my school which includes drama, sports, Allied Youth, Tutoring for Tuition and Kindergarten slideshow for graduations to name a few. My interest in Science Fairs started a few years back in Grade 7 after getting a taste of success. I wanted to continue being involved because I really enjoyed learning about various scientific processes. My current investigations on Bioremediation has come from the ongoing attention associated with numerous enviromental issuess facing today's society. It is very important for today's youth to take notice of these issues and then try to address these problems in order to have a safe future for everyone. I wish everyone competiting the best of luck, thank-you to the adjudicators, teachers and organizors who have provided this great opportunity!"
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1446,
 	2008,
 	"On the Level",
 	3,
 	2,
-	"Central Newfoundland",
+	3,
 	"St. Lawrence Academy",
 	"For this project I designed a system which allows an underwater Remotely Operated Vehicle to automatically compensate for tilt. It does this using an accelerometer whose input is processed by a program which alters vertical motor speeds accordingly."
 );
@@ -8778,12 +8710,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1431,
+	2008,
+	"Oleophilic Bacteria....Creating a Greener Tomorrow",
+	3,
+	2,
+	3,
+	"Holy Name of Mary Academy",
+	"The experiment demonstrates how using organisms called Oleophilic Bacteria can clean contaminated soil. Part one of the experiment showed bacteria growth in water that was visible to humans using a bioremediation kit. The second stage was with contaminated soil and using fertilizer and bacteria to clean the contaminate. The third stage was the results from Maxxam Lab to show pre and post results."
+);
+INSERT INTO project_divisions(project, division) VALUES(1431, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1431,
+	1,
+	"Shelby Cox",
+	"Lawn",
+	NULL,
+	"Hi, My name is Shelby Cox and I am a Level 2 student at Holy Name of Mary Academy in Lawn, Newfoundland & Labrador. I am involved in a number of different activities at my school which includes drama, sports, Allied Youth, Tutoring for Tuition and Kindergarten slideshow for graduations to name a few. My interest in Science Fairs started a few years back in Grade 7 after getting a taste of success. I wanted to continue being involved because I really enjoyed learning about various scientific processes. My current investigations on Bioremediation has come from the ongoing attention associated with numerous enviromental issuess facing today's society. It is very important for today's youth to take notice of these issues and then try to address these problems in order to have a safe future for everyone. I wish everyone competiting the best of luck, thank-you to the adjudicators, teachers and organizors who have provided this great opportunity!"
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1573,
 	2008,
 	"On the Right Path",
 	3,
 	11,
-	"Edmonton",
+	88,
 	"Old Scona School",
 	"A Java program was created to simulate commuters using a region’s transportation networks to travel to destinations according to the A*pathfinding algorithm. Then, an experiment was run to test the program, comparing a proposed transit system with an existing one in Sherwood Park. The program predicted that the proposal would increase midday ridership from 5.9% to 8.0%, but also revealed some flaws in the proposal."
 );
@@ -8863,12 +8819,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1339,
+	2008,
+	"Ocular Trauma",
+	2,
+	1,
+	10,
+	"New Germany Rural High School",
+	"Paintball and air soft guns are popular among teenagers, but adequate eye protection is not always worn. Using ballistics gelatin, I tested guns of different velocities to find out what damage could be caused to the eye. My testing showed that eye protection is vital to prevent serious and/or permanent ocular injuries and education is needed to change people's habits."
+);
+INSERT INTO project_divisions(project, division) VALUES(1339, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1339,
+	1,
+	"Adam Mertens",
+	"New Germany",
+	NULL,
+	"I am a grade nine student at New Germany Rural High School, a small community in Nova Scotia's Lunenburg County. From September to December 2007 I traveled around Ecuador by foot with my dad. For fun I enjoy biking, soccer, band, track and playing guitar. I spend a lot of time in my community canvassing for organizations including The Canadian Cancer Society and The Heart and Stroke Foundation of Canada, as well as volunteering at the annual Relay for Life. I have no solid career plans yet, but I am considering a career in medicine, possibly with a NGO like Doctors without Borders or the Red Cross."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1339,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1339,
+	2,
+	"Silver Medal - Health Sciences",
+	"Intermediate",
+	"Canadian Institutes of Health Research",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1448,
 	2008,
 	"Opération Simulation",
 	3,
 	9,
-	"Timmins",
+	51,
 	"École secondaire Thériault",
 	"Suite à une étude sur la perception visuelle, une méthode visant à améliorer la qualité du “tracking” d’objets à courtes distances dans un environnement virtuel à été développée. Elle fut comparée à d’autres méthodes fréquemment utilisées lors de la conception de simulateurs de divers applications. Les résultats sont prometteurs."
 );
@@ -8988,12 +8988,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1414,
+	2008,
+	"Optical Illusions: Can you grow out of them?",
+	1,
+	9,
+	38,
+	"St. Mary's French Immersion School",
+	"My project, ""Optical Illusions: Can you grow out of them"", explored whether or not the age of a person changes the way they perceive an optical illusion. I've included everything from the raw information, to graphs, to the illusions themselves!"
+);
+INSERT INTO project_divisions(project, division) VALUES(1414, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1414,
+	1,
+	"Chloe Halpenny",
+	"Goulais River",
+	NULL,
+	"Here's a chance to meet the girl behind the illusions. My name's Chloe Halpenny. I'm a seventh grade student at St. Mary's French Immersion in Sault Ste. Marie, Ontario. I'm not only a science geek; I like to do other things too. I enjoy competitive dance, hanging out with my friends, and just having fun! I'm a very busy girl. When I'm not at science fairs, I'm competing in public speaking contests, volunteering at a nursing home, travelling with my dance school, at a Spanish class, or doing just about anything else I can find. I love to travel, and want to see as many places as possible. This summer, I have the opportunity to go on an exchange to France, which I am ecstatic about! I've already been to the Dominican Republic, Florida, New York City, and now the nation's capital! In the future, I'm looking forward to going to highschool, possibly an IB program, and later to a good university (somewhere abroad?). There are many things which I aspire to be when I get older: a lawyer, an author, and maybe even a dancer. However, right now I think I'm going to work on winning this science fair!"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1414,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1397,
 	2008,
 	"Orbital Forcing: An Astrophysical Solution to the Puzzle of Climate Change",
 	2,
 	12,
-	"Central Okanagan",
+	85,
 	"Kelowna Secondary",
 	"This project studies the effects of orbital forcing on the Earth's climate through the analysis of astrophysical cycles. Based on extensive orbital research and analysis, we have formed a plausible theory relating variations in the Earth's orbit to long-term climatic change, particularly ice ages. In addition, an attempt is made to relate the solar cycle of sunspots to short-term climate change associated with global warming."
 );
@@ -9043,46 +9077,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1414,
-	2008,
-	"Optical Illusions: Can you grow out of them?",
-	1,
-	9,
-	"Algoma Rotary",
-	"St. Mary's French Immersion School",
-	"My project, ""Optical Illusions: Can you grow out of them"", explored whether or not the age of a person changes the way they perceive an optical illusion. I've included everything from the raw information, to graphs, to the illusions themselves!"
-);
-INSERT INTO project_divisions(project, division) VALUES(1414, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1414,
-	1,
-	"Chloe Halpenny",
-	"Goulais River",
-	NULL,
-	"Here's a chance to meet the girl behind the illusions. My name's Chloe Halpenny. I'm a seventh grade student at St. Mary's French Immersion in Sault Ste. Marie, Ontario. I'm not only a science geek; I like to do other things too. I enjoy competitive dance, hanging out with my friends, and just having fun! I'm a very busy girl. When I'm not at science fairs, I'm competing in public speaking contests, volunteering at a nursing home, travelling with my dance school, at a Spanish class, or doing just about anything else I can find. I love to travel, and want to see as many places as possible. This summer, I have the opportunity to go on an exchange to France, which I am ecstatic about! I've already been to the Dominican Republic, Florida, New York City, and now the nation's capital! In the future, I'm looking forward to going to highschool, possibly an IB program, and later to a good university (somewhere abroad?). There are many things which I aspire to be when I get older: a lawyer, an author, and maybe even a dancer. However, right now I think I'm going to work on winning this science fair!"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1414,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1497,
 	2008,
 	"Organic VS Genetically Modified Apples/Bananas",
 	1,
 	9,
-	"Toronto",
+	63,
 	"King Edward PS",
 	"We tested whether organic or genetically modified bananas and apples would last the longest. We believe the organic bananas/apples would rot the slowest. We used various types of fruits and discovered that the small, organic, granny smith apple rotted slowest. And large, organic, plantain banana would rot slowest. We quantitatively measured the degree of rottenness, innovating our own creative scale and formula."
 );
@@ -9116,7 +9116,7 @@ VALUES (
 	"Origine: inconnue",
 	3,
 	10,
-	"Québec et Chaudière-Appalaches",
+	77,
 	"École de la Courvilloise",
 	"Les physiciens sont devant un mur: leurs systèmes de lois sont incapables d'expliquer les débuts de l'Univers. La solution? Une théorie du Tout qui allierait l'extrêmement petit à l'extrêmement grand, soit la physique quantique à la relativité en générale. Plusieurs candidats sont sur la liste, mais tous ne sont qu'hypothèses…"
 );
@@ -9190,7 +9190,7 @@ VALUES (
 	"OSUM",
 	3,
 	10,
-	"Rive-Nord",
+	78,
 	"Collège Saint-Sacrement",
 	"Nous avons développé de toutes nouvelles équations mathématiques et algorithmes qui, une fois implémentés dans notre programme, fournissent d'intéressantes et étonnantes prédictions du futur d'une étoile. Les équations que vous voyez ici sont basées sur les étoiles en général et les tests de ces équations ont été fait sur notre soleil de façons à pouvoir comparer nos données théoriques aux données réelles."
 );
@@ -9299,6 +9299,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1636,
+	2008,
+	"Oups, j'ai oublié!",
+	2,
+	10,
+	69,
+	"École Jean-du-Nord / Manikoutai",
+	"Comment fait-on pour se souvenir de l'emplacement exact de certains objets ou bien des noms de nos proches? Pour répondre à ces questions, j'ai décidé de faire des recherches sur la mémoire. Alors si vous vous posez des questions sur la mémoire, venez voir le résultat de mes recherches."
+);
+INSERT INTO project_divisions(project, division) VALUES(1636, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1636,
+	1,
+	"Frédérique Bouchard",
+	"Clarke City",
+	NULL,
+	"la Tuque et de la réserve atikamekw Weymontashie, en Mauricie, pour ensuite vivre huit ans dans la grande région de Montréal. Depuis trois ans, elle vit dans la ville de Sept-îles. C’est seulement depuis qu’elle a déménagé sur la Côte-Nord qu’elle s’intéresse à l’Expo-Sciences, où elle s’est découvert un intérêt pour la psychologie et pour ce qu’on nomme les sciences humaines. Elle a été tout d’abord attiré par l’Expo-Science par les commentaires faîtes au sujet de cette dernière. En dehors de cette activité, elle s’intéresse vivement à la lecture, les mangas, l’écriture et le théâtre, un des nombreux domaines où elle aimerait travailler. C’est une personne d’un naturel hyper-sensible, très rêveuse et totalement enjouée dans n’importe quelle situation. Attention la voilà qui arrive pour la première fois à Ottawa et elle compte bien en profiter au maximum !"
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1578,
 	2008,
 	"Our World On Thin Ice",
@@ -9324,36 +9348,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1636,
-	2008,
-	"Oups, j'ai oublié!",
-	2,
-	10,
-	"Côte-Nord",
-	"École Jean-du-Nord / Manikoutai",
-	"Comment fait-on pour se souvenir de l'emplacement exact de certains objets ou bien des noms de nos proches? Pour répondre à ces questions, j'ai décidé de faire des recherches sur la mémoire. Alors si vous vous posez des questions sur la mémoire, venez voir le résultat de mes recherches."
-);
-INSERT INTO project_divisions(project, division) VALUES(1636, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1636,
-	1,
-	"Frédérique Bouchard",
-	"Clarke City",
-	NULL,
-	"la Tuque et de la réserve atikamekw Weymontashie, en Mauricie, pour ensuite vivre huit ans dans la grande région de Montréal. Depuis trois ans, elle vit dans la ville de Sept-îles. C’est seulement depuis qu’elle a déménagé sur la Côte-Nord qu’elle s’intéresse à l’Expo-Sciences, où elle s’est découvert un intérêt pour la psychologie et pour ce qu’on nomme les sciences humaines. Elle a été tout d’abord attiré par l’Expo-Science par les commentaires faîtes au sujet de cette dernière. En dehors de cette activité, elle s’intéresse vivement à la lecture, les mangas, l’écriture et le théâtre, un des nombreux domaines où elle aimerait travailler. C’est une personne d’un naturel hyper-sensible, très rêveuse et totalement enjouée dans n’importe quelle situation. Attention la voilà qui arrive pour la première fois à Ottawa et elle compte bien en profiter au maximum !"
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1425,
 	2008,
 	"Out of Thin Air",
 	3,
 	9,
-	"Timmins",
+	51,
 	"Timmins High & Vocational School",
 	"A renewable energy process for powering automobiles while capturing atmospheric CO2 is presented. The process involves a cycle of compression, liquefaction and distillation of air to sequester nitrogen for energy storage, boiling it do work using a Stirling Engine atmospheric heat exchanger via depressurized throttling through an air motor followed by exhaust return to the atmosphere. The process restores the global carbon cycle balance."
 );
@@ -9443,12 +9443,47 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1572,
+	2008,
+	"Passing Wind",
+	1,
+	11,
+	88,
+	"Sir George Simpson Junior High",
+	"This project studied the feasibility of wind power in a central Alberta urban location and compared the efficiency of horizontal and vertical axis wind turbines. Home designed turbines were first tested in a controlled environment. The conventional horizontal turbine was found to be superior, but each type had advantages. Site testing demonstrated that wind power is not a reliable power source in this location."
+);
+INSERT INTO project_divisions(project, division) VALUES(1572, 4);
+INSERT INTO project_divisions(project, division) VALUES(1572, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1572,
+	1,
+	"Evan Grohn",
+	"St. Albert",
+	NULL,
+	"My name is Evan Grohn. I am in the grade seven Academic Challenge program at Sir George Simpson Junior High School in St. Albert, Alberta. Our class has only 11 students, so we know one another well. I have participated in the Edmonton Regional Science fair three times before and have won an award every time. This is my first CWSF as I am in grade seven. I enjoy being a goaltender in hockey and defenceman in outdoor soccer. These are two of the many physical activities that I do. My science teacher, Mr. Savich, makes our classes fun with lots of hands-on projects. Another passion of mine is computers. I also like photography and wish to continue with it. As I am interested in mechanics, my current project is to “fix” my little sister's pink bike and put a small engine onto it. A future hobby would probably be flying a plane. I am really looking forward to CWSF 2008, and am sure it will be an opportunity of a lifetime."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1572,
+	2,
+	"William Mazurek",
+	"St. Albert",
+	NULL,
+	"William Mazurek has a decent experience in science. He has participated in the Edmonton regional science fair for the last two years in a row and won the Edmonton Regional science fair last year. He enjoys various sports such as scuba diving as well as skiing and triathlons. He was on a slalom team last year although he specializes in mogul bowls. William plays the guitar and loves Apple computers. He is currently learning javascript, sql and php. This is William’s first CWSF, and he hopes to do well."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1374,
 	2008,
 	"Papier recyclé : la nouvelle génération",
 	1,
 	9,
-	"Ottawa",
+	44,
 	"College catholique Samuel-Genest",
 	"Une nouvelle génération de papiers recyclés à base de pelures de légumes et de fruits destinées au compostage a été fabriquée et soumise à une évaluation de résistance mécanique et d’inflammabilité. Les papiers constitués de laitue furent les plus résistants et ceux composés de bananes les moins combustibles. Cette innovation pourrait offrir une solution simple et accessible à tous afin de réduire la déforestation."
 );
@@ -9498,36 +9533,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1572,
+	1391,
 	2008,
-	"Passing Wind",
+	"Perspicacious People",
 	1,
-	11,
-	"Edmonton",
-	"Sir George Simpson Junior High",
-	"This project studied the feasibility of wind power in a central Alberta urban location and compared the efficiency of horizontal and vertical axis wind turbines. Home designed turbines were first tested in a controlled environment. The conventional horizontal turbine was found to be superior, but each type had advantages. Site testing demonstrated that wind power is not a reliable power source in this location."
+	9,
+	46,
+	"Sacred Heart Catholic - Batawa",
+	"This study determines which gender has better observation skills. Participants viewed a three minute movie either on their own, in pairs, or in trios and answered ten questions based on their observations. These questionnaires were completed independently and directly following the movie clip."
 );
-INSERT INTO project_divisions(project, division) VALUES(1572, 4);
-INSERT INTO project_divisions(project, division) VALUES(1572, 6);
+INSERT INTO project_divisions(project, division) VALUES(1391, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1572,
+	1391,
 	1,
-	"Evan Grohn",
-	"St. Albert",
+	"Quinn Logan",
+	"Trenton",
 	NULL,
-	"My name is Evan Grohn. I am in the grade seven Academic Challenge program at Sir George Simpson Junior High School in St. Albert, Alberta. Our class has only 11 students, so we know one another well. I have participated in the Edmonton Regional Science fair three times before and have won an award every time. This is my first CWSF as I am in grade seven. I enjoy being a goaltender in hockey and defenceman in outdoor soccer. These are two of the many physical activities that I do. My science teacher, Mr. Savich, makes our classes fun with lots of hands-on projects. Another passion of mine is computers. I also like photography and wish to continue with it. As I am interested in mechanics, my current project is to “fix” my little sister's pink bike and put a small engine onto it. A future hobby would probably be flying a plane. I am really looking forward to CWSF 2008, and am sure it will be an opportunity of a lifetime."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1572,
-	2,
-	"William Mazurek",
-	"St. Albert",
-	NULL,
-	"William Mazurek has a decent experience in science. He has participated in the Edmonton regional science fair for the last two years in a row and won the Edmonton Regional science fair last year. He enjoys various sports such as scuba diving as well as skiing and triathlons. He was on a slalom team last year although he specializes in mogul bowls. William plays the guitar and loves Apple computers. He is currently learning javascript, sql and php. This is William’s first CWSF, and he hopes to do well."
+	"My name is Doreen Mary Quinn Logan, but everyone calls me Quinn. I was born in Belleville, Ontario on November 27, 1994 to Tony and Britt Logan. I have a really fun little brother, Jack, who is ten years old. I am a grade seven student at Sacred Heart Catholic School in Batawa and my teacher 's name is Aisling McGilly-Tsokos. I love school and get really good report cards. In the past three years I have gone on to the Legion for Public Speaking. This year I made it even further, to the Regional level. I also participate in sports such as basketball, volleyball, and snowboarding. I have been dancing with the Quinte Bay Cloggers for three years now and really enjoy it, especially when we perform for the seniors clubs and nursing homes. Some of my biggest fans are my grandparents, aunts, uncles, and cousins. I have a pretty amazing family!"
 );
 
 INSERT INTO projects
@@ -9538,7 +9562,7 @@ VALUES (
 	"Perceptual Blindness",
 	2,
 	6,
-	"Northwest Saskatchewan",
+	24,
 	"McLurg High School",
 	"This project studied the effects of perceptual blindness. Our results were documented by having test subjects watch a video that we created about perceptual blindness (originated by Simons and Chabris). Overall, 62.5% of the test subjects proved to be perceptually blind. Teenagers were shown to be least affected by perceptual blindness. Children and adults were shown to be affected the most."
 );
@@ -9587,60 +9611,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1391,
-	2008,
-	"Perspicacious People",
-	1,
-	9,
-	"Quinte",
-	"Sacred Heart Catholic - Batawa",
-	"This study determines which gender has better observation skills. Participants viewed a three minute movie either on their own, in pairs, or in trios and answered ten questions based on their observations. These questionnaires were completed independently and directly following the movie clip."
-);
-INSERT INTO project_divisions(project, division) VALUES(1391, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1391,
-	1,
-	"Quinn Logan",
-	"Trenton",
-	NULL,
-	"My name is Doreen Mary Quinn Logan, but everyone calls me Quinn. I was born in Belleville, Ontario on November 27, 1994 to Tony and Britt Logan. I have a really fun little brother, Jack, who is ten years old. I am a grade seven student at Sacred Heart Catholic School in Batawa and my teacher 's name is Aisling McGilly-Tsokos. I love school and get really good report cards. In the past three years I have gone on to the Legion for Public Speaking. This year I made it even further, to the Regional level. I also participate in sports such as basketball, volleyball, and snowboarding. I have been dancing with the Quinte Bay Cloggers for three years now and really enjoy it, especially when we perform for the seniors clubs and nursing homes. Some of my biggest fans are my grandparents, aunts, uncles, and cousins. I have a pretty amazing family!"
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1348,
-	2008,
-	"Petroleum Snackers: A Biological Solution to Oil Spills",
-	3,
-	9,
-	"Bay Area",
-	"North Park Collegiate & Vocational",
-	"This experiment investigated the different oil-degrading abilities of Pseudomonas bacteria and Penicillium fungus on simulated oil spills. We evaluated bioremediation as a feasible solution to oil spills. We inoculated the oil-covered water with the microorganisms and observed how they altered the physical characteristics and diminished the quantity of motor oil. The microbes decomposed the oil best when there was abundant oxygen, fertilizer and higher temperatures."
-);
-INSERT INTO project_divisions(project, division) VALUES(1348, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1348,
-	1,
-	"Michelle Reid",
-	"Brantford",
-	NULL,
-	"I am a grade 12 student at North Park Collegiate in Brantford, Ontario. My involvement with BASEF was my first science fair experience, and I received four special awards, a gold merit award, and contributed to the top secondary school award. Within my school, I have been involved with varsity basketball and volleyball, the Trojan Athletic Committee, Student Voice Group, the ""Green It Up"" environmental club, and the Bullying Prevention Coalition. As the Co-Chairperson of the Bullying Prevention Coalition, I am also the representative of my school to the Mayor's Task Force on Domestic Violence, and St. Leonard's Youth and Art Advisory Committee. I am also involved in a variety of leadership activities within my school, such as grade eight transition programs, fundraisers, field trips and other special events. I'm passionate about reading, art, history, photography, filmmaking and the environment. After high school, I am hoping to attend university for an Arts and Science program, life sciences, or law. My ultimate goal would be to become involved with environmental legislature at a federal level, as I would love to combine my passions for politics, law, science and the environment to make our country a 'greener' place."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1515,
 	2008,
 	"Photonic Boom",
 	3,
 	9,
-	"Peel",
+	61,
 	"St. Aloysius Gonzaga",
 	"This project focuses on maximizing the efficiency and stability of a dye-sensitized solar cell that utilises naturally occurring organic dye extracts to produce electrical energy. Techniques and materials found to optimize efficiency of the dye-sensitized solar cell were used to successfully design an efficient and cost-effective solar roofing tile material that can be used in third-world countries. Average efficiencies of 14% were achieved."
 );
@@ -9760,12 +9736,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1348,
+	2008,
+	"Petroleum Snackers: A Biological Solution to Oil Spills",
+	3,
+	9,
+	54,
+	"North Park Collegiate & Vocational",
+	"This experiment investigated the different oil-degrading abilities of Pseudomonas bacteria and Penicillium fungus on simulated oil spills. We evaluated bioremediation as a feasible solution to oil spills. We inoculated the oil-covered water with the microorganisms and observed how they altered the physical characteristics and diminished the quantity of motor oil. The microbes decomposed the oil best when there was abundant oxygen, fertilizer and higher temperatures."
+);
+INSERT INTO project_divisions(project, division) VALUES(1348, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1348,
+	1,
+	"Michelle Reid",
+	"Brantford",
+	NULL,
+	"I am a grade 12 student at North Park Collegiate in Brantford, Ontario. My involvement with BASEF was my first science fair experience, and I received four special awards, a gold merit award, and contributed to the top secondary school award. Within my school, I have been involved with varsity basketball and volleyball, the Trojan Athletic Committee, Student Voice Group, the ""Green It Up"" environmental club, and the Bullying Prevention Coalition. As the Co-Chairperson of the Bullying Prevention Coalition, I am also the representative of my school to the Mayor's Task Force on Domestic Violence, and St. Leonard's Youth and Art Advisory Committee. I am also involved in a variety of leadership activities within my school, such as grade eight transition programs, fundraisers, field trips and other special events. I'm passionate about reading, art, history, photography, filmmaking and the environment. After high school, I am hoping to attend university for an Arts and Science program, life sciences, or law. My ultimate goal would be to become involved with environmental legislature at a federal level, as I would love to combine my passions for politics, law, science and the environment to make our country a 'greener' place."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1585,
 	2008,
 	"Physics Of A Slapshot",
 	3,
 	9,
-	"Rideau-St. Lawrence",
+	48,
 	"Smiths Falls District Collegiate Institute",
 	"This project studied the physics behind a slap shot by looking at four specific aspects. A device was created to be placed on a hockey stick to increase the speed of a slap shot. Using a variety of levelled players, slap shots were taken with and without the device. These tests showed that when players used the device, the speed of their shot increased."
 );
@@ -9794,12 +9794,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1500,
+	2008,
+	"Phytoremediation:  Plant Power",
+	2,
+	9,
+	39,
+	"Almaguin Highlands H.S.",
+	"Our project mainly focuses on phytoremediation. The purpose of our experiment is to find out what type of grass, that can be planted near highways is the best to remove calcium chloride (road salt) from the soil. Run off from road salt kills many species of aquatic life and lowers soil quality."
+);
+INSERT INTO project_divisions(project, division) VALUES(1500, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1500,
+	1,
+	"Kelsey Coughlin",
+	"South River",
+	NULL,
+	"My name is Kelsey Coughlin, I am 15 years old and go to Almaguin Highlands Secondary School. I was born on April 8, 1993 in North Bay Civic Hospital. I enjoy horseback riding at my grandparents riding stable. My hobbies include, shopping, singing and dance. Besides science, my favorite subjects in school are, drama and english. At my grade eight graduation, I recieved the award for excellence in computer sciences and in the future I plan to be a teacher."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1500,
+	2,
+	"Sable Giesler",
+	"Powassan",
+	NULL,
+	"My name is Sable Giesler! I'm 13 years old and I'm in grade 9. I attend Almaguin Highlands Secondary School and I live in Powassan. My favorite subject in school besides science is drama. I live with my mom and dad and I'm an only child. I don't participate in school sports, instead I participate in competeive horseback riding. I own two horses and compete in 3-day eventing with them both. When I graduate from high school I plan to get my bachelor's in scinece and then further my education by getting a degree in vetrenarian medicine."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1594,
 	2008,
 	"Plantes et ondes radio : une curieuse combinaison!",
 	2,
 	3,
-	"Chaleur",
+	126,
 	"École Mathieu-Martin",
 	"De nos jours, nous sommes de plus en plus entourés d'ondes radio. En effet, cette nouvelle forme de pollution, appelée pollution électromagnétique, éveille plusieurs craintes. C'est pourquoi j’ai voulu étudier, à l’aide d’un appareil que j’ai conçu, les effets des ondes radio sur les plantes, ainsi que la capacité à certaines de celles-ci d'atténuer ces ondes électromagnétiques. Des résultats très intéressants ont été obtenus."
 );
@@ -9849,46 +9883,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1500,
-	2008,
-	"Phytoremediation:  Plant Power",
-	2,
-	9,
-	"East Parry Sound",
-	"Almaguin Highlands H.S.",
-	"Our project mainly focuses on phytoremediation. The purpose of our experiment is to find out what type of grass, that can be planted near highways is the best to remove calcium chloride (road salt) from the soil. Run off from road salt kills many species of aquatic life and lowers soil quality."
-);
-INSERT INTO project_divisions(project, division) VALUES(1500, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1500,
-	1,
-	"Kelsey Coughlin",
-	"South River",
-	NULL,
-	"My name is Kelsey Coughlin, I am 15 years old and go to Almaguin Highlands Secondary School. I was born on April 8, 1993 in North Bay Civic Hospital. I enjoy horseback riding at my grandparents riding stable. My hobbies include, shopping, singing and dance. Besides science, my favorite subjects in school are, drama and english. At my grade eight graduation, I recieved the award for excellence in computer sciences and in the future I plan to be a teacher."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1500,
-	2,
-	"Sable Giesler",
-	"Powassan",
-	NULL,
-	"My name is Sable Giesler! I'm 13 years old and I'm in grade 9. I attend Almaguin Highlands Secondary School and I live in Powassan. My favorite subject in school besides science is drama. I live with my mom and dad and I'm an only child. I don't participate in school sports, instead I participate in competeive horseback riding. I own two horses and compete in 3-day eventing with them both. When I graduate from high school I plan to get my bachelor's in scinece and then further my education by getting a degree in vetrenarian medicine."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1538,
 	2008,
 	"Plant Coma: A New Tool For Forensic Scientists",
 	3,
 	9,
-	"Sudbury",
+	49,
 	"Lockerby Composite",
 	"This project was a study of plant coma - found in the dandelion family in order to determine if their are specific microscopic characteristics unique to the species. This could help link a suspect to a crime scene, or determine the original crime scene. In conclusion, I discovered that I could create two dichotomous keys from their unique characteristics."
 );
@@ -9962,7 +9962,7 @@ VALUES (
 	"Plastic Not Fantastic",
 	3,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"Waterloo Collegiate Institute",
 	"Plastic bags, made from polyethylene, are very popular in our daily lives and have a harsh environmental impact on our ecosystems. Two microbial strains belonging to the genus Sphingomonas and Pseudomonas were isolated from a soil microbial consortium and their ability to degrade polyethylene was investigated."
 );
@@ -10102,12 +10102,26 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1253,
+	2008,
+	"Plastics:Here Today, Here Tomorrow",
+	2,
+	NULL,
+	NULL,
+	NULL,
+	"The location for our case study was Abbotsford, BC. We researched the harmful effects of plastic on the environment and our health. We observed and collected data to figure out how many people recycle, up to what point and the amount and use of different types of grocery carriers. We believe that minimizing the waste disposal problem should be done through proper participatory approach."
+);
+INSERT INTO project_divisions(project, division) VALUES(1253, 4);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1261,
 	2008,
 	"Plastic-Safe or Not?",
 	1,
 	11,
-	"Kiwanis Southeast Alberta",
+	91,
 	"St. Mary's School",
 	"Our project focuses on the harmful effects of polycarbonate plastic. We made six different types of water by bringing them to a boil in the microwave or stove top in glass or plastic containers, one being polycarbonate plastic. It was clear during the experiment that plants which were exposed to Bisphenol A were stunted. In conclusion, we believe Bisphenol A is a harmful chemical."
 );
@@ -10151,7 +10165,7 @@ VALUES (
 	"Polar Ice: Electric Fields and the Effect on Ice",
 	3,
 	1,
-	"Chignecto Central West",
+	4,
 	"South Colchester Academy",
 	"To determine if electric fields effect ice, dishes of water were frozen some within an electric field and others regularly. It was hypothesized that water frozen within an electric field, would create ice with different characteristics than regular ice. Various qualities were examined and to verify results, multiple tests were run. After examination it could be concluded that the ice was different."
 );
@@ -10170,26 +10184,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1253,
-	2008,
-	"Plastics:Here Today, Here Tomorrow",
-	2,
-	NULL,
-	NULL,
-	NULL,
-	"The location for our case study was Abbotsford, BC. We researched the harmful effects of plastic on the environment and our health. We observed and collected data to figure out how many people recycle, up to what point and the amount and use of different types of grocery carriers. We believe that minimizing the waste disposal problem should be done through proper participatory approach."
-);
-INSERT INTO project_divisions(project, division) VALUES(1253, 4);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1421,
 	2008,
 	"Polar Problem",
 	1,
 	12,
-	"Cariboo Mainline",
+	82,
 	"Pacific Way Elementary",
 	"This project was designed to raise awareness about the melting of the polar ice caps. It compared the melting rate of two ice blocks with a 20% difference in mass, reflecting polar ice caps now and thirty years ago. Statistical analyses were used to confirm the results that the larger ice cap melted slightly faster than the smaller ice cap."
 );
@@ -10213,7 +10213,7 @@ VALUES (
 	"Pollution Par Ignorance",
 	1,
 	9,
-	"Chatham-Kent",
+	56,
 	"École Sainte-Catherine",
 	"What I was trying to find is a way to show how we pollute, what happens when it gets into our soil and what it affects. I did two experiments to attempt to show how it affects the environment and people as well. One showed how pollutants affected plant life and the other showed how pollution contaminates our aquifers and enters our water supply."
 );
@@ -10238,7 +10238,7 @@ VALUES (
 	"Pop Goes The Kernel!",
 	3,
 	9,
-	"United Counties",
+	52,
 	"Cornwall Collegiate & Vocational",
 	"Does the temperature at which popcorn is stored affect how well it pops? It was hypothesized, in comparing 3 temperatures, that popcorn will pop best at room temperature. The tests were conducted after all bags were stored for 24 hours in their locations. The results showed that the freezer and refrigerator bags had the most unpopped kernels, while the room temperature bags contained very few."
 );
@@ -10262,7 +10262,7 @@ VALUES (
 	"Power Ultrasonic Treatment for Atherosclerosis",
 	3,
 	2,
-	"Eastern Newfoundland",
+	6,
 	"Prince of Wales Collegiate",
 	"This project explored the use of ultrasound to treat atherosclerosis. Arterial plaque was simulated in thoracic aortas from rats and the vessels were subjected to varying intensities and durations of ultrasonic stimulation. It was found that ultrasound effectively removed the simulated plaque, without adversely affecting the viability of the cells. All durations and intensities tested exhibited similar levels of plaque removal efficacy."
 );
@@ -10306,7 +10306,7 @@ VALUES (
 	"Predicting Penalty Minutes",
 	1,
 	12,
-	"Central Interior British Columbia",
+	84,
 	"Westside Academy",
 	"This project is about creating a written test to predict penalty minutes correlating to the aggression level of hockey players. It was found that players in one category of aggression answered questions differently than players in the other two categories. This shows that aggressive and non-aggressive players think differently, and their behavior can be predicted by using a test."
 );
@@ -10350,7 +10350,7 @@ VALUES (
 	"Prime Probability Paradox Through Parity!",
 	3,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"Centennial Collegiate & Vocational Institute",
 	"By considering the relationship between sets of prime numbers and even numbers in the natural number set, this study investigates the probability of a randomly selected number being prime. The probability determined through this analysis was then compared with the results from a computer program. This study offers a new approach to understand the distribution of prime numbers through the Fundamental Theorem of Arithmetic."
 );
@@ -10374,7 +10374,7 @@ VALUES (
 	"Priming and exogenous treatments for salt stress in Phaseolus vulgaris.",
 	2,
 	9,
-	"Quinte",
+	46,
 	"Nicholson Catholic College",
 	"Saline soil has become an increasing problem globally. The effects of priming with NaCl, glycine betaine and H2O2, and of exogenous applications of inoculant, salicylic acid, glycine betaine, silicon, CaSO4 and KH2PO4 on Phaseolus vulgaris grown under salt stress, were compared in two greenhouse trials. Exogenous applications of inoculant and silicon produced significant ameliorative treatment effects on mean shoot length; inoculant on fresh weight."
 );
@@ -10424,12 +10424,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1595,
+	2008,
+	"R U Full of Hot Air",
+	1,
+	3,
+	126,
+	"Superior Middle School",
+	"I investigated whether or not people who are physically fit have a greater lung capacity than those who are not physically fit. I surveyed 75 people made up of boys and girls of different ages and different levels of fitness. My conclusion is that people who are physically fit have a greater lung capacity, however age and size affects your lung capacity also."
+);
+INSERT INTO project_divisions(project, division) VALUES(1595, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1595,
+	1,
+	"Mitchell Furlotte",
+	"Bathurst",
+	NULL,
+	"Hi my name is Mitchell Furlotte and I am a 13 year old boy from the small city of Bathurst located in Northern N.B. I am like most teenage boys who loves playing sports, watching sports and hanging out with my friends. My favorite sports are hockey, volleyball, golf and soccer, so as you can see my life is pretty much filled with sports. In my middle school every student is required to do a science fair project each year and this is how I got interested in science. I have not yet decided what career I will choose; who knows maybe it will be in the field of science?"
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1595,
+	1,
+	"Petro-Canada Peer Innovation Award - Junior",
+	"Atlantic",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1355,
 	2008,
 	"Pykrete: the new concrete?",
 	1,
 	9,
-	"Bay Area",
+	54,
 	"W. H. Morden Public School",
 	"This project studied pykrete, a frozen mixture of water and sawdust. Pykrete was first studied in World War II for use in a massive aircraft carrier. Strength, buoyancy, and melt times for pykrete were measured. In a drop test, a 10% sawdust-by-weight mixture was the strongest. Buoyancy tests were inconclusive. Mixtures with more sawdust by weight had slower melt times."
 );
@@ -10478,46 +10512,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1595,
-	2008,
-	"R U Full of Hot Air",
-	1,
-	3,
-	"Chaleur",
-	"Superior Middle School",
-	"I investigated whether or not people who are physically fit have a greater lung capacity than those who are not physically fit. I surveyed 75 people made up of boys and girls of different ages and different levels of fitness. My conclusion is that people who are physically fit have a greater lung capacity, however age and size affects your lung capacity also."
-);
-INSERT INTO project_divisions(project, division) VALUES(1595, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1595,
-	1,
-	"Mitchell Furlotte",
-	"Bathurst",
-	NULL,
-	"Hi my name is Mitchell Furlotte and I am a 13 year old boy from the small city of Bathurst located in Northern N.B. I am like most teenage boys who loves playing sports, watching sports and hanging out with my friends. My favorite sports are hockey, volleyball, golf and soccer, so as you can see my life is pretty much filled with sports. In my middle school every student is required to do a science fair project each year and this is how I got interested in science. I have not yet decided what career I will choose; who knows maybe it will be in the field of science?"
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1595,
-	1,
-	"Petro-Canada Peer Innovation Award - Junior",
-	"Atlantic",
-	"Petro-Canada",
-	200.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1351,
 	2008,
 	"Quit Buggin'",
 	1,
 	9,
-	"Bay Area",
+	54,
 	"Sir Wilfrid Laurier E.S.",
 	"Our purpose was to synthesize environmentally friendly, effective, homemade insecticides. We were confident that such insecticides could be synthesized. RaidTM, garlic/chilli powder, boric acid, baking soda, and vinegar insecticides were tested on ants and crickets. We observed the insects after 2 hours and 24 hours to examine their condition. Our ranking from best to worst: Raid, garlic/chilli powder, vinegar, boric acid, baking soda."
 );
@@ -10571,7 +10571,7 @@ VALUES (
 	"Quand la santé part en fumée!",
 	3,
 	10,
-	"Montérégie",
+	73,
 	"École secondaire Fernand-Lefebvre",
 	"Qui aurait cru possible qu'un jour les symptômes associés à la fibrose kystique se retrouvent chez près d'un million de fumeurs? Tout en établissant un parallèle avec cette maladie, cette étude vise à vérifier le lien possible entre la fumée de cigarette et le glutathion, un antioxydant."
 );
@@ -10675,7 +10675,7 @@ VALUES (
 	"Raindrops on Rotors",
 	1,
 	12,
-	"Vancouver Island",
+	98,
 	"George Bonner Middle School",
 	"My project experiments with using rainwater as an alternative renewable electricity resource. Climate change models for Vancouver Island all predict more rain and fiercer storms, which will mean more power outages, and more need for locally-produced power. I invented four prototypes to generate electricity using water flow from a rain barrel, and succeeded in producing tiny but measurable quantities of electricity."
 );
@@ -10695,12 +10695,112 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1329,
+	2008,
+	"Remediation Sensation",
+	3,
+	9,
+	41,
+	"Widdifield Secondary",
+	"Remediation Sensation is an attempt to introduce a potentially new method of breaking down pollutant textile dyes. Throughout the course of this experiment, I am using electrical voltages of 6, 12, and 18 volts to break down the dye molecules in a dye solution. I am comparing this against the use of pure iron metal, also known as Zero Valent Iron as a remediation method."
+);
+INSERT INTO project_divisions(project, division) VALUES(1329, 4);
+INSERT INTO project_divisions(project, division) VALUES(1329, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1329,
+	1,
+	"Muhammad Aadil Waja",
+	"North Bay",
+	NULL,
+	"My name is Muhammad Aadil Waja, I am of African descent and am in my grade 12 year of high school in North Bay at Widdifield Secondary School. My life in high school is fast coming to a close; during my time I have taken part in the badminton team and the tennis team. I have also participated in many math contests, the biology contest, and this is my third year at science fair, my first going to Canada Wide. I also volunteer at the hospital as well as having volunteered at the North Bay Food Bank. I am very interested in tennis, but I also enjoy squash, video and computer games, table soccer, pool, and table tennis. After this year I plan to move on to take Chemical Engineering at the University of Toronto. Eventually becoming a chemical engineer before perhaps moving on into business."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1329,
+	1,
+	"Canadian Stockholm Junior Water Prize",
+	NULL,
+	"Canadian WEF Member Associations, the Canadian Water and Wastewater Association, and Xylem Canada",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1329,
+	2,
+	"Honourable Mention - Earth & Environmental Science",
+	"Senior",
+	"Petro-Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1363,
+	2008,
+	"Renewable Energy",
+	1,
+	6,
+	31,
+	"Lakeridge",
+	"For our science fair we asked ourselves, what is the best type of renewable energy? Our hypothesis was that solar energy would be the most efficient. We made our own water, wind and solar generators than tested each to see how many volts they made, and recorded the results. We came to the conclusion that solar energy is the best."
+);
+INSERT INTO project_divisions(project, division) VALUES(1363, 4);
+INSERT INTO project_divisions(project, division) VALUES(1363, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1363,
+	1,
+	"Lance Dolman",
+	"Saskatoon",
+	NULL,
+	"Lance Dolman was born in Regina and was raised in Indian Head until he was six, then moved to Saskatoon, SK. where he currently lives. When Lance was young, he took piano lessons from Joy Pearon. He attends Grade 8 at Lakeridge School, and participates in basketball, volleyball, chess club, tennis, flag football, swimming, and cross country running. He has placed 4th, 3rd and 2nd in cross country running from Grade 6-8. He enjoys playing soccer and he has participated in three city championships winning one gold and two silver medals at Premier and Div I levels, also in three Provincial Soccer Championships winning 1 silver at Premier level and received a large scar on his knee. He plays trumpet for the school band (Mrs. Hinther) and played the Last Post with two other trumpeters at the School’s Remembrance Day ceremony and takes trumpet lessons from Terry Heckman. Lance has been on TV once, the local news station asked him questions about the school’s lockdown procedure. Lance is also a very active paintball participant, and was able to hold off seven opponents single handedly at the bus base at Merrill Dunes paintball field."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1363,
+	2,
+	"Mahyar Akhtarkhavari",
+	"Saskatoon",
+	NULL,
+	"Mahyar Akhtarkhavari was born in Tehran, Iran. He was only 7 years old when he and his family moved to Saskatoon, SK. Mahyar is currently 13 years old and attending grade 8 at Lakeridge School. Mahyar’s favorite subjects are math and science. Mahyar placed in the top 5 in the grade 7 math contest in 2007. Mahyar is and has been in many extracurricular activities such as tennis, soccer, basketball, volleyball,football, swimming, and chess club. He is currently playing and learning tennis at a provincial standard level. He enjoys playing soccer, and his soccer team has won two gold city championship medals. He has won the 2007 chess club in school. In 2004, Mahyar received a certificate for being the nicest kid in the small community called Sturby Place. Mahyar has been on T.V for reading to small children at the local library. Mahyar wants to go university and become an Engineer. He loves to be creative. Coming to Canada is definitely Mahyar’s notable experience. Mahyar’s main goals in life are to stay healthy, have hope and persevere in life."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1363,
+	1,
+	"Petro-Canada Peer Innovation Award - Junior",
+	"Central Canada",
+	"Petro-Canada",
+	200.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1363,
+	2,
+	"Honourable Mention - Earth & Environmental Science",
+	"Junior",
+	"Petro-Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1550,
 	2008,
 	"Riptide-Rush",
 	1,
 	6,
-	"Qu'Appelle Valley",
+	27,
 	"White City",
 	"Our project was to create a lifestyle energy drink. This drink does not contain any unnatural products, just fruits and herbs. We made three variations and tested them on grade 8 students. We recorded the data and compared drinks. Overall, we proved that a natural energy drink is possible to make. Our hypothesis was successfully proven and our project provided impressive results."
 );
@@ -10729,12 +10829,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1604,
+	2008,
+	"Rotting Body",
+	1,
+	11,
+	122,
+	"St. Gabriel School",
+	"My project is about how smoking affects your body. So it's kind of an anti-smoking project. It's includes a number of research information, graphs and charts, and an experiment I did that shows the lung capacity of smokers and non smokers. I did this experiment on numerous people of different age and weather they were a smoker or non smoker."
+);
+INSERT INTO project_divisions(project, division) VALUES(1604, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1604,
+	1,
+	"Rachel Bonney",
+	"Fort McMurray",
+	NULL,
+	"Rachel is currently a grade 8 student at St.Gabriel school in Ft.McMurray Alberta. In her spare time she likes to hang out with her friends. When she's not doing that she is Tapping doing ballet,modern,hip hop or jazz. Rachel also plays the violin. This is her first time at the fair and she hopes to have fun."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1634,
 	2008,
 	"Revêtement nature",
 	3,
 	10,
-	"Outaouais",
+	76,
 	"École polyvalente Le Carrefour",
 	"Ce projet consiste en la conception d'un revêtement végétal extérieur vivant, fait essentiellement de trèfle et de sphaigne. Ce recouvrement mural permet une forte absorption thermique. Par son efficacité, ce produit innovateur, écologique et non polluant, surpasse le revêtement traditionnel."
 );
@@ -10834,136 +10958,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1329,
-	2008,
-	"Remediation Sensation",
-	3,
-	9,
-	"North Bay",
-	"Widdifield Secondary",
-	"Remediation Sensation is an attempt to introduce a potentially new method of breaking down pollutant textile dyes. Throughout the course of this experiment, I am using electrical voltages of 6, 12, and 18 volts to break down the dye molecules in a dye solution. I am comparing this against the use of pure iron metal, also known as Zero Valent Iron as a remediation method."
-);
-INSERT INTO project_divisions(project, division) VALUES(1329, 4);
-INSERT INTO project_divisions(project, division) VALUES(1329, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1329,
-	1,
-	"Muhammad Aadil Waja",
-	"North Bay",
-	NULL,
-	"My name is Muhammad Aadil Waja, I am of African descent and am in my grade 12 year of high school in North Bay at Widdifield Secondary School. My life in high school is fast coming to a close; during my time I have taken part in the badminton team and the tennis team. I have also participated in many math contests, the biology contest, and this is my third year at science fair, my first going to Canada Wide. I also volunteer at the hospital as well as having volunteered at the North Bay Food Bank. I am very interested in tennis, but I also enjoy squash, video and computer games, table soccer, pool, and table tennis. After this year I plan to move on to take Chemical Engineering at the University of Toronto. Eventually becoming a chemical engineer before perhaps moving on into business."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1329,
-	1,
-	"Canadian Stockholm Junior Water Prize",
-	NULL,
-	"Canadian WEF Member Associations, the Canadian Water and Wastewater Association, and Xylem Canada",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1329,
-	2,
-	"Honourable Mention - Earth & Environmental Science",
-	"Senior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1363,
-	2008,
-	"Renewable Energy",
-	1,
-	6,
-	"Saskatoon",
-	"Lakeridge",
-	"For our science fair we asked ourselves, what is the best type of renewable energy? Our hypothesis was that solar energy would be the most efficient. We made our own water, wind and solar generators than tested each to see how many volts they made, and recorded the results. We came to the conclusion that solar energy is the best."
-);
-INSERT INTO project_divisions(project, division) VALUES(1363, 4);
-INSERT INTO project_divisions(project, division) VALUES(1363, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1363,
-	1,
-	"Lance Dolman",
-	"Saskatoon",
-	NULL,
-	"Lance Dolman was born in Regina and was raised in Indian Head until he was six, then moved to Saskatoon, SK. where he currently lives. When Lance was young, he took piano lessons from Joy Pearon. He attends Grade 8 at Lakeridge School, and participates in basketball, volleyball, chess club, tennis, flag football, swimming, and cross country running. He has placed 4th, 3rd and 2nd in cross country running from Grade 6-8. He enjoys playing soccer and he has participated in three city championships winning one gold and two silver medals at Premier and Div I levels, also in three Provincial Soccer Championships winning 1 silver at Premier level and received a large scar on his knee. He plays trumpet for the school band (Mrs. Hinther) and played the Last Post with two other trumpeters at the School’s Remembrance Day ceremony and takes trumpet lessons from Terry Heckman. Lance has been on TV once, the local news station asked him questions about the school’s lockdown procedure. Lance is also a very active paintball participant, and was able to hold off seven opponents single handedly at the bus base at Merrill Dunes paintball field."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1363,
-	2,
-	"Mahyar Akhtarkhavari",
-	"Saskatoon",
-	NULL,
-	"Mahyar Akhtarkhavari was born in Tehran, Iran. He was only 7 years old when he and his family moved to Saskatoon, SK. Mahyar is currently 13 years old and attending grade 8 at Lakeridge School. Mahyar’s favorite subjects are math and science. Mahyar placed in the top 5 in the grade 7 math contest in 2007. Mahyar is and has been in many extracurricular activities such as tennis, soccer, basketball, volleyball,football, swimming, and chess club. He is currently playing and learning tennis at a provincial standard level. He enjoys playing soccer, and his soccer team has won two gold city championship medals. He has won the 2007 chess club in school. In 2004, Mahyar received a certificate for being the nicest kid in the small community called Sturby Place. Mahyar has been on T.V for reading to small children at the local library. Mahyar wants to go university and become an Engineer. He loves to be creative. Coming to Canada is definitely Mahyar’s notable experience. Mahyar’s main goals in life are to stay healthy, have hope and persevere in life."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1363,
-	1,
-	"Petro-Canada Peer Innovation Award - Junior",
-	"Central Canada",
-	"Petro-Canada",
-	200.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1363,
-	2,
-	"Honourable Mention - Earth & Environmental Science",
-	"Junior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1604,
-	2008,
-	"Rotting Body",
-	1,
-	11,
-	"Wood Buffalo",
-	"St. Gabriel School",
-	"My project is about how smoking affects your body. So it's kind of an anti-smoking project. It's includes a number of research information, graphs and charts, and an experiment I did that shows the lung capacity of smokers and non smokers. I did this experiment on numerous people of different age and weather they were a smoker or non smoker."
-);
-INSERT INTO project_divisions(project, division) VALUES(1604, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1604,
-	1,
-	"Rachel Bonney",
-	"Fort McMurray",
-	NULL,
-	"Rachel is currently a grade 8 student at St.Gabriel school in Ft.McMurray Alberta. In her spare time she likes to hang out with her friends. When she's not doing that she is Tapping doing ballet,modern,hip hop or jazz. Rachel also plays the violin. This is her first time at the fair and she hopes to have fun."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1402,
 	2008,
 	"Salt and the Sustainable Environment",
 	1,
 	9,
-	"Victoria County",
+	64,
 	"Dr. George Hall P.S.",
 	"My project is about Salt and the Sustainable environment. I am trying to figure out if the substances that are used on our roads are safe for our worms, grass and how much bacteria is in each substance."
 );
@@ -10983,12 +10983,71 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1265,
+	2008,
+	"Saving Energy= Saving Our World/ Use Colour",
+	1,
+	11,
+	97,
+	"Hines Creek Composite School",
+	"For my science fair project I wanted to see if the colour of a consumer's roof can change your heating bill. I performed an experiment showing how the colour of fabric can affect the temperture increase when subjected to 30 minutes of intense heat. This technique has had a huge impact on builders and buyers."
+);
+INSERT INTO project_divisions(project, division) VALUES(1265, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1265,
+	1,
+	"Kaylyn Stark",
+	"Hines Creek",
+	NULL,
+	"My name is Kaylyn Stark. I am 13 years old and in Grade 7. I live in Hines Creek, Alberta with my mom, dad, my older sister, and younger sister. I go to Hines Creek Composite School.My favorite subject in school is math. I enjoy art, reading, and sewing in my free time.During the winter months I spend three nights a week figure skating and go to number of completions. I hope some day to be able to be a skating coach. When I finish school I would like to be a high school teacher."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1250,
+	2008,
+	"Saving The World Never Tasted So Sweet",
+	1,
+	11,
+	123,
+	"Lawrence Grassi Middle School",
+	"Our project is ""Saving the World Never tasted this Sweet"", and it is an environmental innovation. My partner and I have created a biodegradable candy wrapper out of recycled papers and have tested its degradability, hygiene and ability to keep products fresh. We believe that there are ways to save the environment. All we need is some science, ingenuity and effort from everybody!"
+);
+INSERT INTO project_divisions(project, division) VALUES(1250, 4);
+INSERT INTO project_divisions(project, division) VALUES(1250, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1250,
+	1,
+	"Isabella Pedersen",
+	"Canmore",
+	NULL,
+	"I'm Isabella Pedersen, but call me Izzy. I love (and do) many different things, including ballet, figure-skating, musical theatre, badminton, journalism, reading,and of course...science! I love to learn facts about exotic places and unique subjects,and especially about the biology of humans and animals. If I were to look into a crystal ball and see my future, I'd probably be either a world-renowned doctor, an award-winning author, or an archaeologist with a famous discovery. I think I'd be a doctor because I've been in a mentorship program studying the immune system and cancer cells, and an author because I've been fortunate enough to win the Canadawide Scholastic contest, a few Remembrance day competitions, the CanadianSpaceAgency writing contest with Steve Maclean,am in the middle of writing a book with the renowned biologist Karsten Heuer, and have won the Provincial Environmental Minister for the Day contest in Edmonton. I'd like to be an archeaologist because I adore history and love to travel across the world. Overall, I'm a girl that wants to live my life to the fullest, so I'm travelling, entering contests, eating exotic foods, saving the planet and enjoying everything I do no matter what."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1250,
+	2,
+	"Jaden Black",
+	"Canmore",
+	NULL,
+	"My name is Jaden Black and I'm 12 years old. I'm in karate (white belt). In school I joined the yearbook commitee, and tried out for the basket-ball team. I love to sing, read, draw, write,swimming ,playing volleyball, and hanging out with friends and family. My goals for the future are to get a good education, and work hard to become a veterinarian and work with animals."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1314,
 	2008,
 	"Sanitary Sunshine: Put to the Test",
 	3,
 	6,
-	"Northern Saskatchewan",
+	23,
 	"Churchill Composite H.S.",
 	"This project tests solar pasteurisation, the decontamination of water using solar energy. Pasteurisers were used to bring water to temperatures between 55°C and 70°C. Contaminated water was tested to find out how long temperatures must remain at 65°C, before water is decontaminated. After 30 minutes at 65°C water was significantly cleaner, but traces of bacteria remained."
 );
@@ -11038,71 +11097,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1250,
-	2008,
-	"Saving The World Never Tasted So Sweet",
-	1,
-	11,
-	"Canadian Rockies",
-	"Lawrence Grassi Middle School",
-	"Our project is ""Saving the World Never tasted this Sweet"", and it is an environmental innovation. My partner and I have created a biodegradable candy wrapper out of recycled papers and have tested its degradability, hygiene and ability to keep products fresh. We believe that there are ways to save the environment. All we need is some science, ingenuity and effort from everybody!"
-);
-INSERT INTO project_divisions(project, division) VALUES(1250, 4);
-INSERT INTO project_divisions(project, division) VALUES(1250, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1250,
-	1,
-	"Isabella Pedersen",
-	"Canmore",
-	NULL,
-	"I'm Isabella Pedersen, but call me Izzy. I love (and do) many different things, including ballet, figure-skating, musical theatre, badminton, journalism, reading,and of course...science! I love to learn facts about exotic places and unique subjects,and especially about the biology of humans and animals. If I were to look into a crystal ball and see my future, I'd probably be either a world-renowned doctor, an award-winning author, or an archaeologist with a famous discovery. I think I'd be a doctor because I've been in a mentorship program studying the immune system and cancer cells, and an author because I've been fortunate enough to win the Canadawide Scholastic contest, a few Remembrance day competitions, the CanadianSpaceAgency writing contest with Steve Maclean,am in the middle of writing a book with the renowned biologist Karsten Heuer, and have won the Provincial Environmental Minister for the Day contest in Edmonton. I'd like to be an archeaologist because I adore history and love to travel across the world. Overall, I'm a girl that wants to live my life to the fullest, so I'm travelling, entering contests, eating exotic foods, saving the planet and enjoying everything I do no matter what."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1250,
-	2,
-	"Jaden Black",
-	"Canmore",
-	NULL,
-	"My name is Jaden Black and I'm 12 years old. I'm in karate (white belt). In school I joined the yearbook commitee, and tried out for the basket-ball team. I love to sing, read, draw, write,swimming ,playing volleyball, and hanging out with friends and family. My goals for the future are to get a good education, and work hard to become a veterinarian and work with animals."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1265,
-	2008,
-	"Saving Energy= Saving Our World/ Use Colour",
-	1,
-	11,
-	"Peace Country",
-	"Hines Creek Composite School",
-	"For my science fair project I wanted to see if the colour of a consumer's roof can change your heating bill. I performed an experiment showing how the colour of fabric can affect the temperture increase when subjected to 30 minutes of intense heat. This technique has had a huge impact on builders and buyers."
-);
-INSERT INTO project_divisions(project, division) VALUES(1265, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1265,
-	1,
-	"Kaylyn Stark",
-	"Hines Creek",
-	NULL,
-	"My name is Kaylyn Stark. I am 13 years old and in Grade 7. I live in Hines Creek, Alberta with my mom, dad, my older sister, and younger sister. I go to Hines Creek Composite School.My favorite subject in school is math. I enjoy art, reading, and sewing in my free time.During the winter months I spend three nights a week figure skating and go to number of completions. I hope some day to be able to be a skating coach. When I finish school I would like to be a high school teacher."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1615,
 	2008,
 	"Se faire piquer, c'est du passé!",
 	3,
 	10,
-	"Est du Québec",
+	70,
 	"École polyvalente des Îles",
 	"Nous présenterons un projet scientifique qui traitera d'un appareil permettant d'injecter un médicament sous-cutané sans l'aide d'aiguille. Cette innovation, récemment brevetée, n'est cependant pas encore utilisée par les centres de santé. Il est fort possible qu'avec ses nombreux avantages, cet appareil détrônera avant longtemps le vaccin conventionnel."
 );
@@ -11136,7 +11136,7 @@ VALUES (
 	"Seeing Science",
 	2,
 	1,
-	"Cape Breton",
+	107,
 	"Riverview High School",
 	"This project studied the preference of visual art containing ordered elements versus disordered elements. Children, adolescents and adults were tested through a survey, which looked at aspects such as patterns, symmetry, organization and balance. Analysis of the data indicated that age influenced the preference of art chosen. These results could be useful in the applications of visual advertising."
 );
@@ -11170,7 +11170,7 @@ VALUES (
 	"Sense What You Can't Hear",
 	1,
 	8,
-	"Manitoba Schools Science Symposium",
+	21,
 	"Acadia School",
 	"In this project a device was constructed that could help deaf people by vibrating when it detects sudden noises that may indicate impending danger. The device was tested to determine how well it would respond to different frequencies. The test revealed that the device responded to mid frequencies the best, and that overall it worked well."
 );
@@ -11219,12 +11219,47 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1507,
+	2008,
+	"Sewers: The Untapped Renewable Energy Source",
+	1,
+	9,
+	67,
+	"As-Sadiq Islamic",
+	"The purpose of my experiment was to determine how much heat there is in a septic tank, as well as in a storm sewer in the city. Using a heat exchanger, this heat will be recovered to see if it can be utilized to heat an external area. There are many potential uses for this recovered heat. Using this method would greatly decrease heating costs."
+);
+INSERT INTO project_divisions(project, division) VALUES(1507, 4);
+INSERT INTO project_divisions(project, division) VALUES(1507, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1507,
+	1,
+	"Fatima  Sunderji",
+	"Kleinburg",
+	NULL,
+	"My name is Fatima Sunderji and I am in grade 8. My hobbies include reading and playing sports. When I grow up, I plan to become a doctor or a teacher. I am currently my school's student council president. In March-April 2008, I served as a legislative page at Queen's Park, and had a great experience. Just last year, I qualified as top 40 in Ontario in geography and top 80 in Canada for a national math competition. This is my second year attending the Canada Wide Science Fair, and it definitely is an honour to represent York Region at the CWSF once again."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1507,
+	1,
+	"Honourable Mention - Environmental Innovation",
+	"Junior",
+	"EnviroExpo, Presented by VIA Rail Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1447,
 	2008,
 	"Shhhhhhhh-2: Sound Absorption",
 	3,
 	2,
-	"Central Newfoundland",
+	3,
 	"St. Gabriel's All Grade",
 	"This project deals with sound absorption and several properties that effect a materials ability to absorb sound. Through experimentation we were looking to see the effects of altering a materials temperature, surface composition, and external shape on sound absorption. We were also looking to see if altering the frequency of a sound wave would have any effects on the materials ability to absorb the sound."
 );
@@ -11263,47 +11298,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1507,
-	2008,
-	"Sewers: The Untapped Renewable Energy Source",
-	1,
-	9,
-	"York",
-	"As-Sadiq Islamic",
-	"The purpose of my experiment was to determine how much heat there is in a septic tank, as well as in a storm sewer in the city. Using a heat exchanger, this heat will be recovered to see if it can be utilized to heat an external area. There are many potential uses for this recovered heat. Using this method would greatly decrease heating costs."
-);
-INSERT INTO project_divisions(project, division) VALUES(1507, 4);
-INSERT INTO project_divisions(project, division) VALUES(1507, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1507,
-	1,
-	"Fatima  Sunderji",
-	"Kleinburg",
-	NULL,
-	"My name is Fatima Sunderji and I am in grade 8. My hobbies include reading and playing sports. When I grow up, I plan to become a doctor or a teacher. I am currently my school's student council president. In March-April 2008, I served as a legislative page at Queen's Park, and had a great experience. Just last year, I qualified as top 40 in Ontario in geography and top 80 in Canada for a national math competition. This is my second year attending the Canada Wide Science Fair, and it definitely is an honour to represent York Region at the CWSF once again."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1507,
-	1,
-	"Honourable Mention - Environmental Innovation",
-	"Junior",
-	"EnviroExpo, Presented by VIA Rail Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1569,
 	2008,
 	"Signalling Pathways Leading to Differential Neutrophil Degranulation",
 	3,
 	11,
-	"Edmonton",
+	88,
 	"Old Scona School",
 	"The neutrophil is a type of leukocyte that is involved in the immune response. Neutrophils are granulated cells - the release of their granular contents into the body is known as neutrophil degranulation. The presence of these granular proteins in the body after their release from neutrophils is damaging to tissue. In this experiment, different signaling pathways that lead to neutrophil degranulation were investigated."
 );
@@ -11337,7 +11337,7 @@ VALUES (
 	"Sink The CO2",
 	2,
 	1,
-	"Halifax",
+	114,
 	"St. Agnes School",
 	"Aquatic Ecosystems contain billions of phytoplankton, microscopic plants that are the base of aquatic food chains. These tiny plants have the ability to sequester CO2 from the environment. Factors that affect CO2 sequestration include temperature and species of algae. The design for these experiments included measuring the CO2 Sequestration of five species of unicellular algae, Isochrysis, Pavlova, Tetraselmis, Chlorella, and Scenedesmus, under different temperatures."
 );
@@ -11377,46 +11377,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1332,
-	2008,
-	"Smoke Detectors",
-	1,
-	6,
-	"Southeast Saskatchewan",
-	"Avonlea School",
-	"Our Science Fair project is about the safety of smoke detectors. Testing to see if the reaction time got longer the more they were set off. The alarms we used were a Hardwire smoke alarm and a Battery Operated Dual Sensor Smoke Alarm. Our results concluded that the more the smoke detector was set off the longer it took to detect smoke."
-);
-INSERT INTO project_divisions(project, division) VALUES(1332, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1332,
-	1,
-	"Niki Beingessner",
-	"Truax",
-	NULL,
-	"My name is Niki Marie Beingessner, I am 13 years of age and currently attending Avonlea School. I live on a large family run grain farm near Truax, Saskatchewan with my mom and dad and my older sister and brother. I participate in most school sports some being volleyball, badminton and track. Other interests of mine are Ukrainian Dancing which i have been doing for 8 years, skidooing, hunting, fishing, camping, skiing, water sports, quading and animals. I have recieved a number of school awards, from Grades Kindergarten to Grade eight, one being the Mcdougal award which I won twice, this award is for leadreship and spirit. In grade 7 I recieved the class Proficiency award with an average of 90% and currently my average is 93.1%, these two averages placed me on the honour role. My post secondary career plans hopefully involve something to do with animals or being a Veteranarian. This year I attented the Filmore science fair and my partner and I won 1st in Physical Sciences and 2nd for the best overall project and now we will be attending the Canada Wide Science Fair."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1332,
-	2,
-	"Jolene  Kirkpatrick",
-	"Truax",
-	NULL,
-	"My name is Jolene Kirkpatrick. I am 13 years old. I live on a grain farm near Truax, Saskatchewan. I enjoy helping my parents on the farm. I also have an older brother and sister, and I attend school in Avonlea, Saskatchewan. I am currently in the 7th grade, with an average of 95%, for this past semester. In my class there are 13 kids. In the past years I have received four Mrs. McDougal Awards, this award is for leadership and spirit. I currently participate in school sports, which are volleyball, badminton, and track & field. This past hockey season I played hockey in Weyburn, SK., receiving most sportsmen like player on my team. Our provincial team won the South final, losing in the North final. (Placing second overall) I hope to play hockey in Weyburn next season. I also like to snowmobile, waterski, hunt big game, and quad. After I graduate I would like to attend secondary school, and become an Architect."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1318,
 	2008,
 	"Slow Down and Save with Ethanol",
 	1,
 	12,
-	"Northern British Columbia",
+	94,
 	"Ecole Frank Ross Elementary",
 	"This project evaluates three types of gasoline: regular, premium and 10% ethanol blended gas for their fuel efficiency. These three types of gas were tested at two different driving speeds: 93 km/h and 105 km/h over an extended period of time. The 10% ethanol blended gasoline was the most efficient at both driving speed i.e. the highest number of kilometers driven per litre."
 );
@@ -11456,12 +11422,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1332,
+	2008,
+	"Smoke Detectors",
+	1,
+	6,
+	32,
+	"Avonlea School",
+	"Our Science Fair project is about the safety of smoke detectors. Testing to see if the reaction time got longer the more they were set off. The alarms we used were a Hardwire smoke alarm and a Battery Operated Dual Sensor Smoke Alarm. Our results concluded that the more the smoke detector was set off the longer it took to detect smoke."
+);
+INSERT INTO project_divisions(project, division) VALUES(1332, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1332,
+	1,
+	"Niki Beingessner",
+	"Truax",
+	NULL,
+	"My name is Niki Marie Beingessner, I am 13 years of age and currently attending Avonlea School. I live on a large family run grain farm near Truax, Saskatchewan with my mom and dad and my older sister and brother. I participate in most school sports some being volleyball, badminton and track. Other interests of mine are Ukrainian Dancing which i have been doing for 8 years, skidooing, hunting, fishing, camping, skiing, water sports, quading and animals. I have recieved a number of school awards, from Grades Kindergarten to Grade eight, one being the Mcdougal award which I won twice, this award is for leadreship and spirit. In grade 7 I recieved the class Proficiency award with an average of 90% and currently my average is 93.1%, these two averages placed me on the honour role. My post secondary career plans hopefully involve something to do with animals or being a Veteranarian. This year I attented the Filmore science fair and my partner and I won 1st in Physical Sciences and 2nd for the best overall project and now we will be attending the Canada Wide Science Fair."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1332,
+	2,
+	"Jolene  Kirkpatrick",
+	"Truax",
+	NULL,
+	"My name is Jolene Kirkpatrick. I am 13 years old. I live on a grain farm near Truax, Saskatchewan. I enjoy helping my parents on the farm. I also have an older brother and sister, and I attend school in Avonlea, Saskatchewan. I am currently in the 7th grade, with an average of 95%, for this past semester. In my class there are 13 kids. In the past years I have received four Mrs. McDougal Awards, this award is for leadership and spirit. I currently participate in school sports, which are volleyball, badminton, and track & field. This past hockey season I played hockey in Weyburn, SK., receiving most sportsmen like player on my team. Our provincial team won the South final, losing in the North final. (Placing second overall) I hope to play hockey in Weyburn next season. I also like to snowmobile, waterski, hunt big game, and quad. After I graduate I would like to attend secondary school, and become an Architect."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1545,
 	2008,
 	"Speeding Spins: The Physics Behind a Figure Skating Spin",
 	2,
 	12,
-	"Vancouver Island",
+	98,
 	"Esquimalt Community School, Glenlyon Norfolk School",
 	"We studied the effects of arm position on the angular speed of a figure skating spin. We video-taped one of us, our coach, and we found a video of an Olympic medalist. We had our coach do the spin with masses in her hands. With greater masses, she allowed more friction to slow her down. With less experience, more friction affected the skater’s spins."
 );
@@ -11490,192 +11490,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1427,
-	2008,
-	"Spice up Your Life",
-	1,
-	4,
-	"Prince Edward Island",
-	"East Wiltshire School",
-	"My experiment compared the antioxidant capabilities of spices to those of vitamin supplements. By adding vitamins and spices to mung beans in a hydrogen peroxide and water solution, observing seed germination rate, I evaluated their antioxidant effects against free radicals. My results indicate that basil was just as effective as beta carotene as an antioxidant , protecting the beans from damage by the free radicals."
-);
-INSERT INTO project_divisions(project, division) VALUES(1427, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1427,
-	1,
-	"Brandon Doyle",
-	"Cornwall",
-	NULL,
-	"Brandon Doyle is from Cornwall Prince Edward Island. He is 14 years old and is in the eighth grade at East Wiltshire Intermediate School. He enjoys science and has been participating in science fairs since the fourth grade. He has won several awards at the district and provincial level. His hobbies include eclectic guitar, making animations, skateboarding and reading.His future plans include perusing a career in the field of science."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1427,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1427,
-	2,
-	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
-	"Junior",
-	"Rx&D Health Research Foundation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1491,
-	2008,
-	"Spendthrifts VS Tightwads",
-	2,
-	9,
-	"Toronto",
-	"Danforth Collegiate & Technical Inst.",
-	"The project's purpose was to verify patterns of today's shopping behaviours by analyzing consumer traits under 3 classes: ""Tightwad"", ""Non Conflicted"", and ""Spendthrift"". The survey involved subjects of both genders, different locations and age groups. We hypothesized that the youth would spend more than adults, that males would be Tightwads, and females, Spendthrifts. Our results slightly disagreed."
-);
-INSERT INTO project_divisions(project, division) VALUES(1491, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1491,
-	1,
-	"Janet Chan",
-	"Markham",
-	NULL,
-	"My name is Janet Chan, a responsible, free spirited 16 year old born on March 18th, 1992. My elementary years took place at Gledhill P.S., where I received the Academic Achievement Award. Ah, yes, those were the days where we still had recess. Later on, I went to D.A. Morrison Middle School and now, I’m at my second year at Danforth C.T.I. Last year, I received the Grade 9 Visual Arts Award, as well as having the second highest average in my grade. Bibi, my over-weight golden retriever naps all day, and yes, I do envy him. I absolutely LOVE what Mother Nature has to offer, which suggests why I enjoy hiking, planting, night walks, or simply bathing in sunshine while taking note of the energies of my natural surroundings. Drawing, painting, print-making, reading, track, swimming and loved ones are other necessities of my life. Oh yes, and what would the years be like without the delicate wash of jasmine green tea and Classic Rock? Compassion, adventure, wisdom and honesty are things I value. I dream of going to University and becoming a psychiatrist one day, or someone who helps others recognize the beauty of life."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1491,
-	2,
-	"Lily Wu",
-	"Toronto",
-	NULL,
-	"My name is Lily Wu. My current school is Danforth TCI and my previous schools include Wilkinson Public School, and Earl Grey Senior Public School. My achievements consists of winning the French Award during 6th grade Graduation for my grade, the Art Award during 7th grade for my class, the French, History and Math Awards during 8th grade for my class, the French Award in the 9th Grade for my year, as well as First Class Honours for Grade 8 Piano. My ultimate achievement is being able to juggle Cantonese, Mandarin, Math, Art, Musical Harmony and Piano lessons all on one day every Saturday (mind you, I am literally running from one part of town to the other in between these classes). My interests include writing, painting, drawing (especially with ink), piano, music, and literature. My favourite subjects are French, English and History. I adore food of a variety of cultures, theatre, classical music, onomastics, art, literature and just hanging out with my closest friends on a sunny Sunday afternoon."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1367,
-	2008,
-	"Stocks: Predicting When To Sell",
-	1,
-	11,
-	"Chinook Country",
-	"Red Deer Lake School",
-	"Is there a relationship between Historical Price Volatility and Optimal Trailing Stop Loss, and is it possible to develop a linear equation to predict Optimal Trailing Stop Loss based on its Historical Price Volatility. The conclusion was that there is a positive relationship, however, the relationship is not strong enough for the Optimal Trailing Stop Loss to be predicted based on Historical Price Volatility."
-);
-INSERT INTO project_divisions(project, division) VALUES(1367, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1367,
-	1,
-	"Zach Poole",
-	"DeWinton",
-	NULL,
-	"My name is Zach Poole. I live in DeWinton, Alberta and attend Red Deer Lake School. My favourite subjects in school are math, science, and language arts and I have attained honours with distinction. I have come first in my school for the Fibonacci and Pythagoras math contests and achieved honours Canada-wide both years. At the Millerville Fall Fair, I won first place for my story and second for my poem. This year, I played on my school's junior basketball, junior volleyball, and Grade 7 badminton teams. I also played A level community basketball in the winter and my team won a bronze medal at the Provincial Championships. I play trombone, alto saxophone and trumpet for my school's Grade 7 concert band, junior jazz band, and senior jazz band, respectively. I also play guitar outside of school and I am in Grade 7 Royal Conservatory piano. As well, I enjoy reading and having friends over at my house. I plan to study Architecture at the University of Waterloo."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1367,
-	1,
-	"Discovery Channel Math Award",
-	NULL,
-	"Discovery Channel",
-	750.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1367,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1367,
-	3,
-	"Bronze Medal - Physical & Mathematical Sciences",
-	"Junior",
-	"Encana Corporation",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1236,
-	2008,
-	"Stimulus Strength and Reaction Time",
-	1,
-	13,
-	"Yukon/Stikine",
-	"Selkirk Elementary",
-	"In this project I tested human subjects on the speed of their reactions compared to the strength of a stimulus. With the help of my dad, I built a machine that would test people's reaction times. I found out that the stronger the stimulus the faster the reaction time."
-);
-INSERT INTO project_divisions(project, division) VALUES(1236, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1236,
-	1,
-	"Talia Woodland",
-	"Whitehorse",
-	NULL,
-	"For a twelve year old girl just finishing grade seven, I'm pretty busy. I take Judo classes every week and love to play sports. I'm on the local rep soccer team and always sign up for the outdoor soccer teams. I also love to snowboard. I'm a breakdancer and I like all sorts of music. Along with listening to music, I play a lot too. I quit violin after I got a silver medal on my grade one R.C.M. exam and moved on to piano, guitar, and for awhile, french horn. Now I've set my sights on drumming. In school, I find the work all pretty easy, but also a little boring. I would much rather spend my time on things like science fair projects, heritage fair projects, and more hands on type things, including putting together small electrical circuits, taking things apart, and working on small construction projects."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1463,
-	2008,
-	"Straight Cut, One Cut, Two Cut, Which is the Best Christmas Tree Cut?",
-	1,
-	1,
-	"Tri-County",
-	"Maple Grove Education Centre",
-	"This project compares three different cuts to the trunk of a Balsam Fir Christmas Tree. The intent was to see if multiple cuts to the trunk would affect the amount of water absorbed by the tree over a three week period. The results proved that the tree with two extra cuts absorbed the most water therefore staying the freshest loosing only 5 g of needles."
-);
-INSERT INTO project_divisions(project, division) VALUES(1463, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1463,
-	1,
-	"Hughstin Grimshaw-Surette",
-	"Yarmouth",
-	NULL,
-	"Hughstin Grimshaw- Surette is 14 years old and lives in Yarmouth, Nova Scotia. He is in grade 8 at Maple Grove Educational Center. His interests are drawing, archery, bike riding, reading fantasy novels and he also has a fascination with dragons. Hughstin does track & field, plays soccer and also volunteers with the younger divisions. He enjoys many outdoor activities such as taking his dog Fenway to dog agility, hiking through the woods and also working with his Grandfather and family on the family Christmas Tree Farm. Hughstin has been involved in swimming, basketball and cross-country over the years. In grade 6 he received The C. W. Hayes Award for outstanding academics and best all around student. Hughstin was a part of the winning team at the Tri-County Regional School Boards Science Olympics in grade 7. At the end of grade 7 he received top marks in Social Studies, Art as well as Highest Academic Standing for the year. Hughstin’s latest achievement would be placing 2nd in the Junior Division at the Tri-County Regional School Board Science Fair."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1549,
 	2008,
 	"Some Like It Hot! Using Thermoelectrics to Recover Waste Heat from a Car Engine",
 	2,
 	1,
-	"South Shore",
+	10,
 	"Park View Education Centre",
 	"This project explores the potential for changing waste heat from a combustion engine into useful electrical energy. A prototype module utilizing thermoelectric generators was designed, constructed, and tested. This module demonstrates considerable promise for energy savings and greenhouse gas reduction if adopted widely in motor vehicles."
 );
@@ -11735,12 +11555,90 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1491,
+	2008,
+	"Spendthrifts VS Tightwads",
+	2,
+	9,
+	63,
+	"Danforth Collegiate & Technical Inst.",
+	"The project's purpose was to verify patterns of today's shopping behaviours by analyzing consumer traits under 3 classes: ""Tightwad"", ""Non Conflicted"", and ""Spendthrift"". The survey involved subjects of both genders, different locations and age groups. We hypothesized that the youth would spend more than adults, that males would be Tightwads, and females, Spendthrifts. Our results slightly disagreed."
+);
+INSERT INTO project_divisions(project, division) VALUES(1491, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1491,
+	1,
+	"Janet Chan",
+	"Markham",
+	NULL,
+	"My name is Janet Chan, a responsible, free spirited 16 year old born on March 18th, 1992. My elementary years took place at Gledhill P.S., where I received the Academic Achievement Award. Ah, yes, those were the days where we still had recess. Later on, I went to D.A. Morrison Middle School and now, I’m at my second year at Danforth C.T.I. Last year, I received the Grade 9 Visual Arts Award, as well as having the second highest average in my grade. Bibi, my over-weight golden retriever naps all day, and yes, I do envy him. I absolutely LOVE what Mother Nature has to offer, which suggests why I enjoy hiking, planting, night walks, or simply bathing in sunshine while taking note of the energies of my natural surroundings. Drawing, painting, print-making, reading, track, swimming and loved ones are other necessities of my life. Oh yes, and what would the years be like without the delicate wash of jasmine green tea and Classic Rock? Compassion, adventure, wisdom and honesty are things I value. I dream of going to University and becoming a psychiatrist one day, or someone who helps others recognize the beauty of life."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1491,
+	2,
+	"Lily Wu",
+	"Toronto",
+	NULL,
+	"My name is Lily Wu. My current school is Danforth TCI and my previous schools include Wilkinson Public School, and Earl Grey Senior Public School. My achievements consists of winning the French Award during 6th grade Graduation for my grade, the Art Award during 7th grade for my class, the French, History and Math Awards during 8th grade for my class, the French Award in the 9th Grade for my year, as well as First Class Honours for Grade 8 Piano. My ultimate achievement is being able to juggle Cantonese, Mandarin, Math, Art, Musical Harmony and Piano lessons all on one day every Saturday (mind you, I am literally running from one part of town to the other in between these classes). My interests include writing, painting, drawing (especially with ink), piano, music, and literature. My favourite subjects are French, English and History. I adore food of a variety of cultures, theatre, classical music, onomastics, art, literature and just hanging out with my closest friends on a sunny Sunday afternoon."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1427,
+	2008,
+	"Spice up Your Life",
+	1,
+	4,
+	9,
+	"East Wiltshire School",
+	"My experiment compared the antioxidant capabilities of spices to those of vitamin supplements. By adding vitamins and spices to mung beans in a hydrogen peroxide and water solution, observing seed germination rate, I evaluated their antioxidant effects against free radicals. My results indicate that basil was just as effective as beta carotene as an antioxidant , protecting the beans from damage by the free radicals."
+);
+INSERT INTO project_divisions(project, division) VALUES(1427, 500);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1427,
+	1,
+	"Brandon Doyle",
+	"Cornwall",
+	NULL,
+	"Brandon Doyle is from Cornwall Prince Edward Island. He is 14 years old and is in the eighth grade at East Wiltshire Intermediate School. He enjoys science and has been participating in science fairs since the fourth grade. He has won several awards at the district and provincial level. His hobbies include eclectic guitar, making animations, skateboarding and reading.His future plans include perusing a career in the field of science."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1427,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1427,
+	2,
+	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
+	"Junior",
+	"Rx&D Health Research Foundation",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1321,
 	2008,
 	"Static Electricity and Shocks",
 	2,
 	7,
-	"Kitikmeot",
+	110,
 	"Kugluktuk H.S.",
 	"When people shuffle their feet across the carpet and then touch a metal door knob then they get a shock. I demonstrated how static electricity works to explain how shocks work. In the north, it can get really dry in the winter and this allows electrons to move easier, resulting in more shocks."
 );
@@ -11759,12 +11657,90 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1367,
+	2008,
+	"Stocks: Predicting When To Sell",
+	1,
+	11,
+	86,
+	"Red Deer Lake School",
+	"Is there a relationship between Historical Price Volatility and Optimal Trailing Stop Loss, and is it possible to develop a linear equation to predict Optimal Trailing Stop Loss based on its Historical Price Volatility. The conclusion was that there is a positive relationship, however, the relationship is not strong enough for the Optimal Trailing Stop Loss to be predicted based on Historical Price Volatility."
+);
+INSERT INTO project_divisions(project, division) VALUES(1367, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1367,
+	1,
+	"Zach Poole",
+	"DeWinton",
+	NULL,
+	"My name is Zach Poole. I live in DeWinton, Alberta and attend Red Deer Lake School. My favourite subjects in school are math, science, and language arts and I have attained honours with distinction. I have come first in my school for the Fibonacci and Pythagoras math contests and achieved honours Canada-wide both years. At the Millerville Fall Fair, I won first place for my story and second for my poem. This year, I played on my school's junior basketball, junior volleyball, and Grade 7 badminton teams. I also played A level community basketball in the winter and my team won a bronze medal at the Provincial Championships. I play trombone, alto saxophone and trumpet for my school's Grade 7 concert band, junior jazz band, and senior jazz band, respectively. I also play guitar outside of school and I am in Grade 7 Royal Conservatory piano. As well, I enjoy reading and having friends over at my house. I plan to study Architecture at the University of Waterloo."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1367,
+	1,
+	"Discovery Channel Math Award",
+	NULL,
+	"Discovery Channel",
+	750.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1367,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1367,
+	3,
+	"Bronze Medal - Physical & Mathematical Sciences",
+	"Junior",
+	"Encana Corporation",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1236,
+	2008,
+	"Stimulus Strength and Reaction Time",
+	1,
+	13,
+	100,
+	"Selkirk Elementary",
+	"In this project I tested human subjects on the speed of their reactions compared to the strength of a stimulus. With the help of my dad, I built a machine that would test people's reaction times. I found out that the stronger the stimulus the faster the reaction time."
+);
+INSERT INTO project_divisions(project, division) VALUES(1236, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1236,
+	1,
+	"Talia Woodland",
+	"Whitehorse",
+	NULL,
+	"For a twelve year old girl just finishing grade seven, I'm pretty busy. I take Judo classes every week and love to play sports. I'm on the local rep soccer team and always sign up for the outdoor soccer teams. I also love to snowboard. I'm a breakdancer and I like all sorts of music. Along with listening to music, I play a lot too. I quit violin after I got a silver medal on my grade one R.C.M. exam and moved on to piano, guitar, and for awhile, french horn. Now I've set my sights on drumming. In school, I find the work all pretty easy, but also a little boring. I would much rather spend my time on things like science fair projects, heritage fair projects, and more hands on type things, including putting together small electrical circuits, taking things apart, and working on small construction projects."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1309,
 	2008,
 	"Submerged in Science",
 	1,
 	12,
-	"Central Interior British Columbia",
+	84,
 	"D P Todd Secondary",
 	"Movement in water is resisted due to viscosity. I wondered if swimming pools might differ in viscosity and affect my swimming performance. I measured viscosity from four pools in Prince George, BC and also distilled, tap and salt water samples. I was surprised to find that the warmer waters had lower viscosity, but there was little difference between the waters at the same temperature."
 );
@@ -11783,12 +11759,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1463,
+	2008,
+	"Straight Cut, One Cut, Two Cut, Which is the Best Christmas Tree Cut?",
+	1,
+	1,
+	12,
+	"Maple Grove Education Centre",
+	"This project compares three different cuts to the trunk of a Balsam Fir Christmas Tree. The intent was to see if multiple cuts to the trunk would affect the amount of water absorbed by the tree over a three week period. The results proved that the tree with two extra cuts absorbed the most water therefore staying the freshest loosing only 5 g of needles."
+);
+INSERT INTO project_divisions(project, division) VALUES(1463, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1463,
+	1,
+	"Hughstin Grimshaw-Surette",
+	"Yarmouth",
+	NULL,
+	"Hughstin Grimshaw- Surette is 14 years old and lives in Yarmouth, Nova Scotia. He is in grade 8 at Maple Grove Educational Center. His interests are drawing, archery, bike riding, reading fantasy novels and he also has a fascination with dragons. Hughstin does track & field, plays soccer and also volunteers with the younger divisions. He enjoys many outdoor activities such as taking his dog Fenway to dog agility, hiking through the woods and also working with his Grandfather and family on the family Christmas Tree Farm. Hughstin has been involved in swimming, basketball and cross-country over the years. In grade 6 he received The C. W. Hayes Award for outstanding academics and best all around student. Hughstin was a part of the winning team at the Tri-County Regional School Boards Science Olympics in grade 7. At the end of grade 7 he received top marks in Social Studies, Art as well as Highest Academic Standing for the year. Hughstin’s latest achievement would be placing 2nd in the Junior Division at the Tri-County Regional School Board Science Fair."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1439,
 	2008,
 	"Subway Productivity Time Study",
 	3,
 	1,
-	"Annapolis Valley",
+	2,
 	"West Kings District High School",
 	"This project monitored the productivity, effectiveness and efficiency of the restaurant, Subway. It was found that time requirements to make a sub are not being met, and solutions like the Vegetable Preparer were suggested in attempts to speed up the process. The data was collected using a calibrated stopwatch, and was analyzed using the Microsoft Excel program."
 );
@@ -11822,7 +11822,7 @@ VALUES (
 	"Surface Tension",
 	1,
 	3,
-	"River Valley",
+	125,
 	"Albert Street Middle School",
 	"The purpose of this experiment was to learn about a property of liquids called surface tension and to demonstrate how the surface tension of water can be changed by adding different substances. This property lets the water strider walk on water. It even allows small pieces of metal such as needles to float on a liquid’s surface."
 );
@@ -11856,7 +11856,7 @@ VALUES (
 	"Take a Slide down the Learning Curve",
 	3,
 	3,
-	"Fundy",
+	124,
 	"St. Stephen High School",
 	"In my project I examined how humans learn when considering opinions of rationality. The social learning of high students to the learning curve predicted by game theory when playing a game called ""Guess 2/3 of the average"". The experiment was designed to examine if the students became more sophisticated as they gained experience, and whether giving students feedback and incentives could accelerate their learning."
 );
@@ -11890,7 +11890,7 @@ VALUES (
 	"Taste the Rainbow",
 	2,
 	6,
-	"Saskatoon",
+	31,
 	"Walter Murray Collegiate",
 	"This project determined which variety of bell pepper (red, yellow, orange, green) and which method of cooking them (raw or heated) is most beneficial, in terms of antioxidant properties. Using a fluorescent plate reader, I found that the liquid portions of bell peppers contain high levels of oxidants, one of them being hydrogen peroxide. Heating the peppers destroys these potentially harmful oxidants."
 );
@@ -11934,7 +11934,7 @@ VALUES (
 	"Tasty Teeth",
 	1,
 	11,
-	"Canadian Rockies",
+	123,
 	"Lawrence Grassi Middle School",
 	"Tasty teeth is a innovative project that can be used in the sports world. The project is a flavored mouth guard that has an insertible flavoring agent that begins to dissolve when it comes in contact with human saliva. The flavor inserts can be renewed after they lose their flavor."
 );
@@ -11958,7 +11958,7 @@ VALUES (
 	"Taxol and Flaxseed: A more effective treatment of Breast Cancer",
 	3,
 	9,
-	"Sudbury",
+	49,
 	"Chelmsford Valley District Composite School, Lockerby Composite",
 	"Breast cancer affects many women. Based on initial findings; Flax Seed Oil was tested with multiple chemotheraputics to determine the effectiveness in comparison to the chemotherapy treatment alone. Taxol and Flax have the most effective treatment combination in comparison to other drugs. This combination promotes apoptosis and at high doses the combination promotes necrosis. This is a significant step forward in future treatments."
 );
@@ -11992,7 +11992,7 @@ VALUES (
 	"Techno Worm",
 	3,
 	10,
-	"Montreal",
+	74,
 	"Villa Maria",
 	"A robot was used to stimulate trace fossil patterns of Precambrian worms. It was found that, in comparaison to previous research involving more complicated parallel controllers, a simple sequential behaviour-based controller could result in patterns similar to those found in fossil records."
 );
@@ -12026,7 +12026,7 @@ VALUES (
 	"Teen Stress in the North",
 	1,
 	7,
-	"Kitikmeot",
+	110,
 	"Kiilinik H.S.",
 	"My project is pretty basic, I have taken all of the schools in the Kitikmeot Region in Nunavut grades 7-12 and had them fill out a survey in what streses them out the most."
 );
@@ -12045,12 +12045,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1375,
+	2008,
+	"Tempest in a Tin Can",
+	1,
+	9,
+	44,
+	"Turnbull School",
+	"This experiment determined how four different nozzle sizes affect pulse jet performance. A pulse jet was built using a tin can and methanol for the fuel. The smaller nozzle sizes produced a greater initial thrust than the larger nozzle sizes. Pulse jets are difficult to control but this experiment shows performance can be controlled through nozzle size."
+);
+INSERT INTO project_divisions(project, division) VALUES(1375, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1375,
+	1,
+	"Jaye Mangione",
+	"Ottawa",
+	NULL,
+	"I am in grade 7 at Turnbull School, in Ottawa. I play trumpet in both the concert and jazz school bands. My twin brother and I are really interested in model rocketry. We launch everything from 15 centimetre long rockets to rockets that are 2.5 meters tall. That’s taller than I am! I also enjoy building model airplanes and writing stories. One of my main interests is aviation, and I plan to be a fighter pilot when I grow up. I am interested in engineering and physics, which will help me achieve my goal."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1375,
+	1,
+	"Honourable Mention - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1587,
 	2008,
 	"The Ants Go Marching...",
 	1,
 	9,
-	"Rideau-St. Lawrence",
+	48,
 	"Duncan J. Schoular P.S.",
 	"The purpose of this project is to recreate a carpenter ant colony using the Java computer programming language. The program follows the life cycle and activities of each member of the colony. Different scenarios occur which alter the progress the colony makes as it expands or dies. The program provides continually updated information and statistics about the ant colony."
 );
@@ -12090,70 +12124,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1436,
-	2008,
-	"The Best Defenseman",
-	2,
-	6,
-	"Parkland",
-	"Foam Lake Composite High School",
-	"Throughout the hockey season I have noticed that I develop a case of eczema due to the bacteria on my equipment. There are ways to clean equipment, but these methods are expensive and can also be harmful for your skin. I tested the efficacy of UV radiation in killing the bacteria on hockey equipment, finding successful results."
-);
-INSERT INTO project_divisions(project, division) VALUES(1436, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1436,
-	1,
-	"Rikell Kowalchuk",
-	"Foam Lake",
-	NULL,
-	"My name is Rikell Kowalchuk. I am very athletic, and I take part in many in-school and out-of-school activities. I play hockey, basketball, volleyball, baseball, and I also take track. I am also very interested in music and art. I take piano lessons, and am doing my gr. 7 RCM exam this year. I am also a part of my school's drama production, and in dance (tap and jazz). Some of my hobbies are hanging out with friends, watching movies, bikerides, reading, painting, and playing the piano."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1375,
-	2008,
-	"Tempest in a Tin Can",
-	1,
-	9,
-	"Ottawa",
-	"Turnbull School",
-	"This experiment determined how four different nozzle sizes affect pulse jet performance. A pulse jet was built using a tin can and methanol for the fuel. The smaller nozzle sizes produced a greater initial thrust than the larger nozzle sizes. Pulse jets are difficult to control but this experiment shows performance can be controlled through nozzle size."
-);
-INSERT INTO project_divisions(project, division) VALUES(1375, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1375,
-	1,
-	"Jaye Mangione",
-	"Ottawa",
-	NULL,
-	"I am in grade 7 at Turnbull School, in Ottawa. I play trumpet in both the concert and jazz school bands. My twin brother and I are really interested in model rocketry. We launch everything from 15 centimetre long rockets to rockets that are 2.5 meters tall. That’s taller than I am! I also enjoy building model airplanes and writing stories. One of my main interests is aviation, and I plan to be a fighter pilot when I grow up. I am interested in engineering and physics, which will help me achieve my goal."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1375,
-	1,
-	"Honourable Mention - Engineering",
-	"Junior",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1307,
 	2008,
 	"The ACELL System",
 	1,
 	11,
-	"Calgary Youth",
+	81,
 	"Branton Junior High School",
 	"Our project seeks to reduce or completely eliminate the heating and cooling costs of a supermarket. Super-insulated thermal storage cells beneath the parking lot serve to capture and store seasonal ambient air and earth temperatures. These are enhanced by solar-fired refrigeration and heating. A “Temperature Modulating System” controls these elements to provide low-cost, off-the-grid heating and refrigeration for the supermarket."
 );
@@ -12183,12 +12159,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1436,
+	2008,
+	"The Best Defenseman",
+	2,
+	6,
+	25,
+	"Foam Lake Composite High School",
+	"Throughout the hockey season I have noticed that I develop a case of eczema due to the bacteria on my equipment. There are ways to clean equipment, but these methods are expensive and can also be harmful for your skin. I tested the efficacy of UV radiation in killing the bacteria on hockey equipment, finding successful results."
+);
+INSERT INTO project_divisions(project, division) VALUES(1436, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1436,
+	1,
+	"Rikell Kowalchuk",
+	"Foam Lake",
+	NULL,
+	"My name is Rikell Kowalchuk. I am very athletic, and I take part in many in-school and out-of-school activities. I play hockey, basketball, volleyball, baseball, and I also take track. I am also very interested in music and art. I take piano lessons, and am doing my gr. 7 RCM exam this year. I am also a part of my school's drama production, and in dance (tap and jazz). Some of my hobbies are hanging out with friends, watching movies, bikerides, reading, painting, and playing the piano."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1596,
 	2008,
 	"The Best Bounce For Your Buck",
 	1,
 	3,
-	"Chaleur",
+	126,
 	"Harkins Middle School",
 	"This project studied various brands of tennis balls in relation to the specifications set forth by the International Tennis Federation. The diameter, weight and bound height were measured using digital equipment. The “Cooper” brand of tennis ball was most consistent during the performance test and most efficient in cost value. Ironically, the “Cooper” brand is not recognized as being ITF approved."
 );
@@ -12212,7 +12212,7 @@ VALUES (
 	"The Better Browser",
 	2,
 	1,
-	"Cape Breton",
+	107,
 	"Sydney Academy",
 	"The Better Browser is essentially a Science Project that aims to illustrate the quantitative strengths and weaknesses that characterize the different web browsers available today. This is accomplished through 8 major trials that measure a browser on its most fundamental levels, and an analysis of the results observed."
 );
@@ -12251,36 +12251,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1589,
-	2008,
-	"The Brilliant Brain",
-	2,
-	3,
-	"Fundy",
-	"Saint John High School",
-	"This experiment was done to determine what age group has the best short term memory. A visual and audio testing was done to figure out this question. Overall, teenagers had the best short term memory due to everyday use of their brains because of high school."
-);
-INSERT INTO project_divisions(project, division) VALUES(1589, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1589,
-	1,
-	"Intekhab Hossain",
-	"Saint John",
-	NULL,
-	"My name is Intekhab Hossain and I am from Saint John High School, New Brunswick. I am currently in grade 9 and looking forward to full pre IB for next year. I have a 96% average in school and I have skipped grade 5. I have volunteered at the public library over the summer and plan to volunteer again this summer. My interests are videogames and sports. That’s what I do during my free time. My favorite sports are soccer and basketball. I have received many awards in both education and athletics. When I grow up, I plan to be a doctor and this is why I did my project on the human brain this year so it helps me in the future. I have been quite successful in my life so far and I plan to carry that on and keep achieving new heights."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1385,
 	2008,
 	"The Coanda Conundrum",
 	2,
 	9,
-	"Waterloo-Wellington",
+	65,
 	"St. John's-Kilmarnock School",
 	"My project tested the amount of lift produced using the Coanda Effect. Using variable airspeeds from a leaf blower, I could determine the amount of lift produced by different curved foils. I found that the tighter the radius of curvature the more lift produced."
 );
@@ -12330,35 +12306,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1319,
+	1589,
 	2008,
-	"The Curing Clove!",
+	"The Brilliant Brain",
 	2,
-	12,
-	"Northern British Columbia",
-	"South Peace Secondary",
-	"This project explored the anti bacterial properties of Garlic against E. coli and then compared them to Amoxicillin and Sulfatrim-DS. I used several different kinds of medicinal solutions, which I placed in bacteria cultures of E. coli. I found that Sulfatrim was the most effective at clearing the bacteria, followed by Amoxicillin, then Raw Garlic Disks, and then diluted raw Garlic and water."
+	3,
+	124,
+	"Saint John High School",
+	"This experiment was done to determine what age group has the best short term memory. A visual and audio testing was done to figure out this question. Overall, teenagers had the best short term memory due to everyday use of their brains because of high school."
 );
-INSERT INTO project_divisions(project, division) VALUES(1319, 500);
+INSERT INTO project_divisions(project, division) VALUES(1589, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1319,
+	1589,
 	1,
-	"Brenna Schilds",
-	"Dawson Creek",
+	"Intekhab Hossain",
+	"Saint John",
 	NULL,
-	"I attend South Peace Secondary School in Dawson Creek B.C. I am an early French immersion student so I am bilingual. After school I enjoy playing Basket Ball, Volley Ball and I am a competitive swimmer. I also enjoy volunteering with the local Rotary and Interact clubs in my town. One of my hobbies is playing piano; I also enjoy singing and music in general. I am interested in biology and chemistry, though I find astronomy fascinating as well. Really I’m interested in science. In grade 8 I won the science award at school for having the top marks in science for my grade and I have been attending Regional science fairs since grade four. In grade 8 won three different special awards at my region’s science fair and in grade 9 I won two awards one of which was the Canadian Woman in Science and Technology Award. At this year's regional fair I won the BC Biologist's award. This will be my fourth year attending the Canada Wide Science Fair. I attended the ones in Vancouver, Saguenay, and Truro. For my future career I hope to be a pharmacist."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1319,
-	1,
-	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
-	"Intermediate",
-	"Rx&D Health Research Foundation",
-	100.00
+	"My name is Intekhab Hossain and I am from Saint John High School, New Brunswick. I am currently in grade 9 and looking forward to full pre IB for next year. I have a 96% average in school and I have skipped grade 5. I have volunteered at the public library over the summer and plan to volunteer again this summer. My interests are videogames and sports. That’s what I do during my free time. My favorite sports are soccer and basketball. I have received many awards in both education and athletics. When I grow up, I plan to be a doctor and this is why I did my project on the human brain this year so it helps me in the future. I have been quite successful in my life so far and I plan to carry that on and keep achieving new heights."
 );
 
 INSERT INTO projects
@@ -12369,7 +12335,7 @@ VALUES (
 	"The Coriolis Effect and its Implications",
 	3,
 	NULL,
-	"Mexico",
+	127,
 	NULL,
 	"We explain the Coriolis effect and demonstrate it on the basis of theories and physical laws using an experimental, dynamic scientific methodology. We also connect it with the environmental impact of global warming and its effects, noting that man and his technology have caused this uncontrolled situation with an impact that increases daily with catastrophic manifestations."
 );
@@ -12413,7 +12379,7 @@ VALUES (
 	"The Coriolis Effect and its Implications",
 	3,
 	NULL,
-	"Mexico",
+	127,
 	NULL,
 	"We explain the Coriolis effect and demonstrate it on the basis of theories and physical laws using an experimental, dynamic scientific methodology. We also connect it with the environmental impact of global warming and its effects, noting that man and his technology have caused this uncontrolled situation with an impact that increases daily with catastrophic manifestations."
 );
@@ -12442,25 +12408,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1512,
+	1319,
 	2008,
-	"The Effect of Antibacterial Soap on Different Types of Bacteria",
-	3,
-	6,
-	"Regina",
-	"Thom Collegiate",
-	"This project strived to test an antibacterial soap on different types of bacteria. Paper soap disks were soaked in the antibacterial soap and were placed in dishes consisting of three different types of bacteria: S. aureus, S. marcescens, and Strep. Lactis. The zones of exclusion were measured and data was gathered to form a conclusion."
+	"The Curing Clove!",
+	2,
+	12,
+	94,
+	"South Peace Secondary",
+	"This project explored the anti bacterial properties of Garlic against E. coli and then compared them to Amoxicillin and Sulfatrim-DS. I used several different kinds of medicinal solutions, which I placed in bacteria cultures of E. coli. I found that Sulfatrim was the most effective at clearing the bacteria, followed by Amoxicillin, then Raw Garlic Disks, and then diluted raw Garlic and water."
 );
-INSERT INTO project_divisions(project, division) VALUES(1512, 8);
+INSERT INTO project_divisions(project, division) VALUES(1319, 500);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1512,
+	1319,
 	1,
-	"Andrea Tang",
-	"Regina",
+	"Brenna Schilds",
+	"Dawson Creek",
 	NULL,
-	"My name is Andrea Tang and I am a student from Regina, Saskatchewan. I am currently in grade 12, working on my IB diploma at Thom Collegiate. I have been dancing since I was 5 years old, trained in ballet and modern dance. While I am not dancing, I also enjoy playing my trombone in various school bands and orchestras, knitting, and reading historical fiction and fantasy novels. I am very fortunate to have had the opportunity to travel to many places. I have been to regions in Europe, Asia, the United States and Canada. After graduation, I am planning to attend the University of Saskatchewan in the Faculty of Arts and Science. This is my second CWSF, and I am excited for the week’s events."
+	"I attend South Peace Secondary School in Dawson Creek B.C. I am an early French immersion student so I am bilingual. After school I enjoy playing Basket Ball, Volley Ball and I am a competitive swimmer. I also enjoy volunteering with the local Rotary and Interact clubs in my town. One of my hobbies is playing piano; I also enjoy singing and music in general. I am interested in biology and chemistry, though I find astronomy fascinating as well. Really I’m interested in science. In grade 8 I won the science award at school for having the top marks in science for my grade and I have been attending Regional science fairs since grade four. In grade 8 won three different special awards at my region’s science fair and in grade 9 I won two awards one of which was the Canadian Woman in Science and Technology Award. At this year's regional fair I won the BC Biologist's award. This will be my fourth year attending the Canada Wide Science Fair. I attended the ones in Vancouver, Saguenay, and Truro. For my future career I hope to be a pharmacist."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1319,
+	1,
+	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
+	"Intermediate",
+	"Rx&D Health Research Foundation",
+	100.00
 );
 
 INSERT INTO projects
@@ -12471,7 +12447,7 @@ VALUES (
 	"The Dilemma of Musical Allusions -uses and abuses of music",
 	1,
 	9,
-	"Toronto",
+	63,
 	"Le Collège français",
 	"Music can make us feel good, but the same music can evoke very different emotions in others. This project uses various audio illusions to expose how we can be fooled by what we hear. The conclusion is that we need to better understand music’s role in our lives."
 );
@@ -12500,12 +12476,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1512,
+	2008,
+	"The Effect of Antibacterial Soap on Different Types of Bacteria",
+	3,
+	6,
+	28,
+	"Thom Collegiate",
+	"This project strived to test an antibacterial soap on different types of bacteria. Paper soap disks were soaked in the antibacterial soap and were placed in dishes consisting of three different types of bacteria: S. aureus, S. marcescens, and Strep. Lactis. The zones of exclusion were measured and data was gathered to form a conclusion."
+);
+INSERT INTO project_divisions(project, division) VALUES(1512, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1512,
+	1,
+	"Andrea Tang",
+	"Regina",
+	NULL,
+	"My name is Andrea Tang and I am a student from Regina, Saskatchewan. I am currently in grade 12, working on my IB diploma at Thom Collegiate. I have been dancing since I was 5 years old, trained in ballet and modern dance. While I am not dancing, I also enjoy playing my trombone in various school bands and orchestras, knitting, and reading historical fiction and fantasy novels. I am very fortunate to have had the opportunity to travel to many places. I have been to regions in Europe, Asia, the United States and Canada. After graduation, I am planning to attend the University of Saskatchewan in the Faculty of Arts and Science. This is my second CWSF, and I am excited for the week’s events."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1565,
 	2008,
 	"The Effect of Automation on Wild Rice Harvest",
 	1,
 	8,
-	"Manitoba First Nations",
+	111,
 	"Sagkeeng Consolidated School",
 	"The project that we have chosen was The Effect of Automation on Wild Rice. The project was to find out if automated boats (airboats) or non-automated boats (canoes) had an effect on the crops of the wild rice. We found out that the airboats (automated) left some extensive damage to the crops."
 );
@@ -12565,46 +12565,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1483,
-	2008,
-	"The Effects of Bacillus thuringiensis on Non-Target Invertebrates",
-	3,
-	9,
-	"Toronto",
-	"Northern S.S.",
-	"The project focuses on how the bacterial pesticide Bacillus thuringiensis serovar kurstaki affects insects (beetle larva and crickets) other than its primary target (caterpillars) at varying concentrations. Many experimental groups with 20 insects each have been run, with the definitive results being the mortality rates. The project has indicated that when used at the proper dosage, Bt is an effective and specific pesticide."
-);
-INSERT INTO project_divisions(project, division) VALUES(1483, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1483,
-	1,
-	"Imran Nasser-Pardhan",
-	"Toronto",
-	NULL,
-	"I am currently a grade 11 student at Northern Secondary School at which I am enrolled in the gifted program. I participate in a number of the school's literary clubs and athletic programs such as; the school's newspaper, literary arts magazine and curling team among others. I plan to attend University in two years time, in a life sciences program."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1483,
-	2,
-	"Bronwyn Dalziel",
-	"Toronto",
-	NULL,
-	"Bronwyn Dalziel was never your average girl. She grew up playing with toy dinosaurs, model planes, and LEGO™; and ever since she was in Kindergarten, her family has housed a veritable menagerie of fish, lizards and the occasional snake. An aspiring ornithologist, Dalziel enjoys nature hikes and observing the birds in her own backyard; recently, she has taken a step towards her future career by volunteering at the Tommy Thompson Park Bird Research Station. A well-rounded individual, Dalziel’s scientific half is balanced by great creativity, and she has received the James Houston Award for Art in Grade 6 as a result. Other accomplishments include a middle school Achievement Award for Design Technology, various math awards and a place on the honor role five years running. As well as bird watching, Dalziel spends her free time reading, writing fan fiction, playing video games and guitar, listening to classic rock and having fun with friends; her extracurricular activities have included Robotics, Chess and Science Clubs; Dodgeball; Synchronized Swimming, Figure Skating and Curling. Dalziel lives with her parents and younger brother David in Toronto, Ontario, and she wouldn’t have it any other way."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1514,
 	2008,
 	"The Effect of Scarification and Acid Bathing?",
 	2,
 	6,
-	"Regina",
+	28,
 	"Luther College High School",
 	"This project explored two methods of scarification (mechanical and chemical) of the seeds of the Ratibida columnifera. Days to germination and total number of seeds germinated were the studied variables. A rock tumbler and lime juice were used to scarify the seeds. Both mechanical and chemical scarification resulted in improved germination of the R. columnifera. This may have important implications for prairie grasslands restoration projects."
 );
@@ -12643,12 +12609,70 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1483,
+	2008,
+	"The Effects of Bacillus thuringiensis on Non-Target Invertebrates",
+	3,
+	9,
+	63,
+	"Northern S.S.",
+	"The project focuses on how the bacterial pesticide Bacillus thuringiensis serovar kurstaki affects insects (beetle larva and crickets) other than its primary target (caterpillars) at varying concentrations. Many experimental groups with 20 insects each have been run, with the definitive results being the mortality rates. The project has indicated that when used at the proper dosage, Bt is an effective and specific pesticide."
+);
+INSERT INTO project_divisions(project, division) VALUES(1483, 500);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1483,
+	1,
+	"Imran Nasser-Pardhan",
+	"Toronto",
+	NULL,
+	"I am currently a grade 11 student at Northern Secondary School at which I am enrolled in the gifted program. I participate in a number of the school's literary clubs and athletic programs such as; the school's newspaper, literary arts magazine and curling team among others. I plan to attend University in two years time, in a life sciences program."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1483,
+	2,
+	"Bronwyn Dalziel",
+	"Toronto",
+	NULL,
+	"Bronwyn Dalziel was never your average girl. She grew up playing with toy dinosaurs, model planes, and LEGO™; and ever since she was in Kindergarten, her family has housed a veritable menagerie of fish, lizards and the occasional snake. An aspiring ornithologist, Dalziel enjoys nature hikes and observing the birds in her own backyard; recently, she has taken a step towards her future career by volunteering at the Tommy Thompson Park Bird Research Station. A well-rounded individual, Dalziel’s scientific half is balanced by great creativity, and she has received the James Houston Award for Art in Grade 6 as a result. Other accomplishments include a middle school Achievement Award for Design Technology, various math awards and a place on the honor role five years running. As well as bird watching, Dalziel spends her free time reading, writing fan fiction, playing video games and guitar, listening to classic rock and having fun with friends; her extracurricular activities have included Robotics, Chess and Science Clubs; Dodgeball; Synchronized Swimming, Figure Skating and Curling. Dalziel lives with her parents and younger brother David in Toronto, Ontario, and she wouldn’t have it any other way."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1289,
+	2008,
+	"The Effects of Heavy Metals on Degesia tigrina",
+	3,
+	NULL,
+	NULL,
+	NULL,
+	"Mimicking the effects that the varying concentrations of the chemicals found in marine ecosystems have on aquatic invertebrates would determine the effect that heavy metals have on the latter? The concentration response effect of Dugesia tigrina in terms of morphological and locomotive changes were observed when exposed to lead nitrate and cadmium nitrate at 1ppm and 10ppm over a period of fourteen days."
+);
+INSERT INTO project_divisions(project, division) VALUES(1289, 4);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1289,
+	1,
+	"Honourable Mention - Earth & Environmental Science",
+	"Senior",
+	"Petro-Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1506,
 	2008,
 	"The Effects of Humanoid Avatar Gaze on Chat Communication in Virtual Worlds",
 	3,
 	9,
-	"York",
+	67,
 	NULL,
 	"This is an experimental project that investigated the effects of an avatar on the quality of communication experienced. Through the analyses, it is determined that the presence of an avatar increases the quality of chat communication. However, it is inconclusive if a direct avatar gaze condition improves upon an indirect avatar gaze condition."
 );
@@ -12707,36 +12731,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1289,
-	2008,
-	"The Effects of Heavy Metals on Degesia tigrina",
-	3,
-	NULL,
-	NULL,
-	NULL,
-	"Mimicking the effects that the varying concentrations of the chemicals found in marine ecosystems have on aquatic invertebrates would determine the effect that heavy metals have on the latter? The concentration response effect of Dugesia tigrina in terms of morphological and locomotive changes were observed when exposed to lead nitrate and cadmium nitrate at 1ppm and 10ppm over a period of fourteen days."
-);
-INSERT INTO project_divisions(project, division) VALUES(1289, 4);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1289,
-	1,
-	"Honourable Mention - Earth & Environmental Science",
-	"Senior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1521,
 	2008,
 	"The Effects of Microbubble Volume on Ship Hull Drag Reduction",
 	3,
 	12,
-	"Greater Vancouver",
+	90,
 	"Lord Tweedsmuir Secondary",
 	"The effects of streaming five different microbubble volumes along a model container ship hull were assessed. Tests were conducted in a 3.4 m drag tank equipped with digital photogate sensors, and a small blower. Intermediate microbubble volumes of approximately 30-80 ml/sec were found to reduce ship drag by 4%. Hypothesis test of means, and confidence intervals, found these results to be statistically significant."
 );
@@ -12766,80 +12766,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1464,
-	2008,
-	"The Effects of Parasitic Species on Fishing Vessels",
-	3,
-	1,
-	"Tri-County",
-	NULL,
-	"This project involved the design and creation of a water tunnel for the purpose of analysing the effects of barnacle growth on the drag experienced by fishing vessels. It was found that the primary source of drag was barnacle contamination on the front portion of the hull. Conversely, barnacle contamination on the rear portion of the hull resulted in much less drag."
-);
-INSERT INTO project_divisions(project, division) VALUES(1464, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1464,
-	1,
-	"Logan Fuller",
-	"Yarmouth",
-	NULL,
-	"My name is Logan Fuller, and I was born and raised in Yarmouth, Nova Scotia. I am currently in grade 11 at Yarmouth Consolidated Memorial High School, and I am also enrolled in the International Baccalaureate diploma programme. At my school, I am the founder and president of the digital photography club. I am also the captain and driver for my school's robotics club/team. I am a volunteer at my local community TV station, run by Eastlink Television. During their live studio show I will alternate between many different positions, however I usually direct. I am also in the process of producing and co-hosting a new show. I am extremely interested in both aviation and engineering. I love to fly, and I love building and designing things. I am actually going to be getting my private pilot's license later this year. When it's not possible to fly in the large planes, I will fly my internal combustion RC plane. When I finish high school, I plan to take aerospace engineering at the university of Toronto. My short-term goal is to be an airline pilot, and my long-term goal is to be an astronaut with the Canadian Space Agency."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1338,
-	2008,
-	"The Fat In Your Fries",
-	1,
-	1,
-	"South Shore",
-	"Centre Consolidated School",
-	"For my project I measured the average amount total amount of fat in 8 different types of French fries in order to find out whether or not it is safe to trust the nutritional information the chains I obatained the fries from provide, and found that the difference between the amounts the chain's stated and the amounts my experiment found were quite different."
-);
-INSERT INTO project_divisions(project, division) VALUES(1338, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1338,
-	1,
-	"Sarah  Mack",
-	"Lunenburg",
-	NULL,
-	"My name is Sarah Mack and I am in grade 8 at Centre Consolidated School near Lunenburg, Nova Scotia. For the past 6 years I have been a member of the Lunenburg Mariners swim teams and for the psat 5 years I have been a member of West Nova Fuels Tier-2 soccer club. I am also very involved in sports at school doing: cross country, soccer, basketball, track and field. I am also a member of my schools leadership comittee. I have always maintained very good grades and last year I ended my school year with a 96.5% average."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1338,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1338,
-	2,
-	"Bronze Medal - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1505,
 	2008,
 	"The Effects of Nitrogen and Phosphorus Fertilizers on the Bioremediation of  Oil",
 	1,
 	9,
-	"York",
+	67,
 	"St. Clare Catholic E.S.",
 	"To test the stimulation of microorganizms utilized in bioremediation, additions of phosphorus and nitrogen were added to oil contaminated soils and water. The results indicated that an increased addition of nitrogen proved the most effective, while phosphorus and nitrogen mixtures were secondary. The supplements proved effective in increasing levels of bioremediation."
 );
@@ -12879,36 +12811,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1602,
-	2008,
-	"The Flex on Hockey Sticks",
-	2,
-	11,
-	"Lethbridge",
-	"St. Joseph's Collegiate",
-	"This study acknowledges the importance for hockey players to be able to select the proper (stiffness) hockey stick as they grow larger and stronger. The study looks at the current information, or advertising, on sticks today and tests the accurracy of this advertsing against the actual stiffness of the stick. Some significant shortcomings were identified."
-);
-INSERT INTO project_divisions(project, division) VALUES(1602, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1602,
-	1,
-	"Adam Kaczanowski",
-	"Brooks",
-	NULL,
-	"I am a 15 year old male attending a catholic school in rural Alberta. I come from a family of four including my mother, father and younger sister Hayley. I have a keen interest in most sports but am particularly fond of school sports, track and field, and hockey and golf. I also have a strong faith and enjoy attending church, youth groups and bible camp. I do volunteer work at the hospital and work for wages at the local golf course in the summers. My parents are both outdoor enthusiasts and expose me activities like canoeing, hiking, and hunting that I also enjoy. I do well academically with interests leaning towards math, science and social. My last science project was in grade six where I studied winter animal tracks and I am very excited about about the project I am doing this year on hockey sticks."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1523,
 	2008,
 	"The Effects of Zizyphus jujuba var. spinosa Extract on Various Cancer Cell Lines",
 	3,
 	12,
-	"Greater Vancouver",
+	90,
 	"Sands Secondary, Sutherland Secondary",
 	"Although great efforts are made in the search for modern anticancer substances, ancient compounds have demonstrated a surprising ability to treat and prevent cancer. Zizyphus jujuba var. spinosa (commonly known as Z. spinosa) contains many phytochemicals that are important for inhibiting the growth of cancer cells. In our research project, we tested the Z. spinosa extract’s effects on three different human cancer cell lines."
 );
@@ -12948,26 +12856,69 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1406,
+	1338,
 	2008,
-	"The Incredible Bridge",
+	"The Fat In Your Fries",
 	1,
-	9,
-	"Renfrew County",
-	"Champlain Discovery P.S.",
-	"An experiment that was built, tested.....and worked! To prove a popsicle stick bridge using 178 popsicle sticks would hold Jordan Deloughery while standing on a board on the top platform of the bridge without breaking or causing damage to the bridge."
+	1,
+	10,
+	"Centre Consolidated School",
+	"For my project I measured the average amount total amount of fat in 8 different types of French fries in order to find out whether or not it is safe to trust the nutritional information the chains I obatained the fries from provide, and found that the difference between the amounts the chain's stated and the amounts my experiment found were quite different."
 );
-INSERT INTO project_divisions(project, division) VALUES(1406, 7);
-INSERT INTO project_divisions(project, division) VALUES(1406, 6);
+INSERT INTO project_divisions(project, division) VALUES(1338, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1406,
+	1338,
 	1,
-	"Jordan Deloughery",
-	"Pembroke",
+	"Sarah  Mack",
+	"Lunenburg",
 	NULL,
-	"I'm Jordan Deloughery; born in Pembroke, Ontario on February 01, 1995. Favourite interests: drawing, hunting, fishing, waterskiing, tubing, snowboarding, exploring for special/unusual items, building with lego. I've played hockey at 5 years old; this past season I played 2nd year Peewee and named Captain by my coach for my leadership, sportsmanship, enthusiasm and love of the game. I'm in grade 7; Champlain Discovery PS. My last report card were all ""4's'"". I've made school teams; cross-country running, volleyball, basketball, and badminton. I enjoy meeting other people. I wish to become a Civil Engineer. I've numerous hockey trophies. My exciting moment was when our 4 players, including myself and goalie to have a penalty shot relay race on the Scotiabank Ice Surface during the 1st and 2nd period of the last game of the Ottawa Senators season. In front of a sold-out crowd vs the Boston Bruins; we had a penalty shot relay race against hockey players from Ottawa. I'm mostly proud placing first in our School Science Fair, placing first in the RCSF; best of all to be chosen first to attend the CWSF; seeing the trophy with my name engraved. This is a first-time for my entire school."
+	"My name is Sarah Mack and I am in grade 8 at Centre Consolidated School near Lunenburg, Nova Scotia. For the past 6 years I have been a member of the Lunenburg Mariners swim teams and for the psat 5 years I have been a member of West Nova Fuels Tier-2 soccer club. I am also very involved in sports at school doing: cross country, soccer, basketball, track and field. I am also a member of my schools leadership comittee. I have always maintained very good grades and last year I ended my school year with a 96.5% average."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1338,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1338,
+	2,
+	"Bronze Medal - Health Sciences",
+	"Junior",
+	"Canadian Institutes of Health Research",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1464,
+	2008,
+	"The Effects of Parasitic Species on Fishing Vessels",
+	3,
+	1,
+	12,
+	NULL,
+	"This project involved the design and creation of a water tunnel for the purpose of analysing the effects of barnacle growth on the drag experienced by fishing vessels. It was found that the primary source of drag was barnacle contamination on the front portion of the hull. Conversely, barnacle contamination on the rear portion of the hull resulted in much less drag."
+);
+INSERT INTO project_divisions(project, division) VALUES(1464, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1464,
+	1,
+	"Logan Fuller",
+	"Yarmouth",
+	NULL,
+	"My name is Logan Fuller, and I was born and raised in Yarmouth, Nova Scotia. I am currently in grade 11 at Yarmouth Consolidated Memorial High School, and I am also enrolled in the International Baccalaureate diploma programme. At my school, I am the founder and president of the digital photography club. I am also the captain and driver for my school's robotics club/team. I am a volunteer at my local community TV station, run by Eastlink Television. During their live studio show I will alternate between many different positions, however I usually direct. I am also in the process of producing and co-hosting a new show. I am extremely interested in both aviation and engineering. I love to fly, and I love building and designing things. I am actually going to be getting my private pilot's license later this year. When it's not possible to fly in the large planes, I will fly my internal combustion RC plane. When I finish high school, I plan to take aerospace engineering at the university of Toronto. My short-term goal is to be an airline pilot, and my long-term goal is to be an astronaut with the Canadian Space Agency."
 );
 
 INSERT INTO projects
@@ -12978,7 +12929,7 @@ VALUES (
 	"The Future of Recycling Plastics",
 	1,
 	12,
-	"Greater Vancouver",
+	90,
 	"University Transition Program",
 	"Our project promotes a new type of plastic that can help reduce pollution from the destruction of thermosets. We experimented with a patent's procedures but came to different results and conclusions. We have produced a new type of plastic that would be able to replace the unrecyclable thermosets used in some areas to minimize toxic and greenhouse gases that are produced from incinerating used thermosets."
 );
@@ -13008,12 +12959,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1602,
+	2008,
+	"The Flex on Hockey Sticks",
+	2,
+	11,
+	115,
+	"St. Joseph's Collegiate",
+	"This study acknowledges the importance for hockey players to be able to select the proper (stiffness) hockey stick as they grow larger and stronger. The study looks at the current information, or advertising, on sticks today and tests the accurracy of this advertsing against the actual stiffness of the stick. Some significant shortcomings were identified."
+);
+INSERT INTO project_divisions(project, division) VALUES(1602, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1602,
+	1,
+	"Adam Kaczanowski",
+	"Brooks",
+	NULL,
+	"I am a 15 year old male attending a catholic school in rural Alberta. I come from a family of four including my mother, father and younger sister Hayley. I have a keen interest in most sports but am particularly fond of school sports, track and field, and hockey and golf. I also have a strong faith and enjoy attending church, youth groups and bible camp. I do volunteer work at the hospital and work for wages at the local golf course in the summers. My parents are both outdoor enthusiasts and expose me activities like canoeing, hiking, and hunting that I also enjoy. I do well academically with interests leaning towards math, science and social. My last science project was in grade six where I studied winter animal tracks and I am very excited about about the project I am doing this year on hockey sticks."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1503,
 	2008,
 	"The Impact of a Distracting Environment on Memory",
 	1,
 	9,
-	"Chatham-Kent",
+	56,
 	"Good Shepherd C.S.",
 	"Over the past few years modern life has gotten busier for example more students are on sports teams and end up doing there homework in the car, and often on the bus. These all become distractions and the classroom is also full of many different types of distractions. Do these environments interfere with the student’s short-term memory?"
 );
@@ -13032,12 +13007,37 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1406,
+	2008,
+	"The Incredible Bridge",
+	1,
+	9,
+	47,
+	"Champlain Discovery P.S.",
+	"An experiment that was built, tested.....and worked! To prove a popsicle stick bridge using 178 popsicle sticks would hold Jordan Deloughery while standing on a board on the top platform of the bridge without breaking or causing damage to the bridge."
+);
+INSERT INTO project_divisions(project, division) VALUES(1406, 7);
+INSERT INTO project_divisions(project, division) VALUES(1406, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1406,
+	1,
+	"Jordan Deloughery",
+	"Pembroke",
+	NULL,
+	"I'm Jordan Deloughery; born in Pembroke, Ontario on February 01, 1995. Favourite interests: drawing, hunting, fishing, waterskiing, tubing, snowboarding, exploring for special/unusual items, building with lego. I've played hockey at 5 years old; this past season I played 2nd year Peewee and named Captain by my coach for my leadership, sportsmanship, enthusiasm and love of the game. I'm in grade 7; Champlain Discovery PS. My last report card were all ""4's'"". I've made school teams; cross-country running, volleyball, basketball, and badminton. I enjoy meeting other people. I wish to become a Civil Engineer. I've numerous hockey trophies. My exciting moment was when our 4 players, including myself and goalie to have a penalty shot relay race on the Scotiabank Ice Surface during the 1st and 2nd period of the last game of the Ottawa Senators season. In front of a sold-out crowd vs the Boston Bruins; we had a penalty shot relay race against hockey players from Ottawa. I'm mostly proud placing first in our School Science Fair, placing first in the RCSF; best of all to be chosen first to attend the CWSF; seeing the trophy with my name engraved. This is a first-time for my entire school."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1476,
 	2008,
 	"The Leaching of Bisphenol-A from Polycarbonate Bottles",
 	3,
 	9,
-	"Peterborough",
+	45,
 	"Peterborough Collegiate",
 	"The leaching of Bisphenol-A (BPA) from polycarbonate bottles was compared to the temperature of the environment. Temperatures of 4°C, 20°C and 95°C were chosen to examine the relationship. Solid Phase Extraction was used to pre-concentrate the samples before analysis by Liquid Chromatography/ Mass Spectrometry. An increase in the leaching of BPA was observed at high temperatures. The control was found to contain BPA."
 );
@@ -13116,56 +13116,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1382,
-	2008,
-	"The Pandemic Ventilator",
-	3,
-	9,
-	"Waterloo-Wellington",
-	"Forest Heights Collegiate",
-	"During an influenza pandemic, the need for ventilators may greatly exceed supplies. Triage protocols implemented by governments determine who will get access, and who will die if denied. It will not be possible to construct enough commercial ventilators in time once a pandemic begins. This project constructs and tests a ventilator made from industrial components that will be available even after a pandemic has started."
-);
-INSERT INTO project_divisions(project, division) VALUES(1382, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1382,
-	1,
-	"Jeff Graansma",
-	"Kitchener",
-	NULL,
-	"I was born and grew up in Kitchener Ontario. I go to Forest Heights Collegiate Institute. I am currently employed part time as a Lifeguard and Swimming Instructor for the city of Kitchener. Some of my hobbies and interests include computers, mountain biking, go-carting, automation and robotics and exploring the outdoors. I enjoy problem solving. I spend my summer at Pointe au Baril boating, fishing, water skiing, and swimming. I volunteer in my community through my workplace by teaching disabled children to swim. I am active in my church youth group by helping at the food bank, roadside cleanup, home repair projects and youth mission trips. I have acquired much experience communicating with people and the community. I would like to go into post secondary education in the industrial automation field."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1382,
-	1,
-	"Engineers Without Borders - Canada Award",
-	NULL,
-	"Engineers Without Borders - Canada",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1382,
-	2,
-	"Honourable Mention - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1376,
 	2008,
 	"The Missing Piece of Global Warming",
 	3,
 	9,
-	"Ottawa",
+	44,
 	"Ashbury College",
 	"The IPCC’s projection for sea level rise assumes that ice flow from Greenland’s glaciers will remain constant even as global temperatures increase. This project was designed to challenge the IPCC's assumption by finding a relationship between temperature and ice flow. A model based on this relationship and NASA satellite data indicates that the IPCC may have underestimated future sea level rise by approximately 25%."
 );
@@ -13239,7 +13195,7 @@ VALUES (
 	"The Photoelectric effect",
 	2,
 	3,
-	"Fundy",
+	124,
 	"Sir James Dunn Academy",
 	"The voltage potential of different types of light sources was measured. All in a controlled testing area, where there was only one source of light being used. Two different tests were performed."
 );
@@ -13258,12 +13214,56 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1382,
+	2008,
+	"The Pandemic Ventilator",
+	3,
+	9,
+	65,
+	"Forest Heights Collegiate",
+	"During an influenza pandemic, the need for ventilators may greatly exceed supplies. Triage protocols implemented by governments determine who will get access, and who will die if denied. It will not be possible to construct enough commercial ventilators in time once a pandemic begins. This project constructs and tests a ventilator made from industrial components that will be available even after a pandemic has started."
+);
+INSERT INTO project_divisions(project, division) VALUES(1382, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1382,
+	1,
+	"Jeff Graansma",
+	"Kitchener",
+	NULL,
+	"I was born and grew up in Kitchener Ontario. I go to Forest Heights Collegiate Institute. I am currently employed part time as a Lifeguard and Swimming Instructor for the city of Kitchener. Some of my hobbies and interests include computers, mountain biking, go-carting, automation and robotics and exploring the outdoors. I enjoy problem solving. I spend my summer at Pointe au Baril boating, fishing, water skiing, and swimming. I volunteer in my community through my workplace by teaching disabled children to swim. I am active in my church youth group by helping at the food bank, roadside cleanup, home repair projects and youth mission trips. I have acquired much experience communicating with people and the community. I would like to go into post secondary education in the industrial automation field."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1382,
+	1,
+	"Engineers Without Borders - Canada Award",
+	NULL,
+	"Engineers Without Borders - Canada",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1382,
+	2,
+	"Honourable Mention - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1590,
 	2008,
 	"The Power of Polymer",
 	1,
 	3,
-	"Fundy",
+	124,
 	"Forest Hills School",
 	"This experiment tested the use of hydrated polymer crystals as a technique to prolong the number of days plants survive without water. Plants were grown in 5 various combinations of polymer and soil. Water provision was discontinued after a height of ten centimetres. The days they survived were documented. Plants in polymer withstood lack of water 5 times longer than plants in soil; 45 days."
 );
@@ -13307,7 +13307,7 @@ VALUES (
 	"The Power of Wind",
 	1,
 	9,
-	"Frontenac, Lennox & Addington",
+	40,
 	"Calvin Park P.S.",
 	"My project tests the effectiveness of different wind turbines using a wind tunnel. It measures voltage and milliamps created by the turbines, and using that data I can determine which turbine is the most effective out of the ones I tested."
 );
@@ -13332,7 +13332,7 @@ VALUES (
 	"The Pressure Is On!",
 	1,
 	9,
-	"Toronto",
+	63,
 	"Upper Canada College",
 	"A subject’s blood pressure and heart rate will increase when playing the violent action/adventure video game, Call of Duty 4. This game, classified as a first-person shooter video game, involves simulated combat in modern-day warfare settings. Subjects' longterm health could be adversely affected by reactions to the realism, storyline, visual elements and quality of multiplayer game play, which gives a more ""elevating"" experience while playing."
 );
@@ -13351,12 +13351,207 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1281,
+	2008,
+	"The Return of the ""Alter-Leg""",
+	3,
+	1,
+	107,
+	"Riverview High School",
+	"The ""Alter-Leg"" is an apparatus which has been created to relieve strain from the muscles and bones of the lower leg. The ""Alter-Leg"" takes away the disadvantages that come with using crutches and more! By getting one back on their feet and using their leg bones and muscles, they will heal sooner allowing the user to return to their normal lifestyle as soon as possible."
+);
+INSERT INTO project_divisions(project, division) VALUES(1281, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1281,
+	1,
+	"Todd Mercer",
+	"Sydney",
+	NULL,
+	"Todd is a grade 11 student at Riverview High School in Sydney, Nova Scotia. While not playing hockey, tennis, golf, squash, or badminton, he can be found making lots of nice noise for his neighbours by playing the drums. Some other activities that he does in his spare time is air drum, air guitar, and air play any sport. When Todd grows up he would love to have a job that he waits to go to work for every morning, like an inventor, drummer, athlete/sports coach, magician, or a professional whistler"
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1281,
+	2,
+	"Mike MacIsaac",
+	"Sydney",
+	NULL,
+	"hey Im Mike MacIsaac and I am 16 years old. I go to Riverview High School in Coxheath, Nova Scotia. I enjoy playing hockey, drumming, skateboarding, snowboarding and lots lots more."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1345,
+	2008,
+	"The Slingshot: Improving the Modern Hockey Stick",
+	1,
+	9,
+	54,
+	"Canadian Martyrs E.S.",
+	"Experiments were performed to determine how a hockey stick’s balance altered its ability to transfer energy. An apparatus was designed to swing a stick and strike a wooden rod. Roller bearings were allowed to move within the stick to change the weight distribution as the stick is swung. The travel of the wooden rod was measured. There is an optimum balance for best energy transfer."
+);
+INSERT INTO project_divisions(project, division) VALUES(1345, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1345,
+	1,
+	"Nicholas Chong",
+	"Dundas",
+	NULL,
+	"I am in Grade 7 at Hamilton's Canadian Martyrs Catholic Elementary School. I am the second youngest of 5 Chong siblings. All five of us have particpated in Science Fairs and I follow my older sister in being fortunate to go to CWSF. I am active in my skiing, hockey, soccer and golf competitions. I am looking forward to my second year being a caddy at the Hamilton Golf and Country Club. I plan to play a lot of golf this summer and will be looking forward to try out for the Wilson Golf Tour."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1599,
+	2008,
+	"The Socio-Thermology of the Mi'kmaq Sweat Lodge",
+	3,
+	1,
+	118,
+	"We'koqma'q First Nation Secondary School",
+	"Study all the aspects of heat transfer in the Mi'kmaq sweat lodge and come to an understanding of why these temperatures have created such a spiritual experience for our people. To do this we built a lodge, Asked elders for help, heated the rocks ran tests, surveyed people, collected anecdotal data, participated and measured an actual sweat."
+);
+INSERT INTO project_divisions(project, division) VALUES(1599, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1599,
+	1,
+	"William Meuse",
+	"whycocomagh",
+	NULL,
+	"Accepted to Acadia! Enviromental science is my calling. spend alot of time working in the woods. Very proud of my Mi'kmaq heritage. Don't ride the bus I run to school everyday. figure skater for 10 years. currently interested in jujitsu, Running, Skiing, and Enviromental science. I enjoy MMORPG(massively multiplayer online role playing games) video games and hanging out with my friends. i'm grade 12 student at We'koma'q first nation secondary leader of youth group and very active in all school fundraisers."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1404,
+	2008,
+	"The Stroop Effect",
+	2,
+	9,
+	47,
+	"Madawaska Valley District H.S.",
+	"My project on the Stroop Effect includes a battery of tests involving the brain and conflicting mental tasks. Participants will be asked to perform activities, which will send their brain conflicting messages. I will record and analyze the data, coming to a further conclusion."
+);
+INSERT INTO project_divisions(project, division) VALUES(1404, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1404,
+	1,
+	"Alyssa Borutski",
+	"Barry's Bay",
+	NULL,
+	"My name is Alyssa Borutski and I am fifteen years old. I live in the small town (1200 people) of Barry's Bay where I currently live with my mother (Lorraine), father (Clifford), and younger sister (Kali). I come from a large extended family (my parents both have 7 brothers and sisters) of the Polish background. I live on Wadsworth Lake, and enjoy swimming and waterskiing. I love sports and I have played on my high school's varsity basketball, volleyball, soccer, badminton, and track & feild teams, just to name a few. Some of my hobbies include: baking (I make novilty cakes), scrapbooking, and participating in my high school’s Student Reach Team (trivia). I voulenteer within the community and am apart of a choir. Awards I have received include: 1st Place in the Gauss Mathematics Competiton, MIP (Most Improved Player) in Basketball, Principles Award of Student Leadership, 1st Place in Health Science Catergory (Intermediate), RCRSTF Award of Excellence and Best Investigative Science Project. I have am Captain of the varsity Basketball team, and would possibly like to get a basketball scholarship. In the future I want to persue a career in medicine, possibly working as a family or sports medicine psycian."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1336,
+	2008,
+	"The Survival of the Marigold",
+	1,
+	6,
+	16,
+	"William Derby",
+	"This project tested the effect of household detergents on marigolds. Marigolds were watered with a variety of laundry detergents diluted with water. Some laundry detergents destroyed natural materials, while phosphate free and non-alkaline detergents confirmed that they are environmentally friendly. This was analysed by man-made measuring devices and human observation."
+);
+INSERT INTO project_divisions(project, division) VALUES(1336, 9);
+INSERT INTO project_divisions(project, division) VALUES(1336, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1336,
+	1,
+	"Alexandria Slough",
+	"Bulyea",
+	NULL,
+	"My name is Alexandria Slough. I am 12 years old and in grade 7. I go to William Derby School. I live on a mixed farm near Bulyea, SK. I have 2 brothers. The activities I enjoy are volleyball, track, skating, golfing, football, hockey, baseball and scrapbooking. I also enjoy spending time with family, babysitting and hanging out with friends. I love animals. I also dance, I do tap, jazz, hip hop. I also do opening and finale."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1336,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1473,
+	2008,
+	"The Spice of Life",
+	3,
+	9,
+	45,
+	"Holy Cross S.S.",
+	"The present study was designed to evaluate antifungal and antibacterial effects of cinnamon leaf extract, allicin and raw garlic against Penicillium notatum, Pseudomonas fluorescens, and Staphylococcus saprophyticus. The antimicrobial activity was examined by the presence of a zone of inhibition on agar plates. Cinnamon showed excellent inhibitory activity against all microorganisms, allicin exhibited slight inhibitory activity and garlic showed strong inhibition against Staphylococcus saprophyticus."
+);
+INSERT INTO project_divisions(project, division) VALUES(1473, 500);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1473,
+	1,
+	"Alice Yang",
+	"Peterborough",
+	NULL,
+	"I am involved with Math League, Waterloo Math Competition, School Band, School Newspaper Club and Science Fair Club. I have also volunteered in the Emergency Depeartment at Peterborough Civics Hospital. I am interested in debates, politics, and visual arts. During the summer, I enjoy playing tennis and ping pong. As for post-secondary plans, I hope to pursue science at Ottawa U."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1473,
+	1,
+	"University of Ottawa Entrance Scholarship",
+	"Senior Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Ottawa",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1473,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1473,
+	3,
+	"Bronze Medal - Biotechnology & Pharmaceutical Sciences",
+	"Senior",
+	"Rx&D Health Research Foundation",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1568,
 	2008,
 	"The Rollator Wheelchair Hybrid 2: Attaching The Freedom Of Independent Mobility",
 	2,
 	11,
-	"Edmonton",
+	88,
 	"Bonnyville Centralized High School",
 	"A second phase to my 2007 project. I have developed a dual function mobility aid which has the capability of performing the functions of both a manual four wheeled rollator and an electric wheelchair. The results of the tests carried out prove that this innovation is more feasible and effective than current assistive mobility aids."
 );
@@ -13416,83 +13611,59 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1281,
+	1461,
 	2008,
-	"The Return of the ""Alter-Leg""",
+	"The Unseen Benefactors",
 	3,
 	1,
-	"Cape Breton",
-	"Riverview High School",
-	"The ""Alter-Leg"" is an apparatus which has been created to relieve strain from the muscles and bones of the lower leg. The ""Alter-Leg"" takes away the disadvantages that come with using crutches and more! By getting one back on their feet and using their leg bones and muscles, they will heal sooner allowing the user to return to their normal lifestyle as soon as possible."
-);
-INSERT INTO project_divisions(project, division) VALUES(1281, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1281,
-	1,
-	"Todd Mercer",
-	"Sydney",
-	NULL,
-	"Todd is a grade 11 student at Riverview High School in Sydney, Nova Scotia. While not playing hockey, tennis, golf, squash, or badminton, he can be found making lots of nice noise for his neighbours by playing the drums. Some other activities that he does in his spare time is air drum, air guitar, and air play any sport. When Todd grows up he would love to have a job that he waits to go to work for every morning, like an inventor, drummer, athlete/sports coach, magician, or a professional whistler"
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1281,
 	2,
-	"Mike MacIsaac",
-	"Sydney",
-	NULL,
-	"hey Im Mike MacIsaac and I am 16 years old. I go to Riverview High School in Coxheath, Nova Scotia. I enjoy playing hockey, drumming, skateboarding, snowboarding and lots lots more."
+	"West Kings District High School",
+	"My project is on the symbiotic relationship with coral and a dinoflagellate algae called zooanthellae. I examined nine different species of corals and one pest anemone under a high powered microscope to see which species of coral/anemone would contain the most zooxanthellae algae and what the different corals/anemone were relying on for food. Then I compared the growth of the different species of corals."
 );
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1345,
-	2008,
-	"The Slingshot: Improving the Modern Hockey Stick",
-	1,
-	9,
-	"Bay Area",
-	"Canadian Martyrs E.S.",
-	"Experiments were performed to determine how a hockey stick’s balance altered its ability to transfer energy. An apparatus was designed to swing a stick and strike a wooden rod. Roller bearings were allowed to move within the stick to change the weight distribution as the stick is swung. The travel of the wooden rod was measured. There is an optimum balance for best energy transfer."
-);
-INSERT INTO project_divisions(project, division) VALUES(1345, 7);
+INSERT INTO project_divisions(project, division) VALUES(1461, 9);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1345,
+	1461,
 	1,
-	"Nicholas Chong",
-	"Dundas",
+	"Macall Robinson",
+	"Halifax",
 	NULL,
-	"I am in Grade 7 at Hamilton's Canadian Martyrs Catholic Elementary School. I am the second youngest of 5 Chong siblings. All five of us have particpated in Science Fairs and I follow my older sister in being fortunate to go to CWSF. I am active in my skiing, hockey, soccer and golf competitions. I am looking forward to my second year being a caddy at the Hamilton Golf and Country Club. I plan to play a lot of golf this summer and will be looking forward to try out for the Wilson Golf Tour."
+	"I am a grade 11 student at West Kings High School in Kings County Nova Scotia and I am on the high school hockey team. I have been in 4-H for 9 years. I am involved in projects such as dog obedience, fisheries, sheep, poultry, waterfowl, vet science, market lamb market turkey, and self determined. I also have won first place in public speaking at the Nova Scotia 4-H provincial weekend. I am also on the Kings County 4-H Tug-Of-War provincial champion team and the Kings County 4-H provincial champion woodsmen team. I work at the Oaklawn Farm Zoo in Aylesford. My hobbies are fishing, camping, hiking, fly tying, raising and showing Border Collies, and paintball. I live on a farm and I have many pets such as 50 gallon reef aquarium, African Grey Parrot, chameleon, stick bugs, cockatiel, Border Collie and a hedgehog. I am also going to Barzil in August for a year with Rotary Youth Exchange. I would like to learn more about our oceans and take a marine biology coarse and get my bachelors in science. I am interested in working at a bigger zoo in the marine or reptiles department."
 );
 
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1599,
+	1298,
 	2008,
-	"The Socio-Thermology of the Mi'kmaq Sweat Lodge",
+	"The Upright Silo Deicer",
 	3,
 	1,
-	"Mi'kma'q First Nation",
-	"We'koqma'q First Nation Secondary School",
-	"Study all the aspects of heat transfer in the Mi'kmaq sweat lodge and come to an understanding of why these temperatures have created such a spiritual experience for our people. To do this we built a lodge, Asked elders for help, heated the rocks ran tests, surveyed people, collected anecdotal data, participated and measured an actual sweat."
+	4,
+	"Hants East Rural High School",
+	"We built an Upright Silo Deicer which sits on the frozen silage between feeding times to thaw the frozen feed built up on the walls of silos. We tested it with a small model (2 cubic foot bin) and a larger scale model (250 gallon barrel). The Upright Silo Deicer does thaw enough silage to meet the needs of the daily feed requirements."
 );
-INSERT INTO project_divisions(project, division) VALUES(1599, 8);
+INSERT INTO project_divisions(project, division) VALUES(1298, 7);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1599,
+	1298,
 	1,
-	"William Meuse",
-	"whycocomagh",
+	"Sheldon Vissers",
+	"Milford",
 	NULL,
-	"Accepted to Acadia! Enviromental science is my calling. spend alot of time working in the woods. Very proud of my Mi'kmaq heritage. Don't ride the bus I run to school everyday. figure skater for 10 years. currently interested in jujitsu, Running, Skiing, and Enviromental science. I enjoy MMORPG(massively multiplayer online role playing games) video games and hanging out with my friends. i'm grade 12 student at We'koma'q first nation secondary leader of youth group and very active in all school fundraisers."
+	"I am a Grade 12 student and I plan to attend Nova Scotia Agriculture College in the fall taking the Enterprise Management Technology (Dairy Farming) Program. I work on a dairy farm and recently puchased my first vehicle - a Dodge Ram black truck. I was a member of Scouting for several years and in 2005 I received the Queen's Venturer Award. I enjoy downhill skiing and playing basketball. I have travelled to Quebec on skiing vacations and have been to Toronto, Newfoundland, and the Dominic Republic with my family."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1298,
+	2,
+	"Emily Vissers",
+	"Milford",
+	NULL,
+	"I am a Grade 11 student at Hants East Rural High School. I work several hours a week at the East Hants Swimming Pool, teaching lessons and lifeguarding. I want to attend the University of Waterloo, where I would like to study mathematics when I finish Grade 12. I want to become an actuary. I have achieved honors with distinction for the past 5 years at school. I have also received two REC medals for Education (top marks) at Riverside Education Center. I was on the HERH girl's basketball team for two years. I also played on the REC girl's basketball team and on the Tri- County basketball team. I swam competitively on the East Hants Sting Rays Swim Team for 3 years in Nova Scotia. I enjoy going for walks, swimming laps at the pool and the occasional shopping trip to the mall. This will be my first trip to Ottawa, but I have visited Toronto, Newfoundland's Gros Morne National Park, PEI, and I've been to the Dominican Republic with my family."
 );
 
 INSERT INTO projects
@@ -13503,7 +13674,7 @@ VALUES (
 	"The stem cell race",
 	3,
 	10,
-	"Montreal",
+	74,
 	"École Saint-Georges de Montréal (campus 1)",
 	"Many mouse embryonic stem cell (mESC) strains are available for research, however scientists have yet to range of possibilities, they possess. In this experiment, the main question posed was whether all ESC staims are alike, and more specifically whether genetic background (imbred vs hybrid) has an effect on their growth potential in tissue culture."
 );
@@ -13532,125 +13703,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1473,
-	2008,
-	"The Spice of Life",
-	3,
-	9,
-	"Peterborough",
-	"Holy Cross S.S.",
-	"The present study was designed to evaluate antifungal and antibacterial effects of cinnamon leaf extract, allicin and raw garlic against Penicillium notatum, Pseudomonas fluorescens, and Staphylococcus saprophyticus. The antimicrobial activity was examined by the presence of a zone of inhibition on agar plates. Cinnamon showed excellent inhibitory activity against all microorganisms, allicin exhibited slight inhibitory activity and garlic showed strong inhibition against Staphylococcus saprophyticus."
-);
-INSERT INTO project_divisions(project, division) VALUES(1473, 500);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1473,
-	1,
-	"Alice Yang",
-	"Peterborough",
-	NULL,
-	"I am involved with Math League, Waterloo Math Competition, School Band, School Newspaper Club and Science Fair Club. I have also volunteered in the Emergency Depeartment at Peterborough Civics Hospital. I am interested in debates, politics, and visual arts. During the summer, I enjoy playing tennis and ping pong. As for post-secondary plans, I hope to pursue science at Ottawa U."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1473,
-	1,
-	"University of Ottawa Entrance Scholarship",
-	"Senior Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Ottawa",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1473,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1473,
-	3,
-	"Bronze Medal - Biotechnology & Pharmaceutical Sciences",
-	"Senior",
-	"Rx&D Health Research Foundation",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1404,
-	2008,
-	"The Stroop Effect",
-	2,
-	9,
-	"Renfrew County",
-	"Madawaska Valley District H.S.",
-	"My project on the Stroop Effect includes a battery of tests involving the brain and conflicting mental tasks. Participants will be asked to perform activities, which will send their brain conflicting messages. I will record and analyze the data, coming to a further conclusion."
-);
-INSERT INTO project_divisions(project, division) VALUES(1404, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1404,
-	1,
-	"Alyssa Borutski",
-	"Barry's Bay",
-	NULL,
-	"My name is Alyssa Borutski and I am fifteen years old. I live in the small town (1200 people) of Barry's Bay where I currently live with my mother (Lorraine), father (Clifford), and younger sister (Kali). I come from a large extended family (my parents both have 7 brothers and sisters) of the Polish background. I live on Wadsworth Lake, and enjoy swimming and waterskiing. I love sports and I have played on my high school's varsity basketball, volleyball, soccer, badminton, and track & feild teams, just to name a few. Some of my hobbies include: baking (I make novilty cakes), scrapbooking, and participating in my high school’s Student Reach Team (trivia). I voulenteer within the community and am apart of a choir. Awards I have received include: 1st Place in the Gauss Mathematics Competiton, MIP (Most Improved Player) in Basketball, Principles Award of Student Leadership, 1st Place in Health Science Catergory (Intermediate), RCRSTF Award of Excellence and Best Investigative Science Project. I have am Captain of the varsity Basketball team, and would possibly like to get a basketball scholarship. In the future I want to persue a career in medicine, possibly working as a family or sports medicine psycian."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1336,
-	2008,
-	"The Survival of the Marigold",
-	1,
-	6,
-	"Carlton Trail",
-	"William Derby",
-	"This project tested the effect of household detergents on marigolds. Marigolds were watered with a variety of laundry detergents diluted with water. Some laundry detergents destroyed natural materials, while phosphate free and non-alkaline detergents confirmed that they are environmentally friendly. This was analysed by man-made measuring devices and human observation."
-);
-INSERT INTO project_divisions(project, division) VALUES(1336, 9);
-INSERT INTO project_divisions(project, division) VALUES(1336, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1336,
-	1,
-	"Alexandria Slough",
-	"Bulyea",
-	NULL,
-	"My name is Alexandria Slough. I am 12 years old and in grade 7. I go to William Derby School. I live on a mixed farm near Bulyea, SK. I have 2 brothers. The activities I enjoy are volleyball, track, skating, golfing, football, hockey, baseball and scrapbooking. I also enjoy spending time with family, babysitting and hanging out with friends. I love animals. I also dance, I do tap, jazz, hip hop. I also do opening and finale."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1336,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1536,
 	2008,
 	"The Winds of Change: The Superior by Nature Energy Plan",
 	3,
 	9,
-	"Northwestern Ontario",
+	43,
 	"St. Ignatius S.S.",
 	"Thunder Bay, Ontario, is known for its natural resources. In particular, Lake Superior , forestry, and mining. However, the wind is a widely untapped resource that could prove to be beneficial by exploitation in this region. An analysis will be presented underlining the many aspects of exploiting wind power in the Thunder Bay region. Lastly, all economical, environmental, mathematical, and statistical aspects will be underlined."
 );
@@ -13720,36 +13778,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1461,
-	2008,
-	"The Unseen Benefactors",
-	3,
-	1,
-	"Annapolis Valley",
-	"West Kings District High School",
-	"My project is on the symbiotic relationship with coral and a dinoflagellate algae called zooanthellae. I examined nine different species of corals and one pest anemone under a high powered microscope to see which species of coral/anemone would contain the most zooxanthellae algae and what the different corals/anemone were relying on for food. Then I compared the growth of the different species of corals."
-);
-INSERT INTO project_divisions(project, division) VALUES(1461, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1461,
-	1,
-	"Macall Robinson",
-	"Halifax",
-	NULL,
-	"I am a grade 11 student at West Kings High School in Kings County Nova Scotia and I am on the high school hockey team. I have been in 4-H for 9 years. I am involved in projects such as dog obedience, fisheries, sheep, poultry, waterfowl, vet science, market lamb market turkey, and self determined. I also have won first place in public speaking at the Nova Scotia 4-H provincial weekend. I am also on the Kings County 4-H Tug-Of-War provincial champion team and the Kings County 4-H provincial champion woodsmen team. I work at the Oaklawn Farm Zoo in Aylesford. My hobbies are fishing, camping, hiking, fly tying, raising and showing Border Collies, and paintball. I live on a farm and I have many pets such as 50 gallon reef aquarium, African Grey Parrot, chameleon, stick bugs, cockatiel, Border Collie and a hedgehog. I am also going to Barzil in August for a year with Rotary Youth Exchange. I would like to learn more about our oceans and take a marine biology coarse and get my bachelors in science. I am interested in working at a bigger zoo in the marine or reptiles department."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1326,
 	2008,
 	"The Woad to a Sustainable Blue Colourant, Phase Two",
 	2,
 	12,
-	"West Kootenay & Boundary",
+	99,
 	"Christian Home Education in the Kootenays and Across BC",
 	"Natural indigo, unlike synthetic indigo, is renewable and eco-friendly. 4 landrace strains of Isatis tinctoria (woad) were grown organically, in marginal conditions in Canada. Each strain and a control were compared for biomass production and indigo pigment. Results compare favorably to European studies on prime agricultural land. Agricultural scale yield predictions were made. The indigo pigment from each strain was compared for quality and hue."
 );
@@ -13809,46 +13843,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1298,
-	2008,
-	"The Upright Silo Deicer",
-	3,
-	1,
-	"Chignecto Central West",
-	"Hants East Rural High School",
-	"We built an Upright Silo Deicer which sits on the frozen silage between feeding times to thaw the frozen feed built up on the walls of silos. We tested it with a small model (2 cubic foot bin) and a larger scale model (250 gallon barrel). The Upright Silo Deicer does thaw enough silage to meet the needs of the daily feed requirements."
-);
-INSERT INTO project_divisions(project, division) VALUES(1298, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1298,
-	1,
-	"Sheldon Vissers",
-	"Milford",
-	NULL,
-	"I am a Grade 12 student and I plan to attend Nova Scotia Agriculture College in the fall taking the Enterprise Management Technology (Dairy Farming) Program. I work on a dairy farm and recently puchased my first vehicle - a Dodge Ram black truck. I was a member of Scouting for several years and in 2005 I received the Queen's Venturer Award. I enjoy downhill skiing and playing basketball. I have travelled to Quebec on skiing vacations and have been to Toronto, Newfoundland, and the Dominic Republic with my family."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1298,
-	2,
-	"Emily Vissers",
-	"Milford",
-	NULL,
-	"I am a Grade 11 student at Hants East Rural High School. I work several hours a week at the East Hants Swimming Pool, teaching lessons and lifeguarding. I want to attend the University of Waterloo, where I would like to study mathematics when I finish Grade 12. I want to become an actuary. I have achieved honors with distinction for the past 5 years at school. I have also received two REC medals for Education (top marks) at Riverside Education Center. I was on the HERH girl's basketball team for two years. I also played on the REC girl's basketball team and on the Tri- County basketball team. I swam competitively on the East Hants Sting Rays Swim Team for 3 years in Nova Scotia. I enjoy going for walks, swimming laps at the pool and the occasional shopping trip to the mall. This will be my first trip to Ottawa, but I have visited Toronto, Newfoundland's Gros Morne National Park, PEI, and I've been to the Dominican Republic with my family."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1603,
 	2008,
 	"The World's Best Paper Airplane:  A Test",
 	1,
 	11,
-	"Lethbridge",
+	115,
 	"Gilbert Paterson Middle School",
 	"There are numerous ""World's Best"" paper airplanes. I tested four of these with two others to determine which was the best for flight duration and distance. I identified factors that the planes in each category had in common. The Dragon was the best long distance flier due to its wing load, wing angle and wing smoothness. The Classic Airplane flew for the longest time."
 );
@@ -13867,12 +13867,47 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1557,
+	2008,
+	"Thermoelectricity via Wasted Ambient Heat",
+	3,
+	9,
+	113,
+	"O'Neill C.V.I.",
+	"To determine the applicability of the conversion of wasted ambient heat into useful electricity, a thermoelectric module was utilized. Based on the Seebeck Effect and theoretical predictions, the experimental data was carefully analyzed, graphed, and studied. It was concluded that the generation of thermoelectricity via the thermoelectric effect is highly applicable in future appliances in reducing energy consumptions and increasing appliance efficiencies."
+);
+INSERT INTO project_divisions(project, division) VALUES(1557, 7);
+INSERT INTO project_divisions(project, division) VALUES(1557, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1557,
+	1,
+	"Masoud  Zargar   ",
+	"Oshawa",
+	NULL,
+	"I am a grade 12 student who currently attends O'Neill C.V.I. in Oshawa, Ontario. My interests are mathematics, physics, and chess. I look forward to studying pure mathematics in the near future."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1557,
+	2,
+	"Simon Yin",
+	"Oshawa",
+	NULL,
+	"My name is Simon Yin and I am currently a grade 11 student at O’Neill C.V.I. in Oshawa, Ontario. I participated in the regional science fair with a project on the filtration of grey water. I entered this year’s science fair with a brand new idea on the recovery and reuse of wasted ambient heat. I have a strong interest in math and science as well as extracurricular activities such as chess and tennis. I plan to pursue my post-secondary education in the field of economics."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1575,
 	2008,
 	"Think Fast!",
 	1,
 	9,
-	"Bluewater",
+	55,
 	"Holy Family E.S.",
 	"This project examined whether LEDs or incandescent light bulbs would result in better brake lights for vehicles. Tests were conducted on one thousand people in order to determine their reaction times to the two lights. The lifespan of the lights was also studied. The results of both tests clearly demonstrated that LEDs are the superior choice for use as brake lights by the automotive industry."
 );
@@ -13957,7 +13992,7 @@ VALUES (
 	"To Bernoulli or Not to Bernoulli? - that is the question...",
 	1,
 	6,
-	"Saskatoon",
+	31,
 	"Greystone Heights",
 	"This project looks at the relative contributions of the Bernoulli and Newton principles to wing lift. Lift generated above and below a wing was measured both separately and together using a home-designed wind tunnel and means to measure lift. As the angle of attack increases from 0 to 25 degrees lift below the wing becomes dominant favoring Newtonian principles at normal flight angles."
 );
@@ -13986,41 +14021,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1557,
-	2008,
-	"Thermoelectricity via Wasted Ambient Heat",
-	3,
-	9,
-	"Durham",
-	"O'Neill C.V.I.",
-	"To determine the applicability of the conversion of wasted ambient heat into useful electricity, a thermoelectric module was utilized. Based on the Seebeck Effect and theoretical predictions, the experimental data was carefully analyzed, graphed, and studied. It was concluded that the generation of thermoelectricity via the thermoelectric effect is highly applicable in future appliances in reducing energy consumptions and increasing appliance efficiencies."
-);
-INSERT INTO project_divisions(project, division) VALUES(1557, 7);
-INSERT INTO project_divisions(project, division) VALUES(1557, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1557,
-	1,
-	"Masoud  Zargar   ",
-	"Oshawa",
-	NULL,
-	"I am a grade 12 student who currently attends O'Neill C.V.I. in Oshawa, Ontario. My interests are mathematics, physics, and chess. I look forward to studying pure mathematics in the near future."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1557,
-	2,
-	"Simon Yin",
-	"Oshawa",
-	NULL,
-	"My name is Simon Yin and I am currently a grade 11 student at O’Neill C.V.I. in Oshawa, Ontario. I participated in the regional science fair with a project on the filtration of grey water. I entered this year’s science fair with a brand new idea on the recovery and reuse of wasted ambient heat. I have a strong interest in math and science as well as extracurricular activities such as chess and tennis. I plan to pursue my post-secondary education in the field of economics."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1271,
 	2008,
 	"To Dye For",
@@ -14040,7 +14040,7 @@ VALUES (
 	"Tracking the sun",
 	1,
 	1,
-	"Halifax",
+	114,
 	"Brookside Junior High School",
 	"This project compares the power output of a solar panel under different configurations and seasons, to see if it is more efficient to track the sun. The four configurations are fixed panel, vertical axis panel, horizontal axis panel and dual axes panel. I also tried to build a simple solar tracker to rotate the panel and by doing so, follow the light."
 );
@@ -14090,45 +14090,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1548,
+	1292,
 	2008,
-	"Treatment of Chronic Lymphocytic Leukemia with LPATH",
-	3,
-	8,
-	"St. James-Assiniboia",
-	"St. James Collegiate - Academy of Science and Technology",
-	"LPATH is a monoclonal antibody which sequesters LPA away from the receptor. Immunofluorescence showed BJAB cells (chronic lymphocytic leukemia like cells) express the LPA receptor. We did a time and dose curve with BJAB cells and a patient sample. We used different concentrations of LPATH and Fludarabine alone and in combination. We counted the cells using Acridine Orange staining as well as flow cytometry."
-);
-INSERT INTO project_divisions(project, division) VALUES(1548, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1548,
+	"Tropical Alberta: Microvertebrate Paleontology",
 	1,
-	"Becky Earley",
-	"Winnipeg",
-	NULL,
-	"My name is Rebecca (Becky) Earley and I live in Winnipeg, Manitoba. I participated in science fairs at a less serious level when I was in younger grades, but it wasn’t until I got involved in the Sanofi Aventis Biotalent Challenge last year that my participation evolved into more of an obsession. My partner Holly Hunter and I have been going to the Manitoba Institute of Cell Biology almost every day for the last couple of years learning everything we could from our brilliant mentors. Thanks to all of that hard work, I feel like I have learned so much more than I could ever have in a classroom alone. Although science seems to take up most of my time, I still manage to make more for playing piano and doing too much volunteering for many different groups, especially as Vice President of student council. Through my involvement with my school’s UNESCO program I had the wonderful opportunity of travelling to the UN in New York City for a youth conference last December. So far that has been the most defining experience of my grade twelve year, but it looks like this trip to Ottawa might just take its place!"
+	11,
+	83,
+	"Olds Junior Senior High School",
+	"The 78 million year old Foremost Formation used to be the shallow, tropical coast of an inland sea, but is now the badlands of Southern Alberta. To study the paleoenviornment of the Foremost Formation, microvertabrate fossils can be collected, identified and the modern relatives of the fossils can be studied to make interpretations about the late cretaceous paleoenviornment."
 );
+INSERT INTO project_divisions(project, division) VALUES(1292, 4);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1548,
-	2,
-	"Holly Hunter",
-	"Winnipeg",
+	1292,
+	1,
+	"Timmy Carlielle-Shaw",
+	"Olds",
 	NULL,
-	"My name is Holly Hunter, I attend St James Collegiate in Winnipeg, Manitoba. I have done science fairs since I was in grade three, but it was not until I was given the opportunity to participate in the Sanofi Aventis BioTalent Challenge two years ago that I the chance to see what ""real"" science was like. Through SABC my partner Becky and I had the opportunity to conduct our research at Manitoba Institute of Cell Biology. Both years Becky and I worked on our project between January and April, four times a week for about two to three hours a day. Outside of science I play an active role in many of my schools clubs and groups such as student council, social justice, women's student, safe schools and envirothon. For the past six years I have been on my schools cheerleading team and my free time I enjoy swimming . This is my last year of high school, next year I will be attending the University of Manitoba where I will be taking primarily science course."
+	"I am in grade eight and attend Olds Jr. Sr. high school in Olds, Alberta. I have entered science fairs for the last seven years, and participated in the CWSF 1 year winning bronze in earth sciences. My hobbies include camping, biking with my friends, and making chainmaille, an ancient art that produces beautiful jewelry or tough armor. I also enjoy collecting fossils in the Alberta badlands with my dad and I am a member of the Alberta Paleontology Society."
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	1548,
+	1292,
 	1,
-	"Petro-Canada Peer Innovation Award - Senior",
-	"Central Canada",
+	"Honourable Mention - Earth & Environmental Science",
+	"Junior",
 	"Petro-Canada",
-	200.00
+	100.00
 );
 
 INSERT INTO projects
@@ -14139,7 +14129,7 @@ VALUES (
 	"Trip the Light Fantastic",
 	1,
 	9,
-	"Bay Area",
+	54,
 	NULL,
 	"Our present agricultural practices cannot continue because of their inefficiency and catastrophic effects on the environment. The purpose of this project is to find the most efficient photoperiod of light to grow plants artificially. The plants grew best in the 10-hour photoperiod, but grew most efficiently in the 5-hour photoperiod. This project demonstrates how environmental variables affect plant growth."
 );
@@ -14169,61 +14159,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1292,
-	2008,
-	"Tropical Alberta: Microvertebrate Paleontology",
-	1,
-	11,
-	"Central Alberta",
-	"Olds Junior Senior High School",
-	"The 78 million year old Foremost Formation used to be the shallow, tropical coast of an inland sea, but is now the badlands of Southern Alberta. To study the paleoenviornment of the Foremost Formation, microvertabrate fossils can be collected, identified and the modern relatives of the fossils can be studied to make interpretations about the late cretaceous paleoenviornment."
-);
-INSERT INTO project_divisions(project, division) VALUES(1292, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1292,
-	1,
-	"Timmy Carlielle-Shaw",
-	"Olds",
-	NULL,
-	"I am in grade eight and attend Olds Jr. Sr. high school in Olds, Alberta. I have entered science fairs for the last seven years, and participated in the CWSF 1 year winning bronze in earth sciences. My hobbies include camping, biking with my friends, and making chainmaille, an ancient art that produces beautiful jewelry or tough armor. I also enjoy collecting fossils in the Alberta badlands with my dad and I am a member of the Alberta Paleontology Society."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1292,
-	1,
-	"Honourable Mention - Earth & Environmental Science",
-	"Junior",
-	"Petro-Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1445,
-	2008,
-	"Turn Down The Heat",
-	3,
-	NULL,
-	NULL,
-	NULL,
-	"In this project I analyzed literature from a variety of sources and studied the way global warming affects our planet. I used these results to develop a computer model and apply my findings to marine ecosystems. Finally, I utilized my findings to develop a management plan to mitigate the effects of global warming."
-);
-INSERT INTO project_divisions(project, division) VALUES(1445, 4);
-INSERT INTO project_divisions(project, division) VALUES(1445, 6);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1301,
 	2008,
 	"Un Bras Robotique c'est Quoi?",
 	1,
 	11,
-	"Calgary Youth",
+	81,
 	"Branton Junior High School",
 	"Ce projet évoquera différents points ; on commencera par l’histoire des robots en générale pour converger vers leur classification, leur localisation et leur mobilité. On parlera aussi de certaines applications quotidiennes des bras robotiques. Finalement, je présenterai un bras robotique en legos que j’ai programmé à trier les pièces noires et jaunes et les mettre dans leurs boites respectives."
 );
@@ -14263,26 +14204,69 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1544,
+	1605,
 	2008,
-	"Un train magnétique: un mode de transport propre II",
-	1,
-	12,
-	"Vancouver Island",
-	"Glenlyon Norfolk School",
-	"This project tested the effectiveness of magnets in transport. I compared my magnetic vehicles (Prototypes) to a car and evaluated the efficiency of the prototypes. I determined their speed and repeated each measure 7 times with a range of batteries (3V-18V). Forces of friction were determined. The prototype that floated over the new magnet tracks, was better than the car overall."
+	"Understanding the Immune System",
+	3,
+	11,
+	122,
+	"Westwood Community High School",
+	"The Immune system is a network of cells, tissues and organs that work together to protect the body against attacks by infectious invaders. The one with the lowered immune system has an increased risk of getting sick and infections. There are many ways to keep up the immune system from declining. Health is wealth and therefore one should understand about how the immune system works."
 );
-INSERT INTO project_divisions(project, division) VALUES(1544, 7);
-INSERT INTO project_divisions(project, division) VALUES(1544, 1);
+INSERT INTO project_divisions(project, division) VALUES(1605, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1544,
+	1605,
 	1,
-	"Chadi  Saad-Roy",
-	"Victoria",
+	"Disha Shah",
+	"Fort McMurray",
 	NULL,
-	"My name is Chadi Saad-Roy and I go to Glenlyon Norfolk School in Victoria, BC. I am 13 years old and I am in grade 8. I like reading, playing basketball and judo. Swimming and sailing are other sport I practice. I also enjoy playing and writing music. I play piano and clarinet. One of my compositions earned me and honourable mention in a national competition and first in British Columbia."
+	"My name is Disha Shah and was born on 4 October in Gujarat, India. I live with my dad, Mukesh; mom, Alka and my brother, Jay. I studied in India till grade 7 and moved to Toronto for better education. I want to become successful in Pharmacy. I am fully prepared to surpass all the challenges on my way and ready to help the society. I have been winning honour roll awards till grade 11. Dancing is my passion since childhood and I have completed my 6 years of training in classical Indian dance called “Kathak”. I have participated in many dance competitions and have won many awards. Volunteered in many school clubs and gave guidance to many new students in Canada. Joined Royal Canadian Air Cadets. This year I will graduate from high school and planning to attend University of Alberta for my Bachelor Science in Generals. I love spending time with my friends and family. I am blessed with a wonderful and ever supportive family. Shopping, movies, chatting and music are all my leisure activities. My favourite subjects are Biology and Chemistry. I am the biggest hope for my parents ."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1548,
+	2008,
+	"Treatment of Chronic Lymphocytic Leukemia with LPATH",
+	3,
+	8,
+	33,
+	"St. James Collegiate - Academy of Science and Technology",
+	"LPATH is a monoclonal antibody which sequesters LPA away from the receptor. Immunofluorescence showed BJAB cells (chronic lymphocytic leukemia like cells) express the LPA receptor. We did a time and dose curve with BJAB cells and a patient sample. We used different concentrations of LPATH and Fludarabine alone and in combination. We counted the cells using Acridine Orange staining as well as flow cytometry."
+);
+INSERT INTO project_divisions(project, division) VALUES(1548, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1548,
+	1,
+	"Becky Earley",
+	"Winnipeg",
+	NULL,
+	"My name is Rebecca (Becky) Earley and I live in Winnipeg, Manitoba. I participated in science fairs at a less serious level when I was in younger grades, but it wasn’t until I got involved in the Sanofi Aventis Biotalent Challenge last year that my participation evolved into more of an obsession. My partner Holly Hunter and I have been going to the Manitoba Institute of Cell Biology almost every day for the last couple of years learning everything we could from our brilliant mentors. Thanks to all of that hard work, I feel like I have learned so much more than I could ever have in a classroom alone. Although science seems to take up most of my time, I still manage to make more for playing piano and doing too much volunteering for many different groups, especially as Vice President of student council. Through my involvement with my school’s UNESCO program I had the wonderful opportunity of travelling to the UN in New York City for a youth conference last December. So far that has been the most defining experience of my grade twelve year, but it looks like this trip to Ottawa might just take its place!"
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1548,
+	2,
+	"Holly Hunter",
+	"Winnipeg",
+	NULL,
+	"My name is Holly Hunter, I attend St James Collegiate in Winnipeg, Manitoba. I have done science fairs since I was in grade three, but it was not until I was given the opportunity to participate in the Sanofi Aventis BioTalent Challenge two years ago that I the chance to see what ""real"" science was like. Through SABC my partner Becky and I had the opportunity to conduct our research at Manitoba Institute of Cell Biology. Both years Becky and I worked on our project between January and April, four times a week for about two to three hours a day. Outside of science I play an active role in many of my schools clubs and groups such as student council, social justice, women's student, safe schools and envirothon. For the past six years I have been on my schools cheerleading team and my free time I enjoy swimming . This is my last year of high school, next year I will be attending the University of Manitoba where I will be taking primarily science course."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1548,
+	1,
+	"Petro-Canada Peer Innovation Award - Senior",
+	"Central Canada",
+	"Petro-Canada",
+	200.00
 );
 
 INSERT INTO projects
@@ -14343,60 +14327,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1630,
-	2008,
-	"Un lavage pour sauver une vie",
-	3,
-	10,
-	"Montréal CLS",
-	"Collège de Montréal",
-	"Expérience qui a pour but de prouver l'efficacité et l'importance du lavage de main pour la prévention des infections. Je compare également l'efficacité de deux savons (savon antiseptique vs savon liquide). La technique utilisée pour l'expérience est basée sur la microbiologie."
-);
-INSERT INTO project_divisions(project, division) VALUES(1630, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1630,
-	1,
-	"Phébé Gagnon-Courville",
-	"Mont-Royal",
-	NULL,
-	"Phébé Gagnon-Courville est étudiante en cinquième secondaire au Collège de Montréal. Elle s’intéresse aux sciences depuis son plus âge et a participé aux expo-sciences du collège depuis le début du secondaire. Elle a également participé à des camps de jour scientifiques tels que Folietechnique à l’École Polytechnique et le camp des Débrouillards. Phébé a des intérêts variés et s’implique dans son milieu. Elle a reçu plusieurs Meritas depuis le début de son secondaire. Phébé a fait du bénévolat au Partage d’Youville, un centre de distribution alimentaire pour les personnes à faible revenu. Elle est impliqué dans l’équipe technique de son Collège et agit à titre de régisseur lors des spectacles. Elle fait aussi partie du comité du bal et écrit des articles dans le journal étudiant. Phébé aspire à être chirurgienne. Elle a pu confirmer son intérêt lors de deux stages d’une journée chacun en médecine à l’hiver 2008. Lors du premier stage au CHUM à Montréal, elle a assisté à une chirurgie cardiaque à cœur ouvert. Pendant son deuxième stage, elle a assisté à un accouchement, une chirurgie orthopédique, et une laparoscopie. À l’automne 2007, elle a suivi les cours à la petite école de médecine de l’Université McGill."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1605,
-	2008,
-	"Understanding the Immune System",
-	3,
-	11,
-	"Wood Buffalo",
-	"Westwood Community High School",
-	"The Immune system is a network of cells, tissues and organs that work together to protect the body against attacks by infectious invaders. The one with the lowered immune system has an increased risk of getting sick and infections. There are many ways to keep up the immune system from declining. Health is wealth and therefore one should understand about how the immune system works."
-);
-INSERT INTO project_divisions(project, division) VALUES(1605, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1605,
-	1,
-	"Disha Shah",
-	"Fort McMurray",
-	NULL,
-	"My name is Disha Shah and was born on 4 October in Gujarat, India. I live with my dad, Mukesh; mom, Alka and my brother, Jay. I studied in India till grade 7 and moved to Toronto for better education. I want to become successful in Pharmacy. I am fully prepared to surpass all the challenges on my way and ready to help the society. I have been winning honour roll awards till grade 11. Dancing is my passion since childhood and I have completed my 6 years of training in classical Indian dance called “Kathak”. I have participated in many dance competitions and have won many awards. Volunteered in many school clubs and gave guidance to many new students in Canada. Joined Royal Canadian Air Cadets. This year I will graduate from high school and planning to attend University of Alberta for my Bachelor Science in Generals. I love spending time with my friends and family. I am blessed with a wonderful and ever supportive family. Shopping, movies, chatting and music are all my leisure activities. My favourite subjects are Biology and Chemistry. I am the biggest hope for my parents ."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1488,
 	2008,
 	"Viral Load Testing under Influence of HIV HAART Treatment",
 	3,
 	9,
-	"Toronto",
+	63,
 	NULL,
 	"The viral load testing system is a method of estimating the number of HIV molecules in blood to measure the progression of AIDS. It is a valuable tool for professionals, especially pharmaceutical researchers. However, the viral load test is biased against certain medications when the patient undergoes the HAART (Highly Active Antiretroviral Therapy) treatment."
 );
@@ -14425,12 +14361,124 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1630,
+	2008,
+	"Un lavage pour sauver une vie",
+	3,
+	10,
+	75,
+	"Collège de Montréal",
+	"Expérience qui a pour but de prouver l'efficacité et l'importance du lavage de main pour la prévention des infections. Je compare également l'efficacité de deux savons (savon antiseptique vs savon liquide). La technique utilisée pour l'expérience est basée sur la microbiologie."
+);
+INSERT INTO project_divisions(project, division) VALUES(1630, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1630,
+	1,
+	"Phébé Gagnon-Courville",
+	"Mont-Royal",
+	NULL,
+	"Phébé Gagnon-Courville est étudiante en cinquième secondaire au Collège de Montréal. Elle s’intéresse aux sciences depuis son plus âge et a participé aux expo-sciences du collège depuis le début du secondaire. Elle a également participé à des camps de jour scientifiques tels que Folietechnique à l’École Polytechnique et le camp des Débrouillards. Phébé a des intérêts variés et s’implique dans son milieu. Elle a reçu plusieurs Meritas depuis le début de son secondaire. Phébé a fait du bénévolat au Partage d’Youville, un centre de distribution alimentaire pour les personnes à faible revenu. Elle est impliqué dans l’équipe technique de son Collège et agit à titre de régisseur lors des spectacles. Elle fait aussi partie du comité du bal et écrit des articles dans le journal étudiant. Phébé aspire à être chirurgienne. Elle a pu confirmer son intérêt lors de deux stages d’une journée chacun en médecine à l’hiver 2008. Lors du premier stage au CHUM à Montréal, elle a assisté à une chirurgie cardiaque à cœur ouvert. Pendant son deuxième stage, elle a assisté à un accouchement, une chirurgie orthopédique, et une laparoscopie. À l’automne 2007, elle a suivi les cours à la petite école de médecine de l’Université McGill."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1346,
+	2008,
+	"Viscosity: Developing & Testing a New Technique for Measuring a Liquid's Viscos",
+	1,
+	9,
+	54,
+	"Dalewood Senior E.S.",
+	"The basic purpose of this project is to develop and test a new technique for measuring the viscosity of a transparent liquid. This technique will be different from conventional methods because it was designed to be operated at home without using scientific instruments."
+);
+INSERT INTO project_divisions(project, division) VALUES(1346, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1346,
+	1,
+	"Henry Sun",
+	"Hamilton",
+	NULL,
+	"I hope to enlighten the reader regarding my character, personality, and possibly choice of hobbies in my biography. I would like to dedicate the space provided to my project. Through this I hope that the reader would understand more about me. I first thought of the idea for this project when I was reading a physics textbook regarding fluid mechanics. What really inspired me was the fact that we were conducting an experiment at school where the objective was to determine the relative viscosity of different liquids. The problem with this technique is that only the relative viscosity between the liquids used were determined, therefore, this technique could not be used to compare the viscosity of a liquid used in the experiment to a liquid that was not used in the experiment. Based on this fact and my newly obtained knowledge regarding fluid mechanics, I decided to dedicate my project to determining a liquid's viscosity. I would like to use the remaining space to thank my parents, my science teachers, and the BASEF chaperones for their encouragement and assistance in this project."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1445,
+	2008,
+	"Turn Down The Heat",
+	3,
+	NULL,
+	NULL,
+	NULL,
+	"In this project I analyzed literature from a variety of sources and studied the way global warming affects our planet. I used these results to develop a computer model and apply my findings to marine ecosystems. Finally, I utilized my findings to develop a management plan to mitigate the effects of global warming."
+);
+INSERT INTO project_divisions(project, division) VALUES(1445, 4);
+INSERT INTO project_divisions(project, division) VALUES(1445, 6);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1544,
+	2008,
+	"Un train magnétique: un mode de transport propre II",
+	1,
+	12,
+	98,
+	"Glenlyon Norfolk School",
+	"This project tested the effectiveness of magnets in transport. I compared my magnetic vehicles (Prototypes) to a car and evaluated the efficiency of the prototypes. I determined their speed and repeated each measure 7 times with a range of batteries (3V-18V). Forces of friction were determined. The prototype that floated over the new magnet tracks, was better than the car overall."
+);
+INSERT INTO project_divisions(project, division) VALUES(1544, 7);
+INSERT INTO project_divisions(project, division) VALUES(1544, 1);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1544,
+	1,
+	"Chadi  Saad-Roy",
+	"Victoria",
+	NULL,
+	"My name is Chadi Saad-Roy and I go to Glenlyon Norfolk School in Victoria, BC. I am 13 years old and I am in grade 8. I like reading, playing basketball and judo. Swimming and sailing are other sport I practice. I also enjoy playing and writing music. I play piano and clarinet. One of my compositions earned me and honourable mention in a national competition and first in British Columbia."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1551,
+	2008,
+	"Virtual Fencing",
+	2,
+	6,
+	27,
+	"Kipling Elementary/High School",
+	"My project is on virtual fencing. I was trying to figure out if it was possible to control cattle with a virtual fence. A virtual fence is a fence without posts and wires. You put a collar around a cow"
+);
+INSERT INTO project_divisions(project, division) VALUES(1551, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1551,
+	1,
+	"Susan Fisher",
+	"Peebles",
+	NULL,
+	"I am 15 years old. I’m in track and field, volleyball, and soccer. I play the piano, and I enjoy working outside with cattle and riding horses. Doing things around the farm like driving tractors and fencing are what I enjoy. Awards I have achieved are: certificates in Kipling Music Festival, and metals and ribbons in Science Fair. I got 2nd overall in our school last year and bronze in my category at regionals. This year I received 1st overall in our school and at the regionals I got second overall along with a glass plaque."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1276,
 	2008,
 	"Visual vs. Auditory",
 	1,
 	8,
-	"Northern Manitoba",
+	22,
 	"Deerwood School",
 	"Does age and gender have an affect on auditory and visual memory? Students aged 6-11 were tested using an increasingly larger series of characters to determine retention. Visual and auditory scores were compared to determine trends, also two schools were tested to validate results. School location did make a difference, but not significantly. Younger students had better auditory memory, but visual memory increased with age."
 );
@@ -14459,60 +14507,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1346,
-	2008,
-	"Viscosity: Developing & Testing a New Technique for Measuring a Liquid's Viscos",
-	1,
-	9,
-	"Bay Area",
-	"Dalewood Senior E.S.",
-	"The basic purpose of this project is to develop and test a new technique for measuring the viscosity of a transparent liquid. This technique will be different from conventional methods because it was designed to be operated at home without using scientific instruments."
-);
-INSERT INTO project_divisions(project, division) VALUES(1346, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1346,
-	1,
-	"Henry Sun",
-	"Hamilton",
-	NULL,
-	"I hope to enlighten the reader regarding my character, personality, and possibly choice of hobbies in my biography. I would like to dedicate the space provided to my project. Through this I hope that the reader would understand more about me. I first thought of the idea for this project when I was reading a physics textbook regarding fluid mechanics. What really inspired me was the fact that we were conducting an experiment at school where the objective was to determine the relative viscosity of different liquids. The problem with this technique is that only the relative viscosity between the liquids used were determined, therefore, this technique could not be used to compare the viscosity of a liquid used in the experiment to a liquid that was not used in the experiment. Based on this fact and my newly obtained knowledge regarding fluid mechanics, I decided to dedicate my project to determining a liquid's viscosity. I would like to use the remaining space to thank my parents, my science teachers, and the BASEF chaperones for their encouragement and assistance in this project."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1551,
-	2008,
-	"Virtual Fencing",
-	2,
-	6,
-	"Qu'Appelle Valley",
-	"Kipling Elementary/High School",
-	"My project is on virtual fencing. I was trying to figure out if it was possible to control cattle with a virtual fence. A virtual fence is a fence without posts and wires. You put a collar around a cow"
-);
-INSERT INTO project_divisions(project, division) VALUES(1551, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1551,
-	1,
-	"Susan Fisher",
-	"Peebles",
-	NULL,
-	"I am 15 years old. I’m in track and field, volleyball, and soccer. I play the piano, and I enjoy working outside with cattle and riding horses. Doing things around the farm like driving tractors and fencing are what I enjoy. Awards I have achieved are: certificates in Kipling Music Festival, and metals and ribbons in Science Fair. I got 2nd overall in our school last year and bronze in my category at regionals. This year I received 1st overall in our school and at the regionals I got second overall along with a glass plaque."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1552,
 	2008,
 	"Vitamin C Loss in Fruit Juice",
 	1,
 	8,
-	"Winnipeg Schools",
+	36,
 	"Grant Park High",
 	"This project studies the milligrams of vitamin C measured in juice, compares them with what is listed on the Nutritional Information and studies what factors cause juice to lose vitamin C. The amount of vitamin C was measured using titration. Juice with a larger surface area exposed to air was found to lose a large amount of vitamin C."
 );
@@ -14531,46 +14531,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1562,
-	2008,
-	"Waste To Warmth",
-	1,
-	9,
-	"Sudbury",
-	"MacLeod P.S.",
-	"The aim of our project was to make an effective insulation out of shredded plastic bags. We tested it against fibreglass, extruded polystyrene and compared it to no insulation (cardstock). Our end results showed that our plastic bag insulation was more effective than fibreglass and about half as effective as the extruded polystyrene of the same thickness."
-);
-INSERT INTO project_divisions(project, division) VALUES(1562, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1562,
-	1,
-	"Christian Murphy",
-	"Sudbury",
-	NULL,
-	"I love to ski (downhill and water), barefoot, and other water sports. I also love soccer and basketball. A few hobbies of mine are writing letters, drawing, cooking/baking, and biking. Every Sunday I go to a church and every Tuesday I do hip hop at a dance studio. This summer (2008) I plan to babysit and do other activities to make money. I would like to start saving money for university."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1562,
-	2,
-	"Lauren Rainsford",
-	"Sudbury",
-	NULL,
-	"My name is Lauren Rainsford and I’m a grade seven student in Sudbury, Ontario. I play the piano and the alto saxophone as well as a variety of sports including soccer, dancing and cross-country skiing. Having participated in many cleanups around the community and owning two cats and three fish I would describe myself as an environmentalist and an animal lover. In my spare time I like to bike, play with a friend, draw, write, read, explore, cook, experiment, spend time with my cats and family, and create things. Another thing I love to do is travel and my favourite place to go is Britain where I have family and friends. A secret agent, chef, lawyer or veterinarian would be an ideal job for me. This is my first science fair but I have competed at the regional level for heritage fair."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1643,
 	2008,
 	"Voice Activated Navigation for the Blind",
 	2,
 	8,
-	"Manitoba Schools Science Symposium",
+	21,
 	"Collège Sturgeon Heights Collegiate",
 	"In Canada there are over 68,000 blind individuals, and 319,000 visually impaired. There are an estimated 45 million blind individuals worldwide. I wanted to create a system that would allow blind individuals to navigate buildings independently by using Radio Frequency Identification technology and wireless voice commands. I was able to create a system that allowed the blind individuals to navigate buildings independently."
 );
@@ -14640,12 +14606,46 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1562,
+	2008,
+	"Waste To Warmth",
+	1,
+	9,
+	49,
+	"MacLeod P.S.",
+	"The aim of our project was to make an effective insulation out of shredded plastic bags. We tested it against fibreglass, extruded polystyrene and compared it to no insulation (cardstock). Our end results showed that our plastic bag insulation was more effective than fibreglass and about half as effective as the extruded polystyrene of the same thickness."
+);
+INSERT INTO project_divisions(project, division) VALUES(1562, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1562,
+	1,
+	"Christian Murphy",
+	"Sudbury",
+	NULL,
+	"I love to ski (downhill and water), barefoot, and other water sports. I also love soccer and basketball. A few hobbies of mine are writing letters, drawing, cooking/baking, and biking. Every Sunday I go to a church and every Tuesday I do hip hop at a dance studio. This summer (2008) I plan to babysit and do other activities to make money. I would like to start saving money for university."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1562,
+	2,
+	"Lauren Rainsford",
+	"Sudbury",
+	NULL,
+	"My name is Lauren Rainsford and I’m a grade seven student in Sudbury, Ontario. I play the piano and the alto saxophone as well as a variety of sports including soccer, dancing and cross-country skiing. Having participated in many cleanups around the community and owning two cats and three fish I would describe myself as an environmentalist and an animal lover. In my spare time I like to bike, play with a friend, draw, write, read, explore, cook, experiment, spend time with my cats and family, and create things. Another thing I love to do is travel and my favourite place to go is Britain where I have family and friends. A secret agent, chef, lawyer or veterinarian would be an ideal job for me. This is my first science fair but I have competed at the regional level for heritage fair."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1581,
 	2008,
 	"W.C.A.R. Wireless Controllable Autonomous Robots",
 	2,
 	1,
-	"Strait",
+	11,
 	"Dr. John Hugh Gillis Regional School",
 	"This project consists of the design, development, and applications of a pair of robots that can follow each other, one is remote controlled the other is autonomous. Multiple integrated technologies such as mechatronics/robotics, embedded systems, processors, and handshaking, played important roles in the design process. Because of their capabilities the robots have original and lifesaving applications. This project is in its second round of development"
 );
@@ -14690,7 +14690,7 @@ VALUES (
 	"Wasting Away",
 	3,
 	2,
-	"Eastern Newfoundland",
+	6,
 	"Holy Spirit H.S.",
 	"This project determines the cause of the slope failure in the coastal, residential regions along the Topsail Beach area in Conception Bay South. Soiling testing and visual analysis was conducted to determine the stability of several spots in this area as well as preventative and safety measures were suggested for the region."
 );
@@ -14739,12 +14739,61 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1520,
+	2008,
+	"What is the Diameter of the Earth's Core?",
+	2,
+	6,
+	28,
+	"Thom Collegiate",
+	"By using seismic waves, I attempted to estimate the diameter for the earth’s core. With collected data of 10 different earthquakes, the time-travel curve of the P-waves, S-waves and L-waves were calculated. After figuring out the highest degree S-waves would occur on seismograms and inserting the degree into a formula, the diameter of 7540 km was calculated."
+);
+INSERT INTO project_divisions(project, division) VALUES(1520, 4);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1520,
+	1,
+	"Meghan Folnović",
+	"Regina",
+	NULL,
+	"I am Meghan Folnović. I am currently attending grade ten at Thom Collegiate in Regina, Saskatchewan. I like to play sports and hang out with friends. I enjoy playing soccer all year as well as volleyball, badminton, rugby and cycling. I play trombone and baritone in my school bands; in which I have won Most Valuable Jazz Band Member, two $50 scholarships and have travelled all over Alberta and Saskatchewan. I have also been involved with four province wide bands in grade seven through to this year. I am enrolled in the Pre-IB program at Thom Collegiate and spend most of my free time doing school work. In the future I would like to go to university, move out of Canada and work a high paying and enjoyable job. I would also like to fit in travelling the world and having a family. I have high expectations for my life and getting involved with Canada wide science fairs and province wide bands is getting me closer to that dream."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1317,
+	2008,
+	"Watts the Alternative?",
+	1,
+	12,
+	94,
+	"Dr Kearney Jr Secondary",
+	"This project studied different alternative energy sources and the public’s opinion was surveyed. Alternative energy sources were researched and presented in a fact sheet. Questions were presented to the public before and after the fact sheet. There were many factors influencing public opinion but it was determined that 20% of the public changed their opinions after reading unbiased facts."
+);
+INSERT INTO project_divisions(project, division) VALUES(1317, 4);
+INSERT INTO project_divisions(project, division) VALUES(1317, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1317,
+	1,
+	"Jacquie Gulevich",
+	"Fort St. John",
+	NULL,
+	"I was born and raised in Fort St. John, BC. I am a grade 8 student at Dr. Kearney Junior Secondary. Recently, in Grade 7, I was awarded Top Academic Student for my school as well as an Outstanding Citizenship award. I have been awarded the BC Hydro Award, Peace Cooperative award, and the BC Innovation award at my regional science fair level. I have enjoyed competing and performing Irish dance for nearly 7 years and continue to pursue this sport. I also enjoy playing volleyball and was awarded the team’s Most Valuable Player in a regional tournament. My other hobbies include outdoor activities such as river boating, fishing, hunting and snowmobiling. I enjoy living in the North with the many opportunities the area has to offer."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1315,
 	2008,
 	"Water Me, Naturally",
 	2,
 	6,
-	"Northern Saskatchewan",
+	23,
 	"Churchill Composite H.S.",
 	"This project studied natural and treated water in the growth of bush bean plants. The three experiments, of twenty-five days each, took place inside my home during August through mid-October. An analysis of the mineral content of the water and the results of the experiments found that the natural water was more beneficial to bean plant growth."
 );
@@ -14768,7 +14817,7 @@ VALUES (
 	"We're Not Plastic Bags: The Perfect Plastic",
 	2,
 	9,
-	"Bay Area",
+	54,
 	"Notre Dame S.S.",
 	"The purpose of our project was to make plastic from simple substances, having all the properties of current plastics and still be biodegradable. Plastic containing glycerine, water, and gelatine, was made. Changes in the formula allowed us to make more flexible plastic. The plastics were durable, strong and resistant to sunlight, freezing, and oil, but were easily broken down by saltwater and by heating."
 );
@@ -14798,26 +14847,124 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1317,
+	1274,
 	2008,
-	"Watts the Alternative?",
+	"What's the Point?",
 	1,
-	12,
-	"Northern British Columbia",
-	"Dr Kearney Jr Secondary",
-	"This project studied different alternative energy sources and the public’s opinion was surveyed. Alternative energy sources were researched and presented in a fact sheet. Questions were presented to the public before and after the fact sheet. There were many factors influencing public opinion but it was determined that 20% of the public changed their opinions after reading unbiased facts."
+	8,
+	22,
+	"Riverside School",
+	"Clinical tests to measure touch sensitivity are an important means of identifying nerve injury and monitoring recovery. My project investigated the characteristics and reliability of two tests commonly used by healthcare professionals to assess touch sensitivity: two-point discrimination and Semmes-Weinstein monofilaments. The study clearly demonstrates that these tests results cannot be considered clinically significant unless they increase or decrease by a minimum of two increments."
 );
-INSERT INTO project_divisions(project, division) VALUES(1317, 4);
-INSERT INTO project_divisions(project, division) VALUES(1317, 6);
+INSERT INTO project_divisions(project, division) VALUES(1274, 8);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1317,
+	1274,
 	1,
-	"Jacquie Gulevich",
-	"Fort St. John",
+	"Sarah Pritchard",
+	"Thompson",
 	NULL,
-	"I was born and raised in Fort St. John, BC. I am a grade 8 student at Dr. Kearney Junior Secondary. Recently, in Grade 7, I was awarded Top Academic Student for my school as well as an Outstanding Citizenship award. I have been awarded the BC Hydro Award, Peace Cooperative award, and the BC Innovation award at my regional science fair level. I have enjoyed competing and performing Irish dance for nearly 7 years and continue to pursue this sport. I also enjoy playing volleyball and was awarded the team’s Most Valuable Player in a regional tournament. My other hobbies include outdoor activities such as river boating, fishing, hunting and snowmobiling. I enjoy living in the North with the many opportunities the area has to offer."
+	"My name is Sarah Pritchard. I was born and raised in northern Manitoba. I am a Grade 7 French Immersion student at Ecole Riverside School in Thompson, Manitoba. I have competed in figure skating for 4 years and have played saxophone in my school band since grade 6. I enjoy singing and have sung in many different choirs, including the Provincial Honour Choir, which performed in Winnipeg this spring. Each year, I enter in the Thompson Festival of the Arts, Speech Arts discipline, and have won numerous awards. I am an active church and youth group participant and also enjoy being a Kids’ club leader."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1274,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1274,
+	2,
+	"Bronze Medal - Health Sciences",
+	"Junior",
+	"Canadian Institutes of Health Research",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1577,
+	2008,
+	"What's The Buzz?",
+	2,
+	9,
+	55,
+	"St. Mary's High School",
+	"Colony Collapse Disorder is a serious problem. This disorder could prevent pollination of one third of the crops humans need for food. Possible causes for the decline in honeybees include environmental stresses on the hives such as, migratory practices, climate changes and diseases. I conducted hygienic testing and hypothesized the more hygienic a hive is the more resistant it is to disease and hive loss."
+);
+INSERT INTO project_divisions(project, division) VALUES(1577, 4);
+INSERT INTO project_divisions(project, division) VALUES(1577, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1577,
+	1,
+	"Laurissa Christie",
+	"Tara",
+	NULL,
+	"Laurissa is a grade nine student at St. Mary’s High School in Owen Sound. She lives in rural Midwestern Ontario with her family on a broiler chicken and red deer farm. She loves to figure skate and proudly represents her local club at competitions. Laurissa enjoys spending time with her family snowmobiling in the winter and in the summer at the cottage; swimming, boating, tubing and riding the sea-doo. She also enjoys traveling to visit her aunts in southern California. She enjoys acting with the local theatre group and representing her school at various public speaking competitions. Laurissa is a three time Canadian “pumpkin chuckin” champion. Last year at CWSF she won a gold medal in automotive and bronze in engineering for her project on biodiesel. In the summer Laurissa worked with a local apiarist learning about the beekeeping industry and conducting experiments. She continued her research throughout the year with the Ontario Beekeeping Association and the University of Guelph. In the future she hopes to attend university and pursue a career in environmental or life sciences."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1577,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1577,
+	2,
+	"Honourable Mention - Environmental Innovation",
+	"Intermediate",
+	"EnviroExpo, Presented by VIA Rail Canada",
+	100.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1577,
+	3,
+	"Bronze Medal - Earth & Environmental Sciences",
+	"Intermediate",
+	"Petro-Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1588,
+	2008,
+	"Who Are You?",
+	1,
+	9,
+	48,
+	"St. Francis de Sales E.S.",
+	"The purpose of this project was to find out if heredity affected the pattern of a fingerprint. I hypothesized that if we inherit eye, hair, and skin colour, why not fingerprint patterns. I compared fingerprint patterns between children and parents to determine if genetics had an effect. Upon analysis 67% of the individuals tested shared a 60% similarity in their fingerprint patterns with their parents."
+);
+INSERT INTO project_divisions(project, division) VALUES(1588, 9);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1588,
+	1,
+	"Nicklaus Thompson",
+	"Jasper",
+	NULL,
+	"Nicklaus Thompson is a 13 year old, Grade 7 French Immersion student at St. Francis De Sales Catholic School in Smiths Falls, Ontario. He plays on many school sports teams including basketball, volleyball, football, golf, track and field, soccer and cross country. He is an active member of his student council. In his spare time Nicklaus enjoys playing the guitar, reading, listening to music, playing sports, fishing and golfing. He has been a member of Lombard Glen Golf Club since 2005, a member of junior golf since 1998 and a member of Kitley Township soccer since 1999. Nicklaus plays an active role in his church as an altar server and more recently playing guitar for the choir. Earlier this year Nicklaus represented his school in the Ontario Math Olympics at Queen’s University. When Nicklaus graduates high school he plans to become a lawyer."
 );
 
 INSERT INTO projects
@@ -14828,7 +14975,7 @@ VALUES (
 	"Weather Observation UAV",
 	3,
 	9,
-	"Niagara",
+	60,
 	"Sir Winston Churchill",
 	"Current ground based weather stations are prone to inaccuracies due to their placement and surroundings. The goal of this project was to design and build an airborne, cost effective, unmanned, convenient, and environmentally friendly weather observation system. The result was a remotely controlled electric aircraft with onboard sensors for temperature, pressure, humidity and airborne particulate levels. The collected information is stored or transmitted for analysis."
 );
@@ -14887,125 +15034,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1584,
-	2008,
-	"What Causes A Brain Freeze?",
-	1,
-	3,
-	"River Valley",
-	"Albert Street Middle School",
-	"This project explains what causes a brain freeze and demonstrates how common they are. Fifty subjects were tested and it was discovered that 78% of them experienced brain freezes and that they are more common when the palate is exposed. Brain freezes occur when a cold substance is consumed quickly and the body reacts by dilating the blood vessels which causes the pain."
-);
-INSERT INTO project_divisions(project, division) VALUES(1584, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1584,
-	1,
-	"Amanda Eng",
-	"Fredericton",
-	NULL,
-	"Amanda Eng was born on May 5th ,1995 in Fredericton, New Brunswick. She attends Albert Street Middle School and is an excellent student in all of her school subjects, as well as her other activities. She has received many academic awards such as Student of the Month, 2nd in a school math competition, 3rd in the grade 7 oratorical competition, and was also chosen to participate in the Heritage Fair in her district. She enjoys many extra curricular activities, like gymnastics, playing the flute, band, and she attends Chinese school every Sunday. She likes swimming, art and is a very creative person. In the future, she plans to earn all 95% or above in her studies in the french immersion program. She also hopes to become an accountant or dentist."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1584,
-	2,
-	"Tess McDonald",
-	"Fredericton",
-	NULL,
-	"Tess McDonald was born on February 14, 1995 in Melbourne, Australia. She has lived in many places, but since 2001 she has lived in Fredericton and now attends Albert Street Middle School. Last year, Tess returned to Australia for six months and attended Ogilvie High School. Tess enjoys school and many extra-curricular sports such as basketball and volleyball. In the past few years, she has received many academic and athletic awards such as student of the month, athlete of the month, fifth place in a school math competition, and first place at the district and regional science fairs in2008. In the future, Tess plans to get 90% or more in all of her subjects in middle school, and also plans to be a teacher and travel around the world."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1520,
-	2008,
-	"What is the Diameter of the Earth's Core?",
-	2,
-	6,
-	"Regina",
-	"Thom Collegiate",
-	"By using seismic waves, I attempted to estimate the diameter for the earth’s core. With collected data of 10 different earthquakes, the time-travel curve of the P-waves, S-waves and L-waves were calculated. After figuring out the highest degree S-waves would occur on seismograms and inserting the degree into a formula, the diameter of 7540 km was calculated."
-);
-INSERT INTO project_divisions(project, division) VALUES(1520, 4);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1520,
-	1,
-	"Meghan Folnović",
-	"Regina",
-	NULL,
-	"I am Meghan Folnović. I am currently attending grade ten at Thom Collegiate in Regina, Saskatchewan. I like to play sports and hang out with friends. I enjoy playing soccer all year as well as volleyball, badminton, rugby and cycling. I play trombone and baritone in my school bands; in which I have won Most Valuable Jazz Band Member, two $50 scholarships and have travelled all over Alberta and Saskatchewan. I have also been involved with four province wide bands in grade seven through to this year. I am enrolled in the Pre-IB program at Thom Collegiate and spend most of my free time doing school work. In the future I would like to go to university, move out of Canada and work a high paying and enjoyable job. I would also like to fit in travelling the world and having a family. I have high expectations for my life and getting involved with Canada wide science fairs and province wide bands is getting me closer to that dream."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1577,
-	2008,
-	"What's The Buzz?",
-	2,
-	9,
-	"Bluewater",
-	"St. Mary's High School",
-	"Colony Collapse Disorder is a serious problem. This disorder could prevent pollination of one third of the crops humans need for food. Possible causes for the decline in honeybees include environmental stresses on the hives such as, migratory practices, climate changes and diseases. I conducted hygienic testing and hypothesized the more hygienic a hive is the more resistant it is to disease and hive loss."
-);
-INSERT INTO project_divisions(project, division) VALUES(1577, 4);
-INSERT INTO project_divisions(project, division) VALUES(1577, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1577,
-	1,
-	"Laurissa Christie",
-	"Tara",
-	NULL,
-	"Laurissa is a grade nine student at St. Mary’s High School in Owen Sound. She lives in rural Midwestern Ontario with her family on a broiler chicken and red deer farm. She loves to figure skate and proudly represents her local club at competitions. Laurissa enjoys spending time with her family snowmobiling in the winter and in the summer at the cottage; swimming, boating, tubing and riding the sea-doo. She also enjoys traveling to visit her aunts in southern California. She enjoys acting with the local theatre group and representing her school at various public speaking competitions. Laurissa is a three time Canadian “pumpkin chuckin” champion. Last year at CWSF she won a gold medal in automotive and bronze in engineering for her project on biodiesel. In the summer Laurissa worked with a local apiarist learning about the beekeeping industry and conducting experiments. She continued her research throughout the year with the Ontario Beekeeping Association and the University of Guelph. In the future she hopes to attend university and pursue a career in environmental or life sciences."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1577,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1577,
-	2,
-	"Honourable Mention - Environmental Innovation",
-	"Intermediate",
-	"EnviroExpo, Presented by VIA Rail Canada",
-	100.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1577,
-	3,
-	"Bronze Medal - Earth & Environmental Sciences",
-	"Intermediate",
-	"Petro-Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1478,
 	2008,
 	"Which Golf Ball to Use: A Study of Bounce Height and Drive Distance",
 	1,
 	2,
-	"Eastern Newfoundland",
+	6,
 	"St. Peter's Jr. H.S.",
 	"This project tested and analysed the correlation between the height a golf ball bounces when dropped and the distance it travels when hit with a golf club. The two tests used equipment specifically designed for this purpose. Multiple trails were preformed for the ten test balls. Analysis of the results showed a positive correlation, meaning a ball that bounces higher has more potential drive distance."
 );
@@ -15044,94 +15078,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1567,
+	1584,
 	2008,
-	"Willow Water as a Rooting Accelerator",
+	"What Causes A Brain Freeze?",
+	1,
+	3,
+	125,
+	"Albert Street Middle School",
+	"This project explains what causes a brain freeze and demonstrates how common they are. Fifty subjects were tested and it was discovered that 78% of them experienced brain freezes and that they are more common when the palate is exposed. Brain freezes occur when a cold substance is consumed quickly and the body reacts by dilating the blood vessels which causes the pain."
+);
+INSERT INTO project_divisions(project, division) VALUES(1584, 8);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1584,
+	1,
+	"Amanda Eng",
+	"Fredericton",
+	NULL,
+	"Amanda Eng was born on May 5th ,1995 in Fredericton, New Brunswick. She attends Albert Street Middle School and is an excellent student in all of her school subjects, as well as her other activities. She has received many academic awards such as Student of the Month, 2nd in a school math competition, 3rd in the grade 7 oratorical competition, and was also chosen to participate in the Heritage Fair in her district. She enjoys many extra curricular activities, like gymnastics, playing the flute, band, and she attends Chinese school every Sunday. She likes swimming, art and is a very creative person. In the future, she plans to earn all 95% or above in her studies in the french immersion program. She also hopes to become an accountant or dentist."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1584,
 	2,
-	8,
-	"Manitoba First Nations",
-	"Nisichawayasihk Neyo Ohtinwak Collegiate",
-	"This project investigates the usefulness of willow water as a rooting accelerator. Weak (5 g/L), medium (10 g/L) and strong (15g/L) concentrations of willow water were used to treat spiderwort and spruce cuttings. Both spiderwort and spruce cuttings formed roots more quickly in the strong and medium concentrations. Spiderwort roots were the longest in the weak concentration and in the control."
-);
-INSERT INTO project_divisions(project, division) VALUES(1567, 9);
-INSERT INTO project_divisions(project, division) VALUES(1567, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1567,
-	1,
-	"John Spence",
-	"Nelson House",
+	"Tess McDonald",
+	"Fredericton",
 	NULL,
-	"Tansi- Hello my name is Johnathan Spence (John).I live in Nelson House, Manitoba with my family. I am a Grade 9 student in Nisichawayasihk Neyo Ohtinwak Collegiate, in Nelson House. My favorite subject in school is science. I like science because it’s fun, exciting, I learn new things about the world and I like to challenge myself. I also like gym because it’s challenging and fun. In the future I want to study science and go into army. I want to go to the army because I want help other people. In my free time I like cycling and lots of other sports like basketball and baseball."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1588,
-	2008,
-	"Who Are You?",
-	1,
-	9,
-	"Rideau-St. Lawrence",
-	"St. Francis de Sales E.S.",
-	"The purpose of this project was to find out if heredity affected the pattern of a fingerprint. I hypothesized that if we inherit eye, hair, and skin colour, why not fingerprint patterns. I compared fingerprint patterns between children and parents to determine if genetics had an effect. Upon analysis 67% of the individuals tested shared a 60% similarity in their fingerprint patterns with their parents."
-);
-INSERT INTO project_divisions(project, division) VALUES(1588, 9);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1588,
-	1,
-	"Nicklaus Thompson",
-	"Jasper",
-	NULL,
-	"Nicklaus Thompson is a 13 year old, Grade 7 French Immersion student at St. Francis De Sales Catholic School in Smiths Falls, Ontario. He plays on many school sports teams including basketball, volleyball, football, golf, track and field, soccer and cross country. He is an active member of his student council. In his spare time Nicklaus enjoys playing the guitar, reading, listening to music, playing sports, fishing and golfing. He has been a member of Lombard Glen Golf Club since 2005, a member of junior golf since 1998 and a member of Kitley Township soccer since 1999. Nicklaus plays an active role in his church as an altar server and more recently playing guitar for the choir. Earlier this year Nicklaus represented his school in the Ontario Math Olympics at Queen’s University. When Nicklaus graduates high school he plans to become a lawyer."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1369,
-	2008,
-	"Wind Power",
-	2,
-	9,
-	"Lambton County",
-	"Northern C.I. & V.S.",
-	"Our project was to study and analyze factors affecting the operation and design of wind turbines. Variables such as wind velocity; number of magnetic poles and rotors were tested to see how they would affect the power output of wind turbines. Research of the physics behind wind turbines and the importance of wind power in our society were used to support our project."
-);
-INSERT INTO project_divisions(project, division) VALUES(1369, 99);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1369,
-	1,
-	"Alicia MacDougall",
-	"Sarnia",
-	NULL,
-	"I am 14 years old and this is my first time ever entering a science fair. My favourite thing to do is play hockey. I play on the Lady sting Bantam A. I also enjoy soccer, water skiing and Kung-Fu and have a brown belt. At school I was on the soccer team, hockey team, badmonton team, and track. I was also in science club and school newspaper. When I graduated grade 8 I recieved the science and female athlete awards. I was also the prime minister of my elementary school in grade 8. I also helped pass the smoke free by law in sarnia by speaking at several city council meetings. I have won medals in hockey Kung-Fu, public speaking, chess, and other sports. After high school i hope to go to Western University. I would like to become a gym and science teacher. I also really enjoy spending time with my family."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1369,
-	2,
-	"Akruti Patel",
-	"Sarnia",
-	NULL,
-	"My name is Akruti Patel; I am a grade nine student at Northern Collegiate I. & V.S. in Sarnia, Ontario. I enjoy participating in various different science fairs, clubs, organizations and expanding my knowledge in science. Besides science, I participate in numerous other extra curricular activities such as swimming, soccer, piano, and dance. I also enjoy participating in public speaking contests and have won many awards at branch, zone and district levels. I take part in many clubs at school such as the Science Club, Multicultural Awareness Club and the School Newspaper Club. I also have a passion for music and have been playing the piano for 6 years. Reading, cooking and painting are some of my favourite hobbies. Science has had a great impact in my life and it will continue to be a part of my future. Being selected to go to CWSF is probably one of the most exciting educational event that I have ever experienced and I am eagerly looking forward to it."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1369,
-	1,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	100.00
+	"Tess McDonald was born on February 14, 1995 in Melbourne, Australia. She has lived in many places, but since 2001 she has lived in Fredericton and now attends Albert Street Middle School. Last year, Tess returned to Australia for six months and attended Ogilvie High School. Tess enjoys school and many extra-curricular sports such as basketball and volleyball. In the past few years, she has received many academic and athletic awards such as student of the month, athlete of the month, fifth place in a school math competition, and first place at the district and regional science fairs in2008. In the future, Tess plans to get 90% or more in all of her subjects in middle school, and also plans to be a teacher and travel around the world."
 );
 
 INSERT INTO projects
@@ -15142,7 +15117,7 @@ VALUES (
 	"Which Bridge Structure Holds the Most Weight?",
 	1,
 	12,
-	"South Fraser",
+	121,
 	"Westerman Elementary",
 	"My project is about which bridge structure would hold the most weight. I tested the Arch, Warren, Howe and my own custom bridge. I had hypothesized that the Howe would hold the most weight. I did a ratio, so in the end, my hypothesis was proven wrong as the Arch held 76 pounds, while the Howe only held 50 pounds."
 );
@@ -15161,95 +15136,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1426,
-	2008,
-	"Wireless Electricity",
-	1,
-	NULL,
-	NULL,
-	NULL,
-	"This project is designed to demonstrate the transmission of electricity without wires. Using a home-designed apparatus, electricity was transferred between a sending coil and receiving coils. The experiment demonstrated that the second coil interfered with the magnetic field produced by the powered coil. Other tests measured the effects of distance and obstacles on a wireless electricity transfer."
-);
-INSERT INTO project_divisions(project, division) VALUES(1426, 7);
-INSERT INTO project_divisions(project, division) VALUES(1426, 6);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1413,
-	2008,
-	"Winging it- A study of how air temperature affects the efficiency of flight",
-	3,
-	9,
-	"Algoma Rotary",
-	"Korah Collegiate & Vocational School",
-	"This experiment is meant to determine the affect of temperature on the effeciency of flight. A wind tunnel was constructed to simulate and aircraft's wing and the tunnel's air temperature was altered to determine how much lift is generated by an aircraft's wing at various temperatures. Force meters and temperature probes were utilised inside of the wind tunnel to record these observations."
-);
-INSERT INTO project_divisions(project, division) VALUES(1413, 7);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1413,
-	1,
-	"Mackenzie Cook",
-	"Sault Ste. Marie",
-	NULL,
-	"My name's Mackenzie Cook, I live in Sault Ste. Marie, Ontario and I am in Grade 12 at Korah Collegiate in the International Baccalaureate program. I enjoy many sports such as hockey, golf, badminton and track and field. I am a 2-time competitor at OFSAA, a provincial competition in track and field. I enjoy video games, and technology in general. I am going to Carleton university next year in the Electrical Engineering Program."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
-	1274,
-	2008,
-	"What's the Point?",
-	1,
-	8,
-	"Northern Manitoba",
-	"Riverside School",
-	"Clinical tests to measure touch sensitivity are an important means of identifying nerve injury and monitoring recovery. My project investigated the characteristics and reliability of two tests commonly used by healthcare professionals to assess touch sensitivity: two-point discrimination and Semmes-Weinstein monofilaments. The study clearly demonstrates that these tests results cannot be considered clinically significant unless they increase or decrease by a minimum of two increments."
-);
-INSERT INTO project_divisions(project, division) VALUES(1274, 8);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1274,
-	1,
-	"Sarah Pritchard",
-	"Thompson",
-	NULL,
-	"My name is Sarah Pritchard. I was born and raised in northern Manitoba. I am a Grade 7 French Immersion student at Ecole Riverside School in Thompson, Manitoba. I have competed in figure skating for 4 years and have played saxophone in my school band since grade 6. I enjoy singing and have sung in many different choirs, including the Provincial Honour Choir, which performed in Winnipeg this spring. Each year, I enter in the Thompson Festival of the Arts, Speech Arts discipline, and have won numerous awards. I am an active church and youth group participant and also enjoy being a Kids’ club leader."
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1274,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	1274,
-	2,
-	"Bronze Medal - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1442,
 	2008,
 	"Wii Will Rock You",
 	2,
 	9,
-	"Frontenac, Lennox & Addington",
+	40,
 	"Kingston Collegiate Vocational Institute - KCVI",
 	"We examined the effects of playing ""Wii Boxing"" on adolescents’ short-term memory, letter location abilities, cortisol levels, and heart rate. There was no overall negative effect on short-term memory and 90% improved on letter location tests. All experienced an increase in heart rate levels and 85% decreased in stress hormone levels. We concluded that “Wii Boxing” provides a superior alternative to traditional sedentary video games."
 );
@@ -15298,12 +15190,81 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1369,
+	2008,
+	"Wind Power",
+	2,
+	9,
+	58,
+	"Northern C.I. & V.S.",
+	"Our project was to study and analyze factors affecting the operation and design of wind turbines. Variables such as wind velocity; number of magnetic poles and rotors were tested to see how they would affect the power output of wind turbines. Research of the physics behind wind turbines and the importance of wind power in our society were used to support our project."
+);
+INSERT INTO project_divisions(project, division) VALUES(1369, 99);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1369,
+	1,
+	"Alicia MacDougall",
+	"Sarnia",
+	NULL,
+	"I am 14 years old and this is my first time ever entering a science fair. My favourite thing to do is play hockey. I play on the Lady sting Bantam A. I also enjoy soccer, water skiing and Kung-Fu and have a brown belt. At school I was on the soccer team, hockey team, badmonton team, and track. I was also in science club and school newspaper. When I graduated grade 8 I recieved the science and female athlete awards. I was also the prime minister of my elementary school in grade 8. I also helped pass the smoke free by law in sarnia by speaking at several city council meetings. I have won medals in hockey Kung-Fu, public speaking, chess, and other sports. After high school i hope to go to Western University. I would like to become a gym and science teacher. I also really enjoy spending time with my family."
+);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1369,
+	2,
+	"Akruti Patel",
+	"Sarnia",
+	NULL,
+	"My name is Akruti Patel; I am a grade nine student at Northern Collegiate I. & V.S. in Sarnia, Ontario. I enjoy participating in various different science fairs, clubs, organizations and expanding my knowledge in science. Besides science, I participate in numerous other extra curricular activities such as swimming, soccer, piano, and dance. I also enjoy participating in public speaking contests and have won many awards at branch, zone and district levels. I take part in many clubs at school such as the Science Club, Multicultural Awareness Club and the School Newspaper Club. I also have a passion for music and have been playing the piano for 6 years. Reading, cooking and painting are some of my favourite hobbies. Science has had a great impact in my life and it will continue to be a part of my future. Being selected to go to CWSF is probably one of the most exciting educational event that I have ever experienced and I am eagerly looking forward to it."
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	1369,
+	1,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1567,
+	2008,
+	"Willow Water as a Rooting Accelerator",
+	2,
+	8,
+	111,
+	"Nisichawayasihk Neyo Ohtinwak Collegiate",
+	"This project investigates the usefulness of willow water as a rooting accelerator. Weak (5 g/L), medium (10 g/L) and strong (15g/L) concentrations of willow water were used to treat spiderwort and spruce cuttings. Both spiderwort and spruce cuttings formed roots more quickly in the strong and medium concentrations. Spiderwort roots were the longest in the weak concentration and in the control."
+);
+INSERT INTO project_divisions(project, division) VALUES(1567, 9);
+INSERT INTO project_divisions(project, division) VALUES(1567, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1567,
+	1,
+	"John Spence",
+	"Nelson House",
+	NULL,
+	"Tansi- Hello my name is Johnathan Spence (John).I live in Nelson House, Manitoba with my family. I am a Grade 9 student in Nisichawayasihk Neyo Ohtinwak Collegiate, in Nelson House. My favorite subject in school is science. I like science because it’s fun, exciting, I learn new things about the world and I like to challenge myself. I also like gym because it’s challenging and fun. In the future I want to study science and go into army. I want to go to the army because I want help other people. In my free time I like cycling and lots of other sports like basketball and baseball."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1444,
 	2008,
 	"Wind Swept",
 	1,
 	9,
-	"Frontenac, Lennox & Addington",
+	40,
 	"Loughborough P.S.",
 	"This project was on increasing wind speed by funneling the air to improve electrical output of a turbine style windmill. Using a windmill and funnel constructed from scratch, I found that a funnel will marginally increase wind speed and in turn, allow the windmill to generate more power."
 );
@@ -15338,7 +15299,7 @@ VALUES (
 	"Windmill Blades",
 	3,
 	9,
-	"Toronto",
+	63,
 	"Adam BirdWindmill BladesDivision:Health Sciences / NoneCategory:SeniorRegion:TorontoCity:Toronto, ONSchool:Danforth Collegiate & Technical Inst.Abstract:The rotational speeds of windmill blades of varying width, pitch, and number running different sized generators at different wind speeds were measured. Results showed that wider blades are more effective; larger generators are more effective; number of blades does not affect performance; and that while lower pitches spin faster with low loads, higher pitches are more consistent under all loads and wind conditions.Danforth Collegiate & Technical Inst.",
 	"The rotational speeds of windmill blades of varying width, pitch, and number running different sized generators at different wind speeds were measured. Results showed that wider blades are more effective; larger generators are more effective; number of blades does not affect performance; and that while lower pitches spin faster with low loads, higher pitches are more consistent under all loads and wind conditions."
 );
@@ -15357,47 +15318,12 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1337,
-	2008,
-	"Would Wheat?  Wheat Wood!",
-	3,
-	6,
-	"Carlton Trail",
-	"William Derby",
-	"Our project is to see if we can take all natural substances, such as wheat, flour and water and see if we can make a substitute to lumber that could be used for construction. By doing this we could help the environment and fight the global warming epidemic, as well help save our forests."
-);
-INSERT INTO project_divisions(project, division) VALUES(1337, 4);
-INSERT INTO project_divisions(project, division) VALUES(1337, 6);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1337,
-	1,
-	"Joel Gritzfeld",
-	"Strasbourg",
-	NULL,
-	"Joel Richard Gritzfeld was born and raised in the small farming community of Strasbourg, Saskatchewan. He has lived on a farm outside of Strasbourg for his whole life with his parents and his sister. He is currently in grade 11 at William Derby High School. Joel is heavily active in the William Derby Drama Club and he is also involved in the Last Mountain Theather Company. He has a part time job at a small grocery store in Strasbourg. Joel also enjoys curling and football."
-);
-INSERT INTO finalists
-	(project, member, name, city, gender, biography)
-VALUES (
-	1337,
-	2,
-	"Orion Lonie",
-	"Strasbourg",
-	NULL,
-	"My name is Orion Lonie, and am a 16 year old student at William Derby School, in Strasbourg, Saskatchewan. I have a part time job at Strasbourg's local grocery store, and a summer job, as a cabin councilor, at Arlington Beach Camp. I am also involved with many of the school's extra cirricular activities such as, Volleyball, Basketball, Badminton, and Track and Field."
-);
-
-INSERT INTO projects
-	(id, year, title, category, province, region, school, abstract)
-VALUES (
 	1529,
 	2008,
 	"X-CoP 101 - ""eXternal COntrolled Prosthesis""",
 	1,
 	12,
-	"Greater Vancouver",
+	90,
 	"St George's School",
 	"Robotic technology becomes essential with prosthetic limbs, aiding millions of amputees. My aim was to introduce another method of controlling prostheses. After innovating an interface utilizing external sensors, I compared it to the EMG system-currently the most advanced interface available. My system of control proved feasible and effective. This innovation could influence a wider field of biomechanics, aiding victims of various illnesses and accidents."
 );
@@ -15447,27 +15373,76 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
-	1384,
+	1337,
 	2008,
-	"You are Not a Beautiful and Unique Snowflake",
+	"Would Wheat?  Wheat Wood!",
 	3,
-	9,
-	"Waterloo-Wellington",
-	"St. John's-Kilmarnock School",
-	"Malcolm Gladwell's ""The Tipping Point"" explains how fads are really social epidemics, and can be analyzed in the same way that diseases can be analyzed. There are three rules that govern an epidemic's spread, and understanding those rules can help one to understand social science. I used a controlled computer model to measure the effects of simultaneous social epidemics on a small community of people."
+	6,
+	16,
+	"William Derby",
+	"Our project is to see if we can take all natural substances, such as wheat, flour and water and see if we can make a substitute to lumber that could be used for construction. By doing this we could help the environment and fight the global warming epidemic, as well help save our forests."
 );
-INSERT INTO project_divisions(project, division) VALUES(1384, 8);
-INSERT INTO project_divisions(project, division) VALUES(1384, 6);
+INSERT INTO project_divisions(project, division) VALUES(1337, 4);
+INSERT INTO project_divisions(project, division) VALUES(1337, 6);
 INSERT INTO finalists
 	(project, member, name, city, gender, biography)
 VALUES (
-	1384,
+	1337,
 	1,
-	"Devin Howard",
-	"Elora",
+	"Joel Gritzfeld",
+	"Strasbourg",
 	NULL,
-	"I am a grade 12 student and am planning on attending University of Waterloo next year for a new program known as the Bachelor of Knowledge Integration. I have always been interested in more than just math, science, or the arts, and since discovering Knowledge Integration I've gotten a lot of pleasure from finding problems and ideas that don't fit within one discipline. My science fair project definitely reflects that. I play soccer and track and field at school, and have participated in two school choirs as well as the school play and debate club for the past three years. I am an avid programmer, reader, and actor. I have acted in historical walking tours in my hometown of Elora, Ontario for six years. I hope that success in science fair and school can help me get the a well-rounded and comprehensive education in a variety of fields. I am a fanatical environmentalist, and I know that if I want to help solve world issues, I won't be able to do so from the limited perspective of just one discipline."
+	"Joel Richard Gritzfeld was born and raised in the small farming community of Strasbourg, Saskatchewan. He has lived on a farm outside of Strasbourg for his whole life with his parents and his sister. He is currently in grade 11 at William Derby High School. Joel is heavily active in the William Derby Drama Club and he is also involved in the Last Mountain Theather Company. He has a part time job at a small grocery store in Strasbourg. Joel also enjoys curling and football."
 );
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1337,
+	2,
+	"Orion Lonie",
+	"Strasbourg",
+	NULL,
+	"My name is Orion Lonie, and am a 16 year old student at William Derby School, in Strasbourg, Saskatchewan. I have a part time job at Strasbourg's local grocery store, and a summer job, as a cabin councilor, at Arlington Beach Camp. I am also involved with many of the school's extra cirricular activities such as, Volleyball, Basketball, Badminton, and Track and Field."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1413,
+	2008,
+	"Winging it- A study of how air temperature affects the efficiency of flight",
+	3,
+	9,
+	38,
+	"Korah Collegiate & Vocational School",
+	"This experiment is meant to determine the affect of temperature on the effeciency of flight. A wind tunnel was constructed to simulate and aircraft's wing and the tunnel's air temperature was altered to determine how much lift is generated by an aircraft's wing at various temperatures. Force meters and temperature probes were utilised inside of the wind tunnel to record these observations."
+);
+INSERT INTO project_divisions(project, division) VALUES(1413, 7);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1413,
+	1,
+	"Mackenzie Cook",
+	"Sault Ste. Marie",
+	NULL,
+	"My name's Mackenzie Cook, I live in Sault Ste. Marie, Ontario and I am in Grade 12 at Korah Collegiate in the International Baccalaureate program. I enjoy many sports such as hockey, golf, badminton and track and field. I am a 2-time competitor at OFSAA, a provincial competition in track and field. I enjoy video games, and technology in general. I am going to Carleton university next year in the Electrical Engineering Program."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
+	1426,
+	2008,
+	"Wireless Electricity",
+	1,
+	NULL,
+	NULL,
+	NULL,
+	"This project is designed to demonstrate the transmission of electricity without wires. Using a home-designed apparatus, electricity was transferred between a sending coil and receiving coils. The experiment demonstrated that the second coil interfered with the magnetic field produced by the powered coil. Other tests measured the effects of distance and obstacles on a wireless electricity transfer."
+);
+INSERT INTO project_divisions(project, division) VALUES(1426, 7);
+INSERT INTO project_divisions(project, division) VALUES(1426, 6);
 
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
@@ -15477,7 +15452,7 @@ VALUES (
 	"You are Under Fall-Arrest",
 	1,
 	9,
-	"Sudbury",
+	49,
 	"R.L. Beattie P.S.",
 	"This project explores the benefits of incorporating an alarm device to the Fall-Arrest systems currently used in Ontario. Our experiments showed that adding a tethered alarm (activated by a release-pin in the event of a fall, thereby promptly alerting workers that an accident has occurred), is an efficient and economic way to minimize the risk of harm and/or death from suspension trauma in the workplace."
 );
@@ -15516,12 +15491,37 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, province, region, school, abstract)
 VALUES (
+	1384,
+	2008,
+	"You are Not a Beautiful and Unique Snowflake",
+	3,
+	9,
+	65,
+	"St. John's-Kilmarnock School",
+	"Malcolm Gladwell's ""The Tipping Point"" explains how fads are really social epidemics, and can be analyzed in the same way that diseases can be analyzed. There are three rules that govern an epidemic's spread, and understanding those rules can help one to understand social science. I used a controlled computer model to measure the effects of simultaneous social epidemics on a small community of people."
+);
+INSERT INTO project_divisions(project, division) VALUES(1384, 8);
+INSERT INTO project_divisions(project, division) VALUES(1384, 6);
+INSERT INTO finalists
+	(project, member, name, city, gender, biography)
+VALUES (
+	1384,
+	1,
+	"Devin Howard",
+	"Elora",
+	NULL,
+	"I am a grade 12 student and am planning on attending University of Waterloo next year for a new program known as the Bachelor of Knowledge Integration. I have always been interested in more than just math, science, or the arts, and since discovering Knowledge Integration I've gotten a lot of pleasure from finding problems and ideas that don't fit within one discipline. My science fair project definitely reflects that. I play soccer and track and field at school, and have participated in two school choirs as well as the school play and debate club for the past three years. I am an avid programmer, reader, and actor. I have acted in historical walking tours in my hometown of Elora, Ontario for six years. I hope that success in science fair and school can help me get the a well-rounded and comprehensive education in a variety of fields. I am a fanatical environmentalist, and I know that if I want to help solve world issues, I won't be able to do so from the limited perspective of just one discipline."
+);
+
+INSERT INTO projects
+	(id, year, title, category, province, region, school, abstract)
+VALUES (
 	1528,
 	2008,
 	"Your life or your car? AirCrumble lets you have both.",
 	3,
 	12,
-	"Greater Vancouver",
+	90,
 	"Vancouver College, Burnaby North Secondary",
 	"During a great number of low speed collisions, vehicles can be severely damaged, resulting in expensive repairs and even total loss. Inspired by the Mars Exploration Rovers, AirCrumble is a system that deploys external airbags in front of vehicle bumper moments before impact. This leads to longer stopping distance, which reduces or even eliminates damage done to the vehicles while further protecting the passengers."
 );

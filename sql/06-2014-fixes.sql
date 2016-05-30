@@ -6,7 +6,7 @@ BEGIN TRANSACTION;
 UPDATE finalists SET city = "Morelia" WHERE project = 3790;
 
 -- 3823
-UPDATE projects SET region = "Lethbridge", province = 11 WHERE id = 3823;
+UPDATE projects SET region = 115, province = 11 WHERE id = 3823;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -44,7 +44,7 @@ VALUES (
 );
 
 -- 3872
-UPDATE projects SET region = "Wood Buffalo", province = 11 WHERE id = 3872;
+UPDATE projects SET region = 122, province = 11 WHERE id = 3872;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -57,7 +57,7 @@ VALUES (
 );
 
 -- 3933
-UPDATE projects SET region = "Halifax", province = 1 WHERE id = 3933;
+UPDATE projects SET region = 114, province = 1 WHERE id = 3933;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -96,7 +96,7 @@ VALUES (
 );
 
 -- 4057
-UPDATE projects SET region = "Central Okanagan", province = 12 WHERE id = 4057;
+UPDATE projects SET region = 85, province = 12 WHERE id = 4057;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -109,7 +109,7 @@ VALUES (
 );
 
 -- 4077
-UPDATE projects SET region = "South Fraser", province = 12 WHERE id = 4077;
+UPDATE projects SET region = 121, province = 12 WHERE id = 4077;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -122,7 +122,7 @@ VALUES (
 );
 
 -- 4086
-UPDATE projects SET region = "Frontenac, Lennox & Addington", province = 9 WHERE id = 4086;
+UPDATE projects SET region = 40, province = 9 WHERE id = 4086;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -135,7 +135,7 @@ VALUES (
 );
 
 -- 4103
-UPDATE projects SET region = "Montréal CLS", province = 10 WHERE id = 4103;
+UPDATE projects SET region = 75, province = 10 WHERE id = 4103;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -148,7 +148,7 @@ VALUES (
 );
 
 -- 4119
-UPDATE projects SET region = "Northern Vancouver Island", province = 12 WHERE id = 4119;
+UPDATE projects SET region = 95, province = 12 WHERE id = 4119;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (
@@ -161,7 +161,7 @@ VALUES (
 );
 
 -- 4175
-UPDATE projects SET region = "Northwestern Ontario", province = 9 WHERE id = 4175;
+UPDATE projects SET region = 43, province = 9 WHERE id = 4175;
 INSERT INTO finalists
 (project, member, name, city, gender, biography)
 VALUES (

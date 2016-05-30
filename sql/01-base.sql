@@ -62,13 +62,14 @@ CREATE TABLE "projects" (
   `title`	TEXT,
   `category`	INTEGER,
   `province`	INTEGER,
-  `region`	TEXT,
+  `region`	INTEGER,
   `school`	TEXT,
   `abstract`	TEXT,
   PRIMARY KEY(id),
   FOREIGN KEY(`year`) REFERENCES `fairs`(`year`),
   FOREIGN KEY(`category`) REFERENCES `categories`(`id`),
-  FOREIGN KEY(`province`) REFERENCES provinces(id)
+  FOREIGN KEY(`province`) REFERENCES `provinces`(`id`),
+  FOREIGN KEY(`region`) REFERENCES regions(`id`)
 );
 
 CREATE TABLE `project_challenges` (
