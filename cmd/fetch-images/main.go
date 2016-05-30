@@ -22,6 +22,10 @@ var rewrites = map[string]string{
 	"3488": "3556",
 }
 
+var removed = map[string]bool{
+	"1186": true,
+}
+
 func main() {
 	directory := flag.String("directory", "images", "Directory to write image files")
 	year := flag.Int("year", 2000, "Year of pictures to download")
@@ -55,7 +59,6 @@ func main() {
 		if !strings.HasPrefix(href, "projectdetails.php?") {
 			return
 		}
-		wg.Add(1)
 
 		u, err := url.Parse(href)
 		if err != nil {
@@ -64,7 +67,11 @@ func main() {
 		}
 
 		id := u.Query().Get("id")
+		if removed[id] {
+			return
+		}
 
+		wg.Add(1)
 		<-ch
 
 		go func() {
