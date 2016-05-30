@@ -114,4 +114,20 @@ CREATE VIEW provincial_averages AS
   FROM fairs
     LEFT JOIN provinces;
 
+-- Age distribution
+CREATE VIEW age_distribution AS
+  SELECT *, junior + intermediate + senior AS total FROM (
+    SELECT
+      fairs.year AS year,
+      (
+        SELECT COUNT(*) FROM projects WHERE projects.year = fairs.year AND projects.category = 1
+      ) AS junior,
+      (
+        SELECT COUNT(*) FROM projects WHERE projects.year = fairs.year AND projects.category = 2
+      ) AS intermediate,
+      (
+        SELECT COUNT(*) FROM projects WHERE projects.year = fairs.year AND projects.category = 3
+      ) AS senior
+    FROM fairs);
+
 COMMIT;
