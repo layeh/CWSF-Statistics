@@ -130,4 +130,21 @@ CREATE VIEW age_distribution AS
       ) AS senior
     FROM fairs);
 
+-- Challenges by year
+CREATE VIEW challenges_by_year AS
+  SELECT
+    fairs.year AS year,
+    challenges.name AS challenge,
+    (
+      SELECT COUNT(*)
+      FROM projects
+        LEFT JOIN project_challenges
+          ON projects.id = project_challenges.project
+      WHERE project_challenges.challenge = challenges.id AND projects.year = fairs.year
+    ) as count
+  FROM fairs
+    LEFT JOIN challenges
+  -- challenges started in 2011
+  WHERE fairs.year >= 2011;
+
 COMMIT;
