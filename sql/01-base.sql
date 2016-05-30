@@ -50,6 +50,12 @@ CREATE TABLE "finalists" (
   FOREIGN KEY(`project`) REFERENCES `projects`(`id`)
 );
 
+CREATE TABLE `regions` (
+  `id`	INTEGER NOT NULL,
+  `name`	TEXT NOT NULL,
+  PRIMARY KEY(id)
+);
+
 CREATE TABLE "projects" (
   `id`	INTEGER NOT NULL,
   `year`	INTEGER NOT NULL,
