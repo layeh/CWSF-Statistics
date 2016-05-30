@@ -3,21 +3,22 @@ CREATE TABLE `fairs` (
   PRIMARY KEY(year)
 );
 
-CREATE TABLE "hosts" (
-  `year`	INTEGER NOT NULL,
-  `name`	TEXT NOT NULL,
-  `city`	TEXT NOT NULL,
-  `province`	TEXT NOT NULL,
-  `url`	TEXT NOT NULL,
-  PRIMARY KEY(year),
-  FOREIGN KEY(`year`) REFERENCES fairs(year)
-);
-
 CREATE TABLE `provinces` (
   `id`	INTEGER NOT NULL,
   `name`	TEXT NOT NULL,
   `abbr`	TEXT NOT NULL,
   PRIMARY KEY(id)
+);
+
+CREATE TABLE "hosts" (
+  `year`	INTEGER NOT NULL,
+  `name`	TEXT NOT NULL,
+  `city`	TEXT NOT NULL,
+  `province`	INTEGER NOT NULL,
+  `url`	TEXT NOT NULL,
+  PRIMARY KEY(year),
+  FOREIGN KEY(`year`) REFERENCES `fairs`(`year`),
+  FOREIGN KEY(`province`) REFERENCES provinces(id)
 );
 
 CREATE TABLE `categories` (
@@ -43,7 +44,6 @@ CREATE TABLE "finalists" (
   `member`	INTEGER NOT NULL,
   `name`	TEXT,
   `city`	TEXT,
-  `province`	TEXT,
   `gender`	TEXT,
   `biography`	TEXT,
   PRIMARY KEY(project,member),
@@ -55,12 +55,14 @@ CREATE TABLE "projects" (
   `year`	INTEGER NOT NULL,
   `title`	TEXT,
   `category`	INTEGER,
+  `province`	INTEGER,
   `region`	TEXT,
   `school`	TEXT,
   `abstract`	TEXT,
   PRIMARY KEY(id),
-  FOREIGN KEY(`year`) REFERENCES fairs(year),
-  FOREIGN KEY(`category`) REFERENCES `categories`(`id`)
+  FOREIGN KEY(`year`) REFERENCES `fairs`(`year`),
+  FOREIGN KEY(`category`) REFERENCES `categories`(`id`),
+  FOREIGN KEY(`province`) REFERENCES provinces(id)
 );
 
 CREATE TABLE `project_challenges` (

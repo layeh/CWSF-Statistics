@@ -37,7 +37,7 @@ func main() {
 			os.Exit(1)
 		}
 		if _, err := db.Exec(string(contents)); err != nil {
-			fmt.Fprintln(os.Stdout, err)
+			fmt.Fprintf(os.Stdout, "%s: %s\n", name, err)
 			os.Exit(1)
 		}
 	}

@@ -82,6 +82,7 @@ type Project struct {
 	Challenge int   // >= 2011
 	Divisions []int // < 2011
 	Category  int
+	Province  int
 	Region    string
 	School    string
 	Abstract  string
@@ -157,7 +158,7 @@ func ParseProject(doc *goquery.Document) (*Project, error) {
 		finalist.Biography = bio
 		if len(cities) >= 1 {
 			finalist.City = cities[0]
-			finalist.Province = provinces[0]
+			project.Province = provinces[0]
 		}
 		project.Finalists = append(project.Finalists, finalist)
 
@@ -169,10 +170,8 @@ func ParseProject(doc *goquery.Document) (*Project, error) {
 
 			if len(cities) == 2 {
 				finalist.City = cities[1]
-				finalist.Province = provinces[1]
 			} else if len(cities) == 1 {
 				finalist.City = cities[0]
-				finalist.Province = provinces[0]
 			}
 
 			project.Finalists = append(project.Finalists, finalist)
@@ -248,12 +247,13 @@ var funcs = template.FuncMap{
 
 var projectTemplate = template.Must(template.New("sql").Funcs(funcs).Parse(sql))
 var sql = `{{ $id := .ID }}INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
+	(id, year, title, category, province, region, school, abstract)
 VALUES (
 	{{ .ID }},
 	{{ .Year }},
 	{{ if ne .Title "" }}{{ escape .Title }}{{ else }}NULL{{ end }},
 	{{ if ne .Category 0 }}{{ .Category }}{{ else }}NULL{{ end }},
+	{{ if ne .Province 0 }}{{ .Province }}{{ else }}NULL{{ end }},
 	{{ if ne .Region "" }}{{ escape .Region }}{{ else }}NULL{{ end }},
 	{{ if ne .School "" }}{{ escape .School }}{{ else }}NULL{{ end }},
 	{{ if ne .Abstract "" }}{{ escape .Abstract }}{{ else }}NULL{{ end }}
@@ -261,13 +261,12 @@ VALUES (
 {{ if ge .Year 2011 }}INSERT INTO project_challenges(project, challenge) VALUES({{ .ID }}, {{ .Challenge }});
 {{ else }}{{ range $division := .Divisions }}INSERT INTO project_divisions(project, division) VALUES({{ $id }}, {{ $division }});
 {{ end }}{{ end }}{{ range $i, $_ := .Finalists }}INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
+	(project, member, name, city, gender, biography)
 VALUES (
 	{{ $id }},
 	{{ item $i }},
 	{{ if ne .Name "" }}{{ escape .Name }}{{ else }}NULL{{ end }},
 	{{ if ne .City "" }}{{ escape .City }}{{ else }}NULL{{ end }},
-	{{ if ne .Province 0 }}{{ .Province }}{{ else }}NULL{{ end }},
 	{{ if ne .Gender "" }}{{ escape .Gender }}{{ else }}NULL{{ end }},
 	{{ if ne .Biography "" }}{{ escape .Biography }}{{ else }}NULL{{ end }}
 );
@@ -301,6 +300,9 @@ func (p *Project) InvalidFields() []string {
 	if p.Category == 0 {
 		fields = append(fields, "Category")
 	}
+	if p.Province == 0 {
+		fields = append(fields, "Province")
+	}
 	if p.Region == "" {
 		fields = append(fields, "Region")
 	}
@@ -319,9 +321,6 @@ func (p *Project) InvalidFields() []string {
 	for i, finalist := range p.Finalists {
 		if finalist.City == "" {
 			fields = append(fields, "Finalists["+strconv.Itoa(i)+"].City")
-		}
-		if finalist.Province == 0 {
-			fields = append(fields, "Finalists["+strconv.Itoa(i)+"].Province")
 		}
 	}
 
@@ -342,7 +341,6 @@ type Award struct {
 type Finalist struct {
 	Name      string
 	City      string
-	Province  int
 	Gender    string
 	Biography string
 }

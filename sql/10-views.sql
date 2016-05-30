@@ -36,7 +36,7 @@ CREATE VIEW best_in_fair_winners AS
     LEFT JOIN finalists
       ON projects.id = finalists.project
     LEFT JOIN provinces
-      ON finalists.province = provinces.id
+      ON projects.province = provinces.id
   WHERE awards.title = "Best Project Award" OR instr(awards.title, "Best in Fair Award") != 0
   GROUP BY projects.year;
 
