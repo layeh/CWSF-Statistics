@@ -40,4 +40,63 @@ CREATE VIEW best_in_fair_winners AS
   WHERE awards.title = "Best Project Award" OR instr(awards.title, "Best in Fair Award") != 0
   GROUP BY projects.year;
 
+-- Provincial medals per year
+CREATE VIEW provincial_medals AS
+  SELECT
+    fairs.year AS year,
+    provinces.abbr AS province,
+    (
+      SELECT COUNT(*)
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+      WHERE
+        projects.year = fairs.year
+        AND projects.province = provinces.id
+        AND (
+          instr(awards.title, "Platinum Award - ") = 1
+          OR instr(awards.title, "EnCana Platinum Award - ") = 1
+          OR (
+            -- These years don't list the best in fair
+            -- winners as receiving Platinum medals
+            projects.year IN (2013, 2014)
+            AND awards.title = "Best Project Award"
+          )
+        )
+    ) as platinum,
+    (
+      SELECT COUNT(*)
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+      WHERE
+        projects.year = fairs.year
+        AND projects.province = provinces.id
+        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Gold Medal") OR instr(awards.title, "Gold Medal - ") = 1)
+    ) as gold,
+    (
+      SELECT COUNT(*)
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+      WHERE
+        projects.year = fairs.year
+        AND projects.province = provinces.id
+        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Silver Medal") OR instr(awards.title, "Silver Medal - ") = 1)
+    ) as silver,
+    (
+      SELECT COUNT(*)
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+      WHERE
+        projects.year = fairs.year
+        AND projects.province = provinces.id
+        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Bronze Medal") OR instr(awards.title, "Bronze Medal - ") = 1)
+    ) as bronze
+  FROM
+    fairs
+    LEFT JOIN
+    provinces;
+
 COMMIT;
