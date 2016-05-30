@@ -13,6 +13,13 @@ CREATE TABLE "hosts" (
   FOREIGN KEY(`year`) REFERENCES fairs(year)
 );
 
+CREATE TABLE `provinces` (
+  `id`	INTEGER NOT NULL,
+  `name`	TEXT NOT NULL,
+  `abbr`	TEXT NOT NULL,
+  PRIMARY KEY(id)
+);
+
 CREATE TABLE `categories` (
   `id`	INTEGER NOT NULL,
   `name`	TEXT NOT NULL,
