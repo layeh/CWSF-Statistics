@@ -47,6 +47,19 @@ VALUES (
   NULL
 );
 
+-- 608
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  608,
+  2,
+  "Philip Edgcumbe",
+  "Vancouver",
+  "BC",
+  NULL,
+  NULL
+);
+
 -- 636
 UPDATE finalists SET city = "Taipei" WHERE project = 636;
 
