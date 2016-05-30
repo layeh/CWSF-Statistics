@@ -20,4 +20,22 @@ CREATE VIEW total_prizes AS
       ON projects.id = awards.project
   GROUP BY projects.year;
 
+-- Best in fair winners
+CREATE VIEW best_in_fair_winners AS
+  SELECT
+    fairs.year AS year,
+    projects.id AS project,
+    projects.title AS title,
+    GROUP_CONCAT(finalists.name, ", ") AS name,
+    finalists.province AS province
+  FROM fairs
+    LEFT JOIN projects
+      ON fairs.year = projects.year
+    LEFT JOIN awards
+      ON projects.id = awards.project
+    LEFT JOIN finalists
+      ON projects.id = finalists.project
+  WHERE awards.title = "Best Project Award" OR instr(awards.title, "Best in Fair Award") != 0
+  GROUP BY projects.year;
+
 COMMIT;
