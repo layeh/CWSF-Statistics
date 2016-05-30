@@ -99,4 +99,19 @@ CREATE VIEW provincial_medals AS
     LEFT JOIN
     provinces;
 
+-- Average provincial winnings
+CREATE VIEW provincial_averages AS
+  SELECT
+    fairs.year AS year,
+    provinces.abbr AS province,
+    PRINTF("%.2f", COALESCE((
+      SELECT AVG(value)
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+      WHERE projects.year = fairs.year AND projects.province = provinces.id
+    ), 0)) AS average
+  FROM fairs
+    LEFT JOIN provinces;
+
 COMMIT;
