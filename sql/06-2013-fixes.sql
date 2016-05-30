@@ -16,6 +16,19 @@ VALUES (
   NULL
 );
 
+-- 3411
+INSERT INTO finalists
+(project, member, name, city, province, gender, biography)
+VALUES (
+  3411,
+  1,
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL, -- TODO
+  NULL,
+  NULL
+);
+
 -- 3442
 INSERT INTO finalists
 (project, member, name, city, province, gender, biography)

@@ -473,5 +473,6 @@ UPDATE finalists SET gender = "M" WHERE project = 3556 AND member = 2;
 UPDATE finalists SET gender = "M" WHERE project = 3444 AND member = 2;
 UPDATE finalists SET gender = "F" WHERE project = 3563 AND member = 2;
 UPDATE finalists SET gender = "M" WHERE project = 3624 AND member = 2;
+UPDATE finalists SET gender = "F" WHERE project = 3411 AND member = 1;
 
 COMMIT;
