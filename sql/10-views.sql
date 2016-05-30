@@ -27,7 +27,7 @@ CREATE VIEW best_in_fair_winners AS
     projects.id AS project,
     projects.title AS title,
     GROUP_CONCAT(finalists.name, ", ") AS name,
-    finalists.province AS province
+    provinces.abbr AS province
   FROM fairs
     LEFT JOIN projects
       ON fairs.year = projects.year
@@ -35,6 +35,8 @@ CREATE VIEW best_in_fair_winners AS
       ON projects.id = awards.project
     LEFT JOIN finalists
       ON projects.id = finalists.project
+    LEFT JOIN provinces
+      ON finalists.province = provinces.id
   WHERE awards.title = "Best Project Award" OR instr(awards.title, "Best in Fair Award") != 0
   GROUP BY projects.year;
 
