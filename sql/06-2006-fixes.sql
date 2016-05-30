@@ -3,7 +3,7 @@
 BEGIN TRANSACTION;
 
 -- 500
-UPDATE finalists SET city = "Leader", province = "SK" WHERE project = 500;
+UPDATE finalists SET city = "Leader", province = 6 WHERE project = 500;
 
 -- 511
 UPDATE projects SET region = "Chignecto East" WHERE id = 511;
@@ -14,7 +14,7 @@ VALUES (
   1,
   "Alissa Ali",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -28,7 +28,7 @@ VALUES (
   1,
   "Ratna Varma",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -42,7 +42,7 @@ VALUES (
   1,
   "Gary Kurek",
   "Fort Kent",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -55,7 +55,7 @@ VALUES (
   2,
   "Philip Edgcumbe",
   "Vancouver",
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -64,6 +64,6 @@ VALUES (
 UPDATE finalists SET city = "Taipei" WHERE project = 636;
 
 -- 740
-UPDATE finalists SET city = "Hamilton", province = "ON" WHERE project = 740;
+UPDATE finalists SET city = "Hamilton", province = 9 WHERE project = 740;
 
 COMMIT;

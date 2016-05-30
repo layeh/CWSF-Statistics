@@ -21,7 +21,7 @@ VALUES (
   2,
   NULL, -- TODO
   "LaSalle",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -63,7 +63,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Toronto",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -76,7 +76,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Maple",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -93,7 +93,7 @@ VALUES (
   2,
   NULL, -- TODO
   "St-Laurent",
-  "QC",
+  10,
   NULL,
   NULL
 );

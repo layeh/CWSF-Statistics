@@ -11,7 +11,7 @@ VALUES (
   1,
   "Nicole Green",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -50,7 +50,7 @@ VALUES (
   2,
   "Brendan Samek",
   "Peace River",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -64,7 +64,7 @@ VALUES (
   1,
   "Alicia Macmillan",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -78,7 +78,7 @@ VALUES (
   1,
   "Dylan Layton-Matthews",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -105,7 +105,7 @@ VALUES (
   1,
   "Kathleen Myatt",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -119,7 +119,7 @@ VALUES (
   1,
   "Theresa DeCola",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -133,7 +133,7 @@ VALUES (
   1,
   "Catherine Beaudin",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -147,7 +147,7 @@ VALUES (
   1,
   "Jordan Funk",
   NULL, -- TODO
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -161,7 +161,7 @@ VALUES (
   1,
   "Daniel Mogilny",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -175,7 +175,7 @@ VALUES (
   1,
   "Abhi Gupta",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -201,7 +201,7 @@ VALUES (
   2,
   "Shruthi Bandi",
   "Charlottetown",
-  "PE",
+  4,
   NULL,
   NULL
 );
@@ -215,7 +215,7 @@ VALUES (
   1,
   "Julia Sarty",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -229,7 +229,7 @@ VALUES (
   1,
   "Ben Friesen",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -243,7 +243,7 @@ VALUES (
   1,
   "Kyle Plamondon",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -270,7 +270,7 @@ VALUES (
   1,
   "Chloe Devoy",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -283,7 +283,7 @@ VALUES (
   2,
   "Kelvin Zhang",
   "Vancouver",
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -323,7 +323,7 @@ VALUES (
   1,
   "Charlène Golsteyn",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -337,7 +337,7 @@ VALUES (
   1,
   "Shannon MacLennan",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );

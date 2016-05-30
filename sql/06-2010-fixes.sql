@@ -10,7 +10,7 @@ VALUES (
   2,
   "Danica Avery",
   "Whitehorse",
-  "YT",
+  13,
   NULL,
   NULL
 );
@@ -24,7 +24,7 @@ VALUES (
   1,
   "Keltie Murdoch",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -53,7 +53,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Regina",
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -67,7 +67,7 @@ VALUES (
   1,
   "Zeyu Liu",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -81,7 +81,7 @@ VALUES (
   1,
   "Hayley Todesco",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -95,7 +95,7 @@ VALUES (
   1,
   "Justin Whitaker",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -122,7 +122,7 @@ VALUES (
   1,
   "Jane Last",
   NULL, -- TODO
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -136,7 +136,7 @@ VALUES (
   1,
   "Charles Yin",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -150,7 +150,7 @@ VALUES (
   1,
   "Danila Alferov",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -164,7 +164,7 @@ VALUES (
   1,
   "Patrick Chong",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -217,7 +217,7 @@ VALUES (
   1,
   "Kelsey Keddy",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -231,7 +231,7 @@ VALUES (
   1,
   "Natalie Fisher",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -271,7 +271,7 @@ VALUES (
   1,
   "Juliana Ali",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -285,7 +285,7 @@ VALUES (
   1,
   "Edward Wong",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -298,7 +298,7 @@ VALUES (
   2,
   "Rachel Brown",
   "Medicine Hat",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -315,7 +315,7 @@ VALUES (
   1,
   "Evan Andersen",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -328,7 +328,7 @@ VALUES (
   2,
   "Amit Persad",
   "Edmonton",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -342,7 +342,7 @@ VALUES (
   1,
   "Madison Ricard",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -355,7 +355,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Gypsumville",
-  "MB",
+  8,
   NULL,
   NULL
 );
@@ -382,7 +382,7 @@ VALUES (
   1,
   "Melissa Chopcian ",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -396,7 +396,7 @@ VALUES (
   1,
   "Mikaela Preston ",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -409,7 +409,7 @@ VALUES (
   2,
   NULL, -- TODO
   "La Ronge",
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -436,7 +436,7 @@ VALUES (
   1,
   "Hannah Gillis",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -449,7 +449,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Fort McMurray",
-  "AB",
+  11,
   NULL,
   NULL
 );

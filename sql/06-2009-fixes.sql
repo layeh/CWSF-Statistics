@@ -11,7 +11,7 @@ VALUES (
   1,
   "David Lister",
   NULL, -- TODO
-  "YT",
+  13,
   NULL,
   NULL
 );
@@ -53,7 +53,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Fernie",
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -79,7 +79,7 @@ VALUES (
   2,
   "Rachel Brown",
   "Medicine Hat",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -106,7 +106,7 @@ VALUES (
   1,
   "Rebeccah Sandrelli",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -133,7 +133,7 @@ VALUES (
   1,
   "Megan Howse",
   NULL, -- TODO
-  "NL",
+  2,
   NULL,
   NULL
 );
@@ -147,7 +147,7 @@ VALUES (
   1,
   "Erin Baker",
   NULL, -- TODO
-  "NL",
+  2,
   NULL,
   NULL
 );
@@ -161,7 +161,7 @@ VALUES (
   1,
   "Colin Roos",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -175,7 +175,7 @@ VALUES (
   1,
   "Natalie Fisher",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -189,7 +189,7 @@ VALUES (
   1,
   "Melissa Chopcian",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -203,7 +203,7 @@ VALUES (
   1,
   "Lauren Reid",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -217,7 +217,7 @@ VALUES (
   1,
   "Shakti Ramkumar",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -231,7 +231,7 @@ VALUES (
   1,
   "Laurel Stothers",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -258,7 +258,7 @@ VALUES (
   1,
   "Hayley Todesco",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -298,7 +298,7 @@ VALUES (
   1,
   "Alyson Bell",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -312,7 +312,7 @@ VALUES (
   1,
   "Josie Mielhausen",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -326,7 +326,7 @@ VALUES (
   1,
   "Arathi Unnikrishnan",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -353,7 +353,7 @@ VALUES (
   1,
   "Alexandre Allard",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -364,7 +364,7 @@ VALUES (
   2,
   "Danny Luong",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -378,7 +378,7 @@ VALUES (
   1,
   "Alexandre Lemieux",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -392,7 +392,7 @@ VALUES (
   1,
   "Marc-Antoine Pigeon",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -454,7 +454,7 @@ VALUES (
   1,
   "Camille Salvas",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -465,7 +465,7 @@ VALUES (
   2,
   "Estelle Simon",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -492,7 +492,7 @@ VALUES (
   1,
   "Réda Bensaïdane",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );

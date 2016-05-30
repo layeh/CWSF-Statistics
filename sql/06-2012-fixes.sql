@@ -10,7 +10,7 @@ VALUES (
   2,
   "Aimee Alspaugh",
   "Prince George",
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -25,7 +25,7 @@ VALUES (
   1,
   "Kelly Zheng",
   NULL, -- TODO
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -52,7 +52,7 @@ VALUES (
   1,
   "Jerry Chen",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -66,7 +66,7 @@ VALUES (
   1,
   "Dan Alferov",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -80,7 +80,7 @@ VALUES (
   1,
   "Shannon MacLennan",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -107,7 +107,7 @@ VALUES (
   1,
   "Charlène Golsteyn",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -121,7 +121,7 @@ VALUES (
   1,
   "Brynn Charron",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -134,7 +134,7 @@ VALUES (
   2,
   "Andrew Ilyas",
   "Waterloo",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -148,7 +148,7 @@ VALUES (
   1,
   "Avinash Pandey",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -161,7 +161,7 @@ VALUES (
   2,
   "Jack Lott",
   "Kingston",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -175,7 +175,7 @@ VALUES (
   1,
   "Julia Sarty",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -188,7 +188,7 @@ VALUES (
   2,
   "Rachel Brown",
   "Medicine Hat",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -202,7 +202,7 @@ VALUES (
   1,
   "Theresa DeCola",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -215,7 +215,7 @@ VALUES (
   2,
   "Karishini Ramamoorth",
   "Mississauga",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -229,7 +229,7 @@ VALUES (
   1,
   "Madison Kieffer",
   NULL, -- TODO
-  "NB",
+  3,
   NULL,
   NULL
 );
@@ -256,7 +256,7 @@ VALUES (
   1,
   "Noah Bergmann",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -273,7 +273,7 @@ VALUES (
   1,
   "Abhishek Chakraborty",
   NULL, -- TODO
-  "MB",
+  8,
   NULL,
   NULL
 );

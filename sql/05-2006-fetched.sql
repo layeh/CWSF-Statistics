@@ -19,7 +19,7 @@ VALUES (
 	1,
 	"Amanda Annett",
 	"Edmonton",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -43,7 +43,7 @@ VALUES (
 	1,
 	"Zamir Merali",
 	"Corbeil",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -71,6 +71,70 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	586,
+	2006,
+	"A Dynamic Analog Concurrently-Processed Adaptive Chip",
+	3,
+	"Calgary Youth",
+	"Alberta Distance Learning Center",
+	"The purpose of this project is to design a neural network chip to improve existing designs, which have poor reconfigurability and learning accuracy. A general-purpose analog design is made for the TSMC 0.35um CMOS process. Enabling multiple learning-algorithms and arbitrary routing, advanced learning-algorithms are implemented. Analog neuron circuit simulations were accurate with 5um matched transistors. Advanced learning algorithms improved density without reducing performance."
+);
+INSERT INTO project_divisions(project, division) VALUES(586, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	586,
+	1,
+	"Malcolm Stagg",
+	"Calgary",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	586,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	586,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	586,
+	3,
+	"Bronze Medal - Automotive",
+	"Senior",
+	"AUTO21",
+	300.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	586,
+	4,
+	"Silver Medal - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	827,
 	2006,
 	"A Potential New Approach to Chemotherapy in Brain Cancer: Disruption of Connexion 43 Particle Arrang",
@@ -87,7 +151,7 @@ VALUES (
 	1,
 	"Yale Michaels",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -115,242 +179,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	471,
-	2006,
-	"A Mathematical Model of the Acoustical Properties of the Transverse Concert Flute",
-	3,
-	"Algoma Rotary",
-	"Korah Collegiate & Vocational School",
-	"This project produced a model that is used to accurately estimate keyhole locations on a flute's body. Finding notes and their tube lengths, end corrections were applied to these lengths in order to accurately predict wavelength and find a correlation between frequency and tube length. This method had a small keyhole placement error of ±0.053m, and could be changed to suit other open tube instruments."
-);
-INSERT INTO project_divisions(project, division) VALUES(471, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	471,
-	1,
-	"Matt Laporte",
-	"Sault Ste. Marie",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	471,
-	2,
-	"Bo Lu",
-	"Sault Ste. Marie",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	709,
-	2006,
-	"A hole in a wing: not always a bad thing",
-	2,
-	"Toronto",
-	"Northview Heights S.S.",
-	"Several airfoils with endplates were constructed. Interchangeable boxes with various shaped holes were placed at the maximum pressure difference location. Using different anemometers, airflow through the holes was observed. A classification system called CFM was made for the holes. The device was adapted, and tested to some potential applications."
-);
-INSERT INTO project_divisions(project, division) VALUES(709, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	709,
-	1,
-	"Vladislav Ternovsky",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	709,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	709,
-	2,
-	"Bronze Medal - Engineering",
-	"Intermediate",
-	"Youth Science Foundation Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	524,
-	2006,
-	"A Memory Like a Horse",
-	3,
-	"Carlton Trail",
-	"William Derby",
-	"This project explored horses’ minds and specifically the previously unresearched subject of horses’ short-term memory. Horses were tested for recognition with homemade equipment consisting of various shapes in order to see whether they could remember what an object looked like or where it was located. The results clearly showed that horses remember locations rather than objects."
-);
-INSERT INTO project_divisions(project, division) VALUES(524, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	524,
-	1,
-	"Danielle Lees",
-	"Strasbourg",
-	"SK",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	524,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	524,
-	2,
-	"Bronze Medal - Life Sciences",
-	"Senior",
-	"Pfizer Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	627,
-	2006,
-	"A Question of Taste",
-	1,
-	"Frontenac, Lennox & Addington",
-	NULL,
-	"Our project studies how colour perception influences judgments of taste. Test subjects were asked to identify the flavors of differently coloured drinks and to assess the strength and sweetness of drinks with different colour intensities. Our results showed that, contrary to the existing literature, that there is little correlation between people’s ability to judge a drink’s flavour and their perceptions of its colour."
-);
-INSERT INTO project_divisions(project, division) VALUES(627, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	627,
-	1,
-	"Rosemary Bakhurst",
-	"Kingston",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	627,
-	2,
-	"Kristina Silver",
-	"Kingston",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	538,
-	2006,
-	"A 2nd Scoop of Llama Poop: Improving Wheat & Barley Growth",
-	2,
-	"Lethbridge",
-	"St. Francis Junior High School",
-	"This project studied Llama dung as an alternative to commercially produced fertilizers used in wheat and barley production. As an inexpensive and environmentally friendly option, ‘Llama Tea’ was developed in four strengths and tested against a control grid. One formula was found to generate the highest yield results."
-);
-INSERT INTO project_divisions(project, division) VALUES(538, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	538,
-	1,
-	"Brad Miller",
-	"Lethbridge",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	538,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	538,
-	2,
-	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
-	"Intermediate",
-	"Rx&D Health Research Foundation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	452,
-	2006,
-	"8 Seconds Safer",
-	3,
-	"Peace Country",
-	NULL,
-	"My project is an attachment that attaches to a flak jacket (for rodeo use) that has the potential to reduce injury to the neck, head and facial area.. I hope that this attachment will make a huge impact on the rodeo community and other sports or jobs."
-);
-INSERT INTO project_divisions(project, division) VALUES(452, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	452,
-	1,
-	"Stephen Johnson",
-	"Manning",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	452,
-	1,
-	"Quality of Life Student Research Award",
-	NULL,
-	"Institute of Musculoskeletal Health and Arthritis of the CIHR",
-	3750.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	615,
 	2006,
 	"A Concrete Solution to Scrap Tires",
@@ -367,7 +195,7 @@ VALUES (
 	1,
 	"Johnny Adamich",
 	"Barrie",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -421,7 +249,7 @@ VALUES (
 	1,
 	"David Rodgers",
 	"North Bay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -432,7 +260,7 @@ VALUES (
 	2,
 	"Greg Kilroy",
 	"Powassan",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -460,6 +288,110 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	471,
+	2006,
+	"A Mathematical Model of the Acoustical Properties of the Transverse Concert Flute",
+	3,
+	"Algoma Rotary",
+	"Korah Collegiate & Vocational School",
+	"This project produced a model that is used to accurately estimate keyhole locations on a flute's body. Finding notes and their tube lengths, end corrections were applied to these lengths in order to accurately predict wavelength and find a correlation between frequency and tube length. This method had a small keyhole placement error of ±0.053m, and could be changed to suit other open tube instruments."
+);
+INSERT INTO project_divisions(project, division) VALUES(471, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	471,
+	1,
+	"Matt Laporte",
+	"Sault Ste. Marie",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	471,
+	2,
+	"Bo Lu",
+	"Sault Ste. Marie",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	452,
+	2006,
+	"8 Seconds Safer",
+	3,
+	"Peace Country",
+	NULL,
+	"My project is an attachment that attaches to a flak jacket (for rodeo use) that has the potential to reduce injury to the neck, head and facial area.. I hope that this attachment will make a huge impact on the rodeo community and other sports or jobs."
+);
+INSERT INTO project_divisions(project, division) VALUES(452, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	452,
+	1,
+	"Stephen Johnson",
+	"Manning",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	452,
+	1,
+	"Quality of Life Student Research Award",
+	NULL,
+	"Institute of Musculoskeletal Health and Arthritis of the CIHR",
+	3750.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	627,
+	2006,
+	"A Question of Taste",
+	1,
+	"Frontenac, Lennox & Addington",
+	NULL,
+	"Our project studies how colour perception influences judgments of taste. Test subjects were asked to identify the flavors of differently coloured drinks and to assess the strength and sweetness of drinks with different colour intensities. Our results showed that, contrary to the existing literature, that there is little correlation between people’s ability to judge a drink’s flavour and their perceptions of its colour."
+);
+INSERT INTO project_divisions(project, division) VALUES(627, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	627,
+	1,
+	"Rosemary Bakhurst",
+	"Kingston",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	627,
+	2,
+	"Kristina Silver",
+	"Kingston",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	819,
 	2006,
 	"A Curve in the Road",
@@ -476,7 +408,7 @@ VALUES (
 	1,
 	"Riley O'Hagan",
 	"Walkerton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -520,7 +452,7 @@ VALUES (
 	1,
 	"Brian Le",
 	"Prince George",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -528,153 +460,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	586,
+	720,
 	2006,
-	"A Dynamic Analog Concurrently-Processed Adaptive Chip",
-	3,
-	"Calgary Youth",
-	"Alberta Distance Learning Center",
-	"The purpose of this project is to design a neural network chip to improve existing designs, which have poor reconfigurability and learning accuracy. A general-purpose analog design is made for the TSMC 0.35um CMOS process. Enabling multiple learning-algorithms and arbitrary routing, advanced learning-algorithms are implemented. Analog neuron circuit simulations were accurate with 5um matched transistors. Advanced learning algorithms improved density without reducing performance."
+	"A-peel-ing Apples",
+	1,
+	"Annapolis Valley",
+	"Pine Ridge Middle School",
+	"﻿This project studied quality differences between eleven unique apple varieties grown on my family farm. The following tests were conducted on each apple: firmness, acidity, Brix, and pH. The test results showed the Honeycrisp apple was the firmest, the Fortune apple had the highest acidity level, the Russet apple had the highest sugar level, and the Creston apple had the lowest pH."
 );
-INSERT INTO project_divisions(project, division) VALUES(586, 7);
+INSERT INTO project_divisions(project, division) VALUES(720, 9);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	586,
+	720,
 	1,
-	"Malcolm Stagg",
-	"Calgary",
-	"AB",
+	"Allyson Nichols",
+	"Kings County",
+	1,
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	586,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	586,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	586,
-	3,
-	"Bronze Medal - Automotive",
-	"Senior",
-	"AUTO21",
-	300.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	586,
-	4,
-	"Silver Medal - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	506,
-	2006,
-	"A ""BIT"" More To Chew On",
-	2,
-	"Alberta Central East",
-	"J.C. Charyk Hanna School",
-	"Many horses resist oral medications by exhibiting such behaviors as throwing their heads back, backing away, rearing or striking. This creates potential risk of injury to both the horse and handler. I have invented a device that can be used to orally administer medication to horses. Test results show that horses remain calm and relaxed and readily accept the medication using this device."
-);
-INSERT INTO project_divisions(project, division) VALUES(506, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	506,
-	1,
-	"Alyssa Larson",
-	"Hanna",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	506,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	506,
-	2,
-	"Gold Medal - Engineering",
-	"Intermediate",
-	"Youth Science Foundation Canada",
-	1500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	650,
-	2006,
-	"A Sphagnum Solution for Safe Water",
-	2,
-	"Vancouver Island",
-	"Stelly's Secondary School",
-	"I attempted to apply Sphagnum moss as a reusable heavy metal filter, and I was successful. Not only is it very effective at removing most poisonous metals, its reusability, done simply by placing it in an acidic solution, makes it ideal for poor effected families."
-);
-INSERT INTO project_divisions(project, division) VALUES(650, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	650,
-	1,
-	"Arielle Garrett",
-	"Saanichton",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	650,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	650,
-	2,
-	"Gold Medal - Earth & Environmental Sciences",
-	"Intermediate",
-	"Petro-Canada",
-	1500.00
 );
 
 INSERT INTO projects
@@ -696,7 +500,7 @@ VALUES (
 	1,
 	"Kienan Marion",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -734,25 +538,221 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	720,
+	506,
 	2006,
-	"A-peel-ing Apples",
-	1,
-	"Annapolis Valley",
-	"Pine Ridge Middle School",
-	"﻿This project studied quality differences between eleven unique apple varieties grown on my family farm. The following tests were conducted on each apple: firmness, acidity, Brix, and pH. The test results showed the Honeycrisp apple was the firmest, the Fortune apple had the highest acidity level, the Russet apple had the highest sugar level, and the Creston apple had the lowest pH."
+	"A ""BIT"" More To Chew On",
+	2,
+	"Alberta Central East",
+	"J.C. Charyk Hanna School",
+	"Many horses resist oral medications by exhibiting such behaviors as throwing their heads back, backing away, rearing or striking. This creates potential risk of injury to both the horse and handler. I have invented a device that can be used to orally administer medication to horses. Test results show that horses remain calm and relaxed and readily accept the medication using this device."
 );
-INSERT INTO project_divisions(project, division) VALUES(720, 9);
+INSERT INTO project_divisions(project, division) VALUES(506, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	720,
+	506,
 	1,
-	"Allyson Nichols",
-	"Kings County",
-	"NS",
+	"Alyssa Larson",
+	"Hanna",
+	11,
 	NULL,
 	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	506,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	506,
+	2,
+	"Gold Medal - Engineering",
+	"Intermediate",
+	"Youth Science Foundation Canada",
+	1500.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	709,
+	2006,
+	"A hole in a wing: not always a bad thing",
+	2,
+	"Toronto",
+	"Northview Heights S.S.",
+	"Several airfoils with endplates were constructed. Interchangeable boxes with various shaped holes were placed at the maximum pressure difference location. Using different anemometers, airflow through the holes was observed. A classification system called CFM was made for the holes. The device was adapted, and tested to some potential applications."
+);
+INSERT INTO project_divisions(project, division) VALUES(709, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	709,
+	1,
+	"Vladislav Ternovsky",
+	"Toronto",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	709,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	709,
+	2,
+	"Bronze Medal - Engineering",
+	"Intermediate",
+	"Youth Science Foundation Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	538,
+	2006,
+	"A 2nd Scoop of Llama Poop: Improving Wheat & Barley Growth",
+	2,
+	"Lethbridge",
+	"St. Francis Junior High School",
+	"This project studied Llama dung as an alternative to commercially produced fertilizers used in wheat and barley production. As an inexpensive and environmentally friendly option, ‘Llama Tea’ was developed in four strengths and tested against a control grid. One formula was found to generate the highest yield results."
+);
+INSERT INTO project_divisions(project, division) VALUES(538, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	538,
+	1,
+	"Brad Miller",
+	"Lethbridge",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	538,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	538,
+	2,
+	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
+	"Intermediate",
+	"Rx&D Health Research Foundation",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	524,
+	2006,
+	"A Memory Like a Horse",
+	3,
+	"Carlton Trail",
+	"William Derby",
+	"This project explored horses’ minds and specifically the previously unresearched subject of horses’ short-term memory. Horses were tested for recognition with homemade equipment consisting of various shapes in order to see whether they could remember what an object looked like or where it was located. The results clearly showed that horses remember locations rather than objects."
+);
+INSERT INTO project_divisions(project, division) VALUES(524, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	524,
+	1,
+	"Danielle Lees",
+	"Strasbourg",
+	6,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	524,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	524,
+	2,
+	"Bronze Medal - Life Sciences",
+	"Senior",
+	"Pfizer Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	650,
+	2006,
+	"A Sphagnum Solution for Safe Water",
+	2,
+	"Vancouver Island",
+	"Stelly's Secondary School",
+	"I attempted to apply Sphagnum moss as a reusable heavy metal filter, and I was successful. Not only is it very effective at removing most poisonous metals, its reusability, done simply by placing it in an acidic solution, makes it ideal for poor effected families."
+);
+INSERT INTO project_divisions(project, division) VALUES(650, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	650,
+	1,
+	"Arielle Garrett",
+	"Saanichton",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	650,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	650,
+	2,
+	"Gold Medal - Earth & Environmental Sciences",
+	"Intermediate",
+	"Petro-Canada",
+	1500.00
 );
 
 INSERT INTO projects
@@ -797,7 +797,7 @@ VALUES (
 	1,
 	"Kendra Murray",
 	"Whitehorse",
-	"YT",
+	13,
 	NULL,
 	NULL
 );
@@ -821,7 +821,7 @@ VALUES (
 	1,
 	"Aaron Hakim",
 	"Mississauga",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -875,7 +875,7 @@ VALUES (
 	1,
 	"Becky Pritchard",
 	"Thompson",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -886,7 +886,7 @@ VALUES (
 	2,
 	"Nicole Saindon",
 	"Thompson",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -910,7 +910,7 @@ VALUES (
 	1,
 	"Rowan Cockett",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -954,7 +954,7 @@ VALUES (
 	1,
 	"Justin Ropson",
 	"Lewisporte",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -965,97 +965,9 @@ VALUES (
 	2,
 	"Courtney Tetford",
 	"Stanhope",
-	"NL",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	516,
-	2006,
-	"Allergenic Characterization of Two New Penicillium Species – A Step Towards Allergen Vaccines",
 	2,
-	"Ottawa",
-	"Elmwood School",
-	"Molds have a predominant influence on humans. The purpose was to determine the biochemical and immunological properties of Penicillium brevicompactum and Penicillium viridicatum. Using an eight patient pool of serum Bradford Protein Assay, SDS-PAGE and Immunoblotting were performed. Data gathered quantified proteins that cause allergic reactions to humans. To de-synthesize allergic patients, cloning studies were carried out that could lead to obtaining vaccines."
-);
-INSERT INTO project_divisions(project, division) VALUES(516, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	516,
-	1,
-	"Prashanthi Baskaran",
-	"Ottawa",
-	"ON",
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	516,
-	1,
-	"Canadian Society for Medical Laboratory Science Award",
-	"Intermediate",
-	"Canadian Society for Medical Laboratory Science",
-	750.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	516,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	516,
-	3,
-	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
-	"Intermediate",
-	"Rx&D Health Research Foundation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	543,
-	2006,
-	"An Icy Life",
-	1,
-	"Sunset Country",
-	"Sturgeon Creek School",
-	"Four de-icing solutions were tested to discover the degree of harm each caused toward the growth and health of red pine seedlings. The “sand”/“salt” seedlings had the greatest amount of new growth after watering the conifers for 15 days using water (emerging from dormancy,) and eleven days using de-icing solutions."
-);
-INSERT INTO project_divisions(project, division) VALUES(543, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	543,
-	1,
-	"Mitchell Haw",
-	"Stratton",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	543,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	100.00
 );
 
 INSERT INTO projects
@@ -1077,7 +989,7 @@ VALUES (
 	1,
 	"Rebecca Cey",
 	"Wilkie",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -1115,6 +1027,60 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	516,
+	2006,
+	"Allergenic Characterization of Two New Penicillium Species – A Step Towards Allergen Vaccines",
+	2,
+	"Ottawa",
+	"Elmwood School",
+	"Molds have a predominant influence on humans. The purpose was to determine the biochemical and immunological properties of Penicillium brevicompactum and Penicillium viridicatum. Using an eight patient pool of serum Bradford Protein Assay, SDS-PAGE and Immunoblotting were performed. Data gathered quantified proteins that cause allergic reactions to humans. To de-synthesize allergic patients, cloning studies were carried out that could lead to obtaining vaccines."
+);
+INSERT INTO project_divisions(project, division) VALUES(516, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	516,
+	1,
+	"Prashanthi Baskaran",
+	"Ottawa",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	516,
+	1,
+	"Canadian Society for Medical Laboratory Science Award",
+	"Intermediate",
+	"Canadian Society for Medical Laboratory Science",
+	750.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	516,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	516,
+	3,
+	"Silver Medal - Biotechnology & Pharmaceutical Sciences",
+	"Intermediate",
+	"Rx&D Health Research Foundation",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	646,
 	2006,
 	"An Educated Guess",
@@ -1131,7 +1097,7 @@ VALUES (
 	1,
 	"Alyssa Becker",
 	"Dashwood",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1139,25 +1105,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	722,
+	543,
 	2006,
-	"Analysis of Crown Gall Disease in Plants",
-	2,
-	"Western Newfoundland",
-	"Roncalli Central H.S.",
-	"This project studied Sunflowers that were injected with Agrobacterium tumefaciens. A series of experiments were performed to investigate how the bacterium affects the plants. Natural treatments were used to try to reduce the tumour size and improve the plants’ health. Baking soda in water seemed to be an effective treatment."
+	"An Icy Life",
+	1,
+	"Sunset Country",
+	"Sturgeon Creek School",
+	"Four de-icing solutions were tested to discover the degree of harm each caused toward the growth and health of red pine seedlings. The “sand”/“salt” seedlings had the greatest amount of new growth after watering the conifers for 15 days using water (emerging from dormancy,) and eleven days using de-icing solutions."
 );
-INSERT INTO project_divisions(project, division) VALUES(722, 500);
+INSERT INTO project_divisions(project, division) VALUES(543, 9);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	722,
+	543,
 	1,
-	"Amy Powell",
-	"Port au Choix",
-	"NL",
+	"Mitchell Haw",
+	"Stratton",
+	9,
 	NULL,
 	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	543,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	100.00
 );
 
 INSERT INTO projects
@@ -1179,7 +1155,7 @@ VALUES (
 	1,
 	"Sarah McCuaig",
 	"Waterloo",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1217,6 +1193,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	722,
+	2006,
+	"Analysis of Crown Gall Disease in Plants",
+	2,
+	"Western Newfoundland",
+	"Roncalli Central H.S.",
+	"This project studied Sunflowers that were injected with Agrobacterium tumefaciens. A series of experiments were performed to investigate how the bacterium affects the plants. Natural treatments were used to try to reduce the tumour size and improve the plants’ health. Baking soda in water seemed to be an effective treatment."
+);
+INSERT INTO project_divisions(project, division) VALUES(722, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	722,
+	1,
+	"Amy Powell",
+	"Port au Choix",
+	2,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	449,
 	2006,
 	"Antioxidant vs. Virus",
@@ -1233,7 +1233,7 @@ VALUES (
 	1,
 	"Christina Starko",
 	"Brandon",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -1257,7 +1257,7 @@ VALUES (
 	1,
 	"Yasmina Lahlou",
 	"Sherbrooke",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -1268,42 +1268,7 @@ VALUES (
 	2,
 	"Léa Charpentier",
 	"Shebrooke",
-	"QC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	545,
-	2006,
-	"Antiperspirants and Aluminum",
-	3,
-	"United Counties",
-	"Cornwall Collegiate & Vocational",
-	"This project studied the relationship between antiperspirant aluminum concentration and aluminum ion permeability through a semi-permanent membrane. Measurements made using colourimetric determination and spectroscopy resulted in a direct relationship being observed. It is hoped that these results will support ongoing research to discover the link between aluminum and Alzheimer’s."
-);
-INSERT INTO project_divisions(project, division) VALUES(545, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	545,
-	1,
-	"Tori Pescod",
-	"Cornwall",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	545,
-	2,
-	"Chanel Pare-Bingley",
-	"Cornwall",
-	"ON",
+	10,
 	NULL,
 	NULL
 );
@@ -1327,7 +1292,66 @@ VALUES (
 	1,
 	"Eric Peach",
 	"Cochrane",
-	"AB",
+	11,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	545,
+	2006,
+	"Antiperspirants and Aluminum",
+	3,
+	"United Counties",
+	"Cornwall Collegiate & Vocational",
+	"This project studied the relationship between antiperspirant aluminum concentration and aluminum ion permeability through a semi-permanent membrane. Measurements made using colourimetric determination and spectroscopy resulted in a direct relationship being observed. It is hoped that these results will support ongoing research to discover the link between aluminum and Alzheimer’s."
+);
+INSERT INTO project_divisions(project, division) VALUES(545, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	545,
+	1,
+	"Tori Pescod",
+	"Cornwall",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	545,
+	2,
+	"Chanel Pare-Bingley",
+	"Cornwall",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	658,
+	2006,
+	"Arsenic: Leaching in our Midst II",
+	1,
+	"East Kootenay",
+	"Parkland Junior Secondary",
+	"Arsenic is primarily used in the wood industry, in the products Chromated Copper Arsenate (CCA) and Creosote. These products have leached into soil, creating an environmental hazard. This project examines: how over time, the concentration of arsenic in soil near wood treated with arsenic is increasing, and through simulating weather conditions how sealing CCA treated wood helps reduce the leaching of arsenic."
+);
+INSERT INTO project_divisions(project, division) VALUES(658, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	658,
+	1,
+	"Katelyn Knudsgaard",
+	"Cranbrook",
+	12,
 	NULL,
 	NULL
 );
@@ -1351,7 +1375,7 @@ VALUES (
 	1,
 	"Germaine Ekwalak",
 	"Whale Cove",
-	"NU",
+	7,
 	NULL,
 	NULL
 );
@@ -1364,30 +1388,6 @@ VALUES (
 	"Senior",
 	"Encana Corporation",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	658,
-	2006,
-	"Arsenic: Leaching in our Midst II",
-	1,
-	"East Kootenay",
-	"Parkland Junior Secondary",
-	"Arsenic is primarily used in the wood industry, in the products Chromated Copper Arsenate (CCA) and Creosote. These products have leached into soil, creating an environmental hazard. This project examines: how over time, the concentration of arsenic in soil near wood treated with arsenic is increasing, and through simulating weather conditions how sealing CCA treated wood helps reduce the leaching of arsenic."
-);
-INSERT INTO project_divisions(project, division) VALUES(658, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	658,
-	1,
-	"Katelyn Knudsgaard",
-	"Cranbrook",
-	"BC",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -1409,7 +1409,7 @@ VALUES (
 	1,
 	"Laura Warkentin",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -1433,7 +1433,7 @@ VALUES (
 	1,
 	"Andrew Hanna",
 	"Shanty Bay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1444,7 +1444,7 @@ VALUES (
 	2,
 	"Sergio Morales",
 	"Barrie",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1478,7 +1478,7 @@ VALUES (
 	1,
 	"Chelsea Towaij",
 	"Nepean",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1512,86 +1512,7 @@ VALUES (
 	1,
 	"Jean-Philippe Adam",
 	"Trois-Rivières",
-	"QC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	457,
-	2006,
-	"Bacteria Bites",
-	1,
-	"Kiwanis Southeast Alberta",
-	"Centre for Academic and Personal Excellence",
-	"This project studies the effectiveness of eight select agents on two specific bacteria cultures. The household cleaning agents were tested on the potentially dangerous cultures, (Escherichia Coli and Salmonella), to see if any of them were effective in killing the bacteria successfully. Bleach was the most effective, as expected, but Lysol didn't live up to it's claims, and mouthwash actually made the bacteria grow!"
-);
-INSERT INTO project_divisions(project, division) VALUES(457, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	457,
-	1,
-	"Janine Jeffery",
-	"Medicine Hat",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	457,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	457,
-	2,
-	"Bronze Medal - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	499,
-	2006,
-	"Bacteria That Bites!",
-	1,
-	"Northern British Columbia",
-	"Dawson Creek Secondary - Central Campus",
-	"We tested bacteria levels on our teeth to see if sugar rots your teeth. We tested a regular diet, a high sugar diet and a low sugar diet to see how the sugar intake affected our teeth. Our reults were very surprising."
-);
-INSERT INTO project_divisions(project, division) VALUES(499, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	499,
-	1,
-	"Shauna Chabot",
-	"Dawson Creek",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	499,
-	2,
-	"Brenna Schilds",
-	"Dawson Creek",
-	"BC",
+	10,
 	NULL,
 	NULL
 );
@@ -1615,7 +1536,7 @@ VALUES (
 	1,
 	"Sara Zubair",
 	"Edmundston",
-	"NB",
+	3,
 	NULL,
 	NULL
 );
@@ -1643,6 +1564,50 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	457,
+	2006,
+	"Bacteria Bites",
+	1,
+	"Kiwanis Southeast Alberta",
+	"Centre for Academic and Personal Excellence",
+	"This project studies the effectiveness of eight select agents on two specific bacteria cultures. The household cleaning agents were tested on the potentially dangerous cultures, (Escherichia Coli and Salmonella), to see if any of them were effective in killing the bacteria successfully. Bleach was the most effective, as expected, but Lysol didn't live up to it's claims, and mouthwash actually made the bacteria grow!"
+);
+INSERT INTO project_divisions(project, division) VALUES(457, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	457,
+	1,
+	"Janine Jeffery",
+	"Medicine Hat",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	457,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	457,
+	2,
+	"Bronze Medal - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	518,
 	2006,
 	"Bacterial growth in bottled waters",
@@ -1659,7 +1624,7 @@ VALUES (
 	1,
 	"Jaan Altosaar",
 	"Ottawa",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -1687,30 +1652,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	501,
-	2006,
-	"Balancing Native Grassland Conservation with Economic Activity",
-	3,
-	"Leader",
-	"Leader Composite School",
-	"Human impact as the result of economic activity is playing an increasing role in the rapid decline of the world's native grasslands. Excess trail development, in particular, is a huge adversary of grassland conservation. This project measured edge effect in an attempt to fully understand the impact of the ""human footprint"", and focused on analyzing the effects of trail degradation."
-);
-INSERT INTO project_divisions(project, division) VALUES(501, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	501,
-	1,
-	"Sarah Anderson",
-	"Sceptre",
-	"SK",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	441,
 	2006,
 	"Battling Batteries - Which Rechargeables Should You Use?",
@@ -1727,7 +1668,7 @@ VALUES (
 	1,
 	"Adrian Hawkings",
 	"Whitehorse",
-	"YT",
+	13,
 	NULL,
 	NULL
 );
@@ -1740,30 +1681,6 @@ VALUES (
 	"Junior",
 	"Encana Corporation",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	465,
-	2006,
-	"Beat the Breathalyzer",
-	3,
-	"Tri-County",
-	"St. Mary's Bay Academy",
-	"“Beat the Breathalyzer” was completed to discover whether products containing alcohol would have an affect on the results of a breathalyzer. Each product was tested on a breathalyzer. None of these products were detected because the chemical structure of alcohol (ethanol) is different from the alcohol contained in these products."
-);
-INSERT INTO project_divisions(project, division) VALUES(465, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	465,
-	1,
-	"Jessica Johnson",
-	"Digby County",
-	"NS",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -1785,7 +1702,7 @@ VALUES (
 	1,
 	"Jake Slaney",
 	"St. Lawrence",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -1796,7 +1713,7 @@ VALUES (
 	2,
 	"Alucard Nikitich",
 	"St.Lawrence",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -1834,6 +1751,65 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	465,
+	2006,
+	"Beat the Breathalyzer",
+	3,
+	"Tri-County",
+	"St. Mary's Bay Academy",
+	"“Beat the Breathalyzer” was completed to discover whether products containing alcohol would have an affect on the results of a breathalyzer. Each product was tested on a breathalyzer. None of these products were detected because the chemical structure of alcohol (ethanol) is different from the alcohol contained in these products."
+);
+INSERT INTO project_divisions(project, division) VALUES(465, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	465,
+	1,
+	"Jessica Johnson",
+	"Digby County",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	499,
+	2006,
+	"Bacteria That Bites!",
+	1,
+	"Northern British Columbia",
+	"Dawson Creek Secondary - Central Campus",
+	"We tested bacteria levels on our teeth to see if sugar rots your teeth. We tested a regular diet, a high sugar diet and a low sugar diet to see how the sugar intake affected our teeth. Our reults were very surprising."
+);
+INSERT INTO project_divisions(project, division) VALUES(499, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	499,
+	1,
+	"Shauna Chabot",
+	"Dawson Creek",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	499,
+	2,
+	"Brenna Schilds",
+	"Dawson Creek",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	800,
 	2006,
 	"BHE: la barrière à franchir!",
@@ -1850,7 +1826,31 @@ VALUES (
 	1,
 	"Catherine-Marie Blais",
 	"St-Malo",
-	"QC",
+	10,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	501,
+	2006,
+	"Balancing Native Grassland Conservation with Economic Activity",
+	3,
+	"Leader",
+	"Leader Composite School",
+	"Human impact as the result of economic activity is playing an increasing role in the rapid decline of the world's native grasslands. Excess trail development, in particular, is a huge adversary of grassland conservation. This project measured edge effect in an attempt to fully understand the impact of the ""human footprint"", and focused on analyzing the effects of trail degradation."
+);
+INSERT INTO project_divisions(project, division) VALUES(501, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	501,
+	1,
+	"Sarah Anderson",
+	"Sceptre",
+	6,
 	NULL,
 	NULL
 );
@@ -1874,7 +1874,7 @@ VALUES (
 	1,
 	"Kartik Madiraju",
 	"Brossard",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -1938,7 +1938,7 @@ VALUES (
 	1,
 	"Brittany Faye",
 	"Foam Lake",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -1992,7 +1992,7 @@ VALUES (
 	1,
 	"David Castelino",
 	"Mississauga",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -2030,30 +2030,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	778,
-	2006,
-	"Bird flu - Who knew?",
-	2,
-	"Aboriginal Québec Autochtone",
-	"Kitigan Zibi Kikinamadinan",
-	"This research project studied the Pandemic Influenza and it’s consequences of not being prepared. After researching, A Pandemic Influenza planning guide was created for Native Families, including; checklists and what you will need to plan for."
-);
-INSERT INTO project_divisions(project, division) VALUES(778, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	778,
-	1,
-	"Caitlin Tolley",
-	"Maniwaki",
-	"QC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	470,
 	2006,
 	"Biodiesel on Ice",
@@ -2070,7 +2046,7 @@ VALUES (
 	1,
 	"Gary Hood",
 	"Sydney",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -2108,6 +2084,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	778,
+	2006,
+	"Bird flu - Who knew?",
+	2,
+	"Aboriginal Québec Autochtone",
+	"Kitigan Zibi Kikinamadinan",
+	"This research project studied the Pandemic Influenza and it’s consequences of not being prepared. After researching, A Pandemic Influenza planning guide was created for Native Families, including; checklists and what you will need to plan for."
+);
+INSERT INTO project_divisions(project, division) VALUES(778, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	778,
+	1,
+	"Caitlin Tolley",
+	"Maniwaki",
+	10,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	664,
 	2006,
 	"Birds In My Back Yard",
@@ -2124,7 +2124,7 @@ VALUES (
 	1,
 	"Ria Van der Linden",
 	"Guysborough",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -2158,7 +2158,7 @@ VALUES (
 	1,
 	"Kenneth Ka Ho Wong",
 	"Vancouver",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -2222,7 +2222,7 @@ VALUES (
 	1,
 	"Ashley Doyle",
 	"Cornwall",
-	"PE",
+	4,
 	NULL,
 	NULL
 );
@@ -2256,7 +2256,7 @@ VALUES (
 	1,
 	"Cody ONeil",
 	"Kelowna",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -2267,7 +2267,7 @@ VALUES (
 	2,
 	"Derek Ling",
 	"Kelowna",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -2295,6 +2295,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	623,
+	2006,
+	"Boisson de sport maison",
+	1,
+	"Conseil scolaire acadien provincial (CSAP)",
+	NULL,
+	"Les boissons de sports sont très populaires. J’ai inventé une boisson de sport pour que je puisse avoir le goût et les ingrédients que j’aime avec assez de minéraux, vitamines, glucides, calories, sucres et sel. Pour m’assurer que la boisson maison fonctionne, je vais tester quelqu’un avec un appareil indicateur de glycémie (avant et après boisson maison) et le rythme cardiaque."
+);
+INSERT INTO project_divisions(project, division) VALUES(623, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	623,
+	1,
+	"Anastasia Callaghan",
+	"Truro",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	714,
 	2006,
 	"Blind Navigation",
@@ -2311,7 +2335,7 @@ VALUES (
 	1,
 	"Steven Gasior",
 	"Mississauga",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -2359,54 +2383,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	623,
-	2006,
-	"Boisson de sport maison",
-	1,
-	"Conseil scolaire acadien provincial (CSAP)",
-	NULL,
-	"Les boissons de sports sont très populaires. J’ai inventé une boisson de sport pour que je puisse avoir le goût et les ingrédients que j’aime avec assez de minéraux, vitamines, glucides, calories, sucres et sel. Pour m’assurer que la boisson maison fonctionne, je vais tester quelqu’un avec un appareil indicateur de glycémie (avant et après boisson maison) et le rythme cardiaque."
-);
-INSERT INTO project_divisions(project, division) VALUES(623, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	623,
-	1,
-	"Anastasia Callaghan",
-	"Truro",
-	"NS",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	769,
-	2006,
-	"Boning Up On The Latest",
-	2,
-	"Peterborough",
-	"Adam Scott C.V.I.",
-	"This project studied the role of herbal remedies in preventing loss of bone mass in osteoporosis resulting from a deficiency of estrogen (estradiol) in the body. Alternative herbalists suggest herbal remedies that contain isoflavones (daidzein and genistein). Research indicates that the estrogenic properties of these molecules are based on chemical structure that allows them to bind to estrogen receptors."
-);
-INSERT INTO project_divisions(project, division) VALUES(769, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	769,
-	1,
-	"Sabheen Khan",
-	"Peterborough",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	675,
 	2006,
 	"Can an Antioxidant-Rich Diet Reduce Oxidative Stress and Promote Functional Recovery after Stroke?",
@@ -2423,7 +2399,7 @@ VALUES (
 	1,
 	"Nashila Addetia",
 	"St. John's",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -2451,6 +2427,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	769,
+	2006,
+	"Boning Up On The Latest",
+	2,
+	"Peterborough",
+	"Adam Scott C.V.I.",
+	"This project studied the role of herbal remedies in preventing loss of bone mass in osteoporosis resulting from a deficiency of estrogen (estradiol) in the body. Alternative herbalists suggest herbal remedies that contain isoflavones (daidzein and genistein). Research indicates that the estrogenic properties of these molecules are based on chemical structure that allows them to bind to estrogen receptors."
+);
+INSERT INTO project_divisions(project, division) VALUES(769, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	769,
+	1,
+	"Sabheen Khan",
+	"Peterborough",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	796,
 	2006,
 	"Can Education Affect the Brain",
@@ -2467,31 +2467,7 @@ VALUES (
 	1,
 	"Alexander Winkler-Schwartz",
 	"Montréal",
-	"QC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	594,
-	2006,
-	"Can You Taste The Difference?",
-	1,
-	"Lambton County",
-	"St. Anne E.S.",
-	"I’ve noticed that plastic sport water bottles have a strange taste. I conducted an experiment determining which type of plastic releases the most chemicals into water based on a measurement of taste. Using 18 test subjects to taste water from plastic types 1, 2, 4, and 5 containers and glass as a control, I found that types 2 and 4 had the strongest taste."
-);
-INSERT INTO project_divisions(project, division) VALUES(594, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	594,
-	1,
-	"Trevor Teel",
-	"Sarnia",
-	"ON",
+	10,
 	NULL,
 	NULL
 );
@@ -2515,7 +2491,55 @@ VALUES (
 	1,
 	"Emelia Aaluk",
 	"Gjoa Haven",
-	"NU",
+	7,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	594,
+	2006,
+	"Can You Taste The Difference?",
+	1,
+	"Lambton County",
+	"St. Anne E.S.",
+	"I’ve noticed that plastic sport water bottles have a strange taste. I conducted an experiment determining which type of plastic releases the most chemicals into water based on a measurement of taste. Using 18 test subjects to taste water from plastic types 1, 2, 4, and 5 containers and glass as a control, I found that types 2 and 4 had the strongest taste."
+);
+INSERT INTO project_divisions(project, division) VALUES(594, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	594,
+	1,
+	"Trevor Teel",
+	"Sarnia",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	753,
+	2006,
+	"Code 3 for the Diabetic Emergency",
+	2,
+	"Cariboo Mainline",
+	"Williams Lake Secondary School",
+	"I studied diabetes and the pre-hospital emergency care that can be provided to diabetics. I examined the protocols for four levels of paramedics. Diabetes results when the body doesn’t produce insulin or can’t use the insulin produced. Higher training results in more care paramedics can provide for diabetic patients."
+);
+INSERT INTO project_divisions(project, division) VALUES(753, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	753,
+	1,
+	"Jennifer Rich",
+	"150 Mile House",
+	12,
 	NULL,
 	NULL
 );
@@ -2539,7 +2563,7 @@ VALUES (
 	1,
 	"Ashley Patel",
 	"Peterborough",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -2552,30 +2576,6 @@ VALUES (
 	"Junior",
 	NULL,
 	500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	753,
-	2006,
-	"Code 3 for the Diabetic Emergency",
-	2,
-	"Cariboo Mainline",
-	"Williams Lake Secondary School",
-	"I studied diabetes and the pre-hospital emergency care that can be provided to diabetics. I examined the protocols for four levels of paramedics. Diabetes results when the body doesn’t produce insulin or can’t use the insulin produced. Higher training results in more care paramedics can provide for diabetic patients."
-);
-INSERT INTO project_divisions(project, division) VALUES(753, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	753,
-	1,
-	"Jennifer Rich",
-	"150 Mile House",
-	"BC",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -2597,7 +2597,7 @@ VALUES (
 	1,
 	"Jenna Corcoran",
 	"Meyronne",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -2621,7 +2621,7 @@ VALUES (
 	1,
 	"Katy Desrosiers",
 	"Sorel-Tracy",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -2632,7 +2632,7 @@ VALUES (
 	2,
 	"Marie Péloquin-Tessier",
 	"Sorel-Tracy",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -2666,7 +2666,7 @@ VALUES (
 	1,
 	"Carleen Boyce",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -2690,7 +2690,7 @@ VALUES (
 	1,
 	"Evan Watters",
 	"Wolfville",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -2714,7 +2714,7 @@ VALUES (
 	1,
 	"Cayley Linehan",
 	"Grand Falls-Windsor",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -2742,61 +2742,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	654,
-	2006,
-	"Consomption de carburant",
-	2,
-	"Sudbury",
-	"Collège Notre-Dame",
-	"With a force sensor hooked up to a computer , it was possible to measure the resistance of a vaccum's wind on a model car. Once done , we are able to explain how it is possible to economise fuel by using the aerodynamics of an automobile."
-);
-INSERT INTO project_divisions(project, division) VALUES(654, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	654,
-	1,
-	"Ken Dolson",
-	"Chelmsford",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	654,
-	2,
-	"Justin Hogan",
-	"Val Therese",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	654,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	654,
-	2,
-	"Bronze Medal - Automotive",
-	"Intermediate",
-	"AUTO21",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	456,
 	2006,
 	"Conformity",
@@ -2813,7 +2758,7 @@ VALUES (
 	1,
 	"Steven Heidel",
 	"Prince Albert",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -2841,6 +2786,105 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	654,
+	2006,
+	"Consomption de carburant",
+	2,
+	"Sudbury",
+	"Collège Notre-Dame",
+	"With a force sensor hooked up to a computer , it was possible to measure the resistance of a vaccum's wind on a model car. Once done , we are able to explain how it is possible to economise fuel by using the aerodynamics of an automobile."
+);
+INSERT INTO project_divisions(project, division) VALUES(654, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	654,
+	1,
+	"Ken Dolson",
+	"Chelmsford",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	654,
+	2,
+	"Justin Hogan",
+	"Val Therese",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	654,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	654,
+	2,
+	"Bronze Medal - Automotive",
+	"Intermediate",
+	"AUTO21",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	755,
+	2006,
+	"Deal or No Deal?: A Study of Online Gaming Randomness",
+	2,
+	"New Brunswick",
+	"Bathurst High School",
+	"Texas Hold’Em Poker has met with the technology of today, creating the craze of online gaming. Many unproven allegations of unfair card dealing on these sites have been made. I was interested in testing a typical Texas Hold’Em Poker site, against traditional dealing techniques, for randomness with respects to single card values, hand rankings and head-to-head competition."
+);
+INSERT INTO project_divisions(project, division) VALUES(755, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	755,
+	1,
+	"Travis Payne",
+	"Bathurst",
+	3,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	755,
+	1,
+	"Petro-Canada Peer Innovation Award - Intermediate",
+	"Atlantic",
+	"Petro-Canada",
+	200.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	755,
+	2,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Intermediate",
+	"Encana Corporation",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	744,
 	2006,
 	"Converting a Homemade Cathode Ray Tube into a Laser",
@@ -2857,7 +2901,7 @@ VALUES (
 	1,
 	"Darren Rodenhizer",
 	"New Germany",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -2868,7 +2912,7 @@ VALUES (
 	2,
 	"Oliver Hatheway",
 	"Bridgewater",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -2896,45 +2940,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	521,
+	727,
 	2006,
-	"Cytokine Regulation of IL-7 Receptor Alpha Gene Expression",
-	3,
-	"Ottawa",
-	"All Saints H.S.",
-	"This experiment is designed to collect data regarding the gene expression of the interleukin-7 receptor alpha (CD127). Gamma chain sharing receptor cytokines down-regulate CD127, and the purpose of this experiment is to investigate this down-regulation. Quantitative methods for quantifying mRNA transcripts encoding total and membrane bound CD127 will be utilized."
+	"Different Folks, Different Soaps",
+	2,
+	"Halifax",
+	"Sackville Heights Junior High School",
+	"This project studied the effectiveness of three hand-washing products; ordinary bar soap, liquid antibacterial soap and alcohol based hand sanitizer. Bacterial cultures were performed prior to product use, after ten seconds, thirty seconds and a one minute use of each product. Hand sanitizer was determined to be the most effective."
 );
-INSERT INTO project_divisions(project, division) VALUES(521, 8);
+INSERT INTO project_divisions(project, division) VALUES(727, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	521,
+	727,
 	1,
-	"James MacLeod",
-	"RR#2 Dunrobin",
-	"ON",
+	"Whitney Hurlbut",
+	"Middle Sackville",
+	1,
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	521,
-	1,
-	"International Summer School for Young Physicists Award",
-	NULL,
-	"Perimeter Institute for Theoretical Physics",
-	2500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	521,
-	2,
-	"Honourable Mention - Health Sciences",
-	"Senior",
-	"Canadian Institutes of Health Research",
-	100.00
 );
 
 INSERT INTO projects
@@ -2956,7 +2980,7 @@ VALUES (
 	1,
 	"Philip Schmidt",
 	"Woodville",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3014,74 +3038,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	578,
-	2006,
-	"Determiniation of the Factors that Maximize Agro. Vir Gere Expression",
-	3,
-	"Calgary Youth",
-	"West Island College",
-	"In this study, a factorial analysis of several Agro culture variables was utilized in order to determine the conditions that best promote vir gene expression. Conditions included the time of incubation, growth media, and application of acetosyringone. It was determined that Agro should be grown in AB media with 200 μM of acetosyringone and harvested at an OD of .77 to optimize virulence activity."
-);
-INSERT INTO project_divisions(project, division) VALUES(578, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	578,
-	1,
-	"Cameron Baum",
-	"calgary",
-	"AB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	755,
-	2006,
-	"Deal or No Deal?: A Study of Online Gaming Randomness",
-	2,
-	"New Brunswick",
-	"Bathurst High School",
-	"Texas Hold’Em Poker has met with the technology of today, creating the craze of online gaming. Many unproven allegations of unfair card dealing on these sites have been made. I was interested in testing a typical Texas Hold’Em Poker site, against traditional dealing techniques, for randomness with respects to single card values, hand rankings and head-to-head competition."
-);
-INSERT INTO project_divisions(project, division) VALUES(755, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	755,
-	1,
-	"Travis Payne",
-	"Bathurst",
-	"NB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	755,
-	1,
-	"Petro-Canada Peer Innovation Award - Intermediate",
-	"Atlantic",
-	"Petro-Canada",
-	200.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	755,
-	2,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Intermediate",
-	"Encana Corporation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	588,
 	2006,
 	"Dietary Fat:  Friend or Foe?",
@@ -3098,7 +3054,7 @@ VALUES (
 	1,
 	"Wade Walker",
 	"Markdale",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3111,6 +3067,30 @@ VALUES (
 	"Ontario South",
 	"Petro-Canada",
 	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	578,
+	2006,
+	"Determiniation of the Factors that Maximize Agro. Vir Gere Expression",
+	3,
+	"Calgary Youth",
+	"West Island College",
+	"In this study, a factorial analysis of several Agro culture variables was utilized in order to determine the conditions that best promote vir gene expression. Conditions included the time of incubation, growth media, and application of acetosyringone. It was determined that Agro should be grown in AB media with 200 μM of acetosyringone and harvested at an OD of .77 to optimize virulence activity."
+);
+INSERT INTO project_divisions(project, division) VALUES(578, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	578,
+	1,
+	"Cameron Baum",
+	"calgary",
+	11,
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -3132,7 +3112,7 @@ VALUES (
 	1,
 	"Ketaki Rawal",
 	"Brossard",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -3160,25 +3140,89 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	727,
+	521,
 	2006,
-	"Different Folks, Different Soaps",
-	2,
-	"Halifax",
-	"Sackville Heights Junior High School",
-	"This project studied the effectiveness of three hand-washing products; ordinary bar soap, liquid antibacterial soap and alcohol based hand sanitizer. Bacterial cultures were performed prior to product use, after ten seconds, thirty seconds and a one minute use of each product. Hand sanitizer was determined to be the most effective."
+	"Cytokine Regulation of IL-7 Receptor Alpha Gene Expression",
+	3,
+	"Ottawa",
+	"All Saints H.S.",
+	"This experiment is designed to collect data regarding the gene expression of the interleukin-7 receptor alpha (CD127). Gamma chain sharing receptor cytokines down-regulate CD127, and the purpose of this experiment is to investigate this down-regulation. Quantitative methods for quantifying mRNA transcripts encoding total and membrane bound CD127 will be utilized."
 );
-INSERT INTO project_divisions(project, division) VALUES(727, 8);
+INSERT INTO project_divisions(project, division) VALUES(521, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	727,
+	521,
 	1,
-	"Whitney Hurlbut",
-	"Middle Sackville",
-	"NS",
+	"James MacLeod",
+	"RR#2 Dunrobin",
+	9,
 	NULL,
 	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	521,
+	1,
+	"International Summer School for Young Physicists Award",
+	NULL,
+	"Perimeter Institute for Theoretical Physics",
+	2500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	521,
+	2,
+	"Honourable Mention - Health Sciences",
+	"Senior",
+	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	751,
+	2006,
+	"Dîner glacé",
+	1,
+	"Central Okanagan",
+	"École Entre Lacs",
+	"Conserver un repas à bonne température dans une boîte à lunch, voilà l'origine de mon projet. En variant différentes sources de froid, j'ai mesuré la progression de la température pendant cinq heures (délai habituel entre préparation et consommation). Finalement, seule la nappe glaciale assure les conditions thermiques sanitaires recommandées pour un sandwich jambon-mayonnaise et un yaourt."
+);
+INSERT INTO project_divisions(project, division) VALUES(751, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	751,
+	1,
+	"Gaelle Madevon",
+	"Oliver",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	751,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	751,
+	2,
+	"Bronze Medal - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	300.00
 );
 
 INSERT INTO projects
@@ -3200,7 +3244,7 @@ VALUES (
 	1,
 	"Leslie Mahoney",
 	"Lethbridge",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -3224,7 +3268,7 @@ VALUES (
 	1,
 	"Amanda Affleck",
 	"Pilot Butte",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -3278,53 +3322,9 @@ VALUES (
 	1,
 	"Haroun Zayed",
 	"corner brook",
-	"NL",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	751,
-	2006,
-	"Dîner glacé",
-	1,
-	"Central Okanagan",
-	"École Entre Lacs",
-	"Conserver un repas à bonne température dans une boîte à lunch, voilà l'origine de mon projet. En variant différentes sources de froid, j'ai mesuré la progression de la température pendant cinq heures (délai habituel entre préparation et consommation). Finalement, seule la nappe glaciale assure les conditions thermiques sanitaires recommandées pour un sandwich jambon-mayonnaise et un yaourt."
-);
-INSERT INTO project_divisions(project, division) VALUES(751, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	751,
-	1,
-	"Gaelle Madevon",
-	"Oliver",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	751,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	751,
 	2,
-	"Bronze Medal - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	300.00
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -3346,7 +3346,7 @@ VALUES (
 	1,
 	"Harry Zhou",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -3408,51 +3408,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	726,
-	2006,
-	"Drinking the Ocean: The Desalination Model",
-	3,
-	"Halifax",
-	"Sir John A. Macdonald High School",
-	"Using solar energy, wind energy, an assumed change in temperature below the ground and the concepts of the hydrologic cycle we designed a desalination method that desalinated seawater in a cost efficient and environmentally friendly way."
-);
-INSERT INTO project_divisions(project, division) VALUES(726, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	726,
-	1,
-	"Jinnie Kim",
-	"Hubley",
-	"NS",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	726,
-	2,
-	"Karen Filbee-Dexter",
-	"St. Margaret's Bay",
-	"NS",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	726,
-	1,
-	"Canadian Stockholm Junior Water Prize",
-	NULL,
-	"Canadian WEF Member Associations, the Canadian Water and Wastewater Association, and Xylem Canada",
-	2000.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	600,
 	2006,
 	"Dook",
@@ -3469,7 +3424,7 @@ VALUES (
 	1,
 	"Aspen Conlin",
 	"Powassan",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3480,7 +3435,7 @@ VALUES (
 	2,
 	"Jennifer Witmer",
 	"North Bay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3488,6 +3443,51 @@ INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
 	600,
+	1,
+	"Canadian Stockholm Junior Water Prize",
+	NULL,
+	"Canadian WEF Member Associations, the Canadian Water and Wastewater Association, and Xylem Canada",
+	2000.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	726,
+	2006,
+	"Drinking the Ocean: The Desalination Model",
+	3,
+	"Halifax",
+	"Sir John A. Macdonald High School",
+	"Using solar energy, wind energy, an assumed change in temperature below the ground and the concepts of the hydrologic cycle we designed a desalination method that desalinated seawater in a cost efficient and environmentally friendly way."
+);
+INSERT INTO project_divisions(project, division) VALUES(726, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	726,
+	1,
+	"Jinnie Kim",
+	"Hubley",
+	1,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	726,
+	2,
+	"Karen Filbee-Dexter",
+	"St. Margaret's Bay",
+	1,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	726,
 	1,
 	"Canadian Stockholm Junior Water Prize",
 	NULL,
@@ -3514,7 +3514,7 @@ VALUES (
 	1,
 	"Allan McKechnie",
 	"Lindsay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3558,7 +3558,7 @@ VALUES (
 	1,
 	"Anne Hanbidge",
 	"Saskatoon",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -3582,7 +3582,7 @@ VALUES (
 	1,
 	"Tracey Ozipko",
 	"Emerald Park",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -3593,7 +3593,7 @@ VALUES (
 	2,
 	"Jamie Lemmerick",
 	"Emerald Park",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -3617,7 +3617,7 @@ VALUES (
 	1,
 	"Spencer Gallant",
 	"O'Leary",
-	"PE",
+	4,
 	NULL,
 	NULL
 );
@@ -3628,7 +3628,7 @@ VALUES (
 	2,
 	"Jay Noble",
 	"Ellerslie",
-	"PE",
+	4,
 	NULL,
 	NULL
 );
@@ -3652,31 +3652,7 @@ VALUES (
 	1,
 	"Ali Akbar Sunderji",
 	"Kleinburg",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	670,
-	2006,
-	"Electric Brushes",
-	1,
-	"Northwest Saskatchewan",
-	"McLurg High School",
-	"My project is about three different electric motors and how powerful, fast, and efficient they are. I put all three through three different tests to see how long they lasted on 1 AA battery, how much they could lift, and how fast they spun."
-);
-INSERT INTO project_divisions(project, division) VALUES(670, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	670,
-	1,
-	"Brady Greenwald",
-	"Scott",
-	"SK",
+	9,
 	NULL,
 	NULL
 );
@@ -3700,7 +3676,7 @@ VALUES (
 	1,
 	"Andrew Nichols",
 	"Brandon",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -3734,7 +3710,7 @@ VALUES (
 	1,
 	"Thalia Nelson",
 	"Elliot Lake",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3762,6 +3738,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	670,
+	2006,
+	"Electric Brushes",
+	1,
+	"Northwest Saskatchewan",
+	"McLurg High School",
+	"My project is about three different electric motors and how powerful, fast, and efficient they are. I put all three through three different tests to see how long they lasted on 1 AA battery, how much they could lift, and how fast they spun."
+);
+INSERT INTO project_divisions(project, division) VALUES(670, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	670,
+	1,
+	"Brady Greenwald",
+	"Scott",
+	6,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	614,
 	2006,
 	"Elementary Proof for Blundon's Inequality",
@@ -3778,7 +3778,7 @@ VALUES (
 	1,
 	"Nancy Nguyen",
 	"Vancouver",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -3826,41 +3826,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	548,
-	2006,
-	"Embarrassed",
-	2,
-	"Central Interior British Columbia",
-	"Westside Academy",
-	"This project studied the social effect that embarrassment has on young women (ages 15-30) learning about Breast Cancer and AIDS. Through analysis of data collected our results show that 1/3 of women are embarrassed to learn about these diseases and have very little education. It was shown that a website, magazine and a health class are effective, non-embarrassing ways to educate young women."
-);
-INSERT INTO project_divisions(project, division) VALUES(548, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	548,
-	1,
-	"Justine Doherty",
-	"Prince George",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	548,
-	2,
-	"Meaghan Alspaugh",
-	"Prince George",
-	"BC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	556,
 	2006,
 	"Engineering A Cure for Diabetes",
@@ -3877,7 +3842,7 @@ VALUES (
 	1,
 	"David Wang",
 	"London",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -3895,23 +3860,34 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	725,
+	548,
 	2006,
-	"Enzymes in Action",
-	1,
-	"Western Newfoundland",
-	"Presentation Junior High School",
-	"This project studied the effect of light, temperature, acidity and sugar content on enzyme activity in four types of apples. The time for oxidation process was a measure of the enzyme activity. In the order of least to greatest effect was basic pH, exposure to light, temperature and acid pH."
+	"Embarrassed",
+	2,
+	"Central Interior British Columbia",
+	"Westside Academy",
+	"This project studied the social effect that embarrassment has on young women (ages 15-30) learning about Breast Cancer and AIDS. Through analysis of data collected our results show that 1/3 of women are embarrassed to learn about these diseases and have very little education. It was shown that a website, magazine and a health class are effective, non-embarrassing ways to educate young women."
 );
-INSERT INTO project_divisions(project, division) VALUES(725, 9);
+INSERT INTO project_divisions(project, division) VALUES(548, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	725,
+	548,
 	1,
-	"Michael Staples",
-	"Corner Brook",
-	"NL",
+	"Justine Doherty",
+	"Prince George",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	548,
+	2,
+	"Meaghan Alspaugh",
+	"Prince George",
+	12,
 	NULL,
 	NULL
 );
@@ -3935,7 +3911,7 @@ VALUES (
 	1,
 	"Viane Faily",
 	"Edmonton",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -3963,23 +3939,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	507,
+	725,
 	2006,
-	"External Laptop Cooler",
-	3,
-	"Leader",
-	"Leader Composite School",
-	"A common laptop problem is overheating. Therefore I built a device which helps laptops to stay at a workable (and more efficient) temperature. Using tubing to run cold water under the laptop to cool it and carrying the warm water way from the computer."
+	"Enzymes in Action",
+	1,
+	"Western Newfoundland",
+	"Presentation Junior High School",
+	"This project studied the effect of light, temperature, acidity and sugar content on enzyme activity in four types of apples. The time for oxidation process was a measure of the enzyme activity. In the order of least to greatest effect was basic pH, exposure to light, temperature and acid pH."
 );
-INSERT INTO project_divisions(project, division) VALUES(507, 7);
+INSERT INTO project_divisions(project, division) VALUES(725, 9);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	507,
+	725,
 	1,
-	"Mathias Hoffmann",
-	"Leader",
-	"SK",
+	"Michael Staples",
+	"Corner Brook",
+	2,
 	NULL,
 	NULL
 );
@@ -4003,7 +3979,31 @@ VALUES (
 	1,
 	"Charles Tremblay",
 	"Cornwall",
-	"ON",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	507,
+	2006,
+	"External Laptop Cooler",
+	3,
+	"Leader",
+	"Leader Composite School",
+	"A common laptop problem is overheating. Therefore I built a device which helps laptops to stay at a workable (and more efficient) temperature. Using tubing to run cold water under the laptop to cool it and carrying the warm water way from the computer."
+);
+INSERT INTO project_divisions(project, division) VALUES(507, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	507,
+	1,
+	"Mathias Hoffmann",
+	"Leader",
+	6,
 	NULL,
 	NULL
 );
@@ -4027,31 +4027,7 @@ VALUES (
 	1,
 	"Bryson Siemens",
 	"Smithers",
-	"BC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	687,
-	2006,
-	"Feeding Fish",
-	1,
-	"North Channel",
-	"Our Lady of Lourdes French Immersion",
-	"My project is basicly an automated fish feeder that will feed your fish regularly. i have already tried two times to make one that works and i am hoping to have another design done by the CWSF"
-);
-INSERT INTO project_divisions(project, division) VALUES(687, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	687,
-	1,
-	"Matt Brunet",
-	"Elliot Lake",
-	"ON",
+	12,
 	NULL,
 	NULL
 );
@@ -4075,7 +4051,138 @@ VALUES (
 	1,
 	"James Frobb",
 	"Hanna",
-	"AB",
+	11,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	611,
+	2006,
+	"Feel The Flow",
+	2,
+	"Greater Vancouver",
+	"Lord Tweedsmuir Secondary",
+	"This project analyzed the effects oncoming water and different variables (such as temperature and added mass) had on various boat hull designs.  Data was recorded by watching a spring scale and by using a ruler for determining water depth.  Boat B ""Variation"" was the most efficient (angled hull.)  Commercial implications of more efficient boat hull designs are immense."
+);
+INSERT INTO project_divisions(project, division) VALUES(611, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	611,
+	1,
+	"Mark Stothers",
+	"Surrey",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	723,
+	2006,
+	"Fixed Link or Fantasy",
+	1,
+	"Western Newfoundland",
+	"Canon Richards H.S.",
+	"This project examined the feasibility of building a fixed link connecting Newfoundland with Labrador and Canada. Research, study, and consultation led to the construction of models portraying the fixed link. This project demonstrates that a fixed link is feasible, functional and beneficial, in the form of an underwater, bored, tunnel."
+);
+INSERT INTO project_divisions(project, division) VALUES(723, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	723,
+	1,
+	"Julia Cole",
+	"Bear Cove",
+	2,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	509,
+	2006,
+	"Final Cut",
+	2,
+	"Southeast Saskatchewan",
+	"Central School Fillmore",
+	"Our project was developed so that ranchers would not have to worry about watering their animals in the morning. The design of the project is quite simple; we heated an inner pipe so that the water would not freeze and therefore animals would have access to water at anytime."
+);
+INSERT INTO project_divisions(project, division) VALUES(509, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	509,
+	1,
+	"Nathan Pollock",
+	"Fillmore",
+	6,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	509,
+	2,
+	"Quintin Beckstead",
+	"Fillmore",
+	6,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	687,
+	2006,
+	"Feeding Fish",
+	1,
+	"North Channel",
+	"Our Lady of Lourdes French Immersion",
+	"My project is basicly an automated fish feeder that will feed your fish regularly. i have already tried two times to make one that works and i am hoping to have another design done by the CWSF"
+);
+INSERT INTO project_divisions(project, division) VALUES(687, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	687,
+	1,
+	"Matt Brunet",
+	"Elliot Lake",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	821,
+	2006,
+	"Flies' Eyes and DNA",
+	1,
+	"Bluewater",
+	"Arran-Tara E.S.",
+	"This experiment examined whether differences in eye colour between wild and white-eyed Drosophila melanogaster occur due to DNA differences. Gel electrophoresis was used to study the DNA samples of the two types of Drosophila. It was found that white-eyed Drosophila have an insertion of DNA called Doc retrotransposon. This proved that one could differentiate between various organisms within a species by looking at their DNA."
+);
+INSERT INTO project_divisions(project, division) VALUES(821, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	821,
+	1,
+	"Celina McLeod",
+	"Tara",
+	9,
 	NULL,
 	NULL
 );
@@ -4099,7 +4206,7 @@ VALUES (
 	1,
 	"David Gagnon",
 	"Val-des-Monts",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -4127,113 +4234,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	611,
-	2006,
-	"Feel The Flow",
-	2,
-	"Greater Vancouver",
-	"Lord Tweedsmuir Secondary",
-	"This project analyzed the effects oncoming water and different variables (such as temperature and added mass) had on various boat hull designs.  Data was recorded by watching a spring scale and by using a ruler for determining water depth.  Boat B ""Variation"" was the most efficient (angled hull.)  Commercial implications of more efficient boat hull designs are immense."
-);
-INSERT INTO project_divisions(project, division) VALUES(611, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	611,
-	1,
-	"Mark Stothers",
-	"Surrey",
-	"BC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	509,
-	2006,
-	"Final Cut",
-	2,
-	"Southeast Saskatchewan",
-	"Central School Fillmore",
-	"Our project was developed so that ranchers would not have to worry about watering their animals in the morning. The design of the project is quite simple; we heated an inner pipe so that the water would not freeze and therefore animals would have access to water at anytime."
-);
-INSERT INTO project_divisions(project, division) VALUES(509, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	509,
-	1,
-	"Nathan Pollock",
-	"Fillmore",
-	"SK",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	509,
-	2,
-	"Quintin Beckstead",
-	"Fillmore",
-	"SK",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	723,
-	2006,
-	"Fixed Link or Fantasy",
-	1,
-	"Western Newfoundland",
-	"Canon Richards H.S.",
-	"This project examined the feasibility of building a fixed link connecting Newfoundland with Labrador and Canada. Research, study, and consultation led to the construction of models portraying the fixed link. This project demonstrates that a fixed link is feasible, functional and beneficial, in the form of an underwater, bored, tunnel."
-);
-INSERT INTO project_divisions(project, division) VALUES(723, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	723,
-	1,
-	"Julia Cole",
-	"Bear Cove",
-	"NL",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	821,
-	2006,
-	"Flies' Eyes and DNA",
-	1,
-	"Bluewater",
-	"Arran-Tara E.S.",
-	"This experiment examined whether differences in eye colour between wild and white-eyed Drosophila melanogaster occur due to DNA differences. Gel electrophoresis was used to study the DNA samples of the two types of Drosophila. It was found that white-eyed Drosophila have an insertion of DNA called Doc retrotransposon. This proved that one could differentiate between various organisms within a species by looking at their DNA."
-);
-INSERT INTO project_divisions(project, division) VALUES(821, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	821,
-	1,
-	"Celina McLeod",
-	"Tara",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	710,
 	2006,
 	"Flow Simulation of L-Coronary Artery",
@@ -4250,7 +4250,7 @@ VALUES (
 	1,
 	"Sadaf Bahaza",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -4261,42 +4261,7 @@ VALUES (
 	2,
 	"Arvind Devanabanda",
 	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	657,
-	2006,
-	"Fluoride: Friend or Foe",
-	2,
-	"East Kootenay",
-	"Jaffray Elem-Jr Secondary",
-	"The effects of fluoride on the environment were investigated. Radishes and worms were subjected to fluoride of varying concentrations, showing deficient growth of fluoridated radishes, and deteriorated health of fluoridated worms. From experiments and research we concluded that fluoride has detrimental effects on the environment, and that it is found in unacceptably high concentrations due to contamination from water systems and pollution in the atmosphere."
-);
-INSERT INTO project_divisions(project, division) VALUES(657, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	657,
-	1,
-	"Fern Leavens",
-	"Jaffray",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	657,
-	2,
-	"Carly Proudfoot",
-	"Grasmere",
-	"BC",
+	9,
 	NULL,
 	NULL
 );
@@ -4320,7 +4285,7 @@ VALUES (
 	1,
 	"Ariane Denis-Mélançon",
 	"Trois-Rivières",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -4331,9 +4296,109 @@ VALUES (
 	2,
 	"Marie-Pier Gingras",
 	"Plessisville",
-	"QC",
+	10,
 	NULL,
 	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	657,
+	2006,
+	"Fluoride: Friend or Foe",
+	2,
+	"East Kootenay",
+	"Jaffray Elem-Jr Secondary",
+	"The effects of fluoride on the environment were investigated. Radishes and worms were subjected to fluoride of varying concentrations, showing deficient growth of fluoridated radishes, and deteriorated health of fluoridated worms. From experiments and research we concluded that fluoride has detrimental effects on the environment, and that it is found in unacceptably high concentrations due to contamination from water systems and pollution in the atmosphere."
+);
+INSERT INTO project_divisions(project, division) VALUES(657, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	657,
+	1,
+	"Fern Leavens",
+	"Jaffray",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	657,
+	2,
+	"Carly Proudfoot",
+	"Grasmere",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	792,
+	2006,
+	"Friction ou réalité",
+	3,
+	"CDLS - Province du Québec",
+	"École du Triolet",
+	"Des physiciens allemands ont démontré qu’à l’échelle microscopique, la force de friction n’augmente pas constamment en fonction de la vitesse. Nous avons tenté de montrer grâce à une expérimentation que ce phénomène se produit aussi à l’échelle macroscopique et peut donc avoir un impact sur la sécurité routière."
+);
+INSERT INTO project_divisions(project, division) VALUES(792, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	792,
+	1,
+	"Karl-Antoine Simoneau",
+	"St-Élie d'Orford",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	792,
+	2,
+	"Anne-Claude Brochu",
+	"Fleurimont",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	792,
+	1,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	792,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	792,
+	3,
+	"Silver Medal - Physical & Mathematical Sciences",
+	"Senior",
+	"Encana Corporation",
+	700.00
 );
 
 INSERT INTO projects
@@ -4355,7 +4420,7 @@ VALUES (
 	1,
 	"Kerrie Andreas",
 	"Sheho",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -4399,7 +4464,7 @@ VALUES (
 	1,
 	"Daniel Burd",
 	"Waterloo",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -4437,71 +4502,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	792,
-	2006,
-	"Friction ou réalité",
-	3,
-	"CDLS - Province du Québec",
-	"École du Triolet",
-	"Des physiciens allemands ont démontré qu’à l’échelle microscopique, la force de friction n’augmente pas constamment en fonction de la vitesse. Nous avons tenté de montrer grâce à une expérimentation que ce phénomène se produit aussi à l’échelle macroscopique et peut donc avoir un impact sur la sécurité routière."
-);
-INSERT INTO project_divisions(project, division) VALUES(792, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	792,
-	1,
-	"Karl-Antoine Simoneau",
-	"St-Élie d'Orford",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	792,
-	2,
-	"Anne-Claude Brochu",
-	"Fleurimont",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	792,
-	1,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	792,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	792,
-	3,
-	"Silver Medal - Physical & Mathematical Sciences",
-	"Senior",
-	"Encana Corporation",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	598,
 	2006,
 	"Fuel Cells",
@@ -4518,7 +4518,7 @@ VALUES (
 	1,
 	"Johnathan Krest",
 	"Stony Plain",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -4546,6 +4546,40 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	835,
+	2006,
+	"Functional characterization of angiotensin I converting enzyme inhibitory peptides produced by enzym",
+	2,
+	"Manitoba Schools Science Symposium",
+	"Fort Richmond Collegiate",
+	"The intention of this project was to further research prevention and treatment for hypertension with the use of ACE- inhibitory peptides derived from pea protein. The objective of this project was to produce pea protein hydrolysates and determine their efficiency as ACE inhibitors. Results will contribute to the knowledge of bioactive peptides, especially those that can be used to formulate antihypertensive functional foods and nutraceuticals."
+);
+INSERT INTO project_divisions(project, division) VALUES(835, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	835,
+	1,
+	"Ravindi Gunasekara",
+	"Winnipeg",
+	8,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	835,
+	1,
+	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
+	"Intermediate",
+	"Rx&D Health Research Foundation",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	728,
 	2006,
 	"Fungus Among Us",
@@ -4562,7 +4596,7 @@ VALUES (
 	1,
 	"Abeer Hasan",
 	"Halifax",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -4590,40 +4624,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	835,
-	2006,
-	"Functional characterization of angiotensin I converting enzyme inhibitory peptides produced by enzym",
-	2,
-	"Manitoba Schools Science Symposium",
-	"Fort Richmond Collegiate",
-	"The intention of this project was to further research prevention and treatment for hypertension with the use of ACE- inhibitory peptides derived from pea protein. The objective of this project was to produce pea protein hydrolysates and determine their efficiency as ACE inhibitors. Results will contribute to the knowledge of bioactive peptides, especially those that can be used to formulate antihypertensive functional foods and nutraceuticals."
-);
-INSERT INTO project_divisions(project, division) VALUES(835, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	835,
-	1,
-	"Ravindi Gunasekara",
-	"Winnipeg",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	835,
-	1,
-	"Honourable Mention - Biotechnology & Pharmaceutical Sciences",
-	"Intermediate",
-	"Rx&D Health Research Foundation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	571,
 	2006,
 	"Fuel of the Future",
@@ -4640,7 +4640,7 @@ VALUES (
 	1,
 	"Connor O'Neill",
 	"Chatham",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -4664,7 +4664,7 @@ VALUES (
 	1,
 	"Alice Jourmel",
 	"Duncan",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -4677,6 +4677,30 @@ VALUES (
 	"Intermediate",
 	"Canadian Association of Physicists",
 	250.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	567,
+	2006,
+	"Germbusters: the effect of antibacterial vs. regular soap on bacteria",
+	2,
+	"Regina",
+	"Thom Collegiate",
+	"This experiment was designed to test the effectiveness of antibacterial versus regular soap. Bacteria was cultured in petri dishes and soap disks that were exposed to antibacterial and regular soap were placed in the bacteria. The effectiveness of each soap was determined by the measurement of the zone of exclusion. Based on the results, there was no significant difference between regular and antibacterial soap."
+);
+INSERT INTO project_divisions(project, division) VALUES(567, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	567,
+	1,
+	"Andrea Tang",
+	"Regina",
+	6,
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -4725,40 +4749,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	659,
-	2006,
-	"Generating Osteoblasts From Murine Embryonic Stem Cells",
-	3,
-	"Calgary Youth",
-	"Queen Elizabeth Junior Senior High School",
-	"Murine embryonic stem cells were induced to differentiate into osteoblasts in the presence of osteogenic medium containing vitamin D3, ß-glycerophosphate and ascorbic acid. RNA collected during 10 specific time points during the 30 day differentiation was used to investigate the activities of the signaling molecule Wnt5a and the transcription factor ß-catenin."
-);
-INSERT INTO project_divisions(project, division) VALUES(659, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	659,
-	1,
-	"Emily Cooley",
-	"Calgary",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	659,
-	1,
-	"Quality of Life Student Research Award",
-	NULL,
-	"Institute of Musculoskeletal Health and Arthritis of the CIHR",
-	3750.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	695,
 	2006,
 	"Generation Sensation",
@@ -4775,7 +4765,7 @@ VALUES (
 	1,
 	"Amal Chandaria",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -4786,7 +4776,55 @@ VALUES (
 	2,
 	"Matthew Walker",
 	"Toronto",
-	"ON",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	830,
+	2006,
+	"Global Warming",
+	1,
+	"Beaufort-Delta",
+	"Samuel Hearne Secondary School",
+	"This project examines global warming and what changes an individual can make. The experiment shows the impact of global warming on the earth’s glaciers and icecaps. The experiment demonstrate that increased greenhouse gases in the atmosphere will increase the rate at which glaciers and icecaps melt. If people could make environmental changes the glaciers and icecaps might remain frozen from years to come."
+);
+INSERT INTO project_divisions(project, division) VALUES(830, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	830,
+	1,
+	"Jade Miskulin",
+	"Inuvik",
+	5,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	729,
+	2006,
+	"Giving Glucagon",
+	2,
+	"Halifax",
+	"Sackville Heights Junior High School",
+	"The project combined an experiment and an invention. The purpose of the experiment was to create a more efficient syringe design for injecting glucagon than the one used today. By putting a tab in the syringe (GS) to separate the two components, the level of difficulty and time of use was reduced. The conclusion is that the GS is more efficient than the current syringe."
+);
+INSERT INTO project_divisions(project, division) VALUES(729, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	729,
+	1,
+	"Jennifer Parlee",
+	"Lower Sackville",
+	1,
 	NULL,
 	NULL
 );
@@ -4810,7 +4848,7 @@ VALUES (
 	1,
 	"Janine Hodder",
 	"Mount Pearl",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -4821,7 +4859,7 @@ VALUES (
 	2,
 	"Andrew Harvey",
 	"Mount Pearl",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -4869,30 +4907,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	567,
-	2006,
-	"Germbusters: the effect of antibacterial vs. regular soap on bacteria",
-	2,
-	"Regina",
-	"Thom Collegiate",
-	"This experiment was designed to test the effectiveness of antibacterial versus regular soap. Bacteria was cultured in petri dishes and soap disks that were exposed to antibacterial and regular soap were placed in the bacteria. The effectiveness of each soap was determined by the measurement of the zone of exclusion. Based on the results, there was no significant difference between regular and antibacterial soap."
-);
-INSERT INTO project_divisions(project, division) VALUES(567, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	567,
-	1,
-	"Andrea Tang",
-	"Regina",
-	"SK",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	458,
 	2006,
 	"Glowing Galore",
@@ -4909,7 +4923,7 @@ VALUES (
 	1,
 	"Derek Hood",
 	"Medicine Hat",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -4937,49 +4951,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	729,
+	659,
 	2006,
-	"Giving Glucagon",
-	2,
-	"Halifax",
-	"Sackville Heights Junior High School",
-	"The project combined an experiment and an invention. The purpose of the experiment was to create a more efficient syringe design for injecting glucagon than the one used today. By putting a tab in the syringe (GS) to separate the two components, the level of difficulty and time of use was reduced. The conclusion is that the GS is more efficient than the current syringe."
+	"Generating Osteoblasts From Murine Embryonic Stem Cells",
+	3,
+	"Calgary Youth",
+	"Queen Elizabeth Junior Senior High School",
+	"Murine embryonic stem cells were induced to differentiate into osteoblasts in the presence of osteogenic medium containing vitamin D3, ß-glycerophosphate and ascorbic acid. RNA collected during 10 specific time points during the 30 day differentiation was used to investigate the activities of the signaling molecule Wnt5a and the transcription factor ß-catenin."
 );
-INSERT INTO project_divisions(project, division) VALUES(729, 500);
+INSERT INTO project_divisions(project, division) VALUES(659, 500);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	729,
+	659,
 	1,
-	"Jennifer Parlee",
-	"Lower Sackville",
-	"NS",
+	"Emily Cooley",
+	"Calgary",
+	11,
 	NULL,
 	NULL
 );
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
 VALUES (
-	830,
-	2006,
-	"Global Warming",
+	659,
 	1,
-	"Beaufort-Delta",
-	"Samuel Hearne Secondary School",
-	"This project examines global warming and what changes an individual can make. The experiment shows the impact of global warming on the earth’s glaciers and icecaps. The experiment demonstrate that increased greenhouse gases in the atmosphere will increase the rate at which glaciers and icecaps melt. If people could make environmental changes the glaciers and icecaps might remain frozen from years to come."
-);
-INSERT INTO project_divisions(project, division) VALUES(830, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	830,
-	1,
-	"Jade Miskulin",
-	"Inuvik",
-	"NT",
+	"Quality of Life Student Research Award",
 	NULL,
-	NULL
+	"Institute of Musculoskeletal Health and Arthritis of the CIHR",
+	3750.00
 );
 
 INSERT INTO projects
@@ -5001,7 +5001,7 @@ VALUES (
 	1,
 	"Heather Stewart",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -5025,53 +5025,9 @@ VALUES (
 	1,
 	"Graeme Byer",
 	"Edmonton",
-	"AB",
+	11,
 	NULL,
 	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	591,
-	2006,
-	"Gone with the Wind",
-	1,
-	"Northwestern Ontario",
-	"Sir John A. Macdonald P.S.",
-	"My experiment determined whether roofs with different pitches are affected differently during a windstorm. Two roof angles (45º, 30º) were tested at three wind speeds in a wind tunnel while measuring pressure inside and outside each roof. Pressure on each surface depended on the volume and aerodynamics of each roof."
-);
-INSERT INTO project_divisions(project, division) VALUES(591, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	591,
-	1,
-	"Jessica Rodgers",
-	"Thunder Bay",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	591,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	591,
-	2,
-	"Gold Medal - Engineering",
-	"Junior",
-	"Youth Science Foundation Canada",
-	1500.00
 );
 
 INSERT INTO projects
@@ -5093,7 +5049,7 @@ VALUES (
 	1,
 	"Kirby Maguire",
 	"Regina",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -5121,6 +5077,50 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	591,
+	2006,
+	"Gone with the Wind",
+	1,
+	"Northwestern Ontario",
+	"Sir John A. Macdonald P.S.",
+	"My experiment determined whether roofs with different pitches are affected differently during a windstorm. Two roof angles (45º, 30º) were tested at three wind speeds in a wind tunnel while measuring pressure inside and outside each roof. Pressure on each surface depended on the volume and aerodynamics of each roof."
+);
+INSERT INTO project_divisions(project, division) VALUES(591, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	591,
+	1,
+	"Jessica Rodgers",
+	"Thunder Bay",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	591,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	591,
+	2,
+	"Gold Medal - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	1500.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	551,
 	2006,
 	"Gone With the Wind",
@@ -5137,7 +5137,7 @@ VALUES (
 	1,
 	"Brian Hearnden",
 	"Smithers",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -5161,7 +5161,7 @@ VALUES (
 	1,
 	"Peter Marshall",
 	"Antigonish",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -5174,6 +5174,118 @@ VALUES (
 	"Intermediate",
 	"Petro-Canada",
 	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	745,
+	2006,
+	"Grapes of Math",
+	2,
+	"Cariboo Mainline",
+	"Ashcroft Secondary",
+	"This project determined which varietals of grapes grow best in the Lytton/Lillooet area. It specifically measured the height, maturity level and breakage rates of eighteen varietals of grapes growing on 50 different slope positions. The Analysis of Variance and Duncan’s Multiple Range Test were used to analyze the data."
+);
+INSERT INTO project_divisions(project, division) VALUES(745, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	745,
+	1,
+	"Sarah O'Connor",
+	"Lytton",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	745,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	745,
+	2,
+	"Silver Medal - Earth & Environmental Sciences",
+	"Intermediate",
+	"Petro-Canada",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	455,
+	2006,
+	"Grotesque Growth",
+	1,
+	"Peace Country",
+	"Prairie River Junior High School",
+	"I did my project on the concentration of bacteria around our school. I found that the highest consentration was on the top of the boys toilet seat while the least was on the mouthpiece of my tuba. I found my project very interesting."
+);
+INSERT INTO project_divisions(project, division) VALUES(455, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	455,
+	1,
+	"Jordan Lewis",
+	"High Prairie",
+	11,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	707,
+	2006,
+	"Harnessing Wind Energy",
+	1,
+	"Toronto",
+	"University of Toronto Schools",
+	"Building a wind turbine from common materials, I examined three hypotheses exploring the relationship between propeller size, wind speed, motor voltage and energy extracted from the wind. This experiment shows how simple wind energy use is, how critical “clean” energy is, and explores the practical concerns of turbine design."
+);
+INSERT INTO project_divisions(project, division) VALUES(707, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	707,
+	1,
+	"Adam Robarts",
+	"Mississauga",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	707,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	707,
+	2,
+	"Silver Medal - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	700.00
 );
 
 INSERT INTO projects
@@ -5195,7 +5307,7 @@ VALUES (
 	1,
 	"Mark Shearer",
 	"Lion's Head",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5233,23 +5345,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	455,
+	461,
 	2006,
-	"Grotesque Growth",
-	1,
-	"Peace Country",
-	"Prairie River Junior High School",
-	"I did my project on the concentration of bacteria around our school. I found that the highest consentration was on the top of the boys toilet seat while the least was on the mouthpiece of my tuba. I found my project very interesting."
+	"Heating It Up: Optimal Temperatures for Overwintering Koi and Waterplants",
+	2,
+	"Central Alberta",
+	"Innisfail Junior Senior High School",
+	"To determine what baseline water temperature results in maximum growth of 4 aquatic plants and koi, I conducted 3 experiments where water temperature was controlled. In each successive experiment I increased the water temperature. I am conducting a fourth experiment to see if the best growth temperature can be replicated."
 );
-INSERT INTO project_divisions(project, division) VALUES(455, 9);
+INSERT INTO project_divisions(project, division) VALUES(461, 500);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	455,
+	461,
 	1,
-	"Jordan Lewis",
-	"High Prairie",
-	"AB",
+	"Tye Minion",
+	"Innisfail",
+	11,
 	NULL,
 	NULL
 );
@@ -5257,89 +5369,79 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	707,
+	706,
 	2006,
-	"Harnessing Wind Energy",
+	"Hemisphere Dominance",
 	1,
 	"Toronto",
-	"University of Toronto Schools",
-	"Building a wind turbine from common materials, I examined three hypotheses exploring the relationship between propeller size, wind speed, motor voltage and energy extracted from the wind. This experiment shows how simple wind energy use is, how critical “clean” energy is, and explores the practical concerns of turbine design."
+	"Giles School, The",
+	"The project's purpose was to determine cerebral dominance in children and its correlation with gender. After finding that children are right-hemisphere dominant, adolescents were tested to prove the theory that hemispheric dominance is acquired during maturation. The findings, applied to our educational system, can improve the way children are taught."
 );
-INSERT INTO project_divisions(project, division) VALUES(707, 7);
+INSERT INTO project_divisions(project, division) VALUES(706, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	707,
+	706,
 	1,
-	"Adam Robarts",
-	"Mississauga",
-	"ON",
+	"Artin Memar-Makhsous",
+	"Toronto",
+	9,
 	NULL,
 	NULL
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	707,
+	706,
 	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
+	"Dr. Michael Smith Innovation Award",
+	"Junior",
+	"Canada Foundation for Innovation",
+	500.00
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	707,
+	706,
 	2,
-	"Silver Medal - Engineering",
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	706,
+	3,
+	"Bronze Medal - Health Sciences",
 	"Junior",
-	"Youth Science Foundation Canada",
-	700.00
+	"Canadian Institutes of Health Research",
+	300.00
 );
 
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	745,
+	563,
 	2006,
-	"Grapes of Math",
+	"Hormonal Therapies Improving Cell Destruction in Prostate Cancer",
 	2,
-	"Cariboo Mainline",
-	"Ashcroft Secondary",
-	"This project determined which varietals of grapes grow best in the Lytton/Lillooet area. It specifically measured the height, maturity level and breakage rates of eighteen varietals of grapes growing on 50 different slope positions. The Analysis of Variance and Duncan’s Multiple Range Test were used to analyze the data."
+	"Fraser Valley",
+	"Yale Secondary",
+	"This project explores new fields of Hormonal Therapy by combining Anti-sense therapy and Molecular Genetics to treat Prostate Cancer. Clusterin is the focus of this paper. Successive generations of Hormonal Therapy are compared and improvements recorded. Suppression of Clusterin by integration of Hormonal Therapy has shown to delay Prostate Cancer."
 );
-INSERT INTO project_divisions(project, division) VALUES(745, 4);
+INSERT INTO project_divisions(project, division) VALUES(563, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	745,
+	563,
 	1,
-	"Sarah O'Connor",
-	"Lytton",
-	"BC",
+	"Shane-Julian King",
+	"Abbotsford",
+	12,
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	745,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	745,
-	2,
-	"Silver Medal - Earth & Environmental Sciences",
-	"Intermediate",
-	"Petro-Canada",
-	700.00
 );
 
 INSERT INTO projects
@@ -5361,7 +5463,7 @@ VALUES (
 	1,
 	"Lauren Cuthbertson",
 	"Lions Bay",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -5419,30 +5521,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	461,
-	2006,
-	"Heating It Up: Optimal Temperatures for Overwintering Koi and Waterplants",
-	2,
-	"Central Alberta",
-	"Innisfail Junior Senior High School",
-	"To determine what baseline water temperature results in maximum growth of 4 aquatic plants and koi, I conducted 3 experiments where water temperature was controlled. In each successive experiment I increased the water temperature. I am conducting a fourth experiment to see if the best growth temperature can be replicated."
-);
-INSERT INTO project_divisions(project, division) VALUES(461, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	461,
-	1,
-	"Tye Minion",
-	"Innisfail",
-	"AB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	743,
 	2006,
 	"Help! Can Anyone Hear Me?",
@@ -5459,7 +5537,7 @@ VALUES (
 	1,
 	"Graham Mann",
 	"Lunenburg",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -5497,55 +5575,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	706,
+	638,
 	2006,
-	"Hemisphere Dominance",
-	1,
-	"Toronto",
-	"Giles School, The",
-	"The project's purpose was to determine cerebral dominance in children and its correlation with gender. After finding that children are right-hemisphere dominant, adolescents were tested to prove the theory that hemispheric dominance is acquired during maturation. The findings, applied to our educational system, can improve the way children are taught."
+	"Hot Alternative Energy",
+	3,
+	"East Parry Sound",
+	"Almaguin Highlands H.S.",
+	"Hot Alternative Energy is a level 4 innovation in the engineering division. This project involved designing, building and testing a flat panel solar collector to be applied specifically to radiant floor heating. This system is approximately 30% efficient, up to 15% more efficient than photovoltaic solar collectors."
 );
-INSERT INTO project_divisions(project, division) VALUES(706, 8);
+INSERT INTO project_divisions(project, division) VALUES(638, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	706,
+	638,
 	1,
-	"Artin Memar-Makhsous",
-	"Toronto",
-	"ON",
+	"Ryan Fogarty",
+	"South River",
+	9,
 	NULL,
 	NULL
 );
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
 VALUES (
-	706,
-	1,
-	"Dr. Michael Smith Innovation Award",
-	"Junior",
-	"Canada Foundation for Innovation",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	706,
+	638,
 	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	706,
-	3,
-	"Bronze Medal - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	300.00
+	"Scott Evers",
+	"Trout Creek",
+	9,
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -5567,7 +5626,7 @@ VALUES (
 	1,
 	"Nelson Gladders",
 	"High Level",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -5578,55 +5637,7 @@ VALUES (
 	2,
 	"Kenneth Ernst",
 	"High Level",
-	"AB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	563,
-	2006,
-	"Hormonal Therapies Improving Cell Destruction in Prostate Cancer",
-	2,
-	"Fraser Valley",
-	"Yale Secondary",
-	"This project explores new fields of Hormonal Therapy by combining Anti-sense therapy and Molecular Genetics to treat Prostate Cancer. Clusterin is the focus of this paper. Successive generations of Hormonal Therapy are compared and improvements recorded. Suppression of Clusterin by integration of Hormonal Therapy has shown to delay Prostate Cancer."
-);
-INSERT INTO project_divisions(project, division) VALUES(563, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	563,
-	1,
-	"Shane-Julian King",
-	"Abbotsford",
-	"BC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	628,
-	2006,
-	"House-Hold Radiation: Benign Rays Or Malevolent Bullets?",
-	1,
-	"Frontenac, Lennox & Addington",
-	NULL,
-	"My project was designed to determine how much electromagnetic and particle radiation is emitted from a Liquid Crystal Display monitor, a Cathode Ray Tube monitor, a cordless phone, and a microwave. To do this, I used a home-built cloud chamber and several film badges of my own design."
-);
-INSERT INTO project_divisions(project, division) VALUES(628, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	628,
-	1,
-	"Conrad Bielicki",
-	"Kingston",
-	"ON",
+	11,
 	NULL,
 	NULL
 );
@@ -5650,7 +5661,7 @@ VALUES (
 	1,
 	"David Vanbiesbrouck",
 	"Chatham",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5668,34 +5679,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	638,
+	628,
 	2006,
-	"Hot Alternative Energy",
-	3,
-	"East Parry Sound",
-	"Almaguin Highlands H.S.",
-	"Hot Alternative Energy is a level 4 innovation in the engineering division. This project involved designing, building and testing a flat panel solar collector to be applied specifically to radiant floor heating. This system is approximately 30% efficient, up to 15% more efficient than photovoltaic solar collectors."
-);
-INSERT INTO project_divisions(project, division) VALUES(638, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	638,
+	"House-Hold Radiation: Benign Rays Or Malevolent Bullets?",
 	1,
-	"Ryan Fogarty",
-	"South River",
-	"ON",
+	"Frontenac, Lennox & Addington",
 	NULL,
-	NULL
+	"My project was designed to determine how much electromagnetic and particle radiation is emitted from a Liquid Crystal Display monitor, a Cathode Ray Tube monitor, a cordless phone, and a microwave. To do this, I used a home-built cloud chamber and several film badges of my own design."
 );
+INSERT INTO project_divisions(project, division) VALUES(628, 99);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	638,
-	2,
-	"Scott Evers",
-	"Trout Creek",
-	"ON",
+	628,
+	1,
+	"Conrad Bielicki",
+	"Kingston",
+	9,
 	NULL,
 	NULL
 );
@@ -5719,7 +5719,7 @@ VALUES (
 	1,
 	"Cassie West",
 	"Scarborough",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5730,7 +5730,7 @@ VALUES (
 	2,
 	"David Gilmour",
 	"Scarborough",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5754,7 +5754,7 @@ VALUES (
 	1,
 	"Jennifer Lawlor",
 	"Hamilton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5765,7 +5765,7 @@ VALUES (
 	2,
 	"Alessandra Gallo",
 	"Hamilton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5789,31 +5789,7 @@ VALUES (
 	1,
 	"Luke Lazaruk",
 	"Winnipeg",
-	"MB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	460,
-	2006,
-	"How Many Loaves of Bread Can I Make with a Chessboard?",
-	1,
-	"Central Alberta",
-	"Cremona School",
-	"The number of loaves of bread made from wheat grains placed exponentially on a chessboard was determined. The weight of 18.5 quintillion grains was converted to four quadrillion cups of flour. The flour made 996 trillion loaves of bread which was enough to feed the world for 429 years."
-);
-INSERT INTO project_divisions(project, division) VALUES(460, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	460,
-	1,
-	"Mackenzie Landsburg",
-	"Water Valley",
-	"AB",
+	8,
 	NULL,
 	NULL
 );
@@ -5837,7 +5813,31 @@ VALUES (
 	1,
 	"Alice Bertram",
 	"Truro",
-	"NS",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	460,
+	2006,
+	"How Many Loaves of Bread Can I Make with a Chessboard?",
+	1,
+	"Central Alberta",
+	"Cremona School",
+	"The number of loaves of bread made from wheat grains placed exponentially on a chessboard was determined. The weight of 18.5 quintillion grains was converted to four quadrillion cups of flour. The flour made 996 trillion loaves of bread which was enough to feed the world for 429 years."
+);
+INSERT INTO project_divisions(project, division) VALUES(460, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	460,
+	1,
+	"Mackenzie Landsburg",
+	"Water Valley",
+	11,
 	NULL,
 	NULL
 );
@@ -5861,7 +5861,7 @@ VALUES (
 	1,
 	"Derek Clouthier",
 	"Arnprior",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -5874,60 +5874,6 @@ VALUES (
 	"Ontario North & East",
 	"Petro-Canada",
 	200.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	597,
-	2006,
-	"In The Line Of Fire: Phase 3",
-	3,
-	"Edmonton",
-	"Bellerose Composite High School",
-	"I have designed and invented a new type of military/ law enforcement tactical armored vest. This new type of armor may revolutionize the way armor is designed and developed. The armored materials that make up the vest are Kevlar, Spectra Shield, and polycarbonate/ Lexan. This armor has been professionally tested with various firearms and ammunition in a special facility at RCMP headquarters in Edmonton Alberta."
-);
-INSERT INTO project_divisions(project, division) VALUES(597, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	597,
-	1,
-	"Darren Schulte",
-	"St.Albert",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	597,
-	1,
-	"The Manning Innovation Achievement Award",
-	NULL,
-	"Ernest C. Manning Awards Foundation",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	597,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	597,
-	3,
-	"Bronze Medal - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	300.00
 );
 
 INSERT INTO projects
@@ -5949,7 +5895,7 @@ VALUES (
 	1,
 	"Haley Maillet",
 	"Saint John",
-	"NB",
+	3,
 	NULL,
 	NULL
 );
@@ -5973,7 +5919,7 @@ VALUES (
 	1,
 	"Josh Segeren",
 	"Chatham",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -6027,7 +5973,7 @@ VALUES (
 	1,
 	"Whitney Kelly-Clark",
 	"Charlottetown",
-	"PE",
+	4,
 	NULL,
 	NULL
 );
@@ -6061,7 +6007,7 @@ VALUES (
 	1,
 	"Perryn Kruth",
 	"Guelph",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -6072,7 +6018,7 @@ VALUES (
 	2,
 	"Brittany Martyn",
 	"Guelph",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -6084,40 +6030,6 @@ VALUES (
 	"Honourable Mention - Health Sciences",
 	"Intermediate",
 	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	730,
-	2006,
-	"Instruments Tops How Wood Choice Affect Sounds",
-	1,
-	"Halifax",
-	"Bedford South School",
-	"This project investigated if hardwood-topped stringed instruments produce a different sound than softwood-topped. Two standardized, simple instruments were made; with cedar and maple tops. They were plucked at standard stroke while music-recording software assessed wavefoms. Cedar produced consistent waveforms through the entire spectrum, confirming it as the popular stringed instrument top wood choice."
-);
-INSERT INTO project_divisions(project, division) VALUES(730, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	730,
-	1,
-	"Richard Wile",
-	"Bedford",
-	"NS",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	730,
-	1,
-	"Honourable Mention - Engineering",
-	"Junior",
-	"Youth Science Foundation Canada",
 	100.00
 );
 
@@ -6140,7 +6052,7 @@ VALUES (
 	1,
 	"Jin Myung Kim",
 	"Abbotsford",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -6151,7 +6063,7 @@ VALUES (
 	2,
 	"Albert Lee",
 	"Abbotsford",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -6159,25 +6071,35 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	542,
+	730,
 	2006,
-	"Interesting Insulators",
+	"Instruments Tops How Wood Choice Affect Sounds",
 	1,
-	"Sunset Country",
-	"Ear Falls P.S.",
-	"My principle was to determine the efficiency and safety of insulators used today as compared to several different earth friendly materials. My hypothesis stated that environmental materials could be efficient and safe insulators. After several trials, I found definite evidence that these resources should be recognized when considering insulating materials."
+	"Halifax",
+	"Bedford South School",
+	"This project investigated if hardwood-topped stringed instruments produce a different sound than softwood-topped. Two standardized, simple instruments were made; with cedar and maple tops. They were plucked at standard stroke while music-recording software assessed wavefoms. Cedar produced consistent waveforms through the entire spectrum, confirming it as the popular stringed instrument top wood choice."
 );
-INSERT INTO project_divisions(project, division) VALUES(542, 99);
+INSERT INTO project_divisions(project, division) VALUES(730, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	542,
+	730,
 	1,
-	"Brianne Doudiet",
-	"Ear Falls",
-	"ON",
+	"Richard Wile",
+	"Bedford",
+	1,
 	NULL,
 	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	730,
+	1,
+	"Honourable Mention - Engineering",
+	"Junior",
+	"Youth Science Foundation Canada",
+	100.00
 );
 
 INSERT INTO projects
@@ -6199,7 +6121,7 @@ VALUES (
 	1,
 	"Avineet Sekhon",
 	"St.John's",
-	"NL",
+	2,
 	NULL,
 	NULL
 );
@@ -6227,6 +6149,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	542,
+	2006,
+	"Interesting Insulators",
+	1,
+	"Sunset Country",
+	"Ear Falls P.S.",
+	"My principle was to determine the efficiency and safety of insulators used today as compared to several different earth friendly materials. My hypothesis stated that environmental materials could be efficient and safe insulators. After several trials, I found definite evidence that these resources should be recognized when considering insulating materials."
+);
+INSERT INTO project_divisions(project, division) VALUES(542, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	542,
+	1,
+	"Brianne Doudiet",
+	"Ear Falls",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	754,
 	2006,
 	"Is it Worth the Risk?",
@@ -6243,7 +6189,85 @@ VALUES (
 	1,
 	"Morgan Hoot",
 	"Kamloops",
-	"BC",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	597,
+	2006,
+	"In The Line Of Fire: Phase 3",
+	3,
+	"Edmonton",
+	"Bellerose Composite High School",
+	"I have designed and invented a new type of military/ law enforcement tactical armored vest. This new type of armor may revolutionize the way armor is designed and developed. The armored materials that make up the vest are Kevlar, Spectra Shield, and polycarbonate/ Lexan. This armor has been professionally tested with various firearms and ammunition in a special facility at RCMP headquarters in Edmonton Alberta."
+);
+INSERT INTO project_divisions(project, division) VALUES(597, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	597,
+	1,
+	"Darren Schulte",
+	"St.Albert",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	597,
+	1,
+	"The Manning Innovation Achievement Award",
+	NULL,
+	"Ernest C. Manning Awards Foundation",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	597,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	597,
+	3,
+	"Bronze Medal - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	554,
+	2006,
+	"Is Yawning Contagious and Is Gender a Factor?",
+	1,
+	"Pacific Northwest",
+	"Walnut Park Elementary",
+	"My experiment was designed to determine if yawning is contagious and whether gender is a factor. I conducted 7 sets of tests, with 4 different groups of people. My results indicate that yawning is contagious and that gender is not a factor."
+);
+INSERT INTO project_divisions(project, division) VALUES(554, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	554,
+	1,
+	"Morgan Marshall",
+	"Smithers",
+	12,
 	NULL,
 	NULL
 );
@@ -6267,31 +6291,7 @@ VALUES (
 	1,
 	"Jennifer Kwan",
 	"Windsor",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	554,
-	2006,
-	"Is Yawning Contagious and Is Gender a Factor?",
-	1,
-	"Pacific Northwest",
-	"Walnut Park Elementary",
-	"My experiment was designed to determine if yawning is contagious and whether gender is a factor. I conducted 7 sets of tests, with 4 different groups of people. My results indicate that yawning is contagious and that gender is not a factor."
-);
-INSERT INTO project_divisions(project, division) VALUES(554, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	554,
-	1,
-	"Morgan Marshall",
-	"Smithers",
-	"BC",
+	9,
 	NULL,
 	NULL
 );
@@ -6315,7 +6315,7 @@ VALUES (
 	1,
 	"Lauren Law",
 	"Vancouver",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -6328,41 +6328,6 @@ VALUES (
 	"Intermediate",
 	"Canadian Institutes of Health Research",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	779,
-	2006,
-	"Its a Small World",
-	2,
-	"Sahtu",
-	"?ehtseo Ayha School",
-	"We wanted to see the effects of antibacterial products on bacterial growth. After choosing two shampoos, two deodorants, two toothpastes, and two mouthwashes, we observed the growth of bacterial colonies on potato slices."
-);
-INSERT INTO project_divisions(project, division) VALUES(779, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	779,
-	1,
-	"Kenneth Menacho",
-	"Deline",
-	"NT",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	779,
-	2,
-	"Hilary Andre",
-	"Deline",
-	"NT",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -6384,7 +6349,7 @@ VALUES (
 	1,
 	"Michelle Morin",
 	"Ottawa",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -6412,6 +6377,41 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	779,
+	2006,
+	"Its a Small World",
+	2,
+	"Sahtu",
+	"?ehtseo Ayha School",
+	"We wanted to see the effects of antibacterial products on bacterial growth. After choosing two shampoos, two deodorants, two toothpastes, and two mouthwashes, we observed the growth of bacterial colonies on potato slices."
+);
+INSERT INTO project_divisions(project, division) VALUES(779, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	779,
+	1,
+	"Kenneth Menacho",
+	"Deline",
+	5,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	779,
+	2,
+	"Hilary Andre",
+	"Deline",
+	5,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	540,
 	2006,
 	"Junk Food Energy",
@@ -6428,7 +6428,7 @@ VALUES (
 	1,
 	"Rebecca Laird",
 	"Swift Current",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -6439,54 +6439,9 @@ VALUES (
 	2,
 	"Rachel Schellenberg",
 	"Swift Current",
-	"SK",
+	6,
 	NULL,
 	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	653,
-	2006,
-	"Keep the Heat, Lose the Loss",
-	1,
-	"Sudbury",
-	"R.L. Beattie P.S.",
-	"New potentially patentable type of insulation has been created from recycled rubber tires mixed with bonding agents. The effectiveness of the insulation was proven from temperature tests in comparison to Styrofoam SM insulation. Applications include foundation insulation, roadway subgrade insulation for protection from frost heave, and underground pipe freeze protection."
-);
-INSERT INTO project_divisions(project, division) VALUES(653, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	653,
-	1,
-	"Ian Walker",
-	"Sudbury",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	653,
-	2,
-	"Scott Denniston",
-	"Sudbury",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	653,
-	1,
-	"S.M. Blair Family Foundation Award",
-	"Junior",
-	"S.M. Blair Family Foundation",
-	500.00
 );
 
 INSERT INTO projects
@@ -6508,7 +6463,7 @@ VALUES (
 	1,
 	"Ashley Haugen",
 	"La Ronge",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -6519,7 +6474,7 @@ VALUES (
 	2,
 	"Sylvia Dziak",
 	"La Ronge",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -6543,7 +6498,7 @@ VALUES (
 	1,
 	"Caroline Tremblay",
 	"L'Ancienne Lorette",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6554,9 +6509,54 @@ VALUES (
 	2,
 	"Hubert Tremblay",
 	"Québec",
-	"QC",
+	10,
 	NULL,
 	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	653,
+	2006,
+	"Keep the Heat, Lose the Loss",
+	1,
+	"Sudbury",
+	"R.L. Beattie P.S.",
+	"New potentially patentable type of insulation has been created from recycled rubber tires mixed with bonding agents. The effectiveness of the insulation was proven from temperature tests in comparison to Styrofoam SM insulation. Applications include foundation insulation, roadway subgrade insulation for protection from frost heave, and underground pipe freeze protection."
+);
+INSERT INTO project_divisions(project, division) VALUES(653, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	653,
+	1,
+	"Ian Walker",
+	"Sudbury",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	653,
+	2,
+	"Scott Denniston",
+	"Sudbury",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	653,
+	1,
+	"S.M. Blair Family Foundation Award",
+	"Junior",
+	"S.M. Blair Family Foundation",
+	500.00
 );
 
 INSERT INTO projects
@@ -6578,7 +6578,7 @@ VALUES (
 	1,
 	"Catherine Bergeron-Legros",
 	"Montréal",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6589,7 +6589,7 @@ VALUES (
 	2,
 	"Gabrielle Delisle",
 	"Repentigny",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6623,7 +6623,7 @@ VALUES (
 	1,
 	"Natasha Salo",
 	"Porcupine",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -6634,85 +6634,7 @@ VALUES (
 	2,
 	"Shawna Clemence",
 	"Timmins",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	794,
-	2006,
-	"La micro pour senseur sensé",
-	3,
-	"CDLS - Province du Québec",
-	NULL,
-	"Ce projet porte sur le développement et la conception d'un nouveau type de biosenseur combinant microfluidique, biochimie, et microbiologie pour créer une nouvelle méthode de diagnostic, dont les objectifs sont la rapidité, la simplicité, la sensibilité et un faible coût."
-);
-INSERT INTO project_divisions(project, division) VALUES(794, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	794,
-	1,
-	"Adrian Veres",
-	"Montréal",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	794,
-	1,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Gold Medallist - $4000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	4000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	794,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	794,
-	3,
-	"Gold Medal - Biotechnology & Pharmaceutical Sciences",
-	"Senior",
-	"Rx&D Health Research Foundation",
-	1500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	762,
-	2006,
-	"La Science du Boomerang",
-	2,
-	"New Brunswick",
-	"École Samuel-de-Champlain",
-	"Très longetemps, le vol du boomerang est resté un mystère. Mais maintenant, nous savons les causes de son retour. Des forces comme la portance, la stablilité gyroscopique et la précession gyroscopique influencent le trajet du boomerang, ainsi que des principes tels que celui de Bernoulli. La science du boomerang peut être interressante."
-);
-INSERT INTO project_divisions(project, division) VALUES(762, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	762,
-	1,
-	"Frédéric Downing-Doucet",
-	"Saint John",
-	"NB",
+	9,
 	NULL,
 	NULL
 );
@@ -6736,7 +6658,7 @@ VALUES (
 	1,
 	"Jean-Samuel Hevey",
 	"Amos",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6747,7 +6669,7 @@ VALUES (
 	2,
 	"Jean-Simon Roch Matte",
 	"Amos",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6760,6 +6682,95 @@ VALUES (
 	"Senior",
 	"Petro-Canada",
 	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	762,
+	2006,
+	"La Science du Boomerang",
+	2,
+	"New Brunswick",
+	"École Samuel-de-Champlain",
+	"Très longetemps, le vol du boomerang est resté un mystère. Mais maintenant, nous savons les causes de son retour. Des forces comme la portance, la stablilité gyroscopique et la précession gyroscopique influencent le trajet du boomerang, ainsi que des principes tels que celui de Bernoulli. La science du boomerang peut être interressante."
+);
+INSERT INTO project_divisions(project, division) VALUES(762, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	762,
+	1,
+	"Frédéric Downing-Doucet",
+	"Saint John",
+	3,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	787,
+	2006,
+	"Le Jardin de Kyoto",
+	3,
+	"CDLS - Province du Québec",
+	NULL,
+	"Selon la littérature, il est possible d'utiliser l'oxalate de sodium pour détruire les chlorofluorocarbones, des gaz très nocifs pour l'environnement. La rhubarbe contenant un produit dérivé de cet oxalate, nous voulions tenter de le fabriquer à partir des feuilles de cette plante et prouver clairement qu'il pouvait détruire les chlorofluorocarbones."
+);
+INSERT INTO project_divisions(project, division) VALUES(787, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	787,
+	1,
+	"Maxime Lelièvre",
+	"Sept-Iles",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	787,
+	2,
+	"Mylène Roy",
+	"Sept-Iles",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	787,
+	1,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	787,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	787,
+	3,
+	"Silver Medal - Earth & Environmental Sciences",
+	"Senior",
+	"Petro-Canada",
+	700.00
 );
 
 INSERT INTO projects
@@ -6781,7 +6792,7 @@ VALUES (
 	1,
 	"Stefan Nicolau",
 	"Ville Mont Royal",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -6829,71 +6840,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	787,
-	2006,
-	"Le Jardin de Kyoto",
-	3,
-	"CDLS - Province du Québec",
-	NULL,
-	"Selon la littérature, il est possible d'utiliser l'oxalate de sodium pour détruire les chlorofluorocarbones, des gaz très nocifs pour l'environnement. La rhubarbe contenant un produit dérivé de cet oxalate, nous voulions tenter de le fabriquer à partir des feuilles de cette plante et prouver clairement qu'il pouvait détruire les chlorofluorocarbones."
-);
-INSERT INTO project_divisions(project, division) VALUES(787, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	787,
-	1,
-	"Maxime Lelièvre",
-	"Sept-Iles",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	787,
-	2,
-	"Mylène Roy",
-	"Sept-Iles",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	787,
-	1,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	787,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	787,
-	3,
-	"Silver Medal - Earth & Environmental Sciences",
-	"Senior",
-	"Petro-Canada",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	622,
 	2006,
 	"Le moulin à vent",
@@ -6910,7 +6856,7 @@ VALUES (
 	1,
 	"Amber Doyle",
 	"St.Andrews",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -6921,9 +6867,63 @@ VALUES (
 	2,
 	"Emily Benoit",
 	"Pomquet",
-	"NS",
+	1,
 	NULL,
 	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	794,
+	2006,
+	"La micro pour senseur sensé",
+	3,
+	"CDLS - Province du Québec",
+	NULL,
+	"Ce projet porte sur le développement et la conception d'un nouveau type de biosenseur combinant microfluidique, biochimie, et microbiologie pour créer une nouvelle méthode de diagnostic, dont les objectifs sont la rapidité, la simplicité, la sensibilité et un faible coût."
+);
+INSERT INTO project_divisions(project, division) VALUES(794, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	794,
+	1,
+	"Adrian Veres",
+	"Montréal",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	794,
+	1,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Gold Medallist - $4000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	4000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	794,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	794,
+	3,
+	"Gold Medal - Biotechnology & Pharmaceutical Sciences",
+	"Senior",
+	"Rx&D Health Research Foundation",
+	1500.00
 );
 
 INSERT INTO projects
@@ -6945,66 +6945,7 @@ VALUES (
 	1,
 	"Nicole Reid",
 	"Dundas",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	765,
-	2006,
-	"Les Gènes et l'ADN",
-	2,
-	"New Brunswick",
-	"École Samuel-de-Champlain",
-	"Ce projet étudie l’importance des gènes et de l’ADN par rapport au corps humain. Le code génétique est principalement présenté avec plusieurs autres informations comme la transmission des gènes et ceux-ci au travail. Les gènes dictent à nos cellules quoi faire et ils sont indispensables à la survie des organismes."
-);
-INSERT INTO project_divisions(project, division) VALUES(765, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	765,
-	1,
-	"Edouard Saadé",
-	"Rothesay",
-	"NB",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	765,
-	2,
-	"Nicole Wolno",
-	"Saint John",
-	"NB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	544,
-	2006,
-	"Left Write Left, But Are They Right?",
-	1,
-	"Sunset Country",
-	"J.W. Walker E.S.",
-	"This project studied how handedness affected foot, eye, and ear dominance and memory. Through questioning and simple tests, dominance was established. Using pictures, data was gathered about memorization patterns. Results showed right-handed people to be more consistently same-side dominant than left-handed people. Memory data showed trends particular to handedness."
-);
-INSERT INTO project_divisions(project, division) VALUES(544, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	544,
-	1,
-	"Bailley Strom",
-	"Fort Frances",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7028,7 +6969,7 @@ VALUES (
 	1,
 	"Cynthia Liao",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7041,6 +6982,65 @@ VALUES (
 	"Junior",
 	"Canadian Institutes of Health Research",
 	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	544,
+	2006,
+	"Left Write Left, But Are They Right?",
+	1,
+	"Sunset Country",
+	"J.W. Walker E.S.",
+	"This project studied how handedness affected foot, eye, and ear dominance and memory. Through questioning and simple tests, dominance was established. Using pictures, data was gathered about memorization patterns. Results showed right-handed people to be more consistently same-side dominant than left-handed people. Memory data showed trends particular to handedness."
+);
+INSERT INTO project_divisions(project, division) VALUES(544, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	544,
+	1,
+	"Bailley Strom",
+	"Fort Frances",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	765,
+	2006,
+	"Les Gènes et l'ADN",
+	2,
+	"New Brunswick",
+	"École Samuel-de-Champlain",
+	"Ce projet étudie l’importance des gènes et de l’ADN par rapport au corps humain. Le code génétique est principalement présenté avec plusieurs autres informations comme la transmission des gènes et ceux-ci au travail. Les gènes dictent à nos cellules quoi faire et ils sont indispensables à la survie des organismes."
+);
+INSERT INTO project_divisions(project, division) VALUES(765, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	765,
+	1,
+	"Edouard Saadé",
+	"Rothesay",
+	3,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	765,
+	2,
+	"Nicole Wolno",
+	"Saint John",
+	3,
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -7062,7 +7062,7 @@ VALUES (
 	1,
 	"Jean-Olivier Lambert",
 	"Timmins",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7073,7 +7073,7 @@ VALUES (
 	2,
 	"Julien Malette",
 	"Timmins",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7097,7 +7097,7 @@ VALUES (
 	1,
 	"Neil Harris",
 	"Murillo",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7121,7 +7121,7 @@ VALUES (
 	1,
 	"Vanessa Monteiro",
 	"Sarnia",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7165,7 +7165,7 @@ VALUES (
 	1,
 	"Justine Cascanette",
 	"Regina",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -7189,7 +7189,7 @@ VALUES (
 	1,
 	"Hassan Siddiqui",
 	"Sarnia",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7253,7 +7253,7 @@ VALUES (
 	1,
 	"Joanna McNeil",
 	"St. Peter's",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -7266,78 +7266,6 @@ VALUES (
 	NULL,
 	"Canadian WEF Member Associations, the Canadian Water and Wastewater Association, and Xylem Canada",
 	2000.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	462,
-	2006,
-	"Mach 1: The Speed of Sound",
-	2,
-	"Central Alberta",
-	"Spruce View School",
-	"The purpose of this project was to calculate the speed of sound in air using the principle of acoustical resonance, a tuning fork, and a pipe with one open and one closed end. The speed of sound was found to be 336.5 meters per second, a very reasonable calculation considering the altitude and the temperature of the room the experiment took place in."
-);
-INSERT INTO project_divisions(project, division) VALUES(462, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	462,
-	1,
-	"Kathleen Szymanek",
-	"Eckville",
-	"AB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	752,
-	2006,
-	"Making Fast Food Healthy",
-	1,
-	"Peterborough",
-	"Lakefield College School",
-	"This experiment explored how healthy side dishes were from a popular fast food restaurant. The five side dishes tested were: fries, chicken Caesar salad, garden salad, chilli, and baked potato. These side dishes were tested to find starch, sugar, protein, and lipid content. Which side dish was the healthiest was considered and reported."
-);
-INSERT INTO project_divisions(project, division) VALUES(752, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	752,
-	1,
-	"Dana Madill",
-	"Peterborough",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	708,
-	2006,
-	"Macronutrients:Assessing the Average Teenage Consumption",
-	3,
-	"Toronto",
-	"Francis Libermann C.S.S.",
-	"The purpose of this project is to explore carbohydrates, protein and fat and the role each plays in our overall health. Through analyzing the current teenage population’s everyday food consumption; my project aims to make predictions in regards to what health complications may result from the teenage population’s macronutrient consumption."
-);
-INSERT INTO project_divisions(project, division) VALUES(708, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	708,
-	1,
-	"Mary Scourboutakos",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -7359,7 +7287,90 @@ VALUES (
 	1,
 	"Benedict Reiners",
 	"Abbotsford",
-	"BC",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	462,
+	2006,
+	"Mach 1: The Speed of Sound",
+	2,
+	"Central Alberta",
+	"Spruce View School",
+	"The purpose of this project was to calculate the speed of sound in air using the principle of acoustical resonance, a tuning fork, and a pipe with one open and one closed end. The speed of sound was found to be 336.5 meters per second, a very reasonable calculation considering the altitude and the temperature of the room the experiment took place in."
+);
+INSERT INTO project_divisions(project, division) VALUES(462, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	462,
+	1,
+	"Kathleen Szymanek",
+	"Eckville",
+	11,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	736,
+	2006,
+	"Math Assessment Preparation Techniques as Homework",
+	1,
+	"Bay Area",
+	"Centennial P.S.",
+	"Students were assigned different methods to use in preparation for a math test. Variables included: time, repetition and procedure (reading, writing and thinking). Our study concluded that thirty minute periods including reading, writing and thinking about the concepts proved to be the most effective method, writing being the key factor."
+);
+INSERT INTO project_divisions(project, division) VALUES(736, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	736,
+	1,
+	"Kylie de Chastelain",
+	"Georgetown",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	736,
+	2,
+	"Matthew Weber",
+	"Georgetown",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	733,
+	2006,
+	"Managing Greenhouse Gas Exchange in a Constructed Wetland Model: Part 2",
+	3,
+	"Bay Area",
+	"Bishop Ryan Catholic S.S.",
+	"A constructed wetland is a marsh built to filter water contaminants. Some wetlands are designed to filter nitrates. Unfortunately, the input of nitrates into a wetland environment results in the release of nitrous oxide. The purpose of this experiment was to construct a greenhouse gas efficient, nitrate-filtering constructed wetland model."
+);
+INSERT INTO project_divisions(project, division) VALUES(733, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	733,
+	1,
+	"Madeleine Martin",
+	"Hamilton",
+	9,
 	NULL,
 	NULL
 );
@@ -7383,7 +7394,7 @@ VALUES (
 	1,
 	"Kara Nadeau",
 	"Fannystelle",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -7431,34 +7442,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	736,
+	752,
 	2006,
-	"Math Assessment Preparation Techniques as Homework",
+	"Making Fast Food Healthy",
 	1,
-	"Bay Area",
-	"Centennial P.S.",
-	"Students were assigned different methods to use in preparation for a math test. Variables included: time, repetition and procedure (reading, writing and thinking). Our study concluded that thirty minute periods including reading, writing and thinking about the concepts proved to be the most effective method, writing being the key factor."
+	"Peterborough",
+	"Lakefield College School",
+	"This experiment explored how healthy side dishes were from a popular fast food restaurant. The five side dishes tested were: fries, chicken Caesar salad, garden salad, chilli, and baked potato. These side dishes were tested to find starch, sugar, protein, and lipid content. Which side dish was the healthiest was considered and reported."
 );
-INSERT INTO project_divisions(project, division) VALUES(736, 8);
+INSERT INTO project_divisions(project, division) VALUES(752, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	736,
+	752,
 	1,
-	"Kylie de Chastelain",
-	"Georgetown",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	736,
-	2,
-	"Matthew Weber",
-	"Georgetown",
-	"ON",
+	"Dana Madill",
+	"Peterborough",
+	9,
 	NULL,
 	NULL
 );
@@ -7466,81 +7466,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	733,
+	708,
 	2006,
-	"Managing Greenhouse Gas Exchange in a Constructed Wetland Model: Part 2",
+	"Macronutrients:Assessing the Average Teenage Consumption",
 	3,
-	"Bay Area",
-	"Bishop Ryan Catholic S.S.",
-	"A constructed wetland is a marsh built to filter water contaminants. Some wetlands are designed to filter nitrates. Unfortunately, the input of nitrates into a wetland environment results in the release of nitrous oxide. The purpose of this experiment was to construct a greenhouse gas efficient, nitrate-filtering constructed wetland model."
+	"Toronto",
+	"Francis Libermann C.S.S.",
+	"The purpose of this project is to explore carbohydrates, protein and fat and the role each plays in our overall health. Through analyzing the current teenage population’s everyday food consumption; my project aims to make predictions in regards to what health complications may result from the teenage population’s macronutrient consumption."
 );
-INSERT INTO project_divisions(project, division) VALUES(733, 4);
+INSERT INTO project_divisions(project, division) VALUES(708, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	733,
+	708,
 	1,
-	"Madeleine Martin",
-	"Hamilton",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	637,
-	2006,
-	"Medieval Arches on Shifty Ground",
-	2,
-	"Vancouver Island",
-	"Esquimalt Community School",
-	"How do different arches react to differential settling of their foundations? I made three arches, Romanesque, Gothic, and Catenary, of styrofoam and moved their legs horizontally or vertically. The resulting deformations and collapses showed that the Catenary and Gothic are the most stable. The arches fell in specific patterns, and this knowledge will help structural engineers predict where arches will hinge, slide or twist."
-);
-INSERT INTO project_divisions(project, division) VALUES(637, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	637,
-	1,
-	"Simon Bild-Enkin",
-	"Victoria",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	637,
-	1,
-	"Honourable Mention - Engineering",
-	"Intermediate",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	530,
-	2006,
-	"Menu Please",
-	1,
-	"Chignecto Central West",
-	"Hants North Rural High School",
-	"In this experiment four types of seed were placed in a feeding station to see which the red squirrel (genus Tamiaciurus) preferred to eat. It was found that they liked sunflower seeds over the other types. The squirrels also became very territorial around the feeder."
-);
-INSERT INTO project_divisions(project, division) VALUES(530, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	530,
-	1,
-	"Sam Sipos",
-	"Maitland",
-	"NS",
+	"Mary Scourboutakos",
+	"Toronto",
+	9,
 	NULL,
 	NULL
 );
@@ -7564,7 +7506,7 @@ VALUES (
 	1,
 	"Tyson Gratton",
 	"Jordan",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7602,6 +7544,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	530,
+	2006,
+	"Menu Please",
+	1,
+	"Chignecto Central West",
+	"Hants North Rural High School",
+	"In this experiment four types of seed were placed in a feeding station to see which the red squirrel (genus Tamiaciurus) preferred to eat. It was found that they liked sunflower seeds over the other types. The squirrels also became very territorial around the feeder."
+);
+INSERT INTO project_divisions(project, division) VALUES(530, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	530,
+	1,
+	"Sam Sipos",
+	"Maitland",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	802,
 	2006,
 	"Mets de l'ordre dans ta bouche",
@@ -7618,7 +7584,7 @@ VALUES (
 	1,
 	"Éveline Arpin",
 	"Saint-Ours",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -7630,6 +7596,40 @@ VALUES (
 	"Honourable Mention - Health Sciences",
 	"Intermediate",
 	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	637,
+	2006,
+	"Medieval Arches on Shifty Ground",
+	2,
+	"Vancouver Island",
+	"Esquimalt Community School",
+	"How do different arches react to differential settling of their foundations? I made three arches, Romanesque, Gothic, and Catenary, of styrofoam and moved their legs horizontally or vertically. The resulting deformations and collapses showed that the Catenary and Gothic are the most stable. The arches fell in specific patterns, and this knowledge will help structural engineers predict where arches will hinge, slide or twist."
+);
+INSERT INTO project_divisions(project, division) VALUES(637, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	637,
+	1,
+	"Simon Bild-Enkin",
+	"Victoria",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	637,
+	1,
+	"Honourable Mention - Engineering",
+	"Intermediate",
+	"Youth Science Foundation Canada",
 	100.00
 );
 
@@ -7652,7 +7652,7 @@ VALUES (
 	1,
 	"Pascale Boudreault",
 	"Roberval",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -7663,7 +7663,7 @@ VALUES (
 	2,
 	"Stéphanie Girard",
 	"Roberval",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -7697,7 +7697,7 @@ VALUES (
 	1,
 	"Ronan Lefol",
 	"Saskatoon",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -7751,7 +7751,7 @@ VALUES (
 	1,
 	"Collin Dares",
 	"Sable River",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -7775,7 +7775,7 @@ VALUES (
 	1,
 	"Sarah Marriott",
 	"Burnaby",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -7788,41 +7788,6 @@ VALUES (
 	"Junior",
 	"Petro-Canada",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	823,
-	2006,
-	"Myofibroblasts As Agents of Cardiac Wound Healing Post MI",
-	3,
-	"Winnipeg Schools",
-	"Kelvin High School",
-	"This study deals with currently unknown aspects of myofibroblast physiology responsible for the wound healing process after myocardial infarction with respect to activation of calcium transport proteins. The modes of calcium flux into and out of the cells through various channels embedded in the plasma membrane are investigated to study the role of calcium in cell migration and contractility in the heart after myocardial infarction."
-);
-INSERT INTO project_divisions(project, division) VALUES(823, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	823,
-	1,
-	"Rose Chang",
-	"Winnipeg",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	823,
-	2,
-	"Xijun Deng",
-	"Winnipeg",
-	"MB",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -7844,7 +7809,7 @@ VALUES (
 	1,
 	"Laurent Fradet",
 	"Sherbrooke",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -7857,61 +7822,6 @@ VALUES (
 	"Intermediate",
 	"Chemical Institute of Canada",
 	250.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	635,
-	2006,
-	"Nothing But Net",
-	3,
-	"Rideau-St. Lawrence",
-	"Smiths Falls District Collegiate Institute",
-	"Through the use of a catapult device designed to model a human’s basketball shot, optimum angles and forces were found for people of all heights. To apply findings to the game, optimum parabolic arcs were derived. The arcs were placed in front of a video camera, providing a cheap and effective way for players to train."
-);
-INSERT INTO project_divisions(project, division) VALUES(635, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	635,
-	1,
-	"Douglas Fournier",
-	"Smiths Falls",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	635,
-	2,
-	"Alie McMeekin",
-	"Merrickville",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	635,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	635,
-	2,
-	"Silver Medal - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	700.00
 );
 
 INSERT INTO projects
@@ -7933,7 +7843,7 @@ VALUES (
 	1,
 	"Christopher Syposz",
 	"Thunder Bay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -7961,46 +7871,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	801,
+	823,
 	2006,
-	"Nouveau souffle pour l'asthme",
+	"Myofibroblasts As Agents of Cardiac Wound Healing Post MI",
 	3,
-	"CDLS - Province du Québec",
-	"Cégep de Sherbrooke",
-	"L’asthme, cette atteinte du système respiratoire, provoque de lourdes conséquences. Plus de 135 millions de gens en souffrent: les coûts associés dépassent ceux de la tuberculose et du SIDA réunis. Trouvant cette situation alarmante, il sera tenté de mieux comprendre la maladie et de pré-étudier une nouvelle voie de traitement."
+	"Winnipeg Schools",
+	"Kelvin High School",
+	"This study deals with currently unknown aspects of myofibroblast physiology responsible for the wound healing process after myocardial infarction with respect to activation of calcium transport proteins. The modes of calcium flux into and out of the cells through various channels embedded in the plasma membrane are investigated to study the role of calcium in cell migration and contractility in the heart after myocardial infarction."
 );
-INSERT INTO project_divisions(project, division) VALUES(801, 8);
+INSERT INTO project_divisions(project, division) VALUES(823, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	801,
+	823,
 	1,
-	"Myriam Alarie",
-	"Sherbrooke",
-	"QC",
+	"Rose Chang",
+	"Winnipeg",
+	8,
 	NULL,
 	NULL
 );
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	801,
+	823,
 	2,
-	"Caroline Pouliot",
-	"Sherbrook",
-	"QC",
+	"Xijun Deng",
+	"Winnipeg",
+	8,
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	801,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Senior",
-	"Canadian Institutes of Health Research",
-	100.00
 );
 
 INSERT INTO projects
@@ -8022,7 +7922,7 @@ VALUES (
 	1,
 	"Ted Paranjothy",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -8070,6 +7970,106 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	635,
+	2006,
+	"Nothing But Net",
+	3,
+	"Rideau-St. Lawrence",
+	"Smiths Falls District Collegiate Institute",
+	"Through the use of a catapult device designed to model a human’s basketball shot, optimum angles and forces were found for people of all heights. To apply findings to the game, optimum parabolic arcs were derived. The arcs were placed in front of a video camera, providing a cheap and effective way for players to train."
+);
+INSERT INTO project_divisions(project, division) VALUES(635, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	635,
+	1,
+	"Douglas Fournier",
+	"Smiths Falls",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	635,
+	2,
+	"Alie McMeekin",
+	"Merrickville",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	635,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	635,
+	2,
+	"Silver Medal - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	801,
+	2006,
+	"Nouveau souffle pour l'asthme",
+	3,
+	"CDLS - Province du Québec",
+	"Cégep de Sherbrooke",
+	"L’asthme, cette atteinte du système respiratoire, provoque de lourdes conséquences. Plus de 135 millions de gens en souffrent: les coûts associés dépassent ceux de la tuberculose et du SIDA réunis. Trouvant cette situation alarmante, il sera tenté de mieux comprendre la maladie et de pré-étudier une nouvelle voie de traitement."
+);
+INSERT INTO project_divisions(project, division) VALUES(801, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	801,
+	1,
+	"Myriam Alarie",
+	"Sherbrooke",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	801,
+	2,
+	"Caroline Pouliot",
+	"Sherbrook",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	801,
+	1,
+	"Honourable Mention - Health Sciences",
+	"Senior",
+	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	505,
 	2006,
 	"Now You See Me Now You Don't",
@@ -8086,7 +8086,7 @@ VALUES (
 	1,
 	"Laura Larson",
 	"Hanna",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -8124,47 +8124,34 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	450,
+	763,
 	2006,
-	"Nutrient Removal",
-	3,
-	"Western Manitoba",
-	"Waskada School",
-	"This project compares relations between nitrate usage in field crops, and environmental conditions. Using professional soil analysis taken before planting and after harvest, with comparison to yields, it was apparent that not all nitrate was used in the yield, but was leached out of the soil, or denitrified, due to laying water."
+	"Olfactory perception",
+	1,
+	"New Brunswick",
+	"John Caldwell School",
+	"This project studied the difference in levels of olfactory perception between males and females from different age groups. We used 12 different scents and tested 120 subjects between the ages of 11/90, and then compared the results. We found that females had a 10% better sense of smell than males in all age groups, and that olfactory acuity began to diminish after age 20."
 );
-INSERT INTO project_divisions(project, division) VALUES(450, 4);
+INSERT INTO project_divisions(project, division) VALUES(763, 8);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	450,
+	763,
 	1,
-	"Erin Wanner",
-	"Waskada",
-	"MB",
+	"Matt Strong",
+	"Grand Falls",
+	3,
 	NULL,
 	NULL
 );
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	446,
-	2006,
-	"Oil Spoils",
-	1,
-	"Chinook Country",
-	"Red Deer Lake School",
-	"The project investigated the affect oil has on the germination rate of two different types of seeds (bean and corn seeds). The seeds after being planted were subjected to six different amounts of oil with one controlled group as well. My results showed that the greater the concentration of oil the slower the germination rate was for the seeds."
-);
-INSERT INTO project_divisions(project, division) VALUES(446, 4);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	446,
-	1,
-	"Larah Martinson",
-	"Calgary",
-	"AB",
+	763,
+	2,
+	"Kaylee Graham",
+	"Grand Falls",
+	3,
 	NULL,
 	NULL
 );
@@ -8188,7 +8175,7 @@ VALUES (
 	1,
 	"Ryan Lam",
 	"North York",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8199,7 +8186,7 @@ VALUES (
 	2,
 	"Xavier-Alexis Rivas",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8207,34 +8194,47 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	763,
+	450,
 	2006,
-	"Olfactory perception",
-	1,
-	"New Brunswick",
-	"John Caldwell School",
-	"This project studied the difference in levels of olfactory perception between males and females from different age groups. We used 12 different scents and tested 120 subjects between the ages of 11/90, and then compared the results. We found that females had a 10% better sense of smell than males in all age groups, and that olfactory acuity began to diminish after age 20."
+	"Nutrient Removal",
+	3,
+	"Western Manitoba",
+	"Waskada School",
+	"This project compares relations between nitrate usage in field crops, and environmental conditions. Using professional soil analysis taken before planting and after harvest, with comparison to yields, it was apparent that not all nitrate was used in the yield, but was leached out of the soil, or denitrified, due to laying water."
 );
-INSERT INTO project_divisions(project, division) VALUES(763, 8);
+INSERT INTO project_divisions(project, division) VALUES(450, 4);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	763,
+	450,
 	1,
-	"Matt Strong",
-	"Grand Falls",
-	"NB",
+	"Erin Wanner",
+	"Waskada",
+	8,
 	NULL,
 	NULL
 );
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	446,
+	2006,
+	"Oil Spoils",
+	1,
+	"Chinook Country",
+	"Red Deer Lake School",
+	"The project investigated the affect oil has on the germination rate of two different types of seeds (bean and corn seeds). The seeds after being planted were subjected to six different amounts of oil with one controlled group as well. My results showed that the greater the concentration of oil the slower the germination rate was for the seeds."
+);
+INSERT INTO project_divisions(project, division) VALUES(446, 4);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	763,
-	2,
-	"Kaylee Graham",
-	"Grand Falls",
-	"NB",
+	446,
+	1,
+	"Larah Martinson",
+	"Calgary",
+	11,
 	NULL,
 	NULL
 );
@@ -8258,7 +8258,7 @@ VALUES (
 	1,
 	"Zayna Mougharbel",
 	"Laval",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -8292,7 +8292,7 @@ VALUES (
 	1,
 	"Xingyu Zhou",
 	"Saskatoon",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -8336,7 +8336,7 @@ VALUES (
 	1,
 	"Charles Walsh",
 	"Kelowna",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -8347,7 +8347,7 @@ VALUES (
 	2,
 	"Jessica Briker",
 	"Westbank",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -8381,7 +8381,7 @@ VALUES (
 	1,
 	"Justin Hingley",
 	"Truro",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -8425,7 +8425,7 @@ VALUES (
 	1,
 	"Kelsey Bjorkman",
 	"Creston",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -8449,7 +8449,7 @@ VALUES (
 	1,
 	"Matt Boughner",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8460,7 +8460,7 @@ VALUES (
 	2,
 	"Alex Desjardins",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8504,7 +8504,7 @@ VALUES (
 	1,
 	"Geneviève Verebély-Gagnon",
 	"Anjou",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -8515,7 +8515,7 @@ VALUES (
 	2,
 	"Myriam Harici",
 	"Anjou",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -8539,7 +8539,7 @@ VALUES (
 	1,
 	"Jacqueline Carverhill",
 	"Saskatoon",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -8563,7 +8563,7 @@ VALUES (
 	1,
 	"Hannah Prince",
 	"Hamilton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8574,7 +8574,7 @@ VALUES (
 	2,
 	"Eryn Stewart",
 	"Hamilton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8618,7 +8618,7 @@ VALUES (
 	1,
 	"Sean Bhalla",
 	"mississauga",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -8676,30 +8676,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	639,
-	2006,
-	"Plants Under Pressure (Treated Wood)",
-	1,
-	"East Parry Sound",
-	"South Shore Education Centre",
-	"Chromated Copper Arsenate (CCA) is a widely used wood perservative. The purpose of this experiment is to determine if CCA treated wood affects the germination of seeds and growth of plants. Data suggests that CCA treated wood products did not have negative effects on seed germination or growth of plants."
-);
-INSERT INTO project_divisions(project, division) VALUES(639, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	639,
-	1,
-	"Luke Kilroy",
-	"Powassan",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	498,
 	2006,
 	"Pine Beetle Blues",
@@ -8716,7 +8692,7 @@ VALUES (
 	1,
 	"Gillian Haugen-Koechl",
 	"Charlie Lake",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -8744,70 +8720,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	713,
-	2006,
-	"Pollution-Free Hydrogen World",
-	1,
-	"Peel",
-	"Tomken Road Senior P.S.",
-	"This project focused on increasing the amount of hydrogen produced from the green algae Chlamydomonas Reinhardtii, for use in hydrogen power. The optimum amount of hydrogen was produced when light intensities were high, temperatures were increased, and when daily light per day was longer. The hydrogen produced was determined by a flame test where the hydrogen gas would pop."
-);
-INSERT INTO project_divisions(project, division) VALUES(713, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	713,
-	1,
-	"Kevin Brijbassi",
-	"Brampton",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	713,
-	1,
-	"AECL Award for Excellence in Science",
-	"Junior",
-	"Atomic Energy of Canada Ltd.",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	713,
-	2,
-	"Renewable Energy Award",
-	"Junior",
-	"Ontario Power Generation",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	713,
-	3,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	713,
-	4,
-	"Gold Medal - Biotechnology & Pharmaceutical Sciences",
-	"Junior",
-	"Rx&D Health Research Foundation",
-	1500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	809,
 	2006,
 	"Pollution? Solution...",
@@ -8824,7 +8736,7 @@ VALUES (
 	1,
 	"Axel Royer-Gagné",
 	"Sherbrook",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -8842,86 +8754,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	609,
+	639,
 	2006,
-	"Poly(vinyl chloride) Bioplasticizers",
-	3,
-	"Greater Vancouver",
-	"Sir Winston Churchill Secondary",
-	"PVCs are dangerous to the environment, and also pose human health risks through the leaching of DEHP, a primary plasticizer. We replaced DEHP with safe, readily-available vegetable oils and tested for plastic performance. From our results, safflower oil appears to be a safe, biodegradable DEHP replacement."
+	"Plants Under Pressure (Treated Wood)",
+	1,
+	"East Parry Sound",
+	"South Shore Education Centre",
+	"Chromated Copper Arsenate (CCA) is a widely used wood perservative. The purpose of this experiment is to determine if CCA treated wood affects the germination of seeds and growth of plants. Data suggests that CCA treated wood products did not have negative effects on seed germination or growth of plants."
 );
-INSERT INTO project_divisions(project, division) VALUES(609, 4);
+INSERT INTO project_divisions(project, division) VALUES(639, 4);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	609,
+	639,
 	1,
-	"Robyn Thom",
-	"Vancouver",
-	"BC",
+	"Luke Kilroy",
+	"Powassan",
+	9,
 	NULL,
 	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	609,
-	2,
-	"Thomas Sun",
-	"Vancouver",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	609,
-	1,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	609,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	609,
-	3,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	609,
-	4,
-	"Silver Medal - Earth & Environmental Sciences",
-	"Senior",
-	"Petro-Canada",
-	700.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	609,
-	5,
-	"Gold Medal - Automotive",
-	"Senior",
-	"AUTO21",
-	1500.00
 );
 
 INSERT INTO projects
@@ -8943,7 +8794,7 @@ VALUES (
 	1,
 	"Benjamin Leis",
 	"Saskatoon",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -9031,6 +8882,70 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	713,
+	2006,
+	"Pollution-Free Hydrogen World",
+	1,
+	"Peel",
+	"Tomken Road Senior P.S.",
+	"This project focused on increasing the amount of hydrogen produced from the green algae Chlamydomonas Reinhardtii, for use in hydrogen power. The optimum amount of hydrogen was produced when light intensities were high, temperatures were increased, and when daily light per day was longer. The hydrogen produced was determined by a flame test where the hydrogen gas would pop."
+);
+INSERT INTO project_divisions(project, division) VALUES(713, 500);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	713,
+	1,
+	"Kevin Brijbassi",
+	"Brampton",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	713,
+	1,
+	"AECL Award for Excellence in Science",
+	"Junior",
+	"Atomic Energy of Canada Ltd.",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	713,
+	2,
+	"Renewable Energy Award",
+	"Junior",
+	"Ontario Power Generation",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	713,
+	3,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	713,
+	4,
+	"Gold Medal - Biotechnology & Pharmaceutical Sciences",
+	"Junior",
+	"Rx&D Health Research Foundation",
+	1500.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	631,
 	2006,
 	"Power From the Throne",
@@ -9047,7 +8962,7 @@ VALUES (
 	1,
 	"Dustin Hughes",
 	"South Porcupine",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -9085,6 +9000,91 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	609,
+	2006,
+	"Poly(vinyl chloride) Bioplasticizers",
+	3,
+	"Greater Vancouver",
+	"Sir Winston Churchill Secondary",
+	"PVCs are dangerous to the environment, and also pose human health risks through the leaching of DEHP, a primary plasticizer. We replaced DEHP with safe, readily-available vegetable oils and tested for plastic performance. From our results, safflower oil appears to be a safe, biodegradable DEHP replacement."
+);
+INSERT INTO project_divisions(project, division) VALUES(609, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	609,
+	1,
+	"Robyn Thom",
+	"Vancouver",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	609,
+	2,
+	"Thomas Sun",
+	"Vancouver",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	609,
+	1,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	609,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	609,
+	3,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	609,
+	4,
+	"Silver Medal - Earth & Environmental Sciences",
+	"Senior",
+	"Petro-Canada",
+	700.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	609,
+	5,
+	"Gold Medal - Automotive",
+	"Senior",
+	"AUTO21",
+	1500.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	599,
 	2006,
 	"Prairie Puddles",
@@ -9101,7 +9101,7 @@ VALUES (
 	1,
 	"Gillian Kent",
 	"Spruce Grove",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -9125,7 +9125,7 @@ VALUES (
 	1,
 	"Gina Babinec",
 	"Pictou",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -9149,7 +9149,7 @@ VALUES (
 	1,
 	"Jessica Moloney",
 	"St. Albert",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -9183,7 +9183,7 @@ VALUES (
 	1,
 	"Nadia Novikova",
 	"Maple",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -9237,7 +9237,7 @@ VALUES (
 	1,
 	"Tovel Boucher",
 	"Sidney",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -9281,7 +9281,7 @@ VALUES (
 	1,
 	"Daniela Bernard",
 	"Whycocomagh",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -9292,7 +9292,7 @@ VALUES (
 	2,
 	"Justine Gould",
 	"Whycocomagh",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -9316,7 +9316,7 @@ VALUES (
 	1,
 	"Jonathan Tomkun",
 	"Waterloo",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -9354,6 +9354,40 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	698,
+	2006,
+	"Radar Telescope",
+	3,
+	"Toronto",
+	"Giles School, The",
+	"This project's objective is to develop an improved method for detecting Near-Earth Asteroids by utilizing radar technology. By reflecting an electromagnetic pulse off of an asteroid, it is possible to calculate its distance from the Earth, relative velocity and diameter. A scaled experiment was conducted to prove the concept."
+);
+INSERT INTO project_divisions(project, division) VALUES(698, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	698,
+	1,
+	"Taras Pankov",
+	"Toronto",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	698,
+	1,
+	"Award for Excellence in Astronomy",
+	"Senior",
+	"Royal Astronomical Society of Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	608,
 	2006,
 	"Radical Eradication: Piercing the Darkness of the Neuronal Network",
@@ -9370,7 +9404,7 @@ VALUES (
 	1,
 	"Maxim Winther",
 	"Vancouver",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -9418,40 +9452,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	698,
-	2006,
-	"Radar Telescope",
-	3,
-	"Toronto",
-	"Giles School, The",
-	"This project's objective is to develop an improved method for detecting Near-Earth Asteroids by utilizing radar technology. By reflecting an electromagnetic pulse off of an asteroid, it is possible to calculate its distance from the Earth, relative velocity and diameter. A scaled experiment was conducted to prove the concept."
-);
-INSERT INTO project_divisions(project, division) VALUES(698, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	698,
-	1,
-	"Taras Pankov",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	698,
-	1,
-	"Award for Excellence in Astronomy",
-	"Senior",
-	"Royal Astronomical Society of Canada",
-	200.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	447,
 	2006,
 	"Rain of Terror",
@@ -9468,7 +9468,7 @@ VALUES (
 	1,
 	"Glendon Hass",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -9512,7 +9512,7 @@ VALUES (
 	1,
 	"Lauren Wiens",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -9536,31 +9536,7 @@ VALUES (
 	1,
 	"Ethan McNutt",
 	"Truro",
-	"NS",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	812,
-	2006,
-	"Remote-Controlled Alarm System",
-	3,
-	"CDLS - Province du Québec",
-	NULL,
-	"Mon projet consiste en une modifications qu'on peut appliquer aux systèmes de sécurité des bureaux et des appartements. Cette modification permet d'avertir le propriétaire sur son téléphone cellulaire lors d'une infraction et d'établir un contact audio avec l'appartement. Le système peut recevoir les commandes d'utilisateur grâce au clavier du téléphone."
-);
-INSERT INTO project_divisions(project, division) VALUES(812, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	812,
 	1,
-	"Alexey Sokolov",
-	"Montréal",
-	"QC",
 	NULL,
 	NULL
 );
@@ -9584,7 +9560,7 @@ VALUES (
 	1,
 	"Sami Obaïd",
 	"Laval",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -9678,7 +9654,7 @@ VALUES (
 	1,
 	"Ian Chenier",
 	"Cambridge Bay",
-	"NU",
+	7,
 	NULL,
 	NULL
 );
@@ -9706,6 +9682,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	812,
+	2006,
+	"Remote-Controlled Alarm System",
+	3,
+	"CDLS - Province du Québec",
+	NULL,
+	"Mon projet consiste en une modifications qu'on peut appliquer aux systèmes de sécurité des bureaux et des appartements. Cette modification permet d'avertir le propriétaire sur son téléphone cellulaire lors d'une infraction et d'établir un contact audio avec l'appartement. Le système peut recevoir les commandes d'utilisateur grâce au clavier du téléphone."
+);
+INSERT INTO project_divisions(project, division) VALUES(812, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	812,
+	1,
+	"Alexey Sokolov",
+	"Montréal",
+	10,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	815,
 	2006,
 	"Route-as-Pneu",
@@ -9722,7 +9722,7 @@ VALUES (
 	1,
 	"Simon Brassard",
 	"Gatineau",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -9756,7 +9756,7 @@ VALUES (
 	1,
 	"Renée Rogers",
 	"Victoria",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -9780,7 +9780,7 @@ VALUES (
 	1,
 	"Jamila Karim",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -9804,7 +9804,7 @@ VALUES (
 	1,
 	"Amber-Joy Gruben",
 	"Inuvik",
-	"NT",
+	5,
 	NULL,
 	NULL
 );
@@ -9815,7 +9815,7 @@ VALUES (
 	2,
 	"Karis Gruben",
 	"inuvik",
-	"NT",
+	5,
 	NULL,
 	NULL
 );
@@ -9839,7 +9839,7 @@ VALUES (
 	1,
 	"Matthew Chi",
 	"Elliot Lake",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -9851,84 +9851,6 @@ VALUES (
 	"Honourable Mention - Health Sciences",
 	"Junior",
 	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	757,
-	2006,
-	"Save a Watt, Save a Lot!",
-	2,
-	"New Brunswick",
-	"Bathurst High School",
-	"The goal of this project was to put a monetary value on electricity consumption around the house so that the average consumer could see where to change usage habits or replace old appliances and/or lighting. We wanted to be able to see where the most energy was being used and where it could be easily saved."
-);
-INSERT INTO project_divisions(project, division) VALUES(757, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	757,
-	1,
-	"Jean-Marc Guindon",
-	"Bathurst",
-	"NB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	757,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	757,
-	2,
-	"Bronze Medal - Earth & Environmental Sciences",
-	"Intermediate",
-	"Petro-Canada",
-	300.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	624,
-	2006,
-	"Sanitary Sunshine / Sante et Soleil",
-	2,
-	"Northern Saskatchewan",
-	"Churchill Composite H.S.",
-	"This project uses solar energy to heat water to pasteurisation temperatures. Solar water pasteurisation decontaminates water in third world countries. Pasteurisation stops the spread of disease. For this project, construction plans were made and seven pasteurisers were built and tested. Results proved that the solar box cooker design was the most efficient."
-);
-INSERT INTO project_divisions(project, division) VALUES(624, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	624,
-	1,
-	"Haley Robinson",
-	"La Ronge",
-	"SK",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	624,
-	1,
-	"Honourable Mention - Engineering",
-	"Intermediate",
-	"Youth Science Foundation Canada",
 	100.00
 );
 
@@ -9951,7 +9873,7 @@ VALUES (
 	1,
 	"Nirusan Jayaranjan",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -9989,6 +9911,84 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	624,
+	2006,
+	"Sanitary Sunshine / Sante et Soleil",
+	2,
+	"Northern Saskatchewan",
+	"Churchill Composite H.S.",
+	"This project uses solar energy to heat water to pasteurisation temperatures. Solar water pasteurisation decontaminates water in third world countries. Pasteurisation stops the spread of disease. For this project, construction plans were made and seven pasteurisers were built and tested. Results proved that the solar box cooker design was the most efficient."
+);
+INSERT INTO project_divisions(project, division) VALUES(624, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	624,
+	1,
+	"Haley Robinson",
+	"La Ronge",
+	6,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	624,
+	1,
+	"Honourable Mention - Engineering",
+	"Intermediate",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	757,
+	2006,
+	"Save a Watt, Save a Lot!",
+	2,
+	"New Brunswick",
+	"Bathurst High School",
+	"The goal of this project was to put a monetary value on electricity consumption around the house so that the average consumer could see where to change usage habits or replace old appliances and/or lighting. We wanted to be able to see where the most energy was being used and where it could be easily saved."
+);
+INSERT INTO project_divisions(project, division) VALUES(757, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	757,
+	1,
+	"Jean-Marc Guindon",
+	"Bathurst",
+	3,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	757,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	757,
+	2,
+	"Bronze Medal - Earth & Environmental Sciences",
+	"Intermediate",
+	"Petro-Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	445,
 	2006,
 	"Save and Reuse: PET Plastic vs. Epoxy Resin in composites",
@@ -10005,7 +10005,7 @@ VALUES (
 	1,
 	"Jessica Reiniger",
 	"Norway House",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -10039,7 +10039,7 @@ VALUES (
 	1,
 	"Erik Yao",
 	"Belleville",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10083,7 +10083,7 @@ VALUES (
 	1,
 	"Jessica Li",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10094,32 +10094,9 @@ VALUES (
 	2,
 	"Jennifer Vuong",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	511,
-	2006,
-	"Scrapie A Fatal Disease In Sheep",
-	1,
-	NULL,
-	NULL,
-	"This project studied the disease Scrapie. DNA was extracted from blood samples in sheep. The levels of resistances were found by comparing the genotype of the sheep to banding patterns. The results of the study indicated that the level of resistances to Scrapie was an intermediate resistant."
-);
-INSERT INTO project_divisions(project, division) VALUES(511, 9);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	511,
-	1,
-	"Petro-Canada Peer Innovation Award - Junior",
-	"Atlantic",
-	"Petro-Canada",
-	200.00
 );
 
 INSERT INTO projects
@@ -10141,7 +10118,7 @@ VALUES (
 	1,
 	"Daniel Bezdek",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -10189,6 +10166,53 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	511,
+	2006,
+	"Scrapie A Fatal Disease In Sheep",
+	1,
+	NULL,
+	NULL,
+	"This project studied the disease Scrapie. DNA was extracted from blood samples in sheep. The levels of resistances were found by comparing the genotype of the sheep to banding patterns. The results of the study indicated that the level of resistances to Scrapie was an intermediate resistant."
+);
+INSERT INTO project_divisions(project, division) VALUES(511, 9);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	511,
+	1,
+	"Petro-Canada Peer Innovation Award - Junior",
+	"Atlantic",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	719,
+	2006,
+	"ShakeLess Structures: Designing an Earthquake Resistant Building",
+	1,
+	"Annapolis Valley",
+	"Wolfville School",
+	"Models of earthquake resistant buildings constructed of unattached wooden blocks were stabilized using several structural modifications: overlapping blocks, building height, buttresses, base isolators (marbles in a box), roofs and cross braces. Experiments were conducted on a homemade earthquake machine. Buildings of overlapped blocks on a base isolator were most stable."
+);
+INSERT INTO project_divisions(project, division) VALUES(719, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	719,
+	1,
+	"Devon Thomson",
+	"Wolfville",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	699,
 	2006,
 	"Set Body Weight & Eat All You Want",
@@ -10205,7 +10229,7 @@ VALUES (
 	1,
 	"William Reginold",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10243,74 +10267,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	719,
-	2006,
-	"ShakeLess Structures: Designing an Earthquake Resistant Building",
-	1,
-	"Annapolis Valley",
-	"Wolfville School",
-	"Models of earthquake resistant buildings constructed of unattached wooden blocks were stabilized using several structural modifications: overlapping blocks, building height, buttresses, base isolators (marbles in a box), roofs and cross braces. Experiments were conducted on a homemade earthquake machine. Buildings of overlapped blocks on a base isolator were most stable."
-);
-INSERT INTO project_divisions(project, division) VALUES(719, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	719,
-	1,
-	"Devon Thomson",
-	"Wolfville",
-	"NS",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	519,
-	2006,
-	"Shallow Blue: A Tic-Tac-Toe Playing Robot",
-	1,
-	"Ottawa",
-	"Bishop Hamilton Private",
-	"The purpose of this experiment was to design, build, and program a robot that played tic-tac-toe. The robot, Shallow Blue, was built using Lego Mindstorms and programmed using NQC. Two experiments tested the playing level of the robot and whether the robot could be distinguished from a human opponent. As hypothesized, Shallow Blue was an expert player that could not be distinguished from a human."
-);
-INSERT INTO project_divisions(project, division) VALUES(519, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	519,
-	1,
-	"Bryan Wilger",
-	"Carleton Place",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	519,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	519,
-	2,
-	"Gold Medal - Computing & Information Technology",
-	"Junior",
-	"Intel of Canada, Ltd.",
-	1500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	732,
 	2006,
 	"Shedding the Lights From Landfill Sites",
@@ -10327,7 +10283,7 @@ VALUES (
 	1,
 	"Patrick Bowman",
 	"Dundas",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10355,6 +10311,50 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	519,
+	2006,
+	"Shallow Blue: A Tic-Tac-Toe Playing Robot",
+	1,
+	"Ottawa",
+	"Bishop Hamilton Private",
+	"The purpose of this experiment was to design, build, and program a robot that played tic-tac-toe. The robot, Shallow Blue, was built using Lego Mindstorms and programmed using NQC. Two experiments tested the playing level of the robot and whether the robot could be distinguished from a human opponent. As hypothesized, Shallow Blue was an expert player that could not be distinguished from a human."
+);
+INSERT INTO project_divisions(project, division) VALUES(519, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	519,
+	1,
+	"Bryan Wilger",
+	"Carleton Place",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	519,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
+	"University of Western Ontario",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	519,
+	2,
+	"Gold Medal - Computing & Information Technology",
+	"Junior",
+	"Intel of Canada, Ltd.",
+	1500.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	444,
 	2006,
 	"Shift Happens",
@@ -10371,63 +10371,9 @@ VALUES (
 	1,
 	"Brady Cockerill",
 	"Thompson",
-	"MB",
+	8,
 	NULL,
 	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	577,
-	2006,
-	"Simtime",
-	2,
-	"Calgary Youth",
-	"Queen Elizabeth Junior Senior High School",
-	"Simtime is a computer program, written in C#, that calculates gravitational interactions between masses using Newtonian Gravity. It calculates the motion numerically, and displays the results in three dimensions. Simtime is useful for demonstrating gravitational interactions that are too complex to be described or imagined easily."
-);
-INSERT INTO project_divisions(project, division) VALUES(577, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	577,
-	1,
-	"Tavian Barnes",
-	"Calgary",
-	"AB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	577,
-	1,
-	"Award for Excellence in Astronomy",
-	"Intermediate",
-	"Royal Astronomical Society of Canada",
-	750.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	577,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	577,
-	3,
-	"Silver Medal - Computing & Information Technology",
-	"Intermediate",
-	"Intel of Canada, Ltd.",
-	700.00
 );
 
 INSERT INTO projects
@@ -10449,7 +10395,7 @@ VALUES (
 	1,
 	"Katie Pietrzakowski",
 	"Sault Ste. Marie",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10493,7 +10439,7 @@ VALUES (
 	1,
 	"Nicolas Durish",
 	"Stirling",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10517,7 +10463,7 @@ VALUES (
 	1,
 	"Jeffery McLennan",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -10528,9 +10474,63 @@ VALUES (
 	2,
 	"Arwin Kalra",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	577,
+	2006,
+	"Simtime",
+	2,
+	"Calgary Youth",
+	"Queen Elizabeth Junior Senior High School",
+	"Simtime is a computer program, written in C#, that calculates gravitational interactions between masses using Newtonian Gravity. It calculates the motion numerically, and displays the results in three dimensions. Simtime is useful for demonstrating gravitational interactions that are too complex to be described or imagined easily."
+);
+INSERT INTO project_divisions(project, division) VALUES(577, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	577,
+	1,
+	"Tavian Barnes",
+	"Calgary",
+	11,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	577,
+	1,
+	"Award for Excellence in Astronomy",
+	"Intermediate",
+	"Royal Astronomical Society of Canada",
+	750.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	577,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	577,
+	3,
+	"Silver Medal - Computing & Information Technology",
+	"Intermediate",
+	"Intel of Canada, Ltd.",
+	700.00
 );
 
 INSERT INTO projects
@@ -10552,7 +10552,7 @@ VALUES (
 	1,
 	"Kimberly Cai",
 	"Guelph",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10563,7 +10563,7 @@ VALUES (
 	2,
 	"Shazli Shethwala",
 	"Guelph",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10587,7 +10587,7 @@ VALUES (
 	1,
 	"Brock Hodgins",
 	"Wingham",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10600,51 +10600,6 @@ VALUES (
 	"Junior",
 	"Canadian Institutes of Health Research",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	828,
-	2006,
-	"Smart Shelter",
-	1,
-	"Manitoba First Nations",
-	"Long Plain School",
-	"In this project we experimented with the ability of different materials to absorb and store heat from the sun. We also looked at traditional First Nations building materials used in the earth lodge. We used the results of our study and the knowledge gained to design an energy efficient home for a local site."
-);
-INSERT INTO project_divisions(project, division) VALUES(828, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	828,
-	1,
-	"Denise Meeches",
-	"Portage la prairie",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	828,
-	2,
-	"Chantel Vivier",
-	"Edwin",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	828,
-	1,
-	"Petro-Canada Peer Innovation Award - Junior",
-	"Central Canada",
-	"Petro-Canada",
-	200.00
 );
 
 INSERT INTO projects
@@ -10666,7 +10621,7 @@ VALUES (
 	1,
 	"Eric Pushie",
 	"Sydney",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -10677,7 +10632,111 @@ VALUES (
 	2,
 	"Mike Parsons",
 	"Sydney",
-	"NS",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	828,
+	2006,
+	"Smart Shelter",
+	1,
+	"Manitoba First Nations",
+	"Long Plain School",
+	"In this project we experimented with the ability of different materials to absorb and store heat from the sun. We also looked at traditional First Nations building materials used in the earth lodge. We used the results of our study and the knowledge gained to design an energy efficient home for a local site."
+);
+INSERT INTO project_divisions(project, division) VALUES(828, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	828,
+	1,
+	"Denise Meeches",
+	"Portage la prairie",
+	8,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	828,
+	2,
+	"Chantel Vivier",
+	"Edwin",
+	8,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	828,
+	1,
+	"Petro-Canada Peer Innovation Award - Junior",
+	"Central Canada",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	510,
+	2006,
+	"Smiles, Darned Smiles and Statistics",
+	2,
+	"Chignecto East",
+	"North Colchester High School",
+	"A screening test for autism is proposed exploiting differences in autists’ and controls’ interpretation of facial expressions, using Duchenne and non-Duchenne smiles. This double blind trial was analysed using standard statistics and a new method of analysis, developed for use with standard computer spreadsheets and compared to the standard analysis."
+);
+INSERT INTO project_divisions(project, division) VALUES(510, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	510,
+	1,
+	"Thomas Moss",
+	"Tatamagouche",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	696,
+	2006,
+	"Soaking Up Spills",
+	1,
+	"Toronto",
+	"Annette Street Jr. & Sr. P.S.",
+	"Our science project is about oil spills, and an eco-friendly way to clean them. Our experiment tests household items and a lock of human hair to see which would best soak up oil. We wanted to do this experiment because we learned about the damage that oil spills cause."
+);
+INSERT INTO project_divisions(project, division) VALUES(696, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	696,
+	1,
+	"Sarah Cole",
+	"Toronto",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	696,
+	2,
+	"Sara Deris",
+	"Toronto",
+	9,
 	NULL,
 	NULL
 );
@@ -10701,7 +10760,7 @@ VALUES (
 	1,
 	"Alexandra Milak",
 	"Barrie",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10714,65 +10773,6 @@ VALUES (
 	"Intermediate",
 	NULL,
 	750.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	696,
-	2006,
-	"Soaking Up Spills",
-	1,
-	"Toronto",
-	"Annette Street Jr. & Sr. P.S.",
-	"Our science project is about oil spills, and an eco-friendly way to clean them. Our experiment tests household items and a lock of human hair to see which would best soak up oil. We wanted to do this experiment because we learned about the damage that oil spills cause."
-);
-INSERT INTO project_divisions(project, division) VALUES(696, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	696,
-	1,
-	"Sarah Cole",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	696,
-	2,
-	"Sara Deris",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	510,
-	2006,
-	"Smiles, Darned Smiles and Statistics",
-	2,
-	"Chignecto East",
-	"North Colchester High School",
-	"A screening test for autism is proposed exploiting differences in autists’ and controls’ interpretation of facial expressions, using Duchenne and non-Duchenne smiles. This double blind trial was analysed using standard statistics and a new method of analysis, developed for use with standard computer spreadsheets and compared to the standard analysis."
-);
-INSERT INTO project_divisions(project, division) VALUES(510, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	510,
-	1,
-	"Thomas Moss",
-	"Tatamagouche",
-	"NS",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -10794,7 +10794,7 @@ VALUES (
 	1,
 	"Teal Kreuger",
 	"Baker Lake",
-	"NU",
+	7,
 	NULL,
 	NULL
 );
@@ -10805,50 +10805,6 @@ VALUES (
 	1,
 	"Honourable Mention - Engineering",
 	"Intermediate",
-	"Youth Science Foundation Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	693,
-	2006,
-	"Stairway to Energy",
-	3,
-	"Niagara",
-	"A.N. Myer S.S.",
-	"My project is a set of stairs which produce electricity when someone goes up or down them. I have built a prototype which works however it is too large for the fair so a video of it will be shown on my laptop."
-);
-INSERT INTO project_divisions(project, division) VALUES(693, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	693,
-	1,
-	"Andrew Fuller",
-	"Niagara Falls",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	693,
-	1,
-	"AECL Award for Excellence in Science",
-	"Senior",
-	"Atomic Energy of Canada Ltd.",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	693,
-	2,
-	"Honourable Mention - Engineering",
-	"Senior",
 	"Youth Science Foundation Canada",
 	100.00
 );
@@ -10872,7 +10828,7 @@ VALUES (
 	1,
 	"Sheralynne Deveaux",
 	"Sydney River",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -10900,6 +10856,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	453,
+	2006,
+	"Stars:  The Furnaces of Light",
+	3,
+	"Peace Country",
+	"High Level Public School",
+	"This project investigated the causes of colour and size change in a star. Size was related to the change in balance between outward forces caused by nuclear fusion and the inward forces derived from gravity. If the gravitational forces are stronger than the outward forces, the star shrinks and the opposite also holds true. Colour is affected by the temperature of the star."
+);
+INSERT INTO project_divisions(project, division) VALUES(453, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	453,
+	1,
+	"Kylan McAskile",
+	"High Level",
+	11,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	742,
 	2006,
 	"Sounds into Syllables II-Windows to the World of Childhood Autism",
@@ -10916,7 +10896,7 @@ VALUES (
 	1,
 	"Kayla Cornale",
 	"Burlington",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -10994,6 +10974,50 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	693,
+	2006,
+	"Stairway to Energy",
+	3,
+	"Niagara",
+	"A.N. Myer S.S.",
+	"My project is a set of stairs which produce electricity when someone goes up or down them. I have built a prototype which works however it is too large for the fair so a video of it will be shown on my laptop."
+);
+INSERT INTO project_divisions(project, division) VALUES(693, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	693,
+	1,
+	"Andrew Fuller",
+	"Niagara Falls",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	693,
+	1,
+	"AECL Award for Excellence in Science",
+	"Senior",
+	"Atomic Energy of Canada Ltd.",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	693,
+	2,
+	"Honourable Mention - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	486,
 	2006,
 	"Step Climbing Wheelchair",
@@ -11010,7 +11034,7 @@ VALUES (
 	1,
 	"Michael Ehman",
 	"Weyburn",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -11021,7 +11045,7 @@ VALUES (
 	2,
 	"Colby Mainil",
 	"Weyburn",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -11069,6 +11093,75 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	676,
+	2006,
+	"Stereoscopic Vision and 3D Imaging",
+	3,
+	"Eastern Newfoundland",
+	"Mount Pearl Sr. H.S.",
+	"This project demonstrates a working model of a video camera that creates stereoscopic vision with the use of two cameras and 3D shutter glasses. The camera was built as a prototype which we hope to develop into a camera system for piloting underwater remotely operated vehicles. The added depth perception allows for more realistic viewing of the underwater scene, and thus better piloting."
+);
+INSERT INTO project_divisions(project, division) VALUES(676, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	676,
+	1,
+	"Joshua Banfield",
+	"Mount Pearl",
+	2,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	676,
+	2,
+	"Jonathan Howse",
+	"Mount Pearl",
+	2,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	808,
+	2006,
+	"SUMAC: Cure of False Allure?",
+	1,
+	"CDLS - Province du Québec",
+	NULL,
+	"Excessive proliferation and migration of vascular cells toward the lumen, which leads to arterial occlusion, is the central dogma in Atherosclerosis. Sumac leaves are believed to have cardio-protective roles. Given that sumac's dominant component is tannin, the preventive effect of tannin on vascular cell migration and proliferation was investigated."
+);
+INSERT INTO project_divisions(project, division) VALUES(808, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	808,
+	1,
+	"Hanieh Zargham",
+	"Outremont",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	808,
+	1,
+	"Honourable Mention - Health Sciences",
+	"Junior",
+	"Canadian Institutes of Health Research",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	618,
 	2006,
 	"Stressful Science",
@@ -11085,7 +11178,7 @@ VALUES (
 	1,
 	"Ian Hanney",
 	"Shanty Bay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11113,99 +11206,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	453,
-	2006,
-	"Stars:  The Furnaces of Light",
-	3,
-	"Peace Country",
-	"High Level Public School",
-	"This project investigated the causes of colour and size change in a star. Size was related to the change in balance between outward forces caused by nuclear fusion and the inward forces derived from gravity. If the gravitational forces are stronger than the outward forces, the star shrinks and the opposite also holds true. Colour is affected by the temperature of the star."
-);
-INSERT INTO project_divisions(project, division) VALUES(453, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	453,
-	1,
-	"Kylan McAskile",
-	"High Level",
-	"AB",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	676,
-	2006,
-	"Stereoscopic Vision and 3D Imaging",
-	3,
-	"Eastern Newfoundland",
-	"Mount Pearl Sr. H.S.",
-	"This project demonstrates a working model of a video camera that creates stereoscopic vision with the use of two cameras and 3D shutter glasses. The camera was built as a prototype which we hope to develop into a camera system for piloting underwater remotely operated vehicles. The added depth perception allows for more realistic viewing of the underwater scene, and thus better piloting."
-);
-INSERT INTO project_divisions(project, division) VALUES(676, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	676,
-	1,
-	"Joshua Banfield",
-	"Mount Pearl",
-	"NL",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	676,
-	2,
-	"Jonathan Howse",
-	"Mount Pearl",
-	"NL",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	808,
-	2006,
-	"SUMAC: Cure of False Allure?",
-	1,
-	"CDLS - Province du Québec",
-	NULL,
-	"Excessive proliferation and migration of vascular cells toward the lumen, which leads to arterial occlusion, is the central dogma in Atherosclerosis. Sumac leaves are believed to have cardio-protective roles. Given that sumac's dominant component is tannin, the preventive effect of tannin on vascular cell migration and proliferation was investigated."
-);
-INSERT INTO project_divisions(project, division) VALUES(808, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	808,
-	1,
-	"Hanieh Zargham",
-	"Outremont",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	808,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Junior",
-	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	489,
 	2006,
 	"Substandard surfaces: Northern leopard frogs avoid man-made and disturbed surfaces in autumn migrati",
@@ -11222,7 +11222,7 @@ VALUES (
 	1,
 	"Fiona Emdin",
 	"Picton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11233,7 +11233,7 @@ VALUES (
 	2,
 	"Isaac Bass",
 	"Picton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11277,7 +11277,7 @@ VALUES (
 	1,
 	"Roopa Suppiah",
 	"Deep River",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11331,7 +11331,7 @@ VALUES (
 	1,
 	"Roland Troke Barriault",
 	"Kingston",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -11355,7 +11355,7 @@ VALUES (
 	1,
 	"Matthew Underwood",
 	"Wingham",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11389,7 +11389,7 @@ VALUES (
 	1,
 	"Warren Chu",
 	"Scarborough",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11413,7 +11413,7 @@ VALUES (
 	1,
 	"Alexander Harmsen",
 	"Georgetown",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11424,7 +11424,7 @@ VALUES (
 	2,
 	"Irene Harmsen",
 	"Georgetown",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11468,7 +11468,7 @@ VALUES (
 	1,
 	"Amy Hsueh",
 	"Scarborough",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11479,7 +11479,7 @@ VALUES (
 	2,
 	"Trincy Jeysingh",
 	"Toronto",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11513,9 +11513,54 @@ VALUES (
 	1,
 	"Monica Zhang",
 	"Leamington",
-	"ON",
+	9,
 	NULL,
 	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	613,
+	2006,
+	"The ""Solution"" to LSS-Induced Cell Cycle Arrest",
+	3,
+	"Greater Vancouver",
+	"Sir Winston Churchill Secondary",
+	"Our project focussed on the effects of laminar shear stress (LSS) on cell growth. Studies have shown that continuous exposure to LSS causes cell cycle arrest. LSS is dependent on the viscosity of the fluid yielding the force. By targeting the viscosity of blood, we attempted to alter the levels of LSS yielded by the blood’s flow in an in vitro simulation."
+);
+INSERT INTO project_divisions(project, division) VALUES(613, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	613,
+	1,
+	"Hanna Cho",
+	"Vancouver",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	613,
+	2,
+	"Bing Luo",
+	"Vancouver",
+	12,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	613,
+	1,
+	"Honourable Mention - Health Sciences",
+	"Senior",
+	"Canadian Institutes of Health Research",
+	100.00
 );
 
 INSERT INTO projects
@@ -11537,7 +11582,7 @@ VALUES (
 	1,
 	"Heidi Cossey",
 	"Innisfail",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -11548,7 +11593,7 @@ VALUES (
 	2,
 	"Nikki Holt",
 	"Innisfail",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -11576,111 +11621,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	613,
+	643,
 	2006,
-	"The ""Solution"" to LSS-Induced Cell Cycle Arrest",
-	3,
-	"Greater Vancouver",
-	"Sir Winston Churchill Secondary",
-	"Our project focussed on the effects of laminar shear stress (LSS) on cell growth. Studies have shown that continuous exposure to LSS causes cell cycle arrest. LSS is dependent on the viscosity of the fluid yielding the force. By targeting the viscosity of blood, we attempted to alter the levels of LSS yielded by the blood’s flow in an in vitro simulation."
-);
-INSERT INTO project_divisions(project, division) VALUES(613, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	613,
-	1,
-	"Hanna Cho",
-	"Vancouver",
-	"BC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	613,
+	"The Bermuda Triangle",
 	2,
-	"Bing Luo",
-	"Vancouver",
-	"BC",
-	NULL,
-	NULL
+	"Saskatoon",
+	"Walter Murray Collegiate",
+	"This project was designed to separate fact from fiction in regards to the Bermuda Triangle. I decided to do three experiments and two research projects. The topics I covered ranged from methane bubbles to rogue waves to magnetic interference. Four myths proved to be truthful; however these events could happen anywhere. After doing this project I learned that the Bermuda Triangle is just media hype."
 );
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	613,
-	1,
-	"Honourable Mention - Health Sciences",
-	"Senior",
-	"Canadian Institutes of Health Research",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	686,
-	2006,
-	"The Effect of a DC Field on the Germination and Development of the Alaska Pea, Pisum Sativum",
-	3,
-	"York",
-	"Brother André Catholic H.S.",
-	"Alaska garden peas were grown inside and outside a DC electric field, ceteris paribus, for 16 days in order to learn their effect on the germination and early development of peas, as measured quantitatively and qualitatively. Described are how the plants in the electric field fared worse than their counterparts and examples of how this knowledge can be applied."
-);
-INSERT INTO project_divisions(project, division) VALUES(686, 9);
+INSERT INTO project_divisions(project, division) VALUES(643, 4);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	686,
+	643,
 	1,
-	"Janet Leung",
-	"Markham",
-	"ON",
+	"Nigel Myers",
+	"Saskatoon",
+	6,
 	NULL,
 	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	686,
-	2,
-	"Ulrica Wong",
-	"Markham",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	686,
-	1,
-	"UBC Science (Vancouver) Entrance Award",
-	"Senior Silver Medallist - $2000 Entrance Scholarship",
-	"The University of British Columbia (Vancouver)",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	686,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	686,
-	3,
-	"Silver Medal - Life Sciences",
-	"Senior",
-	"Pfizer Canada",
-	700.00
 );
 
 INSERT INTO projects
@@ -11702,7 +11661,7 @@ VALUES (
 	1,
 	"Sage Birley",
 	"baldonnel",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -11715,30 +11674,6 @@ VALUES (
 	"Junior",
 	"Agriculture and Agri-Food Canada",
 	500.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	643,
-	2006,
-	"The Bermuda Triangle",
-	2,
-	"Saskatoon",
-	"Walter Murray Collegiate",
-	"This project was designed to separate fact from fiction in regards to the Bermuda Triangle. I decided to do three experiments and two research projects. The topics I covered ranged from methane bubbles to rogue waves to magnetic interference. Four myths proved to be truthful; however these events could happen anywhere. After doing this project I learned that the Bermuda Triangle is just media hype."
-);
-INSERT INTO project_divisions(project, division) VALUES(643, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	643,
-	1,
-	"Nigel Myers",
-	"Saskatoon",
-	"SK",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -11760,7 +11695,7 @@ VALUES (
 	1,
 	"Christina Terpstra",
 	"Garson",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11784,7 +11719,7 @@ VALUES (
 	1,
 	"Kailey-Lynn Theriault",
 	"Kirkland",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -11795,7 +11730,7 @@ VALUES (
 	2,
 	"Sophia Kadas",
 	"Ile Bizard",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -11808,30 +11743,6 @@ VALUES (
 	"Intermediate",
 	"Ontario Power Generation",
 	750.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	575,
-	2006,
-	"The Effects of Smoking",
-	3,
-	"Kitikmeot",
-	"Netsilik School",
-	"This project studies the effects of smoking. Smokers can have long and short term effects. The completed survey looked at what second-hand smoke is, how unborn babies are affected, and which cancer is more likely to develop. The project also studied the most dangerous chemicals in a cigarettes."
-);
-INSERT INTO project_divisions(project, division) VALUES(575, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	575,
-	1,
-	"Nancy Aqqaq",
-	"Taloyoak",
-	"NU",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -11853,7 +11764,7 @@ VALUES (
 	1,
 	"Connor Emdin",
 	"Picton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11891,6 +11802,95 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	575,
+	2006,
+	"The Effects of Smoking",
+	3,
+	"Kitikmeot",
+	"Netsilik School",
+	"This project studies the effects of smoking. Smokers can have long and short term effects. The completed survey looked at what second-hand smoke is, how unborn babies are affected, and which cancer is more likely to develop. The project also studied the most dangerous chemicals in a cigarettes."
+);
+INSERT INTO project_divisions(project, division) VALUES(575, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	575,
+	1,
+	"Nancy Aqqaq",
+	"Taloyoak",
+	7,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	686,
+	2006,
+	"The Effect of a DC Field on the Germination and Development of the Alaska Pea, Pisum Sativum",
+	3,
+	"York",
+	"Brother André Catholic H.S.",
+	"Alaska garden peas were grown inside and outside a DC electric field, ceteris paribus, for 16 days in order to learn their effect on the germination and early development of peas, as measured quantitatively and qualitatively. Described are how the plants in the electric field fared worse than their counterparts and examples of how this knowledge can be applied."
+);
+INSERT INTO project_divisions(project, division) VALUES(686, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	686,
+	1,
+	"Janet Leung",
+	"Markham",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	686,
+	2,
+	"Ulrica Wong",
+	"Markham",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	686,
+	1,
+	"UBC Science (Vancouver) Entrance Award",
+	"Senior Silver Medallist - $2000 Entrance Scholarship",
+	"The University of British Columbia (Vancouver)",
+	2000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	686,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	686,
+	3,
+	"Silver Medal - Life Sciences",
+	"Senior",
+	"Pfizer Canada",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	533,
 	2006,
 	"The Factorial Factor",
@@ -11907,7 +11907,7 @@ VALUES (
 	1,
 	"Eddie Kim",
 	"New Dundee",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11941,7 +11941,7 @@ VALUES (
 	1,
 	"Llew Falla",
 	"Sarnia",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -11949,45 +11949,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	655,
+	673,
 	2006,
-	"The Flip On Teflon",
-	1,
-	"Sudbury",
-	"Marymount Academy",
-	"This project tested the effects of fumes emitted from 2 types of Teflon pans and a regular stainless steel pan, on pole bean plants. The Teflon pan fumes stunted the growth of the bean plants. Those plants exposed to one of the Teflon pans also developed holes and white patches on the leaves. However, the stainless steel pan had no effects on the plants."
+	"The Future of Fuels: Biodiesel",
+	3,
+	"Rideau-St. Lawrence",
+	"Smiths Falls District Collegiate Institute",
+	"The idea of this project was to take used kitchen grease and turn it into a viable fuel to be used in vehicles. First the grease is filtered to remove unwanted particles. Then methanol and lye are added. The unwanted particles settle at the bottom, and the Bio-Diesel is pumped through a final oil filter and is ready to be used in a Diesel engine."
 );
-INSERT INTO project_divisions(project, division) VALUES(655, 9);
+INSERT INTO project_divisions(project, division) VALUES(673, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	655,
+	673,
 	1,
-	"Alexandria Tsimiklis",
-	"Sudbury",
-	"ON",
+	"Erik Jamik",
+	"Smiths Falls",
+	9,
 	NULL,
 	NULL
 );
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
 VALUES (
-	655,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Gold Medallist - $2000 Entrance Scholarship",
-	"University of Western Ontario",
-	2000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	655,
+	673,
 	2,
-	"Gold Medal - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	1500.00
+	"Jacob Covell",
+	"Lombardy",
+	9,
+	NULL,
+	NULL
 );
 
 INSERT INTO projects
@@ -12009,7 +12000,7 @@ VALUES (
 	1,
 	"Liz Brennan",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -12043,7 +12034,7 @@ VALUES (
 	1,
 	"Justin Gerspacher",
 	"Watson",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -12061,80 +12052,45 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	673,
+	655,
 	2006,
-	"The Future of Fuels: Biodiesel",
-	3,
-	"Rideau-St. Lawrence",
-	"Smiths Falls District Collegiate Institute",
-	"The idea of this project was to take used kitchen grease and turn it into a viable fuel to be used in vehicles. First the grease is filtered to remove unwanted particles. Then methanol and lye are added. The unwanted particles settle at the bottom, and the Bio-Diesel is pumped through a final oil filter and is ready to be used in a Diesel engine."
-);
-INSERT INTO project_divisions(project, division) VALUES(673, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	673,
+	"The Flip On Teflon",
 	1,
-	"Erik Jamik",
-	"Smiths Falls",
-	"ON",
-	NULL,
-	NULL
+	"Sudbury",
+	"Marymount Academy",
+	"This project tested the effects of fumes emitted from 2 types of Teflon pans and a regular stainless steel pan, on pole bean plants. The Teflon pan fumes stunted the growth of the bean plants. Those plants exposed to one of the Teflon pans also developed holes and white patches on the leaves. However, the stainless steel pan had no effects on the plants."
 );
+INSERT INTO project_divisions(project, division) VALUES(655, 9);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	673,
-	2,
-	"Jacob Covell",
-	"Lombardy",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	806,
-	2006,
-	"The Hype on Hypertension!",
-	2,
-	"CDLS - Province du Québec",
-	NULL,
-	"Hypertension, also known as high blood pressure, is a degenerative cardiovascular disease. This experiment demonstrates the effects that the potent vasoconstrictor Angiotensin II has on vascular smooth muscle cells in relation to hypertension by detecting calponin. Current treatments for high blood pressure as well as implications for further research are outlined."
-);
-INSERT INTO project_divisions(project, division) VALUES(806, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	806,
+	655,
 	1,
-	"Lia D'Abate",
-	"Montréal",
-	"QC",
+	"Alexandria Tsimiklis",
+	"Sudbury",
+	9,
 	NULL,
 	NULL
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	806,
+	655,
 	1,
 	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
+	"Gold Medallist - $2000 Entrance Scholarship",
 	"University of Western Ontario",
-	1500.00
+	2000.00
 );
 INSERT INTO awards
 	(project, `index`, title, description, sponsor, value)
 VALUES (
-	806,
+	655,
 	2,
-	"Silver Medal - Health Sciences",
-	"Intermediate",
-	"Canadian Institutes of Health Research",
-	700.00
+	"Gold Medal - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	1500.00
 );
 
 INSERT INTO projects
@@ -12156,7 +12112,7 @@ VALUES (
 	1,
 	"Justin Reardon",
 	"Petawawa",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12184,6 +12140,114 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	806,
+	2006,
+	"The Hype on Hypertension!",
+	2,
+	"CDLS - Province du Québec",
+	NULL,
+	"Hypertension, also known as high blood pressure, is a degenerative cardiovascular disease. This experiment demonstrates the effects that the potent vasoconstrictor Angiotensin II has on vascular smooth muscle cells in relation to hypertension by detecting calponin. Current treatments for high blood pressure as well as implications for further research are outlined."
+);
+INSERT INTO project_divisions(project, division) VALUES(806, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	806,
+	1,
+	"Lia D'Abate",
+	"Montréal",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	806,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	806,
+	2,
+	"Silver Medal - Health Sciences",
+	"Intermediate",
+	"Canadian Institutes of Health Research",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	502,
+	2006,
+	"The Improvement that Makes a Difference in the Company!",
+	3,
+	"Windsor",
+	"Assumption College S.S.",
+	"The project is based on a fixture called ‘slip tongue nest’, used to support the webbing and slip tongue of seat belts during the manufacturing process. The slip tongue nest was improved with modifications and new designs to decrease the time taken during the manufacturing process at a certain stage."
+);
+INSERT INTO project_divisions(project, division) VALUES(502, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	502,
+	1,
+	"Cao Thang Bui",
+	"Windsor",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	502,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	502,
+	2,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	502,
+	3,
+	"Bronze Medal - Engineering",
+	"Senior",
+	"Youth Science Foundation Canada",
+	300.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	502,
+	4,
+	"Silver Medal - Automotive",
+	"Senior",
+	"AUTO21",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	669,
 	2006,
 	"The Indestructible Home:2006",
@@ -12200,7 +12264,7 @@ VALUES (
 	1,
 	"James White",
 	"Unity",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -12269,7 +12333,7 @@ VALUES (
 	1,
 	"Eden Full",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -12337,70 +12401,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	502,
-	2006,
-	"The Improvement that Makes a Difference in the Company!",
-	3,
-	"Windsor",
-	"Assumption College S.S.",
-	"The project is based on a fixture called ‘slip tongue nest’, used to support the webbing and slip tongue of seat belts during the manufacturing process. The slip tongue nest was improved with modifications and new designs to decrease the time taken during the manufacturing process at a certain stage."
-);
-INSERT INTO project_divisions(project, division) VALUES(502, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	502,
-	1,
-	"Cao Thang Bui",
-	"Windsor",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	502,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	502,
-	2,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	502,
-	3,
-	"Bronze Medal - Engineering",
-	"Senior",
-	"Youth Science Foundation Canada",
-	300.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	502,
-	4,
-	"Silver Medal - Automotive",
-	"Senior",
-	"AUTO21",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	560,
 	2006,
 	"The Mean Green Reducing Machine",
@@ -12417,7 +12417,7 @@ VALUES (
 	1,
 	"Lindsey Dirks",
 	"Abbotsford",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -12428,7 +12428,55 @@ VALUES (
 	2,
 	"Alex Mostertman",
 	"Abbotsford",
-	"BC",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	562,
+	2006,
+	"The Outback Boot Heater",
+	1,
+	"Fraser Valley",
+	"Clayburn Middle School",
+	"The Outback Boot Heater was invented to dry boots after a day of camping and dirtbiking. By placing a copper coil around a fire, water inside heats up and circulates through the copper into a heater core. The heater sends heat through plumber's tubing into the boots and dries them."
+);
+INSERT INTO project_divisions(project, division) VALUES(562, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	562,
+	1,
+	"Kirby Wildeman",
+	"Abbotsford",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	459,
+	2006,
+	"The O.K. Corral",
+	1,
+	"Central Alberta",
+	"Cremona School",
+	"This project used an experimental model to test cattle’s behavioral patterns under three different handling methodologies in a corral system. Specific characteristics including a time assessment were the variables. Seven different trials utilizing five cattle were the basis for this experiment. Herding cattle on their left side in a calm and slow methodology proved to be the safest and most productive handling technique."
+);
+INSERT INTO project_divisions(project, division) VALUES(459, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	459,
+	1,
+	"Annessa Good",
+	"Cremona",
+	11,
 	NULL,
 	NULL
 );
@@ -12452,7 +12500,7 @@ VALUES (
 	1,
 	"Solomon Appavoo",
 	"Goderich",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12463,7 +12511,7 @@ VALUES (
 	2,
 	"Patrick Kloeze",
 	"Goderich",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12476,30 +12524,6 @@ VALUES (
 	"Junior",
 	"Canadian Institutes of Health Research",
 	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	459,
-	2006,
-	"The O.K. Corral",
-	1,
-	"Central Alberta",
-	"Cremona School",
-	"This project used an experimental model to test cattle’s behavioral patterns under three different handling methodologies in a corral system. Specific characteristics including a time assessment were the variables. Seven different trials utilizing five cattle were the basis for this experiment. Herding cattle on their left side in a calm and slow methodology proved to be the safest and most productive handling technique."
-);
-INSERT INTO project_divisions(project, division) VALUES(459, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	459,
-	1,
-	"Annessa Good",
-	"Cremona",
-	"AB",
-	NULL,
-	NULL
 );
 
 INSERT INTO projects
@@ -12521,7 +12545,7 @@ VALUES (
 	1,
 	"Brian Grosskleg",
 	"Prince Albert",
-	"SK",
+	6,
 	NULL,
 	NULL
 );
@@ -12549,30 +12573,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	562,
-	2006,
-	"The Outback Boot Heater",
-	1,
-	"Fraser Valley",
-	"Clayburn Middle School",
-	"The Outback Boot Heater was invented to dry boots after a day of camping and dirtbiking. By placing a copper coil around a fire, water inside heats up and circulates through the copper into a heater core. The heater sends heat through plumber's tubing into the boots and dries them."
-);
-INSERT INTO project_divisions(project, division) VALUES(562, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	562,
-	1,
-	"Kirby Wildeman",
-	"Abbotsford",
-	"BC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	558,
 	2006,
 	"The Pinhole Camera - Space Camera",
@@ -12589,7 +12589,7 @@ VALUES (
 	1,
 	"Chen Sun",
 	"London",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12643,31 +12643,7 @@ VALUES (
 	1,
 	"Milo Beattie",
 	"Kingston",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	513,
-	2006,
-	"The Role of Phytopharmaceuticals in Cell Division",
-	3,
-	"Chignecto East",
-	"Pictou Academy-Dr. T. McCulloch School",
-	"The project examined the possible effect of Echinacea and Aloe on healing wounds. Planaria were used to determine if these products played a role in cell division. The time required for eyespot formation was recorded as a measure of regeneration. Echinacea was found to be the most effective product tested."
-);
-INSERT INTO project_divisions(project, division) VALUES(513, 500);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	513,
-	1,
-	"Cathy Hilchey",
-	"Pictou",
-	"NS",
+	9,
 	NULL,
 	NULL
 );
@@ -12691,7 +12667,7 @@ VALUES (
 	1,
 	"George Sylliboy",
 	"Eskasoni",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -12699,46 +12675,25 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	703,
+	513,
 	2006,
-	"The Winds Have Changed",
-	2,
-	"Toronto",
-	"Marc Garneau Collegiate",
-	"The objective of this project was to compare the effectiveness between two types of vertical axis wind turbine blades: the cone and the semi-sphere. A home-designed model was built and tested. The semi-sphere wind turbine blade was proven to be more effective, especially at higher wind speeds."
+	"The Role of Phytopharmaceuticals in Cell Division",
+	3,
+	"Chignecto East",
+	"Pictou Academy-Dr. T. McCulloch School",
+	"The project examined the possible effect of Echinacea and Aloe on healing wounds. Planaria were used to determine if these products played a role in cell division. The time required for eyespot formation was recorded as a measure of regeneration. Echinacea was found to be the most effective product tested."
 );
-INSERT INTO project_divisions(project, division) VALUES(703, 7);
+INSERT INTO project_divisions(project, division) VALUES(513, 500);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	703,
+	513,
 	1,
-	"Jessica Ngai",
-	"Toronto",
-	"ON",
+	"Cathy Hilchey",
+	"Pictou",
+	1,
 	NULL,
 	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	703,
-	2,
-	"Johanna Lewis",
-	"Toronto",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	703,
-	1,
-	"Petro-Canada Peer Innovation Award - Intermediate",
-	"Ontario South",
-	"Petro-Canada",
-	200.00
 );
 
 INSERT INTO projects
@@ -12760,53 +12715,9 @@ VALUES (
 	1,
 	"Daniel Lang",
 	"Regina",
-	"SK",
+	6,
 	NULL,
 	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	547,
-	2006,
-	"The Zone Strikes Back!",
-	1,
-	"United Counties",
-	"Maple Ridge Senior Public",
-	"This study observes and finds evidence of ozone damage on soybean crops. Using ozone sensitive milkweed as a bio-indicator, I monitored six soybean crop locations and classified the leaf damage. I concluded that there was ozone damage on the soybean plants in my study groups."
-);
-INSERT INTO project_divisions(project, division) VALUES(547, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	547,
-	1,
-	"Savannah Vetter",
-	"Chesterville",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	547,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Bronze Medallist - $1000 Entrance Scholarship",
-	"University of Western Ontario",
-	1000.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	547,
-	2,
-	"Bronze Medal - Earth & Environmental Sciences",
-	"Junior",
-	"Petro-Canada",
-	300.00
 );
 
 INSERT INTO projects
@@ -12828,7 +12739,7 @@ VALUES (
 	1,
 	"Patricia Raso",
 	"Hamilton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12862,7 +12773,7 @@ VALUES (
 	1,
 	"Victor Vasquez",
 	"Prince George",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -12873,7 +12784,189 @@ VALUES (
 	2,
 	"Kevin Anderson",
 	"Prince George",
-	"BC",
+	12,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	703,
+	2006,
+	"The Winds Have Changed",
+	2,
+	"Toronto",
+	"Marc Garneau Collegiate",
+	"The objective of this project was to compare the effectiveness between two types of vertical axis wind turbine blades: the cone and the semi-sphere. A home-designed model was built and tested. The semi-sphere wind turbine blade was proven to be more effective, especially at higher wind speeds."
+);
+INSERT INTO project_divisions(project, division) VALUES(703, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	703,
+	1,
+	"Jessica Ngai",
+	"Toronto",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	703,
+	2,
+	"Johanna Lewis",
+	"Toronto",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	703,
+	1,
+	"Petro-Canada Peer Innovation Award - Intermediate",
+	"Ontario South",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	547,
+	2006,
+	"The Zone Strikes Back!",
+	1,
+	"United Counties",
+	"Maple Ridge Senior Public",
+	"This study observes and finds evidence of ozone damage on soybean crops. Using ozone sensitive milkweed as a bio-indicator, I monitored six soybean crop locations and classified the leaf damage. I concluded that there was ozone damage on the soybean plants in my study groups."
+);
+INSERT INTO project_divisions(project, division) VALUES(547, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	547,
+	1,
+	"Savannah Vetter",
+	"Chesterville",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	547,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Bronze Medallist - $1000 Entrance Scholarship",
+	"University of Western Ontario",
+	1000.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	547,
+	2,
+	"Bronze Medal - Earth & Environmental Sciences",
+	"Junior",
+	"Petro-Canada",
+	300.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	634,
+	2006,
+	"To Freeze or Antifreeze",
+	1,
+	"Rideau-St. Lawrence",
+	"St. James the Greater Catholic",
+	"The wood frog’s self defense against freezing was studied and this was applied to plants. Lettuce was grown with concentrations of dextrose and propylene glycol. The plants were subjected to cold temperatures for varying amounts of time. Plants grown with dextrose were able to withstand the cold the longest."
+);
+INSERT INTO project_divisions(project, division) VALUES(634, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	634,
+	1,
+	"Isaac Bacon",
+	"Smiths Falls",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	634,
+	1,
+	"Honourable Mention - Life Sciences",
+	"Junior",
+	"Pfizer Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	684,
+	2006,
+	"To Smell or Not to Smell",
+	1,
+	"York",
+	"Beverley Acres P.S.",
+	"The goal was to test aromatherapy and several common essential oils to find out how it can affect people. Two experiments were conducted: 1) the first indicated that each aroma has a different effect on people’s feelings; 2) the second showed that a specific aroma generally improves your work performance."
+);
+INSERT INTO project_divisions(project, division) VALUES(684, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	684,
+	1,
+	"Taryn Burgar",
+	"Richmond Hill",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	780,
+	2006,
+	"Tsunami Safer Structures",
+	2,
+	"Sahtu",
+	"Mackenzie Mountain School",
+	"The “Tsunami Safe(r)” Home was built to be more collapse-proof, but our concerns were for the inhabitants of the home; everything within the structure would be swept away. To rectify this problem, we designed a cellar for the shore-side residents to escape to for self-protection. Using these two structures in conjunction with one another would ensure that these people receive maximum safety."
+);
+INSERT INTO project_divisions(project, division) VALUES(780, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	780,
+	1,
+	"Yvonne Meulenbroek",
+	"Norman Wells",
+	5,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	780,
+	2,
+	"Mark Meulenbroek",
+	"Norman Wells",
+	5,
 	NULL,
 	NULL
 );
@@ -12897,7 +12990,7 @@ VALUES (
 	1,
 	"Taylor Reid",
 	"Uxbridge",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -12931,7 +13024,7 @@ VALUES (
 	1,
 	"Casey Banner",
 	"Smithers",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -12959,88 +13052,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	684,
-	2006,
-	"To Smell or Not to Smell",
-	1,
-	"York",
-	"Beverley Acres P.S.",
-	"The goal was to test aromatherapy and several common essential oils to find out how it can affect people. Two experiments were conducted: 1) the first indicated that each aroma has a different effect on people’s feelings; 2) the second showed that a specific aroma generally improves your work performance."
-);
-INSERT INTO project_divisions(project, division) VALUES(684, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	684,
-	1,
-	"Taryn Burgar",
-	"Richmond Hill",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	634,
-	2006,
-	"To Freeze or Antifreeze",
-	1,
-	"Rideau-St. Lawrence",
-	"St. James the Greater Catholic",
-	"The wood frog’s self defense against freezing was studied and this was applied to plants. Lettuce was grown with concentrations of dextrose and propylene glycol. The plants were subjected to cold temperatures for varying amounts of time. Plants grown with dextrose were able to withstand the cold the longest."
-);
-INSERT INTO project_divisions(project, division) VALUES(634, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	634,
-	1,
-	"Isaac Bacon",
-	"Smiths Falls",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	634,
-	1,
-	"Honourable Mention - Life Sciences",
-	"Junior",
-	"Pfizer Canada",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	630,
-	2006,
-	"Turn Down the Music!!!",
-	1,
-	"Frontenac, Lennox & Addington",
-	"Module Vanier Elementary School",
-	"This experiment studied the effect of listening to low versus high music volume levels on an iPod, and grade 7 and 8 students’ ability to memorize and recall word lists. After listening to both music volumes, while memorizing word lists, scores were given for the number of words the students recalled for each volume. Student’s test scores were significantly higher at the lower volume level."
-);
-INSERT INTO project_divisions(project, division) VALUES(630, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	630,
-	1,
-	"Laura Monahan",
-	"Kingston",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	537,
 	2006,
 	"Turmeric - The Miracle Herb",
@@ -13057,7 +13068,7 @@ VALUES (
 	1,
 	"Adil Adatia",
 	"Lethbridge",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -13085,6 +13096,30 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	630,
+	2006,
+	"Turn Down the Music!!!",
+	1,
+	"Frontenac, Lennox & Addington",
+	"Module Vanier Elementary School",
+	"This experiment studied the effect of listening to low versus high music volume levels on an iPod, and grade 7 and 8 students’ ability to memorize and recall word lists. After listening to both music volumes, while memorizing word lists, scores were given for the number of words the students recalled for each volume. Student’s test scores were significantly higher at the lower volume level."
+);
+INSERT INTO project_divisions(project, division) VALUES(630, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	630,
+	1,
+	"Laura Monahan",
+	"Kingston",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	616,
 	2006,
 	"Ultimate Blade Design - Wind Turbine",
@@ -13101,7 +13136,7 @@ VALUES (
 	1,
 	"Charlaine Ziegler",
 	"Thornton",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -13129,34 +13164,82 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	780,
+	785,
 	2006,
-	"Tsunami Safer Structures",
+	"Un moteur pour le futur",
 	2,
-	"Sahtu",
-	"Mackenzie Mountain School",
-	"The “Tsunami Safe(r)” Home was built to be more collapse-proof, but our concerns were for the inhabitants of the home; everything within the structure would be swept away. To rectify this problem, we designed a cellar for the shore-side residents to escape to for self-protection. Using these two structures in conjunction with one another would ensure that these people receive maximum safety."
+	"CDLS - Province du Québec",
+	NULL,
+	"Un problème majeur est très présent sur notre planète bleue: la pollution! Des scientifiques ont développé un moyen de se déplacer sans produire de pollution. L'une des solutions proposées est la pile à combustible. Comment fonctionne cette pile? Peut-elle vraiment aider à préserver l'environnement? Est-elle plus efficace que le moteur à combustion interne?"
 );
-INSERT INTO project_divisions(project, division) VALUES(780, 7);
+INSERT INTO project_divisions(project, division) VALUES(785, 99);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	780,
+	785,
 	1,
-	"Yvonne Meulenbroek",
-	"Norman Wells",
-	"NT",
+	"Kevin Welsh",
+	"Havre-Aubert",
+	10,
 	NULL,
 	NULL
 );
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	780,
+	785,
 	2,
-	"Mark Meulenbroek",
-	"Norman Wells",
-	"NT",
+	"Félix Nadeau",
+	"Havre-Aubert",
+	10,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	523,
+	2006,
+	"Un nouveau membre en route pour un future meilleur!",
+	1,
+	"Ottawa",
+	"College catholique Samuel-Genest",
+	"Le but de mon projet était de créer une prosthèse pour les gens amputé dans les pays sous-développés qui ce retrouve avec une amputation. Pour construire ma prothèse je me suis procurée des matériaux peut couteux. Je me suis préocuper de la situation au Cambodge, un pays qui souffrent d'un grand taux d'amputé causer par les mines antipersonnels."
+);
+INSERT INTO project_divisions(project, division) VALUES(523, 8);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	523,
+	1,
+	"Isabel Francis-Cloutier",
+	"Ottawa",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	665,
+	2006,
+	"Underground Resistance",
+	3,
+	"Strait",
+	"Dalbrae Academy",
+	"My experiment involved the culturing of soil-borne bacteria from four different sources and testing their resistance to various common antibiotics. My belief was that soil samples from various agricultural sites would display varying levels of resistance to common antibiotics, depending rate of exposure to animal traffic and antibiotic contamination."
+);
+INSERT INTO project_divisions(project, division) VALUES(665, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	665,
+	1,
+	"Ian Lake-Thompson",
+	"Mabou",
+	1,
 	NULL,
 	NULL
 );
@@ -13180,7 +13263,7 @@ VALUES (
 	1,
 	"Kimmie Gulevich",
 	"Fort St. John",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -13218,30 +13301,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	523,
-	2006,
-	"Un nouveau membre en route pour un future meilleur!",
-	1,
-	"Ottawa",
-	"College catholique Samuel-Genest",
-	"Le but de mon projet était de créer une prosthèse pour les gens amputé dans les pays sous-développés qui ce retrouve avec une amputation. Pour construire ma prothèse je me suis procurée des matériaux peut couteux. Je me suis préocuper de la situation au Cambodge, un pays qui souffrent d'un grand taux d'amputé causer par les mines antipersonnels."
-);
-INSERT INTO project_divisions(project, division) VALUES(523, 8);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	523,
-	1,
-	"Isabel Francis-Cloutier",
-	"Ottawa",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	683,
 	2006,
 	"Vegipaper",
@@ -13258,66 +13317,7 @@ VALUES (
 	1,
 	"Angelina Artemenko",
 	"Richmond Hill",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	665,
-	2006,
-	"Underground Resistance",
-	3,
-	"Strait",
-	"Dalbrae Academy",
-	"My experiment involved the culturing of soil-borne bacteria from four different sources and testing their resistance to various common antibiotics. My belief was that soil samples from various agricultural sites would display varying levels of resistance to common antibiotics, depending rate of exposure to animal traffic and antibiotic contamination."
-);
-INSERT INTO project_divisions(project, division) VALUES(665, 4);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	665,
-	1,
-	"Ian Lake-Thompson",
-	"Mabou",
-	"NS",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	785,
-	2006,
-	"Un moteur pour le futur",
-	2,
-	"CDLS - Province du Québec",
-	NULL,
-	"Un problème majeur est très présent sur notre planète bleue: la pollution! Des scientifiques ont développé un moyen de se déplacer sans produire de pollution. L'une des solutions proposées est la pile à combustible. Comment fonctionne cette pile? Peut-elle vraiment aider à préserver l'environnement? Est-elle plus efficace que le moteur à combustion interne?"
-);
-INSERT INTO project_divisions(project, division) VALUES(785, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	785,
-	1,
-	"Kevin Welsh",
-	"Havre-Aubert",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	785,
-	2,
-	"Félix Nadeau",
-	"Havre-Aubert",
-	"QC",
+	9,
 	NULL,
 	NULL
 );
@@ -13365,7 +13365,7 @@ VALUES (
 	1,
 	"Catherine Armstrong",
 	"Cumberland",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -13409,7 +13409,7 @@ VALUES (
 	1,
 	"Nicholas Randall",
 	"Summerland",
-	"BC",
+	12,
 	NULL,
 	NULL
 );
@@ -13437,23 +13437,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	829,
+	640,
 	2006,
-	"Warm Battery For A Cold Climate",
-	2,
-	"Manitoba First Nations",
-	"'72 Memorial High School",
-	"In this project a home made battery was made using lemon juice in a series of wet cells. the voltage was measured over time at different temperatures. A commercially produced ATV battery was tested in the same way. A home made battery warmer that runs off a dry cell was designed to preserve the power of a wet cell in cold temperatures."
+	"What Are Your Odds?",
+	1,
+	"Saskatoon",
+	"Greystone Heights",
+	"This project studied the probability distributions of dice. A computer application was written in Visual Basic to simulate dice. Using the application, multiple dice were rolled and summed up 3 million times. The probability distribution of the results approached the bell curve."
 );
-INSERT INTO project_divisions(project, division) VALUES(829, 7);
+INSERT INTO project_divisions(project, division) VALUES(640, 99);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	829,
+	640,
 	1,
-	"Aaron Colon",
-	"Oxford House",
-	"MB",
+	"Ryan Peng",
+	"Saskatoon",
+	6,
 	NULL,
 	NULL
 );
@@ -13477,7 +13477,7 @@ VALUES (
 	1,
 	"Emily McGuire",
 	"New Glasgow",
-	"PE",
+	4,
 	NULL,
 	NULL
 );
@@ -13485,92 +13485,23 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	529,
+	829,
 	2006,
-	"What Makes a Good Rocket?",
+	"Warm Battery For A Cold Climate",
 	2,
-	"Chignecto Central West",
-	NULL,
-	"This project investigated which combination of fuel core diameter and nozzle diameter propelled a model rocket the highest. I launched home-made rockets verticallly and measured airtimes. A home-made force tester measured force per time of three rockets. Rockets having having small nozzles and small fuel cores had the longest airtimes. The force tests showed that air friction is a major factor affecting rocket performance."
+	"Manitoba First Nations",
+	"'72 Memorial High School",
+	"In this project a home made battery was made using lemon juice in a series of wet cells. the voltage was measured over time at different temperatures. A commercially produced ATV battery was tested in the same way. A home made battery warmer that runs off a dry cell was designed to preserve the power of a wet cell in cold temperatures."
 );
-INSERT INTO project_divisions(project, division) VALUES(529, 7);
+INSERT INTO project_divisions(project, division) VALUES(829, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	529,
+	829,
 	1,
-	"Janis Nams",
-	"Tatamagouche",
-	"NS",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	772,
-	2006,
-	"What are the possibilities of harnessing naturally occuring forces for perpetual motion?",
-	2,
-	"River East Transcona",
-	"River East Collegiate",
-	"Solving the age-old physics challenge of perpetual motion could be utilized to generate a free, abundant and efficient energy source. Throughout 4 years of research we believe using natural forces such as magnetism, and other friction reducing contraptions, such as a magnet bearings, a perpetual motion prototype could be created. This machine could, run any device virtually free and eliminates reliance on damaging fossil fuels."
-);
-INSERT INTO project_divisions(project, division) VALUES(772, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	772,
-	1,
-	"Derrick Enns",
-	"winnipeg",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	772,
-	2,
-	"Paul Woodward",
-	"Winnipeg",
-	"MB",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	772,
-	1,
-	"Petro-Canada Peer Innovation Award - Intermediate",
-	"Central Canada",
-	"Petro-Canada",
-	200.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	640,
-	2006,
-	"What Are Your Odds?",
-	1,
-	"Saskatoon",
-	"Greystone Heights",
-	"This project studied the probability distributions of dice. A computer application was written in Visual Basic to simulate dice. Using the application, multiple dice were rolled and summed up 3 million times. The probability distribution of the results approached the bell curve."
-);
-INSERT INTO project_divisions(project, division) VALUES(640, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	640,
-	1,
-	"Ryan Peng",
-	"Saskatoon",
-	"SK",
+	"Aaron Colon",
+	"Oxford House",
+	8,
 	NULL,
 	NULL
 );
@@ -13594,7 +13525,7 @@ VALUES (
 	1,
 	"Megan Schlorff",
 	"Hanover",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -13622,6 +13553,120 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
+	795,
+	2006,
+	"When the Earth~Quakes",
+	1,
+	"CDLS - Province du Québec",
+	NULL,
+	"This project's purpose is to test different building components in order to discover the structure most fit to withstand the effects of an earthquake. Four different experiments were conducted, testing the distribution of weight, the variation in shape, the variation in height and the variation in foundation materials."
+);
+INSERT INTO project_divisions(project, division) VALUES(795, 4);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	795,
+	1,
+	"Christos Simitsakos",
+	"Ste-Drorothée",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	795,
+	2,
+	"Jason Khoury",
+	"Mont Royal",
+	10,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	795,
+	1,
+	"Honourable Mention - Earth & Environmental Science",
+	"Junior",
+	"Petro-Canada",
+	100.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	529,
+	2006,
+	"What Makes a Good Rocket?",
+	2,
+	"Chignecto Central West",
+	NULL,
+	"This project investigated which combination of fuel core diameter and nozzle diameter propelled a model rocket the highest. I launched home-made rockets verticallly and measured airtimes. A home-made force tester measured force per time of three rockets. Rockets having having small nozzles and small fuel cores had the longest airtimes. The force tests showed that air friction is a major factor affecting rocket performance."
+);
+INSERT INTO project_divisions(project, division) VALUES(529, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	529,
+	1,
+	"Janis Nams",
+	"Tatamagouche",
+	1,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	772,
+	2006,
+	"What are the possibilities of harnessing naturally occuring forces for perpetual motion?",
+	2,
+	"River East Transcona",
+	"River East Collegiate",
+	"Solving the age-old physics challenge of perpetual motion could be utilized to generate a free, abundant and efficient energy source. Throughout 4 years of research we believe using natural forces such as magnetism, and other friction reducing contraptions, such as a magnet bearings, a perpetual motion prototype could be created. This machine could, run any device virtually free and eliminates reliance on damaging fossil fuels."
+);
+INSERT INTO project_divisions(project, division) VALUES(772, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	772,
+	1,
+	"Derrick Enns",
+	"winnipeg",
+	8,
+	NULL,
+	NULL
+);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	772,
+	2,
+	"Paul Woodward",
+	"Winnipeg",
+	8,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	772,
+	1,
+	"Petro-Canada Peer Innovation Award - Intermediate",
+	"Central Canada",
+	"Petro-Canada",
+	200.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
 	773,
 	2006,
 	"Which Toboggan is the Best?",
@@ -13638,7 +13683,7 @@ VALUES (
 	1,
 	"Patrick Naylor",
 	"Winnipeg",
-	"MB",
+	8,
 	NULL,
 	NULL
 );
@@ -13672,7 +13717,7 @@ VALUES (
 	1,
 	"Travis LeBlanc",
 	"Yarmouth County",
-	"NS",
+	1,
 	NULL,
 	NULL
 );
@@ -13680,46 +13725,36 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	795,
+	764,
 	2006,
-	"When the Earth~Quakes",
+	"Who Needs Fossil Fuels?",
 	1,
-	"CDLS - Province du Québec",
-	NULL,
-	"This project's purpose is to test different building components in order to discover the structure most fit to withstand the effects of an earthquake. Four different experiments were conducted, testing the distribution of weight, the variation in shape, the variation in height and the variation in foundation materials."
+	"New Brunswick",
+	"Bessborough School",
+	"The purpose of this project was to develop an alternate heat source other than fossil fuels. The burning of fossil fuels has proven to be very damaging to our environment. We were able to create this heat source by using everyday items such as aluminum cans, household cleaners and water, to produce a clean burning hydrogen gas."
 );
-INSERT INTO project_divisions(project, division) VALUES(795, 4);
+INSERT INTO project_divisions(project, division) VALUES(764, 99);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	795,
+	764,
 	1,
-	"Christos Simitsakos",
-	"Ste-Drorothée",
-	"QC",
+	"Jordan Haley",
+	"Moncton",
+	3,
 	NULL,
 	NULL
 );
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	795,
+	764,
 	2,
-	"Jason Khoury",
-	"Mont Royal",
-	"QC",
+	"Jack Dallaire",
+	"Moncton",
+	3,
 	NULL,
 	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	795,
-	1,
-	"Honourable Mention - Earth & Environmental Science",
-	"Junior",
-	"Petro-Canada",
-	100.00
 );
 
 INSERT INTO projects
@@ -13741,7 +13776,7 @@ VALUES (
 	1,
 	"Sarah Cousineau-Wild",
 	"Montreal West",
-	"QC",
+	10,
 	NULL,
 	NULL
 );
@@ -13765,7 +13800,7 @@ VALUES (
 	1,
 	"Shawna Sammurtok",
 	"Chesterfield Inlet",
-	"NU",
+	7,
 	NULL,
 	NULL
 );
@@ -13793,34 +13828,58 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	764,
+	776,
 	2006,
-	"Who Needs Fossil Fuels?",
+	"Wind energy - the wind turbine",
 	1,
-	"New Brunswick",
-	"Bessborough School",
-	"The purpose of this project was to develop an alternate heat source other than fossil fuels. The burning of fossil fuels has proven to be very damaging to our environment. We were able to create this heat source by using everyday items such as aluminum cans, household cleaners and water, to produce a clean burning hydrogen gas."
+	"Aboriginal Québec Autochtone",
+	"Kitigan Zibi Kikinamadinan",
+	"This project investigated how energy from the wind works. A smaller version of an actual wind turbine was built using a bicycle generator and a fan propeller.Results indicate that energy from the wind is possible and dependent upon the amount of propellers used and the speed of the wind."
 );
-INSERT INTO project_divisions(project, division) VALUES(764, 99);
+INSERT INTO project_divisions(project, division) VALUES(776, 7);
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	764,
+	776,
 	1,
-	"Jordan Haley",
-	"Moncton",
-	"NB",
+	"Hayden Commando",
+	"Maniwaki",
+	10,
 	NULL,
 	NULL
 );
 INSERT INTO finalists
 	(project, member, name, city, province, gender, biography)
 VALUES (
-	764,
+	776,
 	2,
-	"Jack Dallaire",
-	"Moncton",
-	"NB",
+	"Trevor Céré",
+	"Maniwaki",
+	10,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	731,
+	2006,
+	"Wind Generators - Harnessing the Power of the Wind",
+	1,
+	"Bay Area",
+	"Oakville Christian School",
+	"The project objective was to create a device that harnesses wind to produce electricity for application without impacting the environment. Wind energy is renewable and an economical source of energy adopted by world nations as a global energy solution. Project results indicate that increased wind speed increases the resulting energy."
+);
+INSERT INTO project_divisions(project, division) VALUES(731, 7);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	731,
+	1,
+	"Andrew Wood",
+	"Oakville",
+	9,
 	NULL,
 	NULL
 );
@@ -13844,7 +13903,7 @@ VALUES (
 	1,
 	"Jonathan Hodgins",
 	"Lindsay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -13882,109 +13941,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	731,
-	2006,
-	"Wind Generators - Harnessing the Power of the Wind",
-	1,
-	"Bay Area",
-	"Oakville Christian School",
-	"The project objective was to create a device that harnesses wind to produce electricity for application without impacting the environment. Wind energy is renewable and an economical source of energy adopted by world nations as a global energy solution. Project results indicate that increased wind speed increases the resulting energy."
-);
-INSERT INTO project_divisions(project, division) VALUES(731, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	731,
-	1,
-	"Andrew Wood",
-	"Oakville",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	776,
-	2006,
-	"Wind energy - the wind turbine",
-	1,
-	"Aboriginal Québec Autochtone",
-	"Kitigan Zibi Kikinamadinan",
-	"This project investigated how energy from the wind works. A smaller version of an actual wind turbine was built using a bicycle generator and a fan propeller.Results indicate that energy from the wind is possible and dependent upon the amount of propellers used and the speed of the wind."
-);
-INSERT INTO project_divisions(project, division) VALUES(776, 7);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	776,
-	1,
-	"Hayden Commando",
-	"Maniwaki",
-	"QC",
-	NULL,
-	NULL
-);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	776,
-	2,
-	"Trevor Céré",
-	"Maniwaki",
-	"QC",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	573,
-	2006,
-	"Yuck! Do Hand Sanitizers Work?",
-	2,
-	"Parkland",
-	"Foam Lake Composite High School",
-	"I am sure at one time we have all wondered do hand sanitizers really work as fast as we are told they do. The purpose of htis project is to see if the sanitizers do work or not."
-);
-INSERT INTO project_divisions(project, division) VALUES(573, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	573,
-	1,
-	"Kelsey Bugera",
-	"Foam Lake",
-	"SK",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	573,
-	1,
-	"The University of Western Ontario Scholarship",
-	"Silver Medallist - $1500 Entrance Scholarship",
-	"University of Western Ontario",
-	1500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	573,
-	2,
-	"Silver Medal - Life Sciences",
-	"Intermediate",
-	"Pfizer Canada",
-	700.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	580,
 	2006,
 	"X-raying and Geometry",
@@ -14001,7 +13957,7 @@ VALUES (
 	1,
 	"Mate Bezdek",
 	"Calgary",
-	"AB",
+	11,
 	NULL,
 	NULL
 );
@@ -14039,74 +13995,6 @@ VALUES (
 INSERT INTO projects
 	(id, year, title, category, region, school, abstract)
 VALUES (
-	592,
-	2006,
-	"Zap It: An Investigation of Photocatalysis",
-	1,
-	"Northwestern Ontario",
-	"École Gron Morgan P.S.",
-	"The photocatalytic degradation of selected model compounds was done using a semiconductor and light from a compact fluorescent bulb. The model compounds represent toxic pollutants found in industrial waste and chlorinated water as well as certain pharmaceutical products that are poisoning our watersheds and causing fish to mutate."
-);
-INSERT INTO project_divisions(project, division) VALUES(592, 99);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	592,
-	1,
-	"Tim Rappon",
-	"Thunder Bay",
-	"ON",
-	NULL,
-	NULL
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	592,
-	1,
-	"AECL Award for Excellence in Science",
-	"Junior",
-	"Atomic Energy of Canada Ltd.",
-	500.00
-);
-INSERT INTO awards
-	(project, `index`, title, description, sponsor, value)
-VALUES (
-	592,
-	2,
-	"Honourable Mention - Physical & Mathematical Sciences",
-	"Junior",
-	"Encana Corporation",
-	100.00
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
-	494,
-	2006,
-	"Winter Activity Levels of Lepus Americanus in Various Forest Types",
-	1,
-	"Renfrew County",
-	"Cobden P.S.",
-	"For this project I measured the activity levels of Snowshoe Hare in winter. Counts were made of accumulated hare tracks in six distict vegetavtive areas. The type and number of shrub and tree species were recorded. Hares were found to spend most of their activity in the Deciduous/Coniferous Forest."
-);
-INSERT INTO project_divisions(project, division) VALUES(494, 9);
-INSERT INTO finalists
-	(project, member, name, city, province, gender, biography)
-VALUES (
-	494,
-	1,
-	"Loreena Dobson",
-	"Cobden",
-	"ON",
-	NULL,
-	NULL
-);
-
-INSERT INTO projects
-	(id, year, title, category, region, school, abstract)
-VALUES (
 	818,
 	2006,
 	"X Marks the Pill",
@@ -14123,7 +14011,7 @@ VALUES (
 	1,
 	"Clark Wilkinson",
 	"Mildmay",
-	"ON",
+	9,
 	NULL,
 	NULL
 );
@@ -14166,6 +14054,118 @@ VALUES (
 	"Junior",
 	"Canadian Institutes of Health Research",
 	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	494,
+	2006,
+	"Winter Activity Levels of Lepus Americanus in Various Forest Types",
+	1,
+	"Renfrew County",
+	"Cobden P.S.",
+	"For this project I measured the activity levels of Snowshoe Hare in winter. Counts were made of accumulated hare tracks in six distict vegetavtive areas. The type and number of shrub and tree species were recorded. Hares were found to spend most of their activity in the Deciduous/Coniferous Forest."
+);
+INSERT INTO project_divisions(project, division) VALUES(494, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	494,
+	1,
+	"Loreena Dobson",
+	"Cobden",
+	9,
+	NULL,
+	NULL
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	573,
+	2006,
+	"Yuck! Do Hand Sanitizers Work?",
+	2,
+	"Parkland",
+	"Foam Lake Composite High School",
+	"I am sure at one time we have all wondered do hand sanitizers really work as fast as we are told they do. The purpose of htis project is to see if the sanitizers do work or not."
+);
+INSERT INTO project_divisions(project, division) VALUES(573, 9);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	573,
+	1,
+	"Kelsey Bugera",
+	"Foam Lake",
+	6,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	573,
+	1,
+	"The University of Western Ontario Scholarship",
+	"Silver Medallist - $1500 Entrance Scholarship",
+	"University of Western Ontario",
+	1500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	573,
+	2,
+	"Silver Medal - Life Sciences",
+	"Intermediate",
+	"Pfizer Canada",
+	700.00
+);
+
+INSERT INTO projects
+	(id, year, title, category, region, school, abstract)
+VALUES (
+	592,
+	2006,
+	"Zap It: An Investigation of Photocatalysis",
+	1,
+	"Northwestern Ontario",
+	"École Gron Morgan P.S.",
+	"The photocatalytic degradation of selected model compounds was done using a semiconductor and light from a compact fluorescent bulb. The model compounds represent toxic pollutants found in industrial waste and chlorinated water as well as certain pharmaceutical products that are poisoning our watersheds and causing fish to mutate."
+);
+INSERT INTO project_divisions(project, division) VALUES(592, 99);
+INSERT INTO finalists
+	(project, member, name, city, province, gender, biography)
+VALUES (
+	592,
+	1,
+	"Tim Rappon",
+	"Thunder Bay",
+	9,
+	NULL,
+	NULL
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	592,
+	1,
+	"AECL Award for Excellence in Science",
+	"Junior",
+	"Atomic Energy of Canada Ltd.",
+	500.00
+);
+INSERT INTO awards
+	(project, `index`, title, description, sponsor, value)
+VALUES (
+	592,
+	2,
+	"Honourable Mention - Physical & Mathematical Sciences",
+	"Junior",
+	"Encana Corporation",
+	100.00
 );
 
 COMMIT;

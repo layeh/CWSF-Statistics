@@ -14,7 +14,7 @@ VALUES (
   1,
   "Brandon Green",
   "Sundre",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -28,7 +28,7 @@ VALUES (
   1,
   "Milen Belanger",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );

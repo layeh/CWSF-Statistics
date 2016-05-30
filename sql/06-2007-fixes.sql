@@ -40,7 +40,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Toronto",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -53,7 +53,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Peterborough",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -67,7 +67,7 @@ VALUES (
   1,
   "Christopher Chopcian",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -80,7 +80,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Winnipeg",
-  "MB",
+  8,
   NULL,
   NULL
 );
@@ -100,7 +100,7 @@ VALUES (
   1,
   "Camille Salvas",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -114,7 +114,7 @@ VALUES (
   1,
   "Lauren Arena",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -125,7 +125,7 @@ VALUES (
   2,
   "Melissa Cammuso",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -138,7 +138,7 @@ VALUES (
   2,
   NULL, -- TODO
   "St-Ours",
-  "QC",
+  10,
   NULL,
   NULL
 );

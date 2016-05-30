@@ -11,7 +11,7 @@ VALUES (
   1,
   "David Lister",
   NULL, -- TODO
-  "YT",
+  13,
   NULL,
   NULL
 );
@@ -48,7 +48,7 @@ VALUES (
   2,
   "Rachel Brown",
   "Medicine Hat",
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -62,7 +62,7 @@ VALUES (
   1,
   "Nicholas Carverhill",
   NULL, -- TODO
-  "SK",
+  6,
   NULL,
   NULL
 );
@@ -92,7 +92,7 @@ VALUES (
   1,
   "Nancy Martinez",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -106,7 +106,7 @@ VALUES (
   1,
   "Alissa Ali",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -120,14 +120,14 @@ VALUES (
   1,
   "Rebeccah Sandrelli",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
 
 -- 1408
-UPDATE finalists SET city = "Sackville", province = "NS" WHERE project = 1408 AND member = 1;
-UPDATE finalists SET city = "Lower Sackville", province = "NS" WHERE project = 1408 AND member = 2;
+UPDATE finalists SET city = "Sackville", province = 1 WHERE project = 1408 AND member = 1;
+UPDATE finalists SET city = "Lower Sackville", province = 1 WHERE project = 1408 AND member = 2;
 
 -- 1416
 UPDATE projects SET region = " Lambton County " WHERE id = 1416;
@@ -138,7 +138,7 @@ VALUES (
   1,
   "Christopher Chopcian",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -152,7 +152,7 @@ VALUES (
   1,
   "Colin Roos",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -200,7 +200,7 @@ VALUES (
   2,
   NULL, -- TODO
   "Toronto",
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -214,7 +214,7 @@ VALUES (
   1,
   "Jordan Wentzell",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -228,7 +228,7 @@ VALUES (
   1,
   "Josie Mielhausen",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -242,7 +242,7 @@ VALUES (
   1,
   "Rami Sayar",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -256,7 +256,7 @@ VALUES (
   1,
   "Sébastien Chénier",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -270,7 +270,7 @@ VALUES (
   1,
   "Camille Salvas",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );

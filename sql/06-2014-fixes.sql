@@ -14,7 +14,7 @@ VALUES (
   1,
   "Chloe Devoy",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -54,7 +54,7 @@ VALUES (
   1,
   "Zeel Patel",
   NULL, -- TODO
-  "AB",
+  11,
   NULL,
   NULL
 );
@@ -68,7 +68,7 @@ VALUES (
   1,
   "Rachel Brouwer",
   NULL, -- TODO
-  "NS",
+  1,
   NULL,
   NULL
 );
@@ -108,7 +108,7 @@ VALUES (
   1,
   "Charley Smith",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -122,7 +122,7 @@ VALUES (
   1,
   "Meaghan MacKenzie",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -136,7 +136,7 @@ VALUES (
   1,
   "Dylan Layton-Matthews",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );
@@ -150,7 +150,7 @@ VALUES (
   1,
   "Anya Pogharian",
   NULL, -- TODO
-  "QC",
+  10,
   NULL,
   NULL
 );
@@ -164,7 +164,7 @@ VALUES (
   1,
   "Clayton Harder",
   NULL, -- TODO
-  "BC",
+  12,
   NULL,
   NULL
 );
@@ -178,7 +178,7 @@ VALUES (
   1,
   "Emily Cross",
   NULL, -- TODO
-  "ON",
+  9,
   NULL,
   NULL
 );

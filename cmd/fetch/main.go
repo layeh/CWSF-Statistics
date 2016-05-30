@@ -23,6 +23,22 @@ var yearRegex = regexp.MustCompile(`^CWSF (\d+) - .*$`)
 var namesRegex = regexp.MustCompile(`^([^,]+)(?:, ([^,]+))?$`)
 var cityRegex = regexp.MustCompile(`^([^,]+), +(\w{2})(?: *, +([^,]+), +(\w{2}))?$`)
 
+var provinceMap = map[string]int{
+	"NS": 1,
+	"NL": 2,
+	"NB": 3,
+	"PE": 4,
+	"NT": 5,
+	"SK": 6,
+	"NU": 7,
+	"MB": 8,
+	"ON": 9,
+	"QC": 10,
+	"AB": 11,
+	"BC": 12,
+	"YT": 13,
+}
+
 var categories = map[string]int{
 	"Junior":       1,
 	"Intermediate": 2,
@@ -108,15 +124,15 @@ func ParseProject(doc *goquery.Document) (*Project, error) {
 	project.Region = doc.Find(`td:contains("Region:")`).Next().Text()
 
 	var cities []string
-	var provinces []string
+	var provinces []int
 
 	cityText := doc.Find(`td:contains("City:")`).Next().Text()
 	if match := cityRegex.FindStringSubmatch(cityText); match != nil {
 		cities = append(cities, match[1])
-		provinces = append(provinces, match[2])
+		provinces = append(provinces, provinceMap[match[2]])
 		if match[3] != "" && match[4] != "" {
 			cities = append(cities, match[3])
-			provinces = append(provinces, match[4])
+			provinces = append(provinces, provinceMap[match[4]])
 		}
 	}
 
@@ -251,7 +267,7 @@ VALUES (
 	{{ item $i }},
 	{{ if ne .Name "" }}{{ escape .Name }}{{ else }}NULL{{ end }},
 	{{ if ne .City "" }}{{ escape .City }}{{ else }}NULL{{ end }},
-	{{ if ne .Province "" }}{{ escape .Province }}{{ else }}NULL{{ end }},
+	{{ if ne .Province 0 }}{{ .Province }}{{ else }}NULL{{ end }},
 	{{ if ne .Gender "" }}{{ escape .Gender }}{{ else }}NULL{{ end }},
 	{{ if ne .Biography "" }}{{ escape .Biography }}{{ else }}NULL{{ end }}
 );
@@ -304,7 +320,7 @@ func (p *Project) InvalidFields() []string {
 		if finalist.City == "" {
 			fields = append(fields, "Finalists["+strconv.Itoa(i)+"].City")
 		}
-		if finalist.Province == "" {
+		if finalist.Province == 0 {
 			fields = append(fields, "Finalists["+strconv.Itoa(i)+"].Province")
 		}
 	}
@@ -326,7 +342,7 @@ type Award struct {
 type Finalist struct {
 	Name      string
 	City      string
-	Province  string
+	Province  int
 	Gender    string
 	Biography string
 }
