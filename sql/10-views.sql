@@ -181,4 +181,58 @@ CREATE VIEW challenges_by_gender AS
   -- Challenges started in 2011
   WHERE fairs.year >= 2011;
 
+-- Award winners by challenge and gender
+CREATE VIEW award_winners_by_challenge_gender AS
+  SELECT
+    fairs.year AS year,
+    challenges.name AS challenge,
+    (SELECT COUNT(*) FROM (
+      SELECT projects.id
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+        LEFT JOIN finalists
+          ON finalists.project = projects.id
+        LEFT JOIN project_challenges
+          ON projects.id = project_challenges.project
+      WHERE
+        finalists.gender = "M"
+        AND projects.year = fairs.year
+        AND project_challenges.challenge = challenges.id
+      GROUP BY projects.id, finalists.member
+    )
+    ) as male,
+    (SELECT COUNT(*) FROM (
+      SELECT projects.id
+      FROM awards
+        LEFT JOIN projects
+          ON awards.project = projects.id
+        LEFT JOIN finalists
+          ON finalists.project = projects.id
+        LEFT JOIN project_challenges
+          ON projects.id = project_challenges.project
+      WHERE
+        finalists.gender = "F"
+        AND projects.year = fairs.year
+        AND project_challenges.challenge = challenges.id
+      GROUP BY projects.id, finalists.member
+    )
+    ) as female
+  FROM fairs
+    LEFT JOIN challenges
+  -- Challenges started in 2011
+  WHERE fairs.year >= 2011 AND challenges.id != 99;
+
+-- Award percentage by  challenge and gender
+CREATE VIEW award_percentage_by_challenge_gender AS
+  SELECT
+    award_winners_by_challenge_gender.year AS year,
+    award_winners_by_challenge_gender.challenge AS challenge,
+    CAST(COALESCE(CAST(award_winners_by_challenge_gender.male AS FLOAT) / challenges_by_gender.male, 0) * 100 AS INTEGER) AS male,
+    CAST(COALESCE(CAST(award_winners_by_challenge_gender.female AS FLOAT) / challenges_by_gender.female, 0) * 100 AS INTEGER) AS female
+  FROM award_winners_by_challenge_gender
+    LEFT JOIN challenges_by_gender
+      ON award_winners_by_challenge_gender.challenge = challenges_by_gender.challenge
+         AND award_winners_by_challenge_gender.year = challenges_by_gender.year;
+
 COMMIT;
