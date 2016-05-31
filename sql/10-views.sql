@@ -147,4 +147,38 @@ CREATE VIEW challenges_by_year AS
   -- challenges started in 2011
   WHERE fairs.year >= 2011;
 
+-- Challenges by gender
+CREATE VIEW challenges_by_gender AS
+  SELECT
+    fairs.year AS year,
+    challenges.name AS challenge,
+    (
+      SELECT COUNT(*)
+      FROM finalists
+        LEFT JOIN projects
+          ON finalists.project = projects.id
+        LEFT JOIN project_challenges
+          ON projects.id = project_challenges.project
+      WHERE
+        finalists.gender = "M"
+        AND projects.year = fairs.year
+        AND project_challenges.challenge = challenges.id
+    ) as male,
+    (
+      SELECT COUNT(*)
+      FROM finalists
+        LEFT JOIN projects
+          ON finalists.project = projects.id
+        LEFT JOIN project_challenges
+          ON projects.id = project_challenges.project
+      WHERE
+        finalists.gender = "F"
+        AND projects.year = fairs.year
+        AND project_challenges.challenge = challenges.id
+    ) as female
+  FROM fairs
+    LEFT JOIN challenges
+  -- Challenges started in 2011
+  WHERE fairs.year >= 2011;
+
 COMMIT;
