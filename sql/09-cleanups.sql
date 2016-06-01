@@ -5,5 +5,6 @@ UPDATE finalists SET name = REPLACE(name, "     ", " ");
 UPDATE finalists SET name = REPLACE(name, "    ", " ");
 UPDATE finalists SET name = REPLACE(name, "   ", " ");
 UPDATE finalists SET name = REPLACE(name, "  ", " ");
+UPDATE finalists SET name = TRIM(name);
 
 COMMIT;
