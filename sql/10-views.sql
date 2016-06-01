@@ -47,57 +47,46 @@ CREATE VIEW provincial_medals AS
     provinces.abbr AS province,
     (
       SELECT COUNT(*)
-      FROM awards
+      FROM medals
         LEFT JOIN projects
-          ON awards.project = projects.id
+          ON medals.project = projects.id
       WHERE
         projects.year = fairs.year
         AND projects.province = provinces.id
-        AND (
-          instr(awards.title, "Platinum Award - ") = 1
-          OR instr(awards.title, "EnCana Platinum Award - ") = 1
-          OR (
-            -- These years don't list the best in fair
-            -- winners as receiving Platinum medals
-            projects.year IN (2013, 2014)
-            AND awards.title = "Best Project Award"
-          )
-        )
-    ) as platinum,
+        AND medals.medal = "platinum"
+    ) AS platinum,
     (
       SELECT COUNT(*)
-      FROM awards
+      FROM medals
         LEFT JOIN projects
-          ON awards.project = projects.id
+          ON medals.project = projects.id
       WHERE
         projects.year = fairs.year
         AND projects.province = provinces.id
-        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Gold Medal") OR instr(awards.title, "Gold Medal - ") = 1)
-    ) as gold,
+        AND medals.medal = "gold"
+    ) AS gold,
     (
       SELECT COUNT(*)
-      FROM awards
+      FROM medals
         LEFT JOIN projects
-          ON awards.project = projects.id
+          ON medals.project = projects.id
       WHERE
         projects.year = fairs.year
         AND projects.province = provinces.id
-        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Silver Medal") OR instr(awards.title, "Silver Medal - ") = 1)
-    ) as silver,
+        AND medals.medal = "silver"
+    ) AS silver,
     (
       SELECT COUNT(*)
-      FROM awards
+      FROM medals
         LEFT JOIN projects
-          ON awards.project = projects.id
+          ON medals.project = projects.id
       WHERE
         projects.year = fairs.year
         AND projects.province = provinces.id
-        AND ((instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Bronze Medal") OR instr(awards.title, "Bronze Medal - ") = 1)
-    ) as bronze
-  FROM
-    fairs
-    LEFT JOIN
-    provinces;
+        AND medals.medal = "bronze"
+    ) AS bronze
+  FROM fairs
+    LEFT JOIN provinces;
 
 -- Average provincial winnings
 CREATE VIEW provincial_averages AS
@@ -241,38 +230,72 @@ CREATE VIEW average_winnings_by_challenge_gender AS
     fairs.year AS year,
     challenges.name AS challenge,
     COALESCE((
-               SELECT CAST(AVG(awards.value) AS INTEGER)
-               FROM awards
-                 LEFT JOIN projects
-                   ON awards.project = projects.id
-                 LEFT JOIN finalists
-                   ON finalists.project = projects.id
-                 LEFT JOIN project_challenges
-                   ON projects.id = project_challenges.project
-               WHERE
-                 finalists.gender = "M"
-                 AND projects.year = fairs.year
-                 AND project_challenges.challenge = challenges.id
-                 AND awards.value > 0
-             ), 0) as male,
+      SELECT CAST(AVG(awards.value) AS INTEGER)
+      FROM awards
+       LEFT JOIN projects
+         ON awards.project = projects.id
+       LEFT JOIN finalists
+         ON finalists.project = projects.id
+       LEFT JOIN project_challenges
+         ON projects.id = project_challenges.project
+      WHERE
+       finalists.gender = "M"
+       AND projects.year = fairs.year
+       AND project_challenges.challenge = challenges.id
+       AND awards.value > 0
+      ), 0) as male,
     COALESCE((
-               SELECT CAST(AVG(awards.value) AS INTEGER)
-               FROM awards
-                 LEFT JOIN projects
-                   ON awards.project = projects.id
-                 LEFT JOIN finalists
-                   ON finalists.project = projects.id
-                 LEFT JOIN project_challenges
-                   ON projects.id = project_challenges.project
-               WHERE
-                 finalists.gender = "F"
-                 AND projects.year = fairs.year
-                 AND project_challenges.challenge = challenges.id
-                 AND awards.value > 0
-             ), 0) as female
+      SELECT CAST(AVG(awards.value) AS INTEGER)
+      FROM awards
+       LEFT JOIN projects
+         ON awards.project = projects.id
+       LEFT JOIN finalists
+         ON finalists.project = projects.id
+       LEFT JOIN project_challenges
+         ON projects.id = project_challenges.project
+      WHERE
+       finalists.gender = "F"
+       AND projects.year = fairs.year
+       AND project_challenges.challenge = challenges.id
+       AND awards.value > 0
+      ), 0) as female
   FROM fairs
     LEFT JOIN challenges
   -- Challenges started in 2011
   WHERE fairs.year >= 2011 AND challenges.id != 99;
+
+-- Medals
+CREATE VIEW medals AS
+  SELECT
+    awards.project AS project,
+    CASE
+    WHEN
+      instr(awards.title, "Platinum Award - ") = 1
+      OR instr(awards.title, "EnCana Platinum Award - ") = 1
+      OR (
+        -- These years don't list the best in fair
+        -- winners as receiving Platinum medals
+        projects.year IN (2013, 2014)
+        AND awards.title = "Best Project Award"
+      )
+      THEN "platinum"
+    WHEN
+      (instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Gold Medal")
+      OR instr(awards.title, "Gold Medal - ") = 1
+      THEN "gold"
+    WHEN
+      (instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Silver Medal")
+      OR instr(awards.title, "Silver Medal - ") = 1
+      THEN "silver"
+    WHEN
+      (instr(awards.title, "Excellence Award - ") = 1 AND awards.description = "Bronze Medal")
+      OR instr(awards.title, "Bronze Medal - ") = 1
+      THEN "bronze"
+    ELSE NULL
+    END as medal
+  FROM awards
+    LEFT JOIN projects
+      ON awards.project = projects.id
+  WHERE medal IS NOT NULL;
 
 COMMIT;
