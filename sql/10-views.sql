@@ -298,4 +298,27 @@ CREATE VIEW medals AS
       ON awards.project = projects.id
   WHERE medal IS NOT NULL;
 
+-- Finalist medals
+CREATE VIEW finalist_medals AS
+  SELECT projects.id AS project, finalists.name, medals.medal
+  FROM medals
+    LEFT JOIN projects
+      ON medals.project = projects.id
+    LEFT JOIN finalists
+      ON projects.id = finalists.project
+  WHERE finalists.name IS NOT NULL;
+
+-- Top medal winners
+CREATE VIEW finalist_top_medals AS
+  SELECT *, platinum*5 + gold*3 + silver*2 + bronze AS weight FROM (
+    SELECT
+      name,
+      LENGTH(REPLACE(REPLACE(REPLACE(REPLACE("," || GROUP_CONCAT(medal), ",gold", ""), ",silver", ""), ",bronze", ""), ",platinum", " ")) as platinum,
+      LENGTH(REPLACE(REPLACE(REPLACE(REPLACE("," || GROUP_CONCAT(medal), ",platinum", ""), ",silver", ""), ",bronze", ""), ",gold", " ")) as gold,
+      LENGTH(REPLACE(REPLACE(REPLACE(REPLACE("," || GROUP_CONCAT(medal), ",platinum", ""), ",gold", ""), ",bronze", ""), ",silver", " ")) as silver,
+      LENGTH(REPLACE(REPLACE(REPLACE(REPLACE("," || GROUP_CONCAT(medal), ",platinum", ""), ",gold", ""), ",silver", ""), ",bronze", " ")) as bronze
+    FROM finalist_medals
+    GROUP BY name
+  ) ORDER BY weight DESC, platinum DESC, gold DESC, silver DESC, bronze DESC;
+
 COMMIT;
