@@ -1,5 +1,23 @@
 [
   {
+    "name": "Mikaela Preston",
+    "medals": [
+      {"type": "platinum", "count": 2},
+      {"type": "gold", "count": 4},
+      {"type": "silver", "count": 0},
+      {"type": "bronze", "count": 0}
+    ]
+  },
+  {
+    "name": "Nirusan Jayaranjan",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 2},
+      {"type": "silver", "count": 3},
+      {"type": "bronze", "count": 2}
+    ]
+  },
+  {
     "name": "Maya Burhanpurkar",
     "medals": [
       {"type": "platinum", "count": 2},
@@ -18,30 +36,21 @@
     ]
   },
   {
-    "name": "Nirusan Jayaranjan",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 2},
-      {"type": "silver", "count": 3},
-      {"type": "bronze", "count": 2}
-    ]
-  },
-  {
-    "name": "Mikaela Preston",
-    "medals": [
-      {"type": "platinum", "count": 1},
-      {"type": "gold", "count": 3},
-      {"type": "silver", "count": 0},
-      {"type": "bronze", "count": 0}
-    ]
-  },
-  {
     "name": "Megan Schlorff",
     "medals": [
       {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 4},
+      {"type": "gold", "count": 5},
       {"type": "silver", "count": 0},
       {"type": "bronze", "count": 1}
+    ]
+  },
+  {
+    "name": "Katherine Teeter",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 1},
+      {"type": "silver", "count": 2},
+      {"type": "bronze", "count": 3}
     ]
   },
   {
@@ -49,8 +58,53 @@
     "medals": [
       {"type": "platinum", "count": 1},
       {"type": "gold", "count": 2},
+      {"type": "silver", "count": 1},
+      {"type": "bronze", "count": 1}
+    ]
+  },
+  {
+    "name": "Melissa Chopcian",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 2},
+      {"type": "silver", "count": 1},
+      {"type": "bronze", "count": 1}
+    ]
+  },
+  {
+    "name": "Daniel Burd",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 2},
+      {"type": "silver", "count": 1},
+      {"type": "bronze", "count": 0}
+    ]
+  },
+  {
+    "name": "Adam Noble",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 2},
       {"type": "silver", "count": 0},
       {"type": "bronze", "count": 1}
+    ]
+  },
+  {
+    "name": "Sandro Young",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 1},
+      {"type": "silver", "count": 2},
+      {"type": "bronze", "count": 0}
+    ]
+  },
+  {
+    "name": "Gary Kurek",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 1},
+      {"type": "silver", "count": 1},
+      {"type": "bronze", "count": 2}
     ]
   },
   {
@@ -60,60 +114,6 @@
       {"type": "gold", "count": 2},
       {"type": "silver", "count": 2},
       {"type": "bronze", "count": 2}
-    ]
-  },
-  {
-    "name": "Kiri Daust",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 1},
-      {"type": "silver", "count": 3},
-      {"type": "bronze", "count": 2}
-    ]
-  },
-  {
-    "name": "Abhishek Chakraborty",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 2},
-      {"type": "silver", "count": 2},
-      {"type": "bronze", "count": 0}
-    ]
-  },
-  {
-    "name": "Austin Wang",
-    "medals": [
-      {"type": "platinum", "count": 1},
-      {"type": "gold", "count": 1},
-      {"type": "silver", "count": 1},
-      {"type": "bronze", "count": 0}
-    ]
-  },
-  {
-    "name": "Victoria-Marie Cusson",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 2},
-      {"type": "silver", "count": 2},
-      {"type": "bronze", "count": 0}
-    ]
-  },
-  {
-    "name": "Alexander Deans",
-    "medals": [
-      {"type": "platinum", "count": 1},
-      {"type": "gold", "count": 1},
-      {"type": "silver", "count": 1},
-      {"type": "bronze", "count": 0}
-    ]
-  },
-  {
-    "name": "Arash Marzi",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 1},
-      {"type": "silver", "count": 1},
-      {"type": "bronze", "count": 1}
     ]
   }
 ]

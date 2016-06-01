@@ -1,4 +1,162 @@
 {
+  "2016": [
+    {
+      "province": {
+        "name": "Ontario",
+        "id": 9
+      },
+      "medals": [
+        {"type": "platinum", "count": 2},
+        {"type": "gold", "count": 18},
+        {"type": "silver", "count": 22},
+        {"type": "bronze", "count": 44}
+      ]
+    },
+    {
+      "province": {
+        "name": "Nova Scotia",
+        "id": 1
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 3},
+        {"type": "bronze", "count": 11}
+      ]
+    },
+    {
+      "province": {
+        "name": "British Columbia",
+        "id": 12
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 5},
+        {"type": "silver", "count": 13},
+        {"type": "bronze", "count": 19}
+      ]
+    },
+    {
+      "province": {
+        "name": "Québec",
+        "id": 10
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 1},
+        {"type": "silver", "count": 8},
+        {"type": "bronze", "count": 10}
+      ]
+    },
+    {
+      "province": {
+        "name": "Manitoba",
+        "id": 8
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 4},
+        {"type": "bronze", "count": 10}
+      ]
+    },
+    {
+      "province": {
+        "name": "Alberta",
+        "id": 11
+      },
+      "medals": [
+        {"type": "platinum", "count": 1},
+        {"type": "gold", "count": 6},
+        {"type": "silver", "count": 7},
+        {"type": "bronze", "count": 9}
+      ]
+    },
+    {
+      "province": {
+        "name": "Yukon",
+        "id": 13
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 0},
+        {"type": "bronze", "count": 1}
+      ]
+    },
+    {
+      "province": {
+        "name": "Prince Edward Island",
+        "id": 4
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 0},
+        {"type": "bronze", "count": 3}
+      ]
+    },
+    {
+      "province": {
+        "name": "Northwest Territories",
+        "id": 5
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 0},
+        {"type": "bronze", "count": 1}
+      ]
+    },
+    {
+      "province": {
+        "name": "Saskatchewan",
+        "id": 6
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 1},
+        {"type": "bronze", "count": 5}
+      ]
+    },
+    {
+      "province": {
+        "name": "New Brunswick",
+        "id": 3
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 1},
+        {"type": "bronze", "count": 4}
+      ]
+    },
+    {
+      "province": {
+        "name": "Newfoundland",
+        "id": 2
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 1},
+        {"type": "bronze", "count": 3}
+      ]
+    },
+    {
+      "province": {
+        "name": "Nunavut",
+        "id": 7
+      },
+      "medals": [
+        {"type": "platinum", "count": 0},
+        {"type": "gold", "count": 0},
+        {"type": "silver", "count": 0},
+        {"type": "bronze", "count": 0}
+      ]
+    }
+  ],
   "2015": [
     {
       "province": {

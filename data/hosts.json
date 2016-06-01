@@ -5,7 +5,16 @@
       "name": "McGill University",
       "url": "https://www.mcgill.ca/",
       "location": "Montreal, QC"
-    }
+    },
+    "winner": {
+      "name": "Kayley Ting",
+      "province": "ON",
+      "project": {
+        "id": 4710,
+        "name": "Analysis of Electrodermal Activity to Quantify Stress Levels in Autism"
+      }
+    },
+    "total_prizes": 796950
   },
   {
     "year": 2015,
