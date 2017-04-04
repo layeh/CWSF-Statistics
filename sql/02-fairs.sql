@@ -12,5 +12,6 @@ INSERT INTO `fairs` (year) VALUES (2013);
 INSERT INTO `fairs` (year) VALUES (2014);
 INSERT INTO `fairs` (year) VALUES (2015);
 INSERT INTO `fairs` (year) VALUES (2016);
+INSERT INTO `fairs` (year) VALUES (2017);
 
 COMMIT;

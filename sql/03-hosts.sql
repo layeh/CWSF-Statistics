@@ -12,5 +12,6 @@ INSERT INTO `hosts` (year,name,city,province,url) VALUES (2013,'University of Le
 INSERT INTO `hosts` (year,name,city,province,url) VALUES (2014,'University of Windsor','Windsor','ON','http://www.uwindsor.ca/');
 INSERT INTO `hosts` (year,name,city,province,url) VALUES (2015,'University of New Brunswick','Fredericton','NB','http://www.unb.ca/');
 INSERT INTO `hosts` (year,name,city,province,url) VALUES (2016,'McGill University','Montreal','QC','https://www.mcgill.ca/');
+INSERT INTO `hosts` (year,name,city,province,url) VALUES (2017,'University of Regina','Regina','SK','https://www.uregina.ca/');
 
 COMMIT;

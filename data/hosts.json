@@ -1,5 +1,13 @@
 [
   {
+    "year": 2017,
+    "host": {
+      "name": "University of Regina",
+      "url": "https://www.uregina.ca/",
+      "location": "Regina, SK"
+    }
+  },
+  {
     "year": 2016,
     "host": {
       "name": "McGill University",
