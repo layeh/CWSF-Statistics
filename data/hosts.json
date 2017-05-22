@@ -5,7 +5,16 @@
       "name": "University of Regina",
       "url": "https://www.uregina.ca/",
       "location": "Regina, SK"
-    }
+    },
+    "winner": {
+      "name": "Colette Benko",
+      "province": "AB",
+      "project": {
+        "id": 5456,
+        "name": "Novel Pediatric Cancer Therapy: Targeting Epigenetics to Induce Differentiation"
+      }
+    },
+    "total_prizes": 806950
   },
   {
     "year": 2016,

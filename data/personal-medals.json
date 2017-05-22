@@ -81,6 +81,15 @@
     ]
   },
   {
+    "name": "Thomas Imbeault-Nepton",
+    "medals": [
+      {"type": "platinum", "count": 1},
+      {"type": "gold", "count": 1},
+      {"type": "silver", "count": 2},
+      {"type": "bronze", "count": 1}
+    ]
+  },
+  {
     "name": "Adam Noble",
     "medals": [
       {"type": "platinum", "count": 1},
@@ -104,15 +113,6 @@
       {"type": "platinum", "count": 1},
       {"type": "gold", "count": 1},
       {"type": "silver", "count": 1},
-      {"type": "bronze", "count": 2}
-    ]
-  },
-  {
-    "name": "Jean-Olivier Lambert",
-    "medals": [
-      {"type": "platinum", "count": 0},
-      {"type": "gold", "count": 2},
-      {"type": "silver", "count": 2},
       {"type": "bronze", "count": 2}
     ]
   }

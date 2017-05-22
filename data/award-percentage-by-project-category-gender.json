@@ -1,4 +1,30 @@
 {
+  "2017": [
+    {
+      "label": "Male",
+      "values": [
+        {"x": "Discovery", "y": 44},
+        {"x": "Energy", "y": 52},
+        {"x": "Environment", "y": 50},
+        {"x": "Health", "y": 51},
+        {"x": "Information", "y": 100},
+        {"x": "Innovation", "y": 67},
+        {"x": "Resources", "y": 62}
+      ]
+    },
+    {
+      "label": "Female",
+      "values": [
+        {"x": "Discovery", "y": 33},
+        {"x": "Energy", "y": 41},
+        {"x": "Environment", "y": 54},
+        {"x": "Health", "y": 54},
+        {"x": "Information", "y": 33},
+        {"x": "Innovation", "y": 76},
+        {"x": "Resources", "y": 30}
+      ]
+    }
+  ],
   "2016": [
     {
       "label": "Male",
